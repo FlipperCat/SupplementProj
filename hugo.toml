@@ -1,7 +1,6 @@
 baseURL = 'https://supplementguide.co/'
 languageCode = 'en-us'
 title = 'Supplement Guide - Evidence-Based Supplement Information'
-theme = ''
 enableRobotsTXT = true
 enableGitInfo = false
 
