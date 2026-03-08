@@ -1,0 +1,53 @@
+{{ define "main" }}
+
+<div class="container">
+    <header class="section-header" style="flex-direction: column; align-items: flex-start; gap: var(--spacing-md);">
+        <h1>All Supplements</h1>
+        <p style="color: var(--color-text-light); max-width: 600px;">Comprehensive, research-backed guides to individual supplements. Learn about dosages, timing, benefits, and what to expect.</p>
+    </header>
+
+    <!-- Filter Pills -->
+    <div class="category-pills" style="justify-content: flex-start; margin-bottom: var(--spacing-2xl);">
+        <a href="/supplements/" class="category-pill {{ if not .Params.supplement_type }}active{{ end }}">All</a>
+        <a href="/supplement_types/vitamins/" class="category-pill">Vitamins</a>
+        <a href="/supplement_types/minerals/" class="category-pill">Minerals</a>
+        <a href="/supplement_types/nootropics/" class="category-pill">Nootropics</a>
+        <a href="/supplement_types/adaptogens/" class="category-pill">Adaptogens</a>
+        <a href="/supplement_types/amino-acids/" class="category-pill">Amino Acids</a>
+        <a href="/supplement_types/peptides/" class="category-pill">Peptides</a>
+    </div>
+
+    <div class="card-grid">
+        {{ range .Pages }}
+        <article class="card supplement-card">
+            <div class="card-content">
+                <span class="card-category">{{ with .Params.supplement_type }}{{ . }}{{ else }}Supplement{{ end }}</span>
+                <h3 class="card-title"><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
+                <p class="card-excerpt">{{ .Params.tagline | default .Summary | truncate 150 }}</p>
+                <div class="card-meta">
+                    {{ with .Params.dosage }}
+                    <span class="meta-item">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"/>
+                            <path d="M12 6v6l4 2"/>
+                        </svg>
+                        {{ . }}
+                    </span>
+                    {{ end }}
+                    {{ with .Params.timing }}
+                    <span class="meta-item">{{ . }}</span>
+                    {{ end }}
+                </div>
+            </div>
+        </article>
+        {{ end }}
+    </div>
+
+    {{ if eq (len .Pages) 0 }}
+    <div style="text-align: center; padding: var(--spacing-3xl); color: var(--color-text-muted);">
+        <p>No supplements found. Check back soon for new content!</p>
+    </div>
+    {{ end }}
+</div>
+
+{{ end }}

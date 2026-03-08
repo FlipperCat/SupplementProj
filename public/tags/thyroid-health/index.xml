@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Thyroid Health on Supplement Guide - Evidence-Based Supplement Information</title>
+    <link>http://localhost:1313/tags/thyroid-health/</link>
+    <description>Recent content in Thyroid Health on Supplement Guide - Evidence-Based Supplement Information</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 22 Jan 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/thyroid-health/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Iodine</title>
+      <link>http://localhost:1313/supplements/iodine/</link>
+      <pubDate>Mon, 22 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/supplements/iodine/</guid>
+      <description>&lt;h2 id=&#34;what-is-iodine&#34;&gt;What Is Iodine?&lt;/h2&gt;&#xA;&lt;p&gt;Iodine is a halogen element essential for thyroid hormone synthesis. While required in only microgram quantities (150 mcg RDA), iodine deficiency affects over 2 billion people globally and is the leading preventable cause of intellectual disability worldwide.&lt;/p&gt;&#xA;&lt;p&gt;In the body, iodine is concentrated in the thyroid gland, where it&amp;rsquo;s incorporated into the amino acids T3 (triiodothyronine) and T4 (thyroxine). The thyroid also stores iodine in thyroid peroxidase and other proteins, creating a buffering system.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Selenium</title>
+      <link>http://localhost:1313/supplements/selenium/</link>
+      <pubDate>Sat, 20 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/supplements/selenium/</guid>
+      <description>&lt;h2 id=&#34;what-is-selenium&#34;&gt;What Is Selenium?&lt;/h2&gt;&#xA;&lt;p&gt;Selenium is an essential trace mineral that serves as a cofactor for selenoproteins — over 25 proteins that are crucial for antioxidant defense, thyroid function, and immune response.&lt;/p&gt;&#xA;&lt;p&gt;While selenium deficiency is uncommon in developed countries, suboptimal intake affects an estimated 1 billion people worldwide, particularly those in selenium-poor regions (parts of Europe, China, Africa).&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Unlike most nutrients, there&amp;rsquo;s a narrow therapeutic window for selenium&lt;/strong&gt; — adequate intake is beneficial, but excess is toxic.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

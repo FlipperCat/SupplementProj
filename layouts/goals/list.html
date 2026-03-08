@@ -1,0 +1,28 @@
+{{ define "main" }}
+
+<div class="container">
+    <header class="section-header" style="flex-direction: column; align-items: flex-start; gap: var(--spacing-md);">
+        <h1>Goal-Based Guides</h1>
+        <p style="color: var(--color-text-light); max-width: 600px;">Find the right supplements for your specific health goals — whether it's better sleep, more energy, improved focus, or stress relief.</p>
+    </header>
+
+    <div class="card-grid">
+        {{ range .Pages }}
+        <article class="card">
+            <div class="card-content">
+                <span class="card-category">Goal Guide</span>
+                <h3 class="card-title"><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
+                <p class="card-excerpt">{{ .Params.tagline | default .Summary | truncate 150 }}</p>
+            </div>
+        </article>
+        {{ end }}
+    </div>
+
+    {{ if eq (len .Pages) 0 }}
+    <div style="text-align: center; padding: var(--spacing-3xl); color: var(--color-text-muted);">
+        <p>No goal guides found. Check back soon for new content!</p>
+    </div>
+    {{ end }}
+</div>
+
+{{ end }}

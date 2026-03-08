@@ -1,0 +1,28 @@
+{{ define "main" }}
+
+<div class="container">
+    <header class="section-header" style="flex-direction: column; align-items: flex-start; gap: var(--spacing-md);">
+        <h1>Timelines & Expectations</h1>
+        <p style="color: var(--color-text-light); max-width: 600px;">One of the most common questions: "How long until I feel it?" These guides break down exactly what to expect and when.</p>
+    </header>
+
+    <div class="card-grid">
+        {{ range .Pages }}
+        <article class="card">
+            <div class="card-content">
+                <span class="card-category">Timeline</span>
+                <h3 class="card-title"><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
+                <p class="card-excerpt">{{ .Params.tagline | default .Summary | truncate 150 }}</p>
+            </div>
+        </article>
+        {{ end }}
+    </div>
+
+    {{ if eq (len .Pages) 0 }}
+    <div style="text-align: center; padding: var(--spacing-3xl); color: var(--color-text-muted);">
+        <p>No timeline guides found. Check back soon!</p>
+    </div>
+    {{ end }}
+</div>
+
+{{ end }}

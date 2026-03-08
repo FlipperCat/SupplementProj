@@ -1,0 +1,72 @@
+{{ define "main" }}
+
+<div class="container">
+    <article class="supplement-page">
+
+        <div class="supplement-content">
+
+            <header class="supplement-header">
+                <span class="supplement-category">{{ .Params.guide_type | default "Nutrients 101" }}</span>
+                <h1 class="supplement-title">{{ .Title }}</h1>
+                {{ with .Params.tagline }}
+                <p class="supplement-subtitle">{{ . }}</p>
+                {{ end }}
+            </header>
+
+            <div class="article-content">
+                {{ .Content }}
+            </div>
+
+            {{ with .Params.tags }}
+            <div class="tag-list" style="margin-top: var(--spacing-2xl);">
+                {{ range . }}
+                <a href="/tags/{{ . | urlize }}/" class="tag">{{ . }}</a>
+                {{ end }}
+            </div>
+            {{ end }}
+
+        </div>
+
+        <aside class="supplement-sidebar">
+
+            {{ with .Params.key_points }}
+            <div class="sidebar-box">
+                <h4>Key Takeaways</h4>
+                <ul style="margin: 0; padding-left: var(--spacing-md);">
+                    {{ range . }}
+                    <li style="margin-bottom: var(--spacing-sm);">{{ . }}</li>
+                    {{ end }}
+                </ul>
+            </div>
+            {{ end }}
+
+            <div class="affiliate-cta">
+                <h4>Shop Supplements</h4>
+                <p>Get quality Nutrilite supplements</p>
+                <a href="https://www.amway.com/en_US/nutrilite" class="btn btn-block" target="_blank" rel="noopener sponsored">
+                    Shop Nutrilite
+                </a>
+            </div>
+
+            <div class="sidebar-box">
+                <h4>On This Page</h4>
+                <ul class="toc-list"></ul>
+            </div>
+
+            {{ with .Params.related_supplements }}
+            <div class="sidebar-box">
+                <h4>Related Supplements</h4>
+                <ul style="margin: 0; padding-left: var(--spacing-md);">
+                    {{ range . }}
+                    <li><a href="/supplements/{{ . | urlize }}/">{{ . }}</a></li>
+                    {{ end }}
+                </ul>
+            </div>
+            {{ end }}
+
+        </aside>
+
+    </article>
+</div>
+
+{{ end }}

@@ -1,0 +1,28 @@
+{{ define "main" }}
+
+<div class="container">
+    <header class="section-header" style="flex-direction: column; align-items: flex-start; gap: var(--spacing-md);">
+        <h1>Comparisons</h1>
+        <p style="color: var(--color-text-light); max-width: 600px;">Side-by-side comparisons of similar supplements, different forms, and competing options to help you make the best choice.</p>
+    </header>
+
+    <div class="card-grid">
+        {{ range .Pages }}
+        <article class="card">
+            <div class="card-content">
+                <span class="card-category">Comparison</span>
+                <h3 class="card-title"><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
+                <p class="card-excerpt">{{ .Params.tagline | default .Summary | truncate 150 }}</p>
+            </div>
+        </article>
+        {{ end }}
+    </div>
+
+    {{ if eq (len .Pages) 0 }}
+    <div style="text-align: center; padding: var(--spacing-3xl); color: var(--color-text-muted);">
+        <p>No comparisons found. Check back soon for new content!</p>
+    </div>
+    {{ end }}
+</div>
+
+{{ end }}

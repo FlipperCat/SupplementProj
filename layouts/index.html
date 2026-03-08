@@ -1,0 +1,172 @@
+{{ define "main" }}
+
+<!-- Hero Section -->
+<section class="hero">
+    <div class="container">
+        <h1>Evidence-Based Supplement Information</h1>
+        <p>Your comprehensive guide to supplements, vitamins, and peptides. Research-backed information on what to take, how to combine, and what to expect.</p>
+
+        <div class="hero-search">
+            <input type="search" placeholder="Search supplements, stacks, or conditions...">
+            <button class="btn btn-primary">Search</button>
+        </div>
+
+        <div class="category-pills">
+            <a href="/supplement_types/vitamins/" class="category-pill">Vitamins</a>
+            <a href="/supplement_types/minerals/" class="category-pill">Minerals</a>
+            <a href="/supplement_types/nootropics/" class="category-pill">Nootropics</a>
+            <a href="/supplement_types/adaptogens/" class="category-pill">Adaptogens</a>
+            <a href="/supplement_types/amino-acids/" class="category-pill">Amino Acids</a>
+            <a href="/supplement_types/peptides/" class="category-pill">Peptides</a>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+
+    <!-- Featured Guides -->
+    <section class="home-section">
+        <div class="section-header">
+            <h2>Popular Guides</h2>
+            <a href="/stacks/" class="view-all">
+                View All
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                </svg>
+            </a>
+        </div>
+
+        <div class="featured-grid">
+            {{ range first 1 (where .Site.RegularPages "Section" "stacks") }}
+            <article class="card featured-main">
+                <div class="card-image">
+                    {{ if .Params.image }}
+                    <img src="{{ .Params.image }}" alt="{{ .Title }}">
+                    {{ else }}
+                    <div style="background: linear-gradient(135deg, var(--color-sage) 0%, var(--color-primary) 100%); height: 100%;"></div>
+                    {{ end }}
+                </div>
+                <div class="card-content">
+                    <span class="card-category">Stack Guide</span>
+                    <h3 class="card-title"><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
+                    <p class="card-excerpt">{{ .Summary | truncate 200 }}</p>
+                </div>
+            </article>
+            {{ end }}
+
+            {{ range first 2 (after 1 (where .Site.RegularPages "Section" "medications")) }}
+            <article class="card">
+                <div class="card-image">
+                    {{ if .Params.image }}
+                    <img src="{{ .Params.image }}" alt="{{ .Title }}">
+                    {{ else }}
+                    <div style="background: linear-gradient(135deg, var(--color-terracotta) 0%, var(--color-terracotta-light) 100%); height: 100%;"></div>
+                    {{ end }}
+                </div>
+                <div class="card-content">
+                    <span class="card-category">Medication Guide</span>
+                    <h3 class="card-title"><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
+                    <p class="card-excerpt">{{ .Summary | truncate 100 }}</p>
+                </div>
+            </article>
+            {{ end }}
+        </div>
+    </section>
+
+    <!-- Popular Supplements -->
+    <section class="home-section">
+        <div class="section-header">
+            <h2>Popular Supplements</h2>
+            <a href="/supplements/" class="view-all">
+                View All
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                </svg>
+            </a>
+        </div>
+
+        <div class="card-grid">
+            {{ range first 6 (where .Site.RegularPages "Section" "supplements") }}
+            <article class="card supplement-card">
+                <div class="card-content">
+                    <span class="card-category">{{ with .Params.supplement_type }}{{ . }}{{ else }}Supplement{{ end }}</span>
+                    <h3 class="card-title"><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
+                    <p class="card-excerpt">{{ .Params.tagline | default .Summary | truncate 120 }}</p>
+                    <div class="card-meta">
+                        {{ with .Params.dosage }}
+                        <span class="meta-item">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="10"/>
+                                <path d="M12 6v6l4 2"/>
+                            </svg>
+                            {{ . }}
+                        </span>
+                        {{ end }}
+                        {{ with .Params.timing }}
+                        <span class="meta-item">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+                            </svg>
+                            {{ . }}
+                        </span>
+                        {{ end }}
+                    </div>
+                </div>
+            </article>
+            {{ end }}
+        </div>
+    </section>
+
+    <!-- Goal-Based Guides -->
+    <section class="home-section">
+        <div class="section-header">
+            <h2>Goal-Based Guides</h2>
+            <a href="/goals/" class="view-all">
+                View All
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                </svg>
+            </a>
+        </div>
+
+        <div class="card-grid">
+            {{ range first 3 (where .Site.RegularPages "Section" "goals") }}
+            <article class="card">
+                <div class="card-content">
+                    <span class="card-category">Goal Guide</span>
+                    <h3 class="card-title"><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
+                    <p class="card-excerpt">{{ .Summary | truncate 150 }}</p>
+                </div>
+            </article>
+            {{ end }}
+        </div>
+    </section>
+
+    <!-- Latest Comparisons -->
+    <section class="home-section">
+        <div class="section-header">
+            <h2>Latest Comparisons</h2>
+            <a href="/comparisons/" class="view-all">
+                View All
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                </svg>
+            </a>
+        </div>
+
+        <div class="card-grid">
+            {{ range first 3 (where .Site.RegularPages "Section" "comparisons") }}
+            <article class="card">
+                <div class="card-content">
+                    <span class="card-category">Comparison</span>
+                    <h3 class="card-title"><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
+                    <p class="card-excerpt">{{ .Summary | truncate 150 }}</p>
+                </div>
+            </article>
+            {{ end }}
+        </div>
+    </section>
+
+</div>
+
+{{ end }}

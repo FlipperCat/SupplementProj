@@ -1,0 +1,40 @@
+{{/*
+  Responsive image partial with lazy loading and WebP support
+
+  Usage: {{ partial "image.html" (dict "src" "/images/example.jpg" "alt" "Description" "class" "my-class") }}
+
+  Parameters:
+  - src: Image source path (required)
+  - alt: Alt text (optional, defaults to "")
+  - class: CSS class (optional)
+  - lazy: Enable lazy loading (optional, defaults to true)
+  - width: Image width (optional)
+  - height: Image height (optional)
+*/}}
+
+{{ $src := .src }}
+{{ $alt := .alt | default "" }}
+{{ $class := .class | default "" }}
+{{ $lazy := .lazy | default true }}
+{{ $width := .width | default "" }}
+{{ $height := .height | default "" }}
+
+{{ if $src }}
+<picture>
+  {{/* WebP version if original is jpg/jpeg/png */}}
+  {{ if or (strings.HasSuffix $src ".jpg") (strings.HasSuffix $src ".jpeg") (strings.HasSuffix $src ".png") }}
+  <source
+    type="image/webp"
+    srcset="{{ $src | replaceRE `\.(jpg|jpeg|png)$` `.webp` }}"
+    {{ if $lazy }}loading="lazy"{{ end }}>
+  {{ end }}
+
+  <img
+    src="{{ $src }}"
+    alt="{{ $alt }}"
+    {{ with $class }}class="{{ . }}"{{ end }}
+    {{ if $lazy }}loading="lazy" decoding="async"{{ end }}
+    {{ with $width }}width="{{ . }}"{{ end }}
+    {{ with $height }}height="{{ . }}"{{ end }}>
+</picture>
+{{ end }}

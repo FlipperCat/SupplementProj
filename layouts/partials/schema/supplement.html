@@ -1,0 +1,36 @@
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "MedicalWebPage",
+  "name": "{{ .Title }}",
+  "headline": "{{ .Title }}",
+  "description": "{{ with .Params.tagline }}{{ . }}{{ else }}{{ .Summary | plainify | truncate 160 }}{{ end }}",
+  "url": "{{ .Permalink }}",
+  "datePublished": "{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}",
+  "dateModified": "{{ .Lastmod.Format "2006-01-02T15:04:05Z07:00" }}",
+  "about": {
+    "@type": "DietarySupplement",
+    "name": "{{ .Title }}",
+    {{ with .Params.dosage }}"recommendedIntake": "{{ . }}",{{ end }}
+    {{ with .Params.form }}"activeIngredient": "{{ . }}",{{ end }}
+    "category": "{{ .Params.supplement_type | default "Dietary Supplement" }}"
+  },
+  "specialty": "Dietary Supplements",
+  "lastReviewed": "{{ .Date.Format "2006-01-02" }}",
+  "author": {
+    "@type": "Organization",
+    "name": "{{ .Site.Params.author | default .Site.Title }}"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "{{ .Site.Title }}",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "{{ "/images/logo.png" | absURL }}"
+    }
+  }
+  {{ with .Params.tags }},
+  "keywords": "{{ delimit . ", " }}"
+  {{ end }}
+}
+</script>

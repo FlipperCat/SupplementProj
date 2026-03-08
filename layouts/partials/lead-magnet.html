@@ -1,0 +1,43 @@
+{{ $section := .Section }}
+{{ $leadMagnet := "" }}
+{{ $title := "" }}
+{{ $description := "" }}
+
+{{ if eq $section "supplements" }}
+  {{ $leadMagnet = "supplement-timing-guide" }}
+  {{ $title = "Free: Supplement Timing Guide" }}
+  {{ $description = "Know exactly when to take each supplement for maximum absorption." }}
+{{ else if eq $section "stacks" }}
+  {{ $leadMagnet = "stack-builder-cheatsheet" }}
+  {{ $title = "Free: Stack Builder Cheatsheet" }}
+  {{ $description = "Pre-built stacks for sleep, energy, focus, and more." }}
+{{ else if eq $section "goals" }}
+  {{ $leadMagnet = "supplement-protocol-templates" }}
+  {{ $title = "Free: Goal-Based Protocol Templates" }}
+  {{ $description = "Step-by-step protocols for your health goals." }}
+{{ else if eq $section "medications" }}
+  {{ $leadMagnet = "drug-interaction-guide" }}
+  {{ $title = "Free: Medication-Supplement Safety Guide" }}
+  {{ $description = "Critical interactions every supplement user should know." }}
+{{ else if eq $section "guides" }}
+  {{ $leadMagnet = "nutrient-optimization-guide" }}
+  {{ $title = "Free: Nutrient Optimization Guide" }}
+  {{ $description = "Advanced strategies for optimizing your nutrition." }}
+{{ end }}
+
+{{ if $leadMagnet }}
+<div class="lead-magnet-box">
+  <div class="lead-magnet-icon">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+  </div>
+  <div class="lead-magnet-content">
+    <h4>{{ $title }}</h4>
+    <p>{{ $description }}</p>
+  </div>
+  <form class="lead-magnet-form" action="#" method="POST" data-form="lead-magnet" data-magnet="{{ $leadMagnet }}">
+    <input type="email" name="email" placeholder="Your email" required autocomplete="email">
+    <input type="hidden" name="lead_magnet" value="{{ $leadMagnet }}">
+    <button type="submit" class="btn btn-secondary">Get Free Guide</button>
+  </form>
+</div>
+{{ end }}

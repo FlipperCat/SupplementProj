@@ -1,0 +1,50 @@
+{{ $currentPage := . }}
+{{ $related := slice }}
+
+{{/* First, add supplements from synergies */}}
+{{ with .Params.synergies }}
+  {{ range . }}
+    {{ $slug := . | urlize }}
+    {{ $supplement := $currentPage.Site.GetPage (printf "/supplements/%s" $slug) }}
+    {{ if $supplement }}
+      {{ $related = $related | append $supplement }}
+    {{ end }}
+  {{ end }}
+{{ end }}
+
+{{/* Then add pages with matching tags */}}
+{{ $tags := .Params.tags | default slice }}
+{{ range $tags }}
+  {{ $tag := . }}
+  {{ range where $currentPage.Site.RegularPages ".Params.tags" "intersect" (slice $tag) }}
+    {{ if ne .Title $currentPage.Title }}
+      {{ $related = $related | append . }}
+    {{ end }}
+  {{ end }}
+{{ end }}
+
+{{/* Add pages from same section */}}
+{{ $sameSection := where (where .Site.RegularPages "Section" .Section) ".Title" "!=" .Title }}
+{{ $related = $related | append $sameSection }}
+
+{{/* Dedupe and limit to 6 */}}
+{{ $related = $related | uniq | first 6 }}
+
+{{ with $related }}
+<section class="related-section">
+  <h3>Related Articles</h3>
+  <div class="related-grid">
+    {{ range . }}
+    <article class="related-card">
+      <a href="{{ .Permalink }}" class="related-link">
+        <span class="related-category">{{ .Section | humanize | title }}</span>
+        <h4 class="related-title">{{ .Title }}</h4>
+        {{ with .Params.tagline }}
+        <p class="related-excerpt">{{ . | truncate 80 }}</p>
+        {{ end }}
+      </a>
+    </article>
+    {{ end }}
+  </div>
+</section>
+{{ end }}

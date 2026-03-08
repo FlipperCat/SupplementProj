@@ -1,0 +1,82 @@
+baseURL = 'https://supplementguide.co/'
+languageCode = 'en-us'
+title = 'Supplement Guide - Evidence-Based Supplement Information'
+theme = ''
+enableRobotsTXT = true
+enableGitInfo = false
+
+[params]
+  description = "Your comprehensive guide to supplements, vitamins, and peptides. Research-backed information on what to take, how to combine, and what to expect."
+  tagline = "Evidence-Based Supplement Information"
+  author = "Supplement Guide"
+  images = ["/images/og-default.jpg"]
+
+  # Analytics - Replace with your GA4 ID
+  [params.analytics]
+    ga4 = ""  # Add your G-XXXXXXXXXX ID here
+
+  # Affiliate settings
+  [params.affiliates]
+    amway = "https://www.amway.com/en_US/nutrilite"
+
+[taxonomies]
+  category = "categories"
+  tag = "tags"
+  supplement_type = "supplement_types"
+  goal = "goals"
+  medication = "medications"
+
+[menu]
+  [[menu.main]]
+    name = "Stack Analyzer"
+    url = "/analyzer/"
+    weight = 1
+  [[menu.main]]
+    name = "Supplements"
+    url = "/supplements/"
+    weight = 2
+  [[menu.main]]
+    name = "Stacks"
+    url = "/stacks/"
+    weight = 3
+  [[menu.main]]
+    name = "Medications"
+    url = "/medications/"
+    weight = 4
+  [[menu.main]]
+    name = "Goals"
+    url = "/goals/"
+    weight = 5
+  [[menu.main]]
+    name = "Nutrients 101"
+    url = "/guides/"
+    weight = 6
+  [[menu.main]]
+    name = "Reference"
+    url = "/reference/"
+    weight = 7
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+  [markup.highlight]
+    style = "monokai"
+
+[outputs]
+  home = ["HTML", "RSS"]
+  section = ["HTML", "RSS"]
+
+[sitemap]
+  changefreq = "weekly"
+  filename = "sitemap.xml"
+  priority = 0.5
+
+[permalinks]
+  supplements = "/supplements/:slug/"
+  stacks = "/stacks/:slug/"
+  medications = "/medications/:slug/"
+  goals = "/goals/:slug/"
+  comparisons = "/comparisons/:slug/"
+  guides = "/guides/:slug/"
+  timelines = "/timelines/:slug/"

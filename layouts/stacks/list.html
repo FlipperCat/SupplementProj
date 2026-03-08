@@ -1,0 +1,36 @@
+{{ define "main" }}
+
+<div class="container">
+    <header class="section-header" style="flex-direction: column; align-items: flex-start; gap: var(--spacing-md);">
+        <h1>Stacks & Combinations</h1>
+        <p style="color: var(--color-text-light); max-width: 600px;">Learn which supplements work better together, understand synergies, and discover what to avoid combining.</p>
+    </header>
+
+    <div class="card-grid">
+        {{ range .Pages }}
+        <article class="card">
+            <div class="card-content">
+                <span class="card-category">Stack Guide</span>
+                <h3 class="card-title"><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
+                <p class="card-excerpt">{{ .Params.tagline | default .Summary | truncate 150 }}</p>
+
+                {{ with .Params.supplements }}
+                <div class="tag-list" style="margin-top: var(--spacing-md);">
+                    {{ range first 4 . }}
+                    <span class="tag">{{ . }}</span>
+                    {{ end }}
+                </div>
+                {{ end }}
+            </div>
+        </article>
+        {{ end }}
+    </div>
+
+    {{ if eq (len .Pages) 0 }}
+    <div style="text-align: center; padding: var(--spacing-3xl); color: var(--color-text-muted);">
+        <p>No stack guides found. Check back soon for new content!</p>
+    </div>
+    {{ end }}
+</div>
+
+{{ end }}

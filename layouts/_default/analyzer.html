@@ -1,0 +1,745 @@
+{{ define "main" }}
+
+<div class="container">
+    <header class="analyzer-header">
+        <h1>Stack Analyzer</h1>
+        <p class="analyzer-subtitle">Add your current supplements to analyze synergies, conflicts, timing, and gaps in your stack.</p>
+    </header>
+
+    <div class="analyzer-layout">
+        <!-- Input Section -->
+        <div class="analyzer-input">
+            <div class="input-card">
+                <h3>Your Stack</h3>
+                <div class="supplement-search">
+                    <input type="text" id="supplement-search" placeholder="Search supplements..." autocomplete="off">
+                    <div id="search-results" class="search-results"></div>
+                </div>
+                <div id="selected-supplements" class="selected-supplements">
+                    <p class="empty-state">No supplements added yet. Search above to add to your stack.</p>
+                </div>
+            </div>
+
+            <div class="input-card">
+                <h3>Your Goals</h3>
+                <div class="goal-checkboxes" id="goal-checkboxes">
+                    <!-- Populated by JS -->
+                </div>
+            </div>
+
+            <button id="analyze-btn" class="btn btn-primary btn-block" disabled>Analyze My Stack</button>
+        </div>
+
+        <!-- Results Section -->
+        <div class="analyzer-results" id="analyzer-results" style="display: none;">
+
+            <!-- Summary -->
+            <div class="result-card summary-card">
+                <h3>Stack Summary</h3>
+                <div id="stack-summary"></div>
+            </div>
+
+            <!-- Synergies -->
+            <div class="result-card">
+                <h3>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M22 11.08V12a10 10 0 11-5.93-9.14"/>
+                        <polyline points="22 4 12 14.01 9 11.01"/>
+                    </svg>
+                    Synergies Found
+                </h3>
+                <div id="synergies-list"></div>
+            </div>
+
+            <!-- Conflicts -->
+            <div class="result-card">
+                <h3>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z"/>
+                        <line x1="12" y1="9" x2="12" y2="13"/>
+                        <line x1="12" y1="17" x2="12.01" y2="17"/>
+                    </svg>
+                    Timing Conflicts
+                </h3>
+                <div id="conflicts-list"></div>
+            </div>
+
+            <!-- Gaps -->
+            <div class="result-card">
+                <h3>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="10"/>
+                        <line x1="12" y1="8" x2="12" y2="12"/>
+                        <line x1="12" y1="16" x2="12.01" y2="16"/>
+                    </svg>
+                    Gaps & Recommendations
+                </h3>
+                <div id="gaps-list"></div>
+            </div>
+
+            <!-- Timing Schedule -->
+            <div class="result-card schedule-card">
+                <h3>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="10"/>
+                        <polyline points="12 6 12 12 16 14"/>
+                    </svg>
+                    Optimal Timing Schedule
+                </h3>
+                <div id="timing-schedule"></div>
+            </div>
+
+            <!-- Amway Products -->
+            <div class="result-card affiliate-card">
+                <h3>Shop Your Stack</h3>
+                <p>Get quality supplements from Nutrilite:</p>
+                <div id="amway-products"></div>
+                <a href="https://www.amway.com/en_US/nutrilite" class="btn btn-primary btn-block" target="_blank" rel="noopener sponsored">
+                    Shop All Nutrilite Products
+                </a>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<style>
+.analyzer-header {
+    text-align: center;
+    margin-bottom: var(--spacing-2xl);
+}
+
+.analyzer-subtitle {
+    color: var(--color-text-light);
+    font-size: 1.125rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.analyzer-layout {
+    display: grid;
+    grid-template-columns: 350px 1fr;
+    gap: var(--spacing-2xl);
+    align-items: start;
+}
+
+.analyzer-input {
+    position: sticky;
+    top: 100px;
+}
+
+.input-card, .result-card {
+    background: var(--color-white);
+    border-radius: var(--radius-lg);
+    padding: var(--spacing-lg);
+    margin-bottom: var(--spacing-lg);
+}
+
+.input-card h3, .result-card h3 {
+    font-size: 1rem;
+    margin-bottom: var(--spacing-md);
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+}
+
+.supplement-search {
+    position: relative;
+    margin-bottom: var(--spacing-md);
+}
+
+.supplement-search input {
+    width: 100%;
+    padding: var(--spacing-md);
+    border: 2px solid var(--color-cream-dark);
+    border-radius: var(--radius-md);
+    font-size: 1rem;
+}
+
+.supplement-search input:focus {
+    outline: none;
+    border-color: var(--color-primary);
+}
+
+.search-results {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: var(--color-white);
+    border: 1px solid var(--color-cream-dark);
+    border-radius: var(--radius-md);
+    max-height: 300px;
+    overflow-y: auto;
+    z-index: 50;
+    display: none;
+    box-shadow: var(--shadow-lg);
+}
+
+.search-results.active {
+    display: block;
+}
+
+.search-result-item {
+    padding: var(--spacing-sm) var(--spacing-md);
+    cursor: pointer;
+    border-bottom: 1px solid var(--color-cream-dark);
+}
+
+.search-result-item:hover {
+    background: var(--color-cream);
+}
+
+.search-result-item:last-child {
+    border-bottom: none;
+}
+
+.search-result-item .type {
+    font-size: 0.75rem;
+    color: var(--color-text-muted);
+    text-transform: uppercase;
+}
+
+.selected-supplements {
+    min-height: 100px;
+}
+
+.selected-supplements .empty-state {
+    color: var(--color-text-muted);
+    font-size: 0.875rem;
+    text-align: center;
+    padding: var(--spacing-lg);
+}
+
+.selected-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--spacing-xs);
+    background: var(--color-primary);
+    color: white;
+    padding: var(--spacing-xs) var(--spacing-sm);
+    border-radius: var(--radius-full);
+    font-size: 0.875rem;
+    margin: var(--spacing-xs);
+}
+
+.selected-pill button {
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    padding: 0;
+    font-size: 1rem;
+    line-height: 1;
+}
+
+.goal-checkboxes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-sm);
+}
+
+.goal-checkbox {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-xs);
+}
+
+.goal-checkbox input {
+    accent-color: var(--color-primary);
+}
+
+.goal-checkbox label {
+    font-size: 0.875rem;
+    cursor: pointer;
+}
+
+#analyze-btn {
+    margin-top: var(--spacing-md);
+}
+
+#analyze-btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.result-card h3 svg {
+    color: var(--color-primary);
+}
+
+.synergy-item, .conflict-item, .gap-item {
+    padding: var(--spacing-md);
+    border-radius: var(--radius-md);
+    margin-bottom: var(--spacing-sm);
+}
+
+.synergy-item {
+    background: var(--color-success-bg);
+    border-left: 4px solid var(--color-success);
+}
+
+.conflict-item {
+    background: var(--color-warning-bg);
+    border-left: 4px solid var(--color-warning);
+}
+
+.gap-item {
+    background: var(--color-info-bg);
+    border-left: 4px solid var(--color-info);
+}
+
+.synergy-item strong, .conflict-item strong, .gap-item strong {
+    display: block;
+    margin-bottom: var(--spacing-xs);
+}
+
+.synergy-item p, .conflict-item p, .gap-item p {
+    margin: 0;
+    font-size: 0.875rem;
+    color: var(--color-text-light);
+}
+
+.timing-grid {
+    display: grid;
+    gap: var(--spacing-md);
+}
+
+.timing-slot {
+    background: var(--color-cream);
+    padding: var(--spacing-md);
+    border-radius: var(--radius-md);
+}
+
+.timing-slot h4 {
+    font-size: 0.875rem;
+    color: var(--color-primary);
+    margin-bottom: var(--spacing-sm);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.timing-slot ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.timing-slot li {
+    padding: var(--spacing-xs) 0;
+    font-size: 0.9375rem;
+}
+
+.empty-result {
+    color: var(--color-text-muted);
+    font-style: italic;
+    padding: var(--spacing-md);
+}
+
+.summary-stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--spacing-md);
+    text-align: center;
+}
+
+.stat {
+    padding: var(--spacing-md);
+    background: var(--color-cream);
+    border-radius: var(--radius-md);
+}
+
+.stat-value {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--color-primary);
+}
+
+.stat-label {
+    font-size: 0.75rem;
+    color: var(--color-text-muted);
+    text-transform: uppercase;
+}
+
+.affiliate-card {
+    background: linear-gradient(135deg, var(--color-terracotta) 0%, var(--color-terracotta-light) 100%);
+    color: white;
+}
+
+.affiliate-card h3 {
+    color: white;
+}
+
+.affiliate-card p {
+    opacity: 0.9;
+}
+
+.affiliate-card .btn {
+    background: white;
+    color: var(--color-terracotta);
+    margin-top: var(--spacing-md);
+}
+
+#amway-products {
+    margin: var(--spacing-md) 0;
+}
+
+.amway-product {
+    background: rgba(255,255,255,0.2);
+    padding: var(--spacing-sm) var(--spacing-md);
+    border-radius: var(--radius-md);
+    margin-bottom: var(--spacing-sm);
+}
+
+@media (max-width: 900px) {
+    .analyzer-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .analyzer-input {
+        position: static;
+    }
+}
+</style>
+
+<script>
+document.addEventListener('DOMContentLoaded', async function() {
+    // Load supplement data
+    const response = await fetch('/data/supplements.json');
+    const data = await response.json();
+
+    const supplements = data.supplements;
+    const interactions = data.interactions;
+    const goals = data.goals;
+    const timingSchedule = data.timingSchedule;
+
+    let selectedSupplements = [];
+    let selectedGoals = [];
+
+    // Populate goal checkboxes
+    const goalContainer = document.getElementById('goal-checkboxes');
+    Object.entries(goals).forEach(([key, goal]) => {
+        const div = document.createElement('div');
+        div.className = 'goal-checkbox';
+        div.innerHTML = `
+            <input type="checkbox" id="goal-${key}" value="${key}">
+            <label for="goal-${key}">${goal.name}</label>
+        `;
+        goalContainer.appendChild(div);
+    });
+
+    // Goal checkbox listeners
+    goalContainer.addEventListener('change', function(e) {
+        if (e.target.type === 'checkbox') {
+            if (e.target.checked) {
+                selectedGoals.push(e.target.value);
+            } else {
+                selectedGoals = selectedGoals.filter(g => g !== e.target.value);
+            }
+            updateAnalyzeButton();
+        }
+    });
+
+    // Search functionality
+    const searchInput = document.getElementById('supplement-search');
+    const searchResults = document.getElementById('search-results');
+
+    searchInput.addEventListener('input', function() {
+        const query = this.value.toLowerCase();
+        if (query.length < 2) {
+            searchResults.classList.remove('active');
+            return;
+        }
+
+        const matches = supplements.filter(s =>
+            s.name.toLowerCase().includes(query) &&
+            !selectedSupplements.find(sel => sel.id === s.id)
+        );
+
+        if (matches.length === 0) {
+            searchResults.innerHTML = '<div class="search-result-item">No supplements found</div>';
+        } else {
+            searchResults.innerHTML = matches.slice(0, 10).map(s => `
+                <div class="search-result-item" data-id="${s.id}">
+                    <div>${s.name}</div>
+                    <div class="type">${s.type}</div>
+                </div>
+            `).join('');
+        }
+        searchResults.classList.add('active');
+    });
+
+    // Click on search result
+    searchResults.addEventListener('click', function(e) {
+        const item = e.target.closest('.search-result-item');
+        if (item && item.dataset.id) {
+            const supplement = supplements.find(s => s.id === item.dataset.id);
+            if (supplement) {
+                addSupplement(supplement);
+                searchInput.value = '';
+                searchResults.classList.remove('active');
+            }
+        }
+    });
+
+    // Close search results on outside click
+    document.addEventListener('click', function(e) {
+        if (!e.target.closest('.supplement-search')) {
+            searchResults.classList.remove('active');
+        }
+    });
+
+    // Add supplement to selection
+    function addSupplement(supplement) {
+        if (selectedSupplements.find(s => s.id === supplement.id)) return;
+        selectedSupplements.push(supplement);
+        renderSelectedSupplements();
+        updateAnalyzeButton();
+    }
+
+    // Remove supplement from selection
+    function removeSupplement(id) {
+        selectedSupplements = selectedSupplements.filter(s => s.id !== id);
+        renderSelectedSupplements();
+        updateAnalyzeButton();
+    }
+
+    // Render selected supplements
+    function renderSelectedSupplements() {
+        const container = document.getElementById('selected-supplements');
+        if (selectedSupplements.length === 0) {
+            container.innerHTML = '<p class="empty-state">No supplements added yet. Search above to add to your stack.</p>';
+            return;
+        }
+
+        container.innerHTML = selectedSupplements.map(s => `
+            <span class="selected-pill">
+                ${s.name}
+                <button onclick="window.removeSupplement('${s.id}')">&times;</button>
+            </span>
+        `).join('');
+    }
+
+    // Expose remove function globally
+    window.removeSupplement = removeSupplement;
+
+    // Update analyze button state
+    function updateAnalyzeButton() {
+        const btn = document.getElementById('analyze-btn');
+        btn.disabled = selectedSupplements.length === 0;
+    }
+
+    // Analyze button click
+    document.getElementById('analyze-btn').addEventListener('click', analyzeStack);
+
+    // Main analysis function
+    function analyzeStack() {
+        const results = document.getElementById('analyzer-results');
+        results.style.display = 'block';
+
+        // Find synergies
+        const foundSynergies = [];
+        interactions.synergies.forEach(syn => {
+            const has1 = selectedSupplements.find(s => s.id === syn.pair[0]);
+            const has2 = selectedSupplements.find(s => s.id === syn.pair[1]);
+            if (has1 && has2) {
+                foundSynergies.push({
+                    pair: [has1.name, has2.name],
+                    reason: syn.reason,
+                    strength: syn.strength
+                });
+            }
+        });
+
+        // Find conflicts
+        const foundConflicts = [];
+        interactions.conflicts.forEach(conf => {
+            const has1 = selectedSupplements.find(s => s.id === conf.pair[0]);
+            const has2 = selectedSupplements.find(s => s.id === conf.pair[1]);
+            if (has1 && has2) {
+                foundConflicts.push({
+                    pair: [has1.name, has2.name],
+                    reason: conf.reason,
+                    solution: conf.solution
+                });
+            }
+        });
+
+        // Find gaps based on selected goals
+        const gaps = [];
+        selectedGoals.forEach(goalKey => {
+            const goal = goals[goalKey];
+            if (!goal) return;
+
+            const essentialMissing = goal.essential.filter(e =>
+                !selectedSupplements.find(s => s.id === e)
+            );
+
+            essentialMissing.forEach(missing => {
+                const supp = supplements.find(s => s.id === missing);
+                if (supp && !gaps.find(g => g.id === missing)) {
+                    gaps.push({
+                        id: missing,
+                        name: supp.name,
+                        reason: `Essential for ${goal.name}`,
+                        amwayProduct: supp.amwayProduct
+                    });
+                }
+            });
+        });
+
+        // Check for zinc without copper
+        const hasZinc = selectedSupplements.find(s => s.id === 'zinc');
+        const hasCopper = selectedSupplements.find(s => s.id === 'copper');
+        if (hasZinc && !hasCopper) {
+            gaps.push({
+                id: 'copper',
+                name: 'Copper',
+                reason: 'Required to balance zinc supplementation (>25mg depletes copper)',
+                amwayProduct: null
+            });
+        }
+
+        // Build timing schedule
+        const schedule = {
+            'Morning (empty stomach)': [],
+            'Morning (with breakfast)': [],
+            'Afternoon': [],
+            'Evening': [],
+            'With meals': []
+        };
+
+        selectedSupplements.forEach(s => {
+            if (timingSchedule.morning_empty.includes(s.id)) {
+                schedule['Morning (empty stomach)'].push(s.name);
+            } else if (timingSchedule.morning_with_food.includes(s.id)) {
+                schedule['Morning (with breakfast)'].push(s.name);
+            } else if (timingSchedule.afternoon.includes(s.id)) {
+                schedule['Afternoon'].push(s.name);
+            } else if (timingSchedule.evening.includes(s.id)) {
+                schedule['Evening'].push(s.name);
+            } else if (timingSchedule.with_meals.includes(s.id)) {
+                schedule['With meals'].push(s.name);
+            } else {
+                // Default to morning with food
+                schedule['Morning (with breakfast)'].push(s.name);
+            }
+        });
+
+        // Render results
+        renderSummary();
+        renderSynergies(foundSynergies);
+        renderConflicts(foundConflicts);
+        renderGaps(gaps);
+        renderSchedule(schedule);
+        renderAmwayProducts();
+
+        // Scroll to results
+        results.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+
+    function renderSummary() {
+        const container = document.getElementById('stack-summary');
+        container.innerHTML = `
+            <div class="summary-stats">
+                <div class="stat">
+                    <div class="stat-value">${selectedSupplements.length}</div>
+                    <div class="stat-label">Supplements</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-value">${selectedGoals.length}</div>
+                    <div class="stat-label">Goals</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-value">${new Set(selectedSupplements.map(s => s.type)).size}</div>
+                    <div class="stat-label">Categories</div>
+                </div>
+            </div>
+        `;
+    }
+
+    function renderSynergies(synergies) {
+        const container = document.getElementById('synergies-list');
+        if (synergies.length === 0) {
+            container.innerHTML = '<p class="empty-result">No synergies detected. Add more supplements to find beneficial combinations.</p>';
+            return;
+        }
+
+        container.innerHTML = synergies.map(s => `
+            <div class="synergy-item">
+                <strong>${s.pair[0]} + ${s.pair[1]}</strong>
+                <p>${s.reason}</p>
+            </div>
+        `).join('');
+    }
+
+    function renderConflicts(conflicts) {
+        const container = document.getElementById('conflicts-list');
+        if (conflicts.length === 0) {
+            container.innerHTML = '<p class="empty-result">No timing conflicts detected. Your stack looks good!</p>';
+            return;
+        }
+
+        container.innerHTML = conflicts.map(c => `
+            <div class="conflict-item">
+                <strong>${c.pair[0]} + ${c.pair[1]}</strong>
+                <p>${c.reason}</p>
+                <p><strong>Solution:</strong> ${c.solution}</p>
+            </div>
+        `).join('');
+    }
+
+    function renderGaps(gaps) {
+        const container = document.getElementById('gaps-list');
+        if (gaps.length === 0) {
+            container.innerHTML = '<p class="empty-result">No significant gaps detected based on your goals.</p>';
+            return;
+        }
+
+        container.innerHTML = gaps.map(g => `
+            <div class="gap-item">
+                <strong>Consider adding: ${g.name}</strong>
+                <p>${g.reason}</p>
+            </div>
+        `).join('');
+    }
+
+    function renderSchedule(schedule) {
+        const container = document.getElementById('timing-schedule');
+        const slots = Object.entries(schedule).filter(([_, items]) => items.length > 0);
+
+        if (slots.length === 0) {
+            container.innerHTML = '<p class="empty-result">Add supplements to see your optimal timing schedule.</p>';
+            return;
+        }
+
+        container.innerHTML = `
+            <div class="timing-grid">
+                ${slots.map(([time, items]) => `
+                    <div class="timing-slot">
+                        <h4>${time}</h4>
+                        <ul>
+                            ${items.map(item => `<li>${item}</li>`).join('')}
+                        </ul>
+                    </div>
+                `).join('')}
+            </div>
+        `;
+    }
+
+    function renderAmwayProducts() {
+        const container = document.getElementById('amway-products');
+        const amwaySupps = selectedSupplements.filter(s => s.amwayProduct);
+
+        if (amwaySupps.length === 0) {
+            container.innerHTML = '';
+            return;
+        }
+
+        container.innerHTML = amwaySupps.map(s => `
+            <div class="amway-product">${s.amwayProduct}</div>
+        `).join('');
+    }
+});
+</script>
+
+{{ end }}
