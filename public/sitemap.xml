@@ -112,12 +112,12 @@
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/tags/energy-metabolism/</loc>
+    <loc>http://localhost:1313/guides/energy-production-how-your-body-creates-atp/</loc>
     <lastmod>2024-01-23T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/guides/energy-production-how-your-body-creates-atp/</loc>
+    <loc>http://localhost:1313/tags/energy-metabolism/</loc>
     <lastmod>2024-01-23T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -602,12 +602,12 @@
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/tags/cellular-health/</loc>
+    <loc>http://localhost:1313/tags/cellular-energy/</loc>
     <lastmod>2024-01-22T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/tags/cellular-energy/</loc>
+    <loc>http://localhost:1313/tags/cellular-health/</loc>
     <lastmod>2024-01-22T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>

@@ -128,7 +128,7 @@
       <description></description>
     </item>
     <item>
-      <title>Endocrine Health</title>
+      <title>Endocrine-Health</title>
       <link>http://localhost:1313/tags/endocrine-health/</link>
       <pubDate>Tue, 23 Jan 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/tags/endocrine-health/</guid>
@@ -142,7 +142,7 @@
       <description></description>
     </item>
     <item>
-      <title>Energy Metabolism</title>
+      <title>Energy-Metabolism</title>
       <link>http://localhost:1313/tags/energy-metabolism/</link>
       <pubDate>Tue, 23 Jan 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/tags/energy-metabolism/</guid>
@@ -275,7 +275,7 @@
       <description></description>
     </item>
     <item>
-      <title>Mitochondrial-Health</title>
+      <title>Mitochondrial Health</title>
       <link>http://localhost:1313/tags/mitochondrial-health/</link>
       <pubDate>Tue, 23 Jan 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/tags/mitochondrial-health/</guid>
@@ -569,7 +569,7 @@
       <description></description>
     </item>
     <item>
-      <title>Blood Sugar</title>
+      <title>Blood-Sugar</title>
       <link>http://localhost:1313/tags/blood-sugar/</link>
       <pubDate>Mon, 22 Jan 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/tags/blood-sugar/</guid>
@@ -611,17 +611,17 @@
       <description></description>
     </item>
     <item>
-      <title>Cellular Health</title>
-      <link>http://localhost:1313/tags/cellular-health/</link>
-      <pubDate>Mon, 22 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/cellular-health/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Cellular-Energy</title>
       <link>http://localhost:1313/tags/cellular-energy/</link>
       <pubDate>Mon, 22 Jan 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/tags/cellular-energy/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Cellular-Health</title>
+      <link>http://localhost:1313/tags/cellular-health/</link>
+      <pubDate>Mon, 22 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/cellular-health/</guid>
       <description></description>
     </item>
     <item>
@@ -765,7 +765,7 @@
       <description></description>
     </item>
     <item>
-      <title>Eye-Health</title>
+      <title>Eye Health</title>
       <link>http://localhost:1313/tags/eye-health/</link>
       <pubDate>Mon, 22 Jan 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/tags/eye-health/</guid>
@@ -926,7 +926,7 @@
       <description></description>
     </item>
     <item>
-      <title>Insulin Sensitivity</title>
+      <title>Insulin-Sensitivity</title>
       <link>http://localhost:1313/tags/insulin-sensitivity/</link>
       <pubDate>Mon, 22 Jan 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/tags/insulin-sensitivity/</guid>
@@ -947,7 +947,7 @@
       <description></description>
     </item>
     <item>
-      <title>Joint-Health</title>
+      <title>Joint Health</title>
       <link>http://localhost:1313/tags/joint-health/</link>
       <pubDate>Mon, 22 Jan 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/tags/joint-health/</guid>
@@ -1234,7 +1234,7 @@
       <description></description>
     </item>
     <item>
-      <title>Skin Health</title>
+      <title>Skin-Health</title>
       <link>http://localhost:1313/tags/skin-health/</link>
       <pubDate>Mon, 22 Jan 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/tags/skin-health/</guid>
@@ -1395,7 +1395,7 @@
       <description></description>
     </item>
     <item>
-      <title>Nervous System</title>
+      <title>Nervous-System</title>
       <link>http://localhost:1313/tags/nervous-system/</link>
       <pubDate>Sun, 21 Jan 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/tags/nervous-system/</guid>
