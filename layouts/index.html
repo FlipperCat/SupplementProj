@@ -1,14 +1,22 @@
 {{ define "main" }}
 
+<!-- Quiz Modal -->
+<div id="quiz-modal">
+    <div id="quiz-container"></div>
+</div>
+
 <!-- Hero Section -->
 <section class="hero">
     <div class="container">
         <h1>Evidence-Based Supplement Information</h1>
         <p>Your comprehensive guide to supplements, vitamins, and peptides. Research-backed information on what to take, how to combine, and what to expect.</p>
 
-        <div class="hero-search">
-            <input type="search" placeholder="Search supplements, stacks, or conditions...">
-            <button class="btn btn-primary">Search</button>
+        <div class="hero-actions">
+            <div class="hero-search">
+                <input type="search" placeholder="Search supplements, stacks, or conditions...">
+                <button class="btn btn-primary">Search</button>
+            </div>
+            <button class="btn btn-primary-outline" id="quiz-trigger-btn">Find Your Stack</button>
         </div>
 
         <div class="category-pills">
