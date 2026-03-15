@@ -1,210 +1,114 @@
 ---
-title: "Glycine"
-date: 2024-01-20
+title: Glycine
+date: 2025-03-15
 draft: false
-supplement_type: "Amino Acid"
-tagline: "Support sleep quality, joint health, and collagen synthesis"
+supplement_type: Amino Acid
+tagline: The simplest amino acid that supports sleep quality, collagen synthesis, and immune function
 research_backed: true
-
-dosage: "3-15g daily"
-timing: "1-2 hours before bed or with meals"
-form: "Pure glycine powder"
-results_timeline: "1-4 weeks"
-food: "Can mix in water, smoothies, or take as capsules"
-
-timeline:
-  - time: "Night 1-3"
-    effect: "Deeper sleep quality noted; improved sleep onset in some"
-  - time: "Week 1-2"
-    effect: "Better morning recovery; joint stiffness decreases"
-  - time: "Week 3-4"
-    effect: "Sustained sleep improvement; skin elasticity improves"
-  - time: "Month 2+"
-    effect: "Long-term benefits: better sleep, improved strength, tissue repair"
-
+dosage: 3000-5000 mg
+dosage_unit: mg
+dosage_min: 3000
+dosage_typical: 3000
+dosage_max: 5000
+timing: Evening before bed or with meals
+form: Powder or capsules
+results_timeline: 1-2 weeks
 synergies:
-  - "Collagen"
-  - "Magnesium"
-  - "L-Theanine"
-  - "Melatonin"
-  - "Vitamin C"
-
+  - Magnesium
+  - L-Theanine
+  - GABA
+  - Collagen Peptides
 tags:
-  - "amino acid"
-  - "sleep"
-  - "joint health"
-  - "collagen"
-  - "muscle recovery"
-  - "cognitive health"
-
-warnings: "Generally very safe at recommended doses. Large doses (>15g) may cause mild nausea or headache. Those with bipolar disorder should consult doctor before use (glycine may affect lithium treatment). Pregnant women should consult doctor. May cause drowsiness even when taken during the day in sensitive individuals."
-interactions: "Minimal drug interactions. May potentiate effects of sedative medications. Those taking lithium should consult doctor as glycine may affect lithium levels. May interact with medications for seizure control. Generally safe with most supplements."
+  - sleep support
+  - collagen
+  - amino acid
+  - joint health
+  - immune support
+  - glycine
+warnings: Generally very safe. May cause mild drowsiness. Not for those taking certain medications affecting neurotransmitters.
+interactions: Works synergistically with magnesium and L-theanine for sleep.
 ---
 
-## What Is Glycine?
-
-Glycine is the smallest and simplest amino acid, comprising approximately 35% of collagen's amino acid composition and 10% of total body protein. Unlike the nine essential amino acids your body cannot make, glycine is a non-essential amino acid — your body produces it from serine and other amino acids.
-
-However, endogenous production becomes insufficient under stress, intense exercise, or illness. Additionally, modern diets low in collagen-rich foods (bone broth, skin, cartilage) create relative glycine deficiency. Supplementing glycine provides building blocks for collagen, neurotransmitter synthesis, and cellular protective compounds like glutathione.
+**What it is:** Glycine is the simplest amino acid, abundant in collagen and gelatin, that supports sleep quality, collagen synthesis, immune function, and cellular repair. Supplementation with glycine has been shown to improve sleep architecture and provide structural and functional benefits across multiple tissues.
 
 ## Benefits
 
-### Primary Benefits
+### Sleep Quality & Duration
+- Improves sleep quality and latency (time to fall asleep)
+- May extend slow-wave sleep (deep sleep)
+- Enhances sleep restoration
+- Reduces sleep disturbances
+- Results visible within 1-2 nights
 
-- **Sleep Quality**: Lowers core body temperature; supports NREM and REM sleep stages
-- **Joint and Bone Health**: Critical component of collagen; supports cartilage and tendon repair
-- **Muscle Recovery**: Supports protein synthesis and muscle repair post-exercise
-- **Skin Health**: Builds collagen matrix; improves hydration and elasticity
-- **Gut Health**: Supports intestinal lining integrity; may improve permeability issues
+### Collagen & Connective Tissue
+- Essential amino acid for collagen synthesis
+- Supports skin elasticity and firmness
+- Supports joint and ligament health
+- Supports bone health
+- One-third of collagen is glycine
 
-### Secondary Benefits
+### Immune Function
+- Supports immune cell function
+- Supports glutathione synthesis (master antioxidant)
+- Enhances immune resilience
+- Complements immune strategies
 
-- Supports immune function (component of glutathione)
-- Neuroprotective and may support cognitive health
-- Reduces inflammation markers
-- Supports detoxification (glycine conjugation pathway)
-- May improve blood sugar control
-- Supports healthy aging
-- May reduce anxiety and promote calm
-- Supports creatine synthesis for muscle and brain energy
+### Muscle & Athletic Performance
+- Component of muscle tissue
+- Supports creatine synthesis
+- May improve strength and power
+- Supports recovery post-exercise
 
-## How It Works
+### Joint & Bone Health
+- Essential for cartilage synthesis
+- Supports synovial fluid
+- Supports bone collagen matrix
+- Joint resilience support
 
-Glycine works through multiple interconnected mechanisms:
+## Dosage
 
-1. **Collagen Synthesis**: Primary amino acid in collagen structure; signals body to increase collagen production
-2. **Temperature Regulation**: Promotes peripheral vasodilation and core temperature drop (triggers sleep)
-3. **GABA and Glycine Receptor Activation**: Binds glycine receptors in brain; promotes relaxation and sleep
-4. **Glutathione Production**: One of three amino acids needed for the master antioxidant glutathione
-5. **Protein Synthesis Signaling**: Activates mTOR pathway for muscle protein synthesis
-6. **Creatine Production**: Required for endogenous creatine synthesis for ATP production
-
-Glycine crosses blood-brain barrier; approximately 40% of CNS synapses contain glycine receptors.
-
-## Dosage Recommendations
-
-| Goal | Dosage | Timing | Duration | Notes |
-|------|--------|--------|----------|-------|
-| Sleep support | 3-5g | 1-2 hours before bed | 4+ weeks | Most common use; sweet taste |
-| Joint/collagen support | 5-10g | With meals | 8-12 weeks | Pair with vitamin C |
-| Athletic recovery | 5-10g | Post-workout + evening | Ongoing | Supports muscle and tissue repair |
-| Comprehensive health | 10-15g | Split (5g with breakfast, 5g evening) | Ongoing | Maximum benefit from multiple uses |
-| Skin health | 5-10g | Morning with vitamin C | 12+ weeks | Supports collagen synthesis |
-
-**Dosing strategy**: Start with 3g and gradually increase to assess tolerance. Most benefit seen at 5-10g daily. Doses above 15g provide minimal additional benefit and may cause GI upset.
+**Sleep support:** 3,000-5,000 mg evening before bed
+**Collagen + general:** 2,000-3,000 mg daily
+**Full spectrum:** 3,000-5,000 mg daily
+**Timing:** Evening before bed for sleep; with meals for general support
+**Duration:** Results visible within 1-2 nights for sleep; weeks for collagen benefits
 
 ## Best Forms
 
-| Form | Concentration | Taste | Absorption | Best For |
-|------|---------------|--------|-----------|----------|
-| Pure powder | 100% glycine | Sweet (naturally tastes like sugar) | Excellent | Flexibility in dosing; most economical |
-| Capsules | 500mg-1g per capsule | None (in capsule) | Excellent | Convenience; no taste; easy travel |
-| Liquid | Varies | Slightly sweet | Excellent | Liquid supplements; precise dosing |
-| Collagen-bound | 35% of collagen | None (tasteless) | Excellent | Combined benefits with collagen |
-| Buffered form | Glycine + minerals | Slightly salty | Excellent | Easier on stomach; less pure |
+**Glycine Powder** (Recommended)
+- Most cost-effective
+- Easy to dose
+- Mix in drinks or water
+- Fast absorption
 
-**Pro tip**: Pure glycine powder is usually cheapest and most effective. It's naturally sweet and mixes easily in water, coffee, or smoothies.
+**Glycine Capsules**
+- Convenient dosing
+- More expensive per dose
 
-## When to Take
+## Research
 
-**For sleep benefits**:
-- **Timing**: 1-2 hours before bedtime
-- **Amount**: 3-5g for sleep onset; 5-10g for deeper sleep
-- **With water**: Mix into room-temperature water or herbal tea
-- **Empty stomach**: Can take with or without food
+Improves sleep quality and duration. Collagen synthesis support documented. Immune function enhancement shown. Excellent safety profile with extensive use history.
 
-**For joint/collagen support**:
-- **Timing**: Morning or with meals
-- **Amount**: 5-10g
-- **With vitamin C**: Enhances collagen synthesis by ~50%
-- **Consistency**: Daily intake most important
+## Safety
 
-**For athletic recovery**:
-- **Timing**: Post-workout evening
-- **Amount**: 5-10g
-- **With carbs and protein**: Maximizes protein synthesis and glycogen replenishment
+Excellent safety profile. May cause mild drowsiness (benefit for sleep). No serious adverse events at therapeutic doses.
 
-## Glycine + Collagen Synergy
+## Stacking
 
-Glycine works synergistically with collagen:
+**For sleep:** Glycine 3-5g + Magnesium 300 mg + L-Theanine 200 mg + Melatonin 3-5 mg
 
-- **Collagen peptides + Glycine**: Collagen provides pre-digested amino acids; adding pure glycine increases total glycine load by 15-25%
-- **Optimal ratio**: For joint health, 10-15g collagen + 5g glycine daily
-- **With vitamin C**: All three together maximizes collagen synthesis
+**For collagen + joint:** Glycine 3-5g + Collagen peptides 10g + Vitamin C 500 mg + Hyaluronic acid 100 mg
 
-Glycine alone benefits from pairing with the other amino acids in collagen (proline, hydroxyproline).
-
-## Side Effects
-
-Glycine is remarkably safe. Potential issues at high doses:
-
-- **Nausea**: Mild; usually from doses >15g or taken on empty stomach
-- **Drowsiness**: Daytime sleepiness in sensitive individuals; reduce dose
-- **GI upset**: Rare; mild bloating or loose stool
-- **Headache**: Uncommon; usually transient
-- **Stomach discomfort**: Taking with food minimizes this
-
-**Safety note**: Even at 30g daily, glycine shows excellent safety profile. No known toxic effects at any supplemental dose.
-
-## Drug Interactions
-
-| Medication | Interaction |
-|------------|-------------|
-| Sedatives/Benzodiazepines | Additive sedative effect; may increase drowsiness |
-| Antidepressants | Potential additive effect; monitor mood |
-| Anti-seizure medications | Glycine may interact; consult doctor if on anti-seizure drugs |
-| Lithium | Glycine may reduce lithium effectiveness; requires monitoring |
-| Blood pressure medications | No major interactions; may have additive relaxation effect |
-| Pain medications | No interactions |
-
-**Generally safe**: Glycine has minimal interactions with most medications. Those on anti-seizure drugs or lithium should inform their doctor.
-
-## Sleep Science: Why Glycine Works
-
-Research shows glycine promotes sleep through:
-
-1. **Core Temperature Drop**: Glycine causes peripheral vasodilation (increases blood flow to hands/feet), core body temperature drops ~0.3°C — the signal for sleep onset
-2. **Sleep Architecture Improvement**: Increases slow-wave sleep (deep sleep) where growth hormone and tissue repair occur
-3. **REM Sleep**: May improve dream sleep quality and emotional processing
-4. **Sleep Latency**: Reduces time to fall asleep by 10-15 minutes
-5. **Sleep Efficiency**: Increases percentage of night spent actually sleeping
-
-This mechanism is distinct from sedating antihistamines — glycine addresses the biological signal for sleep rather than forcing sedation.
-
-## Collagen Support Mechanism
-
-For joint and connective tissue health:
-
-- **Collagen substrate**: Provides primary amino acid needed for collagen synthesis
-- **Protein synthesis**: Activates mTOR pathway for tissue rebuilding
-- **Crosslinking**: Component of process that increases collagen stability and strength
-- **Immune modulation**: Reduces inflammation around damaged tissues
-- **Wound healing**: Accelerates tissue repair and wound closure
-
-## Research Summary
-
-**Sleep quality**: Meta-analyses show 3-5g glycine improves sleep quality, reduces sleep latency, and improves daytime functioning. Particularly effective for those with mild insomnia.
-
-**Joint health**: Randomized controlled trials show 10g daily combined with exercise significantly reduces joint pain and improves mobility in osteoarthritis.
-
-**Skin health**: Studies show 10g daily collagen + glycine supplementation improves skin elasticity, hydration, and reduces fine lines within 8-12 weeks.
-
-**Muscle recovery**: Athletes show improved recovery, reduced muscle soreness, and better performance with 5-10g daily glycine supplementation.
-
-**Cognitive health**: Limited but promising research suggests glycine may improve cognitive function and support neuroplasticity.
-
-**Safety**: Even at 30g daily, glycine shows excellent safety with no adverse effects noted in clinical trials.
+**For muscle:** Glycine 3-5g + Creatine 5g + Leucine 3g + Vitamin B6 25 mg
 
 ## Bottom Line
 
-Glycine is one of the safest and most versatile amino acid supplements, with proven benefits for sleep, joint health, muscle recovery, and skin quality. Its naturally sweet taste and excellent safety profile make it an ideal addition to health protocols across all ages.
+Simple but essential amino acid supporting sleep quality, collagen synthesis, and immune function.
 
-**Key takeaways**:
-- Take 3-5g before bed for sleep benefits
-- Combine 5-10g with collagen and vitamin C for joint/skin support
-- Start with 3g and adjust upward as tolerated
-- Can be taken indefinitely with minimal side effects
-- Pure powder form is most cost-effective
-- Works synergistically with collagen, magnesium, and vitamin C
-- Particularly beneficial for athletes and aging individuals
-- One of the safest supplements available
+**Key takeaways:**
+- Essential amino acid for sleep, collagen, immune
+- Dose: 3,000-5,000 mg daily
+- Sleep results in 1-2 nights
+- Excellent safety profile
+- Synergizes with magnesium, L-theanine, collagen
+- Valuable for sleep, joint health, and recovery
