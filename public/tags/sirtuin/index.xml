@@ -1,19 +1,24 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Sirtuin on Supplement Guide - Evidence-Based Supplement Information</title>
-    <link>http://localhost:1313/tags/sirtuin/</link>
-    <description>Recent content in Sirtuin on Supplement Guide - Evidence-Based Supplement Information</description>
-    <generator>Hugo</generator>
-    <language>en-us</language>
-    <lastBuildDate>Mon, 22 Jan 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/sirtuin/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Resveratrol</title>
-      <link>http://localhost:1313/supplements/resveratrol/</link>
-      <pubDate>Mon, 22 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/supplements/resveratrol/</guid>
-      <description>&lt;h2 id=&#34;what-is-resveratrol&#34;&gt;What Is Resveratrol?&lt;/h2&gt;&#xA;&lt;p&gt;Resveratrol (3,5,4&amp;rsquo;-trihydroxystilbene) is a polyphenolic phytoalexin produced by plants as a defense response to fungal infection, UV radiation, and physical stress. It exists in two forms:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Trans-resveratrol&lt;/strong&gt; (biologically active): The naturally occurring form from grapes, red wine, and plant stress responses&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Cis-resveratrol&lt;/strong&gt; (biologically inert): An isomer produced by heat or photodegradation; lacks SIRT1 activation capacity&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;&lt;strong&gt;Natural Sources:&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Red grapes and red wine: 0.5-5 mg/L (varies by vintage and region)&lt;/li&gt;&#xA;&lt;li&gt;Japanese knotweed: 1-2 g per 100g (highest natural concentration)&lt;/li&gt;&#xA;&lt;li&gt;Peanuts, blueberries, mulberries: 0.1-1 mg per 100g&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;&lt;strong&gt;Bioavailability Challenge:&lt;/strong&gt;&#xA;Oral trans-resveratrol has notoriously poor bioavailability (0.5-5% depending on formulation), yet systemic effects are well-documented at moderate doses. This paradox is explained by:&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Sirtuin on Supplement Guide - Evidence-Based Supplement Information</title><link>https://supplementguide.co/tags/sirtuin/</link><description>Recent content in Sirtuin on Supplement Guide - Evidence-Based Supplement Information</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Thu, 25 Jan 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://supplementguide.co/tags/sirtuin/index.xml" rel="self" type="application/rss+xml"/><item><title>NMN (Nicotinamide Mononucleotide)</title><link>https://supplementguide.co/supplements/nmn-nicotinamide-mononucleotide/</link><pubDate>Thu, 25 Jan 2024 00:00:00 +0000</pubDate><guid>https://supplementguide.co/supplements/nmn-nicotinamide-mononucleotide/</guid><description>&lt;h2 id="what-is-nmn"&gt;What Is NMN?&lt;/h2&gt;
+&lt;p&gt;Nicotinamide Mononucleotide (NMN) is a nucleotide derived from ribose and nicotinamide, serving as a direct and immediate precursor to NAD+ (nicotinamide adenine dinucleotide). NAD+ is arguably the most important coenzyme in human biology, required for over 500 enzymatic reactions including:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Cellular energy production&lt;/strong&gt; (glycolysis, TCA cycle, oxidative phosphorylation)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Sirtuin activation&lt;/strong&gt; (SIRT1-7 longevity enzymes)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;DNA repair&lt;/strong&gt; (PARP enzyme function)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Circadian rhythm regulation&lt;/strong&gt; (CLOCK/BMAL1 pathways)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Cellular stress response&lt;/strong&gt; (redox balance, mitochondrial function)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;The NAD+ Decline Problem:&lt;/strong&gt;
+NAD+ levels decline approximately 50% between ages 40 and 60, with continued decline thereafter. This depletion is now understood to be a primary driver of aging at the cellular level:&lt;/p&gt;</description></item><item><title>Resveratrol</title><link>https://supplementguide.co/supplements/resveratrol/</link><pubDate>Mon, 22 Jan 2024 00:00:00 +0000</pubDate><guid>https://supplementguide.co/supplements/resveratrol/</guid><description>&lt;h2 id="what-is-resveratrol"&gt;What Is Resveratrol?&lt;/h2&gt;
+&lt;p&gt;Resveratrol (3,5,4&amp;rsquo;-trihydroxystilbene) is a polyphenolic phytoalexin produced by plants as a defense response to fungal infection, UV radiation, and physical stress. It exists in two forms:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Trans-resveratrol&lt;/strong&gt; (biologically active): The naturally occurring form from grapes, red wine, and plant stress responses&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Cis-resveratrol&lt;/strong&gt; (biologically inert): An isomer produced by heat or photodegradation; lacks SIRT1 activation capacity&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Natural Sources:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Red grapes and red wine: 0.5-5 mg/L (varies by vintage and region)&lt;/li&gt;
+&lt;li&gt;Japanese knotweed: 1-2 g per 100g (highest natural concentration)&lt;/li&gt;
+&lt;li&gt;Peanuts, blueberries, mulberries: 0.1-1 mg per 100g&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Bioavailability Challenge:&lt;/strong&gt;
+Oral trans-resveratrol has notoriously poor bioavailability (0.5-5% depending on formulation), yet systemic effects are well-documented at moderate doses. This paradox is explained by:&lt;/p&gt;</description></item></channel></rss>

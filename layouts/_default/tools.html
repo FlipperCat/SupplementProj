@@ -1,0 +1,430 @@
+{{ define "main" }}
+
+<div class="container">
+  <div class="tools-wrapper">
+
+    <!-- Header -->
+    <header class="tools-header">
+      <h1>{{ .Title }}</h1>
+      <p class="tools-subtitle">Interactive tools to help you build personalized stacks, check interactions, compare supplements, and optimize your regimen.</p>
+    </header>
+
+    <!-- Tools Grid -->
+    <div class="tools-grid">
+
+      <!-- Stack Generator -->
+      <div class="tool-card">
+        <div class="tool-icon">🏗️</div>
+        <h3>Supplement Stack Generator</h3>
+        <p class="tool-description">Create a personalized supplement stack based on your goals, budget, and experience level. Get exact dosages, timing, and expected results.</p>
+
+        <ul class="tool-features">
+          <li>Choose from 8 major health goals</li>
+          <li>Three budget tiers ($30-$150+/month)</li>
+          <li>Beginner to advanced experience levels</li>
+          <li>Dosage and timing schedule</li>
+          <li>Monthly cost breakdown</li>
+          <li>Expected results timeline</li>
+        </ul>
+
+        <a href="/stack-generator/" class="btn btn-primary btn-block">Build Your Stack</a>
+      </div>
+
+      <!-- Medication Checker -->
+      <div class="tool-card">
+        <div class="tool-icon">💊</div>
+        <h3>Medication Interaction Checker</h3>
+        <p class="tool-description">Search your medications to find safe and unsafe supplement interactions, nutrient depletions, and personalized recommendations.</p>
+
+        <ul class="tool-features">
+          <li>15+ common medications covered</li>
+          <li>Safe supplements identified</li>
+          <li>Unsafe supplements flagged</li>
+          <li>Nutrient depletions listed</li>
+          <li>Timing guidelines provided</li>
+          <li>Personalized protocol recommended</li>
+        </ul>
+
+        <a href="/medication-checker/" class="btn btn-primary btn-block">Check Your Medications</a>
+      </div>
+
+      <!-- Supplement Comparison -->
+      <div class="tool-card">
+        <div class="tool-icon">⚖️</div>
+        <h3>Supplement Comparison Tool</h3>
+        <p class="tool-description">Compare different forms of supplements, brands, absorption rates, and cost-per-dose to find the best option for you.</p>
+
+        <ul class="tool-features">
+          <li>5+ key supplements included</li>
+          <li>Multiple forms per supplement</li>
+          <li>Absorption rate comparison</li>
+          <li>Brand quality ratings</li>
+          <li>Cost-per-dose analysis</li>
+          <li>Expert recommendations</li>
+        </ul>
+
+        <a href="/supplement-comparison/" class="btn btn-primary btn-block">Compare Supplements</a>
+      </div>
+
+      <!-- Stack Analyzer -->
+      <div class="tool-card">
+        <div class="tool-icon">📊</div>
+        <h3>Supplement Stack Analyzer</h3>
+        <p class="tool-description">Add your current supplements to analyze synergies, conflicts, timing issues, and gaps based on your health goals.</p>
+
+        <ul class="tool-features">
+          <li>Search 50+ supplements</li>
+          <li>Detect synergies (positive interactions)</li>
+          <li>Identify timing conflicts</li>
+          <li>Find gaps in your stack</li>
+          <li>Optimal timing schedule</li>
+          <li>Goal-based recommendations</li>
+        </ul>
+
+        <a href="/analyzer/" class="btn btn-primary btn-block">Analyze Your Stack</a>
+      </div>
+
+      <!-- Quiz -->
+      <div class="tool-card">
+        <div class="tool-icon">❓</div>
+        <h3>Supplement Recommendation Quiz</h3>
+        <p class="tool-description">Answer 6 questions about your goals, age, health conditions, budget, and experience to get personalized supplement recommendations.</p>
+
+        <ul class="tool-features">
+          <li>8 major health goals</li>
+          <li>Age-based recommendations</li>
+          <li>Health condition adjustments</li>
+          <li>Budget-filtered results</li>
+          <li>Experience level appropriate</li>
+          <li>Instant results</li>
+        </ul>
+
+        <a href="/" class="btn btn-primary btn-block" onclick="window.quizHandler?.openQuiz?.(); return false;">Take the Quiz</a>
+      </div>
+
+      <!-- Lead Magnet -->
+      <div class="tool-card">
+        <div class="tool-icon">📧</div>
+        <h3>Free Personalized Protocol</h3>
+        <p class="tool-description">Get a free, personalized supplement protocol emailed to you based on your goals, budget, and health conditions.</p>
+
+        <ul class="tool-features">
+          <li>Customized to your goals</li>
+          <li>Budget-appropriate options</li>
+          <li>Daily timing schedule</li>
+          <li>Cost breakdown included</li>
+          <li>Expert tips included</li>
+          <li>Email course bonus</li>
+        </ul>
+
+        <a href="/lead-magnet/" class="btn btn-primary btn-block">Get Your Protocol</a>
+      </div>
+
+    </div>
+
+    <!-- How to Use Section -->
+    <section class="how-to-section">
+      <h2>How to Use These Tools</h2>
+
+      <div class="how-to-steps">
+        <div class="step">
+          <div class="step-number">1</div>
+          <h3>Choose Your Starting Point</h3>
+          <p>
+            New to supplements? Take the <strong>Quiz</strong> for quick recommendations, or try the <strong>Stack Generator</strong> for detailed customization.
+            <br>
+            <br>
+            Already taking supplements? Use the <strong>Stack Analyzer</strong> to optimize what you're already doing.
+          </p>
+        </div>
+
+        <div class="step">
+          <div class="step-number">2</div>
+          <h3>Get Specific Recommendations</h3>
+          <p>
+            Take our tools that match your situation:
+            <ul class="step-list">
+              <li>On medications? Check the <strong>Medication Checker</strong></li>
+              <li>Comparing brands? Use the <strong>Supplement Comparison Tool</strong></li>
+              <li>Want a free protocol? Try our <strong>Lead Magnet</strong></li>
+            </ul>
+          </p>
+        </div>
+
+        <div class="step">
+          <div class="step-number">3</div>
+          <h3>Learn & Implement</h3>
+          <p>
+            Each tool gives you:
+            <ul class="step-list">
+              <li>Exact dosages and timing</li>
+              <li>Expected results timeline</li>
+              <li>Safety warnings & interactions</li>
+              <li>Cost breakdown</li>
+            </ul>
+          </p>
+        </div>
+
+        <div class="step">
+          <div class="step-number">4</div>
+          <h3>Read Full Guides</h3>
+          <p>
+            Want to dive deeper? Read our comprehensive supplement guides on each supplement. They include:
+            <ul class="step-list">
+              <li>Research summary</li>
+              <li>Mechanisms of action</li>
+              <li>Dosage recommendations</li>
+              <li>Side effects & interactions</li>
+              <li>Who benefits most</li>
+            </ul>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+      <h2>Frequently Asked Questions</h2>
+
+      <div class="faq-items">
+        <div class="faq-item">
+          <h3>Are these tools free?</h3>
+          <p>Yes! All our tools are completely free to use. We're supported by affiliate commissions, so you're not paying anything extra.</p>
+        </div>
+
+        <div class="faq-item">
+          <h3>Are the recommendations personalized?</h3>
+          <p>Absolutely. Each tool uses YOUR inputs (goals, budget, health conditions, medications) to create personalized recommendations.</p>
+        </div>
+
+        <div class="faq-item">
+          <h3>Should I consult my doctor?</h3>
+          <p>Yes, especially if you're on medications or have health conditions. Our tools are educational and complement medical advice—they don't replace it.</p>
+        </div>
+
+        <div class="faq-item">
+          <h3>Can I use multiple tools?</h3>
+          <p>Yes! Many people start with the Quiz, then use the Comparison Tool to find brands, and the Medication Checker if they're on prescriptions.</p>
+        </div>
+
+        <div class="faq-item">
+          <h3>How often should I update my stack?</h3>
+          <p>Most stacks remain stable for 3-6 months. If your goals change or you experience side effects, regenerate your stack or consult the guides.</p>
+        </div>
+
+        <div class="faq-item">
+          <h3>Where can I buy the recommended supplements?</h3>
+          <p>We partner with Nutrilite/Amway and provide affiliate links. You can also purchase from other brands—all that matters is quality and potency.</p>
+        </div>
+      </div>
+    </section>
+
+  </div>
+</div>
+
+<style>
+.tools-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: var(--spacing-2xl) 0;
+}
+
+.tools-header {
+  text-align: center;
+  margin-bottom: var(--spacing-3xl);
+}
+
+.tools-header h1 {
+  margin-bottom: var(--spacing-md);
+}
+
+.tools-subtitle {
+  color: var(--color-text-light);
+  font-size: 1.125rem;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.tools-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--spacing-2xl);
+  margin-bottom: var(--spacing-3xl);
+}
+
+.tool-card {
+  background: var(--color-white);
+  border-radius: var(--radius-lg);
+  padding: var(--spacing-2xl);
+  box-shadow: var(--shadow-sm);
+  transition: all 0.2s;
+  display: flex;
+  flex-direction: column;
+}
+
+.tool-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-lg);
+}
+
+.tool-icon {
+  font-size: 2.5rem;
+  margin-bottom: var(--spacing-md);
+  line-height: 1;
+}
+
+.tool-card h3 {
+  margin: 0 0 var(--spacing-sm) 0;
+  color: var(--color-primary);
+}
+
+.tool-description {
+  color: var(--color-text-light);
+  margin-bottom: var(--spacing-md);
+  flex-grow: 1;
+}
+
+.tool-features {
+  list-style: none;
+  padding: 0;
+  margin: var(--spacing-md) 0;
+}
+
+.tool-features li {
+  padding: var(--spacing-xs) 0;
+  color: var(--color-text);
+  font-size: 0.9375rem;
+}
+
+.tool-features li::before {
+  content: "✓ ";
+  color: var(--color-success);
+  font-weight: bold;
+  margin-right: var(--spacing-xs);
+}
+
+.tool-card .btn {
+  margin-top: auto;
+  margin-top: var(--spacing-lg);
+}
+
+/* How To Section */
+.how-to-section {
+  margin: var(--spacing-3xl) 0;
+  padding: var(--spacing-3xl) var(--spacing-lg);
+  background: linear-gradient(135deg, #F0F9FF 0%, #F8FAFC 100%);
+  border-radius: var(--radius-lg);
+}
+
+.how-to-section h2 {
+  text-align: center;
+  margin-bottom: var(--spacing-2xl);
+  color: var(--color-primary);
+}
+
+.how-to-steps {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: var(--spacing-2xl);
+}
+
+.step {
+  background: white;
+  padding: var(--spacing-lg);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+}
+
+.step-number {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background: var(--color-primary);
+  color: white;
+  border-radius: 50%;
+  font-weight: bold;
+  font-size: 1.25rem;
+  margin-bottom: var(--spacing-md);
+}
+
+.step h3 {
+  margin: var(--spacing-md) 0;
+  color: var(--color-primary);
+}
+
+.step p {
+  color: var(--color-text-light);
+  margin: 0;
+  line-height: 1.6;
+}
+
+.step-list {
+  list-style: none;
+  padding: 0;
+  margin: var(--spacing-sm) 0 0 0;
+}
+
+.step-list li {
+  padding: var(--spacing-xs) 0;
+  padding-left: var(--spacing-md);
+  position: relative;
+}
+
+.step-list li::before {
+  content: "→ ";
+  position: absolute;
+  left: 0;
+  color: var(--color-primary);
+}
+
+/* FAQ Section */
+.faq-section {
+  margin: var(--spacing-3xl) 0;
+}
+
+.faq-section h2 {
+  text-align: center;
+  margin-bottom: var(--spacing-2xl);
+  color: var(--color-primary);
+}
+
+.faq-items {
+  display: grid;
+  gap: var(--spacing-lg);
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.faq-item {
+  background: var(--color-white);
+  padding: var(--spacing-lg);
+  border-radius: var(--radius-lg);
+  border-left: 4px solid var(--color-primary);
+  box-shadow: var(--shadow-sm);
+}
+
+.faq-item h3 {
+  margin: 0 0 var(--spacing-sm) 0;
+  color: var(--color-primary);
+}
+
+.faq-item p {
+  margin: 0;
+  color: var(--color-text-light);
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .tools-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .how-to-steps {
+    grid-template-columns: 1fr;
+  }
+}
+</style>
+
+{{ end }}

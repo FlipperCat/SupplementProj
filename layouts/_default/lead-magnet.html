@@ -1,0 +1,604 @@
+{{ define "main" }}
+
+<div class="lead-magnet-container">
+
+  <div class="lead-magnet-background"></div>
+
+  <div class="lead-magnet-content">
+
+    <!-- Hero Section -->
+    <header class="magnet-hero">
+      <h1>Your Free Personalized Supplement Protocol</h1>
+      <p class="hero-subtitle">Based on your goals, budget, and experience level</p>
+    </header>
+
+    <div class="magnet-layout">
+
+      <!-- Value Propositions -->
+      <div class="value-section">
+        <h2>What You'll Get</h2>
+
+        <div class="benefit-grid">
+          <div class="benefit-card">
+            <div class="benefit-icon">📋</div>
+            <h3>Personalized Stack</h3>
+            <p>A custom supplement protocol tailored to YOUR specific goals and budget</p>
+          </div>
+
+          <div class="benefit-card">
+            <div class="benefit-icon">⏱️</div>
+            <h3>Daily Schedule</h3>
+            <p>Exact dosages, timing, and which supplements to take together</p>
+          </div>
+
+          <div class="benefit-card">
+            <div class="benefit-icon">💰</div>
+            <h3>Cost Breakdown</h3>
+            <p>See exactly how much your stack costs per month and per dose</p>
+          </div>
+
+          <div class="benefit-card">
+            <div class="benefit-icon">📅</div>
+            <h3>Results Timeline</h3>
+            <p>When to expect results from each supplement and how they work together</p>
+          </div>
+
+          <div class="benefit-card">
+            <div class="benefit-icon">🔍</div>
+            <h3>Interaction Check</h3>
+            <p>Know which supplements work well together and which to avoid</p>
+          </div>
+
+          <div class="benefit-card">
+            <div class="benefit-icon">🛡️</div>
+            <h3>Safety Warnings</h3>
+            <p>Important side effects, contraindications, and drug interactions</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Signup Form -->
+      <div class="magnet-form-section">
+        <div class="form-card">
+          <h2>Get Your Free Protocol</h2>
+          <p class="form-intro">Enter your email to receive your personalized supplement guide + exclusive tips for optimizing your stack.</p>
+
+          <form id="magnet-form" class="magnet-form">
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" placeholder="you@example.com" required>
+            </div>
+
+            <div class="form-group">
+              <label for="name">First Name (Optional)</label>
+              <input type="text" id="name" name="name" placeholder="John">
+            </div>
+
+            <div class="form-group">
+              <label for="goal">Primary Health Goal *</label>
+              <select id="goal" name="goal" required>
+                <option value="">Select your goal...</option>
+                <option value="sleep">Better Sleep</option>
+                <option value="energy">More Energy</option>
+                <option value="focus">Mental Focus</option>
+                <option value="muscle">Muscle & Strength</option>
+                <option value="longevity">Longevity & Anti-Aging</option>
+                <option value="stress">Stress Relief</option>
+                <option value="immune">Immune Support</option>
+                <option value="recovery">Athletic Recovery</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="budget">Monthly Budget *</label>
+              <select id="budget" name="budget" required>
+                <option value="">Select your budget...</option>
+                <option value="budget">Under $50/month</option>
+                <option value="moderate">$50-$150/month</option>
+                <option value="premium">$150+/month</option>
+              </select>
+            </div>
+
+            <div class="form-group checkbox">
+              <label>
+                <input type="checkbox" name="agree" required>
+                <span>I agree to receive emails about supplements and health tips</span>
+              </label>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-block btn-large">Get My Free Protocol</button>
+
+            <p class="form-note">✓ No spam. Unsubscribe anytime. Privacy policy respected.</p>
+          </form>
+
+          <div id="form-success" style="display: none;">
+            <div class="success-message">
+              <div class="success-icon">✓</div>
+              <h3>Check Your Email!</h3>
+              <p>We've sent your personalized supplement protocol to your inbox. It should arrive in a few minutes.</p>
+              <p class="success-note">Don't forget to check your spam folder just in case.</p>
+              <a href="/stack-generator/" class="btn btn-primary btn-block">Explore Our Tools</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Social Proof -->
+        <div class="social-proof">
+          <h3>Trusted by Health Enthusiasts</h3>
+          <div class="proof-items">
+            <div class="proof-item">
+              <div class="proof-stat">10,000+</div>
+              <div class="proof-label">Active Readers</div>
+            </div>
+            <div class="proof-item">
+              <div class="proof-stat">50+</div>
+              <div class="proof-label">Supplements Covered</div>
+            </div>
+            <div class="proof-item">
+              <div class="proof-stat">100%</div>
+              <div class="proof-label">Evidence-Based</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- What's Included Section -->
+    <section class="included-section">
+      <h2>Your Personalized Protocol Includes</h2>
+
+      <div class="included-grid">
+        <div class="included-item">
+          <h3>📊 Custom Stack Analysis</h3>
+          <ul>
+            <li>Recommended supplements for YOUR goal</li>
+            <li>Optimal forms and brands</li>
+            <li>Exact dosages and timing</li>
+            <li>Interactions and synergies</li>
+          </ul>
+        </div>
+
+        <div class="included-item">
+          <h3>💡 Beginner's Education</h3>
+          <ul>
+            <li>Why each supplement matters for your goal</li>
+            <li>How they work together (synergies)</li>
+            <li>What to avoid and why</li>
+            <li>Timeline to expect results</li>
+          </ul>
+        </div>
+
+        <div class="included-item">
+          <h3>🛒 Shopping Guide</h3>
+          <ul>
+            <li>Top brands for your supplements</li>
+            <li>Where to buy quality options</li>
+            <li>Cost-per-dose analysis</li>
+            <li>Budget-friendly alternatives</li>
+          </ul>
+        </div>
+
+        <div class="included-item">
+          <h3>📧 Bonus: Email Series</h3>
+          <ul>
+            <li>Weekly supplement tips</li>
+            <li>New research and discoveries</li>
+            <li>Advanced optimization strategies</li>
+            <li>Exclusive deals and discounts</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Guarantee Section -->
+    <section class="guarantee-section">
+      <h2>Our Promise</h2>
+      <div class="guarantee-box">
+        <p><strong>All our information is evidence-based.</strong> We research peer-reviewed studies, not hype. Every supplement recommendation is backed by scientific literature.</p>
+        <p><strong>We're affiliate partners.</strong> We're transparent: we earn a small commission if you buy through our Nutrilite links. This helps us keep the site free and create better content.</p>
+        <p><strong>Your privacy matters.</strong> We never spam, sell your email, or share your data. Unsubscribe anytime with one click.</p>
+      </div>
+    </section>
+
+  </div>
+
+</div>
+
+<style>
+.lead-magnet-container {
+  background: linear-gradient(135deg, #F0F9FF 0%, #ECFDF5 100%);
+  min-height: 100vh;
+  padding: var(--spacing-2xl) var(--spacing-lg);
+  position: relative;
+}
+
+.lead-magnet-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0.3;
+  pointer-events: none;
+}
+
+.lead-magnet-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+.magnet-hero {
+  text-align: center;
+  margin-bottom: var(--spacing-3xl);
+}
+
+.magnet-hero h1 {
+  font-size: 2.5rem;
+  line-height: 1.2;
+  margin-bottom: var(--spacing-md);
+  color: var(--color-primary);
+}
+
+.hero-subtitle {
+  font-size: 1.25rem;
+  color: var(--color-text-light);
+}
+
+.magnet-layout {
+  display: grid;
+  grid-template-columns: 1fr 400px;
+  gap: var(--spacing-3xl);
+  align-items: start;
+  margin-bottom: var(--spacing-3xl);
+}
+
+/* Value Section */
+.value-section h2 {
+  margin-bottom: var(--spacing-2xl);
+  color: var(--color-primary);
+}
+
+.benefit-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--spacing-lg);
+}
+
+.benefit-card {
+  background: white;
+  padding: var(--spacing-lg);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  transition: all 0.2s;
+}
+
+.benefit-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-lg);
+}
+
+.benefit-icon {
+  font-size: 2.5rem;
+  margin-bottom: var(--spacing-md);
+}
+
+.benefit-card h3 {
+  margin: 0 0 var(--spacing-sm) 0;
+  color: var(--color-primary);
+}
+
+.benefit-card p {
+  margin: 0;
+  font-size: 0.9375rem;
+  color: var(--color-text-light);
+  line-height: 1.5;
+}
+
+/* Form Section */
+.magnet-form-section {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-lg);
+}
+
+.form-card {
+  background: white;
+  padding: var(--spacing-2xl);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-lg);
+}
+
+.form-card h2 {
+  margin-bottom: var(--spacing-md);
+  color: var(--color-primary);
+}
+
+.form-intro {
+  color: var(--color-text-light);
+  margin-bottom: var(--spacing-lg);
+}
+
+.magnet-form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  font-weight: 600;
+  margin-bottom: var(--spacing-xs);
+  color: var(--color-text);
+  font-size: 0.9375rem;
+}
+
+.form-group input,
+.form-group select {
+  padding: var(--spacing-md);
+  border: 2px solid var(--color-cream-dark);
+  border-radius: var(--radius-md);
+  font-size: 1rem;
+  font-family: inherit;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  outline: none;
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 3px rgba(45, 90, 39, 0.1);
+}
+
+.form-group.checkbox label {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  margin-bottom: 0;
+}
+
+.form-group.checkbox input[type="checkbox"] {
+  width: auto;
+  margin: 0;
+}
+
+.btn-large {
+  padding: var(--spacing-lg) var(--spacing-2xl);
+  font-size: 1.0625rem;
+  font-weight: 600;
+  margin: var(--spacing-lg) 0;
+}
+
+.form-note {
+  text-align: center;
+  font-size: 0.875rem;
+  color: var(--color-text-muted);
+  margin: 0;
+}
+
+.success-message {
+  text-align: center;
+  padding: var(--spacing-2xl);
+}
+
+.success-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 80px;
+  background: linear-gradient(135deg, var(--color-success), #10b981);
+  color: white;
+  border-radius: 50%;
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: var(--spacing-lg);
+}
+
+.success-message h3 {
+  margin: var(--spacing-lg) 0 var(--spacing-md) 0;
+  color: var(--color-success);
+}
+
+.success-message p {
+  color: var(--color-text-light);
+  margin-bottom: var(--spacing-md);
+}
+
+.success-note {
+  font-size: 0.9375rem;
+  margin-bottom: var(--spacing-lg);
+}
+
+/* Social Proof */
+.social-proof {
+  background: white;
+  padding: var(--spacing-lg);
+  border-radius: var(--radius-lg);
+  text-align: center;
+  box-shadow: var(--shadow-sm);
+}
+
+.social-proof h3 {
+  margin-bottom: var(--spacing-md);
+  color: var(--color-primary);
+}
+
+.proof-items {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--spacing-md);
+}
+
+.proof-item {
+  padding: var(--spacing-md);
+}
+
+.proof-stat {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--color-primary);
+}
+
+.proof-label {
+  font-size: 0.875rem;
+  color: var(--color-text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+/* Included Section */
+.included-section {
+  margin: var(--spacing-3xl) 0;
+  padding: var(--spacing-3xl) var(--spacing-lg);
+  background: white;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+}
+
+.included-section h2 {
+  text-align: center;
+  margin-bottom: var(--spacing-2xl);
+  color: var(--color-primary);
+}
+
+.included-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--spacing-2xl);
+}
+
+.included-item h3 {
+  margin-bottom: var(--spacing-md);
+  color: var(--color-primary);
+}
+
+.included-item ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.included-item li {
+  padding: var(--spacing-sm) 0;
+  padding-left: var(--spacing-lg);
+  position: relative;
+  color: var(--color-text-light);
+}
+
+.included-item li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: var(--color-success);
+  font-weight: bold;
+}
+
+/* Guarantee Section */
+.guarantee-section {
+  padding: var(--spacing-2xl) var(--spacing-lg);
+  margin: var(--spacing-3xl) 0;
+  text-align: center;
+}
+
+.guarantee-section h2 {
+  margin-bottom: var(--spacing-2xl);
+  color: var(--color-primary);
+}
+
+.guarantee-box {
+  background: white;
+  border-radius: var(--radius-lg);
+  padding: var(--spacing-2xl);
+  box-shadow: var(--shadow-sm);
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.guarantee-box p {
+  margin-bottom: var(--spacing-lg);
+  color: var(--color-text-light);
+  line-height: 1.7;
+}
+
+.guarantee-box p:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 900px) {
+  .magnet-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .benefit-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .included-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .proof-items {
+    grid-template-columns: 1fr;
+  }
+
+  .magnet-hero h1 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .form-card {
+    padding: var(--spacing-lg);
+  }
+
+  .magnet-hero h1 {
+    font-size: 1.75rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1rem;
+  }
+}
+</style>
+
+<script>
+document.getElementById('magnet-form').addEventListener('submit', async function(e) {
+  e.preventDefault();
+
+  const formData = {
+    email: document.getElementById('email').value,
+    name: document.getElementById('name').value || 'Friend',
+    goal: document.getElementById('goal').value,
+    budget: document.getElementById('budget').value,
+    timestamp: new Date().toISOString()
+  };
+
+  // Hide form and show success message
+  document.querySelector('.magnet-form').style.display = 'none';
+  document.getElementById('form-success').style.display = 'block';
+
+  // In production, you would send this to a backend service or email service
+  // For now, we'll just show the success message
+  console.log('Form submitted:', formData);
+
+  // You could integrate with services like:
+  // - Mailchimp
+  // - ConvertKit
+  // - EmailOctopus
+  // - Brevo (formerly Sendinblue)
+  // Example:
+  // fetch('/api/subscribe', {
+  //   method: 'POST',
+  //   headers: { 'Content-Type': 'application/json' },
+  //   body: JSON.stringify(formData)
+  // });
+});
+</script>
+
+{{ end }}

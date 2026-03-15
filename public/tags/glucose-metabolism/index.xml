@@ -1,26 +1,5 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Glucose Metabolism on Supplement Guide - Evidence-Based Supplement Information</title>
-    <link>http://localhost:1313/tags/glucose-metabolism/</link>
-    <description>Recent content in Glucose Metabolism on Supplement Guide - Evidence-Based Supplement Information</description>
-    <generator>Hugo</generator>
-    <language>en-us</language>
-    <lastBuildDate>Mon, 22 Jan 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/glucose-metabolism/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Vitamin B1 (Thiamine)</title>
-      <link>http://localhost:1313/supplements/vitamin-b1-thiamine/</link>
-      <pubDate>Mon, 22 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/supplements/vitamin-b1-thiamine/</guid>
-      <description>&lt;h2 id=&#34;what-is-vitamin-b1&#34;&gt;What Is Vitamin B1?&lt;/h2&gt;&#xA;&lt;p&gt;Vitamin B1 (thiamine) is a water-soluble B vitamin that serves as a critical coenzyme in carbohydrate metabolism, energy production, and nervous system function. Unlike most vitamins, thiamine cannot be synthesized by the human body and has no significant storage capacity — daily intake is essential.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Biochemistry&lt;/strong&gt;: Thiamine is converted to thiamine pyrophosphate (TPP), the active coenzyme form. TPP is required by three key enzymes: pyruvate dehydrogenase, alpha-ketoglutarate dehydrogenase, and transketolase. These enzymes occupy central positions in glucose metabolism and the pentose phosphate pathway (critical for NADPH production and biosynthesis).&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Vitamin B7 (Biotin)</title>
-      <link>http://localhost:1313/supplements/vitamin-b7-biotin/</link>
-      <pubDate>Mon, 22 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/supplements/vitamin-b7-biotin/</guid>
-      <description>&lt;h2 id=&#34;what-is-vitamin-b7&#34;&gt;What Is Vitamin B7?&lt;/h2&gt;&#xA;&lt;p&gt;Vitamin B7 (biotin) is a water-soluble B vitamin that serves as a coenzyme for carboxylase enzymes involved in energy metabolism and, most notably, in the synthesis of proteins with structural integrity — particularly keratin in hair, skin, and nails. While biotin is essential for several metabolic pathways, its most well-known and clinically relevant role for biohackers is in maintaining the structural protein keratin.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Biochemistry&lt;/strong&gt;: Biotin functions as a coenzyme by covalently binding to carboxylase enzymes through a lysine residue. Key roles include:&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Glucose Metabolism on Supplement Guide - Evidence-Based Supplement Information</title><link>https://supplementguide.co/tags/glucose-metabolism/</link><description>Recent content in Glucose Metabolism on Supplement Guide - Evidence-Based Supplement Information</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Mon, 22 Jan 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://supplementguide.co/tags/glucose-metabolism/index.xml" rel="self" type="application/rss+xml"/><item><title>Vitamin B1 (Thiamine)</title><link>https://supplementguide.co/supplements/vitamin-b1-thiamine/</link><pubDate>Mon, 22 Jan 2024 00:00:00 +0000</pubDate><guid>https://supplementguide.co/supplements/vitamin-b1-thiamine/</guid><description>&lt;h2 id="what-is-vitamin-b1"&gt;What Is Vitamin B1?&lt;/h2&gt;
+&lt;p&gt;Vitamin B1 (thiamine) is a water-soluble B vitamin that serves as a critical coenzyme in carbohydrate metabolism, energy production, and nervous system function. Unlike most vitamins, thiamine cannot be synthesized by the human body and has no significant storage capacity — daily intake is essential.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Biochemistry&lt;/strong&gt;: Thiamine is converted to thiamine pyrophosphate (TPP), the active coenzyme form. TPP is required by three key enzymes: pyruvate dehydrogenase, alpha-ketoglutarate dehydrogenase, and transketolase. These enzymes occupy central positions in glucose metabolism and the pentose phosphate pathway (critical for NADPH production and biosynthesis).&lt;/p&gt;</description></item><item><title>Vitamin B7 (Biotin)</title><link>https://supplementguide.co/supplements/vitamin-b7-biotin/</link><pubDate>Mon, 22 Jan 2024 00:00:00 +0000</pubDate><guid>https://supplementguide.co/supplements/vitamin-b7-biotin/</guid><description>&lt;h2 id="what-is-vitamin-b7"&gt;What Is Vitamin B7?&lt;/h2&gt;
+&lt;p&gt;Vitamin B7 (biotin) is a water-soluble B vitamin that serves as a coenzyme for carboxylase enzymes involved in energy metabolism and, most notably, in the synthesis of proteins with structural integrity — particularly keratin in hair, skin, and nails. While biotin is essential for several metabolic pathways, its most well-known and clinically relevant role for biohackers is in maintaining the structural protein keratin.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Biochemistry&lt;/strong&gt;: Biotin functions as a coenzyme by covalently binding to carboxylase enzymes through a lysine residue. Key roles include:&lt;/p&gt;</description></item></channel></rss>

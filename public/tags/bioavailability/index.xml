@@ -1,26 +1,22 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Bioavailability on Supplement Guide - Evidence-Based Supplement Information</title>
-    <link>http://localhost:1313/tags/bioavailability/</link>
-    <description>Recent content in Bioavailability on Supplement Guide - Evidence-Based Supplement Information</description>
-    <generator>Hugo</generator>
-    <language>en-us</language>
-    <lastBuildDate>Tue, 23 Jan 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/bioavailability/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Water-Soluble vs Fat-Soluble Nutrients: Critical Differences for Biohackers</title>
-      <link>http://localhost:1313/guides/water-soluble-vs-fat-soluble-nutrients-critical-differences-for-biohackers/</link>
-      <pubDate>Tue, 23 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/guides/water-soluble-vs-fat-soluble-nutrients-critical-differences-for-biohackers/</guid>
-      <description>&lt;h2 id=&#34;introduction-one-of-the-most-important-distinctions-in-biohacking&#34;&gt;Introduction: One of the Most Important Distinctions in Biohacking&lt;/h2&gt;&#xA;&lt;p&gt;The water-soluble vs fat-soluble divide is fundamental to intelligent supplementation. It determines:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;How much you should take&lt;/strong&gt;: Water-soluble can be safely megadosed; fat-soluble have absolute upper limits&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;How often you take it&lt;/strong&gt;: Water-soluble need daily replacement; fat-soluble can be dosed less frequently&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;When you take it&lt;/strong&gt;: Water-soluble timing is flexible; fat-soluble require fat for absorption&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;What happens with excess&lt;/strong&gt;: Water-soluble excess is urinary loss (mostly); fat-soluble excess causes toxicity&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Drug/nutrient interactions&lt;/strong&gt;: Fat-soluble absorption is blocked by fat-malabsorption drugs; water-soluble are safer&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Storage and degradation&lt;/strong&gt;: Water-soluble degrade with heat and light; fat-soluble are stable&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;This distinction separates supplement optimization from supplement-induced harm. Get it wrong and you can create deficiencies or toxicities.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Vitamin D2 vs D3: Which Form Actually Works?</title>
-      <link>http://localhost:1313/comparisons/vitamin-d2-vs-d3-which-form-actually-works/</link>
-      <pubDate>Fri, 19 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/comparisons/vitamin-d2-vs-d3-which-form-actually-works/</guid>
-      <description>&lt;h2 id=&#34;why-vitamin-d-form-matters&#34;&gt;Why Vitamin D Form Matters&lt;/h2&gt;&#xA;&lt;p&gt;The difference between D2 and D3 is more significant than most people realize:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Absorption&lt;/strong&gt;: D3 is absorbed and processed more efficiently&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Effectiveness&lt;/strong&gt;: D3 raises blood levels better than D2&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Duration&lt;/strong&gt;: D3 stays in your system longer&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Cost&lt;/strong&gt;: D2 is cheaper, but less effective (you need more)&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Source&lt;/strong&gt;: D2 is plant-based, D3 can come from animal or plant sources&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;For something as critical as vitamin D (which affects bone health, immune function, mood, and cardiovascular health), getting the right form matters significantly.&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Bioavailability on Supplement Guide - Evidence-Based Supplement Information</title><link>https://supplementguide.co/tags/bioavailability/</link><description>Recent content in Bioavailability on Supplement Guide - Evidence-Based Supplement Information</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Tue, 23 Jan 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://supplementguide.co/tags/bioavailability/index.xml" rel="self" type="application/rss+xml"/><item><title>Water-Soluble vs Fat-Soluble Nutrients: Critical Differences for Biohackers</title><link>https://supplementguide.co/guides/water-soluble-vs-fat-soluble-nutrients-critical-differences-for-biohackers/</link><pubDate>Tue, 23 Jan 2024 00:00:00 +0000</pubDate><guid>https://supplementguide.co/guides/water-soluble-vs-fat-soluble-nutrients-critical-differences-for-biohackers/</guid><description>&lt;h2 id="introduction-one-of-the-most-important-distinctions-in-biohacking"&gt;Introduction: One of the Most Important Distinctions in Biohacking&lt;/h2&gt;
+&lt;p&gt;The water-soluble vs fat-soluble divide is fundamental to intelligent supplementation. It determines:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;How much you should take&lt;/strong&gt;: Water-soluble can be safely megadosed; fat-soluble have absolute upper limits&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;How often you take it&lt;/strong&gt;: Water-soluble need daily replacement; fat-soluble can be dosed less frequently&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;When you take it&lt;/strong&gt;: Water-soluble timing is flexible; fat-soluble require fat for absorption&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;What happens with excess&lt;/strong&gt;: Water-soluble excess is urinary loss (mostly); fat-soluble excess causes toxicity&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Drug/nutrient interactions&lt;/strong&gt;: Fat-soluble absorption is blocked by fat-malabsorption drugs; water-soluble are safer&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Storage and degradation&lt;/strong&gt;: Water-soluble degrade with heat and light; fat-soluble are stable&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;This distinction separates supplement optimization from supplement-induced harm. Get it wrong and you can create deficiencies or toxicities.&lt;/p&gt;</description></item><item><title>Piperine (Black Pepper Extract / BioPerine)</title><link>https://supplementguide.co/supplements/piperine-black-pepper-extract-/-bioperine/</link><pubDate>Sat, 20 Jan 2024 00:00:00 +0000</pubDate><guid>https://supplementguide.co/supplements/piperine-black-pepper-extract-/-bioperine/</guid><description>&lt;h2 id="what-is-piperine"&gt;What Is Piperine?&lt;/h2&gt;
+&lt;p&gt;Piperine is the primary bioactive alkaloid found in black pepper (&lt;em&gt;Piper nigrum&lt;/em&gt;), responsible for its characteristic pungent taste. It comprises 5-9% of black pepper by weight and has been used in traditional Ayurvedic medicine for thousands of years to enhance the efficacy of herbal formulations.&lt;/p&gt;
+&lt;p&gt;In modern supplementation, piperine is best known as &lt;strong&gt;BioPerine&lt;/strong&gt;—a patented, standardized extract containing 95% piperine. It has earned the reputation as the &amp;ldquo;universal bioavailability enhancer&amp;rdquo; due to its remarkable ability to increase absorption of numerous nutrients, vitamins, and herbal compounds.&lt;/p&gt;</description></item><item><title>Vitamin D2 vs D3: Which Form Actually Works?</title><link>https://supplementguide.co/comparisons/vitamin-d2-vs-d3-which-form-actually-works/</link><pubDate>Fri, 19 Jan 2024 00:00:00 +0000</pubDate><guid>https://supplementguide.co/comparisons/vitamin-d2-vs-d3-which-form-actually-works/</guid><description>&lt;h2 id="why-vitamin-d-form-matters"&gt;Why Vitamin D Form Matters&lt;/h2&gt;
+&lt;p&gt;The difference between D2 and D3 is more significant than most people realize:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Absorption&lt;/strong&gt;: D3 is absorbed and processed more efficiently&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Effectiveness&lt;/strong&gt;: D3 raises blood levels better than D2&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Duration&lt;/strong&gt;: D3 stays in your system longer&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Cost&lt;/strong&gt;: D2 is cheaper, but less effective (you need more)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Source&lt;/strong&gt;: D2 is plant-based, D3 can come from animal or plant sources&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;For something as critical as vitamin D (which affects bone health, immune function, mood, and cardiovascular health), getting the right form matters significantly.&lt;/p&gt;</description></item></channel></rss>

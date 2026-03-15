@@ -1,33 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Cellular-Health on Supplement Guide - Evidence-Based Supplement Information</title>
-    <link>http://localhost:1313/tags/cellular-health/</link>
-    <description>Recent content in Cellular-Health on Supplement Guide - Evidence-Based Supplement Information</description>
-    <generator>Hugo</generator>
-    <language>en-us</language>
-    <lastBuildDate>Mon, 22 Jan 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/cellular-health/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Advanced Longevity &amp; Anti-Aging Stack</title>
-      <link>http://localhost:1313/stacks/advanced-longevity-anti-aging-stack/</link>
-      <pubDate>Mon, 22 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/stacks/advanced-longevity-anti-aging-stack/</guid>
-      <description>&lt;h2 id=&#34;overview-and-goals&#34;&gt;Overview and Goals&lt;/h2&gt;&#xA;&lt;p&gt;The Advanced Longevity Stack is designed for biohackers committed to extending both lifespan and healthspan through evidence-based interventions targeting the hallmarks of aging. Rather than relying on a single &amp;ldquo;silver bullet,&amp;rdquo; this protocol combines complementary compounds that address multiple aging mechanisms simultaneously.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Primary Goals:&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Restore and maintain NAD+ levels for optimal mitochondrial function&lt;/li&gt;&#xA;&lt;li&gt;Eliminate senescent cells that drive inflammation&lt;/li&gt;&#xA;&lt;li&gt;Activate longevity pathways (sirtuins, AMPK, autophagy)&lt;/li&gt;&#xA;&lt;li&gt;Reduce oxidative stress and support antioxidant defenses&lt;/li&gt;&#xA;&lt;li&gt;Preserve cognitive function and neural health&lt;/li&gt;&#xA;&lt;li&gt;Support telomere integrity&lt;/li&gt;&#xA;&lt;li&gt;Optimize cardiovascular and metabolic health&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;the-science-behind-the-combination&#34;&gt;The Science Behind the Combination&lt;/h2&gt;&#xA;&lt;h3 id=&#34;nad-restoration-the-foundation&#34;&gt;NAD+ Restoration: The Foundation&lt;/h3&gt;&#xA;&lt;p&gt;NAD+ (nicotinamide adenine dinucleotide) declines 50% between ages 20-50, impairing mitochondrial function. NMN directly replenishes NAD+ by bypassing the rate-limiting salvage pathway step that depletes with age. Resveratrol and pterostilbene act as SIRT1 activators, making existing NAD+ work more efficiently through sirtuin activation—these polyphenols extend lifespan in multiple model organisms.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Taurine</title>
-      <link>http://localhost:1313/supplements/taurine/</link>
-      <pubDate>Mon, 22 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/supplements/taurine/</guid>
-      <description>&lt;h2 id=&#34;what-is-taurine&#34;&gt;What Is Taurine?&lt;/h2&gt;&#xA;&lt;p&gt;Taurine is a conditionally essential amino acid synthesized in your body from the amino acids methionine and cysteine, with vitamin B6 and magnesium as cofactors. Unlike essential amino acids your body cannot make, taurine synthesis capacity is usually sufficient under normal conditions. However, during intense exercise, illness, stress, aging, or in vegans/vegetarians (low dietary taurine), endogenous production becomes inadequate.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Key biochemistry&lt;/strong&gt;:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Methionine + Cysteine → Taurine (via cysteine sulfinic acid pathway)&lt;/li&gt;&#xA;&lt;li&gt;Requires: Vitamin B6, magnesium, iron&lt;/li&gt;&#xA;&lt;li&gt;Accumulates in: Heart, skeletal muscle, brain, eyes, kidneys (highest concentrations in cardiac tissue)&lt;/li&gt;&#xA;&lt;li&gt;Dietary sources: Meat, fish, poultry, eggs; essentially absent in plants&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;&lt;strong&gt;Why taurine matters&lt;/strong&gt;: While your body makes taurine, dietary and supplemental sources may be beneficial during:&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Vitamin A</title>
-      <link>http://localhost:1313/supplements/vitamin-a/</link>
-      <pubDate>Mon, 22 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/supplements/vitamin-a/</guid>
-      <description>&lt;h2 id=&#34;what-is-vitamin-a&#34;&gt;What Is Vitamin A?&lt;/h2&gt;&#xA;&lt;p&gt;Vitamin A is a fat-soluble micronutrient that exists in two primary dietary forms: preformed vitamin A (retinol and retinyl esters found in animal products) and provitamin A carotenoids (primarily beta-carotene from plant sources). The term &amp;ldquo;vitamin A&amp;rdquo; refers to all compounds exhibiting retinol activity, though the biohacking distinction between different forms is critical for optimizing outcomes.&lt;/p&gt;&#xA;&lt;p&gt;As a biohacker, understanding the conversion ratio is essential: one unit of retinol activity equals one International Unit (IU). However, the conversion efficiency from beta-carotene to retinol is approximately 12:1 under ideal conditions and can be as poor as 21:1 in individuals with genetic polymorphisms in the beta-carotene oxygenase-1 (BCO1) gene. This genetic variation means that &amp;ldquo;optimal&amp;rdquo; beta-carotene dosing varies by individual phenotype—a critical consideration often missed in standard nutritional guidance.&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Cellular-Health on Supplement Guide - Evidence-Based Supplement Information</title><link>https://supplementguide.co/tags/cellular-health/</link><description>Recent content in Cellular-Health on Supplement Guide - Evidence-Based Supplement Information</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Fri, 14 Mar 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://supplementguide.co/tags/cellular-health/index.xml" rel="self" type="application/rss+xml"/><item><title>Fisetin</title><link>https://supplementguide.co/supplements/fisetin/</link><pubDate>Fri, 14 Mar 2025 00:00:00 +0000</pubDate><guid>https://supplementguide.co/supplements/fisetin/</guid><description>&lt;p&gt;&lt;strong&gt;What it is:&lt;/strong&gt; Fisetin is a plant flavonoid with senolytic properties—meaning it can selectively eliminate senescent (aged, dysfunctional) cells that accumulate with age. Emerging longevity research suggests senolytics may reverse aging processes at the cellular level, offering potential rejuvenation beyond conventional anti-aging approaches.&lt;/p&gt;
+&lt;h2 id="what-is-fisetin"&gt;What Is Fisetin?&lt;/h2&gt;
+&lt;p&gt;Fisetin is a naturally occurring flavonoid found in strawberries, apples, cucumbers, onions, and other plant foods. While it can be obtained from diet (one strawberry contains ~0.2 mg fisetin), therapeutic doses (100-500 mg) require supplementation.&lt;/p&gt;</description></item><item><title>Advanced Longevity &amp; Anti-Aging Stack</title><link>https://supplementguide.co/stacks/advanced-longevity-anti-aging-stack/</link><pubDate>Mon, 22 Jan 2024 00:00:00 +0000</pubDate><guid>https://supplementguide.co/stacks/advanced-longevity-anti-aging-stack/</guid><description>&lt;h2 id="overview-and-goals"&gt;Overview and Goals&lt;/h2&gt;
+&lt;p&gt;The Advanced Longevity Stack is designed for biohackers committed to extending both lifespan and healthspan through evidence-based interventions targeting the hallmarks of aging. Rather than relying on a single &amp;ldquo;silver bullet,&amp;rdquo; this protocol combines complementary compounds that address multiple aging mechanisms simultaneously.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Primary Goals:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Restore and maintain NAD+ levels for optimal mitochondrial function&lt;/li&gt;
+&lt;li&gt;Eliminate senescent cells that drive inflammation&lt;/li&gt;
+&lt;li&gt;Activate longevity pathways (sirtuins, AMPK, autophagy)&lt;/li&gt;
+&lt;li&gt;Reduce oxidative stress and support antioxidant defenses&lt;/li&gt;
+&lt;li&gt;Preserve cognitive function and neural health&lt;/li&gt;
+&lt;li&gt;Support telomere integrity&lt;/li&gt;
+&lt;li&gt;Optimize cardiovascular and metabolic health&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="the-science-behind-the-combination"&gt;The Science Behind the Combination&lt;/h2&gt;
+&lt;h3 id="nad-restoration-the-foundation"&gt;NAD+ Restoration: The Foundation&lt;/h3&gt;
+&lt;p&gt;NAD+ (nicotinamide adenine dinucleotide) declines 50% between ages 20-50, impairing mitochondrial function. NMN directly replenishes NAD+ by bypassing the rate-limiting salvage pathway step that depletes with age. Resveratrol and pterostilbene act as SIRT1 activators, making existing NAD+ work more efficiently through sirtuin activation—these polyphenols extend lifespan in multiple model organisms.&lt;/p&gt;</description></item><item><title>Vitamin A</title><link>https://supplementguide.co/supplements/vitamin-a/</link><pubDate>Mon, 22 Jan 2024 00:00:00 +0000</pubDate><guid>https://supplementguide.co/supplements/vitamin-a/</guid><description>&lt;h2 id="what-is-vitamin-a"&gt;What Is Vitamin A?&lt;/h2&gt;
+&lt;p&gt;Vitamin A is a fat-soluble micronutrient that exists in two primary dietary forms: preformed vitamin A (retinol and retinyl esters found in animal products) and provitamin A carotenoids (primarily beta-carotene from plant sources). The term &amp;ldquo;vitamin A&amp;rdquo; refers to all compounds exhibiting retinol activity, though the biohacking distinction between different forms is critical for optimizing outcomes.&lt;/p&gt;
+&lt;p&gt;As a biohacker, understanding the conversion ratio is essential: one unit of retinol activity equals one International Unit (IU). However, the conversion efficiency from beta-carotene to retinol is approximately 12:1 under ideal conditions and can be as poor as 21:1 in individuals with genetic polymorphisms in the beta-carotene oxygenase-1 (BCO1) gene. This genetic variation means that &amp;ldquo;optimal&amp;rdquo; beta-carotene dosing varies by individual phenotype—a critical consideration often missed in standard nutritional guidance.&lt;/p&gt;</description></item></channel></rss>

@@ -1,0 +1,781 @@
+{{ define "main" }}
+
+<div class="container">
+  <div class="stack-generator-wrapper">
+
+    <!-- Header -->
+    <header class="generator-header">
+      <h1>{{ .Title }}</h1>
+      <p class="generator-subtitle">Create a personalized stack tailored to your goals, budget, and experience level. Get exact dosages, timing, and expected results.</p>
+    </header>
+
+    <div class="generator-layout">
+
+      <!-- Input Section -->
+      <div class="generator-input-section" id="generator-input-section">
+        <div class="input-card">
+          <h3>Your Goals</h3>
+          <div class="goal-options" id="goal-options">
+            <!-- Populated by JavaScript -->
+          </div>
+        </div>
+
+        <div class="input-card">
+          <h3>Your Budget</h3>
+          <div class="budget-options" id="budget-options">
+            <label class="budget-option">
+              <input type="radio" name="budget" value="budget" checked>
+              <span class="budget-label">
+                <span class="budget-amount">Under $50/month</span>
+                <span class="budget-desc">3-5 core supplements</span>
+              </span>
+            </label>
+            <label class="budget-option">
+              <input type="radio" name="budget" value="moderate">
+              <span class="budget-label">
+                <span class="budget-amount">$50-$150/month</span>
+                <span class="budget-desc">6-8 comprehensive stack</span>
+              </span>
+            </label>
+            <label class="budget-option">
+              <input type="radio" name="budget" value="premium">
+              <span class="budget-label">
+                <span class="budget-amount">$150+/month</span>
+                <span class="budget-desc">Full optimized regimen</span>
+              </span>
+            </label>
+          </div>
+        </div>
+
+        <div class="input-card">
+          <h3>Experience Level</h3>
+          <div class="experience-options" id="experience-options">
+            <label class="experience-option">
+              <input type="radio" name="experience" value="beginner" checked>
+              <span class="experience-label">
+                <span class="experience-level">Beginner</span>
+                <span class="experience-desc">Just starting with supplements</span>
+              </span>
+            </label>
+            <label class="experience-option">
+              <input type="radio" name="experience" value="intermediate">
+              <span class="experience-label">
+                <span class="experience-level">Intermediate</span>
+                <span class="experience-desc">Taking some supplements already</span>
+              </span>
+            </label>
+            <label class="experience-option">
+              <input type="radio" name="experience" value="advanced">
+              <span class="experience-label">
+                <span class="experience-level">Advanced</span>
+                <span class="experience-desc">Optimized supplement regimen</span>
+              </span>
+            </label>
+          </div>
+        </div>
+
+        <button id="generate-stack-btn" class="btn btn-primary btn-block" disabled>Generate My Stack</button>
+      </div>
+
+      <!-- Results Section -->
+      <div class="generator-results" id="generator-results" style="display: none;">
+
+        <!-- Stack Overview -->
+        <div class="result-card stack-overview">
+          <h3>Your Personalized Stack</h3>
+          <div class="stack-stats" id="stack-stats">
+            <div class="stat">
+              <div class="stat-value" id="supplement-count">0</div>
+              <div class="stat-label">Supplements</div>
+            </div>
+            <div class="stat">
+              <div class="stat-value" id="monthly-cost">$0</div>
+              <div class="stat-label">Monthly Cost</div>
+            </div>
+            <div class="stat">
+              <div class="stat-value" id="results-timeline">0</div>
+              <div class="stat-label">Weeks to Results</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Stack Details -->
+        <div class="result-card">
+          <h3>Supplements & Dosages</h3>
+          <div id="stack-details-list" class="supplements-detail-list">
+            <!-- Populated by JavaScript -->
+          </div>
+        </div>
+
+        <!-- Daily Schedule -->
+        <div class="result-card">
+          <h3>Daily Timing Schedule</h3>
+          <div id="timing-schedule" class="timing-schedule">
+            <!-- Populated by JavaScript -->
+          </div>
+        </div>
+
+        <!-- Timeline to Results -->
+        <div class="result-card">
+          <h3>Expected Results Timeline</h3>
+          <div id="results-timeline-chart" class="timeline-chart">
+            <!-- Populated by JavaScript -->
+          </div>
+        </div>
+
+        <!-- Cost Breakdown -->
+        <div class="result-card">
+          <h3>Monthly Cost Breakdown</h3>
+          <div id="cost-breakdown" class="cost-breakdown">
+            <!-- Populated by JavaScript -->
+          </div>
+        </div>
+
+        <!-- Call to Action -->
+        <div class="result-card cta-card">
+          <h3>Shop This Stack</h3>
+          <p>Get all the supplements from this personalized stack from our recommended Nutrilite partner.</p>
+          <a href="https://www.amway.com/en_US/nutrilite" class="btn btn-primary btn-block" target="_blank" rel="noopener sponsored">
+            Shop on Amway/Nutrilite
+          </a>
+          <p class="cta-note">We earn a small commission if you purchase through our link. This helps support the site!</p>
+        </div>
+
+        <!-- Actions -->
+        <div class="result-actions">
+          <button id="new-stack-btn" class="btn btn-secondary">Create Different Stack</button>
+          <button id="save-stack-btn" class="btn btn-outline">Save to Bookmarks</button>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</div>
+
+<style>
+.stack-generator-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: var(--spacing-2xl) 0;
+}
+
+.generator-header {
+  text-align: center;
+  margin-bottom: var(--spacing-3xl);
+}
+
+.generator-header h1 {
+  margin-bottom: var(--spacing-md);
+}
+
+.generator-subtitle {
+  color: var(--color-text-light);
+  font-size: 1.125rem;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.generator-layout {
+  display: grid;
+  grid-template-columns: 350px 1fr;
+  gap: var(--spacing-2xl);
+  align-items: start;
+}
+
+.generator-input-section {
+  position: sticky;
+  top: 100px;
+}
+
+.input-card {
+  background: var(--color-white);
+  border-radius: var(--radius-lg);
+  padding: var(--spacing-lg);
+  margin-bottom: var(--spacing-lg);
+  box-shadow: var(--shadow-sm);
+}
+
+.input-card h3 {
+  font-size: 1rem;
+  margin-bottom: var(--spacing-md);
+  color: var(--color-primary);
+  font-weight: 600;
+}
+
+.goal-options {
+  display: grid;
+  gap: var(--spacing-sm);
+}
+
+.goal-option {
+  cursor: pointer;
+}
+
+.goal-option input {
+  display: none;
+}
+
+.goal-option-label {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+  padding: var(--spacing-md);
+  background: var(--color-cream);
+  border-radius: var(--radius-md);
+  border: 2px solid transparent;
+  transition: all 0.2s;
+}
+
+.goal-option input:checked + .goal-option-label {
+  background: var(--color-primary);
+  color: white;
+  border-color: var(--color-primary);
+}
+
+.goal-option-label .icon {
+  font-size: 1.5rem;
+}
+
+.goal-option-label .text {
+  flex: 1;
+}
+
+.goal-option-label .text strong {
+  display: block;
+  margin-bottom: var(--spacing-xs);
+}
+
+.goal-option-label .text span {
+  display: block;
+  font-size: 0.875rem;
+  opacity: 0.8;
+}
+
+.budget-options,
+.experience-options {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+}
+
+.budget-option,
+.experience-option {
+  cursor: pointer;
+}
+
+.budget-option input,
+.experience-option input {
+  display: none;
+}
+
+.budget-label,
+.experience-label {
+  display: block;
+  padding: var(--spacing-md);
+  background: var(--color-cream);
+  border-radius: var(--radius-md);
+  border: 2px solid transparent;
+  transition: all 0.2s;
+}
+
+.budget-option input:checked + .budget-label,
+.experience-option input:checked + .experience-label {
+  background: var(--color-primary);
+  color: white;
+  border-color: var(--color-primary);
+}
+
+.budget-amount,
+.experience-level {
+  display: block;
+  font-weight: 600;
+  margin-bottom: var(--spacing-xs);
+}
+
+.budget-desc,
+.experience-desc {
+  display: block;
+  font-size: 0.875rem;
+  opacity: 0.8;
+}
+
+#generate-stack-btn {
+  margin-top: var(--spacing-md);
+}
+
+#generate-stack-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.generator-results {
+  display: grid;
+  gap: var(--spacing-lg);
+}
+
+.result-card {
+  background: var(--color-white);
+  border-radius: var(--radius-lg);
+  padding: var(--spacing-lg);
+  box-shadow: var(--shadow-sm);
+}
+
+.result-card h3 {
+  margin-bottom: var(--spacing-md);
+  font-size: 1.125rem;
+  color: var(--color-primary);
+}
+
+.stack-overview {
+  background: linear-gradient(135deg, var(--color-primary) 0%, #40735E 100%);
+  color: white;
+}
+
+.stack-overview h3 {
+  color: white;
+}
+
+.stack-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--spacing-md);
+}
+
+.stat {
+  text-align: center;
+  padding: var(--spacing-md);
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: var(--radius-md);
+}
+
+.stat-value {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1;
+  margin-bottom: var(--spacing-xs);
+}
+
+.stat-label {
+  font-size: 0.875rem;
+  opacity: 0.9;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.supplements-detail-list {
+  display: grid;
+  gap: var(--spacing-md);
+}
+
+.supplement-detail-item {
+  background: var(--color-cream);
+  padding: var(--spacing-md);
+  border-radius: var(--radius-md);
+  border-left: 4px solid var(--color-primary);
+}
+
+.supplement-detail-item h4 {
+  margin: 0 0 var(--spacing-sm) 0;
+  color: var(--color-primary);
+}
+
+.supplement-detail-item p {
+  margin: var(--spacing-xs) 0;
+  font-size: 0.9375rem;
+  color: var(--color-text-light);
+}
+
+.supplement-detail-item .supp-dosage {
+  font-weight: 600;
+  color: var(--color-text);
+}
+
+.supplement-detail-item .supp-cost {
+  font-size: 0.875rem;
+  color: var(--color-text-muted);
+  margin-top: var(--spacing-sm);
+  padding-top: var(--spacing-sm);
+  border-top: 1px solid var(--color-cream-dark);
+}
+
+.timing-schedule {
+  display: grid;
+  gap: var(--spacing-md);
+}
+
+.timing-slot {
+  background: var(--color-cream);
+  padding: var(--spacing-md);
+  border-radius: var(--radius-md);
+}
+
+.timing-slot h4 {
+  font-size: 0.875rem;
+  color: var(--color-primary);
+  margin: 0 0 var(--spacing-sm) 0;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-weight: 600;
+}
+
+.timing-slot ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.timing-slot li {
+  padding: var(--spacing-xs) 0;
+  font-size: 0.9375rem;
+  color: var(--color-text);
+}
+
+.timing-slot li::before {
+  content: "→ ";
+  color: var(--color-primary);
+  font-weight: 600;
+  margin-right: var(--spacing-xs);
+}
+
+.timeline-chart {
+  display: grid;
+  gap: var(--spacing-md);
+}
+
+.timeline-phase {
+  background: var(--color-cream);
+  padding: var(--spacing-md);
+  border-radius: var(--radius-md);
+  border-left: 4px solid var(--color-primary);
+}
+
+.timeline-phase h4 {
+  margin: 0 0 var(--spacing-xs) 0;
+  color: var(--color-primary);
+  font-size: 0.9375rem;
+  font-weight: 600;
+}
+
+.timeline-phase p {
+  margin: 0;
+  font-size: 0.9375rem;
+  color: var(--color-text-light);
+}
+
+.cost-breakdown {
+  display: grid;
+  gap: var(--spacing-sm);
+}
+
+.cost-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--spacing-sm);
+  border-bottom: 1px solid var(--color-cream-dark);
+}
+
+.cost-item:last-child {
+  border-bottom: none;
+  font-weight: 600;
+  font-size: 1.125rem;
+  padding-top: var(--spacing-md);
+  margin-top: var(--spacing-md);
+  border-top: 2px solid var(--color-cream-dark);
+}
+
+.cost-item .item-name {
+  flex: 1;
+}
+
+.cost-item .item-cost {
+  text-align: right;
+  color: var(--color-primary);
+  font-weight: 600;
+}
+
+.cta-card {
+  background: linear-gradient(135deg, var(--color-terracotta) 0%, #D97706 100%);
+  color: white;
+}
+
+.cta-card h3 {
+  color: white;
+}
+
+.cta-card p {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.cta-card .btn {
+  background: white;
+  color: var(--color-terracotta);
+  margin: var(--spacing-md) 0;
+}
+
+.cta-card .btn:hover {
+  background: var(--color-cream);
+}
+
+.cta-note {
+  font-size: 0.875rem;
+  opacity: 0.8;
+  margin: var(--spacing-md) 0 0 0;
+}
+
+.result-actions {
+  display: flex;
+  gap: var(--spacing-md);
+  margin-top: var(--spacing-lg);
+}
+
+.result-actions .btn {
+  flex: 1;
+}
+
+@media (max-width: 900px) {
+  .generator-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .generator-input-section {
+    position: static;
+  }
+
+  .stack-stats {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .input-card {
+    padding: var(--spacing-md);
+  }
+
+  .result-card {
+    padding: var(--spacing-md);
+  }
+
+  .result-actions {
+    flex-direction: column;
+  }
+}
+</style>
+
+<script>
+document.addEventListener('DOMContentLoaded', async function() {
+  // Load supplement data
+  const response = await fetch('/data/stack-generator-data.json');
+  const data = await response.json();
+
+  const supplements = data.supplements;
+  const baseStacks = data.baseStacks;
+
+  const GOAL_ICONS = {
+    'sleep': '😴',
+    'energy': '⚡',
+    'focus': '🧠',
+    'muscle': '💪',
+    'longevity': '⏳',
+    'stress': '🧘',
+    'immune': '🛡️',
+    'recovery': '🏃'
+  };
+
+  const GOAL_LABELS = {
+    'sleep': 'Better Sleep',
+    'energy': 'More Energy',
+    'focus': 'Mental Focus',
+    'muscle': 'Muscle & Strength',
+    'longevity': 'Longevity & Anti-Aging',
+    'stress': 'Stress Relief',
+    'immune': 'Immune Support',
+    'recovery': 'Athletic Recovery'
+  };
+
+  let selectedGoal = null;
+  let selectedBudget = 'budget';
+  let selectedExperience = 'beginner';
+
+  // Populate goal options
+  const goalOptions = document.getElementById('goal-options');
+  Object.entries(GOAL_LABELS).forEach(([key, label]) => {
+    const option = document.createElement('label');
+    option.className = 'goal-option';
+    option.innerHTML = `
+      <input type="radio" name="goal" value="${key}">
+      <div class="goal-option-label">
+        <span class="icon">${GOAL_ICONS[key]}</span>
+        <div class="text">
+          <strong>${label}</strong>
+        </div>
+      </div>
+    `;
+    option.querySelector('input').addEventListener('change', (e) => {
+      selectedGoal = e.target.value;
+      updateGenerateButton();
+    });
+    goalOptions.appendChild(option);
+  });
+
+  // Budget listeners
+  document.querySelectorAll('input[name="budget"]').forEach(input => {
+    input.addEventListener('change', (e) => {
+      selectedBudget = e.target.value;
+    });
+  });
+
+  // Experience listeners
+  document.querySelectorAll('input[name="experience"]').forEach(input => {
+    input.addEventListener('change', (e) => {
+      selectedExperience = e.target.value;
+    });
+  });
+
+  function updateGenerateButton() {
+    const btn = document.getElementById('generate-stack-btn');
+    btn.disabled = !selectedGoal;
+  }
+
+  // Generate stack button
+  document.getElementById('generate-stack-btn').addEventListener('click', generateStack);
+
+  function generateStack() {
+    const stackIds = baseStacks[selectedGoal][selectedExperience];
+
+    // Filter by budget if needed
+    let filtered = stackIds;
+    const budgetMap = {
+      'budget': 3,
+      'moderate': 6,
+      'premium': 999
+    };
+
+    if (filtered.length > budgetMap[selectedBudget]) {
+      filtered = filtered.slice(0, budgetMap[selectedBudget]);
+    }
+
+    // Get supplement data
+    const stackSupplements = filtered.map(id => ({
+      id,
+      ...supplements[id]
+    }));
+
+    // Display results
+    displayResults(stackSupplements);
+  }
+
+  function displayResults(stackSupplements) {
+    const resultsDiv = document.getElementById('generator-results');
+    const totalCost = stackSupplements.reduce((sum, s) => sum + s.cost_per_month, 0);
+    const maxTimeline = Math.max(...stackSupplements.map(s => parseInt(s.results_timeline.split('-')[1] || s.results_timeline.split('-')[0])));
+
+    // Update stats
+    document.getElementById('supplement-count').textContent = stackSupplements.length;
+    document.getElementById('monthly-cost').textContent = '$' + totalCost;
+    document.getElementById('results-timeline').textContent = maxTimeline;
+
+    // Display supplements
+    const detailsList = document.getElementById('stack-details-list');
+    detailsList.innerHTML = stackSupplements.map(s => `
+      <div class="supplement-detail-item">
+        <h4>${s.name}</h4>
+        <p class="supp-dosage"><strong>Dosage:</strong> ${s.dosage}</p>
+        <p><strong>Timing:</strong> ${s.timing}</p>
+        <p><strong>Form:</strong> ${s.form}</p>
+        <p><strong>Results:</strong> ${s.results_timeline}</p>
+        <div class="supp-cost"><strong>Cost:</strong> $${s.cost_per_month}/month</div>
+      </div>
+    `).join('');
+
+    // Display timing schedule
+    const schedule = buildTimingSchedule(stackSupplements);
+    const timingDiv = document.getElementById('timing-schedule');
+    timingDiv.innerHTML = Object.entries(schedule).map(([time, items]) => `
+      <div class="timing-slot">
+        <h4>${time}</h4>
+        <ul>
+          ${items.map(item => `<li>${item}</li>`).join('')}
+        </ul>
+      </div>
+    `).join('');
+
+    // Display timeline
+    const timelineDiv = document.getElementById('results-timeline-chart');
+    timelineDiv.innerHTML = `
+      <div class="timeline-phase">
+        <h4>Week 1</h4>
+        <p>Initial absorption and adaptation. You may start noticing basic benefits.</p>
+      </div>
+      <div class="timeline-phase">
+        <h4>Week 2-4</h4>
+        <p>Tissue saturation increases. Most noticeable benefits become apparent.</p>
+      </div>
+      <div class="timeline-phase">
+        <h4>Week 4-8</h4>
+        <p>Full effects established. Compound benefits from synergies appear.</p>
+      </div>
+      <div class="timeline-phase">
+        <h4>Month 2+</h4>
+        <p>Sustained benefits. Long-term adaptations and cumulative effects.</p>
+      </div>
+    `;
+
+    // Display cost breakdown
+    const costDiv = document.getElementById('cost-breakdown');
+    let costHTML = stackSupplements.map(s => `
+      <div class="cost-item">
+        <span class="item-name">${s.name}</span>
+        <span class="item-cost">$${s.cost_per_month}</span>
+      </div>
+    `).join('');
+    costHTML += `<div class="cost-item"><span class="item-name">Total Monthly</span><span class="item-cost">$${totalCost}</span></div>`;
+    costDiv.innerHTML = costHTML;
+
+    // Show results
+    resultsDiv.style.display = 'block';
+    resultsDiv.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+
+  function buildTimingSchedule(stackSupplements) {
+    const schedule = {
+      'Morning (Empty Stomach)': [],
+      'Morning (With Breakfast)': [],
+      'Afternoon': [],
+      'Evening (With Food)': [],
+      'Before Bed': []
+    };
+
+    stackSupplements.forEach(s => {
+      const timing = s.timing.toLowerCase();
+      if (timing.includes('empty')) {
+        schedule['Morning (Empty Stomach)'].push(s.name);
+      } else if (timing.includes('evening') || timing.includes('bed')) {
+        schedule['Evening (With Food)'].push(s.name);
+      } else if (timing.includes('before bed')) {
+        schedule['Before Bed'].push(s.name);
+      } else if (timing.includes('afternoon')) {
+        schedule['Afternoon'].push(s.name);
+      } else {
+        schedule['Morning (With Breakfast)'].push(s.name);
+      }
+    });
+
+    return Object.fromEntries(Object.entries(schedule).filter(([_, items]) => items.length > 0));
+  }
+
+  // New stack button
+  document.getElementById('new-stack-btn').addEventListener('click', () => {
+    document.getElementById('generator-results').style.display = 'none';
+    document.getElementById('generator-input-section').scrollIntoView({ behavior: 'smooth' });
+  });
+
+  // Save button
+  document.getElementById('save-stack-btn').addEventListener('click', () => {
+    alert('Stack saved to your bookmarks! You can return to this stack later.');
+  });
+});
+</script>
+
+{{ end }}

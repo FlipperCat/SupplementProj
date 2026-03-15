@@ -1,0 +1,519 @@
+{
+  "supplements": {
+    "magnesium": {
+      "name": "Magnesium",
+      "type": "Mineral",
+      "dosage": "200-400 mg",
+      "timing": "Evening (with food)",
+      "form": "Glycinate or Threonate",
+      "cost_per_month": 15,
+      "results_timeline": "1-4 weeks",
+      "goals": ["sleep", "stress", "recovery"],
+      "description": "The master mineral for relaxation, sleep, and muscle recovery"
+    },
+    "vitamin-d3": {
+      "name": "Vitamin D3",
+      "type": "Vitamin",
+      "dosage": "1,000-4,000 IU",
+      "timing": "Morning (with breakfast)",
+      "form": "Softgel or Liquid",
+      "cost_per_month": 12,
+      "results_timeline": "2-4 weeks",
+      "goals": ["energy", "immune", "longevity", "muscle"],
+      "description": "Essential for immunity, bone health, and overall vitality"
+    },
+    "omega-3": {
+      "name": "Omega-3 (Fish Oil)",
+      "type": "Fatty Acid",
+      "dosage": "1,000-2,000 mg EPA+DHA",
+      "timing": "With meals",
+      "form": "Softgel",
+      "cost_per_month": 18,
+      "results_timeline": "2-8 weeks",
+      "goals": ["focus", "longevity", "recovery", "immune"],
+      "description": "Brain health, cardiovascular support, and anti-inflammatory"
+    },
+    "zinc": {
+      "name": "Zinc",
+      "type": "Mineral",
+      "dosage": "15-30 mg",
+      "timing": "Morning (with breakfast)",
+      "form": "Picolinate or Citrate",
+      "cost_per_month": 10,
+      "results_timeline": "1-2 weeks",
+      "goals": ["immune", "longevity", "muscle"],
+      "description": "Immune support and essential mineral (pair with copper)"
+    },
+    "vitamin-c": {
+      "name": "Vitamin C",
+      "type": "Vitamin",
+      "dosage": "500-1,000 mg",
+      "timing": "Morning (with breakfast)",
+      "form": "Ascorbic Acid or Liposomal",
+      "cost_per_month": 10,
+      "results_timeline": "1-2 weeks",
+      "goals": ["immune", "longevity", "recovery"],
+      "description": "Antioxidant and immune support"
+    },
+    "b-complex": {
+      "name": "B-Complex",
+      "type": "Vitamin",
+      "dosage": "As directed",
+      "timing": "Morning (with breakfast)",
+      "form": "Capsule",
+      "cost_per_month": 12,
+      "results_timeline": "1-2 weeks",
+      "goals": ["energy", "focus", "stress"],
+      "description": "Energy production and nervous system support"
+    },
+    "lions-mane": {
+      "name": "Lion's Mane Mushroom",
+      "type": "Adaptogen",
+      "dosage": "500-1,000 mg",
+      "timing": "Morning (with breakfast)",
+      "form": "Capsule or Powder",
+      "cost_per_month": 20,
+      "results_timeline": "2-6 weeks",
+      "goals": ["focus", "longevity"],
+      "description": "Cognitive enhancement and neuroprotection"
+    },
+    "l-theanine": {
+      "name": "L-Theanine",
+      "type": "Amino Acid",
+      "dosage": "100-200 mg",
+      "timing": "Morning or with caffeine",
+      "form": "Capsule or Powder",
+      "cost_per_month": 12,
+      "results_timeline": "1 day",
+      "goals": ["focus", "stress", "sleep"],
+      "description": "Calm focus and anxiety relief"
+    },
+    "ashwagandha": {
+      "name": "Ashwagandha",
+      "type": "Adaptogen",
+      "dosage": "300-600 mg",
+      "timing": "Morning or evening",
+      "form": "Capsule",
+      "cost_per_month": 15,
+      "results_timeline": "2-4 weeks",
+      "goals": ["stress", "sleep", "energy"],
+      "description": "Stress reduction and adaptogenic support"
+    },
+    "melatonin": {
+      "name": "Melatonin",
+      "type": "Hormone",
+      "dosage": "0.5-3 mg",
+      "timing": "30-60 min before bed",
+      "form": "Tablet or Liquid",
+      "cost_per_month": 8,
+      "results_timeline": "1 day",
+      "goals": ["sleep"],
+      "description": "Sleep support and circadian rhythm regulation"
+    },
+    "creatine": {
+      "name": "Creatine Monohydrate",
+      "type": "Amino Acid Derivative",
+      "dosage": "3-5 g daily",
+      "timing": "Post-workout (with carbs/protein)",
+      "form": "Powder",
+      "cost_per_month": 12,
+      "results_timeline": "3-4 weeks",
+      "goals": ["muscle", "recovery", "longevity"],
+      "description": "Muscle strength and cognitive support"
+    },
+    "coq10": {
+      "name": "CoQ10",
+      "type": "Antioxidant",
+      "dosage": "100-300 mg",
+      "timing": "With meals",
+      "form": "Softgel",
+      "cost_per_month": 20,
+      "results_timeline": "4-8 weeks",
+      "goals": ["energy", "longevity", "recovery"],
+      "description": "Cellular energy and heart health"
+    },
+    "probiotics": {
+      "name": "Probiotics",
+      "type": "Live Culture",
+      "dosage": "10-50 billion CFU",
+      "timing": "Morning (on empty stomach or with food)",
+      "form": "Capsule or Powder",
+      "cost_per_month": 25,
+      "results_timeline": "1-2 weeks",
+      "goals": ["immune", "longevity"],
+      "description": "Gut health and immune support"
+    },
+    "curcumin": {
+      "name": "Curcumin (Turmeric)",
+      "type": "Polyphenol",
+      "dosage": "500-1,000 mg",
+      "timing": "With meals and black pepper",
+      "form": "Capsule",
+      "cost_per_month": 18,
+      "results_timeline": "2-4 weeks",
+      "goals": ["longevity", "recovery"],
+      "description": "Anti-inflammatory and antioxidant support"
+    },
+    "nac": {
+      "name": "NAC (N-Acetyl Cysteine)",
+      "type": "Amino Acid",
+      "dosage": "600-1,200 mg",
+      "timing": "Morning (with food)",
+      "form": "Capsule",
+      "cost_per_month": 18,
+      "results_timeline": "2-4 weeks",
+      "goals": ["immune", "longevity", "recovery"],
+      "description": "Glutathione production and detoxification"
+    },
+    "iron": {
+      "name": "Iron",
+      "type": "Mineral",
+      "dosage": "15-25 mg",
+      "timing": "Morning (empty stomach)",
+      "form": "Ferrous Bisglycinate",
+      "cost_per_month": 12,
+      "results_timeline": "2-4 weeks",
+      "goals": ["energy"],
+      "description": "Energy and oxygen transport support"
+    },
+    "selenium": {
+      "name": "Selenium",
+      "type": "Mineral",
+      "dosage": "100-200 mcg",
+      "timing": "Morning (with food)",
+      "form": "Tablet",
+      "cost_per_month": 8,
+      "results_timeline": "2-4 weeks",
+      "goals": ["immune", "longevity"],
+      "description": "Antioxidant and immune support"
+    },
+    "collagen": {
+      "name": "Collagen Peptides",
+      "type": "Protein",
+      "dosage": "10-20 g",
+      "timing": "Morning (with beverage)",
+      "form": "Powder",
+      "cost_per_month": 22,
+      "results_timeline": "4-8 weeks",
+      "goals": ["recovery", "longevity"],
+      "description": "Skin, joint, and connective tissue support"
+    },
+    "calcium": {
+      "name": "Calcium",
+      "type": "Mineral",
+      "dosage": "500-1,000 mg",
+      "timing": "Morning and evening (with food)",
+      "form": "Citrate",
+      "cost_per_month": 10,
+      "results_timeline": "4-12 weeks",
+      "goals": ["longevity"],
+      "description": "Bone health and mineral density"
+    },
+    "alpha-gpc": {
+      "name": "Alpha-GPC",
+      "type": "Choline Compound",
+      "dosage": "300-600 mg",
+      "timing": "Morning (with food)",
+      "form": "Capsule",
+      "cost_per_month": 28,
+      "results_timeline": "2-4 weeks",
+      "goals": ["focus"],
+      "description": "Acetylcholine production and cognitive support"
+    },
+    "phosphatidylserine": {
+      "name": "Phosphatidylserine",
+      "type": "Phospholipid",
+      "dosage": "100-300 mg",
+      "timing": "Morning",
+      "form": "Capsule",
+      "cost_per_month": 22,
+      "results_timeline": "2-4 weeks",
+      "goals": ["focus", "stress"],
+      "description": "Brain cell structure and mood support"
+    },
+    "glycine": {
+      "name": "Glycine",
+      "type": "Amino Acid",
+      "dosage": "3-5 g",
+      "timing": "Evening (powder in water)",
+      "form": "Powder",
+      "cost_per_month": 10,
+      "results_timeline": "1-2 weeks",
+      "goals": ["sleep", "recovery"],
+      "description": "Sleep quality and connective tissue support"
+    },
+    "gaba": {
+      "name": "GABA",
+      "type": "Neurotransmitter",
+      "dosage": "500-1,000 mg",
+      "timing": "Evening (before bed)",
+      "form": "Capsule",
+      "cost_per_month": 15,
+      "results_timeline": "1-2 weeks",
+      "goals": ["sleep", "stress"],
+      "description": "Relaxation and sleep support"
+    },
+    "5-htp": {
+      "name": "5-HTP",
+      "type": "Amino Acid",
+      "dosage": "50-100 mg",
+      "timing": "Evening",
+      "form": "Capsule",
+      "cost_per_month": 18,
+      "results_timeline": "1-2 weeks",
+      "goals": ["sleep", "stress"],
+      "description": "Serotonin precursor for mood and sleep"
+    },
+    "vitamin-k2": {
+      "name": "Vitamin K2",
+      "type": "Vitamin",
+      "dosage": "45-180 mcg",
+      "timing": "With meals",
+      "form": "Capsule or Softgel",
+      "cost_per_month": 18,
+      "results_timeline": "4-8 weeks",
+      "goals": ["longevity"],
+      "description": "Bone and cardiovascular health"
+    },
+    "berberine": {
+      "name": "Berberine",
+      "type": "Plant Alkaloid",
+      "dosage": "500-1,500 mg",
+      "timing": "With meals",
+      "form": "Capsule",
+      "cost_per_month": 20,
+      "results_timeline": "2-4 weeks",
+      "goals": ["longevity"],
+      "description": "Blood sugar and metabolic support"
+    },
+    "alpha-lipoic-acid": {
+      "name": "Alpha-Lipoic Acid",
+      "type": "Antioxidant",
+      "dosage": "300-600 mg",
+      "timing": "Morning (with food)",
+      "form": "Capsule",
+      "cost_per_month": 16,
+      "results_timeline": "2-4 weeks",
+      "goals": ["longevity"],
+      "description": "Mitochondrial support and blood sugar"
+    },
+    "copper": {
+      "name": "Copper",
+      "type": "Mineral",
+      "dosage": "1-2 mg",
+      "timing": "Morning (with food)",
+      "form": "Tablet",
+      "cost_per_month": 8,
+      "results_timeline": "2-4 weeks",
+      "goals": ["muscle"],
+      "description": "Copper balance (required with zinc supplementation)"
+    },
+    "vitamin-e": {
+      "name": "Vitamin E",
+      "type": "Vitamin",
+      "dosage": "200-400 IU",
+      "timing": "With meals",
+      "form": "Softgel",
+      "cost_per_month": 12,
+      "results_timeline": "4-8 weeks",
+      "goals": ["longevity", "recovery"],
+      "description": "Fat-soluble antioxidant protection"
+    },
+    "potassium": {
+      "name": "Potassium",
+      "type": "Mineral",
+      "dosage": "100-200 mg",
+      "timing": "With meals",
+      "form": "Tablet",
+      "cost_per_month": 12,
+      "results_timeline": "1-2 weeks",
+      "goals": ["energy"],
+      "description": "Electrolyte balance and energy"
+    },
+    "cdp-choline": {
+      "name": "CDP-Choline",
+      "type": "Choline Compound",
+      "dosage": "250-500 mg",
+      "timing": "Morning (with food)",
+      "form": "Capsule",
+      "cost_per_month": 24,
+      "results_timeline": "2-4 weeks",
+      "goals": ["focus"],
+      "description": "Acetylcholine and phospholipid precursor"
+    },
+    "vitamin-b1-thiamine": {
+      "name": "Vitamin B1 (Thiamine)",
+      "type": "Vitamin",
+      "dosage": "25-100 mg",
+      "timing": "Morning (with breakfast)",
+      "form": "Tablet",
+      "cost_per_month": 8,
+      "results_timeline": "1-2 weeks",
+      "goals": ["energy", "focus"],
+      "description": "Energy metabolism and nerve function"
+    },
+    "vitamin-b2-riboflavin": {
+      "name": "Vitamin B2 (Riboflavin)",
+      "type": "Vitamin",
+      "dosage": "25-100 mg",
+      "timing": "Morning (with breakfast)",
+      "form": "Tablet",
+      "cost_per_month": 8,
+      "results_timeline": "1-2 weeks",
+      "goals": ["energy"],
+      "description": "Energy production and antioxidant"
+    },
+    "vitamin-b5-pantothenic-acid": {
+      "name": "Vitamin B5 (Pantothenic Acid)",
+      "type": "Vitamin",
+      "dosage": "100-500 mg",
+      "timing": "Morning (with breakfast)",
+      "form": "Tablet",
+      "cost_per_month": 8,
+      "results_timeline": "1-2 weeks",
+      "goals": ["energy", "stress"],
+      "description": "Adrenal function and energy"
+    },
+    "vitamin-b6-pyridoxine": {
+      "name": "Vitamin B6 (Pyridoxine)",
+      "type": "Vitamin",
+      "dosage": "25-100 mg",
+      "timing": "Morning (with breakfast)",
+      "form": "Tablet",
+      "cost_per_month": 8,
+      "results_timeline": "1-2 weeks",
+      "goals": ["energy", "focus"],
+      "description": "Neurotransmitter synthesis"
+    },
+    "vitamin-b7-biotin": {
+      "name": "Vitamin B7 (Biotin)",
+      "type": "Vitamin",
+      "dosage": "2,500-10,000 mcg",
+      "timing": "Morning (with breakfast)",
+      "form": "Tablet",
+      "cost_per_month": 12,
+      "results_timeline": "4-8 weeks",
+      "goals": ["longevity"],
+      "description": "Hair, skin, and nail health"
+    },
+    "vitamin-b9-folate": {
+      "name": "Vitamin B9 (Folate)",
+      "type": "Vitamin",
+      "dosage": "400-800 mcg",
+      "timing": "Morning (with breakfast)",
+      "form": "Tablet",
+      "cost_per_month": 8,
+      "results_timeline": "1-2 weeks",
+      "goals": ["longevity"],
+      "description": "DNA synthesis and cell division"
+    },
+    "vitamin-b12-cobalamin": {
+      "name": "Vitamin B12 (Cobalamin)",
+      "type": "Vitamin",
+      "dosage": "1,000-2,000 mcg",
+      "timing": "Morning (sublingual or with food)",
+      "form": "Tablet or Sublingual",
+      "cost_per_month": 10,
+      "results_timeline": "1-2 weeks",
+      "goals": ["energy", "focus"],
+      "description": "Energy and cognitive support"
+    },
+    "iodine": {
+      "name": "Iodine",
+      "type": "Mineral",
+      "dosage": "100-200 mcg",
+      "timing": "Morning (with food)",
+      "form": "Tablet",
+      "cost_per_month": 8,
+      "results_timeline": "2-4 weeks",
+      "goals": ["energy"],
+      "description": "Thyroid function and metabolism"
+    },
+    "manganese": {
+      "name": "Manganese",
+      "type": "Mineral",
+      "dosage": "2-10 mg",
+      "timing": "Morning (with food)",
+      "form": "Tablet",
+      "cost_per_month": 8,
+      "results_timeline": "2-4 weeks",
+      "goals": ["longevity"],
+      "description": "Bone formation and antioxidant"
+    },
+    "chromium": {
+      "name": "Chromium",
+      "type": "Mineral",
+      "dosage": "100-200 mcg",
+      "timing": "Morning (with meals)",
+      "form": "Tablet",
+      "cost_per_month": 8,
+      "results_timeline": "2-8 weeks",
+      "goals": ["energy"],
+      "description": "Blood sugar regulation"
+    },
+    "tyrosine": {
+      "name": "L-Tyrosine",
+      "type": "Amino Acid",
+      "dosage": "500-1,000 mg",
+      "timing": "Morning (on empty stomach)",
+      "form": "Capsule or Powder",
+      "cost_per_month": 14,
+      "results_timeline": "1-2 weeks",
+      "goals": ["energy", "focus", "stress"],
+      "description": "Dopamine and stress hormone support"
+    },
+    "tryptophan": {
+      "name": "L-Tryptophan",
+      "type": "Amino Acid",
+      "dosage": "500-2,000 mg",
+      "timing": "Evening",
+      "form": "Capsule",
+      "cost_per_month": 16,
+      "results_timeline": "1-2 weeks",
+      "goals": ["sleep", "stress"],
+      "description": "Serotonin precursor and sleep support"
+    }
+  },
+  "baseStacks": {
+    "sleep": {
+      "beginner": ["magnesium", "melatonin"],
+      "intermediate": ["magnesium", "melatonin", "l-theanine", "glycine"],
+      "advanced": ["magnesium", "melatonin", "l-theanine", "glycine", "5-htp", "gaba"]
+    },
+    "energy": {
+      "beginner": ["vitamin-d3", "b-complex", "iron"],
+      "intermediate": ["vitamin-d3", "b-complex", "iron", "coq10", "vitamin-c"],
+      "advanced": ["vitamin-d3", "b-complex", "iron", "coq10", "vitamin-c", "l-tyrosine", "creatine"]
+    },
+    "focus": {
+      "beginner": ["omega-3", "b-complex", "l-theanine"],
+      "intermediate": ["omega-3", "b-complex", "l-theanine", "lions-mane", "alpha-gpc"],
+      "advanced": ["omega-3", "b-complex", "l-theanine", "lions-mane", "alpha-gpc", "cdp-choline", "phosphatidylserine"]
+    },
+    "muscle": {
+      "beginner": ["vitamin-d3", "zinc", "creatine"],
+      "intermediate": ["vitamin-d3", "zinc", "creatine", "magnesium", "collagen", "omega-3"],
+      "advanced": ["vitamin-d3", "zinc", "creatine", "magnesium", "collagen", "omega-3", "l-tyrosine", "copper"]
+    },
+    "longevity": {
+      "beginner": ["vitamin-d3", "omega-3", "vitamin-c"],
+      "intermediate": ["vitamin-d3", "omega-3", "vitamin-c", "coq10", "nac", "curcumin"],
+      "advanced": ["vitamin-d3", "omega-3", "vitamin-c", "coq10", "nac", "curcumin", "alpha-lipoic-acid", "vitamin-k2", "berberine"]
+    },
+    "stress": {
+      "beginner": ["magnesium", "ashwagandha"],
+      "intermediate": ["magnesium", "ashwagandha", "l-theanine", "b-complex", "vitamin-c"],
+      "advanced": ["magnesium", "ashwagandha", "l-theanine", "b-complex", "vitamin-c", "phosphatidylserine", "gaba"]
+    },
+    "immune": {
+      "beginner": ["vitamin-d3", "zinc", "vitamin-c"],
+      "intermediate": ["vitamin-d3", "zinc", "vitamin-c", "selenium", "probiotics"],
+      "advanced": ["vitamin-d3", "zinc", "vitamin-c", "selenium", "probiotics", "nac", "curcumin"]
+    },
+    "recovery": {
+      "beginner": ["magnesium", "omega-3", "vitamin-c"],
+      "intermediate": ["magnesium", "omega-3", "vitamin-c", "collagen", "creatine", "zinc"],
+      "advanced": ["magnesium", "omega-3", "vitamin-c", "collagen", "creatine", "zinc", "nac", "curcumin"]
+    }
+  }
+}

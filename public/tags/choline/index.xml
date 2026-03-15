@@ -1,26 +1,5 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Choline on Supplement Guide - Evidence-Based Supplement Information</title>
-    <link>http://localhost:1313/tags/choline/</link>
-    <description>Recent content in Choline on Supplement Guide - Evidence-Based Supplement Information</description>
-    <generator>Hugo</generator>
-    <language>en-us</language>
-    <lastBuildDate>Mon, 22 Jan 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/choline/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Alpha-GPC</title>
-      <link>http://localhost:1313/supplements/alpha-gpc/</link>
-      <pubDate>Mon, 22 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/supplements/alpha-gpc/</guid>
-      <description>&lt;h2 id=&#34;what-is-alpha-gpc&#34;&gt;What Is Alpha-GPC?&lt;/h2&gt;&#xA;&lt;p&gt;Alpha-GPC (L-alpha glycerylphosphorylcholine) is a naturally occurring phospholipid found in the brain and derived from lecithin. It&amp;rsquo;s one of the most potent choline sources available, capable of crossing the blood-brain barrier efficiently and delivering choline directly to the brain.&lt;/p&gt;&#xA;&lt;p&gt;Unlike other choline sources, Alpha-GPC has a dual mechanism: it provides choline for acetylcholine synthesis AND acts as a phospholipid component of neuronal membranes. This makes it particularly valuable for both cognitive performance and structural brain health.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>CDP-Choline</title>
-      <link>http://localhost:1313/supplements/cdp-choline/</link>
-      <pubDate>Mon, 22 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/supplements/cdp-choline/</guid>
-      <description>&lt;h2 id=&#34;what-is-cdp-choline&#34;&gt;What Is CDP-Choline?&lt;/h2&gt;&#xA;&lt;p&gt;CDP-Choline (cytidine 5&amp;rsquo;-diphosphocholine, also called citicoline) is a naturally occurring phosphodiester compound that serves as a critical intermediate in the biosynthesis of phosphatidylcholine, a major neuronal phospholipid.&lt;/p&gt;&#xA;&lt;p&gt;Unlike Alpha-GPC which is a simple choline source, CDP-Choline operates through a &lt;strong&gt;dual mechanism&lt;/strong&gt;: it provides both choline (for acetylcholine synthesis) AND cytidine (for RNA synthesis and neuronal energy metabolism). This unique dual pathway makes CDP-Choline particularly valuable for comprehensive neuroprotection and brain energy.&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Choline on Supplement Guide - Evidence-Based Supplement Information</title><link>https://supplementguide.co/tags/choline/</link><description>Recent content in Choline on Supplement Guide - Evidence-Based Supplement Information</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Mon, 22 Jan 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://supplementguide.co/tags/choline/index.xml" rel="self" type="application/rss+xml"/><item><title>Alpha-GPC</title><link>https://supplementguide.co/supplements/alpha-gpc/</link><pubDate>Mon, 22 Jan 2024 00:00:00 +0000</pubDate><guid>https://supplementguide.co/supplements/alpha-gpc/</guid><description>&lt;h2 id="what-is-alpha-gpc"&gt;What Is Alpha-GPC?&lt;/h2&gt;
+&lt;p&gt;Alpha-GPC (L-alpha glycerylphosphorylcholine) is a naturally occurring phospholipid found in the brain and derived from lecithin. It&amp;rsquo;s one of the most potent choline sources available, capable of crossing the blood-brain barrier efficiently and delivering choline directly to the brain.&lt;/p&gt;
+&lt;p&gt;Unlike other choline sources, Alpha-GPC has a dual mechanism: it provides choline for acetylcholine synthesis AND acts as a phospholipid component of neuronal membranes. This makes it particularly valuable for both cognitive performance and structural brain health.&lt;/p&gt;</description></item><item><title>CDP-Choline</title><link>https://supplementguide.co/supplements/cdp-choline/</link><pubDate>Mon, 22 Jan 2024 00:00:00 +0000</pubDate><guid>https://supplementguide.co/supplements/cdp-choline/</guid><description>&lt;h2 id="what-is-cdp-choline"&gt;What Is CDP-Choline?&lt;/h2&gt;
+&lt;p&gt;CDP-Choline (cytidine 5&amp;rsquo;-diphosphocholine, also called citicoline) is a naturally occurring phosphodiester compound that serves as a critical intermediate in the biosynthesis of phosphatidylcholine, a major neuronal phospholipid.&lt;/p&gt;
+&lt;p&gt;Unlike Alpha-GPC which is a simple choline source, CDP-Choline operates through a &lt;strong&gt;dual mechanism&lt;/strong&gt;: it provides both choline (for acetylcholine synthesis) AND cytidine (for RNA synthesis and neuronal energy metabolism). This unique dual pathway makes CDP-Choline particularly valuable for comprehensive neuroprotection and brain energy.&lt;/p&gt;</description></item></channel></rss>

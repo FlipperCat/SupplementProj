@@ -1,0 +1,258 @@
+{
+  "supplements": {
+    "magnesium": {
+      "name": "Magnesium",
+      "forms": {
+        "glycinate": {
+          "name": "Magnesium Glycinate",
+          "absorption": "Excellent (90%+)",
+          "best_for": "Sleep, relaxation, sensitive stomachs",
+          "side_effects": "Minimal",
+          "cost_per_dose": 0.15,
+          "brands": [
+            { "name": "Thorne Magnesium Glycinate", "quality": "★★★★★", "price": 25, "servings": 60 },
+            { "name": "NOW Foods Magnesium Glycinate", "quality": "★★★★", "price": 12, "servings": 100 },
+            { "name": "Bulk Powder Magnesium Glycinate", "quality": "★★★☆", "price": 30, "servings": 500 }
+          ]
+        },
+        "citrate": {
+          "name": "Magnesium Citrate",
+          "absorption": "Good (65-75%)",
+          "best_for": "Digestion support, laxative effect",
+          "side_effects": "Loose stools at high doses",
+          "cost_per_dose": 0.08,
+          "brands": [
+            { "name": "NOW Foods Magnesium Citrate", "quality": "★★★★", "price": 8, "servings": 120 },
+            { "name": "Nutricost Magnesium Citrate", "quality": "★★★☆", "price": 12, "servings": 240 },
+            { "name": "Bulk Magnesium Citrate Powder", "quality": "★★★☆", "price": 20, "servings": 600 }
+          ]
+        },
+        "threonate": {
+          "name": "Magnesium L-Threonate",
+          "absorption": "Excellent for brain (BBB crossing)",
+          "best_for": "Cognitive support, memory, focus",
+          "side_effects": "Minimal",
+          "cost_per_dose": 0.35,
+          "brands": [
+            { "name": "Neurohacker Collective Magnesium Threonate", "quality": "★★★★★", "price": 40, "servings": 30 },
+            { "name": "Life Extension Magnesium L-Threonate", "quality": "★★★★", "price": 35, "servings": 30 },
+            { "name": "Bulk Magnesium L-Threonate", "quality": "★★★★", "price": 45, "servings": 180 }
+          ]
+        },
+        "malate": {
+          "name": "Magnesium Malate",
+          "absorption": "Good (60-70%)",
+          "best_for": "Energy, muscle recovery, fibromyalgia",
+          "side_effects": "Minimal",
+          "cost_per_dose": 0.12,
+          "brands": [
+            { "name": "Thorne Magnesium Malate", "quality": "★★★★★", "price": 18, "servings": 90 },
+            { "name": "NOW Foods Magnesium Malate", "quality": "★★★★", "price": 10, "servings": 100 },
+            { "name": "Bulk Magnesium Malate Powder", "quality": "★★★☆", "price": 25, "servings": 500 }
+          ]
+        },
+        "oxide": {
+          "name": "Magnesium Oxide",
+          "absorption": "Poor (4-5%)",
+          "best_for": "Not recommended (laxative use only)",
+          "side_effects": "Loose stools, digestive upset",
+          "cost_per_dose": 0.03,
+          "brands": [
+            { "name": "Generic Magnesium Oxide", "quality": "★★☆☆", "price": 3, "servings": 100 }
+          ]
+        }
+      }
+    },
+    "vitamin-d3": {
+      "name": "Vitamin D3",
+      "forms": {
+        "softgel": {
+          "name": "Softgel (Oil-based)",
+          "absorption": "Excellent (90%+)",
+          "best_for": "General use, optimal absorption",
+          "side_effects": "None",
+          "cost_per_dose": 0.10,
+          "brands": [
+            { "name": "Life Extension Vitamin D3", "quality": "★★★★★", "price": 18, "servings": 60 },
+            { "name": "Now Foods Vitamin D3", "quality": "★★★★", "price": 10, "servings": 120 },
+            { "name": "Jarrow Formulas Vitamin D3", "quality": "★★★★", "price": 12, "servings": 100 }
+          ]
+        },
+        "liquid": {
+          "name": "Liquid Vitamin D3",
+          "absorption": "Excellent (95%+)",
+          "best_for": "Fast absorption, customizable dosing",
+          "side_effects": "None",
+          "cost_per_dose": 0.15,
+          "brands": [
+            { "name": "Thorne Vitamin D3 Liquid", "quality": "★★★★★", "price": 28, "servings": 50 },
+            { "name": "Pure Encapsulations Vitamin D3 Liquid", "quality": "★★★★★", "price": 25, "servings": 45 }
+          ]
+        },
+        "tablet": {
+          "name": "Tablet/Capsule (Dry)",
+          "absorption": "Good (65-75%)",
+          "best_for": "Convenience, portability",
+          "side_effects": "None",
+          "cost_per_dose": 0.08,
+          "brands": [
+            { "name": "Nutricost Vitamin D3", "quality": "★★★★", "price": 8, "servings": 100 },
+            { "name": "Amazon Elements Vitamin D3", "quality": "★★★☆", "price": 6, "servings": 100 }
+          ]
+        },
+        "powder": {
+          "name": "Powder",
+          "absorption": "Variable (70-85%)",
+          "best_for": "Customizable dosing, bulk",
+          "side_effects": "None",
+          "cost_per_dose": 0.05,
+          "brands": [
+            { "name": "Bulk Vitamin D3 Powder", "quality": "★★★★", "price": 20, "servings": 500 }
+          ]
+        }
+      }
+    },
+    "omega-3": {
+      "name": "Omega-3 (Fish Oil)",
+      "forms": {
+        "fish-oil-softgel": {
+          "name": "Fish Oil Softgel",
+          "absorption": "Good (60-70%)",
+          "best_for": "General cardiovascular and brain health",
+          "side_effects": "Fish burps possible",
+          "cost_per_dose": 0.12,
+          "brands": [
+            { "name": "Nordic Naturals Ultimate Omega-3", "quality": "★★★★★", "price": 20, "servings": 60 },
+            { "name": "Nutricost Fish Oil", "quality": "★★★★", "price": 10, "servings": 100 },
+            { "name": "Sports Research Fish Oil", "quality": "★★★★", "price": 12, "servings": 120 }
+          ]
+        },
+        "krill-oil": {
+          "name": "Krill Oil",
+          "absorption": "Excellent (85-95%)",
+          "best_for": "Superior absorption, phospholipid form",
+          "side_effects": "Minimal",
+          "cost_per_dose": 0.35,
+          "brands": [
+            { "name": "Jarrow Formulas Krill Oil", "quality": "★★★★★", "price": 25, "servings": 30 },
+            { "name": "Neptune Krill Oil", "quality": "★★★★★", "price": 28, "servings": 30 }
+          ]
+        },
+        "liquid": {
+          "name": "Liquid Fish Oil",
+          "absorption": "Excellent (90%+)",
+          "best_for": "Customizable dosing, no aftertaste",
+          "side_effects": "None if quality is high",
+          "cost_per_dose": 0.15,
+          "brands": [
+            { "name": "Nordic Naturals Liquid Omega-3", "quality": "★★★★★", "price": 22, "servings": 48 }
+          ]
+        },
+        "algae-omega-3": {
+          "name": "Algae-based Omega-3",
+          "absorption": "Good (65-75%)",
+          "best_for": "Vegetarian/vegan option",
+          "side_effects": "None",
+          "cost_per_dose": 0.20,
+          "brands": [
+            { "name": "Nutricost Algae Omega-3", "quality": "★★★★", "price": 15, "servings": 60 }
+          ]
+        }
+      }
+    },
+    "zinc": {
+      "name": "Zinc",
+      "forms": {
+        "picolinate": {
+          "name": "Zinc Picolinate",
+          "absorption": "Excellent (90%+)",
+          "best_for": "Best absorption form",
+          "side_effects": "Minimal",
+          "cost_per_dose": 0.08,
+          "brands": [
+            { "name": "Pure Encapsulations Zinc Picolinate", "quality": "★★★★★", "price": 18, "servings": 60 },
+            { "name": "NOW Foods Zinc Picolinate", "quality": "★★★★", "price": 10, "servings": 100 }
+          ]
+        },
+        "citrate": {
+          "name": "Zinc Citrate",
+          "absorption": "Good (70-80%)",
+          "best_for": "Gentle on stomach",
+          "side_effects": "Minimal",
+          "cost_per_dose": 0.07,
+          "brands": [
+            { "name": "Thorne Zinc Citrate", "quality": "★★★★★", "price": 16, "servings": 60 },
+            { "name": "Nutricost Zinc Citrate", "quality": "★★★★", "price": 8, "servings": 100 }
+          ]
+        },
+        "gluconate": {
+          "name": "Zinc Gluconate",
+          "absorption": "Good (60-70%)",
+          "best_for": "General use, affordable",
+          "side_effects": "Possible nausea if taken on empty stomach",
+          "cost_per_dose": 0.05,
+          "brands": [
+            { "name": "Generic Zinc Gluconate", "quality": "★★★☆", "price": 5, "servings": 100 }
+          ]
+        },
+        "monomethy": {
+          "name": "Zinc Monomethionine",
+          "absorption": "Very Good (80-90%)",
+          "best_for": "OptiZinc® form, highly absorbable",
+          "side_effects": "Minimal",
+          "cost_per_dose": 0.12,
+          "brands": [
+            { "name": "Jarrow Formulas OptiZinc", "quality": "★★★★★", "price": 12, "servings": 100 }
+          ]
+        }
+      }
+    },
+    "vitamin-c": {
+      "name": "Vitamin C",
+      "forms": {
+        "ascorbic-acid": {
+          "name": "Ascorbic Acid",
+          "absorption": "Good (70-85%)",
+          "best_for": "Cost-effective, well-studied",
+          "side_effects": "Acidic, may cause GI upset at high doses",
+          "cost_per_dose": 0.03,
+          "brands": [
+            { "name": "Now Foods Vitamin C", "quality": "★★★★", "price": 5, "servings": 100 },
+            { "name": "Nutricost Vitamin C Powder", "quality": "★★★★", "price": 12, "servings": 500 }
+          ]
+        },
+        "liposomal": {
+          "name": "Liposomal Vitamin C",
+          "absorption": "Excellent (95%+)",
+          "best_for": "High-dose, optimal absorption",
+          "side_effects": "Minimal, well-tolerated",
+          "cost_per_dose": 0.25,
+          "brands": [
+            { "name": "LivOn Labs Lypo-Spheric Vitamin C", "quality": "★★★★★", "price": 35, "servings": 30 },
+            { "name": "Nutricost Liposomal Vitamin C", "quality": "★★★★", "price": 25, "servings": 30 }
+          ]
+        },
+        "sodium-ascorbate": {
+          "name": "Sodium Ascorbate",
+          "absorption": "Good (80-90%)",
+          "best_for": "Less acidic, buffered",
+          "side_effects": "Minimal",
+          "cost_per_dose": 0.08,
+          "brands": [
+            { "name": "Pure Encapsulations Sodium Ascorbate", "quality": "★★★★★", "price": 18, "servings": 100 }
+          ]
+        },
+        "ester-c": {
+          "name": "Ester-C",
+          "absorption": "Good (75-85%)",
+          "best_for": "Longer retention in body",
+          "side_effects": "None",
+          "cost_per_dose": 0.12,
+          "brands": [
+            { "name": "Now Foods Ester-C", "quality": "★★★★", "price": 15, "servings": 100 }
+          ]
+        }
+      }
+    }
+  }
+}

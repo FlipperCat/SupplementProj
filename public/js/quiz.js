@@ -1,4 +1,29 @@
 // Supplement Personalization Quiz
+
+// Cookie utility functions
+function setCookie(name, value, days = 365) {
+  const date = new Date();
+  date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+  const expires = "expires=" + date.toUTCString();
+  document.cookie = name + "=" + encodeURIComponent(value) + ";" + expires + ";path=/";
+}
+
+function getCookie(name) {
+  const nameEQ = name + "=";
+  const cookies = document.cookie.split(';');
+  for (let i = 0; i < cookies.length; i++) {
+    let cookie = cookies[i].trim();
+    if (cookie.indexOf(nameEQ) === 0) {
+      return decodeURIComponent(cookie.substring(nameEQ.length));
+    }
+  }
+  return null;
+}
+
+function deleteCookie(name) {
+  setCookie(name, "", -1);
+}
+
 class SupplementQuiz {
   constructor() {
     this.currentStep = 0;
@@ -348,7 +373,7 @@ class SupplementQuiz {
     const modal = document.getElementById('quiz-modal');
     if (modal) {
       modal.style.display = 'none';
-      localStorage.setItem('quiz-dismissed', 'true');
+      setCookie('quiz-dismissed', 'true', 365);
     }
   }
 
@@ -356,7 +381,7 @@ class SupplementQuiz {
     const modal = document.getElementById('quiz-modal');
     if (modal) {
       modal.style.display = 'flex';
-      localStorage.removeItem('quiz-dismissed');
+      deleteCookie('quiz-dismissed');
       this.showStep(0);
     }
   }
@@ -364,8 +389,8 @@ class SupplementQuiz {
 
 // Initialize on page load
 document.addEventListener('DOMContentLoaded', () => {
-  // Show quiz on landing unless dismissed
-  const dismissed = localStorage.getItem('quiz-dismissed');
+  // Show quiz on landing unless dismissed via cookie
+  const dismissed = getCookie('quiz-dismissed');
   const quizBtn = document.getElementById('quiz-trigger-btn');
   const quizModal = document.getElementById('quiz-modal');
 
@@ -378,6 +403,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
   if (quizModal && !dismissed && window.location.pathname === '/') {
     const quiz = new SupplementQuiz();
-    // Optionally auto-open: quiz.openQuiz();
+    quiz.openQuiz();
   }
 });

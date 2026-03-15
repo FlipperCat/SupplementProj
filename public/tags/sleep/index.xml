@@ -1,75 +1,74 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Sleep on Supplement Guide - Evidence-Based Supplement Information</title>
-    <link>http://localhost:1313/tags/sleep/</link>
-    <description>Recent content in Sleep on Supplement Guide - Evidence-Based Supplement Information</description>
-    <generator>Hugo</generator>
-    <language>en-us</language>
-    <lastBuildDate>Mon, 22 Jan 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/sleep/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>5-HTP (5-Hydroxytryptophan)</title>
-      <link>http://localhost:1313/supplements/5-htp-5-hydroxytryptophan/</link>
-      <pubDate>Mon, 22 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/supplements/5-htp-5-hydroxytryptophan/</guid>
-      <description>&lt;h2 id=&#34;what-is-5-htp&#34;&gt;What Is 5-HTP?&lt;/h2&gt;&#xA;&lt;p&gt;5-HTP (5-Hydroxytryptophan) is a naturally occurring amino acid and direct precursor to serotonin, the neurotransmitter responsible for mood, sleep, appetite, pain perception, and impulse control. It&amp;rsquo;s synthesized from the essential amino acid tryptophan, using vitamin B6 and magnesium as cofactors.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Key biochemistry&lt;/strong&gt;:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Tryptophan (dietary) → 5-HTP (via TPH enzyme) → Serotonin&lt;/li&gt;&#xA;&lt;li&gt;5-HTP supplements bypass the first conversion step, directly increasing serotonin synthesis&lt;/li&gt;&#xA;&lt;li&gt;Primary source for clinical use: Griffonia simplicifolia seed extract (naturally contains 20-30% 5-HTP)&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;&lt;strong&gt;Why not just supplement tryptophan?&lt;/strong&gt; Direct 5-HTP supplementation is more reliable because:&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>GABA (Gamma-Aminobutyric Acid)</title>
-      <link>http://localhost:1313/supplements/gaba-gamma-aminobutyric-acid/</link>
-      <pubDate>Mon, 22 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/supplements/gaba-gamma-aminobutyric-acid/</guid>
-      <description>&lt;h2 id=&#34;what-is-gaba&#34;&gt;What Is GABA?&lt;/h2&gt;&#xA;&lt;p&gt;GABA (gamma-aminobutyric acid) is the brain&amp;rsquo;s primary inhibitory neurotransmitter, found in approximately 30-40% of brain synapses. Unlike excitatory neurotransmitters like glutamate that activate neurons, GABA dampens neuronal firing, reducing the overall excitability of the nervous system.&lt;/p&gt;&#xA;&lt;p&gt;Your body synthesizes GABA from the amino acid glutamate via the enzyme glutamate decarboxylase (GAD), which requires vitamin B6 as a cofactor. During stress, anxiety, poor sleep, or chronic stimulation (caffeine, nootropics), GABA synthesis may become insufficient, leading to nervous system hyperexcitability.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>L-Tryptophan</title>
-      <link>http://localhost:1313/supplements/l-tryptophan/</link>
-      <pubDate>Mon, 22 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/supplements/l-tryptophan/</guid>
-      <description>&lt;h2 id=&#34;what-is-l-tryptophan&#34;&gt;What Is L-Tryptophan?&lt;/h2&gt;&#xA;&lt;p&gt;L-Tryptophan is an essential amino acid, meaning your body cannot synthesize it and must obtain it from diet or supplementation. It&amp;rsquo;s a large neutral amino acid with a critical role as the precursor to serotonin, melatonin, niacin (vitamin B3), and quinolinic acid.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Key biochemistry&lt;/strong&gt;:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Tryptophan (dietary/supplemental) → 5-HTP (via TPH enzyme) → Serotonin&lt;/li&gt;&#xA;&lt;li&gt;Tryptophan → Melatonin (via serotonin pathway in pineal gland)&lt;/li&gt;&#xA;&lt;li&gt;Tryptophan → Niacin via kynurenine pathway (produces 1mg niacin per 60mg tryptophan)&lt;/li&gt;&#xA;&lt;li&gt;Tryptophan → Quinolinic acid (neuromodulator; affects mood and cognition)&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;&lt;strong&gt;Why not just take 5-HTP instead?&lt;/strong&gt; Tryptophan offers distinct advantages:&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Glycine</title>
-      <link>http://localhost:1313/supplements/glycine/</link>
-      <pubDate>Sat, 20 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/supplements/glycine/</guid>
-      <description>&lt;h2 id=&#34;what-is-glycine&#34;&gt;What Is Glycine?&lt;/h2&gt;&#xA;&lt;p&gt;Glycine is the smallest and simplest amino acid, comprising approximately 35% of collagen&amp;rsquo;s amino acid composition and 10% of total body protein. Unlike the nine essential amino acids your body cannot make, glycine is a non-essential amino acid — your body produces it from serine and other amino acids.&lt;/p&gt;&#xA;&lt;p&gt;However, endogenous production becomes insufficient under stress, intense exercise, or illness. Additionally, modern diets low in collagen-rich foods (bone broth, skin, cartilage) create relative glycine deficiency. Supplementing glycine provides building blocks for collagen, neurotransmitter synthesis, and cellular protective compounds like glutathione.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Melatonin</title>
-      <link>http://localhost:1313/supplements/melatonin/</link>
-      <pubDate>Sat, 20 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/supplements/melatonin/</guid>
-      <description>&lt;h2 id=&#34;what-is-melatonin&#34;&gt;What Is Melatonin?&lt;/h2&gt;&#xA;&lt;p&gt;Melatonin is a hormone naturally produced by your pineal gland in response to darkness. This &amp;ldquo;sleep hormone&amp;rdquo; signals to your body that it&amp;rsquo;s time to rest by lowering body temperature and promoting drowsiness. In modern environments with artificial light and irregular schedules, melatonin production often becomes dysregulated.&lt;/p&gt;&#xA;&lt;p&gt;Unlike sleeping pills that force sleep through sedation, melatonin works with your body&amp;rsquo;s natural sleep mechanisms. It&amp;rsquo;s produced throughout the day (higher at night) and controls your circadian rhythm — your 24-hour internal clock.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Best Supplements for Sleep (That Actually Work)</title>
-      <link>http://localhost:1313/goals/best-supplements-for-sleep-that-actually-work/</link>
-      <pubDate>Fri, 19 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/goals/best-supplements-for-sleep-that-actually-work/</guid>
-      <description>&lt;h2 id=&#34;why-you-cant-sleep-and-how-supplements-can-help&#34;&gt;Why You Can&amp;rsquo;t Sleep (And How Supplements Can Help)&lt;/h2&gt;&#xA;&lt;p&gt;Before reaching for supplements, understand that sleep problems usually have a root cause:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Circadian rhythm disruption&lt;/strong&gt; — Irregular schedule or light exposure&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Stress/anxiety&lt;/strong&gt; — Overactive nervous system keeps you awake&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Nutrient deficiencies&lt;/strong&gt; — Magnesium, zinc, and B6 are critical for sleep&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Caffeine/alcohol timing&lt;/strong&gt; — Interferes with sleep architecture&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Sleep environment&lt;/strong&gt; — Temperature, light, and noise matter more than most people realize&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;&lt;strong&gt;The best sleep supplements&lt;/strong&gt; address these root causes or support your body&amp;rsquo;s sleep-wake cycle — not just chemically knock you out.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>The Sleep Stack: Evidence-Based Supplements for Better Sleep</title>
-      <link>http://localhost:1313/stacks/the-sleep-stack-evidence-based-supplements-for-better-sleep/</link>
-      <pubDate>Tue, 16 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/stacks/the-sleep-stack-evidence-based-supplements-for-better-sleep/</guid>
-      <description>&lt;h2 id=&#34;why-a-sleep-stack&#34;&gt;Why a Sleep Stack?&lt;/h2&gt;&#xA;&lt;p&gt;Sleep is foundational to health, yet millions struggle with it. While pharmaceutical sleep aids have their place, they often come with side effects, dependency, and poor sleep architecture.&lt;/p&gt;&#xA;&lt;p&gt;This evidence-based stack addresses multiple physiological pathways to sleep:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;GABA enhancement (relaxation)&lt;/li&gt;&#xA;&lt;li&gt;Body temperature regulation&lt;/li&gt;&#xA;&lt;li&gt;Cortisol reduction&lt;/li&gt;&#xA;&lt;li&gt;Nervous system calming&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;the-core-stack&#34;&gt;The Core Stack&lt;/h2&gt;&#xA;&lt;h3 id=&#34;1-magnesium-glycinate-300-400-mg&#34;&gt;1. Magnesium Glycinate (300-400 mg)&lt;/h3&gt;&#xA;&lt;p&gt;&lt;strong&gt;Why it works&lt;/strong&gt;:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Activates GABA receptors (calming neurotransmitter)&lt;/li&gt;&#xA;&lt;li&gt;Regulates the HPA axis (stress response)&lt;/li&gt;&#xA;&lt;li&gt;Relaxes muscles and reduces tension&lt;/li&gt;&#xA;&lt;li&gt;Most deficient mineral; deficiency causes sleep problems&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;&lt;strong&gt;Why glycinate form&lt;/strong&gt;:&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Ashwagandha</title>
-      <link>http://localhost:1313/supplements/ashwagandha/</link>
-      <pubDate>Mon, 15 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/supplements/ashwagandha/</guid>
-      <description>&lt;h2 id=&#34;what-is-ashwagandha&#34;&gt;What Is Ashwagandha?&lt;/h2&gt;&#xA;&lt;p&gt;Ashwagandha (&lt;em&gt;Withania somnifera&lt;/em&gt;), also known as &amp;ldquo;Indian Ginseng&amp;rdquo; or &amp;ldquo;Winter Cherry,&amp;rdquo; is an ancient medicinal herb classified as an &lt;strong&gt;adaptogen&lt;/strong&gt; — substances that help the body adapt to stress and restore balance.&lt;/p&gt;&#xA;&lt;p&gt;Used for over 3,000 years in Ayurvedic medicine, ashwagandha has become one of the most researched and popular adaptogens in the Western world. Its name translates to &amp;ldquo;smell of the horse,&amp;rdquo; referring both to its unique smell and traditional belief that it imparts the strength and virility of a horse.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Magnesium</title>
-      <link>http://localhost:1313/supplements/magnesium/</link>
-      <pubDate>Mon, 15 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/supplements/magnesium/</guid>
-      <description>&lt;h2 id=&#34;what-is-magnesium&#34;&gt;What Is Magnesium?&lt;/h2&gt;&#xA;&lt;p&gt;Magnesium is the fourth most abundant mineral in the human body and participates in over 300 enzymatic reactions. It&amp;rsquo;s essential for energy production, muscle and nerve function, blood sugar control, and protein synthesis.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Up to 50% of Americans don&amp;rsquo;t get enough magnesium&lt;/strong&gt; from their diet, making it one of the most common nutritional deficiencies. Modern farming practices have depleted soil magnesium, and processed foods are poor sources.&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Sleep on Supplement Guide - Evidence-Based Supplement Information</title><link>https://supplementguide.co/tags/sleep/</link><description>Recent content in Sleep on Supplement Guide - Evidence-Based Supplement Information</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Fri, 14 Mar 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://supplementguide.co/tags/sleep/index.xml" rel="self" type="application/rss+xml"/><item><title>Reishi Mushroom</title><link>https://supplementguide.co/supplements/reishi-mushroom/</link><pubDate>Fri, 14 Mar 2025 00:00:00 +0000</pubDate><guid>https://supplementguide.co/supplements/reishi-mushroom/</guid><description>&lt;p&gt;&lt;strong&gt;What it is:&lt;/strong&gt; Reishi is an adaptogenic mushroom that reduces cortisol and anxiety while improving sleep architecture and immune resilience. Used for 2,000 years in traditional medicine and validated by modern research, it&amp;rsquo;s ideal for stress management, sleep optimization, and the transition from activity to relaxation without sedation.&lt;/p&gt;
+&lt;h2 id="what-is-reishi-mushroom"&gt;What Is Reishi Mushroom?&lt;/h2&gt;
+&lt;p&gt;Reishi (Ganoderma lucidum), also called the &amp;ldquo;mushroom of immortality,&amp;rdquo; has been used in Traditional Chinese Medicine for over 2,000 years. It&amp;rsquo;s a woody fungus that grows on decaying hardwood logs, containing bioactive compounds (beta-glucans, triterpenes, polysaccharides) that support stress resilience, sleep, and immune function.&lt;/p&gt;</description></item><item><title>Tart Cherry</title><link>https://supplementguide.co/supplements/tart-cherry/</link><pubDate>Fri, 14 Mar 2025 00:00:00 +0000</pubDate><guid>https://supplementguide.co/supplements/tart-cherry/</guid><description>&lt;p&gt;&lt;strong&gt;What it is:&lt;/strong&gt; Tart cherry is a fruit extract rich in anthocyanins—powerful antioxidants and anti-inflammatory compounds that improve sleep quality, reduce muscle soreness, and support recovery. Clinical research shows it works comparably to some sleep medications without side effects, making it one of the most evidence-backed natural sleep aids available.&lt;/p&gt;
+&lt;h2 id="what-is-tart-cherry"&gt;What Is Tart Cherry?&lt;/h2&gt;
+&lt;p&gt;Tart cherry (Prunus cerasus) is a sour cherry variety grown primarily in North America, distinct from sweet cherries commonly eaten fresh. While tart cherries are too sour for fresh consumption, they&amp;rsquo;re ideal for juices, concentrates, and supplements—forms that concentrate their bioactive compounds.&lt;/p&gt;</description></item><item><title>Apigenin</title><link>https://supplementguide.co/supplements/apigenin/</link><pubDate>Thu, 25 Jan 2024 00:00:00 +0000</pubDate><guid>https://supplementguide.co/supplements/apigenin/</guid><description>&lt;h2 id="what-is-apigenin"&gt;What Is Apigenin?&lt;/h2&gt;
+&lt;p&gt;Apigenin (4&amp;rsquo;,5,7-trihydroxyflavone) is a naturally occurring flavonoid found abundantly in chamomile, parsley, celery, and other plants. It belongs to the flavone subclass of flavonoids and has gained significant attention in the biohacking and longevity communities for its unique combination of benefits:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Sleep enhancement&lt;/strong&gt; without grogginess or dependency&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;CD38 inhibition&lt;/strong&gt; for NAD+ preservation&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Anxiolytic effects&lt;/strong&gt; through GABA receptor modulation&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Aromatase inhibition&lt;/strong&gt; for testosterone optimization&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Natural Sources:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Chamomile tea: 3-5 mg per cup (primary traditional source)&lt;/li&gt;
+&lt;li&gt;Parsley: 45-185 mg per 100g fresh weight&lt;/li&gt;
+&lt;li&gt;Celery: 2-20 mg per 100g&lt;/li&gt;
+&lt;li&gt;Oranges: 0.5-2 mg per fruit&lt;/li&gt;
+&lt;li&gt;Onions, oregano, thyme: Moderate amounts&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Bioavailability Characteristics:&lt;/strong&gt;
+Apigenin has moderate oral bioavailability (20-40%) compared to other flavonoids. It is:&lt;/p&gt;</description></item><item><title>5-HTP (5-Hydroxytryptophan)</title><link>https://supplementguide.co/supplements/5-htp-5-hydroxytryptophan/</link><pubDate>Mon, 22 Jan 2024 00:00:00 +0000</pubDate><guid>https://supplementguide.co/supplements/5-htp-5-hydroxytryptophan/</guid><description>&lt;h2 id="what-is-5-htp"&gt;What Is 5-HTP?&lt;/h2&gt;
+&lt;p&gt;5-HTP (5-Hydroxytryptophan) is a naturally occurring amino acid and direct precursor to serotonin, the neurotransmitter responsible for mood, sleep, appetite, pain perception, and impulse control. It&amp;rsquo;s synthesized from the essential amino acid tryptophan, using vitamin B6 and magnesium as cofactors.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Key biochemistry&lt;/strong&gt;:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Tryptophan (dietary) → 5-HTP (via TPH enzyme) → Serotonin&lt;/li&gt;
+&lt;li&gt;5-HTP supplements bypass the first conversion step, directly increasing serotonin synthesis&lt;/li&gt;
+&lt;li&gt;Primary source for clinical use: Griffonia simplicifolia seed extract (naturally contains 20-30% 5-HTP)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Why not just supplement tryptophan?&lt;/strong&gt; Direct 5-HTP supplementation is more reliable because:&lt;/p&gt;</description></item><item><title>GABA (Gamma-Aminobutyric Acid)</title><link>https://supplementguide.co/supplements/gaba-gamma-aminobutyric-acid/</link><pubDate>Mon, 22 Jan 2024 00:00:00 +0000</pubDate><guid>https://supplementguide.co/supplements/gaba-gamma-aminobutyric-acid/</guid><description>&lt;h2 id="what-is-gaba"&gt;What Is GABA?&lt;/h2&gt;
+&lt;p&gt;GABA (gamma-aminobutyric acid) is the brain&amp;rsquo;s primary inhibitory neurotransmitter, found in approximately 30-40% of brain synapses. Unlike excitatory neurotransmitters like glutamate that activate neurons, GABA dampens neuronal firing, reducing the overall excitability of the nervous system.&lt;/p&gt;
+&lt;p&gt;Your body synthesizes GABA from the amino acid glutamate via the enzyme glutamate decarboxylase (GAD), which requires vitamin B6 as a cofactor. During stress, anxiety, poor sleep, or chronic stimulation (caffeine, nootropics), GABA synthesis may become insufficient, leading to nervous system hyperexcitability.&lt;/p&gt;</description></item><item><title>L-Tryptophan</title><link>https://supplementguide.co/supplements/l-tryptophan/</link><pubDate>Mon, 22 Jan 2024 00:00:00 +0000</pubDate><guid>https://supplementguide.co/supplements/l-tryptophan/</guid><description>&lt;h2 id="what-is-l-tryptophan"&gt;What Is L-Tryptophan?&lt;/h2&gt;
+&lt;p&gt;L-Tryptophan is an essential amino acid, meaning your body cannot synthesize it and must obtain it from diet or supplementation. It&amp;rsquo;s a large neutral amino acid with a critical role as the precursor to serotonin, melatonin, niacin (vitamin B3), and quinolinic acid.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Key biochemistry&lt;/strong&gt;:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Tryptophan (dietary/supplemental) → 5-HTP (via TPH enzyme) → Serotonin&lt;/li&gt;
+&lt;li&gt;Tryptophan → Melatonin (via serotonin pathway in pineal gland)&lt;/li&gt;
+&lt;li&gt;Tryptophan → Niacin via kynurenine pathway (produces 1mg niacin per 60mg tryptophan)&lt;/li&gt;
+&lt;li&gt;Tryptophan → Quinolinic acid (neuromodulator; affects mood and cognition)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Why not just take 5-HTP instead?&lt;/strong&gt; Tryptophan offers distinct advantages:&lt;/p&gt;</description></item><item><title>Melatonin</title><link>https://supplementguide.co/supplements/melatonin/</link><pubDate>Sat, 20 Jan 2024 00:00:00 +0000</pubDate><guid>https://supplementguide.co/supplements/melatonin/</guid><description>&lt;h2 id="what-is-melatonin"&gt;What Is Melatonin?&lt;/h2&gt;
+&lt;p&gt;Melatonin is a hormone naturally produced by your pineal gland in response to darkness. This &amp;ldquo;sleep hormone&amp;rdquo; signals to your body that it&amp;rsquo;s time to rest by lowering body temperature and promoting drowsiness. In modern environments with artificial light and irregular schedules, melatonin production often becomes dysregulated.&lt;/p&gt;
+&lt;p&gt;Unlike sleeping pills that force sleep through sedation, melatonin works with your body&amp;rsquo;s natural sleep mechanisms. It&amp;rsquo;s produced throughout the day (higher at night) and controls your circadian rhythm — your 24-hour internal clock.&lt;/p&gt;</description></item><item><title>Best Supplements for Sleep (That Actually Work)</title><link>https://supplementguide.co/goals/best-supplements-for-sleep-that-actually-work/</link><pubDate>Fri, 19 Jan 2024 00:00:00 +0000</pubDate><guid>https://supplementguide.co/goals/best-supplements-for-sleep-that-actually-work/</guid><description>&lt;h2 id="why-you-cant-sleep-and-how-supplements-can-help"&gt;Why You Can&amp;rsquo;t Sleep (And How Supplements Can Help)&lt;/h2&gt;
+&lt;p&gt;Before reaching for supplements, understand that sleep problems usually have a root cause:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Circadian rhythm disruption&lt;/strong&gt; — Irregular schedule or light exposure&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Stress/anxiety&lt;/strong&gt; — Overactive nervous system keeps you awake&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Nutrient deficiencies&lt;/strong&gt; — Magnesium, zinc, and B6 are critical for sleep&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Caffeine/alcohol timing&lt;/strong&gt; — Interferes with sleep architecture&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Sleep environment&lt;/strong&gt; — Temperature, light, and noise matter more than most people realize&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;The best sleep supplements&lt;/strong&gt; address these root causes or support your body&amp;rsquo;s sleep-wake cycle — not just chemically knock you out.&lt;/p&gt;</description></item><item><title>The Sleep Stack: Evidence-Based Supplements for Better Sleep</title><link>https://supplementguide.co/stacks/the-sleep-stack-evidence-based-supplements-for-better-sleep/</link><pubDate>Tue, 16 Jan 2024 00:00:00 +0000</pubDate><guid>https://supplementguide.co/stacks/the-sleep-stack-evidence-based-supplements-for-better-sleep/</guid><description>&lt;h2 id="why-a-sleep-stack"&gt;Why a Sleep Stack?&lt;/h2&gt;
+&lt;p&gt;Sleep is foundational to health, yet millions struggle with it. While pharmaceutical sleep aids have their place, they often come with side effects, dependency, and poor sleep architecture.&lt;/p&gt;
+&lt;p&gt;This evidence-based stack addresses multiple physiological pathways to sleep:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;GABA enhancement (relaxation)&lt;/li&gt;
+&lt;li&gt;Body temperature regulation&lt;/li&gt;
+&lt;li&gt;Cortisol reduction&lt;/li&gt;
+&lt;li&gt;Nervous system calming&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="the-core-stack"&gt;The Core Stack&lt;/h2&gt;
+&lt;h3 id="1-magnesium-glycinate-300-400-mg"&gt;1. Magnesium Glycinate (300-400 mg)&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Why it works&lt;/strong&gt;:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Activates GABA receptors (calming neurotransmitter)&lt;/li&gt;
+&lt;li&gt;Regulates the HPA axis (stress response)&lt;/li&gt;
+&lt;li&gt;Relaxes muscles and reduces tension&lt;/li&gt;
+&lt;li&gt;Most deficient mineral; deficiency causes sleep problems&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Why glycinate form&lt;/strong&gt;:&lt;/p&gt;</description></item><item><title>Ashwagandha</title><link>https://supplementguide.co/supplements/ashwagandha/</link><pubDate>Mon, 15 Jan 2024 00:00:00 +0000</pubDate><guid>https://supplementguide.co/supplements/ashwagandha/</guid><description>&lt;p&gt;&lt;strong&gt;What it is:&lt;/strong&gt; Ashwagandha is a powerful adaptogenic herb that reduces cortisol, improves stress resilience, and supports sleep quality and testosterone levels. One of the most researched adaptogens, it&amp;rsquo;s effective for anxiety management and physical performance while being well-tolerated across diverse populations.&lt;/p&gt;
+&lt;h2 id="what-is-ashwagandha"&gt;What Is Ashwagandha?&lt;/h2&gt;
+&lt;p&gt;Ashwagandha (&lt;em&gt;Withania somnifera&lt;/em&gt;), also known as &amp;ldquo;Indian Ginseng&amp;rdquo; or &amp;ldquo;Winter Cherry,&amp;rdquo; is an ancient medicinal herb classified as an &lt;strong&gt;adaptogen&lt;/strong&gt; — substances that help the body adapt to stress and restore balance.&lt;/p&gt;</description></item><item><title>Magnesium</title><link>https://supplementguide.co/supplements/magnesium/</link><pubDate>Mon, 15 Jan 2024 00:00:00 +0000</pubDate><guid>https://supplementguide.co/supplements/magnesium/</guid><description>&lt;p&gt;&lt;strong&gt;What it is:&lt;/strong&gt; Magnesium is the master mineral involved in 300+ enzymatic reactions, essential for muscle relaxation, sleep quality, stress resilience, and energy production. With up to 50% of people deficient due to soil depletion and modern diets, supplementation immediately improves sleep, reduces muscle cramps, and stabilizes mood.&lt;/p&gt;
+&lt;h2 id="what-is-magnesium"&gt;What Is Magnesium?&lt;/h2&gt;
+&lt;p&gt;Magnesium is the fourth most abundant mineral in the human body and participates in over 300 enzymatic reactions. It&amp;rsquo;s essential for energy production, muscle and nerve function, blood sugar control, and protein synthesis.&lt;/p&gt;</description></item></channel></rss>

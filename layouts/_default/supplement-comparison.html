@@ -1,0 +1,546 @@
+{{ define "main" }}
+
+<div class="container">
+  <div class="comparison-wrapper">
+
+    <!-- Header -->
+    <header class="comparison-header">
+      <h1>{{ .Title }}</h1>
+      <p class="comparison-subtitle">Different forms of the same supplement vary dramatically in absorption, cost, and effectiveness. Compare them side-by-side to find the best option for your needs and budget.</p>
+    </header>
+
+    <!-- Supplement Selector -->
+    <div class="selector-card">
+      <h3>Select a Supplement to Compare</h3>
+      <div class="supplement-selector" id="supplement-selector">
+        <!-- Populated by JavaScript -->
+      </div>
+    </div>
+
+    <!-- Comparison Results -->
+    <div class="comparison-results" id="comparison-results" style="display: none;">
+
+      <!-- Forms Comparison Table -->
+      <div class="result-card">
+        <h3 id="supplement-title"></h3>
+        <p id="supplement-description"></p>
+
+        <div class="forms-comparison">
+          <div class="forms-grid" id="forms-grid">
+            <!-- Populated by JavaScript -->
+          </div>
+        </div>
+      </div>
+
+      <!-- Brand Comparison -->
+      <div class="result-card">
+        <h3>Brand & Quality Comparison</h3>
+        <div class="brand-comparison">
+          <div id="brand-list">
+            <!-- Populated by JavaScript -->
+          </div>
+        </div>
+      </div>
+
+      <!-- Cost Analysis -->
+      <div class="result-card">
+        <h3>Cost-Per-Dose Analysis</h3>
+        <div class="cost-analysis">
+          <div class="cost-chart" id="cost-chart">
+            <!-- Populated by JavaScript -->
+          </div>
+        </div>
+      </div>
+
+      <!-- Recommendation -->
+      <div class="result-card recommendation-card">
+        <h3>Our Recommendation</h3>
+        <div id="recommendation-box">
+          <!-- Populated by JavaScript -->
+        </div>
+      </div>
+
+      <!-- Actions -->
+      <div class="result-actions">
+        <button id="compare-another-btn" class="btn btn-secondary">Compare Another Supplement</button>
+        <a href="/supplements/" class="btn btn-outline">Read Full Guides</a>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<style>
+.comparison-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: var(--spacing-2xl) 0;
+}
+
+.comparison-header {
+  text-align: center;
+  margin-bottom: var(--spacing-2xl);
+}
+
+.comparison-header h1 {
+  margin-bottom: var(--spacing-md);
+}
+
+.comparison-subtitle {
+  color: var(--color-text-light);
+  font-size: 1.125rem;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.selector-card {
+  background: var(--color-white);
+  border-radius: var(--radius-lg);
+  padding: var(--spacing-lg);
+  margin-bottom: var(--spacing-2xl);
+  box-shadow: var(--shadow-sm);
+}
+
+.selector-card h3 {
+  margin-bottom: var(--spacing-md);
+  color: var(--color-primary);
+}
+
+.supplement-selector {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: var(--spacing-md);
+}
+
+.supplement-option {
+  padding: var(--spacing-md);
+  background: var(--color-cream);
+  border: 2px solid transparent;
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  transition: all 0.2s;
+  text-align: center;
+  font-weight: 600;
+  color: var(--color-text);
+}
+
+.supplement-option:hover {
+  background: var(--color-primary);
+  color: white;
+  border-color: var(--color-primary);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+.supplement-option.active {
+  background: var(--color-primary);
+  color: white;
+  border-color: var(--color-primary);
+}
+
+.comparison-results {
+  display: grid;
+  gap: var(--spacing-lg);
+}
+
+.result-card {
+  background: var(--color-white);
+  border-radius: var(--radius-lg);
+  padding: var(--spacing-lg);
+  box-shadow: var(--shadow-sm);
+}
+
+.result-card h3 {
+  margin-bottom: var(--spacing-md);
+  color: var(--color-primary);
+  font-size: 1.25rem;
+}
+
+#supplement-description {
+  color: var(--color-text-light);
+  font-size: 1.0625rem;
+  margin-bottom: var(--spacing-lg);
+  line-height: 1.6;
+}
+
+.forms-grid {
+  display: grid;
+  gap: var(--spacing-lg);
+}
+
+.form-card {
+  background: linear-gradient(135deg, #F0F9FF 0%, #F8FAFC 100%);
+  border-left: 4px solid var(--color-primary);
+  padding: var(--spacing-lg);
+  border-radius: var(--radius-md);
+}
+
+.form-card h4 {
+  margin: 0 0 var(--spacing-md) 0;
+  color: var(--color-primary);
+  font-size: 1.125rem;
+}
+
+.form-stat {
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  gap: var(--spacing-md);
+  margin-bottom: var(--spacing-sm);
+  padding-bottom: var(--spacing-sm);
+  border-bottom: 1px solid #E0F2FE;
+}
+
+.form-stat:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+}
+
+.form-stat-label {
+  font-weight: 600;
+  color: var(--color-text);
+}
+
+.form-stat-value {
+  color: var(--color-text-light);
+}
+
+.absorption-excellent {
+  color: #059669;
+}
+
+.absorption-good {
+  color: #0891B2;
+}
+
+.absorption-poor {
+  color: #D97706;
+}
+
+.side-effect-minimal {
+  color: #059669;
+}
+
+.side-effect-possible {
+  color: #F59E0B;
+}
+
+.brand-comparison {
+  display: grid;
+  gap: var(--spacing-md);
+}
+
+.brand-item {
+  background: var(--color-cream);
+  padding: var(--spacing-md);
+  border-radius: var(--radius-md);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: var(--spacing-md);
+}
+
+.brand-info h4 {
+  margin: 0 0 var(--spacing-xs) 0;
+  color: var(--color-text);
+}
+
+.brand-quality {
+  color: #F59E0B;
+  font-size: 0.9375rem;
+  font-weight: 600;
+}
+
+.brand-pricing {
+  text-align: right;
+}
+
+.brand-price {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--color-primary);
+}
+
+.brand-servings {
+  font-size: 0.875rem;
+  color: var(--color-text-muted);
+}
+
+.cost-analysis {
+  display: grid;
+  gap: var(--spacing-lg);
+}
+
+.cost-chart {
+  display: grid;
+  gap: var(--spacing-sm);
+}
+
+.cost-bar-item {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+  padding: var(--spacing-sm);
+}
+
+.cost-bar-label {
+  width: 150px;
+  font-weight: 600;
+  color: var(--color-text);
+  font-size: 0.9375rem;
+}
+
+.cost-bar-container {
+  flex: 1;
+  background: var(--color-cream);
+  height: 30px;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  position: relative;
+}
+
+.cost-bar-fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--color-primary), #40735E);
+  display: flex;
+  align-items: center;
+  padding: 0 var(--spacing-sm);
+  transition: width 0.3s ease;
+}
+
+.cost-bar-value {
+  color: white;
+  font-weight: 600;
+  font-size: 0.9375rem;
+}
+
+.recommendation-card {
+  background: linear-gradient(135deg, #F0FDF4 0%, #ECFDF5 100%);
+  border-left: 4px solid var(--color-success);
+}
+
+.recommendation-card h3 {
+  color: #059669;
+}
+
+#recommendation-box {
+  background: white;
+  padding: var(--spacing-lg);
+  border-radius: var(--radius-md);
+}
+
+.recommendation-item {
+  margin-bottom: var(--spacing-lg);
+}
+
+.recommendation-item:last-child {
+  margin-bottom: 0;
+}
+
+.recommendation-item h4 {
+  margin: 0 0 var(--spacing-sm) 0;
+  color: var(--color-text);
+}
+
+.recommendation-item p {
+  margin: 0;
+  color: var(--color-text-light);
+  font-size: 0.9375rem;
+  line-height: 1.6;
+}
+
+.result-actions {
+  display: flex;
+  gap: var(--spacing-md);
+  margin-top: var(--spacing-lg);
+}
+
+.result-actions .btn {
+  flex: 1;
+}
+
+@media (max-width: 768px) {
+  .supplement-selector {
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  }
+
+  .brand-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .brand-pricing {
+    text-align: left;
+  }
+
+  .result-actions {
+    flex-direction: column;
+  }
+}
+</style>
+
+<script>
+document.addEventListener('DOMContentLoaded', async function() {
+  // Load comparison data
+  const response = await fetch('/data/supplement-comparison.json');
+  const data = await response.json();
+
+  const supplements = data.supplements;
+  let selectedSupplement = null;
+
+  // Populate supplement selector
+  const selector = document.getElementById('supplement-selector');
+  Object.entries(supplements).forEach(([key, supp]) => {
+    const option = document.createElement('button');
+    option.className = 'supplement-option';
+    option.textContent = supp.name;
+    option.addEventListener('click', () => selectSupplement(key, supp));
+    selector.appendChild(option);
+  });
+
+  function selectSupplement(key, supp) {
+    selectedSupplement = { key, ...supp };
+
+    // Update active state
+    document.querySelectorAll('.supplement-option').forEach(opt => {
+      opt.classList.remove('active');
+    });
+    event.target.classList.add('active');
+
+    // Display results
+    displayComparison();
+  }
+
+  function displayComparison() {
+    const resultsDiv = document.getElementById('comparison-results');
+
+    // Header
+    document.getElementById('supplement-title').textContent = selectedSupplement.name;
+    document.getElementById('supplement-description').innerHTML = `
+      Compare different forms of <strong>${selectedSupplement.name}</strong> to find the best option for absorption, cost, and your specific health goals.
+    `;
+
+    // Forms comparison
+    const formsGrid = document.getElementById('forms-grid');
+    formsGrid.innerHTML = Object.entries(selectedSupplement.forms).map(([formKey, form]) => `
+      <div class="form-card">
+        <h4>${form.name}</h4>
+        <div class="form-stat">
+          <div class="form-stat-label">Absorption</div>
+          <div class="form-stat-value absorption-${getAbsorptionClass(form.absorption)}">${form.absorption}</div>
+        </div>
+        <div class="form-stat">
+          <div class="form-stat-label">Best For</div>
+          <div class="form-stat-value">${form.best_for}</div>
+        </div>
+        <div class="form-stat">
+          <div class="form-stat-label">Side Effects</div>
+          <div class="form-stat-value side-effect-${getSideEffectClass(form.side_effects)}">${form.side_effects}</div>
+        </div>
+        <div class="form-stat">
+          <div class="form-stat-label">Cost/Dose</div>
+          <div class="form-stat-value"><strong>$${form.cost_per_dose.toFixed(2)}</strong></div>
+        </div>
+      </div>
+    `).join('');
+
+    // Brands
+    const brandList = document.getElementById('brand-list');
+    const allBrands = [];
+    Object.values(selectedSupplement.forms).forEach(form => {
+      form.brands.forEach(brand => {
+        allBrands.push(brand);
+      });
+    });
+
+    // Sort by cost per dose
+    allBrands.sort((a, b) => (a.price / a.servings) - (b.price / b.servings));
+
+    const maxCost = Math.max(...allBrands.map(b => b.price / b.servings));
+
+    brandList.innerHTML = allBrands.map(brand => {
+      const costPerDose = brand.price / brand.servings;
+      return `
+        <div class="brand-item">
+          <div class="brand-info">
+            <h4>${brand.name}</h4>
+            <div class="brand-quality">${brand.quality}</div>
+          </div>
+          <div class="brand-pricing">
+            <div class="brand-price">$${brand.price}</div>
+            <div class="brand-servings">${brand.servings} servings (${costPerDose.toFixed(2)}/dose)</div>
+          </div>
+        </div>
+      `;
+    }).join('');
+
+    // Cost analysis chart
+    const costChart = document.getElementById('cost-chart');
+    const topBrands = allBrands.slice(0, 5);
+
+    costChart.innerHTML = topBrands.map(brand => {
+      const costPerDose = brand.price / brand.servings;
+      const percentage = (costPerDose / maxCost) * 100;
+      return `
+        <div class="cost-bar-item">
+          <div class="cost-bar-label">${brand.name.split(' ').slice(0, 2).join(' ')}</div>
+          <div class="cost-bar-container">
+            <div class="cost-bar-fill" style="width: ${percentage}%">
+              <div class="cost-bar-value">$${costPerDose.toFixed(2)}</div>
+            </div>
+          </div>
+        </div>
+      `;
+    }).join('');
+
+    // Recommendation
+    const forms = Object.entries(selectedSupplement.forms);
+    const bestAbsorption = forms.find(([_, f]) => f.absorption.includes('Excellent'));
+    const bestValue = forms.reduce((best, [_, f]) => {
+      return f.cost_per_dose < best.cost_per_dose ? f : best;
+    });
+    const cheapestBrand = allBrands[0];
+
+    const recommendationBox = document.getElementById('recommendation-box');
+    recommendationBox.innerHTML = `
+      <div class="recommendation-item">
+        <h4>✅ Best Absorption: ${bestAbsorption[1].name}</h4>
+        <p>If you want maximum absorption and are willing to spend more, this form is your best choice. You'll absorb more of what you take.</p>
+      </div>
+      <div class="recommendation-item">
+        <h4>💰 Best Value: ${cheapestBrand.name}</h4>
+        <p>This brand offers the lowest cost per dose while maintaining good quality. Great for budgets.</p>
+      </div>
+      <div class="recommendation-item">
+        <h4>🎯 Our Top Pick</h4>
+        <p>Balance absorption, cost, and quality. Look for brands with 4+ stars that offer good absorption at a reasonable price. Most people do great with the "good" absorption forms at lower cost rather than "excellent" forms at 3x the price.</p>
+      </div>
+    `;
+
+    resultsDiv.style.display = 'block';
+    resultsDiv.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+
+  function getAbsorptionClass(absorption) {
+    if (absorption.includes('Excellent') || absorption.includes('95%') || absorption.includes('90%+')) return 'excellent';
+    if (absorption.includes('Good') || absorption.includes('65%') || absorption.includes('80%')) return 'good';
+    return 'poor';
+  }
+
+  function getSideEffectClass(sideEffects) {
+    if (sideEffects.includes('Minimal') || sideEffects === 'None') return 'minimal';
+    return 'possible';
+  }
+
+  // Compare another button
+  document.getElementById('compare-another-btn').addEventListener('click', () => {
+    document.getElementById('comparison-results').style.display = 'none';
+    document.querySelectorAll('.supplement-option').forEach(opt => {
+      opt.classList.remove('active');
+    });
+    document.getElementById('supplement-selector').scrollIntoView({ behavior: 'smooth' });
+  });
+});
+</script>
+
+{{ end }}

@@ -1,54 +1,64 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Biohacking on Supplement Guide - Evidence-Based Supplement Information</title>
-    <link>http://localhost:1313/tags/biohacking/</link>
-    <description>Recent content in Biohacking on Supplement Guide - Evidence-Based Supplement Information</description>
-    <generator>Hugo</generator>
-    <language>en-us</language>
-    <lastBuildDate>Tue, 23 Jan 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/biohacking/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Antioxidants Explained: The Biohacker&#39;s Guide to Free Radicals, ROS, and Oxidative Stress</title>
-      <link>http://localhost:1313/guides/antioxidants-explained-the-biohackers-guide-to-free-radicals-ros-and-oxidative-stress/</link>
-      <pubDate>Tue, 23 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/guides/antioxidants-explained-the-biohackers-guide-to-free-radicals-ros-and-oxidative-stress/</guid>
-      <description>&lt;h2 id=&#34;introduction-why-antioxidants-matter-and-why-the-story-is-more-complex-than-you-think&#34;&gt;Introduction: Why Antioxidants Matter (And Why the Story Is More Complex Than You Think)&lt;/h2&gt;&#xA;&lt;p&gt;Oxidative stress is simultaneously:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;The problem&lt;/strong&gt;: Chronic oxidative stress accelerates aging, impairs cognition, causes inflammation&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;The solution&lt;/strong&gt;: Acute oxidative stress from training triggers antioxidant enzyme upregulation and adaptation&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;This paradox makes antioxidant optimization a frontier topic in biohacking. Take too little, and you suffer inflammatory damage. Take too much, and you suppress training adaptations and slow progress.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Essential Minerals: The Electrolyte and Trace Element Optimization Guide</title>
-      <link>http://localhost:1313/guides/essential-minerals-the-electrolyte-and-trace-element-optimization-guide/</link>
-      <pubDate>Tue, 23 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/guides/essential-minerals-the-electrolyte-and-trace-element-optimization-guide/</guid>
-      <description>&lt;h2 id=&#34;introduction-why-minerals-matter&#34;&gt;Introduction: Why Minerals Matter&lt;/h2&gt;&#xA;&lt;p&gt;Minerals are inorganic elements that your body cannot synthesize. Unlike vitamins, they&amp;rsquo;re not destroyed by heat or storage—they remain chemically intact. This makes them simultaneously more stable and more prone to depletion through sweat, stress, and modern food processing.&lt;/p&gt;&#xA;&lt;p&gt;For biohackers, minerals are the cofactors that make performance possible:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Energy production&lt;/strong&gt;: Magnesium activates ATP; iron transports oxygen&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Muscle function&lt;/strong&gt;: Calcium triggers contraction; potassium and sodium enable neural signaling&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Antioxidant defense&lt;/strong&gt;: Zinc, selenium, copper, and manganese activate superoxide dismutase and glutathione peroxidase&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Hormone regulation&lt;/strong&gt;: Iodine, iron, chromium, and others regulate metabolism and blood sugar&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Bone and connective tissue&lt;/strong&gt;: Calcium, magnesium, phosphorus, and trace elements build structural integrity&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Nervous system&lt;/strong&gt;: Magnesium, potassium, sodium, and zinc are essential for neurotransmission and myelin formation&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;This guide covers the 15 essential minerals, their roles, optimization strategies, and why deficiency—even subclinical—destroys performance.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Essential Vitamins: The Complete Biohacker&#39;s Guide</title>
-      <link>http://localhost:1313/guides/essential-vitamins-the-complete-biohackers-guide/</link>
-      <pubDate>Tue, 23 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/guides/essential-vitamins-the-complete-biohackers-guide/</guid>
-      <description>&lt;h2 id=&#34;introduction-why-vitamins-matter&#34;&gt;Introduction: Why Vitamins Matter&lt;/h2&gt;&#xA;&lt;p&gt;Vitamins are organic compounds that your body cannot synthesize in sufficient quantities. Unlike macronutrients (protein, carbs, fats) that provide energy and structure, vitamins serve as cofactors and coenzymes—essentially the catalysts that make thousands of biochemical reactions happen.&lt;/p&gt;&#xA;&lt;p&gt;For biohackers optimizing performance, vitamins are non-negotiable. They power:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Energy production and mitochondrial function&lt;/li&gt;&#xA;&lt;li&gt;Neurotransmitter synthesis and cognitive performance&lt;/li&gt;&#xA;&lt;li&gt;Immune system regulation&lt;/li&gt;&#xA;&lt;li&gt;Antioxidant defense&lt;/li&gt;&#xA;&lt;li&gt;Gene expression and epigenetics&lt;/li&gt;&#xA;&lt;li&gt;Recovery and adaptation&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;This guide covers all 13 essential vitamins your body cannot produce, what each does, how to optimize intake, and why deficiency—even subclinical—limits your potential.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>How to Boost NAD&#43; Levels for Energy, Longevity &amp; Cognitive Performance</title>
-      <link>http://localhost:1313/guides/how-to-boost-nad-levels-for-energy-longevity-cognitive-performance/</link>
-      <pubDate>Tue, 23 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/guides/how-to-boost-nad-levels-for-energy-longevity-cognitive-performance/</guid>
-      <description>&lt;h2 id=&#34;what-is-nad--why-it-matters&#34;&gt;What Is NAD+ &amp;amp; Why It Matters&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;NAD+ (Nicotinamide Adenine Dinucleotide)&lt;/strong&gt; is a critical coenzyme found in every cell that fuels three essential biological processes:&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&lt;strong&gt;Energy Production&lt;/strong&gt;: Shuttles electrons in mitochondrial ATP synthesis&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;DNA Repair&lt;/strong&gt;: Activates sirtuins and PARPs (poly-ADP-ribose polymerases) for genomic stability&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Circadian Regulation&lt;/strong&gt;: Controls clock genes via NAD+-dependent SIRT1 signaling&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;NAD+ exists in two forms:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;NAD+ (oxidized)&lt;/strong&gt; - the active form that drives these reactions&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;NADH (reduced)&lt;/strong&gt; - the used form that must be recycled&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;High NAD+/NADH ratios correlate with:&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Macronutrients: The Complete Biohacker&#39;s Guide to Proteins, Carbs, and Fats</title>
-      <link>http://localhost:1313/guides/macronutrients-the-complete-biohackers-guide-to-proteins-carbs-and-fats/</link>
-      <pubDate>Tue, 23 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/guides/macronutrients-the-complete-biohackers-guide-to-proteins-carbs-and-fats/</guid>
-      <description>&lt;h2 id=&#34;introduction-why-macronutrients-matter&#34;&gt;Introduction: Why Macronutrients Matter&lt;/h2&gt;&#xA;&lt;p&gt;Macronutrients—protein, carbohydrates, and fats—provide energy (calories) and the building blocks for every tissue. But calories are not equal. A 2000-calorie diet of ultra-processed carbs has vastly different hormonal, metabolic, and performance effects than 2000 calories from whole foods.&lt;/p&gt;&#xA;&lt;p&gt;For biohackers, understanding macronutrients goes beyond &amp;ldquo;calories in, calories out.&amp;rdquo; It&amp;rsquo;s about:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Hormonal optimization&lt;/strong&gt;: Macronutrient ratios directly affect insulin, leptin, ghrelin, cortisol, and testosterone&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Performance and recovery&lt;/strong&gt;: Carbohydrate timing and quality affect training capacity and glycogen repletion&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Body composition&lt;/strong&gt;: Protein intake and strength training preserve muscle; fat quality affects inflammation and hormone production&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Metabolic health&lt;/strong&gt;: Dietary carbohydrate quality determines insulin sensitivity and cardiovascular health&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Longevity&lt;/strong&gt;: Macronutrient ratios affect aging, autophagy, and mTOR signaling&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Cognitive performance&lt;/strong&gt;: Brain energy, neurotransmitter synthesis, and neuroprotection depend on adequate carbs, protein, and specific fats&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;This guide unpacks the science and optimization strategies for each macronutrient.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Water-Soluble vs Fat-Soluble Nutrients: Critical Differences for Biohackers</title>
-      <link>http://localhost:1313/guides/water-soluble-vs-fat-soluble-nutrients-critical-differences-for-biohackers/</link>
-      <pubDate>Tue, 23 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/guides/water-soluble-vs-fat-soluble-nutrients-critical-differences-for-biohackers/</guid>
-      <description>&lt;h2 id=&#34;introduction-one-of-the-most-important-distinctions-in-biohacking&#34;&gt;Introduction: One of the Most Important Distinctions in Biohacking&lt;/h2&gt;&#xA;&lt;p&gt;The water-soluble vs fat-soluble divide is fundamental to intelligent supplementation. It determines:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;How much you should take&lt;/strong&gt;: Water-soluble can be safely megadosed; fat-soluble have absolute upper limits&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;How often you take it&lt;/strong&gt;: Water-soluble need daily replacement; fat-soluble can be dosed less frequently&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;When you take it&lt;/strong&gt;: Water-soluble timing is flexible; fat-soluble require fat for absorption&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;What happens with excess&lt;/strong&gt;: Water-soluble excess is urinary loss (mostly); fat-soluble excess causes toxicity&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Drug/nutrient interactions&lt;/strong&gt;: Fat-soluble absorption is blocked by fat-malabsorption drugs; water-soluble are safer&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Storage and degradation&lt;/strong&gt;: Water-soluble degrade with heat and light; fat-soluble are stable&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;This distinction separates supplement optimization from supplement-induced harm. Get it wrong and you can create deficiencies or toxicities.&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Biohacking on Supplement Guide - Evidence-Based Supplement Information</title><link>https://supplementguide.co/tags/biohacking/</link><description>Recent content in Biohacking on Supplement Guide - Evidence-Based Supplement Information</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Tue, 23 Jan 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://supplementguide.co/tags/biohacking/index.xml" rel="self" type="application/rss+xml"/><item><title>Antioxidants Explained: The Biohacker's Guide to Free Radicals, ROS, and Oxidative Stress</title><link>https://supplementguide.co/guides/antioxidants-explained-the-biohackers-guide-to-free-radicals-ros-and-oxidative-stress/</link><pubDate>Tue, 23 Jan 2024 00:00:00 +0000</pubDate><guid>https://supplementguide.co/guides/antioxidants-explained-the-biohackers-guide-to-free-radicals-ros-and-oxidative-stress/</guid><description>&lt;h2 id="introduction-why-antioxidants-matter-and-why-the-story-is-more-complex-than-you-think"&gt;Introduction: Why Antioxidants Matter (And Why the Story Is More Complex Than You Think)&lt;/h2&gt;
+&lt;p&gt;Oxidative stress is simultaneously:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;The problem&lt;/strong&gt;: Chronic oxidative stress accelerates aging, impairs cognition, causes inflammation&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;The solution&lt;/strong&gt;: Acute oxidative stress from training triggers antioxidant enzyme upregulation and adaptation&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;This paradox makes antioxidant optimization a frontier topic in biohacking. Take too little, and you suffer inflammatory damage. Take too much, and you suppress training adaptations and slow progress.&lt;/p&gt;</description></item><item><title>Essential Minerals: The Electrolyte and Trace Element Optimization Guide</title><link>https://supplementguide.co/guides/essential-minerals-the-electrolyte-and-trace-element-optimization-guide/</link><pubDate>Tue, 23 Jan 2024 00:00:00 +0000</pubDate><guid>https://supplementguide.co/guides/essential-minerals-the-electrolyte-and-trace-element-optimization-guide/</guid><description>&lt;h2 id="introduction-why-minerals-matter"&gt;Introduction: Why Minerals Matter&lt;/h2&gt;
+&lt;p&gt;Minerals are inorganic elements that your body cannot synthesize. Unlike vitamins, they&amp;rsquo;re not destroyed by heat or storage—they remain chemically intact. This makes them simultaneously more stable and more prone to depletion through sweat, stress, and modern food processing.&lt;/p&gt;
+&lt;p&gt;For biohackers, minerals are the cofactors that make performance possible:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Energy production&lt;/strong&gt;: Magnesium activates ATP; iron transports oxygen&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Muscle function&lt;/strong&gt;: Calcium triggers contraction; potassium and sodium enable neural signaling&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Antioxidant defense&lt;/strong&gt;: Zinc, selenium, copper, and manganese activate superoxide dismutase and glutathione peroxidase&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Hormone regulation&lt;/strong&gt;: Iodine, iron, chromium, and others regulate metabolism and blood sugar&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Bone and connective tissue&lt;/strong&gt;: Calcium, magnesium, phosphorus, and trace elements build structural integrity&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Nervous system&lt;/strong&gt;: Magnesium, potassium, sodium, and zinc are essential for neurotransmission and myelin formation&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;This guide covers the 15 essential minerals, their roles, optimization strategies, and why deficiency—even subclinical—destroys performance.&lt;/p&gt;</description></item><item><title>Essential Vitamins: The Complete Biohacker's Guide</title><link>https://supplementguide.co/guides/essential-vitamins-the-complete-biohackers-guide/</link><pubDate>Tue, 23 Jan 2024 00:00:00 +0000</pubDate><guid>https://supplementguide.co/guides/essential-vitamins-the-complete-biohackers-guide/</guid><description>&lt;h2 id="introduction-why-vitamins-matter"&gt;Introduction: Why Vitamins Matter&lt;/h2&gt;
+&lt;p&gt;Vitamins are organic compounds that your body cannot synthesize in sufficient quantities. Unlike macronutrients (protein, carbs, fats) that provide energy and structure, vitamins serve as cofactors and coenzymes—essentially the catalysts that make thousands of biochemical reactions happen.&lt;/p&gt;
+&lt;p&gt;For biohackers optimizing performance, vitamins are non-negotiable. They power:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Energy production and mitochondrial function&lt;/li&gt;
+&lt;li&gt;Neurotransmitter synthesis and cognitive performance&lt;/li&gt;
+&lt;li&gt;Immune system regulation&lt;/li&gt;
+&lt;li&gt;Antioxidant defense&lt;/li&gt;
+&lt;li&gt;Gene expression and epigenetics&lt;/li&gt;
+&lt;li&gt;Recovery and adaptation&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;This guide covers all 13 essential vitamins your body cannot produce, what each does, how to optimize intake, and why deficiency—even subclinical—limits your potential.&lt;/p&gt;</description></item><item><title>How to Boost NAD+ Levels for Energy, Longevity &amp; Cognitive Performance</title><link>https://supplementguide.co/guides/how-to-boost-nad-levels-for-energy-longevity-cognitive-performance/</link><pubDate>Tue, 23 Jan 2024 00:00:00 +0000</pubDate><guid>https://supplementguide.co/guides/how-to-boost-nad-levels-for-energy-longevity-cognitive-performance/</guid><description>&lt;h2 id="what-is-nad--why-it-matters"&gt;What Is NAD+ &amp;amp; Why It Matters&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;NAD+ (Nicotinamide Adenine Dinucleotide)&lt;/strong&gt; is a critical coenzyme found in every cell that fuels three essential biological processes:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Energy Production&lt;/strong&gt;: Shuttles electrons in mitochondrial ATP synthesis&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;DNA Repair&lt;/strong&gt;: Activates sirtuins and PARPs (poly-ADP-ribose polymerases) for genomic stability&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Circadian Regulation&lt;/strong&gt;: Controls clock genes via NAD+-dependent SIRT1 signaling&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;NAD+ exists in two forms:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;NAD+ (oxidized)&lt;/strong&gt; - the active form that drives these reactions&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;NADH (reduced)&lt;/strong&gt; - the used form that must be recycled&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;High NAD+/NADH ratios correlate with:&lt;/p&gt;</description></item><item><title>Macronutrients: The Complete Biohacker's Guide to Proteins, Carbs, and Fats</title><link>https://supplementguide.co/guides/macronutrients-the-complete-biohackers-guide-to-proteins-carbs-and-fats/</link><pubDate>Tue, 23 Jan 2024 00:00:00 +0000</pubDate><guid>https://supplementguide.co/guides/macronutrients-the-complete-biohackers-guide-to-proteins-carbs-and-fats/</guid><description>&lt;h2 id="introduction-why-macronutrients-matter"&gt;Introduction: Why Macronutrients Matter&lt;/h2&gt;
+&lt;p&gt;Macronutrients—protein, carbohydrates, and fats—provide energy (calories) and the building blocks for every tissue. But calories are not equal. A 2000-calorie diet of ultra-processed carbs has vastly different hormonal, metabolic, and performance effects than 2000 calories from whole foods.&lt;/p&gt;
+&lt;p&gt;For biohackers, understanding macronutrients goes beyond &amp;ldquo;calories in, calories out.&amp;rdquo; It&amp;rsquo;s about:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Hormonal optimization&lt;/strong&gt;: Macronutrient ratios directly affect insulin, leptin, ghrelin, cortisol, and testosterone&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Performance and recovery&lt;/strong&gt;: Carbohydrate timing and quality affect training capacity and glycogen repletion&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Body composition&lt;/strong&gt;: Protein intake and strength training preserve muscle; fat quality affects inflammation and hormone production&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Metabolic health&lt;/strong&gt;: Dietary carbohydrate quality determines insulin sensitivity and cardiovascular health&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Longevity&lt;/strong&gt;: Macronutrient ratios affect aging, autophagy, and mTOR signaling&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Cognitive performance&lt;/strong&gt;: Brain energy, neurotransmitter synthesis, and neuroprotection depend on adequate carbs, protein, and specific fats&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;This guide unpacks the science and optimization strategies for each macronutrient.&lt;/p&gt;</description></item><item><title>Water-Soluble vs Fat-Soluble Nutrients: Critical Differences for Biohackers</title><link>https://supplementguide.co/guides/water-soluble-vs-fat-soluble-nutrients-critical-differences-for-biohackers/</link><pubDate>Tue, 23 Jan 2024 00:00:00 +0000</pubDate><guid>https://supplementguide.co/guides/water-soluble-vs-fat-soluble-nutrients-critical-differences-for-biohackers/</guid><description>&lt;h2 id="introduction-one-of-the-most-important-distinctions-in-biohacking"&gt;Introduction: One of the Most Important Distinctions in Biohacking&lt;/h2&gt;
+&lt;p&gt;The water-soluble vs fat-soluble divide is fundamental to intelligent supplementation. It determines:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;How much you should take&lt;/strong&gt;: Water-soluble can be safely megadosed; fat-soluble have absolute upper limits&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;How often you take it&lt;/strong&gt;: Water-soluble need daily replacement; fat-soluble can be dosed less frequently&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;When you take it&lt;/strong&gt;: Water-soluble timing is flexible; fat-soluble require fat for absorption&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;What happens with excess&lt;/strong&gt;: Water-soluble excess is urinary loss (mostly); fat-soluble excess causes toxicity&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Drug/nutrient interactions&lt;/strong&gt;: Fat-soluble absorption is blocked by fat-malabsorption drugs; water-soluble are safer&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Storage and degradation&lt;/strong&gt;: Water-soluble degrade with heat and light; fat-soluble are stable&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;This distinction separates supplement optimization from supplement-induced harm. Get it wrong and you can create deficiencies or toxicities.&lt;/p&gt;</description></item><item><title>Acetyl-L-Carnitine (ALCAR)</title><link>https://supplementguide.co/supplements/acetyl-l-carnitine-alcar/</link><pubDate>Mon, 22 Jan 2024 00:00:00 +0000</pubDate><guid>https://supplementguide.co/supplements/acetyl-l-carnitine-alcar/</guid><description>&lt;h2 id="what-is-acetyl-l-carnitine-alcar"&gt;What Is Acetyl-L-Carnitine (ALCAR)?&lt;/h2&gt;
+&lt;p&gt;Acetyl-L-Carnitine (ALCAR) is the acetylated form of L-Carnitine, an amino acid derivative naturally synthesized in the body from lysine and methionine. The acetyl group attached to the carnitine molecule gives ALCAR unique properties that distinguish it from standard L-Carnitine: it readily crosses the blood-brain barrier, directly supports acetylcholine synthesis, and serves as a source of acetyl groups for cellular energy production.&lt;/p&gt;
+&lt;p&gt;ALCAR plays a critical role in mitochondrial function by facilitating the transport of fatty acids into mitochondria for beta-oxidation (fat burning) while simultaneously supporting the production of acetyl-CoA, the universal energy currency precursor. This dual role makes ALCAR uniquely positioned at the intersection of cognitive enhancement and metabolic optimization.&lt;/p&gt;</description></item></channel></rss>

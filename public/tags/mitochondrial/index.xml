@@ -1,19 +1,13 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Mitochondrial on Supplement Guide - Evidence-Based Supplement Information</title>
-    <link>http://localhost:1313/tags/mitochondrial/</link>
-    <description>Recent content in Mitochondrial on Supplement Guide - Evidence-Based Supplement Information</description>
-    <generator>Hugo</generator>
-    <language>en-us</language>
-    <lastBuildDate>Mon, 22 Jan 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/mitochondrial/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Astaxanthin</title>
-      <link>http://localhost:1313/supplements/astaxanthin/</link>
-      <pubDate>Mon, 22 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/supplements/astaxanthin/</guid>
-      <description>&lt;h2 id=&#34;what-is-astaxanthin&#34;&gt;What Is Astaxanthin?&lt;/h2&gt;&#xA;&lt;p&gt;Astaxanthin is a xanthophyll carotenoid, a lipid-soluble pigment produced by the microalga &lt;em&gt;Haematococcus pluvialis&lt;/em&gt; as a stress response mechanism. This compound is responsible for the red coloration in salmon, shrimp, and krill. Unlike other carotenoids, astaxanthin possesses a unique molecular structure featuring ionone rings at both ends with a conjugated polyene chain, allowing it to embed itself across the entire thickness of the cell membrane.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Source and Bioavailability:&lt;/strong&gt;&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Mitochondrial on Supplement Guide - Evidence-Based Supplement Information</title><link>https://supplementguide.co/tags/mitochondrial/</link><description>Recent content in Mitochondrial on Supplement Guide - Evidence-Based Supplement Information</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Thu, 25 Jan 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://supplementguide.co/tags/mitochondrial/index.xml" rel="self" type="application/rss+xml"/><item><title>NMN (Nicotinamide Mononucleotide)</title><link>https://supplementguide.co/supplements/nmn-nicotinamide-mononucleotide/</link><pubDate>Thu, 25 Jan 2024 00:00:00 +0000</pubDate><guid>https://supplementguide.co/supplements/nmn-nicotinamide-mononucleotide/</guid><description>&lt;h2 id="what-is-nmn"&gt;What Is NMN?&lt;/h2&gt;
+&lt;p&gt;Nicotinamide Mononucleotide (NMN) is a nucleotide derived from ribose and nicotinamide, serving as a direct and immediate precursor to NAD+ (nicotinamide adenine dinucleotide). NAD+ is arguably the most important coenzyme in human biology, required for over 500 enzymatic reactions including:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Cellular energy production&lt;/strong&gt; (glycolysis, TCA cycle, oxidative phosphorylation)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Sirtuin activation&lt;/strong&gt; (SIRT1-7 longevity enzymes)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;DNA repair&lt;/strong&gt; (PARP enzyme function)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Circadian rhythm regulation&lt;/strong&gt; (CLOCK/BMAL1 pathways)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Cellular stress response&lt;/strong&gt; (redox balance, mitochondrial function)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;The NAD+ Decline Problem:&lt;/strong&gt;
+NAD+ levels decline approximately 50% between ages 40 and 60, with continued decline thereafter. This depletion is now understood to be a primary driver of aging at the cellular level:&lt;/p&gt;</description></item><item><title>Astaxanthin</title><link>https://supplementguide.co/supplements/astaxanthin/</link><pubDate>Mon, 22 Jan 2024 00:00:00 +0000</pubDate><guid>https://supplementguide.co/supplements/astaxanthin/</guid><description>&lt;h2 id="what-is-astaxanthin"&gt;What Is Astaxanthin?&lt;/h2&gt;
+&lt;p&gt;Astaxanthin is a xanthophyll carotenoid, a lipid-soluble pigment produced by the microalga &lt;em&gt;Haematococcus pluvialis&lt;/em&gt; as a stress response mechanism. This compound is responsible for the red coloration in salmon, shrimp, and krill. Unlike other carotenoids, astaxanthin possesses a unique molecular structure featuring ionone rings at both ends with a conjugated polyene chain, allowing it to embed itself across the entire thickness of the cell membrane.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Source and Bioavailability:&lt;/strong&gt;&lt;/p&gt;</description></item></channel></rss>
