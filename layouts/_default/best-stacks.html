@@ -1,0 +1,366 @@
+{{ define "main" }}
+
+<div class="container">
+  <div class="stacks-wrapper">
+
+    <!-- Header -->
+    <header class="stacks-header">
+      <h1>{{ .Title }}</h1>
+      <p class="stacks-subtitle">Pre-built supplement stacks for 8 major health goals. Each stack shows dosages, timing, monthly cost, and expected results.</p>
+
+      <div class="stacks-cta-banner">
+        <p><strong>Want personalized?</strong> Use our <a href="/stack-generator/">Stack Generator</a> to customize based on YOUR budget and experience level.</p>
+      </div>
+    </header>
+
+    <!-- Content -->
+    <div class="stacks-content">
+      {{ .Content }}
+    </div>
+
+    <!-- Stacks Grid -->
+    <div class="stacks-grid" id="stacks-grid">
+      <!-- Populated by JavaScript from data -->
+    </div>
+
+    <!-- CTA Section -->
+    <section class="stacks-cta-section">
+      <h2>Not Sure Which Stack is Right for You?</h2>
+      <p>Take our interactive tools to find your perfect stack:</p>
+
+      <div class="cta-buttons">
+        <a href="/stack-generator/" class="btn btn-primary">Build Personalized Stack</a>
+        <a href="/analyzer/" class="btn btn-secondary">Analyze My Current Stack</a>
+        <a href="/tools/" class="btn btn-outline">See All Tools</a>
+      </div>
+    </section>
+
+  </div>
+</div>
+
+<style>
+.stacks-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: var(--spacing-2xl) 0;
+}
+
+.stacks-header {
+  text-align: center;
+  margin-bottom: var(--spacing-2xl);
+}
+
+.stacks-header h1 {
+  margin-bottom: var(--spacing-md);
+}
+
+.stacks-subtitle {
+  color: var(--color-text-light);
+  font-size: 1.125rem;
+  max-width: 700px;
+  margin: 0 auto var(--spacing-lg);
+}
+
+.stacks-cta-banner {
+  background: linear-gradient(135deg, #F0F9FF 0%, #EFF6FF 100%);
+  border-left: 4px solid var(--color-primary);
+  padding: var(--spacing-md) var(--spacing-lg);
+  border-radius: var(--radius-md);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.stacks-cta-banner p {
+  margin: 0;
+  color: var(--color-text);
+}
+
+.stacks-cta-banner a {
+  font-weight: 600;
+  color: var(--color-primary);
+  text-decoration: none;
+}
+
+.stacks-cta-banner a:hover {
+  text-decoration: underline;
+}
+
+.stacks-content {
+  margin-bottom: var(--spacing-2xl);
+}
+
+.stacks-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--spacing-2xl);
+  margin-bottom: var(--spacing-3xl);
+}
+
+.stack-card {
+  background: var(--color-white);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  transition: all 0.2s;
+}
+
+.stack-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-lg);
+}
+
+.stack-header {
+  background: linear-gradient(135deg, var(--color-primary) 0%, #40735E 100%);
+  color: white;
+  padding: var(--spacing-lg);
+  text-align: center;
+}
+
+.stack-icon {
+  font-size: 2.5rem;
+  margin-bottom: var(--spacing-sm);
+  line-height: 1;
+}
+
+.stack-header h3 {
+  margin: var(--spacing-sm) 0;
+  color: white;
+  font-size: 1.25rem;
+}
+
+.stack-body {
+  padding: var(--spacing-lg);
+}
+
+.budget-tiers {
+  display: grid;
+  gap: var(--spacing-md);
+  margin-bottom: var(--spacing-lg);
+}
+
+.tier {
+  background: var(--color-cream);
+  padding: var(--spacing-md);
+  border-radius: var(--radius-md);
+  border-left: 4px solid var(--color-primary);
+}
+
+.tier-label {
+  font-weight: 600;
+  color: var(--color-primary);
+  margin-bottom: var(--spacing-sm);
+}
+
+.tier-info {
+  font-size: 0.875rem;
+  color: var(--color-text-light);
+}
+
+.tier-cost {
+  font-weight: 600;
+  color: var(--color-text);
+}
+
+.tier-supplements {
+  font-size: 0.875rem;
+  color: var(--color-text-light);
+  margin-top: var(--spacing-xs);
+}
+
+.stack-features {
+  list-style: none;
+  padding: 0;
+  margin: var(--spacing-md) 0;
+}
+
+.stack-features li {
+  padding: var(--spacing-xs) 0;
+  color: var(--color-text);
+  font-size: 0.9375rem;
+}
+
+.stack-features li::before {
+  content: "✓ ";
+  color: var(--color-success);
+  font-weight: bold;
+  margin-right: var(--spacing-xs);
+}
+
+.stack-timeline {
+  background: #FEF3C7;
+  padding: var(--spacing-sm) var(--spacing-md);
+  border-radius: var(--radius-md);
+  margin-bottom: var(--spacing-md);
+}
+
+.stack-timeline-label {
+  font-size: 0.75rem;
+  color: #78350F;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.stack-timeline-value {
+  color: #78350F;
+  font-weight: 600;
+}
+
+.stack-actions {
+  display: flex;
+  gap: var(--spacing-sm);
+}
+
+.stack-actions .btn {
+  flex: 1;
+  padding: var(--spacing-sm) var(--spacing-md);
+  font-size: 0.9375rem;
+}
+
+.stacks-cta-section {
+  text-align: center;
+  padding: var(--spacing-3xl) var(--spacing-lg);
+  background: linear-gradient(135deg, #F0F9FF 0%, #F8FAFC 100%);
+  border-radius: var(--radius-lg);
+  margin: var(--spacing-3xl) 0;
+}
+
+.stacks-cta-section h2 {
+  margin-bottom: var(--spacing-md);
+  color: var(--color-primary);
+}
+
+.stacks-cta-section p {
+  color: var(--color-text-light);
+  margin-bottom: var(--spacing-lg);
+}
+
+.cta-buttons {
+  display: flex;
+  gap: var(--spacing-md);
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.cta-buttons .btn {
+  min-width: 200px;
+}
+
+@media (max-width: 768px) {
+  .stacks-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .cta-buttons {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .cta-buttons .btn {
+    width: 100%;
+  }
+}
+</style>
+
+<script>
+document.addEventListener('DOMContentLoaded', async function() {
+  // Load stack data
+  const response = await fetch('/data/stack-generator-data.json');
+  const data = await response.json();
+
+  const baseStacks = data.baseStacks;
+  const supplements = data.supplements;
+
+  const GOAL_ICONS = {
+    'sleep': '😴',
+    'energy': '⚡',
+    'focus': '🧠',
+    'muscle': '💪',
+    'longevity': '⏳',
+    'stress': '🧘',
+    'immune': '🛡️',
+    'recovery': '🏃'
+  };
+
+  const GOAL_LABELS = {
+    'sleep': 'Better Sleep',
+    'energy': 'More Energy',
+    'focus': 'Mental Focus',
+    'muscle': 'Muscle & Strength',
+    'longevity': 'Longevity & Anti-Aging',
+    'stress': 'Stress Relief',
+    'immune': 'Immune Support',
+    'recovery': 'Athletic Recovery'
+  };
+
+  // Render stacks
+  const grid = document.getElementById('stacks-grid');
+
+  Object.entries(baseStacks).forEach(([goalKey, goalStacks]) => {
+    const card = document.createElement('div');
+    card.className = 'stack-card';
+
+    // Calculate costs and supplements for each tier
+    const budgetStacks = {
+      'budget': goalStacks.beginner.slice(0, 3),
+      'intermediate': goalStacks.intermediate.slice(0, 6),
+      'advanced': goalStacks.advanced
+    };
+
+    const calculateCost = (suppIds) => {
+      return suppIds.reduce((sum, id) => {
+        return sum + (supplements[id]?.cost_per_month || 0);
+      }, 0);
+    };
+
+    const budgetCost = calculateCost(budgetStacks.budget);
+    const intermediateCost = calculateCost(budgetStacks.intermediate);
+    const advancedCost = calculateCost(budgetStacks.advanced);
+
+    card.innerHTML = `
+      <div class="stack-header">
+        <div class="stack-icon">${GOAL_ICONS[goalKey]}</div>
+        <h3>${GOAL_LABELS[goalKey]}</h3>
+      </div>
+
+      <div class="stack-body">
+        <ul class="stack-features">
+          <li>${budgetStacks.budget.length} supplements (budget)</li>
+          <li>${budgetStacks.intermediate.length} supplements (moderate)</li>
+          <li>${budgetStacks.advanced.length} supplements (premium)</li>
+        </ul>
+
+        <div class="budget-tiers">
+          <div class="tier">
+            <div class="tier-label">Budget Stack</div>
+            <div class="tier-cost">$${budgetCost}/month</div>
+            <div class="tier-supplements">${budgetStacks.budget.length} supplements</div>
+          </div>
+          <div class="tier">
+            <div class="tier-label">Moderate Stack</div>
+            <div class="tier-cost">$${intermediateCost}/month</div>
+            <div class="tier-supplements">${budgetStacks.intermediate.length} supplements</div>
+          </div>
+          <div class="tier">
+            <div class="tier-label">Premium Stack</div>
+            <div class="tier-cost">$${advancedCost}/month</div>
+            <div class="tier-supplements">${budgetStacks.advanced.length} supplements</div>
+          </div>
+        </div>
+
+        <div class="stack-timeline">
+          <div class="stack-timeline-label">Results Timeline</div>
+          <div class="stack-timeline-value">2-8 weeks</div>
+        </div>
+
+        <div class="stack-actions">
+          <a href="/stack-generator/?goal=${goalKey}" class="btn btn-primary btn-small">Build This Stack</a>
+        </div>
+      </div>
+    `;
+
+    grid.appendChild(card);
+  });
+});
+</script>
+
+{{ end }}
