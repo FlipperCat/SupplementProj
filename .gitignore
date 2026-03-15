@@ -1,0 +1,26 @@
+# Hugo generated content
+public/
+resources/
+
+# Build artifacts
+*.exe
+*.dll
+*.so
+*.dylib
+
+# OS files
+.DS_Store
+Thumbs.db
+.env
+.env.local
+.env.*.local
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Hugo build lock file
+.hugo_build.lock
