@@ -5,15 +5,36 @@
       "name": "Vitamin D3",
       "type": "vitamin",
       "category": "fat-soluble",
-      "dosage": { "min": 1000, "typical": 2000, "max": 5000, "unit": "IU" },
+      "dosage": {
+        "min": 1000,
+        "typical": 2000,
+        "max": 5000,
+        "unit": "IU"
+      },
       "timing": "morning",
       "withFood": true,
       "withFat": true,
-      "benefits": ["bone health", "immunity", "mood", "hormone support"],
-      "goals": ["immunity", "mood", "energy", "longevity"],
-      "synergies": ["vitamin-k2", "magnesium", "omega-3"],
+      "benefits": [
+        "bone health",
+        "immunity",
+        "mood",
+        "hormone support"
+      ],
+      "goals": [
+        "immunity",
+        "mood",
+        "energy",
+        "longevity"
+      ],
+      "synergies": [
+        "vitamin-k2",
+        "magnesium",
+        "omega-3"
+      ],
       "conflicts": [],
-      "absorptionCompetitors": ["vitamin-a"],
+      "absorptionCompetitors": [
+        "vitamin-a"
+      ],
       "depletedBy": [],
       "amwayProduct": "Nutrilite Vitamin D",
       "resultsTimeline": "2-3 months"
@@ -23,16 +44,43 @@
       "name": "Magnesium",
       "type": "mineral",
       "category": "essential",
-      "dosage": { "min": 200, "typical": 400, "max": 600, "unit": "mg" },
+      "dosage": {
+        "min": 200,
+        "typical": 400,
+        "max": 600,
+        "unit": "mg"
+      },
       "timing": "evening",
       "withFood": true,
       "withFat": false,
-      "benefits": ["sleep", "stress relief", "muscle relaxation", "energy production"],
-      "goals": ["sleep", "stress", "recovery", "energy"],
-      "synergies": ["vitamin-d3", "vitamin-b6-pyridoxine", "zinc"],
+      "benefits": [
+        "sleep",
+        "stress relief",
+        "muscle relaxation",
+        "energy production"
+      ],
+      "goals": [
+        "sleep",
+        "stress",
+        "recovery",
+        "energy"
+      ],
+      "synergies": [
+        "vitamin-d3",
+        "vitamin-b6-pyridoxine",
+        "zinc"
+      ],
       "conflicts": [],
-      "absorptionCompetitors": ["calcium", "zinc", "iron"],
-      "depletedBy": ["stress", "alcohol", "caffeine"],
+      "absorptionCompetitors": [
+        "calcium",
+        "zinc",
+        "iron"
+      ],
+      "depletedBy": [
+        "stress",
+        "alcohol",
+        "caffeine"
+      ],
       "amwayProduct": "Nutrilite Cal Mag D",
       "resultsTimeline": "1-4 weeks"
     },
@@ -41,13 +89,33 @@
       "name": "Omega-3 Fish Oil",
       "type": "fatty-acid",
       "category": "essential",
-      "dosage": { "min": 1000, "typical": 2000, "max": 4000, "unit": "mg EPA+DHA" },
+      "dosage": {
+        "min": 1000,
+        "typical": 2000,
+        "max": 4000,
+        "unit": "mg EPA+DHA"
+      },
       "timing": "any",
       "withFood": true,
       "withFat": true,
-      "benefits": ["brain health", "heart health", "inflammation", "mood"],
-      "goals": ["brain", "heart", "mood", "inflammation", "longevity"],
-      "synergies": ["vitamin-d3", "vitamin-e", "curcumin"],
+      "benefits": [
+        "brain health",
+        "heart health",
+        "inflammation",
+        "mood"
+      ],
+      "goals": [
+        "brain",
+        "heart",
+        "mood",
+        "inflammation",
+        "longevity"
+      ],
+      "synergies": [
+        "vitamin-d3",
+        "vitamin-e",
+        "curcumin"
+      ],
       "conflicts": [],
       "absorptionCompetitors": [],
       "depletedBy": [],
@@ -59,16 +127,36 @@
       "name": "Vitamin K2",
       "type": "vitamin",
       "category": "fat-soluble",
-      "dosage": { "min": 45, "typical": 100, "max": 200, "unit": "mcg" },
+      "dosage": {
+        "min": 45,
+        "typical": 100,
+        "max": 200,
+        "unit": "mcg"
+      },
       "timing": "morning",
       "withFood": true,
       "withFat": true,
-      "benefits": ["calcium direction", "bone health", "arterial health"],
-      "goals": ["bone", "heart", "longevity"],
-      "synergies": ["vitamin-d3", "calcium"],
-      "conflicts": ["warfarin"],
+      "benefits": [
+        "calcium direction",
+        "bone health",
+        "arterial health"
+      ],
+      "goals": [
+        "bone",
+        "heart",
+        "longevity"
+      ],
+      "synergies": [
+        "vitamin-d3",
+        "calcium"
+      ],
+      "conflicts": [
+        "warfarin"
+      ],
       "absorptionCompetitors": [],
-      "depletedBy": ["antibiotics"],
+      "depletedBy": [
+        "antibiotics"
+      ],
       "amwayProduct": null,
       "resultsTimeline": "3-6 months"
     },
@@ -77,16 +165,41 @@
       "name": "Zinc",
       "type": "mineral",
       "category": "trace",
-      "dosage": { "min": 15, "typical": 25, "max": 40, "unit": "mg" },
+      "dosage": {
+        "min": 15,
+        "typical": 25,
+        "max": 40,
+        "unit": "mg"
+      },
       "timing": "any",
       "withFood": true,
       "withFat": false,
-      "benefits": ["immunity", "testosterone", "skin health", "wound healing"],
-      "goals": ["immunity", "testosterone", "skin", "recovery"],
-      "synergies": ["copper", "vitamin-c"],
+      "benefits": [
+        "immunity",
+        "testosterone",
+        "skin health",
+        "wound healing"
+      ],
+      "goals": [
+        "immunity",
+        "testosterone",
+        "skin",
+        "recovery"
+      ],
+      "synergies": [
+        "copper",
+        "vitamin-c"
+      ],
       "conflicts": [],
-      "absorptionCompetitors": ["copper", "iron", "calcium"],
-      "depletedBy": ["alcohol", "stress"],
+      "absorptionCompetitors": [
+        "copper",
+        "iron",
+        "calcium"
+      ],
+      "depletedBy": [
+        "alcohol",
+        "stress"
+      ],
       "amwayProduct": "Nutrilite Daily",
       "resultsTimeline": "2-4 weeks"
     },
@@ -95,16 +208,38 @@
       "name": "Copper",
       "type": "mineral",
       "category": "trace",
-      "dosage": { "min": 1, "typical": 2, "max": 3, "unit": "mg" },
+      "dosage": {
+        "min": 1,
+        "typical": 2,
+        "max": 3,
+        "unit": "mg"
+      },
       "timing": "any",
       "withFood": true,
       "withFat": false,
-      "benefits": ["iron metabolism", "collagen", "energy", "antioxidant"],
-      "goals": ["energy", "skin", "longevity"],
-      "synergies": ["zinc"],
+      "benefits": [
+        "iron metabolism",
+        "collagen",
+        "energy",
+        "antioxidant"
+      ],
+      "goals": [
+        "energy",
+        "skin",
+        "longevity"
+      ],
+      "synergies": [
+        "zinc"
+      ],
       "conflicts": [],
-      "absorptionCompetitors": ["zinc", "iron", "vitamin-c"],
-      "depletedBy": ["high-zinc"],
+      "absorptionCompetitors": [
+        "zinc",
+        "iron",
+        "vitamin-c"
+      ],
+      "depletedBy": [
+        "high-zinc"
+      ],
       "amwayProduct": null,
       "resultsTimeline": "4-8 weeks",
       "notes": "Required when taking >25mg zinc"
@@ -114,16 +249,40 @@
       "name": "B-Complex",
       "type": "vitamin",
       "category": "water-soluble",
-      "dosage": { "min": 1, "typical": 1, "max": 2, "unit": "capsule" },
+      "dosage": {
+        "min": 1,
+        "typical": 1,
+        "max": 2,
+        "unit": "capsule"
+      },
       "timing": "morning",
       "withFood": true,
       "withFat": false,
-      "benefits": ["energy", "nervous system", "mood", "metabolism"],
-      "goals": ["energy", "mood", "stress", "brain"],
-      "synergies": ["magnesium", "vitamin-c", "iron"],
+      "benefits": [
+        "energy",
+        "nervous system",
+        "mood",
+        "metabolism"
+      ],
+      "goals": [
+        "energy",
+        "mood",
+        "stress",
+        "brain"
+      ],
+      "synergies": [
+        "magnesium",
+        "vitamin-c",
+        "iron"
+      ],
       "conflicts": [],
       "absorptionCompetitors": [],
-      "depletedBy": ["alcohol", "stress", "birth-control", "metformin"],
+      "depletedBy": [
+        "alcohol",
+        "stress",
+        "birth-control",
+        "metformin"
+      ],
       "amwayProduct": "Nutrilite B Complex Dual Action",
       "resultsTimeline": "1-4 weeks"
     },
@@ -132,16 +291,38 @@
       "name": "Vitamin C",
       "type": "vitamin",
       "category": "water-soluble",
-      "dosage": { "min": 250, "typical": 1000, "max": 2000, "unit": "mg" },
+      "dosage": {
+        "min": 250,
+        "typical": 1000,
+        "max": 2000,
+        "unit": "mg"
+      },
       "timing": "any",
       "withFood": false,
       "withFat": false,
-      "benefits": ["immunity", "antioxidant", "collagen", "iron absorption"],
-      "goals": ["immunity", "skin", "recovery", "antioxidant"],
-      "synergies": ["vitamin-e", "iron", "zinc"],
+      "benefits": [
+        "immunity",
+        "antioxidant",
+        "collagen",
+        "iron absorption"
+      ],
+      "goals": [
+        "immunity",
+        "skin",
+        "recovery",
+        "antioxidant"
+      ],
+      "synergies": [
+        "vitamin-e",
+        "iron",
+        "zinc"
+      ],
       "conflicts": [],
       "absorptionCompetitors": [],
-      "depletedBy": ["smoking", "stress"],
+      "depletedBy": [
+        "smoking",
+        "stress"
+      ],
       "amwayProduct": "Nutrilite Bio C Plus",
       "resultsTimeline": "1-2 weeks"
     },
@@ -150,14 +331,37 @@
       "name": "Ashwagandha",
       "type": "adaptogen",
       "category": "herb",
-      "dosage": { "min": 300, "typical": 600, "max": 1200, "unit": "mg" },
+      "dosage": {
+        "min": 300,
+        "typical": 600,
+        "max": 1200,
+        "unit": "mg"
+      },
       "timing": "evening",
       "withFood": true,
       "withFat": false,
-      "benefits": ["stress relief", "anxiety", "testosterone", "sleep", "cortisol"],
-      "goals": ["stress", "sleep", "testosterone", "anxiety", "recovery"],
-      "synergies": ["magnesium", "l-theanine", "rhodiola"],
-      "conflicts": ["thyroid-medication"],
+      "benefits": [
+        "stress relief",
+        "anxiety",
+        "testosterone",
+        "sleep",
+        "cortisol"
+      ],
+      "goals": [
+        "stress",
+        "sleep",
+        "testosterone",
+        "anxiety",
+        "recovery"
+      ],
+      "synergies": [
+        "magnesium",
+        "l-theanine",
+        "rhodiola"
+      ],
+      "conflicts": [
+        "thyroid-medication"
+      ],
       "absorptionCompetitors": [],
       "depletedBy": [],
       "amwayProduct": null,
@@ -169,13 +373,32 @@
       "name": "Creatine",
       "type": "amino-acid-derivative",
       "category": "performance",
-      "dosage": { "min": 3, "typical": 5, "max": 10, "unit": "g" },
+      "dosage": {
+        "min": 3,
+        "typical": 5,
+        "max": 10,
+        "unit": "g"
+      },
       "timing": "any",
       "withFood": false,
       "withFat": false,
-      "benefits": ["strength", "power", "muscle growth", "cognitive function"],
-      "goals": ["muscle", "strength", "brain", "performance"],
-      "synergies": ["protein", "beta-alanine", "hmb"],
+      "benefits": [
+        "strength",
+        "power",
+        "muscle growth",
+        "cognitive function"
+      ],
+      "goals": [
+        "muscle",
+        "strength",
+        "brain",
+        "performance"
+      ],
+      "synergies": [
+        "protein",
+        "beta-alanine",
+        "hmb"
+      ],
       "conflicts": [],
       "absorptionCompetitors": [],
       "depletedBy": [],
@@ -187,13 +410,32 @@
       "name": "L-Theanine",
       "type": "amino-acid",
       "category": "nootropic",
-      "dosage": { "min": 100, "typical": 200, "max": 400, "unit": "mg" },
+      "dosage": {
+        "min": 100,
+        "typical": 200,
+        "max": 400,
+        "unit": "mg"
+      },
       "timing": "any",
       "withFood": false,
       "withFat": false,
-      "benefits": ["calm focus", "anxiety relief", "sleep quality", "caffeine synergy"],
-      "goals": ["focus", "anxiety", "sleep", "stress"],
-      "synergies": ["caffeine", "magnesium", "ashwagandha"],
+      "benefits": [
+        "calm focus",
+        "anxiety relief",
+        "sleep quality",
+        "caffeine synergy"
+      ],
+      "goals": [
+        "focus",
+        "anxiety",
+        "sleep",
+        "stress"
+      ],
+      "synergies": [
+        "caffeine",
+        "magnesium",
+        "ashwagandha"
+      ],
       "conflicts": [],
       "absorptionCompetitors": [],
       "depletedBy": [],
@@ -205,16 +447,37 @@
       "name": "CoQ10",
       "type": "coenzyme",
       "category": "antioxidant",
-      "dosage": { "min": 100, "typical": 200, "max": 400, "unit": "mg" },
+      "dosage": {
+        "min": 100,
+        "typical": 200,
+        "max": 400,
+        "unit": "mg"
+      },
       "timing": "morning",
       "withFood": true,
       "withFat": true,
-      "benefits": ["energy", "heart health", "antioxidant", "mitochondrial function"],
-      "goals": ["energy", "heart", "longevity", "statin-support"],
-      "synergies": ["pqq", "alpha-lipoic-acid", "omega-3"],
+      "benefits": [
+        "energy",
+        "heart health",
+        "antioxidant",
+        "mitochondrial function"
+      ],
+      "goals": [
+        "energy",
+        "heart",
+        "longevity",
+        "statin-support"
+      ],
+      "synergies": [
+        "pqq",
+        "alpha-lipoic-acid",
+        "omega-3"
+      ],
       "conflicts": [],
       "absorptionCompetitors": [],
-      "depletedBy": ["statins"],
+      "depletedBy": [
+        "statins"
+      ],
       "amwayProduct": null,
       "resultsTimeline": "4-12 weeks"
     },
@@ -223,16 +486,36 @@
       "name": "Probiotics",
       "type": "probiotic",
       "category": "gut-health",
-      "dosage": { "min": 10, "typical": 30, "max": 100, "unit": "billion CFU" },
+      "dosage": {
+        "min": 10,
+        "typical": 30,
+        "max": 100,
+        "unit": "billion CFU"
+      },
       "timing": "morning",
       "withFood": false,
       "withFat": false,
-      "benefits": ["gut health", "immunity", "mood", "digestion"],
-      "goals": ["gut", "immunity", "mood", "digestion"],
-      "synergies": ["prebiotics", "glutamine"],
+      "benefits": [
+        "gut health",
+        "immunity",
+        "mood",
+        "digestion"
+      ],
+      "goals": [
+        "gut",
+        "immunity",
+        "mood",
+        "digestion"
+      ],
+      "synergies": [
+        "prebiotics",
+        "glutamine"
+      ],
       "conflicts": [],
       "absorptionCompetitors": [],
-      "depletedBy": ["antibiotics"],
+      "depletedBy": [
+        "antibiotics"
+      ],
       "amwayProduct": "Nutrilite Balance Within Probiotic",
       "resultsTimeline": "2-4 weeks"
     },
@@ -241,13 +524,32 @@
       "name": "Curcumin",
       "type": "polyphenol",
       "category": "anti-inflammatory",
-      "dosage": { "min": 500, "typical": 1000, "max": 2000, "unit": "mg" },
+      "dosage": {
+        "min": 500,
+        "typical": 1000,
+        "max": 2000,
+        "unit": "mg"
+      },
       "timing": "any",
       "withFood": true,
       "withFat": true,
-      "benefits": ["inflammation", "joint health", "brain health", "antioxidant"],
-      "goals": ["inflammation", "joint", "brain", "longevity"],
-      "synergies": ["piperine", "omega-3", "quercetin"],
+      "benefits": [
+        "inflammation",
+        "joint health",
+        "brain health",
+        "antioxidant"
+      ],
+      "goals": [
+        "inflammation",
+        "joint",
+        "brain",
+        "longevity"
+      ],
+      "synergies": [
+        "piperine",
+        "omega-3",
+        "quercetin"
+      ],
       "conflicts": [],
       "absorptionCompetitors": [],
       "depletedBy": [],
@@ -260,15 +562,35 @@
       "name": "Iron",
       "type": "mineral",
       "category": "essential",
-      "dosage": { "min": 18, "typical": 27, "max": 45, "unit": "mg" },
+      "dosage": {
+        "min": 18,
+        "typical": 27,
+        "max": 45,
+        "unit": "mg"
+      },
       "timing": "morning",
       "withFood": false,
       "withFat": false,
-      "benefits": ["oxygen transport", "energy", "cognitive function"],
-      "goals": ["energy", "performance", "cognitive"],
-      "synergies": ["vitamin-c"],
+      "benefits": [
+        "oxygen transport",
+        "energy",
+        "cognitive function"
+      ],
+      "goals": [
+        "energy",
+        "performance",
+        "cognitive"
+      ],
+      "synergies": [
+        "vitamin-c"
+      ],
       "conflicts": [],
-      "absorptionCompetitors": ["calcium", "zinc", "coffee", "tea"],
+      "absorptionCompetitors": [
+        "calcium",
+        "zinc",
+        "coffee",
+        "tea"
+      ],
       "depletedBy": [],
       "amwayProduct": "Nutrilite Iron Folic Plus",
       "resultsTimeline": "4-8 weeks",
@@ -279,16 +601,34 @@
       "name": "Melatonin",
       "type": "hormone",
       "category": "sleep",
-      "dosage": { "min": 0.3, "typical": 1, "max": 5, "unit": "mg" },
+      "dosage": {
+        "min": 0.3,
+        "typical": 1,
+        "max": 5,
+        "unit": "mg"
+      },
       "timing": "evening",
       "withFood": false,
       "withFat": false,
-      "benefits": ["sleep onset", "circadian rhythm", "jet lag"],
-      "goals": ["sleep"],
-      "synergies": ["magnesium", "l-theanine", "glycine"],
+      "benefits": [
+        "sleep onset",
+        "circadian rhythm",
+        "jet lag"
+      ],
+      "goals": [
+        "sleep"
+      ],
+      "synergies": [
+        "magnesium",
+        "l-theanine",
+        "glycine"
+      ],
       "conflicts": [],
       "absorptionCompetitors": [],
-      "depletedBy": ["blue-light", "caffeine"],
+      "depletedBy": [
+        "blue-light",
+        "caffeine"
+      ],
       "amwayProduct": null,
       "resultsTimeline": "30-60 minutes",
       "notes": "Lower doses often more effective. Short-term use recommended."
@@ -298,13 +638,33 @@
       "name": "Collagen",
       "type": "protein",
       "category": "structural",
-      "dosage": { "min": 5, "typical": 10, "max": 20, "unit": "g" },
+      "dosage": {
+        "min": 5,
+        "typical": 10,
+        "max": 20,
+        "unit": "g"
+      },
       "timing": "any",
       "withFood": false,
       "withFat": false,
-      "benefits": ["skin health", "joint health", "hair", "nails", "gut lining"],
-      "goals": ["skin", "joint", "hair", "gut"],
-      "synergies": ["vitamin-c", "glycine", "msm"],
+      "benefits": [
+        "skin health",
+        "joint health",
+        "hair",
+        "nails",
+        "gut lining"
+      ],
+      "goals": [
+        "skin",
+        "joint",
+        "hair",
+        "gut"
+      ],
+      "synergies": [
+        "vitamin-c",
+        "glycine",
+        "msm"
+      ],
       "conflicts": [],
       "absorptionCompetitors": [],
       "depletedBy": [],
@@ -316,13 +676,31 @@
       "name": "Alpha-Lipoic Acid",
       "type": "antioxidant",
       "category": "antioxidant",
-      "dosage": { "min": 300, "typical": 600, "max": 1200, "unit": "mg" },
+      "dosage": {
+        "min": 300,
+        "typical": 600,
+        "max": 1200,
+        "unit": "mg"
+      },
       "timing": "any",
       "withFood": false,
       "withFat": false,
-      "benefits": ["antioxidant", "blood sugar", "nerve health", "energy"],
-      "goals": ["antioxidant", "blood-sugar", "energy", "longevity"],
-      "synergies": ["coq10", "acetyl-l-carnitine"],
+      "benefits": [
+        "antioxidant",
+        "blood sugar",
+        "nerve health",
+        "energy"
+      ],
+      "goals": [
+        "antioxidant",
+        "blood-sugar",
+        "energy",
+        "longevity"
+      ],
+      "synergies": [
+        "coq10",
+        "acetyl-l-carnitine"
+      ],
       "conflicts": [],
       "absorptionCompetitors": [],
       "depletedBy": [],
@@ -334,13 +712,31 @@
       "name": "Rhodiola Rosea",
       "type": "adaptogen",
       "category": "herb",
-      "dosage": { "min": 200, "typical": 400, "max": 600, "unit": "mg" },
+      "dosage": {
+        "min": 200,
+        "typical": 400,
+        "max": 600,
+        "unit": "mg"
+      },
       "timing": "morning",
       "withFood": false,
       "withFat": false,
-      "benefits": ["energy", "mental performance", "stress resistance", "fatigue"],
-      "goals": ["energy", "focus", "stress", "performance"],
-      "synergies": ["ashwagandha", "b-complex"],
+      "benefits": [
+        "energy",
+        "mental performance",
+        "stress resistance",
+        "fatigue"
+      ],
+      "goals": [
+        "energy",
+        "focus",
+        "stress",
+        "performance"
+      ],
+      "synergies": [
+        "ashwagandha",
+        "b-complex"
+      ],
       "conflicts": [],
       "absorptionCompetitors": [],
       "depletedBy": [],
@@ -353,13 +749,33 @@
       "name": "NAC (N-Acetyl Cysteine)",
       "type": "amino-acid",
       "category": "antioxidant",
-      "dosage": { "min": 600, "typical": 1200, "max": 1800, "unit": "mg" },
+      "dosage": {
+        "min": 600,
+        "typical": 1200,
+        "max": 1800,
+        "unit": "mg"
+      },
       "timing": "any",
       "withFood": false,
       "withFat": false,
-      "benefits": ["glutathione precursor", "liver health", "respiratory", "mental health"],
-      "goals": ["detox", "liver", "respiratory", "mental-health", "longevity"],
-      "synergies": ["vitamin-c", "selenium", "glycine"],
+      "benefits": [
+        "glutathione precursor",
+        "liver health",
+        "respiratory",
+        "mental health"
+      ],
+      "goals": [
+        "detox",
+        "liver",
+        "respiratory",
+        "mental-health",
+        "longevity"
+      ],
+      "synergies": [
+        "vitamin-c",
+        "selenium",
+        "glycine"
+      ],
       "conflicts": [],
       "absorptionCompetitors": [],
       "depletedBy": [],
@@ -371,13 +787,30 @@
       "name": "Selenium",
       "type": "mineral",
       "category": "trace",
-      "dosage": { "min": 55, "typical": 100, "max": 200, "unit": "mcg" },
+      "dosage": {
+        "min": 55,
+        "typical": 100,
+        "max": 200,
+        "unit": "mcg"
+      },
       "timing": "any",
       "withFood": true,
       "withFat": false,
-      "benefits": ["thyroid function", "antioxidant", "immunity"],
-      "goals": ["thyroid", "immunity", "antioxidant", "longevity"],
-      "synergies": ["vitamin-e", "iodine"],
+      "benefits": [
+        "thyroid function",
+        "antioxidant",
+        "immunity"
+      ],
+      "goals": [
+        "thyroid",
+        "immunity",
+        "antioxidant",
+        "longevity"
+      ],
+      "synergies": [
+        "vitamin-e",
+        "iodine"
+      ],
       "conflicts": [],
       "absorptionCompetitors": [],
       "depletedBy": [],
@@ -389,14 +822,34 @@
       "name": "Berberine",
       "type": "alkaloid",
       "category": "metabolic",
-      "dosage": { "min": 500, "typical": 1500, "max": 2000, "unit": "mg" },
+      "dosage": {
+        "min": 500,
+        "typical": 1500,
+        "max": 2000,
+        "unit": "mg"
+      },
       "timing": "with-meals",
       "withFood": true,
       "withFat": false,
-      "benefits": ["blood sugar", "cholesterol", "gut health", "AMPK activation"],
-      "goals": ["blood-sugar", "metabolic", "longevity", "weight"],
-      "synergies": ["alpha-lipoic-acid", "chromium"],
-      "conflicts": ["metformin"],
+      "benefits": [
+        "blood sugar",
+        "cholesterol",
+        "gut health",
+        "AMPK activation"
+      ],
+      "goals": [
+        "blood-sugar",
+        "metabolic",
+        "longevity",
+        "weight"
+      ],
+      "synergies": [
+        "alpha-lipoic-acid",
+        "chromium"
+      ],
+      "conflicts": [
+        "metformin"
+      ],
       "absorptionCompetitors": [],
       "depletedBy": [],
       "amwayProduct": null,
@@ -408,13 +861,31 @@
       "name": "Lion's Mane",
       "type": "mushroom",
       "category": "nootropic",
-      "dosage": { "min": 500, "typical": 1000, "max": 3000, "unit": "mg" },
+      "dosage": {
+        "min": 500,
+        "typical": 1000,
+        "max": 3000,
+        "unit": "mg"
+      },
       "timing": "morning",
       "withFood": false,
       "withFat": false,
-      "benefits": ["nerve growth factor", "cognitive function", "neuroprotection"],
-      "goals": ["brain", "focus", "neuroprotection", "longevity"],
-      "synergies": ["bacopa-monnieri", "alpha-gpc", "omega-3"],
+      "benefits": [
+        "nerve growth factor",
+        "cognitive function",
+        "neuroprotection"
+      ],
+      "goals": [
+        "brain",
+        "focus",
+        "neuroprotection",
+        "longevity"
+      ],
+      "synergies": [
+        "bacopa-monnieri",
+        "alpha-gpc",
+        "omega-3"
+      ],
       "conflicts": [],
       "absorptionCompetitors": [],
       "depletedBy": [],
@@ -426,13 +897,31 @@
       "name": "Glycine",
       "type": "amino-acid",
       "category": "sleep",
-      "dosage": { "min": 3, "typical": 3, "max": 5, "unit": "g" },
+      "dosage": {
+        "min": 3,
+        "typical": 3,
+        "max": 5,
+        "unit": "g"
+      },
       "timing": "evening",
       "withFood": false,
       "withFat": false,
-      "benefits": ["sleep quality", "collagen synthesis", "glutathione"],
-      "goals": ["sleep", "skin", "detox", "longevity"],
-      "synergies": ["magnesium", "nac", "collagen"],
+      "benefits": [
+        "sleep quality",
+        "collagen synthesis",
+        "glutathione"
+      ],
+      "goals": [
+        "sleep",
+        "skin",
+        "detox",
+        "longevity"
+      ],
+      "synergies": [
+        "magnesium",
+        "nac",
+        "collagen"
+      ],
       "conflicts": [],
       "absorptionCompetitors": [],
       "depletedBy": [],
@@ -444,32 +933,74 @@
       "name": "5-HTP",
       "type": "amino-acid",
       "category": "nootropic",
-      "dosage": { "min": 50, "typical": 100, "max": 300, "unit": "mg" },
+      "dosage": {
+        "min": 50,
+        "typical": 100,
+        "max": 300,
+        "unit": "mg"
+      },
       "timing": "evening",
       "withFood": false,
       "withFat": false,
-      "benefits": ["serotonin support", "mood", "sleep", "appetite control", "anxiety relief"],
-      "goals": ["mood", "sleep", "anxiety", "weight"],
-      "synergies": ["magnesium", "vitamin-b6-pyridoxine"],
-      "conflicts": ["ssri", "maoi"],
+      "benefits": [
+        "serotonin support",
+        "mood",
+        "sleep",
+        "appetite control",
+        "anxiety relief"
+      ],
+      "goals": [
+        "mood",
+        "sleep",
+        "anxiety",
+        "weight"
+      ],
+      "synergies": [
+        "magnesium",
+        "vitamin-b6-pyridoxine"
+      ],
+      "conflicts": [
+        "ssri",
+        "maoi"
+      ],
       "absorptionCompetitors": [],
       "depletedBy": [],
       "amwayProduct": null,
       "resultsTimeline": "1-4 weeks",
-      "notes": "Do not combine with SSRIs or MAOIs — serotonin syndrome risk"
+      "notes": "Do not combine with SSRIs or MAOIs \u00e2\u20ac\u201d serotonin syndrome risk"
     },
     {
       "id": "acetyl-l-carnitine",
       "name": "Acetyl-L-Carnitine (ALCAR)",
       "type": "amino-acid",
       "category": "nootropic",
-      "dosage": { "min": 500, "typical": 1000, "max": 2000, "unit": "mg" },
+      "dosage": {
+        "min": 500,
+        "typical": 1000,
+        "max": 2000,
+        "unit": "mg"
+      },
       "timing": "morning",
       "withFood": false,
       "withFat": false,
-      "benefits": ["brain health", "mitochondrial energy", "nerve health", "memory", "fat metabolism"],
-      "goals": ["brain", "energy", "longevity", "recovery"],
-      "synergies": ["alpha-lipoic-acid", "coq10", "pqq"],
+      "benefits": [
+        "brain health",
+        "mitochondrial energy",
+        "nerve health",
+        "memory",
+        "fat metabolism"
+      ],
+      "goals": [
+        "brain",
+        "energy",
+        "longevity",
+        "recovery"
+      ],
+      "synergies": [
+        "alpha-lipoic-acid",
+        "coq10",
+        "pqq"
+      ],
       "conflicts": [],
       "absorptionCompetitors": [],
       "depletedBy": [],
@@ -481,13 +1012,32 @@
       "name": "Alpha-GPC",
       "type": "nootropic",
       "category": "choline-source",
-      "dosage": { "min": 300, "typical": 600, "max": 1200, "unit": "mg" },
+      "dosage": {
+        "min": 300,
+        "typical": 600,
+        "max": 1200,
+        "unit": "mg"
+      },
       "timing": "morning",
       "withFood": false,
       "withFat": false,
-      "benefits": ["cognitive function", "memory", "focus", "growth hormone support"],
-      "goals": ["brain", "focus", "memory", "performance"],
-      "synergies": ["lions-mane", "bacopa-monnieri", "omega-3"],
+      "benefits": [
+        "cognitive function",
+        "memory",
+        "focus",
+        "growth hormone support"
+      ],
+      "goals": [
+        "brain",
+        "focus",
+        "memory",
+        "performance"
+      ],
+      "synergies": [
+        "lions-mane",
+        "bacopa-monnieri",
+        "omega-3"
+      ],
       "conflicts": [],
       "absorptionCompetitors": [],
       "depletedBy": [],
@@ -499,13 +1049,33 @@
       "name": "Apigenin",
       "type": "flavonoid",
       "category": "sleep",
-      "dosage": { "min": 50, "typical": 50, "max": 120, "unit": "mg" },
+      "dosage": {
+        "min": 50,
+        "typical": 50,
+        "max": 120,
+        "unit": "mg"
+      },
       "timing": "evening",
       "withFood": false,
       "withFat": false,
-      "benefits": ["sleep quality", "anxiety relief", "anti-inflammatory", "longevity", "estrogen modulation"],
-      "goals": ["sleep", "longevity", "anxiety", "hormone"],
-      "synergies": ["magnesium", "l-theanine", "glycine"],
+      "benefits": [
+        "sleep quality",
+        "anxiety relief",
+        "anti-inflammatory",
+        "longevity",
+        "estrogen modulation"
+      ],
+      "goals": [
+        "sleep",
+        "longevity",
+        "anxiety",
+        "hormone"
+      ],
+      "synergies": [
+        "magnesium",
+        "l-theanine",
+        "glycine"
+      ],
       "conflicts": [],
       "absorptionCompetitors": [],
       "depletedBy": [],
@@ -517,13 +1087,34 @@
       "name": "Astaxanthin",
       "type": "carotenoid",
       "category": "antioxidant",
-      "dosage": { "min": 4, "typical": 8, "max": 12, "unit": "mg" },
+      "dosage": {
+        "min": 4,
+        "typical": 8,
+        "max": 12,
+        "unit": "mg"
+      },
       "timing": "morning",
       "withFood": true,
       "withFat": true,
-      "benefits": ["powerful antioxidant", "skin health", "eye health", "exercise recovery", "anti-aging"],
-      "goals": ["antioxidant", "skin", "performance", "longevity", "eye-health"],
-      "synergies": ["vitamin-e", "omega-3", "vitamin-c"],
+      "benefits": [
+        "powerful antioxidant",
+        "skin health",
+        "eye health",
+        "exercise recovery",
+        "anti-aging"
+      ],
+      "goals": [
+        "antioxidant",
+        "skin",
+        "performance",
+        "longevity",
+        "eye-health"
+      ],
+      "synergies": [
+        "vitamin-e",
+        "omega-3",
+        "vitamin-c"
+      ],
       "conflicts": [],
       "absorptionCompetitors": [],
       "depletedBy": [],
@@ -535,13 +1126,32 @@
       "name": "Bacopa Monnieri",
       "type": "adaptogen",
       "category": "nootropic",
-      "dosage": { "min": 300, "typical": 450, "max": 600, "unit": "mg" },
+      "dosage": {
+        "min": 300,
+        "typical": 450,
+        "max": 600,
+        "unit": "mg"
+      },
       "timing": "morning",
       "withFood": true,
       "withFat": false,
-      "benefits": ["memory consolidation", "cognitive function", "anxiety relief", "neuroprotection"],
-      "goals": ["brain", "memory", "anxiety", "focus"],
-      "synergies": ["lions-mane", "alpha-gpc", "omega-3"],
+      "benefits": [
+        "memory consolidation",
+        "cognitive function",
+        "anxiety relief",
+        "neuroprotection"
+      ],
+      "goals": [
+        "brain",
+        "memory",
+        "anxiety",
+        "focus"
+      ],
+      "synergies": [
+        "lions-mane",
+        "alpha-gpc",
+        "omega-3"
+      ],
       "conflicts": [],
       "absorptionCompetitors": [],
       "depletedBy": [],
@@ -554,32 +1164,69 @@
       "name": "Beta-Alanine",
       "type": "amino-acid",
       "category": "performance",
-      "dosage": { "min": 2, "typical": 3.2, "max": 6.4, "unit": "g" },
+      "dosage": {
+        "min": 2,
+        "typical": 3.2,
+        "max": 6.4,
+        "unit": "g"
+      },
       "timing": "pre-workout",
       "withFood": false,
       "withFat": false,
-      "benefits": ["endurance", "muscle buffering", "athletic performance", "reduced fatigue"],
-      "goals": ["performance", "endurance", "muscle"],
-      "synergies": ["creatine", "citrulline"],
+      "benefits": [
+        "endurance",
+        "muscle buffering",
+        "athletic performance",
+        "reduced fatigue"
+      ],
+      "goals": [
+        "performance",
+        "endurance",
+        "muscle"
+      ],
+      "synergies": [
+        "creatine",
+        "citrulline"
+      ],
       "conflicts": [],
       "absorptionCompetitors": [],
       "depletedBy": [],
       "amwayProduct": null,
       "resultsTimeline": "2-4 weeks",
-      "notes": "Causes harmless tingling (paresthesia) — split doses to reduce"
+      "notes": "Causes harmless tingling (paresthesia) \u00e2\u20ac\u201d split doses to reduce"
     },
     {
       "id": "boron",
       "name": "Boron",
       "type": "mineral",
       "category": "trace",
-      "dosage": { "min": 3, "typical": 6, "max": 10, "unit": "mg" },
+      "dosage": {
+        "min": 3,
+        "typical": 6,
+        "max": 10,
+        "unit": "mg"
+      },
       "timing": "any",
       "withFood": false,
       "withFat": false,
-      "benefits": ["testosterone support", "estrogen balance", "bone health", "cognitive function", "vitamin D activation"],
-      "goals": ["testosterone", "bone", "brain", "hormone"],
-      "synergies": ["vitamin-d3", "magnesium", "zinc"],
+      "benefits": [
+        "testosterone support",
+        "estrogen balance",
+        "bone health",
+        "cognitive function",
+        "vitamin D activation"
+      ],
+      "goals": [
+        "testosterone",
+        "bone",
+        "brain",
+        "hormone"
+      ],
+      "synergies": [
+        "vitamin-d3",
+        "magnesium",
+        "zinc"
+      ],
       "conflicts": [],
       "absorptionCompetitors": [],
       "depletedBy": [],
@@ -591,13 +1238,31 @@
       "name": "Caffeine",
       "type": "stimulant",
       "category": "performance",
-      "dosage": { "min": 100, "typical": 200, "max": 400, "unit": "mg" },
+      "dosage": {
+        "min": 100,
+        "typical": 200,
+        "max": 400,
+        "unit": "mg"
+      },
       "timing": "morning",
       "withFood": false,
       "withFat": false,
-      "benefits": ["energy", "focus", "athletic performance", "fat oxidation", "alertness"],
-      "goals": ["energy", "focus", "performance", "weight"],
-      "synergies": ["l-theanine"],
+      "benefits": [
+        "energy",
+        "focus",
+        "athletic performance",
+        "fat oxidation",
+        "alertness"
+      ],
+      "goals": [
+        "energy",
+        "focus",
+        "performance",
+        "weight"
+      ],
+      "synergies": [
+        "l-theanine"
+      ],
       "conflicts": [],
       "absorptionCompetitors": [],
       "depletedBy": [],
@@ -610,15 +1275,40 @@
       "name": "Calcium",
       "type": "mineral",
       "category": "essential",
-      "dosage": { "min": 500, "typical": 1000, "max": 1200, "unit": "mg" },
+      "dosage": {
+        "min": 500,
+        "typical": 1000,
+        "max": 1200,
+        "unit": "mg"
+      },
       "timing": "any",
       "withFood": true,
       "withFat": false,
-      "benefits": ["bone health", "muscle function", "nerve signaling", "heart rhythm"],
-      "goals": ["bone", "heart", "muscle"],
-      "synergies": ["vitamin-d3", "vitamin-k2", "magnesium"],
-      "conflicts": ["iron", "zinc"],
-      "absorptionCompetitors": ["iron", "zinc", "magnesium"],
+      "benefits": [
+        "bone health",
+        "muscle function",
+        "nerve signaling",
+        "heart rhythm"
+      ],
+      "goals": [
+        "bone",
+        "heart",
+        "muscle"
+      ],
+      "synergies": [
+        "vitamin-d3",
+        "vitamin-k2",
+        "magnesium"
+      ],
+      "conflicts": [
+        "iron",
+        "zinc"
+      ],
+      "absorptionCompetitors": [
+        "iron",
+        "zinc",
+        "magnesium"
+      ],
       "depletedBy": [],
       "amwayProduct": "Nutrilite Cal Mag D",
       "resultsTimeline": "3-6 months",
@@ -629,13 +1319,32 @@
       "name": "CDP-Choline (Citicoline)",
       "type": "nootropic",
       "category": "choline-source",
-      "dosage": { "min": 250, "typical": 500, "max": 1000, "unit": "mg" },
+      "dosage": {
+        "min": 250,
+        "typical": 500,
+        "max": 1000,
+        "unit": "mg"
+      },
       "timing": "morning",
       "withFood": false,
       "withFat": false,
-      "benefits": ["cognitive function", "memory", "brain energy", "dopamine support", "focus"],
-      "goals": ["brain", "focus", "memory"],
-      "synergies": ["lions-mane", "omega-3", "alpha-gpc"],
+      "benefits": [
+        "cognitive function",
+        "memory",
+        "brain energy",
+        "dopamine support",
+        "focus"
+      ],
+      "goals": [
+        "brain",
+        "focus",
+        "memory"
+      ],
+      "synergies": [
+        "lions-mane",
+        "omega-3",
+        "alpha-gpc"
+      ],
       "conflicts": [],
       "absorptionCompetitors": [],
       "depletedBy": [],
@@ -647,13 +1356,32 @@
       "name": "Chlorella",
       "type": "algae",
       "category": "superfood",
-      "dosage": { "min": 3, "typical": 5, "max": 10, "unit": "g" },
+      "dosage": {
+        "min": 3,
+        "typical": 5,
+        "max": 10,
+        "unit": "g"
+      },
       "timing": "any",
       "withFood": false,
       "withFat": false,
-      "benefits": ["heavy metal detox", "immunity", "antioxidant", "nutrient density", "gut health"],
-      "goals": ["detox", "immunity", "nutrition", "antioxidant"],
-      "synergies": ["spirulina", "vitamin-c"],
+      "benefits": [
+        "heavy metal detox",
+        "immunity",
+        "antioxidant",
+        "nutrient density",
+        "gut health"
+      ],
+      "goals": [
+        "detox",
+        "immunity",
+        "nutrition",
+        "antioxidant"
+      ],
+      "synergies": [
+        "spirulina",
+        "vitamin-c"
+      ],
       "conflicts": [],
       "absorptionCompetitors": [],
       "depletedBy": [],
@@ -665,16 +1393,37 @@
       "name": "Chromium",
       "type": "mineral",
       "category": "trace",
-      "dosage": { "min": 200, "typical": 400, "max": 1000, "unit": "mcg" },
+      "dosage": {
+        "min": 200,
+        "typical": 400,
+        "max": 1000,
+        "unit": "mcg"
+      },
       "timing": "with-meals",
       "withFood": true,
       "withFat": false,
-      "benefits": ["blood sugar regulation", "insulin sensitivity", "weight management", "carb cravings"],
-      "goals": ["blood-sugar", "weight", "metabolic"],
-      "synergies": ["berberine", "alpha-lipoic-acid", "cinnamon"],
+      "benefits": [
+        "blood sugar regulation",
+        "insulin sensitivity",
+        "weight management",
+        "carb cravings"
+      ],
+      "goals": [
+        "blood-sugar",
+        "weight",
+        "metabolic"
+      ],
+      "synergies": [
+        "berberine",
+        "alpha-lipoic-acid",
+        "cinnamon"
+      ],
       "conflicts": [],
       "absorptionCompetitors": [],
-      "depletedBy": ["refined-carbs", "stress"],
+      "depletedBy": [
+        "refined-carbs",
+        "stress"
+      ],
       "amwayProduct": null,
       "resultsTimeline": "4-8 weeks"
     },
@@ -683,13 +1432,30 @@
       "name": "Cinnamon",
       "type": "herb",
       "category": "metabolic",
-      "dosage": { "min": 500, "typical": 1000, "max": 2000, "unit": "mg" },
+      "dosage": {
+        "min": 500,
+        "typical": 1000,
+        "max": 2000,
+        "unit": "mg"
+      },
       "timing": "with-meals",
       "withFood": true,
       "withFat": false,
-      "benefits": ["blood sugar control", "antioxidant", "anti-inflammatory", "cholesterol"],
-      "goals": ["blood-sugar", "metabolic", "antioxidant"],
-      "synergies": ["berberine", "chromium"],
+      "benefits": [
+        "blood sugar control",
+        "antioxidant",
+        "anti-inflammatory",
+        "cholesterol"
+      ],
+      "goals": [
+        "blood-sugar",
+        "metabolic",
+        "antioxidant"
+      ],
+      "synergies": [
+        "berberine",
+        "chromium"
+      ],
       "conflicts": [],
       "absorptionCompetitors": [],
       "depletedBy": [],
@@ -702,13 +1468,32 @@
       "name": "L-Citrulline",
       "type": "amino-acid",
       "category": "performance",
-      "dosage": { "min": 3000, "typical": 6000, "max": 8000, "unit": "mg" },
+      "dosage": {
+        "min": 3000,
+        "typical": 6000,
+        "max": 8000,
+        "unit": "mg"
+      },
       "timing": "pre-workout",
       "withFood": false,
       "withFat": false,
-      "benefits": ["blood flow", "muscle pump", "endurance", "recovery", "blood pressure"],
-      "goals": ["performance", "muscle", "heart", "endurance"],
-      "synergies": ["beta-alanine", "creatine"],
+      "benefits": [
+        "blood flow",
+        "muscle pump",
+        "endurance",
+        "recovery",
+        "blood pressure"
+      ],
+      "goals": [
+        "performance",
+        "muscle",
+        "heart",
+        "endurance"
+      ],
+      "synergies": [
+        "beta-alanine",
+        "creatine"
+      ],
       "conflicts": [],
       "absorptionCompetitors": [],
       "depletedBy": [],
@@ -720,16 +1505,36 @@
       "name": "Digestive Enzymes",
       "type": "enzyme",
       "category": "gut-health",
-      "dosage": { "min": 1, "typical": 1, "max": 2, "unit": "capsule" },
+      "dosage": {
+        "min": 1,
+        "typical": 1,
+        "max": 2,
+        "unit": "capsule"
+      },
       "timing": "with-meals",
       "withFood": true,
       "withFat": false,
-      "benefits": ["improved digestion", "nutrient absorption", "bloating relief", "food intolerance support"],
-      "goals": ["gut", "digestion", "nutrition"],
-      "synergies": ["probiotics", "glutamine"],
+      "benefits": [
+        "improved digestion",
+        "nutrient absorption",
+        "bloating relief",
+        "food intolerance support"
+      ],
+      "goals": [
+        "gut",
+        "digestion",
+        "nutrition"
+      ],
+      "synergies": [
+        "probiotics",
+        "glutamine"
+      ],
       "conflicts": [],
       "absorptionCompetitors": [],
-      "depletedBy": ["age", "stress"],
+      "depletedBy": [
+        "age",
+        "stress"
+      ],
       "amwayProduct": "Nutrilite Digestive Enzyme Complex",
       "resultsTimeline": "1-2 weeks"
     },
@@ -738,13 +1543,30 @@
       "name": "DIM (Diindolylmethane)",
       "type": "indole",
       "category": "hormone",
-      "dosage": { "min": 100, "typical": 200, "max": 300, "unit": "mg" },
+      "dosage": {
+        "min": 100,
+        "typical": 200,
+        "max": 300,
+        "unit": "mg"
+      },
       "timing": "any",
       "withFood": true,
       "withFat": false,
-      "benefits": ["estrogen metabolism", "hormone balance", "prostate health", "anti-cancer properties"],
-      "goals": ["hormone", "estrogen-balance", "prostate"],
-      "synergies": ["vitamin-e", "calcium-d-glucarate"],
+      "benefits": [
+        "estrogen metabolism",
+        "hormone balance",
+        "prostate health",
+        "anti-cancer properties"
+      ],
+      "goals": [
+        "hormone",
+        "estrogen-balance",
+        "prostate"
+      ],
+      "synergies": [
+        "vitamin-e",
+        "calcium-d-glucarate"
+      ],
       "conflicts": [],
       "absorptionCompetitors": [],
       "depletedBy": [],
@@ -757,13 +1579,30 @@
       "name": "Elderberry",
       "type": "berry-extract",
       "category": "immunity",
-      "dosage": { "min": 500, "typical": 1000, "max": 1500, "unit": "mg" },
+      "dosage": {
+        "min": 500,
+        "typical": 1000,
+        "max": 1500,
+        "unit": "mg"
+      },
       "timing": "any",
       "withFood": false,
       "withFat": false,
-      "benefits": ["immune support", "antiviral properties", "antioxidant", "cold duration reduction"],
-      "goals": ["immunity", "antioxidant"],
-      "synergies": ["vitamin-c", "zinc", "vitamin-d3"],
+      "benefits": [
+        "immune support",
+        "antiviral properties",
+        "antioxidant",
+        "cold duration reduction"
+      ],
+      "goals": [
+        "immunity",
+        "antioxidant"
+      ],
+      "synergies": [
+        "vitamin-c",
+        "zinc",
+        "vitamin-d3"
+      ],
       "conflicts": [],
       "absorptionCompetitors": [],
       "depletedBy": [],
@@ -776,13 +1615,32 @@
       "name": "Fenugreek",
       "type": "herb",
       "category": "hormone",
-      "dosage": { "min": 500, "typical": 1000, "max": 1500, "unit": "mg" },
+      "dosage": {
+        "min": 500,
+        "typical": 1000,
+        "max": 1500,
+        "unit": "mg"
+      },
       "timing": "any",
       "withFood": true,
       "withFat": false,
-      "benefits": ["testosterone support", "blood sugar", "libido", "milk production", "anabolic support"],
-      "goals": ["testosterone", "blood-sugar", "libido"],
-      "synergies": ["zinc", "magnesium", "tongkat-ali"],
+      "benefits": [
+        "testosterone support",
+        "blood sugar",
+        "libido",
+        "milk production",
+        "anabolic support"
+      ],
+      "goals": [
+        "testosterone",
+        "blood-sugar",
+        "libido"
+      ],
+      "synergies": [
+        "zinc",
+        "magnesium",
+        "tongkat-ali"
+      ],
       "conflicts": [],
       "absorptionCompetitors": [],
       "depletedBy": [],
@@ -794,16 +1652,37 @@
       "name": "GABA",
       "type": "neurotransmitter",
       "category": "sleep",
-      "dosage": { "min": 250, "typical": 500, "max": 750, "unit": "mg" },
+      "dosage": {
+        "min": 250,
+        "typical": 500,
+        "max": 750,
+        "unit": "mg"
+      },
       "timing": "evening",
       "withFood": false,
       "withFat": false,
-      "benefits": ["relaxation", "anxiety relief", "sleep quality", "stress reduction"],
-      "goals": ["sleep", "anxiety", "stress"],
-      "synergies": ["l-theanine", "magnesium", "apigenin"],
+      "benefits": [
+        "relaxation",
+        "anxiety relief",
+        "sleep quality",
+        "stress reduction"
+      ],
+      "goals": [
+        "sleep",
+        "anxiety",
+        "stress"
+      ],
+      "synergies": [
+        "l-theanine",
+        "magnesium",
+        "apigenin"
+      ],
       "conflicts": [],
       "absorptionCompetitors": [],
-      "depletedBy": ["stress", "alcohol"],
+      "depletedBy": [
+        "stress",
+        "alcohol"
+      ],
       "amwayProduct": null,
       "resultsTimeline": "1-2 weeks",
       "notes": "Limited blood-brain barrier penetration; PharmaGABA form may be more effective"
@@ -813,14 +1692,37 @@
       "name": "Ginkgo Biloba",
       "type": "herb",
       "category": "nootropic",
-      "dosage": { "min": 120, "typical": 180, "max": 240, "unit": "mg" },
+      "dosage": {
+        "min": 120,
+        "typical": 180,
+        "max": 240,
+        "unit": "mg"
+      },
       "timing": "morning",
       "withFood": true,
       "withFat": false,
-      "benefits": ["cerebral blood flow", "memory", "cognitive function", "tinnitus relief", "antioxidant"],
-      "goals": ["brain", "memory", "focus", "circulation"],
-      "synergies": ["bacopa-monnieri", "omega-3", "alpha-gpc"],
-      "conflicts": ["blood-thinners", "warfarin"],
+      "benefits": [
+        "cerebral blood flow",
+        "memory",
+        "cognitive function",
+        "tinnitus relief",
+        "antioxidant"
+      ],
+      "goals": [
+        "brain",
+        "memory",
+        "focus",
+        "circulation"
+      ],
+      "synergies": [
+        "bacopa-monnieri",
+        "omega-3",
+        "alpha-gpc"
+      ],
+      "conflicts": [
+        "blood-thinners",
+        "warfarin"
+      ],
       "absorptionCompetitors": [],
       "depletedBy": [],
       "amwayProduct": null,
@@ -832,13 +1734,33 @@
       "name": "Ginseng (Panax)",
       "type": "adaptogen",
       "category": "herb",
-      "dosage": { "min": 200, "typical": 400, "max": 600, "unit": "mg" },
+      "dosage": {
+        "min": 200,
+        "typical": 400,
+        "max": 600,
+        "unit": "mg"
+      },
       "timing": "morning",
       "withFood": false,
       "withFat": false,
-      "benefits": ["energy", "cognitive function", "immune support", "blood sugar", "libido"],
-      "goals": ["energy", "brain", "immunity", "stress", "libido"],
-      "synergies": ["rhodiola", "b-complex"],
+      "benefits": [
+        "energy",
+        "cognitive function",
+        "immune support",
+        "blood sugar",
+        "libido"
+      ],
+      "goals": [
+        "energy",
+        "brain",
+        "immunity",
+        "stress",
+        "libido"
+      ],
+      "synergies": [
+        "rhodiola",
+        "b-complex"
+      ],
       "conflicts": [],
       "absorptionCompetitors": [],
       "depletedBy": [],
@@ -851,13 +1773,31 @@
       "name": "Glucosamine",
       "type": "amino-sugar",
       "category": "joint-health",
-      "dosage": { "min": 1500, "typical": 1500, "max": 3000, "unit": "mg" },
+      "dosage": {
+        "min": 1500,
+        "typical": 1500,
+        "max": 3000,
+        "unit": "mg"
+      },
       "timing": "any",
       "withFood": true,
       "withFat": false,
-      "benefits": ["joint health", "cartilage repair", "arthritis relief", "connective tissue support"],
-      "goals": ["joint", "inflammation", "recovery"],
-      "synergies": ["msm", "collagen", "vitamin-c"],
+      "benefits": [
+        "joint health",
+        "cartilage repair",
+        "arthritis relief",
+        "connective tissue support"
+      ],
+      "goals": [
+        "joint",
+        "inflammation",
+        "recovery"
+      ],
+      "synergies": [
+        "msm",
+        "collagen",
+        "vitamin-c"
+      ],
       "conflicts": [],
       "absorptionCompetitors": [],
       "depletedBy": [],
@@ -869,16 +1809,38 @@
       "name": "Glutamine",
       "type": "amino-acid",
       "category": "recovery",
-      "dosage": { "min": 5, "typical": 10, "max": 20, "unit": "g" },
+      "dosage": {
+        "min": 5,
+        "typical": 10,
+        "max": 20,
+        "unit": "g"
+      },
       "timing": "any",
       "withFood": false,
       "withFat": false,
-      "benefits": ["gut lining repair", "immune function", "muscle recovery", "protein synthesis"],
-      "goals": ["gut", "recovery", "immunity", "muscle"],
-      "synergies": ["probiotics", "collagen", "zinc"],
+      "benefits": [
+        "gut lining repair",
+        "immune function",
+        "muscle recovery",
+        "protein synthesis"
+      ],
+      "goals": [
+        "gut",
+        "recovery",
+        "immunity",
+        "muscle"
+      ],
+      "synergies": [
+        "probiotics",
+        "collagen",
+        "zinc"
+      ],
       "conflicts": [],
       "absorptionCompetitors": [],
-      "depletedBy": ["intense-exercise", "illness"],
+      "depletedBy": [
+        "intense-exercise",
+        "illness"
+      ],
       "amwayProduct": null,
       "resultsTimeline": "2-4 weeks"
     },
@@ -887,15 +1849,37 @@
       "name": "Green Tea Extract (EGCG)",
       "type": "polyphenol",
       "category": "antioxidant",
-      "dosage": { "min": 400, "typical": 600, "max": 800, "unit": "mg EGCG" },
+      "dosage": {
+        "min": 400,
+        "typical": 600,
+        "max": 800,
+        "unit": "mg EGCG"
+      },
       "timing": "morning",
       "withFood": true,
       "withFat": false,
-      "benefits": ["antioxidant", "fat burning", "brain health", "heart health", "metabolism"],
-      "goals": ["weight", "antioxidant", "brain", "heart", "longevity"],
-      "synergies": ["vitamin-c", "quercetin"],
+      "benefits": [
+        "antioxidant",
+        "fat burning",
+        "brain health",
+        "heart health",
+        "metabolism"
+      ],
+      "goals": [
+        "weight",
+        "antioxidant",
+        "brain",
+        "heart",
+        "longevity"
+      ],
+      "synergies": [
+        "vitamin-c",
+        "quercetin"
+      ],
       "conflicts": [],
-      "absorptionCompetitors": ["iron"],
+      "absorptionCompetitors": [
+        "iron"
+      ],
       "depletedBy": [],
       "amwayProduct": "Nutrilite Green Tea",
       "resultsTimeline": "4-8 weeks",
@@ -906,13 +1890,32 @@
       "name": "HMB (Beta-hydroxy beta-methylbutyrate)",
       "type": "metabolite",
       "category": "performance",
-      "dosage": { "min": 3, "typical": 3, "max": 6, "unit": "g" },
+      "dosage": {
+        "min": 3,
+        "typical": 3,
+        "max": 6,
+        "unit": "g"
+      },
       "timing": "any",
       "withFood": false,
       "withFat": false,
-      "benefits": ["muscle preservation", "strength gains", "recovery", "anti-catabolic"],
-      "goals": ["muscle", "recovery", "performance", "strength"],
-      "synergies": ["creatine", "protein", "vitamin-d3"],
+      "benefits": [
+        "muscle preservation",
+        "strength gains",
+        "recovery",
+        "anti-catabolic"
+      ],
+      "goals": [
+        "muscle",
+        "recovery",
+        "performance",
+        "strength"
+      ],
+      "synergies": [
+        "creatine",
+        "protein",
+        "vitamin-d3"
+      ],
       "conflicts": [],
       "absorptionCompetitors": [],
       "depletedBy": [],
@@ -924,13 +1927,32 @@
       "name": "Holy Basil (Tulsi)",
       "type": "adaptogen",
       "category": "herb",
-      "dosage": { "min": 300, "typical": 500, "max": 600, "unit": "mg" },
+      "dosage": {
+        "min": 300,
+        "typical": 500,
+        "max": 600,
+        "unit": "mg"
+      },
       "timing": "any",
       "withFood": false,
       "withFat": false,
-      "benefits": ["stress relief", "cortisol reduction", "blood sugar", "anti-inflammatory", "cognitive function"],
-      "goals": ["stress", "anxiety", "blood-sugar", "brain"],
-      "synergies": ["ashwagandha", "magnesium"],
+      "benefits": [
+        "stress relief",
+        "cortisol reduction",
+        "blood sugar",
+        "anti-inflammatory",
+        "cognitive function"
+      ],
+      "goals": [
+        "stress",
+        "anxiety",
+        "blood-sugar",
+        "brain"
+      ],
+      "synergies": [
+        "ashwagandha",
+        "magnesium"
+      ],
       "conflicts": [],
       "absorptionCompetitors": [],
       "depletedBy": [],
@@ -942,35 +1964,78 @@
       "name": "Inositol",
       "type": "vitamin-like",
       "category": "nootropic",
-      "dosage": { "min": 2000, "typical": 4000, "max": 18000, "unit": "mg" },
+      "dosage": {
+        "min": 2000,
+        "typical": 4000,
+        "max": 18000,
+        "unit": "mg"
+      },
       "timing": "any",
       "withFood": false,
       "withFat": false,
-      "benefits": ["PCOS support", "anxiety relief", "OCD", "insulin sensitivity", "mood stabilization"],
-      "goals": ["mood", "anxiety", "hormone", "blood-sugar", "fertility"],
-      "synergies": ["magnesium", "b-complex"],
+      "benefits": [
+        "PCOS support",
+        "anxiety relief",
+        "OCD",
+        "insulin sensitivity",
+        "mood stabilization"
+      ],
+      "goals": [
+        "mood",
+        "anxiety",
+        "hormone",
+        "blood-sugar",
+        "fertility"
+      ],
+      "synergies": [
+        "magnesium",
+        "b-complex"
+      ],
       "conflicts": [],
       "absorptionCompetitors": [],
-      "depletedBy": ["caffeine"],
+      "depletedBy": [
+        "caffeine"
+      ],
       "amwayProduct": null,
       "resultsTimeline": "4-8 weeks",
-      "notes": "High doses (12–18g) for PCOS; 2–4g for anxiety/mood"
+      "notes": "High doses (12\u00e2\u20ac\u201c18g) for PCOS; 2\u00e2\u20ac\u201c4g for anxiety/mood"
     },
     {
       "id": "iodine",
       "name": "Iodine",
       "type": "mineral",
       "category": "essential",
-      "dosage": { "min": 150, "typical": 225, "max": 500, "unit": "mcg" },
+      "dosage": {
+        "min": 150,
+        "typical": 225,
+        "max": 500,
+        "unit": "mcg"
+      },
       "timing": "any",
       "withFood": false,
       "withFat": false,
-      "benefits": ["thyroid function", "metabolism", "cognitive development", "breast health"],
-      "goals": ["thyroid", "energy", "metabolic", "brain"],
-      "synergies": ["selenium", "vitamin-d3"],
+      "benefits": [
+        "thyroid function",
+        "metabolism",
+        "cognitive development",
+        "breast health"
+      ],
+      "goals": [
+        "thyroid",
+        "energy",
+        "metabolic",
+        "brain"
+      ],
+      "synergies": [
+        "selenium",
+        "vitamin-d3"
+      ],
       "conflicts": [],
       "absorptionCompetitors": [],
-      "depletedBy": ["fluoride", "bromine"],
+      "depletedBy": [
+        "fluoride",
+        "bromine"
+      ],
       "amwayProduct": null,
       "resultsTimeline": "4-8 weeks",
       "notes": "Test thyroid levels before supplementing. Don't combine high-dose iodine with thyroid medication without supervision."
@@ -980,13 +2045,33 @@
       "name": "Krill Oil",
       "type": "fatty-acid",
       "category": "essential",
-      "dosage": { "min": 500, "typical": 1000, "max": 3000, "unit": "mg" },
+      "dosage": {
+        "min": 500,
+        "typical": 1000,
+        "max": 3000,
+        "unit": "mg"
+      },
       "timing": "any",
       "withFood": true,
       "withFat": true,
-      "benefits": ["brain health", "heart health", "inflammation", "joint health", "skin health"],
-      "goals": ["brain", "heart", "inflammation", "joint", "skin"],
-      "synergies": ["vitamin-d3", "astaxanthin"],
+      "benefits": [
+        "brain health",
+        "heart health",
+        "inflammation",
+        "joint health",
+        "skin health"
+      ],
+      "goals": [
+        "brain",
+        "heart",
+        "inflammation",
+        "joint",
+        "skin"
+      ],
+      "synergies": [
+        "vitamin-d3",
+        "astaxanthin"
+      ],
       "conflicts": [],
       "absorptionCompetitors": [],
       "depletedBy": [],
@@ -999,13 +2084,31 @@
       "name": "Lutein & Zeaxanthin",
       "type": "carotenoid",
       "category": "eye-health",
-      "dosage": { "min": 10, "typical": 20, "max": 40, "unit": "mg lutein" },
+      "dosage": {
+        "min": 10,
+        "typical": 20,
+        "max": 40,
+        "unit": "mg lutein"
+      },
       "timing": "any",
       "withFood": true,
       "withFat": true,
-      "benefits": ["macular health", "blue light protection", "eye strain reduction", "visual acuity"],
-      "goals": ["eye-health", "antioxidant", "longevity"],
-      "synergies": ["omega-3", "astaxanthin", "vitamin-e"],
+      "benefits": [
+        "macular health",
+        "blue light protection",
+        "eye strain reduction",
+        "visual acuity"
+      ],
+      "goals": [
+        "eye-health",
+        "antioxidant",
+        "longevity"
+      ],
+      "synergies": [
+        "omega-3",
+        "astaxanthin",
+        "vitamin-e"
+      ],
       "conflicts": [],
       "absorptionCompetitors": [],
       "depletedBy": [],
@@ -1017,13 +2120,34 @@
       "name": "Maca Root",
       "type": "adaptogen",
       "category": "herb",
-      "dosage": { "min": 1500, "typical": 3000, "max": 5000, "unit": "mg" },
+      "dosage": {
+        "min": 1500,
+        "typical": 3000,
+        "max": 5000,
+        "unit": "mg"
+      },
       "timing": "morning",
       "withFood": true,
       "withFat": false,
-      "benefits": ["libido enhancement", "energy", "fertility support", "hormone balance", "mood"],
-      "goals": ["libido", "energy", "hormone", "fertility", "mood"],
-      "synergies": ["zinc", "tongkat-ali", "ashwagandha"],
+      "benefits": [
+        "libido enhancement",
+        "energy",
+        "fertility support",
+        "hormone balance",
+        "mood"
+      ],
+      "goals": [
+        "libido",
+        "energy",
+        "hormone",
+        "fertility",
+        "mood"
+      ],
+      "synergies": [
+        "zinc",
+        "tongkat-ali",
+        "ashwagandha"
+      ],
       "conflicts": [],
       "absorptionCompetitors": [],
       "depletedBy": [],
@@ -1035,15 +2159,36 @@
       "name": "Manganese",
       "type": "mineral",
       "category": "trace",
-      "dosage": { "min": 2, "typical": 3, "max": 5, "unit": "mg" },
+      "dosage": {
+        "min": 2,
+        "typical": 3,
+        "max": 5,
+        "unit": "mg"
+      },
       "timing": "any",
       "withFood": true,
       "withFat": false,
-      "benefits": ["bone formation", "antioxidant enzyme support", "blood sugar metabolism", "connective tissue"],
-      "goals": ["bone", "metabolic", "antioxidant"],
-      "synergies": ["vitamin-k2", "calcium"],
+      "benefits": [
+        "bone formation",
+        "antioxidant enzyme support",
+        "blood sugar metabolism",
+        "connective tissue"
+      ],
+      "goals": [
+        "bone",
+        "metabolic",
+        "antioxidant"
+      ],
+      "synergies": [
+        "vitamin-k2",
+        "calcium"
+      ],
       "conflicts": [],
-      "absorptionCompetitors": ["iron", "calcium", "zinc"],
+      "absorptionCompetitors": [
+        "iron",
+        "calcium",
+        "zinc"
+      ],
       "depletedBy": [],
       "amwayProduct": null,
       "resultsTimeline": "4-8 weeks"
@@ -1053,13 +2198,33 @@
       "name": "Milk Thistle (Silymarin)",
       "type": "herb",
       "category": "liver-health",
-      "dosage": { "min": 200, "typical": 400, "max": 600, "unit": "mg silymarin" },
+      "dosage": {
+        "min": 200,
+        "typical": 400,
+        "max": 600,
+        "unit": "mg silymarin"
+      },
       "timing": "any",
       "withFood": true,
       "withFat": false,
-      "benefits": ["liver protection", "detoxification", "antioxidant", "cholesterol support", "anti-inflammatory"],
-      "goals": ["liver", "detox", "longevity", "antioxidant"],
-      "synergies": ["nac", "alpha-lipoic-acid", "vitamin-e"],
+      "benefits": [
+        "liver protection",
+        "detoxification",
+        "antioxidant",
+        "cholesterol support",
+        "anti-inflammatory"
+      ],
+      "goals": [
+        "liver",
+        "detox",
+        "longevity",
+        "antioxidant"
+      ],
+      "synergies": [
+        "nac",
+        "alpha-lipoic-acid",
+        "vitamin-e"
+      ],
       "conflicts": [],
       "absorptionCompetitors": [],
       "depletedBy": [],
@@ -1071,13 +2236,33 @@
       "name": "MSM (Methylsulfonylmethane)",
       "type": "organosulfur",
       "category": "joint-health",
-      "dosage": { "min": 1000, "typical": 2000, "max": 3000, "unit": "mg" },
+      "dosage": {
+        "min": 1000,
+        "typical": 2000,
+        "max": 3000,
+        "unit": "mg"
+      },
       "timing": "any",
       "withFood": false,
       "withFat": false,
-      "benefits": ["joint health", "inflammation reduction", "skin health", "exercise recovery", "sulfur source"],
-      "goals": ["joint", "inflammation", "skin", "recovery"],
-      "synergies": ["glucosamine", "collagen", "vitamin-c"],
+      "benefits": [
+        "joint health",
+        "inflammation reduction",
+        "skin health",
+        "exercise recovery",
+        "sulfur source"
+      ],
+      "goals": [
+        "joint",
+        "inflammation",
+        "skin",
+        "recovery"
+      ],
+      "synergies": [
+        "glucosamine",
+        "collagen",
+        "vitamin-c"
+      ],
       "conflicts": [],
       "absorptionCompetitors": [],
       "depletedBy": [],
@@ -1089,16 +2274,38 @@
       "name": "NMN (Nicotinamide Mononucleotide)",
       "type": "nad-precursor",
       "category": "longevity",
-      "dosage": { "min": 250, "typical": 500, "max": 1000, "unit": "mg" },
+      "dosage": {
+        "min": 250,
+        "typical": 500,
+        "max": 1000,
+        "unit": "mg"
+      },
       "timing": "morning",
       "withFood": false,
       "withFat": false,
-      "benefits": ["NAD+ restoration", "cellular energy", "DNA repair", "longevity", "metabolism"],
-      "goals": ["longevity", "energy", "anti-aging", "brain"],
-      "synergies": ["resveratrol", "coq10", "pqq"],
+      "benefits": [
+        "NAD+ restoration",
+        "cellular energy",
+        "DNA repair",
+        "longevity",
+        "metabolism"
+      ],
+      "goals": [
+        "longevity",
+        "energy",
+        "anti-aging",
+        "brain"
+      ],
+      "synergies": [
+        "resveratrol",
+        "coq10",
+        "pqq"
+      ],
       "conflicts": [],
       "absorptionCompetitors": [],
-      "depletedBy": ["age"],
+      "depletedBy": [
+        "age"
+      ],
       "amwayProduct": null,
       "resultsTimeline": "4-8 weeks"
     },
@@ -1107,13 +2314,33 @@
       "name": "Phosphatidylserine",
       "type": "phospholipid",
       "category": "nootropic",
-      "dosage": { "min": 100, "typical": 300, "max": 400, "unit": "mg" },
+      "dosage": {
+        "min": 100,
+        "typical": 300,
+        "max": 400,
+        "unit": "mg"
+      },
       "timing": "any",
       "withFood": true,
       "withFat": false,
-      "benefits": ["cognitive function", "memory", "cortisol reduction", "focus", "mood"],
-      "goals": ["brain", "focus", "stress", "memory"],
-      "synergies": ["omega-3", "lions-mane", "bacopa-monnieri"],
+      "benefits": [
+        "cognitive function",
+        "memory",
+        "cortisol reduction",
+        "focus",
+        "mood"
+      ],
+      "goals": [
+        "brain",
+        "focus",
+        "stress",
+        "memory"
+      ],
+      "synergies": [
+        "omega-3",
+        "lions-mane",
+        "bacopa-monnieri"
+      ],
       "conflicts": [],
       "absorptionCompetitors": [],
       "depletedBy": [],
@@ -1125,13 +2352,30 @@
       "name": "Piperine (Black Pepper Extract)",
       "type": "alkaloid",
       "category": "absorption-enhancer",
-      "dosage": { "min": 5, "typical": 10, "max": 20, "unit": "mg" },
+      "dosage": {
+        "min": 5,
+        "typical": 10,
+        "max": 20,
+        "unit": "mg"
+      },
       "timing": "with-meals",
       "withFood": true,
       "withFat": false,
-      "benefits": ["bioavailability enhancement", "anti-inflammatory", "antioxidant", "thermogenic"],
-      "goals": ["absorption-enhancement", "antioxidant"],
-      "synergies": ["curcumin", "resveratrol", "quercetin"],
+      "benefits": [
+        "bioavailability enhancement",
+        "anti-inflammatory",
+        "antioxidant",
+        "thermogenic"
+      ],
+      "goals": [
+        "absorption-enhancement",
+        "antioxidant"
+      ],
+      "synergies": [
+        "curcumin",
+        "resveratrol",
+        "quercetin"
+      ],
       "conflicts": [],
       "absorptionCompetitors": [],
       "depletedBy": [],
@@ -1144,16 +2388,36 @@
       "name": "Potassium",
       "type": "mineral",
       "category": "essential",
-      "dosage": { "min": 99, "typical": 200, "max": 1000, "unit": "mg" },
+      "dosage": {
+        "min": 99,
+        "typical": 200,
+        "max": 1000,
+        "unit": "mg"
+      },
       "timing": "any",
       "withFood": true,
       "withFat": false,
-      "benefits": ["blood pressure", "heart health", "muscle function", "electrolyte balance"],
-      "goals": ["heart", "performance", "blood-pressure"],
-      "synergies": ["magnesium"],
+      "benefits": [
+        "blood pressure",
+        "heart health",
+        "muscle function",
+        "electrolyte balance"
+      ],
+      "goals": [
+        "heart",
+        "performance",
+        "blood-pressure"
+      ],
+      "synergies": [
+        "magnesium"
+      ],
       "conflicts": [],
       "absorptionCompetitors": [],
-      "depletedBy": ["diuretics", "caffeine", "alcohol"],
+      "depletedBy": [
+        "diuretics",
+        "caffeine",
+        "alcohol"
+      ],
       "amwayProduct": null,
       "resultsTimeline": "1-2 weeks",
       "notes": "Most needs should come from diet. RDA is 4700mg. OTC supplements limited to 99mg."
@@ -1163,13 +2427,33 @@
       "name": "PQQ (Pyrroloquinoline Quinone)",
       "type": "quinone",
       "category": "longevity",
-      "dosage": { "min": 10, "typical": 20, "max": 40, "unit": "mg" },
+      "dosage": {
+        "min": 10,
+        "typical": 20,
+        "max": 40,
+        "unit": "mg"
+      },
       "timing": "morning",
       "withFood": true,
       "withFat": false,
-      "benefits": ["mitochondrial biogenesis", "brain health", "cognitive function", "antioxidant", "energy"],
-      "goals": ["longevity", "brain", "energy", "antioxidant"],
-      "synergies": ["coq10", "nmn", "acetyl-l-carnitine"],
+      "benefits": [
+        "mitochondrial biogenesis",
+        "brain health",
+        "cognitive function",
+        "antioxidant",
+        "energy"
+      ],
+      "goals": [
+        "longevity",
+        "brain",
+        "energy",
+        "antioxidant"
+      ],
+      "synergies": [
+        "coq10",
+        "nmn",
+        "acetyl-l-carnitine"
+      ],
       "conflicts": [],
       "absorptionCompetitors": [],
       "depletedBy": [],
@@ -1181,13 +2465,34 @@
       "name": "Quercetin",
       "type": "flavonoid",
       "category": "antioxidant",
-      "dosage": { "min": 500, "typical": 1000, "max": 1500, "unit": "mg" },
+      "dosage": {
+        "min": 500,
+        "typical": 1000,
+        "max": 1500,
+        "unit": "mg"
+      },
       "timing": "any",
       "withFood": true,
       "withFat": false,
-      "benefits": ["antioxidant", "anti-inflammatory", "immunity", "senolytic", "longevity", "histamine reduction"],
-      "goals": ["immunity", "inflammation", "longevity", "antioxidant"],
-      "synergies": ["vitamin-c", "piperine", "zinc"],
+      "benefits": [
+        "antioxidant",
+        "anti-inflammatory",
+        "immunity",
+        "senolytic",
+        "longevity",
+        "histamine reduction"
+      ],
+      "goals": [
+        "immunity",
+        "inflammation",
+        "longevity",
+        "antioxidant"
+      ],
+      "synergies": [
+        "vitamin-c",
+        "piperine",
+        "zinc"
+      ],
       "conflicts": [],
       "absorptionCompetitors": [],
       "depletedBy": [],
@@ -1200,13 +2505,33 @@
       "name": "Resveratrol",
       "type": "polyphenol",
       "category": "longevity",
-      "dosage": { "min": 250, "typical": 500, "max": 1000, "unit": "mg" },
+      "dosage": {
+        "min": 250,
+        "typical": 500,
+        "max": 1000,
+        "unit": "mg"
+      },
       "timing": "any",
       "withFood": true,
       "withFat": false,
-      "benefits": ["longevity", "heart health", "antioxidant", "anti-inflammatory", "sirtuin activation"],
-      "goals": ["longevity", "heart", "antioxidant", "anti-aging"],
-      "synergies": ["nmn", "piperine", "quercetin"],
+      "benefits": [
+        "longevity",
+        "heart health",
+        "antioxidant",
+        "anti-inflammatory",
+        "sirtuin activation"
+      ],
+      "goals": [
+        "longevity",
+        "heart",
+        "antioxidant",
+        "anti-aging"
+      ],
+      "synergies": [
+        "nmn",
+        "piperine",
+        "quercetin"
+      ],
       "conflicts": [],
       "absorptionCompetitors": [],
       "depletedBy": [],
@@ -1219,13 +2544,30 @@
       "name": "Saw Palmetto",
       "type": "herb",
       "category": "hormone",
-      "dosage": { "min": 160, "typical": 320, "max": 640, "unit": "mg" },
+      "dosage": {
+        "min": 160,
+        "typical": 320,
+        "max": 640,
+        "unit": "mg"
+      },
       "timing": "any",
       "withFood": true,
       "withFat": true,
-      "benefits": ["prostate health", "DHT inhibition", "hair loss prevention", "urinary symptoms"],
-      "goals": ["prostate", "hair", "hormone"],
-      "synergies": ["zinc", "beta-sitosterol"],
+      "benefits": [
+        "prostate health",
+        "DHT inhibition",
+        "hair loss prevention",
+        "urinary symptoms"
+      ],
+      "goals": [
+        "prostate",
+        "hair",
+        "hormone"
+      ],
+      "synergies": [
+        "zinc",
+        "beta-sitosterol"
+      ],
       "conflicts": [],
       "absorptionCompetitors": [],
       "depletedBy": [],
@@ -1237,32 +2579,74 @@
       "name": "Shilajit",
       "type": "mineral-compound",
       "category": "adaptogen",
-      "dosage": { "min": 300, "typical": 500, "max": 1000, "unit": "mg" },
+      "dosage": {
+        "min": 300,
+        "typical": 500,
+        "max": 1000,
+        "unit": "mg"
+      },
       "timing": "morning",
       "withFood": false,
       "withFat": false,
-      "benefits": ["energy", "testosterone support", "fulvic acid", "mineral transport", "longevity", "cognitive function"],
-      "goals": ["energy", "testosterone", "longevity", "brain"],
-      "synergies": ["ashwagandha", "coq10", "zinc"],
+      "benefits": [
+        "energy",
+        "testosterone support",
+        "fulvic acid",
+        "mineral transport",
+        "longevity",
+        "cognitive function"
+      ],
+      "goals": [
+        "energy",
+        "testosterone",
+        "longevity",
+        "brain"
+      ],
+      "synergies": [
+        "ashwagandha",
+        "coq10",
+        "zinc"
+      ],
       "conflicts": [],
       "absorptionCompetitors": [],
       "depletedBy": [],
       "amwayProduct": null,
       "resultsTimeline": "4-8 weeks",
-      "notes": "Use purified/tested form — raw shilajit may contain heavy metals"
+      "notes": "Use purified/tested form \u00e2\u20ac\u201d raw shilajit may contain heavy metals"
     },
     {
       "id": "spirulina",
       "name": "Spirulina",
       "type": "algae",
       "category": "superfood",
-      "dosage": { "min": 3, "typical": 5, "max": 10, "unit": "g" },
+      "dosage": {
+        "min": 3,
+        "typical": 5,
+        "max": 10,
+        "unit": "g"
+      },
       "timing": "any",
       "withFood": false,
       "withFat": false,
-      "benefits": ["protein-rich", "antioxidant", "immunity", "detox support", "energy", "iron source"],
-      "goals": ["immunity", "antioxidant", "nutrition", "energy", "detox"],
-      "synergies": ["chlorella", "vitamin-c"],
+      "benefits": [
+        "protein-rich",
+        "antioxidant",
+        "immunity",
+        "detox support",
+        "energy",
+        "iron source"
+      ],
+      "goals": [
+        "immunity",
+        "antioxidant",
+        "nutrition",
+        "energy",
+        "detox"
+      ],
+      "synergies": [
+        "chlorella",
+        "vitamin-c"
+      ],
       "conflicts": [],
       "absorptionCompetitors": [],
       "depletedBy": [],
@@ -1274,13 +2658,32 @@
       "name": "Taurine",
       "type": "amino-acid",
       "category": "performance",
-      "dosage": { "min": 500, "typical": 1000, "max": 3000, "unit": "mg" },
+      "dosage": {
+        "min": 500,
+        "typical": 1000,
+        "max": 3000,
+        "unit": "mg"
+      },
       "timing": "any",
       "withFood": false,
       "withFat": false,
-      "benefits": ["heart health", "exercise performance", "brain health", "eye health", "electrolyte balance"],
-      "goals": ["heart", "performance", "brain", "recovery"],
-      "synergies": ["magnesium", "electrolytes"],
+      "benefits": [
+        "heart health",
+        "exercise performance",
+        "brain health",
+        "eye health",
+        "electrolyte balance"
+      ],
+      "goals": [
+        "heart",
+        "performance",
+        "brain",
+        "recovery"
+      ],
+      "synergies": [
+        "magnesium",
+        "electrolytes"
+      ],
       "conflicts": [],
       "absorptionCompetitors": [],
       "depletedBy": [],
@@ -1292,13 +2695,34 @@
       "name": "Tongkat Ali (Eurycoma Longifolia)",
       "type": "adaptogen",
       "category": "herb",
-      "dosage": { "min": 200, "typical": 400, "max": 600, "unit": "mg standardized" },
+      "dosage": {
+        "min": 200,
+        "typical": 400,
+        "max": 600,
+        "unit": "mg standardized"
+      },
       "timing": "morning",
       "withFood": false,
       "withFat": false,
-      "benefits": ["testosterone support", "libido", "energy", "stress cortisol reduction", "muscle mass"],
-      "goals": ["testosterone", "libido", "energy", "stress", "muscle"],
-      "synergies": ["ashwagandha", "zinc", "maca"],
+      "benefits": [
+        "testosterone support",
+        "libido",
+        "energy",
+        "stress cortisol reduction",
+        "muscle mass"
+      ],
+      "goals": [
+        "testosterone",
+        "libido",
+        "energy",
+        "stress",
+        "muscle"
+      ],
+      "synergies": [
+        "ashwagandha",
+        "zinc",
+        "maca"
+      ],
       "conflicts": [],
       "absorptionCompetitors": [],
       "depletedBy": [],
@@ -1311,35 +2735,81 @@
       "name": "L-Tryptophan",
       "type": "amino-acid",
       "category": "sleep",
-      "dosage": { "min": 500, "typical": 1000, "max": 2000, "unit": "mg" },
+      "dosage": {
+        "min": 500,
+        "typical": 1000,
+        "max": 2000,
+        "unit": "mg"
+      },
       "timing": "evening",
       "withFood": false,
       "withFat": false,
-      "benefits": ["serotonin precursor", "sleep quality", "mood support", "appetite regulation"],
-      "goals": ["sleep", "mood", "anxiety"],
-      "synergies": ["vitamin-b6-pyridoxine", "magnesium"],
-      "conflicts": ["ssri", "maoi"],
+      "benefits": [
+        "serotonin precursor",
+        "sleep quality",
+        "mood support",
+        "appetite regulation"
+      ],
+      "goals": [
+        "sleep",
+        "mood",
+        "anxiety"
+      ],
+      "synergies": [
+        "vitamin-b6-pyridoxine",
+        "magnesium"
+      ],
+      "conflicts": [
+        "ssri",
+        "maoi"
+      ],
       "absorptionCompetitors": [],
       "depletedBy": [],
       "amwayProduct": null,
       "resultsTimeline": "1-2 weeks",
-      "notes": "Do not combine with SSRIs or MAOIs — serotonin syndrome risk"
+      "notes": "Do not combine with SSRIs or MAOIs \u00e2\u20ac\u201d serotonin syndrome risk"
     },
     {
       "id": "tyrosine",
       "name": "L-Tyrosine",
       "type": "amino-acid",
       "category": "nootropic",
-      "dosage": { "min": 500, "typical": 1000, "max": 2000, "unit": "mg" },
+      "dosage": {
+        "min": 500,
+        "typical": 1000,
+        "max": 2000,
+        "unit": "mg"
+      },
       "timing": "morning",
       "withFood": false,
       "withFat": false,
-      "benefits": ["dopamine precursor", "focus under stress", "cognitive performance", "thyroid support", "mood"],
-      "goals": ["focus", "stress", "energy", "thyroid", "mood"],
-      "synergies": ["vitamin-b6-pyridoxine", "iron", "copper"],
-      "conflicts": ["maoi", "thyroid-medication"],
+      "benefits": [
+        "dopamine precursor",
+        "focus under stress",
+        "cognitive performance",
+        "thyroid support",
+        "mood"
+      ],
+      "goals": [
+        "focus",
+        "stress",
+        "energy",
+        "thyroid",
+        "mood"
+      ],
+      "synergies": [
+        "vitamin-b6-pyridoxine",
+        "iron",
+        "copper"
+      ],
+      "conflicts": [
+        "maoi",
+        "thyroid-medication"
+      ],
       "absorptionCompetitors": [],
-      "depletedBy": ["stress"],
+      "depletedBy": [
+        "stress"
+      ],
       "amwayProduct": null,
       "resultsTimeline": "30-60 minutes (acute)",
       "notes": "Most effective during acute stress, sleep deprivation, or demanding cognitive tasks"
@@ -1349,15 +2819,37 @@
       "name": "Vitamin A",
       "type": "vitamin",
       "category": "fat-soluble",
-      "dosage": { "min": 2500, "typical": 5000, "max": 10000, "unit": "IU" },
+      "dosage": {
+        "min": 2500,
+        "typical": 5000,
+        "max": 10000,
+        "unit": "IU"
+      },
       "timing": "morning",
       "withFood": true,
       "withFat": true,
-      "benefits": ["vision", "immunity", "skin health", "gene expression", "reproductive health"],
-      "goals": ["immunity", "skin", "eye-health"],
-      "synergies": ["vitamin-d3", "vitamin-e", "vitamin-k2", "zinc"],
+      "benefits": [
+        "vision",
+        "immunity",
+        "skin health",
+        "gene expression",
+        "reproductive health"
+      ],
+      "goals": [
+        "immunity",
+        "skin",
+        "eye-health"
+      ],
+      "synergies": [
+        "vitamin-d3",
+        "vitamin-e",
+        "vitamin-k2",
+        "zinc"
+      ],
       "conflicts": [],
-      "absorptionCompetitors": ["vitamin-d3"],
+      "absorptionCompetitors": [
+        "vitamin-d3"
+      ],
       "depletedBy": [],
       "amwayProduct": "Nutrilite Daily",
       "resultsTimeline": "4-8 weeks",
@@ -1368,16 +2860,37 @@
       "name": "Vitamin B1 (Thiamine)",
       "type": "vitamin",
       "category": "water-soluble",
-      "dosage": { "min": 50, "typical": 100, "max": 300, "unit": "mg" },
+      "dosage": {
+        "min": 50,
+        "typical": 100,
+        "max": 300,
+        "unit": "mg"
+      },
       "timing": "morning",
       "withFood": true,
       "withFat": false,
-      "benefits": ["energy metabolism", "nerve function", "glucose metabolism", "heart function"],
-      "goals": ["energy", "brain", "metabolic"],
-      "synergies": ["b-complex", "magnesium"],
+      "benefits": [
+        "energy metabolism",
+        "nerve function",
+        "glucose metabolism",
+        "heart function"
+      ],
+      "goals": [
+        "energy",
+        "brain",
+        "metabolic"
+      ],
+      "synergies": [
+        "b-complex",
+        "magnesium"
+      ],
       "conflicts": [],
       "absorptionCompetitors": [],
-      "depletedBy": ["alcohol", "refined-carbs", "coffee"],
+      "depletedBy": [
+        "alcohol",
+        "refined-carbs",
+        "coffee"
+      ],
       "amwayProduct": "Nutrilite B Complex Dual Action",
       "resultsTimeline": "2-4 weeks",
       "notes": "Benfotiamine is a fat-soluble form with superior absorption"
@@ -1387,16 +2900,40 @@
       "name": "Vitamin B12 (Cobalamin)",
       "type": "vitamin",
       "category": "water-soluble",
-      "dosage": { "min": 500, "typical": 1000, "max": 2000, "unit": "mcg" },
+      "dosage": {
+        "min": 500,
+        "typical": 1000,
+        "max": 2000,
+        "unit": "mcg"
+      },
       "timing": "morning",
       "withFood": false,
       "withFat": false,
-      "benefits": ["energy", "nerve health", "DNA synthesis", "red blood cells", "mood"],
-      "goals": ["energy", "brain", "mood", "nerve-health"],
-      "synergies": ["b-complex", "vitamin-b9-folate", "iron"],
+      "benefits": [
+        "energy",
+        "nerve health",
+        "DNA synthesis",
+        "red blood cells",
+        "mood"
+      ],
+      "goals": [
+        "energy",
+        "brain",
+        "mood",
+        "nerve-health"
+      ],
+      "synergies": [
+        "b-complex",
+        "vitamin-b9-folate",
+        "iron"
+      ],
       "conflicts": [],
       "absorptionCompetitors": [],
-      "depletedBy": ["metformin", "ppi", "alcohol"],
+      "depletedBy": [
+        "metformin",
+        "ppi",
+        "alcohol"
+      ],
       "amwayProduct": "Nutrilite B Complex Dual Action",
       "resultsTimeline": "4-8 weeks",
       "notes": "Methylcobalamin or adenosylcobalamin preferred. Sublingual highly effective."
@@ -1406,16 +2943,37 @@
       "name": "Vitamin B2 (Riboflavin)",
       "type": "vitamin",
       "category": "water-soluble",
-      "dosage": { "min": 50, "typical": 100, "max": 400, "unit": "mg" },
+      "dosage": {
+        "min": 50,
+        "typical": 100,
+        "max": 400,
+        "unit": "mg"
+      },
       "timing": "morning",
       "withFood": true,
       "withFat": false,
-      "benefits": ["energy production", "antioxidant support", "migraine prevention", "metabolism"],
-      "goals": ["energy", "migraine", "metabolic", "antioxidant"],
-      "synergies": ["b-complex", "magnesium"],
+      "benefits": [
+        "energy production",
+        "antioxidant support",
+        "migraine prevention",
+        "metabolism"
+      ],
+      "goals": [
+        "energy",
+        "migraine",
+        "metabolic",
+        "antioxidant"
+      ],
+      "synergies": [
+        "b-complex",
+        "magnesium"
+      ],
       "conflicts": [],
       "absorptionCompetitors": [],
-      "depletedBy": ["alcohol", "birth-control"],
+      "depletedBy": [
+        "alcohol",
+        "birth-control"
+      ],
       "amwayProduct": "Nutrilite B Complex Dual Action",
       "resultsTimeline": "4-8 weeks",
       "notes": "High doses used clinically for migraine prevention (400mg/day)"
@@ -1425,16 +2983,40 @@
       "name": "Vitamin B3 (Niacin/Niacinamide)",
       "type": "vitamin",
       "category": "water-soluble",
-      "dosage": { "min": 15, "typical": 250, "max": 2000, "unit": "mg" },
+      "dosage": {
+        "min": 15,
+        "typical": 250,
+        "max": 2000,
+        "unit": "mg"
+      },
       "timing": "any",
       "withFood": true,
       "withFat": false,
-      "benefits": ["NAD+ precursor", "energy", "cholesterol management", "skin health", "DNA repair"],
-      "goals": ["energy", "heart", "longevity", "skin", "brain"],
-      "synergies": ["b-complex", "tryptophan", "nmn"],
+      "benefits": [
+        "NAD+ precursor",
+        "energy",
+        "cholesterol management",
+        "skin health",
+        "DNA repair"
+      ],
+      "goals": [
+        "energy",
+        "heart",
+        "longevity",
+        "skin",
+        "brain"
+      ],
+      "synergies": [
+        "b-complex",
+        "tryptophan",
+        "nmn"
+      ],
       "conflicts": [],
       "absorptionCompetitors": [],
-      "depletedBy": ["alcohol", "stress"],
+      "depletedBy": [
+        "alcohol",
+        "stress"
+      ],
       "amwayProduct": "Nutrilite B Complex Dual Action",
       "resultsTimeline": "4-8 weeks",
       "notes": "Niacin causes flushing; niacinamide does not. High-dose niacin for cholesterol requires medical supervision."
@@ -1444,16 +3026,38 @@
       "name": "Vitamin B5 (Pantothenic Acid)",
       "type": "vitamin",
       "category": "water-soluble",
-      "dosage": { "min": 50, "typical": 250, "max": 500, "unit": "mg" },
+      "dosage": {
+        "min": 50,
+        "typical": 250,
+        "max": 500,
+        "unit": "mg"
+      },
       "timing": "morning",
       "withFood": false,
       "withFat": false,
-      "benefits": ["energy production", "adrenal function", "stress response", "CoA synthesis", "skin/hair health"],
-      "goals": ["energy", "stress", "skin", "adrenal"],
-      "synergies": ["b-complex", "vitamin-c"],
+      "benefits": [
+        "energy production",
+        "adrenal function",
+        "stress response",
+        "CoA synthesis",
+        "skin/hair health"
+      ],
+      "goals": [
+        "energy",
+        "stress",
+        "skin",
+        "adrenal"
+      ],
+      "synergies": [
+        "b-complex",
+        "vitamin-c"
+      ],
       "conflicts": [],
       "absorptionCompetitors": [],
-      "depletedBy": ["stress", "alcohol"],
+      "depletedBy": [
+        "stress",
+        "alcohol"
+      ],
       "amwayProduct": "Nutrilite B Complex Dual Action",
       "resultsTimeline": "2-4 weeks"
     },
@@ -1462,16 +3066,40 @@
       "name": "Vitamin B6 (Pyridoxine)",
       "type": "vitamin",
       "category": "water-soluble",
-      "dosage": { "min": 10, "typical": 25, "max": 100, "unit": "mg" },
+      "dosage": {
+        "min": 10,
+        "typical": 25,
+        "max": 100,
+        "unit": "mg"
+      },
       "timing": "morning",
       "withFood": true,
       "withFat": false,
-      "benefits": ["neurotransmitter synthesis", "PMS relief", "mood", "protein metabolism", "immune function"],
-      "goals": ["mood", "stress", "brain", "hormone", "immunity"],
-      "synergies": ["magnesium", "b-complex", "zinc"],
+      "benefits": [
+        "neurotransmitter synthesis",
+        "PMS relief",
+        "mood",
+        "protein metabolism",
+        "immune function"
+      ],
+      "goals": [
+        "mood",
+        "stress",
+        "brain",
+        "hormone",
+        "immunity"
+      ],
+      "synergies": [
+        "magnesium",
+        "b-complex",
+        "zinc"
+      ],
       "conflicts": [],
       "absorptionCompetitors": [],
-      "depletedBy": ["birth-control", "alcohol"],
+      "depletedBy": [
+        "birth-control",
+        "alcohol"
+      ],
       "amwayProduct": "Nutrilite B Complex Dual Action",
       "resultsTimeline": "2-4 weeks",
       "notes": "P5P (pyridoxal-5-phosphate) is the active form with superior bioavailability. Do not exceed 100mg/day long-term."
@@ -1481,16 +3109,38 @@
       "name": "Vitamin B7 (Biotin)",
       "type": "vitamin",
       "category": "water-soluble",
-      "dosage": { "min": 1000, "typical": 5000, "max": 10000, "unit": "mcg" },
+      "dosage": {
+        "min": 1000,
+        "typical": 5000,
+        "max": 10000,
+        "unit": "mcg"
+      },
       "timing": "any",
       "withFood": false,
       "withFat": false,
-      "benefits": ["hair growth", "nail strength", "glucose metabolism", "skin health", "gene expression"],
-      "goals": ["hair", "skin", "metabolic"],
-      "synergies": ["zinc", "vitamin-e", "collagen"],
+      "benefits": [
+        "hair growth",
+        "nail strength",
+        "glucose metabolism",
+        "skin health",
+        "gene expression"
+      ],
+      "goals": [
+        "hair",
+        "skin",
+        "metabolic"
+      ],
+      "synergies": [
+        "zinc",
+        "vitamin-e",
+        "collagen"
+      ],
       "conflicts": [],
       "absorptionCompetitors": [],
-      "depletedBy": ["raw-egg-whites", "alcohol"],
+      "depletedBy": [
+        "raw-egg-whites",
+        "alcohol"
+      ],
       "amwayProduct": "Nutrilite Daily",
       "resultsTimeline": "2-3 months",
       "notes": "High doses can interfere with thyroid and troponin lab tests"
@@ -1500,16 +3150,40 @@
       "name": "Vitamin B9 (Folate)",
       "type": "vitamin",
       "category": "water-soluble",
-      "dosage": { "min": 400, "typical": 800, "max": 1000, "unit": "mcg" },
+      "dosage": {
+        "min": 400,
+        "typical": 800,
+        "max": 1000,
+        "unit": "mcg"
+      },
       "timing": "morning",
       "withFood": false,
       "withFat": false,
-      "benefits": ["DNA synthesis", "pregnancy support", "mood", "cardiovascular health", "methylation"],
-      "goals": ["brain", "mood", "pregnancy", "heart"],
-      "synergies": ["b-complex", "vitamin-b12-cobalamin", "vitamin-c"],
+      "benefits": [
+        "DNA synthesis",
+        "pregnancy support",
+        "mood",
+        "cardiovascular health",
+        "methylation"
+      ],
+      "goals": [
+        "brain",
+        "mood",
+        "pregnancy",
+        "heart"
+      ],
+      "synergies": [
+        "b-complex",
+        "vitamin-b12-cobalamin",
+        "vitamin-c"
+      ],
       "conflicts": [],
       "absorptionCompetitors": [],
-      "depletedBy": ["methotrexate", "alcohol", "birth-control"],
+      "depletedBy": [
+        "methotrexate",
+        "alcohol",
+        "birth-control"
+      ],
       "amwayProduct": "Nutrilite Iron Folic Plus",
       "resultsTimeline": "4-8 weeks",
       "notes": "Methylfolate (5-MTHF) preferred over folic acid. Critical before and during pregnancy."
@@ -1519,199 +3193,555 @@
       "name": "Vitamin E",
       "type": "vitamin",
       "category": "fat-soluble",
-      "dosage": { "min": 200, "typical": 400, "max": 800, "unit": "IU" },
+      "dosage": {
+        "min": 200,
+        "typical": 400,
+        "max": 800,
+        "unit": "IU"
+      },
       "timing": "any",
       "withFood": true,
       "withFat": true,
-      "benefits": ["antioxidant", "skin health", "immune function", "heart health", "anti-inflammatory"],
-      "goals": ["antioxidant", "skin", "heart", "longevity", "immunity"],
-      "synergies": ["vitamin-c", "selenium", "omega-3"],
-      "conflicts": ["blood-thinners"],
+      "benefits": [
+        "antioxidant",
+        "skin health",
+        "immune function",
+        "heart health",
+        "anti-inflammatory"
+      ],
+      "goals": [
+        "antioxidant",
+        "skin",
+        "heart",
+        "longevity",
+        "immunity"
+      ],
+      "synergies": [
+        "vitamin-c",
+        "selenium",
+        "omega-3"
+      ],
+      "conflicts": [
+        "blood-thinners"
+      ],
       "absorptionCompetitors": [],
       "depletedBy": [],
       "amwayProduct": "Nutrilite Daily",
       "resultsTimeline": "4-8 weeks",
       "notes": "Use mixed tocopherols/tocotrienols rather than just alpha-tocopherol alone"
+    },
+    {
+      "id": "magnesium-l-threonate",
+      "name": "Magnesium L-Threonate",
+      "type": "mineral",
+      "category": "nootropic",
+      "dosage": {
+        "min": 1500,
+        "typical": 2000,
+        "max": 2000,
+        "unit": "mg"
+      },
+      "timing": "morning or evening",
+      "withFood": true,
+      "withFat": false,
+      "benefits": [
+        "brain health",
+        "memory",
+        "cognitive function",
+        "neuroprotection",
+        "sleep"
+      ],
+      "goals": [
+        "brain",
+        "memory",
+        "focus",
+        "sleep"
+      ],
+      "synergies": [
+        "omega-3",
+        "lions-mane",
+        "b-complex"
+      ],
+      "conflicts": [],
+      "absorptionCompetitors": [
+        "calcium"
+      ],
+      "depletedBy": [],
+      "amwayProduct": null,
+      "resultsTimeline": "4-8 weeks"
+    },
+    {
+      "id": "reishi-mushroom",
+      "name": "Reishi Mushroom",
+      "type": "mushroom",
+      "category": "adaptogen",
+      "dosage": {
+        "min": 1000,
+        "typical": 1500,
+        "max": 2000,
+        "unit": "mg"
+      },
+      "timing": "evening",
+      "withFood": true,
+      "withFat": false,
+      "benefits": [
+        "sleep",
+        "stress relief",
+        "anxiety",
+        "immune support",
+        "longevity"
+      ],
+      "goals": [
+        "sleep",
+        "stress",
+        "anxiety",
+        "immunity",
+        "longevity"
+      ],
+      "synergies": [
+        "magnesium",
+        "apigenin",
+        "glycine"
+      ],
+      "conflicts": [],
+      "absorptionCompetitors": [],
+      "depletedBy": [],
+      "amwayProduct": null,
+      "resultsTimeline": "2-4 weeks"
+    },
+    {
+      "id": "cordyceps-mushroom",
+      "name": "Cordyceps Mushroom",
+      "type": "mushroom",
+      "category": "performance",
+      "dosage": {
+        "min": 1500,
+        "typical": 2000,
+        "max": 3000,
+        "unit": "mg"
+      },
+      "timing": "morning",
+      "withFood": true,
+      "withFat": false,
+      "benefits": [
+        "energy",
+        "endurance",
+        "athletic performance",
+        "ATP production",
+        "recovery"
+      ],
+      "goals": [
+        "energy",
+        "performance",
+        "endurance",
+        "muscle"
+      ],
+      "synergies": [
+        "creatine",
+        "beta-alanine",
+        "coq10"
+      ],
+      "conflicts": [],
+      "absorptionCompetitors": [],
+      "depletedBy": [],
+      "amwayProduct": null,
+      "resultsTimeline": "1-4 weeks"
+    },
+    {
+      "id": "chaga-mushroom",
+      "name": "Chaga Mushroom",
+      "type": "mushroom",
+      "category": "antioxidant",
+      "dosage": {
+        "min": 1000,
+        "typical": 2000,
+        "max": 3000,
+        "unit": "mg"
+      },
+      "timing": "morning",
+      "withFood": true,
+      "withFat": false,
+      "benefits": [
+        "antioxidant",
+        "immune support",
+        "longevity",
+        "anti-inflammatory"
+      ],
+      "goals": [
+        "antioxidant",
+        "immunity",
+        "longevity",
+        "anti-aging"
+      ],
+      "synergies": [
+        "vitamin-c",
+        "quercetin",
+        "green-tea-extract"
+      ],
+      "conflicts": [],
+      "absorptionCompetitors": [],
+      "depletedBy": [],
+      "amwayProduct": null,
+      "resultsTimeline": "2-8 weeks"
+    },
+    {
+      "id": "turkey-tail-mushroom",
+      "name": "Turkey Tail Mushroom",
+      "type": "mushroom",
+      "category": "prebiotic",
+      "dosage": {
+        "min": 1000,
+        "typical": 1500,
+        "max": 3000,
+        "unit": "mg"
+      },
+      "timing": "morning",
+      "withFood": true,
+      "withFat": false,
+      "benefits": [
+        "gut health",
+        "prebiotic",
+        "immune support",
+        "microbiome",
+        "digestive"
+      ],
+      "goals": [
+        "gut",
+        "immunity",
+        "digestion"
+      ],
+      "synergies": [
+        "probiotics",
+        "glutamine",
+        "vitamin-d3"
+      ],
+      "conflicts": [],
+      "absorptionCompetitors": [],
+      "depletedBy": [],
+      "amwayProduct": null,
+      "resultsTimeline": "2-8 weeks"
+    },
+    {
+      "id": "urolithin-a",
+      "name": "Urolithin A",
+      "type": "metabolite",
+      "category": "longevity",
+      "dosage": {
+        "min": 500,
+        "typical": 500,
+        "max": 1000,
+        "unit": "mg"
+      },
+      "timing": "morning",
+      "withFood": true,
+      "withFat": false,
+      "benefits": [
+        "mitochondrial renewal",
+        "muscle function",
+        "longevity",
+        "ATP production"
+      ],
+      "goals": [
+        "longevity",
+        "energy",
+        "muscle",
+        "anti-aging"
+      ],
+      "synergies": [
+        "nmn",
+        "coq10",
+        "resveratrol"
+      ],
+      "conflicts": [],
+      "absorptionCompetitors": [],
+      "depletedBy": [],
+      "amwayProduct": null,
+      "resultsTimeline": "8-12 weeks"
     }
   ],
   "interactions": {
     "synergies": [
       {
-        "pair": ["vitamin-d3", "vitamin-k2"],
+        "pair": [
+          "vitamin-d3",
+          "vitamin-k2"
+        ],
         "reason": "K2 directs calcium mobilized by D3 to bones, not arteries",
         "strength": "strong"
       },
       {
-        "pair": ["vitamin-d3", "magnesium"],
+        "pair": [
+          "vitamin-d3",
+          "magnesium"
+        ],
         "reason": "Magnesium required for D3 metabolism and activation",
         "strength": "strong"
       },
       {
-        "pair": ["caffeine", "l-theanine"],
+        "pair": [
+          "caffeine",
+          "l-theanine"
+        ],
         "reason": "L-theanine smooths caffeine's stimulant effects for clean focus",
         "strength": "strong"
       },
       {
-        "pair": ["vitamin-c", "iron"],
+        "pair": [
+          "vitamin-c",
+          "iron"
+        ],
         "reason": "Vitamin C enhances non-heme iron absorption by 2-3x",
         "strength": "strong"
       },
       {
-        "pair": ["zinc", "copper"],
+        "pair": [
+          "zinc",
+          "copper"
+        ],
         "reason": "Must balance zinc with copper to prevent depletion",
         "strength": "required"
       },
       {
-        "pair": ["curcumin", "piperine"],
+        "pair": [
+          "curcumin",
+          "piperine"
+        ],
         "reason": "Piperine increases curcumin bioavailability by up to 2000%",
         "strength": "strong"
       },
       {
-        "pair": ["coq10", "omega-3"],
+        "pair": [
+          "coq10",
+          "omega-3"
+        ],
         "reason": "Fat improves CoQ10 absorption; both support heart health",
         "strength": "moderate"
       },
       {
-        "pair": ["nac", "vitamin-c"],
+        "pair": [
+          "nac",
+          "vitamin-c"
+        ],
         "reason": "Both support glutathione; C helps recycle oxidized glutathione",
         "strength": "moderate"
       },
       {
-        "pair": ["magnesium", "b-complex"],
+        "pair": [
+          "magnesium",
+          "b-complex"
+        ],
         "reason": "B6 enhances magnesium uptake; both support energy metabolism",
         "strength": "moderate"
       },
       {
-        "pair": ["coq10", "pqq"],
+        "pair": [
+          "coq10",
+          "pqq"
+        ],
         "reason": "CoQ10 powers existing mitochondria; PQQ stimulates new mitochondrial growth",
         "strength": "strong"
       },
       {
-        "pair": ["nmn", "resveratrol"],
+        "pair": [
+          "nmn",
+          "resveratrol"
+        ],
         "reason": "NMN raises NAD+; resveratrol activates sirtuins that use NAD+",
         "strength": "strong"
       },
       {
-        "pair": ["creatine", "beta-alanine"],
+        "pair": [
+          "creatine",
+          "beta-alanine"
+        ],
         "reason": "Complementary performance benefits; creatine for power, beta-alanine for endurance",
         "strength": "moderate"
       },
       {
-        "pair": ["lions-mane", "bacopa-monnieri"],
+        "pair": [
+          "lions-mane",
+          "bacopa-monnieri"
+        ],
         "reason": "Complementary nootropics: NGF stimulation plus memory consolidation",
         "strength": "moderate"
       },
       {
-        "pair": ["vitamin-b9-folate", "vitamin-b12-cobalamin"],
+        "pair": [
+          "vitamin-b9-folate",
+          "vitamin-b12-cobalamin"
+        ],
         "reason": "Work together for DNA synthesis and methylation; deficiency in one affects the other",
         "strength": "strong"
       },
       {
-        "pair": ["selenium", "iodine"],
+        "pair": [
+          "selenium",
+          "iodine"
+        ],
         "reason": "Selenium required for thyroid hormone conversion (T4 to T3)",
         "strength": "strong"
       },
       {
-        "pair": ["glucosamine", "msm"],
+        "pair": [
+          "glucosamine",
+          "msm"
+        ],
         "reason": "Complementary joint support: glucosamine rebuilds cartilage, MSM reduces inflammation",
         "strength": "moderate"
       },
       {
-        "pair": ["quercetin", "vitamin-c"],
+        "pair": [
+          "quercetin",
+          "vitamin-c"
+        ],
         "reason": "Vitamin C enhances quercetin absorption and both are antioxidants",
         "strength": "moderate"
       },
       {
-        "pair": ["5-htp", "vitamin-b6-pyridoxine"],
+        "pair": [
+          "5-htp",
+          "vitamin-b6-pyridoxine"
+        ],
         "reason": "B6 is required cofactor for converting 5-HTP to serotonin",
         "strength": "required"
       },
       {
-        "pair": ["alpha-lipoic-acid", "acetyl-l-carnitine"],
+        "pair": [
+          "alpha-lipoic-acid",
+          "acetyl-l-carnitine"
+        ],
         "reason": "Synergistic mitochondrial support shown to reverse age-related decline in studies",
         "strength": "strong"
       },
       {
-        "pair": ["ashwagandha", "rhodiola"],
-        "reason": "Complementary adaptogens: rhodiola energizes, ashwagandha calms — both reduce stress",
+        "pair": [
+          "ashwagandha",
+          "rhodiola"
+        ],
+        "reason": "Complementary adaptogens: rhodiola energizes, ashwagandha calms \u00e2\u20ac\u201d both reduce stress",
         "strength": "moderate"
       }
     ],
     "conflicts": [
       {
-        "pair": ["calcium", "iron"],
+        "pair": [
+          "calcium",
+          "iron"
+        ],
         "reason": "Calcium reduces iron absorption by 50%+",
         "solution": "Take 2-3 hours apart"
       },
       {
-        "pair": ["zinc", "iron"],
+        "pair": [
+          "zinc",
+          "iron"
+        ],
         "reason": "Compete for absorption via same transporters",
         "solution": "Take at different meals"
       },
       {
-        "pair": ["calcium", "magnesium"],
+        "pair": [
+          "calcium",
+          "magnesium"
+        ],
         "reason": "High-dose calcium can reduce magnesium absorption",
         "solution": "Take at different times or use lower calcium doses"
       },
       {
-        "pair": ["calcium", "zinc"],
+        "pair": [
+          "calcium",
+          "zinc"
+        ],
         "reason": "Compete for absorption pathways at high doses",
         "solution": "Take 2+ hours apart"
       },
       {
-        "pair": ["5-htp", "ssri"],
+        "pair": [
+          "5-htp",
+          "ssri"
+        ],
         "reason": "Additive serotonin effect can cause serotonin syndrome",
-        "solution": "Do not combine — consult doctor"
+        "solution": "Do not combine \u00e2\u20ac\u201d consult doctor"
       },
       {
-        "pair": ["tryptophan", "ssri"],
+        "pair": [
+          "tryptophan",
+          "ssri"
+        ],
         "reason": "Risk of serotonin syndrome",
-        "solution": "Do not combine — consult doctor"
+        "solution": "Do not combine \u00e2\u20ac\u201d consult doctor"
       },
       {
-        "pair": ["vitamin-k2", "warfarin"],
+        "pair": [
+          "vitamin-k2",
+          "warfarin"
+        ],
         "reason": "K2 antagonizes warfarin's anticoagulant effect",
         "solution": "Consult doctor before combining"
       },
       {
-        "pair": ["ginkgo-biloba", "blood-thinners"],
+        "pair": [
+          "ginkgo-biloba",
+          "blood-thinners"
+        ],
         "reason": "Ginkgo has mild anticoagulant properties that can amplify blood thinners",
         "solution": "Consult doctor; avoid pre-surgery"
       },
       {
-        "pair": ["berberine", "metformin"],
+        "pair": [
+          "berberine",
+          "metformin"
+        ],
         "reason": "Additive blood sugar lowering may cause hypoglycemia",
         "solution": "Monitor blood sugar closely; consult doctor"
       },
       {
-        "pair": ["green-tea-extract", "iron"],
+        "pair": [
+          "green-tea-extract",
+          "iron"
+        ],
         "reason": "EGCG binds to non-heme iron and reduces absorption by up to 25%",
         "solution": "Take iron separately from green tea extract"
       }
     ],
     "timingConflicts": [
       {
-        "supplements": ["iron", "coffee"],
+        "supplements": [
+          "iron",
+          "coffee"
+        ],
         "reason": "Tannins and polyphenols reduce iron absorption by up to 60%",
         "solution": "Wait 1-2 hours after iron before coffee or tea"
       },
       {
-        "supplements": ["thyroid-medication", "calcium"],
+        "supplements": [
+          "thyroid-medication",
+          "calcium"
+        ],
         "reason": "Calcium blocks thyroid hormone absorption",
         "solution": "Take calcium 4+ hours after thyroid medication"
       },
       {
-        "supplements": ["thyroid-medication", "iron"],
+        "supplements": [
+          "thyroid-medication",
+          "iron"
+        ],
         "reason": "Iron chelates thyroid medication reducing absorption",
         "solution": "Take iron 4+ hours after thyroid medication"
       },
       {
-        "supplements": ["magnesium", "calcium"],
+        "supplements": [
+          "magnesium",
+          "calcium"
+        ],
         "reason": "High doses compete for absorption; both needed but at different times",
         "solution": "Take calcium in morning, magnesium in evening"
       },
       {
-        "supplements": ["caffeine", "melatonin"],
+        "supplements": [
+          "caffeine",
+          "melatonin"
+        ],
         "reason": "Caffeine suppresses melatonin production for up to 6 hours",
         "solution": "Stop caffeine by 2pm; take melatonin at bedtime"
       }
@@ -1720,112 +3750,342 @@
   "goals": {
     "sleep": {
       "name": "Better Sleep",
-      "essential": ["magnesium"],
-      "recommended": ["glycine", "l-theanine", "melatonin"],
-      "advanced": ["ashwagandha", "apigenin", "5-htp", "gaba", "tryptophan"]
+      "essential": [
+        "magnesium"
+      ],
+      "recommended": [
+        "glycine",
+        "l-theanine",
+        "melatonin"
+      ],
+      "advanced": [
+        "ashwagandha",
+        "apigenin",
+        "5-htp",
+        "gaba",
+        "tryptophan"
+      ]
     },
     "energy": {
       "name": "More Energy",
-      "essential": ["b-complex", "vitamin-d3"],
-      "recommended": ["iron", "coq10", "magnesium"],
-      "advanced": ["rhodiola", "creatine", "nmn", "pqq", "acetyl-l-carnitine", "shilajit"]
+      "essential": [
+        "b-complex",
+        "vitamin-d3"
+      ],
+      "recommended": [
+        "iron",
+        "coq10",
+        "magnesium"
+      ],
+      "advanced": [
+        "rhodiola",
+        "creatine",
+        "nmn",
+        "pqq",
+        "acetyl-l-carnitine",
+        "shilajit"
+      ]
     },
     "focus": {
       "name": "Mental Focus",
-      "essential": ["omega-3"],
-      "recommended": ["l-theanine", "lions-mane", "b-complex"],
-      "advanced": ["alpha-gpc", "bacopa-monnieri", "rhodiola", "cdp-choline", "phosphatidylserine", "tyrosine"]
+      "essential": [
+        "omega-3"
+      ],
+      "recommended": [
+        "l-theanine",
+        "lions-mane",
+        "b-complex"
+      ],
+      "advanced": [
+        "alpha-gpc",
+        "bacopa-monnieri",
+        "rhodiola",
+        "cdp-choline",
+        "phosphatidylserine",
+        "tyrosine"
+      ]
     },
     "immunity": {
       "name": "Immune Support",
-      "essential": ["vitamin-d3", "zinc", "vitamin-c"],
-      "recommended": ["selenium", "probiotics", "elderberry"],
-      "advanced": ["nac", "quercetin", "spirulina"]
+      "essential": [
+        "vitamin-d3",
+        "zinc",
+        "vitamin-c"
+      ],
+      "recommended": [
+        "selenium",
+        "probiotics",
+        "elderberry"
+      ],
+      "advanced": [
+        "nac",
+        "quercetin",
+        "spirulina"
+      ]
     },
     "stress": {
       "name": "Stress Relief",
-      "essential": ["magnesium"],
-      "recommended": ["ashwagandha", "l-theanine", "b-complex"],
-      "advanced": ["rhodiola", "phosphatidylserine", "holy-basil", "vitamin-b5-pantothenic-acid"]
+      "essential": [
+        "magnesium"
+      ],
+      "recommended": [
+        "ashwagandha",
+        "l-theanine",
+        "b-complex"
+      ],
+      "advanced": [
+        "rhodiola",
+        "phosphatidylserine",
+        "holy-basil",
+        "vitamin-b5-pantothenic-acid"
+      ]
     },
     "longevity": {
       "name": "Longevity / Anti-Aging",
-      "essential": ["vitamin-d3", "omega-3"],
-      "recommended": ["coq10", "nac", "curcumin"],
-      "advanced": ["berberine", "resveratrol", "nmn", "pqq", "quercetin", "astaxanthin"]
+      "essential": [
+        "vitamin-d3",
+        "omega-3"
+      ],
+      "recommended": [
+        "coq10",
+        "nac",
+        "curcumin"
+      ],
+      "advanced": [
+        "berberine",
+        "resveratrol",
+        "nmn",
+        "pqq",
+        "quercetin",
+        "astaxanthin"
+      ]
     },
     "muscle": {
       "name": "Muscle Building",
-      "essential": ["creatine"],
-      "recommended": ["vitamin-d3", "magnesium", "zinc"],
-      "advanced": ["beta-alanine", "hmb", "citrulline", "glutamine"]
+      "essential": [
+        "creatine"
+      ],
+      "recommended": [
+        "vitamin-d3",
+        "magnesium",
+        "zinc"
+      ],
+      "advanced": [
+        "beta-alanine",
+        "hmb",
+        "citrulline",
+        "glutamine"
+      ]
     },
     "heart": {
       "name": "Heart Health",
-      "essential": ["omega-3", "coq10"],
-      "recommended": ["magnesium", "vitamin-k2"],
-      "advanced": ["berberine", "nac", "taurine", "quercetin", "potassium"]
+      "essential": [
+        "omega-3",
+        "coq10"
+      ],
+      "recommended": [
+        "magnesium",
+        "vitamin-k2"
+      ],
+      "advanced": [
+        "berberine",
+        "nac",
+        "taurine",
+        "quercetin",
+        "potassium"
+      ]
     },
     "brain": {
       "name": "Brain / Memory",
-      "essential": ["omega-3"],
-      "recommended": ["lions-mane", "bacopa-monnieri", "alpha-gpc"],
-      "advanced": ["cdp-choline", "phosphatidylserine", "nmn", "acetyl-l-carnitine", "ginkgo-biloba"]
+      "essential": [
+        "omega-3"
+      ],
+      "recommended": [
+        "lions-mane",
+        "bacopa-monnieri",
+        "alpha-gpc"
+      ],
+      "advanced": [
+        "cdp-choline",
+        "phosphatidylserine",
+        "nmn",
+        "acetyl-l-carnitine",
+        "ginkgo-biloba"
+      ]
     },
     "testosterone": {
       "name": "Testosterone Support",
-      "essential": ["zinc", "vitamin-d3"],
-      "recommended": ["ashwagandha", "magnesium"],
-      "advanced": ["tongkat-ali", "boron", "shilajit", "fenugreek"]
+      "essential": [
+        "zinc",
+        "vitamin-d3"
+      ],
+      "recommended": [
+        "ashwagandha",
+        "magnesium"
+      ],
+      "advanced": [
+        "tongkat-ali",
+        "boron",
+        "shilajit",
+        "fenugreek"
+      ]
     },
     "weight": {
       "name": "Weight Management",
-      "essential": ["vitamin-d3"],
-      "recommended": ["berberine", "chromium"],
-      "advanced": ["green-tea-extract", "cinnamon", "inositol"]
+      "essential": [
+        "vitamin-d3"
+      ],
+      "recommended": [
+        "berberine",
+        "chromium"
+      ],
+      "advanced": [
+        "green-tea-extract",
+        "cinnamon",
+        "inositol"
+      ]
     },
     "joint": {
       "name": "Joint Health",
-      "essential": ["omega-3"],
-      "recommended": ["glucosamine", "msm", "collagen"],
-      "advanced": ["curcumin", "vitamin-c", "krill-oil"]
+      "essential": [
+        "omega-3"
+      ],
+      "recommended": [
+        "glucosamine",
+        "msm",
+        "collagen"
+      ],
+      "advanced": [
+        "curcumin",
+        "vitamin-c",
+        "krill-oil"
+      ]
     },
     "skin": {
       "name": "Skin & Hair",
-      "essential": ["vitamin-c", "collagen"],
-      "recommended": ["vitamin-e", "zinc", "vitamin-b7-biotin"],
-      "advanced": ["astaxanthin", "msm", "vitamin-a", "lutein-zeaxanthin"]
+      "essential": [
+        "vitamin-c",
+        "collagen"
+      ],
+      "recommended": [
+        "vitamin-e",
+        "zinc",
+        "vitamin-b7-biotin"
+      ],
+      "advanced": [
+        "astaxanthin",
+        "msm",
+        "vitamin-a",
+        "lutein-zeaxanthin"
+      ]
     },
     "gut": {
       "name": "Gut Health",
-      "essential": ["probiotics"],
-      "recommended": ["glutamine", "vitamin-c"],
-      "advanced": ["digestive-enzymes", "collagen", "zinc", "quercetin"]
+      "essential": [
+        "probiotics"
+      ],
+      "recommended": [
+        "glutamine",
+        "vitamin-c"
+      ],
+      "advanced": [
+        "digestive-enzymes",
+        "collagen",
+        "zinc",
+        "quercetin"
+      ]
     },
     "detox": {
       "name": "Detox / Liver",
-      "essential": ["nac"],
-      "recommended": ["milk-thistle", "vitamin-c"],
-      "advanced": ["alpha-lipoic-acid", "chlorella", "spirulina", "selenium"]
+      "essential": [
+        "nac"
+      ],
+      "recommended": [
+        "milk-thistle",
+        "vitamin-c"
+      ],
+      "advanced": [
+        "alpha-lipoic-acid",
+        "chlorella",
+        "spirulina",
+        "selenium"
+      ]
     }
   },
   "timingSchedule": {
-    "morning_empty": ["iron", "thyroid-medication", "nmn", "acetyl-l-carnitine", "tyrosine", "rhodiola"],
+    "morning_empty": [
+      "iron",
+      "thyroid-medication",
+      "nmn",
+      "acetyl-l-carnitine",
+      "tyrosine",
+      "rhodiola"
+    ],
     "morning_with_food": [
-      "vitamin-d3", "vitamin-k2", "b-complex", "omega-3", "coq10",
-      "lions-mane", "boron", "vitamin-a", "vitamin-e", "astaxanthin",
-      "krill-oil", "lutein-zeaxanthin", "pqq", "bacopa-monnieri",
-      "green-tea-extract", "ginkgo-biloba", "ginseng"
+      "vitamin-d3",
+      "vitamin-k2",
+      "b-complex",
+      "omega-3",
+      "coq10",
+      "lions-mane",
+      "boron",
+      "vitamin-a",
+      "vitamin-e",
+      "astaxanthin",
+      "krill-oil",
+      "lutein-zeaxanthin",
+      "pqq",
+      "bacopa-monnieri",
+      "green-tea-extract",
+      "ginkgo-biloba",
+      "ginseng"
     ],
-    "pre_workout": ["caffeine", "beta-alanine", "citrulline", "creatine"],
-    "afternoon": ["l-theanine", "phosphatidylserine", "cdp-choline", "alpha-gpc"],
-    "evening": ["magnesium", "ashwagandha", "glycine", "melatonin", "apigenin", "5-htp", "gaba", "tryptophan"],
+    "pre_workout": [
+      "caffeine",
+      "beta-alanine",
+      "citrulline",
+      "creatine"
+    ],
+    "afternoon": [
+      "l-theanine",
+      "phosphatidylserine",
+      "cdp-choline",
+      "alpha-gpc"
+    ],
+    "evening": [
+      "magnesium",
+      "ashwagandha",
+      "glycine",
+      "melatonin",
+      "apigenin",
+      "5-htp",
+      "gaba",
+      "tryptophan"
+    ],
     "with_meals": [
-      "zinc", "selenium", "berberine", "curcumin", "probiotics",
-      "chromium", "cinnamon", "digestive-enzymes", "calcium",
-      "dim", "potassium", "piperine", "vitamin-b6-pyridoxine",
-      "inositol", "maca", "milk-thistle", "shilajit"
+      "zinc",
+      "selenium",
+      "berberine",
+      "curcumin",
+      "probiotics",
+      "chromium",
+      "cinnamon",
+      "digestive-enzymes",
+      "calcium",
+      "dim",
+      "potassium",
+      "piperine",
+      "vitamin-b6-pyridoxine",
+      "inositol",
+      "maca",
+      "milk-thistle",
+      "shilajit"
     ],
-    "away_from_food": ["nac", "alpha-lipoic-acid", "collagen", "vitamin-c"]
+    "away_from_food": [
+      "nac",
+      "alpha-lipoic-acid",
+      "collagen",
+      "vitamin-c"
+    ]
   }
 }
