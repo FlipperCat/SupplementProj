@@ -967,7 +967,7 @@
       "depletedBy": [],
       "amwayProduct": null,
       "resultsTimeline": "1-4 weeks",
-      "notes": "Do not combine with SSRIs or MAOIs \u00e2\u20ac\u201d serotonin syndrome risk"
+      "notes": "Do not combine with SSRIs or MAOIs â€” serotonin syndrome risk"
     },
     {
       "id": "acetyl-l-carnitine",
@@ -1193,7 +1193,7 @@
       "depletedBy": [],
       "amwayProduct": null,
       "resultsTimeline": "2-4 weeks",
-      "notes": "Causes harmless tingling (paresthesia) \u00e2\u20ac\u201d split doses to reduce"
+      "notes": "Causes harmless tingling (paresthesia) â€” split doses to reduce"
     },
     {
       "id": "boron",
@@ -1998,7 +1998,7 @@
       ],
       "amwayProduct": null,
       "resultsTimeline": "4-8 weeks",
-      "notes": "High doses (12\u00e2\u20ac\u201c18g) for PCOS; 2\u00e2\u20ac\u201c4g for anxiety/mood"
+      "notes": "High doses (12â€“18g) for PCOS; 2â€“4g for anxiety/mood"
     },
     {
       "id": "iodine",
@@ -2612,7 +2612,7 @@
       "depletedBy": [],
       "amwayProduct": null,
       "resultsTimeline": "4-8 weeks",
-      "notes": "Use purified/tested form \u00e2\u20ac\u201d raw shilajit may contain heavy metals"
+      "notes": "Use purified/tested form â€” raw shilajit may contain heavy metals"
     },
     {
       "id": "spirulina",
@@ -2767,7 +2767,7 @@
       "depletedBy": [],
       "amwayProduct": null,
       "resultsTimeline": "1-2 weeks",
-      "notes": "Do not combine with SSRIs or MAOIs \u00e2\u20ac\u201d serotonin syndrome risk"
+      "notes": "Do not combine with SSRIs or MAOIs â€” serotonin syndrome risk"
     },
     {
       "id": "tyrosine",
@@ -3457,6 +3457,715 @@
       "depletedBy": [],
       "amwayProduct": null,
       "resultsTimeline": "8-12 weeks"
+    },
+    {
+      "id": "ginger",
+      "name": "Ginger",
+      "type": "herbal",
+      "category": "plant",
+      "dosage": {
+        "min": 1000,
+        "typical": 2000,
+        "max": 4000,
+        "unit": "mg"
+      },
+      "timing": "with meals",
+      "withFood": true,
+      "withFat": false,
+      "benefits": [
+        "anti-inflammatory",
+        "nausea relief",
+        "digestive support"
+      ],
+      "goals": [
+        "digestion",
+        "inflammation",
+        "recovery"
+      ],
+      "synergies": [
+        "curcumin",
+        "magnesium"
+      ],
+      "conflicts": [],
+      "absorptionCompetitors": [],
+      "depletedBy": [],
+      "amwayProduct": null,
+      "resultsTimeline": "1-3 weeks"
+    },
+    {
+      "id": "moringa",
+      "name": "Moringa",
+      "type": "superfood",
+      "category": "plant",
+      "dosage": {
+        "min": 1000,
+        "typical": 2000,
+        "max": 4000,
+        "unit": "mg powder"
+      },
+      "timing": "morning",
+      "withFood": true,
+      "withFat": false,
+      "benefits": [
+        "complete protein",
+        "antioxidant",
+        "anti-inflammatory"
+      ],
+      "goals": [
+        "energy",
+        "longevity",
+        "recovery"
+      ],
+      "synergies": [
+        "spirulina",
+        "chlorella"
+      ],
+      "conflicts": [],
+      "absorptionCompetitors": [],
+      "depletedBy": [],
+      "amwayProduct": null,
+      "resultsTimeline": "2-4 weeks"
+    },
+    {
+      "id": "prenatal-vitamins",
+      "name": "Prenatal Vitamins",
+      "type": "vitamin-complex",
+      "category": "essential",
+      "dosage": {
+        "min": 1,
+        "typical": 1,
+        "max": 1,
+        "unit": "serving"
+      },
+      "timing": "morning",
+      "withFood": true,
+      "withFat": false,
+      "benefits": [
+        "fetal development",
+        "maternal health"
+      ],
+      "goals": [
+        "pregnancy"
+      ],
+      "synergies": [
+        "iron",
+        "calcium"
+      ],
+      "conflicts": [],
+      "absorptionCompetitors": [
+        "calcium",
+        "iron"
+      ],
+      "depletedBy": [],
+      "amwayProduct": null,
+      "resultsTimeline": "ongoing"
+    },
+    {
+      "id": "tart-cherry",
+      "name": "Tart Cherry",
+      "type": "fruit-extract",
+      "category": "antioxidant",
+      "dosage": {
+        "min": 500,
+        "typical": 1000,
+        "max": 2000,
+        "unit": "mg"
+      },
+      "timing": "evening",
+      "withFood": true,
+      "withFat": false,
+      "benefits": [
+        "sleep support",
+        "recovery",
+        "anti-inflammatory"
+      ],
+      "goals": [
+        "sleep",
+        "recovery"
+      ],
+      "synergies": [
+        "magnesium",
+        "melatonin"
+      ],
+      "conflicts": [],
+      "absorptionCompetitors": [],
+      "depletedBy": [],
+      "amwayProduct": null,
+      "resultsTimeline": "1-2 weeks"
+    },
+    {
+      "id": "l-carnitine",
+      "name": "L-Carnitine",
+      "type": "amino-acid",
+      "category": "energy",
+      "dosage": {
+        "min": 1000,
+        "typical": 2000,
+        "max": 4000,
+        "unit": "mg"
+      },
+      "timing": "morning",
+      "withFood": true,
+      "withFat": false,
+      "benefits": [
+        "energy production",
+        "fat metabolism"
+      ],
+      "goals": [
+        "energy",
+        "muscle",
+        "recovery"
+      ],
+      "synergies": [
+        "coq10"
+      ],
+      "conflicts": [],
+      "absorptionCompetitors": [],
+      "depletedBy": [],
+      "amwayProduct": null,
+      "resultsTimeline": "2-4 weeks"
+    },
+    {
+      "id": "fisetin",
+      "name": "Fisetin",
+      "type": "polyphenol",
+      "category": "longevity",
+      "dosage": {
+        "min": 100,
+        "typical": 500,
+        "max": 1000,
+        "unit": "mg"
+      },
+      "timing": "any",
+      "withFood": true,
+      "withFat": true,
+      "benefits": [
+        "senolytic",
+        "anti-inflammatory"
+      ],
+      "goals": [
+        "longevity",
+        "brain"
+      ],
+      "synergies": [
+        "quercetin"
+      ],
+      "conflicts": [],
+      "absorptionCompetitors": [],
+      "depletedBy": [],
+      "amwayProduct": null,
+      "resultsTimeline": "8-12 weeks"
+    },
+    {
+      "id": "spermidine",
+      "name": "Spermidine",
+      "type": "metabolite",
+      "category": "longevity",
+      "dosage": {
+        "min": 0.5,
+        "typical": 1,
+        "max": 2,
+        "unit": "mg"
+      },
+      "timing": "morning",
+      "withFood": true,
+      "withFat": false,
+      "benefits": [
+        "autophagy",
+        "longevity"
+      ],
+      "goals": [
+        "longevity",
+        "brain"
+      ],
+      "synergies": [
+        "nmn"
+      ],
+      "conflicts": [],
+      "absorptionCompetitors": [],
+      "depletedBy": [],
+      "amwayProduct": null,
+      "resultsTimeline": "12+ weeks"
+    },
+    {
+      "id": "choline",
+      "name": "Choline",
+      "type": "nutrient",
+      "category": "essential",
+      "dosage": {
+        "min": 425,
+        "typical": 550,
+        "max": 1000,
+        "unit": "mg"
+      },
+      "timing": "morning",
+      "withFood": true,
+      "withFat": false,
+      "benefits": [
+        "brain health",
+        "acetylcholine production"
+      ],
+      "goals": [
+        "brain",
+        "focus"
+      ],
+      "synergies": [
+        "alpha-gpc"
+      ],
+      "conflicts": [],
+      "absorptionCompetitors": [],
+      "depletedBy": [],
+      "amwayProduct": null,
+      "resultsTimeline": "2-4 weeks"
+    },
+    {
+      "id": "carnosine",
+      "name": "Carnosine",
+      "type": "amino-acid-dipeptide",
+      "category": "longevity",
+      "dosage": {
+        "min": 500,
+        "typical": 1000,
+        "max": 2000,
+        "unit": "mg"
+      },
+      "timing": "any",
+      "withFood": true,
+      "withFat": false,
+      "benefits": [
+        "anti-aging",
+        "muscle health"
+      ],
+      "goals": [
+        "longevity",
+        "muscle",
+        "brain"
+      ],
+      "synergies": [
+        "creatine"
+      ],
+      "conflicts": [],
+      "absorptionCompetitors": [],
+      "depletedBy": [],
+      "amwayProduct": null,
+      "resultsTimeline": "4-12 weeks"
+    },
+    {
+      "id": "maitake-mushroom",
+      "name": "Maitake Mushroom",
+      "type": "mushroom",
+      "category": "immune",
+      "dosage": {
+        "min": 500,
+        "typical": 1500,
+        "max": 3000,
+        "unit": "mg"
+      },
+      "timing": "morning",
+      "withFood": true,
+      "withFat": false,
+      "benefits": [
+        "immune support",
+        "polysaccharides"
+      ],
+      "goals": [
+        "immunity",
+        "recovery"
+      ],
+      "synergies": [
+        "vitamin-d3",
+        "probiotics"
+      ],
+      "conflicts": [],
+      "absorptionCompetitors": [],
+      "depletedBy": [],
+      "amwayProduct": null,
+      "resultsTimeline": "2-8 weeks"
+    },
+    {
+      "id": "shiitake-mushroom",
+      "name": "Shiitake Mushroom",
+      "type": "mushroom",
+      "category": "immune",
+      "dosage": {
+        "min": 500,
+        "typical": 1500,
+        "max": 3000,
+        "unit": "mg"
+      },
+      "timing": "morning",
+      "withFood": true,
+      "withFat": false,
+      "benefits": [
+        "immune support",
+        "vitamin D production"
+      ],
+      "goals": [
+        "immunity",
+        "recovery"
+      ],
+      "synergies": [
+        "vitamin-d3"
+      ],
+      "conflicts": [],
+      "absorptionCompetitors": [],
+      "depletedBy": [],
+      "amwayProduct": null,
+      "resultsTimeline": "2-8 weeks"
+    },
+    {
+      "id": "hawthorn",
+      "name": "Hawthorn",
+      "type": "herbal",
+      "category": "plant",
+      "dosage": {
+        "min": 300,
+        "typical": 900,
+        "max": 1500,
+        "unit": "mg"
+      },
+      "timing": "with meals",
+      "withFood": true,
+      "withFat": false,
+      "benefits": [
+        "cardiovascular support",
+        "circulation"
+      ],
+      "goals": [
+        "heart",
+        "recovery"
+      ],
+      "synergies": [
+        "coq10"
+      ],
+      "conflicts": [],
+      "absorptionCompetitors": [],
+      "depletedBy": [],
+      "amwayProduct": null,
+      "resultsTimeline": "4-8 weeks"
+    },
+    {
+      "id": "tmg-betaine",
+      "name": "TMG (Betaine)",
+      "type": "amino-acid-derivative",
+      "category": "methylation",
+      "dosage": {
+        "min": 500,
+        "typical": 1000,
+        "max": 3000,
+        "unit": "mg"
+      },
+      "timing": "morning",
+      "withFood": false,
+      "withFat": false,
+      "benefits": [
+        "homocysteine reduction",
+        "cardiovascular",
+        "energy"
+      ],
+      "goals": [
+        "heart",
+        "energy"
+      ],
+      "synergies": [
+        "b-vitamins"
+      ],
+      "conflicts": [],
+      "absorptionCompetitors": [],
+      "depletedBy": [],
+      "amwayProduct": null,
+      "resultsTimeline": "2-4 weeks"
+    },
+    {
+      "id": "red-yeast-rice",
+      "name": "Red Yeast Rice",
+      "type": "fermented",
+      "category": "cardiovascular",
+      "dosage": {
+        "min": 600,
+        "typical": 1200,
+        "max": 2400,
+        "unit": "mg"
+      },
+      "timing": "with meals",
+      "withFood": true,
+      "withFat": true,
+      "benefits": [
+        "cholesterol support",
+        "cardiovascular health"
+      ],
+      "goals": [
+        "heart",
+        "longevity"
+      ],
+      "synergies": [
+        "coq10"
+      ],
+      "conflicts": [],
+      "absorptionCompetitors": [],
+      "depletedBy": [],
+      "amwayProduct": null,
+      "resultsTimeline": "4-12 weeks"
+    },
+    {
+      "id": "pomegranate-extract",
+      "name": "Pomegranate Extract",
+      "type": "fruit-extract",
+      "category": "antioxidant",
+      "dosage": {
+        "min": 500,
+        "typical": 1000,
+        "max": 2000,
+        "unit": "mg"
+      },
+      "timing": "with meals",
+      "withFood": true,
+      "withFat": true,
+      "benefits": [
+        "antioxidant",
+        "cardiovascular",
+        "anti-inflammatory"
+      ],
+      "goals": [
+        "heart",
+        "longevity"
+      ],
+      "synergies": [
+        "resveratrol"
+      ],
+      "conflicts": [],
+      "absorptionCompetitors": [],
+      "depletedBy": [],
+      "amwayProduct": null,
+      "resultsTimeline": "4-8 weeks"
+    },
+    {
+      "id": "l-arginine",
+      "name": "L-Arginine",
+      "type": "amino-acid",
+      "category": "circulation",
+      "dosage": {
+        "min": 2000,
+        "typical": 5000,
+        "max": 10000,
+        "unit": "mg"
+      },
+      "timing": "morning",
+      "withFood": false,
+      "withFat": false,
+      "benefits": [
+        "nitric oxide production",
+        "circulation"
+      ],
+      "goals": [
+        "recovery",
+        "energy"
+      ],
+      "synergies": [
+        "citrulline",
+        "zinc"
+      ],
+      "conflicts": [],
+      "absorptionCompetitors": [
+        "lysine"
+      ],
+      "depletedBy": [],
+      "amwayProduct": null,
+      "resultsTimeline": "1-4 weeks"
+    },
+    {
+      "id": "schisandra",
+      "name": "Schisandra",
+      "type": "herbal",
+      "category": "adaptogen",
+      "dosage": {
+        "min": 500,
+        "typical": 1000,
+        "max": 2000,
+        "unit": "mg"
+      },
+      "timing": "morning",
+      "withFood": true,
+      "withFat": false,
+      "benefits": [
+        "adaptogenic",
+        "stress resilience",
+        "energy"
+      ],
+      "goals": [
+        "stress",
+        "energy",
+        "recovery"
+      ],
+      "synergies": [
+        "rhodiola"
+      ],
+      "conflicts": [],
+      "absorptionCompetitors": [],
+      "depletedBy": [],
+      "amwayProduct": null,
+      "resultsTimeline": "2-4 weeks"
+    },
+    {
+      "id": "gotu-kola",
+      "name": "Gotu Kola",
+      "type": "herbal",
+      "category": "plant",
+      "dosage": {
+        "min": 300,
+        "typical": 600,
+        "max": 1200,
+        "unit": "mg"
+      },
+      "timing": "morning",
+      "withFood": true,
+      "withFat": false,
+      "benefits": [
+        "brain health",
+        "collagen synthesis"
+      ],
+      "goals": [
+        "brain",
+        "skin",
+        "longevity"
+      ],
+      "synergies": [
+        "lions-mane"
+      ],
+      "conflicts": [],
+      "absorptionCompetitors": [],
+      "depletedBy": [],
+      "amwayProduct": null,
+      "resultsTimeline": "4-8 weeks"
+    },
+    {
+      "id": "benfotiamine",
+      "name": "Benfotiamine",
+      "type": "vitamin",
+      "category": "b-vitamin",
+      "dosage": {
+        "min": 150,
+        "typical": 300,
+        "max": 600,
+        "unit": "mg"
+      },
+      "timing": "morning",
+      "withFood": true,
+      "withFat": false,
+      "benefits": [
+        "fat-soluble B1",
+        "neuropathy support",
+        "energy"
+      ],
+      "goals": [
+        "energy",
+        "brain"
+      ],
+      "synergies": [
+        "b-complex"
+      ],
+      "conflicts": [],
+      "absorptionCompetitors": [],
+      "depletedBy": [],
+      "amwayProduct": null,
+      "resultsTimeline": "2-4 weeks"
+    },
+    {
+      "id": "tribulus-terrestris",
+      "name": "Tribulus Terrestris",
+      "type": "herbal",
+      "category": "plant",
+      "dosage": {
+        "min": 500,
+        "typical": 1000,
+        "max": 2000,
+        "unit": "mg"
+      },
+      "timing": "with meals",
+      "withFood": true,
+      "withFat": false,
+      "benefits": [
+        "testosterone support",
+        "athletic performance"
+      ],
+      "goals": [
+        "muscle",
+        "recovery"
+      ],
+      "synergies": [
+        "zinc"
+      ],
+      "conflicts": [],
+      "absorptionCompetitors": [],
+      "depletedBy": [],
+      "amwayProduct": null,
+      "resultsTimeline": "2-4 weeks"
+    },
+    {
+      "id": "horny-goat-weed",
+      "name": "Horny Goat Weed",
+      "type": "herbal",
+      "category": "plant",
+      "dosage": {
+        "min": 500,
+        "typical": 1000,
+        "max": 2000,
+        "unit": "mg"
+      },
+      "timing": "morning",
+      "withFood": true,
+      "withFat": false,
+      "benefits": [
+        "sexual health",
+        "circulation",
+        "energy"
+      ],
+      "goals": [
+        "recovery",
+        "energy"
+      ],
+      "synergies": [
+        "l-arginine"
+      ],
+      "conflicts": [],
+      "absorptionCompetitors": [],
+      "depletedBy": [],
+      "amwayProduct": null,
+      "resultsTimeline": "2-6 weeks"
+    },
+    {
+      "id": "nicotinamide-riboside",
+      "name": "Nicotinamide Riboside (NR)",
+      "type": "metabolite",
+      "category": "longevity",
+      "dosage": {
+        "min": 250,
+        "typical": 500,
+        "max": 1000,
+        "unit": "mg"
+      },
+      "timing": "morning",
+      "withFood": false,
+      "withFat": false,
+      "benefits": [
+        "NAD+ booster",
+        "mitochondrial health",
+        "energy"
+      ],
+      "goals": [
+        "energy",
+        "longevity",
+        "recovery"
+      ],
+      "synergies": [
+        "nmn",
+        "coq10"
+      ],
+      "conflicts": [],
+      "absorptionCompetitors": [],
+      "depletedBy": [],
+      "amwayProduct": null,
+      "resultsTimeline": "4-8 weeks"
     }
   ],
   "interactions": {
@@ -3618,7 +4327,7 @@
           "ashwagandha",
           "rhodiola"
         ],
-        "reason": "Complementary adaptogens: rhodiola energizes, ashwagandha calms \u00e2\u20ac\u201d both reduce stress",
+        "reason": "Complementary adaptogens: rhodiola energizes, ashwagandha calms â€” both reduce stress",
         "strength": "moderate"
       }
     ],
@@ -3661,7 +4370,7 @@
           "ssri"
         ],
         "reason": "Additive serotonin effect can cause serotonin syndrome",
-        "solution": "Do not combine \u00e2\u20ac\u201d consult doctor"
+        "solution": "Do not combine â€” consult doctor"
       },
       {
         "pair": [
@@ -3669,7 +4378,7 @@
           "ssri"
         ],
         "reason": "Risk of serotonin syndrome",
-        "solution": "Do not combine \u00e2\u20ac\u201d consult doctor"
+        "solution": "Do not combine â€” consult doctor"
       },
       {
         "pair": [
