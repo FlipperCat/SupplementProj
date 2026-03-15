@@ -39,6 +39,8 @@ warnings: "Generally well-tolerated. High doses may cause mild GI upset. Do not 
 interactions: "May have additive effects with other cognitive enhancers. Can interact with certain antibiotics and bisphosphonates. Separate from calcium by 2+ hours."
 ---
 
+**What it is:** Magnesium L-Threonate is a patented form of magnesium engineered to cross the blood-brain barrier and directly support neuroplasticity, memory formation, and cognitive preservation. Unlike regular magnesium, it accumulates in brain tissue to enhance synaptic density and protect against age-related cognitive decline.
+
 ## What Is Magnesium L-Threonate?
 
 Magnesium L-Threonate (branded as Magtein) is a patented form of magnesium specifically designed to cross the blood-brain barrier and increase brain magnesium levels. Unlike regular magnesium supplements, which primarily support muscle relaxation and systemic health, this form is engineered to reach the brain directly.

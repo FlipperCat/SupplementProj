@@ -39,6 +39,8 @@ warnings: "B6 at high doses (>100mg daily) long-term can cause nerve damage. Met
 interactions: "Metformin depletes B12. Some antibiotics and anticonvulsants affect B vitamin levels. High-dose B6 can interfere with levodopa."
 ---
 
+**What it is:** B-complex vitamins are eight essential water-soluble nutrients that fuel energy metabolism, support nervous system function, and reduce fatigue. Unlike other supplements, B vitamins are essential nutrients your body cannot produce, making daily intake crucial for optimal mental clarity, energy levels, and stress resilience.
+
 ## What Are B-Complex Vitamins?
 
 B vitamins are a group of eight water-soluble vitamins that play essential roles in energy metabolism, nervous system function, and cell health. Unlike fat-soluble vitamins, B vitamins aren't stored well in the body, requiring regular intake.

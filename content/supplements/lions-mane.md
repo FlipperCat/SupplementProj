@@ -40,6 +40,8 @@ warnings: "May not be suitable for those with mushroom allergies. Some report mi
 interactions: "May enhance effects of diabetes medications (blood sugar lowering). Potential interaction with blood thinners. May affect immune-modulating drugs."
 ---
 
+**What it is:** Lion's Mane is a medicinal mushroom that stimulates nerve growth factor (NGF) production, promoting neurogenesis and actual brain cell growth. Unlike stimulant nootropics, it builds long-term cognitive resilience through neuroplasticity, making it ideal for memory, focus, and neuroprotection across aging populations.
+
 ## What Is Lion's Mane?
 
 Lion's Mane (*Hericium erinaceus*) is an edible mushroom that has been used in traditional Chinese medicine for centuries. Named for its shaggy, white appearance resembling a lion's mane, it's unique among mushrooms for its **potent effects on brain and nerve health**.

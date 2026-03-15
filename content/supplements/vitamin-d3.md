@@ -38,6 +38,8 @@ warnings: "High doses (>10,000 IU daily) can cause toxicity. Always test blood l
 interactions: "Can interact with steroids, weight loss drugs, and cholesterol medications. May affect calcium levels when taken with thiazide diuretics."
 ---
 
+**What it is:** Vitamin D3 is a fat-soluble hormone that regulates calcium absorption, immune function, and mood. Often deficient due to limited sun exposure and indoor lifestyles, D3 supplementation is crucial for bone health, seasonal mood support, immune resilience, and longevity across all age groups.
+
 ## What Is Vitamin D3?
 
 Vitamin D3 (cholecalciferol) is a fat-soluble vitamin that your body produces when skin is exposed to sunlight. Often called the "sunshine vitamin," it plays crucial roles in calcium absorption, immune function, and mood regulation.

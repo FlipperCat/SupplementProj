@@ -38,6 +38,8 @@ warnings: "Generally very safe with minimal side effects. May cause drowsiness i
 interactions: "No major drug interactions. May enhance the effects of stimulant medications. Works synergistically with caffeine."
 ---
 
+**What it is:** L-Theanine is a non-protein amino acid that produces calm focus without sedation by promoting alpha brain waves. Synergistic with caffeine to eliminate jitters while enhancing clarity, it's equally effective for anxiety reduction and sleep improvement, making it universally applicable across energy and relaxation goals.
+
 ## What Is L-Theanine?
 
 L-Theanine is a non-protein amino acid found primarily in green and black tea leaves. It's unique because it crosses the blood-brain barrier and directly affects brain wave patterns and neurotransmitter levels without causing drowsiness.

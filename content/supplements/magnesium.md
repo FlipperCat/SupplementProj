@@ -39,6 +39,8 @@ warnings: "Those with kidney disease should consult a doctor before supplementin
 interactions: "May reduce absorption of antibiotics (fluoroquinolones, tetracyclines) and bisphosphonates. Can enhance effects of muscle relaxants and blood pressure medications."
 ---
 
+**What it is:** Magnesium is the master mineral involved in 300+ enzymatic reactions, essential for muscle relaxation, sleep quality, stress resilience, and energy production. With up to 50% of people deficient due to soil depletion and modern diets, supplementation immediately improves sleep, reduces muscle cramps, and stabilizes mood.
+
 ## What Is Magnesium?
 
 Magnesium is the fourth most abundant mineral in the human body and participates in over 300 enzymatic reactions. It's essential for energy production, muscle and nerve function, blood sugar control, and protein synthesis.

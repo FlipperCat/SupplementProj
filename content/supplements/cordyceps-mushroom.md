@@ -40,6 +40,8 @@ warnings: "Generally safe. May cause slight stimulant effect (less than caffeine
 interactions: "Generally safe with most supplements. May have mild additive effects with stimulants (caffeine, etc.). Does not significantly interact with medications."
 ---
 
+**What it is:** Cordyceps is an energy-boosting mushroom that increases ATP production and oxygen utilization without stimulant jitters. Used for centuries in Himalayan traditional medicine, it directly enhances mitochondrial function for natural energy, sustained endurance, and athletic performance improvement.
+
 ## What Is Cordyceps Mushroom?
 
 Cordyceps is a parasitic fungus that grows on caterpillars in high-altitude Himalayan regions. For centuries, Tibetan and Chinese practitioners valued it for energy and vitality. Modern research has confirmed what traditional users knew: Cordyceps powerfully enhances ATP production (cellular energy) and oxygen utilization.

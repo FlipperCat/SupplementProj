@@ -40,6 +40,8 @@ warnings: "May not be suitable for those with thyroid conditions (can raise thyr
 interactions: "May enhance effects of sedatives and anti-anxiety medications. Can increase thyroid hormone levels. May affect blood sugar and blood pressure medications."
 ---
 
+**What it is:** Ashwagandha is a powerful adaptogenic herb that reduces cortisol, improves stress resilience, and supports sleep quality and testosterone levels. One of the most researched adaptogens, it's effective for anxiety management and physical performance while being well-tolerated across diverse populations.
+
 ## What Is Ashwagandha?
 
 Ashwagandha (*Withania somnifera*), also known as "Indian Ginseng" or "Winter Cherry," is an ancient medicinal herb classified as an **adaptogen** — substances that help the body adapt to stress and restore balance.

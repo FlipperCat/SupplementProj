@@ -40,6 +40,8 @@ warnings: "Generally very safe. May cause mild GI upset at high doses. Avoid if 
 interactions: "May have additive effects with other sedating herbs. May enhance anticoagulant effects slightly. Does not interact negatively with most supplements."
 ---
 
+**What it is:** Reishi is an adaptogenic mushroom that reduces cortisol and anxiety while improving sleep architecture and immune resilience. Used for 2,000 years in traditional medicine and validated by modern research, it's ideal for stress management, sleep optimization, and the transition from activity to relaxation without sedation.
+
 ## What Is Reishi Mushroom?
 
 Reishi (Ganoderma lucidum), also called the "mushroom of immortality," has been used in Traditional Chinese Medicine for over 2,000 years. It's a woody fungus that grows on decaying hardwood logs, containing bioactive compounds (beta-glucans, triterpenes, polysaccharides) that support stress resilience, sleep, and immune function.

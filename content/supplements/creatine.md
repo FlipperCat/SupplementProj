@@ -39,6 +39,8 @@ warnings: "Stay well hydrated. May cause initial water weight gain. Those with k
 interactions: "NSAIDs and diuretics may affect kidney function when combined with creatine. Caffeine may slightly reduce peak creatine effects but both are still beneficial together."
 ---
 
+**What it is:** Creatine is the most researched sports supplement ever created, increasing ATP energy production for muscle strength, power, and endurance. Beyond athletics, it supports cognitive function, mood stability, and mitochondrial health, making it valuable for both active individuals and those seeking longevity benefits.
+
 ## What Is Creatine?
 
 Creatine is a naturally occurring compound found in muscle cells that helps produce energy during high-intensity exercise. Your body produces about 1-2 grams daily from amino acids (glycine, arginine, methionine), and you get additional creatine from meat and fish.

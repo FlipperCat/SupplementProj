@@ -39,6 +39,8 @@ warnings: "Emerging supplement; generally very safe based on human data. May cau
 interactions: "No known significant interactions. Works synergistically with other mitochondrial-supporting supplements."
 ---
 
+**What it is:** Urolithin A is an emerging metabolite that triggers mitophagy — cellular cleanup of damaged mitochondria for true longevity benefit. Derived from pomegranate gut metabolism, direct supplementation provides therapeutic doses proven to restore muscle function, improve energy, and support mitochondrial renewal in aging populations.
+
 ## What Is Urolithin A?
 
 Urolithin A is a metabolite produced when your gut bacteria break down ellagic acid (found in pomegranates, berries, nuts). It's one of the most exciting emerging longevity compounds because it uniquely triggers mitophagy — the cellular "cleanup" process that removes damaged mitochondria.

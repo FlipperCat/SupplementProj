@@ -39,6 +39,8 @@ warnings: "Generally safe. Avoid if allergic to mushrooms. May cause mild GI ups
 interactions: "Generally safe with most supplements. May enhance antioxidant effects of other antioxidants. Does not significantly interact with medications."
 ---
 
+**What it is:** Chaga is the most antioxidant-dense natural source ever tested, containing exceptional polyphenol levels for cellular protection and longevity support. Harvested from birch trees in cold climates and used for centuries in Siberian medicine, it fights free radicals and supports immune resilience at the deepest cellular level.
+
 ## What Is Chaga Mushroom?
 
 Chaga (Inonotus obliquus) is a parasitic fungus that grows on birch trees in cold climates. Despite its unprepossessing appearance (a black, charred-looking growth), Chaga is extraordinarily rich in antioxidants — containing more free-radical-fighting polyphenols than any other natural source tested.

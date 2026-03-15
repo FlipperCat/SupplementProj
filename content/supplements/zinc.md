@@ -39,6 +39,8 @@ warnings: "Do not exceed 40mg daily long-term without medical supervision. High-
 interactions: "Reduces absorption of some antibiotics and bisphosphonates. Competes with copper and iron. NSAIDs may deplete zinc."
 ---
 
+**What it is:** Zinc is an essential mineral required for immune function, testosterone production, and enzyme activity across 300+ metabolic pathways. With an estimated 2 billion people deficient, zinc supplementation supports rapid immune response, sexual health, wound healing, and skin integrity across all ages.
+
 ## What Is Zinc?
 
 Zinc is an essential trace mineral involved in over 300 enzymatic reactions and critical for immune function, protein synthesis, wound healing, DNA synthesis, and cell division. It's the second most abundant trace mineral in the body after iron.

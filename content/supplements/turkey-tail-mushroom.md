@@ -39,6 +39,8 @@ warnings: "Generally very safe. Rare allergic reactions possible. May cause mild
 interactions: "Synergistic with probiotics. May enhance immune effects of other immune-supporting supplements. Does not significantly interact with medications."
 ---
 
+**What it is:** Turkey Tail is a potent prebiotic mushroom that feeds beneficial gut bacteria while directly activating immune cells for optimal microbiome health. Used for 2,000 years in traditional medicine and validated by modern research, it's essential for digestive resilience, immune support, and whole-body health through the gut axis.
+
 ## What Is Turkey Tail Mushroom?
 
 Turkey Tail (Trametes versicolor) is a colorful shelf fungus found throughout forests worldwide. Named for its distinctive turkey-tail-like appearance, it's been used in Traditional Chinese and Japanese medicine for over 2,000 years specifically for gut health and immune support.
