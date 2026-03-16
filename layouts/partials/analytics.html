@@ -10,5 +10,55 @@
     'page_path': window.location.pathname,
     'page_title': document.title
   });
+
+  // Track affiliate clicks
+  document.addEventListener('click', function(e) {
+    const target = e.target.closest('a');
+    if (target && (target.href.includes('amway.com') || target.href.includes('amazon.com') || target.href.includes('nutrilite'))) {
+      gtag('event', 'affiliate_click', {
+        'link_url': target.href,
+        'link_text': target.textContent,
+        'event_category': 'engagement'
+      });
+    }
+  });
+
+  // Track CTA clicks (newsletter, buttons)
+  document.addEventListener('click', function(e) {
+    const target = e.target.closest('a, button');
+    if (target && (target.classList.contains('cta') || target.classList.contains('newsletter-signup') || target.id === 'email-signup')) {
+      gtag('event', 'cta_click', {
+        'cta_type': target.textContent,
+        'cta_id': target.id || 'unnamed'
+      });
+    }
+  });
+
+  // Track scroll depth
+  let maxScroll = 0;
+  window.addEventListener('scroll', function() {
+    const scrollPercent = (window.scrollY / (document.documentElement.scrollHeight - window.innerHeight)) * 100;
+    if (scrollPercent > maxScroll) {
+      maxScroll = scrollPercent;
+      if (scrollPercent >= 25 && scrollPercent < 50) {
+        gtag('event', 'scroll_25');
+      } else if (scrollPercent >= 50 && scrollPercent < 75) {
+        gtag('event', 'scroll_50');
+      } else if (scrollPercent >= 75) {
+        gtag('event', 'scroll_75');
+      }
+    }
+  });
+
+  // Track time on page
+  let timeStarted = new Date();
+  window.addEventListener('beforeunload', function() {
+    const timeOnPage = Math.round((new Date() - timeStarted) / 1000);
+    if (timeOnPage > 30) {
+      gtag('event', 'time_on_page', {
+        'seconds': timeOnPage
+      });
+    }
+  });
 </script>
 {{ end }}

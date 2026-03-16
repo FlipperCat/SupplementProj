@@ -1,18 +1,19 @@
-baseURL = 'https://supplementguide.co/'
+baseURL = 'https://vitawise.life/'
 languageCode = 'en-us'
-title = 'Supplement Guide - Evidence-Based Supplement Information'
+title = 'VitaWise - Evidence-Based Supplement Guides'
 enableRobotsTXT = true
 enableGitInfo = false
 
 [params]
-  description = "Your comprehensive guide to supplements, vitamins, and peptides. Research-backed information on what to take, how to combine, and what to expect."
+  description = "Complete supplement guides for health, nutrition, and wellness: research-backed protocols, medication interactions, brand comparisons, and evidence-based recommendations."
   tagline = "Evidence-Based Supplement Information"
-  author = "Supplement Guide"
+  author = "VitaWise"
   images = ["/images/og-default.jpg"]
 
   # Analytics - Replace with your GA4 ID
   [params.analytics]
-    ga4 = ""  # Add your G-XXXXXXXXXX ID here
+    ga4 = "G-XXXXXXXXXX"  # TODO: Replace with your actual GA4 ID from https://analytics.google.com
+    gsc_verification = "YOUR_GSC_VERIFICATION_ID"  # TODO: Replace with Google Search Console verification code
 
   # Affiliate settings
   [params.affiliates]

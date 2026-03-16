@@ -30,6 +30,11 @@
     <!-- Canonical URL -->
     <link rel="canonical" href="{{ .Permalink }}">
 
+    <!-- Google Search Console Verification -->
+    {{ with .Site.Params.analytics.gsc_verification }}
+    <meta name="google-site-verification" content="{{ . }}" />
+    {{ end }}
+
     <!-- Open Graph - Complete -->
     <meta property="og:title" content="{{ .Title }}">
     <meta property="og:description" content="{{ with .Description }}{{ . }}{{ else }}{{ with .Params.tagline }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}{{ end }}">
