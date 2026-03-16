@@ -1,0 +1,27 @@
+# VitaWise Robots.txt - SEO Optimization
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /private/
+Disallow: /search/
+Disallow: /*.json$
+Disallow: /*.xml$
+Allow: /sitemap.xml
+Allow: /robots.txt
+
+# Crawl delay (in seconds)
+Crawl-delay: 1
+
+# Specific bot handling
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 0
+
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+# Sitemap location
+Sitemap: https://vitawise.life/sitemap.xml
+Sitemap: https://vitawise.life/sitemap-articles.xml
+Sitemap: https://vitawise.life/sitemap-comparisons.xml
