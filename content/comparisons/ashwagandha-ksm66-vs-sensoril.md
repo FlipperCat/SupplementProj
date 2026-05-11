@@ -9,6 +9,8 @@ tags:
   - "ksm-66"
   - "sensoril"
   - "comparison"
+aliases:
+  - "/comparisons/ashwagandha-ksm66-vs-sensoril/"
 ---
 
 ## Why Ashwagandha Extract Matters

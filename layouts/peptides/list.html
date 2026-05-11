@@ -1,0 +1,63 @@
+{{ define "main" }}
+
+<div class="container">
+    <header class="section-header" style="flex-direction: column; align-items: flex-start; gap: var(--spacing-md);">
+        <h1>Research Peptides</h1>
+        <p style="color: var(--color-text-light); max-width: 700px;">Evidence-based guides to research peptides for recovery, longevity, cognitive enhancement, and health optimization. Peptides are short chains of amino acids that act as signaling molecules in the body. Learn about dosing protocols, cycling schedules, administration routes, and safety considerations.</p>
+        <div class="notice notice-warning" style="margin-top: var(--spacing-md); max-width: 700px;">
+            <svg class="notice-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z"/>
+                <line x1="12" y1="9" x2="12" y2="13"/>
+                <line x1="12" y1="17" x2="12.01" y2="17"/>
+            </svg>
+            <div class="notice-content">
+                <h4>Research Use Disclaimer</h4>
+                <p>Most peptides discussed here are sold as research chemicals and are not FDA-approved for human use unless otherwise noted. This information is for educational purposes only. Always consult a qualified healthcare provider before using any peptide.</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Category Pills -->
+    <div class="category-pills" style="justify-content: flex-start; margin-bottom: var(--spacing-2xl);">
+        <a href="/peptides/" class="category-pill active">All Peptides</a>
+        <a href="/tags/growth-hormone/" class="category-pill">Growth Hormone</a>
+        <a href="/tags/healing/" class="category-pill">Healing &amp; Recovery</a>
+        <a href="/tags/nootropic-peptide/" class="category-pill">Nootropics</a>
+        <a href="/tags/longevity/" class="category-pill">Longevity</a>
+        <a href="/tags/fat-loss/" class="category-pill">Fat Loss</a>
+    </div>
+
+    <div class="card-grid">
+        {{ range .Pages }}
+        <article class="card supplement-card">
+            <div class="card-content">
+                <span class="card-category">{{ with .Params.supplement_type }}{{ . }}{{ else }}Peptide{{ end }}</span>
+                <h3 class="card-title"><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
+                <p class="card-excerpt">{{ .Params.tagline | default .Summary | truncate 150 }}</p>
+                <div class="card-meta">
+                    {{ with .Params.dosage }}
+                    <span class="meta-item">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"/>
+                            <path d="M12 6v6l4 2"/>
+                        </svg>
+                        {{ . }}
+                    </span>
+                    {{ end }}
+                    {{ with .Params.form }}
+                    <span class="meta-item">{{ . }}</span>
+                    {{ end }}
+                </div>
+            </div>
+        </article>
+        {{ end }}
+    </div>
+
+    {{ if eq (len .Pages) 0 }}
+    <div style="text-align: center; padding: var(--spacing-3xl); color: var(--color-text-muted);">
+        <p>No peptide guides found. Check back soon for new content!</p>
+    </div>
+    {{ end }}
+</div>
+
+{{ end }}

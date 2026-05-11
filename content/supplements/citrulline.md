@@ -23,6 +23,8 @@ synergies: ["l-citrulline", "beetroot-juice", "pycnogenol", "l-arginine"]
 tags: ["performance", "blood-flow", "nitric-oxide", "cardiovascular", "pump"]
 warnings: "May cause mild GI distress at higher doses. Citrulline malate formulation may cause diarrhea due to malate content. Start with smaller doses. Avoid if hypotensive."
 interactions: "Potentiates phosphodiesterase-5 inhibitors (Viagra, Cialis); use caution if taking these medications. May enhance effects of blood pressure medications."
+aliases:
+  - "/supplements/citrulline/"
 ---
 
 ## What Is L-Citrulline?

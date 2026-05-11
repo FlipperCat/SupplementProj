@@ -10,6 +10,8 @@ key_points:
   - "Absorption, timing, and cofactor requirements differ radically between classes—single strategy fails both"
 related_supplements: ["B-complex", "vitamin-C", "vitamin-D3", "vitamin-A", "vitamin-E", "fish-oil"]
 tags: ["vitamins", "micronutrients", "bioavailability", "supplementation-strategy", "biohacking"]
+aliases:
+  - "/guides/water-soluble-vs-fat-soluble/"
 ---
 
 ## Introduction: One of the Most Important Distinctions in Biohacking

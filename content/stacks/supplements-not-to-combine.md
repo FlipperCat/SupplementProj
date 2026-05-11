@@ -10,6 +10,8 @@ tags:
   - "absorption"
   - "timing"
 warnings: "This list covers common interactions but is not exhaustive. Always consult a healthcare provider about your specific supplement regimen, especially if taking medications."
+aliases:
+  - "/stacks/supplements-not-to-combine/"
 ---
 
 ## Why Timing and Combinations Matter

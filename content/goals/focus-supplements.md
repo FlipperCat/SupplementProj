@@ -8,6 +8,9 @@ tags:
   - "concentration"
   - "brain fog"
   - "cognition"
+aliases:
+  - "/goals/focus-supplements/"
+  - "/focus-supplements/"
 ---
 
 ## Why You Can't Focus (And How Supplements Can Help)

@@ -9,6 +9,8 @@ tags:
   - "microbiome"
   - "digestion"
   - "immune"
+aliases:
+  - "/guides/probiotics-buying-guide/"
 ---
 
 ## Probiotic Effectiveness: It's NOT One-Size-Fits-All

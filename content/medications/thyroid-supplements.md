@@ -9,6 +9,8 @@ tags:
   - "hyperthyroidism"
   - "thyroid health"
   - "medication interactions"
+aliases:
+  - "/medications/thyroid-supplements/"
 ---
 
 ## Thyroid Health: Supplement Strategy

@@ -23,6 +23,8 @@ synergies: ["caffeine", "l-theanine", "quercetin", "vitamin-c", "curcumin", "res
 tags: ["fat-burning", "antioxidant", "cognitive", "thermogenic", "cancer-prevention", "cardiovascular"]
 warnings: "CRITICAL LIVER SAFETY: High-dose EGCG (>800 mg/day), especially on empty stomach, has been linked to rare but serious liver toxicity. Always take with food, choose enteric-coated forms, limit to 400-500 mg EGCG daily, and monitor liver enzymes if using long-term. Discontinue immediately if experiencing abdominal pain, dark urine, or jaundice."
 interactions: "May reduce absorption of iron and other minerals; may potentiate effects of stimulants and caffeine; may interact with blood thinners, beta-blockers, and chemotherapy drugs; inhibits COMT enzyme affecting dopamine/norepinephrine metabolism"
+aliases:
+  - "/supplements/green-tea-extract/"
 ---
 
 ## What Is Green Tea Extract / EGCG?

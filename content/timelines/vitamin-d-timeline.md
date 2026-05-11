@@ -4,6 +4,8 @@ date: 2024-01-22
 draft: false
 tagline: "Understanding the biological timeline for vitamin D absorption and physiological adaptation"
 tags: ["vitamin-d", "timeline", "supplementation", "bone-health", "immune-function"]
+aliases:
+  - "/timelines/vitamin-d-timeline/"
 ---
 
 ## Introduction: Why Patience with Vitamin D Matters

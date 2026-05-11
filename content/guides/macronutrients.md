@@ -10,6 +10,8 @@ key_points:
   - "Carbohydrate quality and timing dramatically affect performance, energy stability, and metabolic health"
 related_supplements: ["whey-protein", "casein-protein", "BCAA", "creatine", "beta-alanine", "carb-powder"]
 tags: ["macronutrients", "protein", "carbohydrates", "fats", "nutrition", "biohacking"]
+aliases:
+  - "/guides/macronutrients/"
 ---
 
 ## Introduction: Why Macronutrients Matter

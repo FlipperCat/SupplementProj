@@ -11,6 +11,9 @@ tags:
   - "mobility"
   - "cognitive health"
   - "independence"
+aliases:
+  - "/goals/supplements-for-seniors-70s/"
+  - "/supplements-for-seniors-70s/"
 ---
 
 ## Seniors 70+: Optimizing Vitality & Independence

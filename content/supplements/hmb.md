@@ -38,6 +38,8 @@ tags:
 
 warnings: "Generally very well tolerated. Those with kidney or liver conditions should consult a doctor. May cause mild GI discomfort in some individuals when taken on empty stomach."
 interactions: "No significant drug interactions known. May enhance effects of other muscle-building supplements. Statin users may benefit from HMB due to shared cholesterol synthesis pathways."
+aliases:
+  - "/supplements/hmb/"
 ---
 
 ## What Is HMB?

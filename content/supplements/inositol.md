@@ -27,6 +27,8 @@ tags:
   - nutrient
 warnings: Generally very safe. May cause mild GI upset at high doses. Pregnant women with PCOS should consult doctor (may be beneficial).
 interactions: Works synergistically with chromium. Compatible with most supplements.
+aliases:
+  - "/supplements/inositol/"
 ---
 
 **What it is:** Myo-inositol is a sugar alcohol and phospholipid component that supports insulin signaling, metabolic health, and hormone balance. Research shows particular value for PCOS management, metabolic optimization, and mood regulation.

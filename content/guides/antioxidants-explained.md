@@ -10,6 +10,8 @@ key_points:
   - "Strategic antioxidant use (glutathione, N-acetylcysteine, alpha-lipoic acid) can enhance recovery without suppressing adaptation"
 related_supplements: ["glutathione", "N-acetylcysteine", "alpha-lipoic-acid", "astaxanthin", "CoQ10", "resveratrol"]
 tags: ["antioxidants", "free-radicals", "oxidative-stress", "ROS", "biohacking", "recovery"]
+aliases:
+  - "/guides/antioxidants-explained/"
 ---
 
 ## Introduction: Why Antioxidants Matter (And Why the Story Is More Complex Than You Think)

@@ -38,6 +38,8 @@ tags:
 
 warnings: "B12 supplementation in people with pernicious anemia may need injections (oral often ineffective due to absorption issue). Very high doses (>10,000 mcg) may cause minor GI upset or headache. Cyanocobalamin may raise cyanide levels very slightly (negligible at normal doses). Those with certain cancers (especially leukemia) should consult doctor before high-dose B12 (may promote cell growth). Generally extremely safe; higher doses preferable to deficiency."
 interactions: "Metformin: reduces B12 absorption (diabetics on metformin should monitor levels). Proton pump inhibitors (acid reflux meds): reduce B12 absorption. H2 blockers: may reduce absorption. Some antibiotics: interfere with absorption. Intrinsic factor (pernicious anemia): requires injections; oral supplementation often inadequate."
+aliases:
+  - "/supplements/vitamin-b12/"
 ---
 
 ## What Is Vitamin B12?

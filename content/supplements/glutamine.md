@@ -23,6 +23,8 @@ synergies: ["zinc-carnosine", "bone-broth", "probiotics", "slippery-elm"]
 tags: ["gut-health", "immune-function", "recovery", "intestinal-barrier"]
 warnings: "Individuals with seizure disorders should avoid high doses (may increase glutamate signaling). Those with liver disease or urea cycle disorders require physician supervision. Catabolic state (severe illness) may deplete glutamine faster than supplementation can replace."
 interactions: "No significant drug interactions. May enhance immune response in immunocompromised individuals (consider medical consultation). Avoid if taking steroids chronically (reduces beneficial adaptive immune response)."
+aliases:
+  - "/supplements/glutamine/"
 ---
 
 ## What Is L-Glutamine?

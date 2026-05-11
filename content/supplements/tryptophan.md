@@ -44,6 +44,8 @@ tags:
 warnings: "SEROTONIN SYNDROME RISK (similar to 5-HTP but lower): Never combine with SSRIs, SNRIs, or MAOIs without doctor approval. Risk lower than 5-HTP due to less efficient tryptophan conversion, but still possible. Pregnant women should consult healthcare provider (tryptophan is essential; supplementation needs medical approval). Monitor for: excessive serotonin symptoms, vivid dreams, emotional changes. Those with history of melanoma should consult doctor (theoretical risk shared with serotonergic compounds). Eosinophilia-myalgia syndrome (EMS) was associated with contaminated tryptophan in 1980s — modern sources are safe, but purchase from reputable manufacturers only. Do not suddenly discontinue if used long-term for mood support. Carbohydrate intake must be adequate; without carbs, absorption is poor and effects minimal."
 
 interactions: "Potential serotonin syndrome risk with SSRIs/SNRIs/MAOIs (lower risk than 5-HTP but still serious). Additive serotonin effects with tricyclic antidepressants — medical monitoring suggested. May interact with other serotonergic herbs. Does not interact significantly with most supplements. Those on ANY psychiatric medication should inform their doctor. Safe with most other medications; drug interactions less severe than with 5-HTP due to competing BBB transport. Avoid combining with phenelzine or other MAOIs. Alcohol may reduce tryptophan efficacy."
+aliases:
+  - "/supplements/tryptophan/"
 ---
 
 ## What Is L-Tryptophan?

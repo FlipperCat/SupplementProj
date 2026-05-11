@@ -78,6 +78,8 @@ warnings:
   - "May interact with hormone replacement therapy; consult physician"
   - "Tribulus quality varies dramatically; source carefully from reputable vendors"
   - "These are testosterone-supportive, NOT testosterone replacement; expectations must be realistic"
+aliases:
+  - "/stacks/hormone-optimization-stack/"
 ---
 
 ## Overview and Goals

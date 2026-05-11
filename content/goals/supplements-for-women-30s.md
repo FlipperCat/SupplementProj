@@ -9,6 +9,9 @@ tags:
   - "fertility"
   - "energy"
   - "preventive health"
+aliases:
+  - "/goals/supplements-for-women-30s/"
+  - "/supplements-for-women-30s/"
 ---
 
 ## Women in Their 30s: Health Priorities

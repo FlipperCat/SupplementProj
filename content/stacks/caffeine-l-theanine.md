@@ -19,6 +19,8 @@ tags:
   - "productivity"
   - "anxiety"
 warnings: "Caffeine can cause anxiety, insomnia, and dependency. Those sensitive to stimulants should start with lower doses. Avoid caffeine after early afternoon to protect sleep."
+aliases:
+  - "/stacks/caffeine-l-theanine/"
 ---
 
 ## What Is the Caffeine + L-Theanine Stack?

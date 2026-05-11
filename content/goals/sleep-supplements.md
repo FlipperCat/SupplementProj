@@ -8,6 +8,9 @@ tags:
   - "insomnia"
   - "rest"
   - "recovery"
+aliases:
+  - "/goals/sleep-supplements/"
+  - "/sleep-supplements/"
 ---
 
 ## Why You Can't Sleep (And How Supplements Can Help)

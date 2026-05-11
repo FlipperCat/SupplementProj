@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="{{ .Site.LanguageCode }}">
 <head>
+    <script>
+    (function(){var t=localStorage.getItem('theme');if(t==='dark'||(!t&&window.matchMedia('(prefers-color-scheme: dark)').matches)){document.documentElement.setAttribute('data-theme','dark')}})();
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ with .Params.tagline }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}{{ end }}">
@@ -11,7 +14,7 @@
     <link rel="dns-prefetch" href="https://fonts.googleapis.com">
     <link rel="dns-prefetch" href="https://fonts.gstatic.com">
     <link rel="dns-prefetch" href="https://www.googletagmanager.com">
-    <link rel="dns-prefetch" href="https://www.amway.com">
+    {{/* <link rel="dns-prefetch" href="https://www.amway.com"> */}}
 
     <!-- Preconnect for fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -27,13 +30,17 @@
     <!-- Quiz Styles -->
     <link rel="stylesheet" href="/css/quiz.css">
 
+    <!-- Favicon -->
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/images/favicon.png" type="image/png" sizes="64x64">
+
     <!-- Canonical URL -->
     <link rel="canonical" href="{{ .Permalink }}">
 
     <!-- Google Search Console Verification -->
-    {{ with .Site.Params.analytics.gsc_verification }}
+    {{ with .Site.Params.analytics.gsc_verification }}{{ if and (not (hasPrefix . "YOUR_")) (not (hasPrefix . "G-XXX")) }}
     <meta name="google-site-verification" content="{{ . }}" />
-    {{ end }}
+    {{ end }}{{ end }}
 
     <!-- Open Graph - Complete -->
     <meta property="og:title" content="{{ .Title }}">
@@ -65,12 +72,16 @@
 
     <!-- Schema.org Structured Data -->
     {{ if .IsPage }}
-        {{ if eq .Section "supplements" }}
+        {{ if or (eq .Section "supplements") (eq .Section "peptides") }}
             {{ partial "schema/supplement.html" . }}
         {{ else }}
             {{ partial "schema/article.html" . }}
         {{ end }}
         {{ partial "schema/breadcrumb.html" . }}
+        {{ partial "schema/faq.html" . }}
+        {{ if eq .Section "guides" }}
+            {{ partial "schema/howto.html" . }}
+        {{ end }}
     {{ else if .IsHome }}
         {{ partial "schema/organization.html" . }}
     {{ end }}
@@ -89,10 +100,11 @@
 
     {{ partial "footer.html" . }}
 
-    <!-- Exit Intent Popup -->
-    {{ partial "exit-popup.html" . }}
+    <!-- Exit Intent Popup (disabled — no email capture) -->
+    {{/* partial "exit-popup.html" . */}}
 
     <script src="/js/main.js" defer></script>
     <script src="/js/quiz.js" defer></script>
+    <script src="/js/search.js" defer></script>
 </body>
 </html>

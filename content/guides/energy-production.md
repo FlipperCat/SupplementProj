@@ -10,6 +10,8 @@ key_points:
   - "Optimizing energy production requires supporting all three metabolic pathways simultaneously"
 related_supplements: ["B-complex", "CoQ10", "L-carnitine", "Magnesium", "Iron", "Vitamin C", "Alpha-lipoic acid"]
 tags: ["body systems", "energy metabolism", "mitochondrial health", "ATP production", "exercise performance"]
+aliases:
+  - "/guides/energy-production/"
 ---
 
 ## How Energy Production Works

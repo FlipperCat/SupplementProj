@@ -10,6 +10,8 @@ key_points:
   - "Myelin (the brain's insulation) requires omega-3s, B vitamins, and minerals; decline here accelerates cognitive aging"
 related_supplements: ["Omega-3 DHA/EPA", "B-complex vitamins", "Magnesium", "Zinc", "Iron", "Choline", "L-theanine", "Rhodiola", "Ginkgo"]
 tags: ["body systems", "cognitive function", "mood support", "neuroprotection", "brain health", "neuroplasticity"]
+aliases:
+  - "/guides/brain-function-nutrients/"
 ---
 
 ## How Brain Function Works

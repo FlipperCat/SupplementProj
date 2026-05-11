@@ -1,0 +1,357 @@
+{
+  "medications": {
+    "ssri": {
+      "name": "SSRIs (Antidepressants)",
+      "category": "Antidepressant",
+      "safe": [
+        {"slug": "omega-3", "name": "Omega-3 Fish Oil", "reason": "Supports mood alongside SSRIs. Studies show EPA-dominant fish oil enhances antidepressant response and reduces residual symptoms."},
+        {"slug": "magnesium", "name": "Magnesium", "reason": "SSRIs can deplete magnesium. Supplementing supports relaxation, sleep quality, and may reduce SSRI-related anxiety and muscle tension."},
+        {"slug": "vitamin-b-complex", "name": "B-Complex", "reason": "SSRIs deplete folate and B6. Methylated B vitamins support neurotransmitter production and enhance antidepressant efficacy."},
+        {"slug": "vitamin-d3", "name": "Vitamin D3", "reason": "Low vitamin D is linked to depression severity. Supplementing supports mood regulation without interfering with SSRIs."},
+        {"slug": "zinc", "name": "Zinc", "reason": "SSRIs deplete zinc. Zinc plays a key role in serotonin synthesis and supplementing may improve antidepressant response."},
+        {"slug": "probiotics", "name": "Probiotics", "reason": "The gut-brain axis influences mood. Probiotics support serotonin production (90% made in the gut) and reduce GI side effects of SSRIs."},
+        {"slug": "vitamin-c", "name": "Vitamin C", "reason": "Antioxidant support that may be depleted by SSRIs. Helps with dopamine and norepinephrine synthesis."}
+      ],
+      "caution": [
+        {"slug": "sam-e", "name": "SAMe", "reason": "SAMe raises serotonin and may enhance SSRIs but carries a low risk of serotonin syndrome. Use only under medical supervision."},
+        {"slug": "melatonin", "name": "Melatonin", "reason": "Generally safe at low doses (0.5-3 mg) but SSRIs like fluvoxamine can increase melatonin levels. Start low and monitor."},
+        {"slug": "curcumin", "name": "Curcumin", "reason": "Has mild serotonergic activity. Likely safe at standard doses but discuss with your doctor if taking high-dose extracts."}
+      ],
+      "avoid": [
+        {"slug": "st-johns-wort", "name": "St. John's Wort", "reason": "Strongly increases serotonin activity. Combining with SSRIs creates serious risk of serotonin syndrome, a potentially life-threatening condition."},
+        {"slug": "5-htp", "name": "5-HTP", "reason": "Directly increases serotonin production. Combined with SSRIs, this can cause serotonin syndrome with symptoms including agitation, rapid heart rate, and hyperthermia."},
+        {"slug": "l-tryptophan", "name": "L-Tryptophan", "reason": "A serotonin precursor that raises serotonin levels. Combining with SSRIs significantly increases serotonin syndrome risk."}
+      ],
+      "timing_note": "Take supplements with meals for consistent absorption. Maintain a regular schedule alongside your SSRI.",
+      "guide_url": "/medications/ssri-support/"
+    },
+    "metformin": {
+      "name": "Metformin (Diabetes)",
+      "category": "Antidiabetic",
+      "safe": [
+        {"slug": "vitamin-b12", "name": "Vitamin B12", "reason": "Metformin depletes B12 in up to 30% of long-term users. Supplementing restores levels and prevents peripheral neuropathy and cognitive decline."},
+        {"slug": "folate", "name": "Folate", "reason": "Metformin impairs folate absorption. Methylfolate supplementation supports homocysteine metabolism and cardiovascular health."},
+        {"slug": "vitamin-d3", "name": "Vitamin D3", "reason": "Diabetic patients are often vitamin D deficient. D3 supports insulin sensitivity and bone health without affecting blood sugar control."},
+        {"slug": "magnesium", "name": "Magnesium", "reason": "Diabetes increases magnesium excretion. Supplementing improves insulin sensitivity and glycemic control synergistically with metformin."},
+        {"slug": "chromium", "name": "Chromium", "reason": "Chromium picolinate enhances insulin receptor sensitivity. Works synergistically with metformin to improve glucose uptake."},
+        {"slug": "omega-3", "name": "Omega-3 Fish Oil", "reason": "Reduces cardiovascular risk, which is elevated in diabetic patients. Does not significantly affect blood glucose control."},
+        {"slug": "alpha-lipoic-acid", "name": "Alpha-Lipoic Acid", "reason": "Improves insulin sensitivity and protects against diabetic neuropathy. Complements metformin's mechanism of action."},
+        {"slug": "coq10", "name": "CoQ10", "reason": "Metformin may reduce CoQ10 levels. Supplementing supports mitochondrial energy production and cardiovascular health."}
+      ],
+      "caution": [
+        {"slug": "berberine", "name": "Berberine", "reason": "Has metformin-like blood sugar lowering effects. Combining may cause hypoglycemia. Use only under strict medical monitoring."},
+        {"slug": "cinnamon", "name": "Cinnamon Extract", "reason": "May lower blood sugar modestly. Monitor glucose closely if combining with metformin to avoid hypoglycemia."}
+      ],
+      "avoid": [
+        {"slug": "high-dose-alcohol-extracts", "name": "Alcohol-Based Tinctures", "reason": "Alcohol increases lactic acidosis risk with metformin. Avoid liquid supplements with alcohol bases."},
+        {"slug": "bitter-melon", "name": "Bitter Melon", "reason": "Strong blood sugar lowering effect. Combined with metformin can cause dangerously low blood sugar levels."}
+      ],
+      "timing_note": "Take B12 and folate at least 2 hours apart from metformin for optimal absorption. Take metformin with meals.",
+      "guide_url": "/medications/metformin-supplements/"
+    },
+    "statin": {
+      "name": "Statins (Cholesterol)",
+      "category": "Cholesterol-Lowering",
+      "safe": [
+        {"slug": "coq10", "name": "CoQ10", "reason": "Statins block the mevalonate pathway, depleting CoQ10 by up to 40%. Supplementing reduces statin-related muscle pain and supports heart energy production."},
+        {"slug": "vitamin-d3", "name": "Vitamin D3", "reason": "Statin users have lower vitamin D levels. Supplementing supports bone health, immune function, and may reduce statin myalgia."},
+        {"slug": "omega-3", "name": "Omega-3 Fish Oil", "reason": "Complements statin therapy by lowering triglycerides. EPA/DHA combined with statins provides superior cardiovascular protection."},
+        {"slug": "vitamin-k2", "name": "Vitamin K2", "reason": "Directs calcium away from arteries and into bones. Statins may impair vitamin K2 metabolism; supplementing supports arterial and bone health."},
+        {"slug": "magnesium", "name": "Magnesium", "reason": "Supports cardiovascular function and may reduce statin-related muscle cramps. Does not interfere with statin metabolism."},
+        {"slug": "probiotics", "name": "Probiotics", "reason": "Certain strains help metabolize cholesterol. Supports gut health which can be affected by long-term statin use."}
+      ],
+      "caution": [
+        {"slug": "niacin", "name": "Niacin (Vitamin B3)", "reason": "Low-dose niacin is generally safe, but high-dose niacin (>500 mg) combined with statins increases risk of liver damage and myopathy."},
+        {"slug": "vitamin-a", "name": "Vitamin A", "reason": "Both statins and high-dose vitamin A are processed by the liver. Combined use may increase hepatotoxicity risk. Keep within RDA."},
+        {"slug": "citrus-bergamot", "name": "Citrus Bergamot", "reason": "Has statin-like cholesterol lowering properties. May amplify statin effects; discuss dosing with your doctor."}
+      ],
+      "avoid": [
+        {"slug": "red-yeast-rice", "name": "Red Yeast Rice", "reason": "Contains monacolin K, which is chemically identical to lovastatin. Combining with a prescribed statin doubles the dose and dramatically increases muscle damage and liver toxicity risk."},
+        {"slug": "grapefruit-extract", "name": "Grapefruit Extract", "reason": "Inhibits CYP3A4 liver enzyme that metabolizes most statins. Raises statin blood levels to dangerous concentrations, increasing rhabdomyolysis risk."},
+        {"slug": "st-johns-wort", "name": "St. John's Wort", "reason": "Induces CYP3A4 enzymes, dramatically reducing statin blood levels and making the medication ineffective at controlling cholesterol."}
+      ],
+      "timing_note": "Take CoQ10 with a fat-containing meal for absorption. If taking a statin at night, take CoQ10 earlier in the day.",
+      "guide_url": "/medications/statin-supplements/"
+    },
+    "ppi": {
+      "name": "PPIs (Acid Reflux)",
+      "category": "Proton Pump Inhibitor",
+      "safe": [
+        {"slug": "vitamin-b12", "name": "Vitamin B12", "reason": "PPIs reduce stomach acid needed for B12 absorption. Long-term PPI users have up to 65% higher B12 deficiency risk. Use sublingual or methylcobalamin forms."},
+        {"slug": "magnesium", "name": "Magnesium", "reason": "PPIs cause magnesium depletion in 10-15% of long-term users. Low magnesium causes muscle cramps, arrhythmia, and fatigue. Use glycinate or citrate forms."},
+        {"slug": "calcium", "name": "Calcium", "reason": "PPIs impair calcium absorption by reducing stomach acid. Use calcium citrate (not carbonate) as it does not require acid for absorption."},
+        {"slug": "iron", "name": "Iron", "reason": "Stomach acid is essential for iron absorption. PPI users should use iron bisglycinate, which absorbs independently of stomach pH."},
+        {"slug": "vitamin-c", "name": "Vitamin C", "reason": "PPIs reduce vitamin C levels in gastric juice. Supplementing supports iron absorption and immune function."},
+        {"slug": "probiotics", "name": "Probiotics", "reason": "PPIs alter gut microbiome composition. Probiotics help maintain beneficial bacteria and reduce risk of C. difficile infection associated with PPI use."},
+        {"slug": "vitamin-d3", "name": "Vitamin D3", "reason": "PPI-related calcium malabsorption affects bone density. Vitamin D3 enhances calcium absorption and protects bone health."},
+        {"slug": "zinc", "name": "Zinc", "reason": "PPIs impair zinc absorption. Zinc carnosine is particularly beneficial as it also supports stomach lining integrity."}
+      ],
+      "caution": [
+        {"slug": "digestive-enzymes", "name": "Digestive Enzymes", "reason": "May help compensate for reduced acid, but could partially counteract PPI effectiveness. Discuss timing with your doctor."},
+        {"slug": "apple-cider-vinegar", "name": "Apple Cider Vinegar", "reason": "Increases stomach acidity, which opposes PPI action. May be counterproductive if your PPI is prescribed for GERD."}
+      ],
+      "avoid": [
+        {"slug": "betaine-hcl", "name": "Betaine HCl", "reason": "Directly increases stomach acid, completely counteracting the mechanism of PPIs. Do not combine."},
+        {"slug": "high-dose-minerals", "name": "High-Dose Mineral Blends", "reason": "PPIs already impair mineral absorption. Mega-dose minerals may cause GI distress and compete for limited absorption pathways. Use targeted single minerals instead."}
+      ],
+      "timing_note": "Take ALL supplements at least 2 hours after your PPI dose. Use sublingual B12 and chelated mineral forms for better absorption.",
+      "guide_url": "/medications/ppi-supplements/"
+    },
+    "blood-pressure": {
+      "name": "Blood Pressure Medications",
+      "category": "Antihypertensive",
+      "safe": [
+        {"slug": "coq10", "name": "CoQ10", "reason": "Many BP medications deplete CoQ10. Meta-analyses show CoQ10 can reduce systolic BP by 11 mmHg, complementing medication therapy."},
+        {"slug": "magnesium", "name": "Magnesium", "reason": "Supports vascular relaxation and may lower BP by 5-6 mmHg. Works synergistically with most blood pressure medications."},
+        {"slug": "omega-3", "name": "Omega-3 Fish Oil", "reason": "Lowers triglycerides and provides modest BP reduction. Safe with all classes of antihypertensives and supports overall cardiovascular health."},
+        {"slug": "vitamin-d3", "name": "Vitamin D3", "reason": "Low vitamin D is associated with hypertension. Supplementing supports the renin-angiotensin system and vascular health."},
+        {"slug": "probiotics", "name": "Probiotics", "reason": "Emerging research shows certain probiotic strains can modestly lower blood pressure. Safe alongside BP medications."},
+        {"slug": "vitamin-b-complex", "name": "B-Complex", "reason": "Supports homocysteine metabolism and cardiovascular health. Diuretic BP medications may deplete B vitamins."}
+      ],
+      "caution": [
+        {"slug": "potassium", "name": "Potassium", "reason": "ACE inhibitors and ARBs raise potassium levels. Additional potassium supplementation can cause dangerous hyperkalemia. Only use under medical monitoring."},
+        {"slug": "hawthorn", "name": "Hawthorn Berry", "reason": "Has vasodilating properties that may enhance BP medication effects. Can cause hypotension. Use only under supervision."},
+        {"slug": "garlic", "name": "Garlic Supplements", "reason": "Has mild blood pressure lowering effects. Generally safe at standard doses but may add to hypotension risk with aggressive BP treatment."}
+      ],
+      "avoid": [
+        {"slug": "licorice", "name": "Licorice Root", "reason": "Contains glycyrrhizin, which causes sodium retention and potassium loss, directly counteracting blood pressure medications and raising BP."},
+        {"slug": "ephedra", "name": "Ephedra/Ma Huang", "reason": "A potent vasoconstrictor and stimulant that raises blood pressure. Directly opposes antihypertensive therapy and can cause hypertensive crisis."},
+        {"slug": "yohimbe", "name": "Yohimbe", "reason": "Raises norepinephrine levels and blood pressure. Combining with BP medications can cause dangerous blood pressure fluctuations."}
+      ],
+      "timing_note": "Take magnesium in the evening; it may enhance the nighttime BP-lowering effect. Monitor BP regularly when adding supplements.",
+      "guide_url": "/medications/blood-pressure-supplements/"
+    },
+    "birth-control": {
+      "name": "Birth Control Pills",
+      "category": "Hormonal Contraceptive",
+      "safe": [
+        {"slug": "vitamin-b-complex", "name": "B-Complex", "reason": "Oral contraceptives deplete B6, B12, and folate. Methylated B-complex restores levels and supports mood, energy, and fertility preparation."},
+        {"slug": "magnesium", "name": "Magnesium", "reason": "Birth control depletes magnesium, contributing to headaches, cramps, and mood changes. Supplementing alleviates these common side effects."},
+        {"slug": "zinc", "name": "Zinc", "reason": "Hormonal contraceptives lower zinc levels by up to 30%. Zinc supports immune function, skin health, and hormone balance."},
+        {"slug": "vitamin-c", "name": "Vitamin C", "reason": "Oral contraceptives lower vitamin C plasma levels. Supplementing supports immune function and iron absorption."},
+        {"slug": "omega-3", "name": "Omega-3 Fish Oil", "reason": "Supports cardiovascular health (important since birth control slightly increases clot risk) and helps with mood regulation."},
+        {"slug": "vitamin-d3", "name": "Vitamin D3", "reason": "May be affected by hormonal contraceptives. Supports bone health, immune function, and mood."},
+        {"slug": "probiotics", "name": "Probiotics", "reason": "Oral contraceptives can affect gut microbiome. Probiotics support digestion, immune health, and nutrient absorption."}
+      ],
+      "caution": [
+        {"slug": "dim", "name": "DIM (Diindolylmethane)", "reason": "Affects estrogen metabolism. May theoretically alter how the body processes synthetic hormones in birth control. Discuss with your doctor."},
+        {"slug": "vitex", "name": "Vitex (Chasteberry)", "reason": "Acts on the pituitary gland to affect hormone levels. May interfere with the hormonal mechanism of oral contraceptives."}
+      ],
+      "avoid": [
+        {"slug": "st-johns-wort", "name": "St. John's Wort", "reason": "Induces CYP3A4 liver enzymes that break down contraceptive hormones. Reduces birth control effectiveness and can cause breakthrough bleeding or unintended pregnancy."},
+        {"slug": "activated-charcoal", "name": "Activated Charcoal", "reason": "Binds to substances in the gut including contraceptive hormones. Taking within 2-3 hours of birth control can reduce absorption and contraceptive effectiveness."}
+      ],
+      "timing_note": "Take supplements with meals. Avoid activated charcoal within 3 hours of birth control pill.",
+      "guide_url": "/medications/birth-control-nutrients/"
+    },
+    "thyroid": {
+      "name": "Thyroid Medications",
+      "category": "Hormone Replacement",
+      "safe": [
+        {"slug": "selenium", "name": "Selenium", "reason": "Essential for thyroid hormone conversion (T4 to T3). Selenium supplementation reduces thyroid antibodies in Hashimoto's patients by up to 40%."},
+        {"slug": "zinc", "name": "Zinc", "reason": "Required for TSH production and T3 hormone synthesis. Supports overall thyroid function without interfering with medication absorption."},
+        {"slug": "vitamin-d3", "name": "Vitamin D3", "reason": "Thyroid patients (especially Hashimoto's) have high rates of vitamin D deficiency. Supplementing supports immune regulation and bone health."},
+        {"slug": "vitamin-b-complex", "name": "B-Complex", "reason": "Supports energy production which is often impaired in hypothyroidism. B12 deficiency is common in autoimmune thyroid disease."},
+        {"slug": "omega-3", "name": "Omega-3 Fish Oil", "reason": "Reduces inflammation associated with autoimmune thyroid conditions. Supports brain function often impaired in hypothyroidism."}
+      ],
+      "caution": [
+        {"slug": "iodine", "name": "Iodine", "reason": "Essential for thyroid hormone production, but excess iodine can worsen Hashimoto's. Only supplement if testing confirms deficiency. Discuss with endocrinologist."},
+        {"slug": "ashwagandha", "name": "Ashwagandha", "reason": "May stimulate thyroid hormone production. Could cause hyperthyroidism in patients already on thyroid medication. Use only under supervision."}
+      ],
+      "avoid": [
+        {"slug": "calcium", "name": "Calcium (within 4 hours)", "reason": "Calcium directly binds to thyroid medication in the gut, reducing absorption by up to 60%. Must be taken at least 4 hours apart."},
+        {"slug": "iron", "name": "Iron (within 4 hours)", "reason": "Iron chelates thyroid hormones in the GI tract, dramatically reducing medication effectiveness. Separate by at least 4 hours."},
+        {"slug": "magnesium", "name": "Magnesium (within 4 hours)", "reason": "Magnesium interferes with thyroid medication absorption. Beneficial to take, but MUST be separated by at least 4 hours from your thyroid dose."}
+      ],
+      "timing_note": "CRITICAL: Take thyroid medication on an empty stomach, 30-60 minutes before food. Wait at least 4 hours before taking any mineral supplements.",
+      "guide_url": "/medications/thyroid-medication-supplements/"
+    },
+    "warfarin": {
+      "name": "Warfarin (Blood Thinner)",
+      "category": "Anticoagulant",
+      "safe": [
+        {"slug": "vitamin-d3", "name": "Vitamin D3", "reason": "Does not affect blood clotting. Supports bone health, which is important since long-term warfarin use can reduce bone density."},
+        {"slug": "probiotics", "name": "Probiotics", "reason": "Generally safe with warfarin. Supports gut health and does not significantly affect INR levels at standard doses."},
+        {"slug": "vitamin-c", "name": "Vitamin C", "reason": "Safe at moderate doses (up to 500 mg). Supports immune function without significantly affecting warfarin metabolism or INR."},
+        {"slug": "vitamin-b-complex", "name": "B-Complex", "reason": "Safe with warfarin and supports homocysteine metabolism. Does not affect clotting factors or INR levels."}
+      ],
+      "caution": [
+        {"slug": "omega-3", "name": "Omega-3 Fish Oil", "reason": "Has mild antiplatelet effects. Low doses (1-2 g) are generally safe but high doses may increase bleeding risk. Monitor INR closely."},
+        {"slug": "magnesium", "name": "Magnesium", "reason": "Generally safe but can affect medication absorption if taken simultaneously. Separate by 2 hours and inform your anticoagulation clinic."},
+        {"slug": "coq10", "name": "CoQ10", "reason": "Structurally similar to vitamin K and may reduce warfarin's effectiveness in some individuals. Requires INR monitoring if started."}
+      ],
+      "avoid": [
+        {"slug": "vitamin-k", "name": "Vitamin K Supplements", "reason": "Vitamin K directly counteracts warfarin by activating clotting factors. Even small changes in vitamin K intake can destabilize INR and cause dangerous clots."},
+        {"slug": "garlic", "name": "Garlic Supplements", "reason": "Inhibits platelet aggregation and enhances warfarin's blood-thinning effect. Increases serious bleeding risk including internal hemorrhage."},
+        {"slug": "ginkgo-biloba", "name": "Ginkgo Biloba", "reason": "Potent antiplatelet effects that compound warfarin's anticoagulation. Associated with case reports of serious bleeding events."},
+        {"slug": "ginger-high-dose", "name": "High-Dose Ginger", "reason": "Inhibits thromboxane synthesis at high doses, enhancing anticoagulation. Increases risk of bleeding complications with warfarin."}
+      ],
+      "timing_note": "CONSULT YOUR DOCTOR before taking ANY new supplement. Maintain consistent vitamin K dietary intake. Have INR checked after any supplement changes.",
+      "guide_url": "/medications/blood-thinner-supplements/"
+    },
+    "antibiotics": {
+      "name": "Antibiotics",
+      "category": "Antimicrobial",
+      "safe": [
+        {"slug": "probiotics", "name": "Probiotics", "reason": "Antibiotics kill beneficial gut bacteria causing diarrhea in up to 30% of patients. Saccharomyces boulardii and Lactobacillus rhamnosus GG reduce antibiotic-associated diarrhea by 50%."},
+        {"slug": "vitamin-b-complex", "name": "B-Complex", "reason": "Antibiotics disrupt gut bacteria that produce B vitamins (especially K and biotin). Supplementing prevents secondary deficiency."},
+        {"slug": "vitamin-c", "name": "Vitamin C", "reason": "Supports immune function during infection. Does not interfere with most antibiotic mechanisms and aids recovery."},
+        {"slug": "vitamin-d3", "name": "Vitamin D3", "reason": "Supports immune response during active infection. Adequate vitamin D levels improve antibiotic treatment outcomes."},
+        {"slug": "vitamin-k", "name": "Vitamin K", "reason": "Antibiotics destroy vitamin K-producing gut bacteria. Supplementing prevents deficiency-related bleeding risk, especially with prolonged courses."}
+      ],
+      "caution": [
+        {"slug": "zinc", "name": "Zinc", "reason": "Supports immune function but can bind to fluoroquinolone and tetracycline antibiotics, reducing their absorption. Take 2-4 hours apart."},
+        {"slug": "iron", "name": "Iron", "reason": "Chelates with fluoroquinolones, tetracyclines, and penicillins in the gut, reducing antibiotic absorption by up to 75%. Must separate by 2-4 hours."}
+      ],
+      "avoid": [
+        {"slug": "calcium-with-quinolones", "name": "Calcium (with fluoroquinolones)", "reason": "Calcium directly binds to ciprofloxacin and levofloxacin, reducing absorption below therapeutic levels. Separate by at least 2 hours or antibiotic may be ineffective."},
+        {"slug": "magnesium-with-quinolones", "name": "Magnesium (with fluoroquinolones)", "reason": "Magnesium chelates fluoroquinolone antibiotics, rendering them inactive. If on ciprofloxacin or similar drugs, separate all minerals by 2-4 hours."}
+      ],
+      "timing_note": "Take probiotics at least 2 hours away from antibiotic doses. Continue probiotics for at least 7-14 days after finishing the antibiotic course.",
+      "guide_url": "/medications/antibiotic-supplements/"
+    },
+    "nsaid": {
+      "name": "NSAIDs (Ibuprofen, Naproxen)",
+      "category": "Pain/Anti-inflammatory",
+      "safe": [
+        {"slug": "omega-3", "name": "Omega-3 Fish Oil", "reason": "Provides natural anti-inflammatory effects that complement NSAIDs. May allow lower NSAID doses, reducing GI side effects."},
+        {"slug": "curcumin", "name": "Curcumin (Turmeric)", "reason": "Potent natural anti-inflammatory that works via COX-2 and NF-kB pathways. Studies show comparable pain relief to ibuprofen for osteoarthritis."},
+        {"slug": "probiotics", "name": "Probiotics", "reason": "NSAIDs damage the gut lining and disrupt microbiome. Probiotics help protect gastric mucosa and reduce GI side effects."},
+        {"slug": "vitamin-c", "name": "Vitamin C", "reason": "NSAIDs deplete vitamin C and can cause gastric bleeding. Vitamin C supports gut lining integrity and iron absorption."},
+        {"slug": "folate", "name": "Folate", "reason": "Long-term NSAID use can impair folate metabolism. Supplementing supports cell repair and cardiovascular health."},
+        {"slug": "vitamin-d3", "name": "Vitamin D3", "reason": "Supports bone health and has anti-inflammatory properties. Especially important if using NSAIDs for joint conditions."}
+      ],
+      "caution": [
+        {"slug": "iron", "name": "Iron", "reason": "NSAIDs cause microscopic GI bleeding, increasing iron loss. Iron supplementation may be needed but can worsen GI irritation. Use gentle forms like bisglycinate."},
+        {"slug": "ginger", "name": "Ginger", "reason": "Has anti-inflammatory and mild antiplatelet effects. May increase bleeding risk when combined with NSAIDs, especially at high doses."},
+        {"slug": "white-willow-bark", "name": "White Willow Bark", "reason": "Contains salicin, a natural aspirin-like compound. Combining with NSAIDs stacks anti-inflammatory effects and increases GI bleeding risk."}
+      ],
+      "avoid": [
+        {"slug": "other-nsaid-herbs", "name": "Aspirin or Other NSAIDs", "reason": "Stacking NSAIDs dramatically increases gastric ulcer, GI bleeding, and kidney damage risk. Never combine multiple NSAIDs."},
+        {"slug": "high-dose-vitamin-e", "name": "High-Dose Vitamin E", "reason": "Vitamin E above 400 IU has antiplatelet effects. Combined with NSAIDs, significantly increases risk of bleeding complications."}
+      ],
+      "timing_note": "Take NSAIDs with food to protect the stomach. Omega-3 and curcumin taken regularly may reduce NSAID dependence over time.",
+      "guide_url": ""
+    },
+    "steroids": {
+      "name": "Steroids (Prednisone, etc.)",
+      "category": "Corticosteroid",
+      "safe": [
+        {"slug": "calcium", "name": "Calcium", "reason": "Corticosteroids cause bone loss by impairing calcium absorption and increasing excretion. Calcium citrate supplementation is essential for bone protection."},
+        {"slug": "vitamin-d3", "name": "Vitamin D3", "reason": "Steroids impair vitamin D metabolism and calcium absorption. D3 supplementation (2000-4000 IU) is critical to prevent steroid-induced osteoporosis."},
+        {"slug": "magnesium", "name": "Magnesium", "reason": "Steroids increase urinary magnesium excretion. Supplementing prevents muscle cramps, insomnia, and cardiovascular issues."},
+        {"slug": "zinc", "name": "Zinc", "reason": "Corticosteroids deplete zinc and suppress immune function. Zinc supplementation supports immune health and wound healing during steroid therapy."},
+        {"slug": "vitamin-c", "name": "Vitamin C", "reason": "Steroids increase oxidative stress and impair wound healing. Vitamin C supports collagen synthesis and immune function."},
+        {"slug": "probiotics", "name": "Probiotics", "reason": "Steroids suppress immune function and alter gut flora. Probiotics help maintain microbiome diversity and reduce infection risk."},
+        {"slug": "vitamin-b-complex", "name": "B-Complex", "reason": "Steroids can affect B vitamin metabolism. B-complex supports energy production and nervous system function during steroid therapy."}
+      ],
+      "caution": [
+        {"slug": "potassium", "name": "Potassium", "reason": "Steroids cause potassium loss, but supplementation should be guided by blood testing. Excess potassium can cause cardiac arrhythmias."},
+        {"slug": "melatonin", "name": "Melatonin", "reason": "Steroids often cause insomnia. Melatonin can help but may interact with steroid-related immune suppression. Discuss with your doctor."},
+        {"slug": "dhea", "name": "DHEA", "reason": "Steroids suppress adrenal DHEA production. Replacement may be beneficial but requires hormonal monitoring and medical supervision."}
+      ],
+      "avoid": [
+        {"slug": "high-dose-vitamin-a", "name": "High-Dose Vitamin A", "reason": "Both steroids and high-dose vitamin A affect bone metabolism. Combined use may accelerate bone loss and increase osteoporosis risk."},
+        {"slug": "echinacea", "name": "Echinacea", "reason": "Stimulates immune function, which directly opposes the immunosuppressive purpose of corticosteroid therapy."}
+      ],
+      "timing_note": "Long-term steroid use requires bone density monitoring. Start calcium + D3 supplementation immediately when beginning steroid therapy.",
+      "guide_url": "/medications/corticosteroid-depletion/"
+    },
+    "levothyroxine": {
+      "name": "Levothyroxine (Hypothyroidism)",
+      "category": "Thyroid Hormone",
+      "safe": [
+        {"slug": "selenium", "name": "Selenium", "reason": "Essential cofactor for deiodinase enzymes that convert T4 (levothyroxine) to active T3. Supplementation improves thyroid hormone conversion and reduces autoimmune thyroid inflammation."},
+        {"slug": "zinc", "name": "Zinc", "reason": "Supports TSH production and thyroid hormone receptor binding. Safe to take with levothyroxine when properly timed (4+ hours apart)."},
+        {"slug": "vitamin-d3", "name": "Vitamin D3", "reason": "Hypothyroid patients have significantly higher rates of vitamin D deficiency. Supplementing supports immune regulation and bone health."},
+        {"slug": "vitamin-b12", "name": "Vitamin B12", "reason": "Autoimmune thyroid disease is commonly associated with B12 deficiency. Sublingual B12 does not interfere with levothyroxine absorption."},
+        {"slug": "omega-3", "name": "Omega-3 Fish Oil", "reason": "Reduces inflammation in autoimmune thyroiditis. Supports cardiovascular health, which can be compromised in hypothyroidism."}
+      ],
+      "caution": [
+        {"slug": "iodine", "name": "Iodine", "reason": "Needed for thyroid hormone production, but excessive iodine worsens Hashimoto's disease. Only supplement after testing confirms deficiency."},
+        {"slug": "ashwagandha", "name": "Ashwagandha", "reason": "May stimulate thyroid function and increase T4 levels. Combined with levothyroxine, could cause hyperthyroid symptoms. Requires dose monitoring."},
+        {"slug": "tyrosine", "name": "L-Tyrosine", "reason": "Thyroid hormone precursor. May increase thyroid hormone production beyond what levothyroxine provides. Use only under medical supervision."}
+      ],
+      "avoid": [
+        {"slug": "calcium", "name": "Calcium (within 4 hours)", "reason": "Calcium forms insoluble complexes with levothyroxine in the GI tract, reducing absorption by up to 60%. Must be separated by at least 4 hours."},
+        {"slug": "iron", "name": "Iron (within 4 hours)", "reason": "Iron chelates levothyroxine, reducing its bioavailability by up to 75%. Always take iron at least 4 hours after levothyroxine."},
+        {"slug": "magnesium", "name": "Magnesium (within 4 hours)", "reason": "Magnesium hydroxide and citrate form insoluble complexes with levothyroxine. Must be separated by at least 4 hours for proper absorption."},
+        {"slug": "soy-isoflavones", "name": "Soy Isoflavones", "reason": "Soy inhibits thyroid peroxidase and may reduce levothyroxine absorption. Avoid concentrated soy supplements; separate soy foods by 4 hours."}
+      ],
+      "timing_note": "CRITICAL: Take levothyroxine first thing in the morning on an empty stomach with water only. Wait 30-60 minutes before eating. Wait 4+ hours before taking ANY mineral supplement.",
+      "guide_url": "/medications/thyroid-supplements/"
+    },
+    "adderall": {
+      "name": "Adderall (ADHD)",
+      "category": "Stimulant",
+      "safe": [
+        {"slug": "magnesium", "name": "Magnesium", "reason": "Adderall depletes magnesium and causes muscle tension, jaw clenching, and insomnia. Magnesium glycinate restores levels and reduces stimulant side effects."},
+        {"slug": "omega-3", "name": "Omega-3 Fish Oil", "reason": "Supports brain function and attention. Meta-analyses show omega-3 supplementation improves ADHD symptoms independently and may enhance stimulant medication effects."},
+        {"slug": "l-theanine", "name": "L-Theanine", "reason": "Promotes calm focus by increasing alpha brain waves. Smooths out the stimulant curve without sedation, reducing Adderall-related anxiety and jitteriness."},
+        {"slug": "vitamin-b-complex", "name": "B-Complex", "reason": "Amphetamines increase B vitamin utilization for neurotransmitter synthesis. Supplementing prevents depletion and supports dopamine and norepinephrine production."},
+        {"slug": "vitamin-d3", "name": "Vitamin D3", "reason": "ADHD populations often have lower vitamin D levels. Supplementing supports cognitive function and mood regulation."},
+        {"slug": "zinc", "name": "Zinc", "reason": "Zinc is a cofactor in dopamine synthesis and regulation. Studies show zinc supplementation may improve ADHD symptoms and reduce required stimulant doses."}
+      ],
+      "caution": [
+        {"slug": "vitamin-c", "name": "Vitamin C (timing matters)", "reason": "Vitamin C acidifies urine and increases Adderall excretion, reducing its effectiveness. Take vitamin C in the evening, well after Adderall has been absorbed."},
+        {"slug": "melatonin", "name": "Melatonin", "reason": "Can help with Adderall-related insomnia. Generally safe at low doses (0.5-3 mg) but start low as stimulants may alter melatonin sensitivity."},
+        {"slug": "iron", "name": "Iron", "reason": "Low ferritin is linked to worse ADHD symptoms. Test levels before supplementing; excess iron is harmful. Target ferritin above 30 ng/mL."}
+      ],
+      "avoid": [
+        {"slug": "caffeine", "name": "Caffeine Supplements", "reason": "Stacks stimulant effects with Adderall, increasing heart rate, blood pressure, anxiety, and risk of cardiac events. Avoid concentrated caffeine supplements."},
+        {"slug": "ginseng", "name": "Ginseng", "reason": "Has stimulant properties that compound Adderall's effects on the cardiovascular system. Increases risk of hypertension and tachycardia."},
+        {"slug": "yohimbe", "name": "Yohimbe", "reason": "A potent stimulant that raises norepinephrine levels. Combined with Adderall, significantly increases cardiovascular strain and anxiety."}
+      ],
+      "timing_note": "Take supplements 2+ hours away from Adderall. Take vitamin C in the evening only. Magnesium at bedtime helps with sleep.",
+      "guide_url": "/medications/adderall-supplements/"
+    },
+    "benzodiazepine": {
+      "name": "Benzodiazepines (Xanax, Valium, Klonopin)",
+      "category": "Anxiolytic/Sedative",
+      "safe": [
+        {"slug": "magnesium", "name": "Magnesium", "reason": "Supports nervous system function and may ease anxiety through GABA receptor modulation. Safe at standard doses and does not dangerously amplify benzodiazepine sedation."},
+        {"slug": "vitamin-b-complex", "name": "B-Complex", "reason": "B vitamins support nervous system health and neurotransmitter production. B6 is particularly important for GABA synthesis."},
+        {"slug": "omega-3", "name": "Omega-3 Fish Oil", "reason": "Reduces neuroinflammation and supports brain health. Does not interact with benzodiazepine metabolism and may help with underlying anxiety."},
+        {"slug": "vitamin-d3", "name": "Vitamin D3", "reason": "Low vitamin D is associated with increased anxiety. Supplementing supports mood regulation without sedative interaction."},
+        {"slug": "probiotics", "name": "Probiotics", "reason": "The gut-brain axis influences anxiety levels. Specific probiotic strains (L. rhamnosus, B. longum) may help reduce anxiety without pharmacological sedation."}
+      ],
+      "caution": [
+        {"slug": "l-theanine", "name": "L-Theanine", "reason": "Promotes relaxation and enhances GABA. At standard doses (100-200 mg) likely safe, but may increase sedation. Start with low doses and monitor."},
+        {"slug": "melatonin", "name": "Melatonin", "reason": "Benzodiazepines suppress natural melatonin production. Low-dose melatonin (0.5-1 mg) may help, but higher doses can increase sedation. Consult your doctor."},
+        {"slug": "cbd", "name": "CBD", "reason": "CBD inhibits CYP3A4, the enzyme that metabolizes most benzodiazepines. This can raise benzo blood levels and increase sedation and respiratory depression risk."}
+      ],
+      "avoid": [
+        {"slug": "kava", "name": "Kava", "reason": "A potent GABA agonist that dramatically compounds benzodiazepine sedation. Combining can cause dangerous respiratory depression, extreme sedation, and liver toxicity."},
+        {"slug": "valerian", "name": "Valerian Root", "reason": "Acts on GABA receptors similarly to benzodiazepines. Combined use causes excessive CNS depression, impaired coordination, and respiratory risk."},
+        {"slug": "gaba-supplement", "name": "GABA Supplements", "reason": "Directly targets the same receptor system as benzodiazepines. Stacking compounds sedation and increases risk of dangerous CNS depression."},
+        {"slug": "phenibut", "name": "Phenibut", "reason": "A synthetic GABA analog with potent sedative effects. Combining with benzodiazepines is extremely dangerous and can cause coma or respiratory failure."}
+      ],
+      "timing_note": "Do NOT combine with any sedating supplements. If you currently take sedating supplements and are starting a benzodiazepine, inform your doctor immediately.",
+      "guide_url": ""
+    },
+    "beta-blocker": {
+      "name": "Beta-Blockers (Metoprolol, Atenolol, Propranolol)",
+      "category": "Antihypertensive",
+      "safe": [
+        {"slug": "coq10", "name": "CoQ10", "reason": "Beta-blockers inhibit CoQ10-dependent enzymes, depleting levels by up to 40%. Supplementing reduces fatigue, muscle weakness, and supports heart energy production."},
+        {"slug": "melatonin", "name": "Melatonin", "reason": "Beta-blockers suppress melatonin secretion by blocking pineal beta-1 receptors. Supplementing with 0.5-3 mg restores sleep quality disrupted by beta-blockers."},
+        {"slug": "magnesium", "name": "Magnesium", "reason": "Supports cardiovascular function and may help with beta-blocker side effects like fatigue. Works synergistically for heart rhythm regulation."},
+        {"slug": "vitamin-d3", "name": "Vitamin D3", "reason": "Supports cardiovascular and bone health. Does not interfere with beta-blocker metabolism and addresses common deficiency in cardiac patients."},
+        {"slug": "omega-3", "name": "Omega-3 Fish Oil", "reason": "Provides additional cardiovascular protection alongside beta-blockers. May help with triglyceride levels and inflammatory markers."},
+        {"slug": "vitamin-b-complex", "name": "B-Complex", "reason": "Supports energy production which is often reduced as a side effect of beta-blockers. Helps maintain homocysteine levels for cardiovascular health."}
+      ],
+      "caution": [
+        {"slug": "potassium", "name": "Potassium", "reason": "Some beta-blockers (non-selective types) can increase potassium levels. Supplementing without blood testing can cause dangerous hyperkalemia."},
+        {"slug": "hawthorn", "name": "Hawthorn Berry", "reason": "Has cardiac effects that may enhance beta-blocker action. Could cause excessive heart rate reduction (bradycardia). Use only under medical supervision."},
+        {"slug": "garlic", "name": "Garlic Supplements", "reason": "May enhance blood pressure lowering effects. Monitor for symptoms of hypotension like dizziness when combining."}
+      ],
+      "avoid": [
+        {"slug": "high-dose-calcium", "name": "High-Dose Calcium", "reason": "Excessive calcium can interfere with cardiac electrical conduction. Combined with beta-blockers, may cause severe bradycardia or heart block."},
+        {"slug": "ephedra", "name": "Ephedra/Ma Huang", "reason": "A strong stimulant that directly opposes beta-blocker therapy. Can cause dangerous blood pressure spikes and rebound tachycardia."},
+        {"slug": "bitter-orange", "name": "Bitter Orange (Synephrine)", "reason": "Contains sympathomimetic compounds that counteract beta-blockade. May cause hypertensive crisis when combined with beta-blockers."}
+      ],
+      "timing_note": "Take CoQ10 with meals for absorption. Melatonin at bedtime to restore sleep disrupted by beta-blockers.",
+      "guide_url": ""
+    }
+  }
+}

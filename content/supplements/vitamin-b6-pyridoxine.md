@@ -38,6 +38,8 @@ tags:
 
 warnings: "High-dose B6 (>200 mg daily long-term) can cause peripheral neuropathy (reversible upon discontinuation). Doses >500 mg carry significant neuropathy risk. Pregnant women should avoid high doses (potential teratogenic effects at >100 mg). Those on levodopa should avoid B6 (reduces drug effectiveness). Maximum 100-200 mg daily long-term."
 interactions: "Levodopa/Carbidopa: B6 reduces effectiveness (avoid). Phenothiazines: may reduce B6 levels. Isoniazid: increases B6 requirements. Cycloserine: increases requirements. Estrogen: may increase B6 requirements. Corticosteroids: may increase metabolism."
+aliases:
+  - "/supplements/vitamin-b6/"
 ---
 
 ## What Is Vitamin B6?

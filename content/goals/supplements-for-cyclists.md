@@ -9,6 +9,9 @@ tags:
   - "aerobic capacity"
   - "athletic performance"
   - "recovery"
+aliases:
+  - "/goals/supplements-for-cyclists/"
+  - "/supplements-for-cyclists/"
 ---
 
 ## Cycling Supplement Strategy

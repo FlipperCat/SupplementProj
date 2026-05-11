@@ -125,6 +125,186 @@
       "unsafe_supplements": ["iron", "calcium", "magnesium"],
       "recommendations": "Take levothyroxine on empty stomach. Selenium and zinc optimize thyroid conversion. Avoid minerals within 4 hours.",
       "timing_note": "CRITICAL: Wait 4+ hours after levothyroxine before taking minerals"
+    },
+    "snri": {
+      "name": "SNRIs (Effexor, Cymbalta)",
+      "category": "Antidepressant",
+      "depletions": ["folate", "b6", "magnesium", "sodium"],
+      "safe_supplements": ["omega-3", "magnesium", "b-complex", "vitamin-d3", "probiotics"],
+      "unsafe_supplements": ["st-johns-wort", "5-htp", "sam-e"],
+      "recommendations": "SNRIs affect serotonin and norepinephrine. Omega-3 and magnesium support mood. Avoid serotonergic supplements to prevent serotonin syndrome.",
+      "timing_note": "Consistent timing. Avoid serotonin-boosting supplements"
+    },
+    "tricyclic": {
+      "name": "Tricyclic Antidepressants (Amitriptyline, Nortriptyline)",
+      "category": "Antidepressant",
+      "depletions": ["coq10", "b2", "b6"],
+      "safe_supplements": ["coq10", "b-complex", "magnesium", "omega-3"],
+      "unsafe_supplements": ["st-johns-wort", "5-htp", "sam-e", "melatonin"],
+      "recommendations": "Tricyclics deplete CoQ10 and B vitamins. Supplement CoQ10 and B-complex. Avoid serotonergic supplements.",
+      "timing_note": "Take supplements separately from medication"
+    },
+    "benzodiazepine": {
+      "name": "Benzodiazepines (Xanax, Valium, Klonopin)",
+      "category": "Anxiolytic/Sedative",
+      "depletions": ["melatonin"],
+      "safe_supplements": ["magnesium", "b-complex", "omega-3", "vitamin-d3"],
+      "unsafe_supplements": ["kava", "valerian", "gaba", "l-theanine-high-dose"],
+      "recommendations": "Avoid sedating supplements that compound effects. Magnesium and B vitamins support nervous system health without excessive sedation.",
+      "timing_note": "Do NOT combine with sedating supplements. Consult doctor before any changes"
+    },
+    "insulin": {
+      "name": "Insulin (Type 1/2 Diabetes)",
+      "category": "Antidiabetic",
+      "depletions": ["magnesium", "potassium"],
+      "safe_supplements": ["magnesium", "vitamin-d3", "omega-3", "b-complex", "alpha-lipoic-acid"],
+      "unsafe_supplements": ["chromium-high-dose", "berberine-unsupervised"],
+      "recommendations": "Magnesium and vitamin D support insulin sensitivity. Alpha-lipoic acid may improve glucose uptake. Monitor blood sugar carefully with any supplement changes.",
+      "timing_note": "Monitor blood sugar closely when adding supplements that affect glucose"
+    },
+    "sulfonylurea": {
+      "name": "Sulfonylureas (Glipizide, Glyburide)",
+      "category": "Antidiabetic",
+      "depletions": ["coq10"],
+      "safe_supplements": ["coq10", "magnesium", "vitamin-d3", "omega-3", "chromium"],
+      "unsafe_supplements": ["berberine", "bitter-melon", "gymnema"],
+      "recommendations": "These drugs increase insulin secretion. CoQ10 may be depleted. Avoid supplements that further lower blood sugar without medical supervision.",
+      "timing_note": "Risk of hypoglycemia with blood-sugar-lowering supplements"
+    },
+    "doac": {
+      "name": "DOACs (Eliquis, Xarelto, Pradaxa)",
+      "category": "Anticoagulant",
+      "depletions": [],
+      "safe_supplements": ["vitamin-d3", "magnesium", "probiotics", "b-complex"],
+      "unsafe_supplements": ["vitamin-e-high-dose", "omega-3-high-dose", "garlic", "ginkgo", "curcumin"],
+      "recommendations": "DOACs have fewer interactions than warfarin but still require caution. Avoid supplements with blood-thinning effects.",
+      "timing_note": "CONSULT YOUR DOCTOR before starting any supplements"
+    },
+    "aspirin": {
+      "name": "Aspirin (Low-Dose/Daily)",
+      "category": "Antiplatelet",
+      "depletions": ["vitamin-c", "iron", "folate"],
+      "safe_supplements": ["vitamin-c", "iron", "folate", "probiotics", "coq10"],
+      "unsafe_supplements": ["vitamin-e-high-dose", "omega-3-high-dose", "ginkgo", "garlic"],
+      "recommendations": "Daily aspirin can deplete vitamin C, iron, and folate. Supplement these to offset. Avoid stacking with other blood-thinning supplements.",
+      "timing_note": "Take iron and vitamin C with food, separate from aspirin"
+    },
+    "ace-inhibitor": {
+      "name": "ACE Inhibitors (Lisinopril, Enalapril)",
+      "category": "Antihypertensive",
+      "depletions": ["zinc"],
+      "safe_supplements": ["zinc", "coq10", "magnesium", "omega-3", "vitamin-d3"],
+      "unsafe_supplements": ["potassium", "potassium-sparing-diuretics"],
+      "recommendations": "ACE inhibitors can deplete zinc and increase potassium. Supplement zinc but AVOID potassium supplements to prevent hyperkalemia.",
+      "timing_note": "AVOID potassium supplements unless directed by your doctor"
+    },
+    "arb": {
+      "name": "ARBs (Losartan, Valsartan)",
+      "category": "Antihypertensive",
+      "depletions": ["zinc"],
+      "safe_supplements": ["zinc", "coq10", "magnesium", "omega-3"],
+      "unsafe_supplements": ["potassium"],
+      "recommendations": "Similar to ACE inhibitors, ARBs can raise potassium levels. Supplement zinc. Avoid extra potassium.",
+      "timing_note": "Avoid potassium supplements. Monitor blood pressure with magnesium"
+    },
+    "beta-blocker": {
+      "name": "Beta-Blockers (Metoprolol, Atenolol, Propranolol)",
+      "category": "Antihypertensive",
+      "depletions": ["coq10", "melatonin"],
+      "safe_supplements": ["coq10", "melatonin", "magnesium", "vitamin-d3"],
+      "unsafe_supplements": ["high-dose-calcium"],
+      "recommendations": "Beta-blockers deplete CoQ10 and melatonin. Supplement both to offset fatigue and sleep disruption side effects.",
+      "timing_note": "Take CoQ10 with meals. Melatonin at bedtime"
+    },
+    "diuretic": {
+      "name": "Diuretics (Hydrochlorothiazide, Furosemide)",
+      "category": "Antihypertensive",
+      "depletions": ["potassium", "magnesium", "zinc", "b1", "vitamin-c"],
+      "safe_supplements": ["potassium", "magnesium", "zinc", "b-complex", "coq10"],
+      "unsafe_supplements": ["licorice"],
+      "recommendations": "Diuretics cause significant mineral loss. Potassium and magnesium supplementation is often critical. Monitor electrolytes regularly.",
+      "timing_note": "Take mineral supplements with food, separate from diuretic"
+    },
+    "gabapentin": {
+      "name": "Gabapentin/Pregabalin (Nerve Pain)",
+      "category": "Anticonvulsant",
+      "depletions": ["calcium", "vitamin-d"],
+      "safe_supplements": ["calcium", "vitamin-d3", "magnesium", "b-complex"],
+      "unsafe_supplements": ["kava", "valerian"],
+      "recommendations": "Long-term use can affect bone density. Supplement calcium and vitamin D3. Avoid sedating supplements.",
+      "timing_note": "Take magnesium and calcium 2+ hours from medication"
+    },
+    "opioid": {
+      "name": "Opioid Pain Medications",
+      "category": "Analgesic",
+      "depletions": ["testosterone", "vitamin-d"],
+      "safe_supplements": ["vitamin-d3", "magnesium", "probiotics", "vitamin-c"],
+      "unsafe_supplements": ["kava", "valerian", "kratom"],
+      "recommendations": "Opioids cause constipation and nutrient depletion. Probiotics and magnesium support gut health. Avoid sedating supplements.",
+      "timing_note": "NEVER combine with sedating supplements. Consult doctor"
+    },
+    "oral-diabetes": {
+      "name": "DPP-4 Inhibitors (Januvia, Tradjenta)",
+      "category": "Antidiabetic",
+      "depletions": [],
+      "safe_supplements": ["vitamin-d3", "magnesium", "omega-3", "chromium", "alpha-lipoic-acid"],
+      "unsafe_supplements": ["berberine-unsupervised"],
+      "recommendations": "Fewer depletions than metformin. Vitamin D and magnesium support metabolic health. Monitor glucose with blood-sugar-affecting supplements.",
+      "timing_note": "Monitor blood sugar when adding new supplements"
+    },
+    "sleeping-pill": {
+      "name": "Sleep Medications (Ambien, Lunesta)",
+      "category": "Sedative/Hypnotic",
+      "depletions": [],
+      "safe_supplements": ["magnesium", "b-complex", "vitamin-d3"],
+      "unsafe_supplements": ["melatonin", "valerian", "kava", "gaba", "5-htp"],
+      "recommendations": "Do not stack sedating supplements with prescription sleep aids. Magnesium and B vitamins support natural sleep pathways without dangerous interactions.",
+      "timing_note": "NEVER combine with sedating supplements"
+    },
+    "lithium": {
+      "name": "Lithium (Bipolar Disorder)",
+      "category": "Mood Stabilizer",
+      "depletions": ["thyroid-function", "calcium"],
+      "safe_supplements": ["omega-3", "vitamin-d3", "probiotics"],
+      "unsafe_supplements": ["caffeine-high-dose", "nsaids", "diuretics"],
+      "recommendations": "Lithium has a narrow therapeutic window. Hydration and sodium intake affect levels. Omega-3 may complement mood stabilization. Always consult doctor.",
+      "timing_note": "Maintain consistent hydration and sodium intake. CONSULT DOCTOR for all supplements"
+    },
+    "chemotherapy": {
+      "name": "Chemotherapy Drugs",
+      "category": "Antineoplastic",
+      "depletions": ["glutathione", "b-vitamins", "magnesium", "potassium"],
+      "safe_supplements": [],
+      "unsafe_supplements": ["antioxidants-during-treatment", "st-johns-wort", "green-tea-extract"],
+      "recommendations": "CRITICAL: Do NOT take supplements during chemotherapy without oncologist approval. Antioxidants may interfere with treatment mechanism. Discuss all supplements with your care team.",
+      "timing_note": "ALL supplements require oncologist approval during treatment"
+    },
+    "immunosuppressant": {
+      "name": "Immunosuppressants (Transplant/Autoimmune)",
+      "category": "Immunosuppressant",
+      "depletions": ["magnesium", "potassium", "vitamin-d"],
+      "safe_supplements": ["vitamin-d3", "calcium"],
+      "unsafe_supplements": ["echinacea", "elderberry", "astragalus", "reishi", "turkey-tail"],
+      "recommendations": "AVOID immune-boosting supplements as they can counteract medication. Vitamin D and calcium support bone health affected by immunosuppressants. Consult doctor for all supplements.",
+      "timing_note": "NEVER take immune-stimulating supplements. Consult doctor for all changes"
+    },
+    "maoi": {
+      "name": "MAOIs (Phenelzine, Tranylcypromine)",
+      "category": "Antidepressant",
+      "depletions": ["b6"],
+      "safe_supplements": ["magnesium", "omega-3", "vitamin-d3"],
+      "unsafe_supplements": ["tyramine-rich", "5-htp", "st-johns-wort", "sam-e", "ginseng", "rhodiola"],
+      "recommendations": "MAOIs have severe dietary and supplement restrictions. Avoid tyramine-containing products and serotonergic supplements. Risk of hypertensive crisis.",
+      "timing_note": "STRICT dietary restrictions apply. Consult doctor before ANY supplement"
+    },
+    "antiepileptic": {
+      "name": "Antiepileptic Drugs (Phenytoin, Carbamazepine, Valproate)",
+      "category": "Anticonvulsant",
+      "depletions": ["folate", "vitamin-d", "calcium", "carnitine", "biotin"],
+      "safe_supplements": ["folate", "vitamin-d3", "calcium", "l-carnitine", "biotin"],
+      "unsafe_supplements": ["ginkgo", "evening-primrose-oil"],
+      "recommendations": "Antiepileptics deplete multiple nutrients. Folate, vitamin D, and calcium supplementation is important. L-carnitine may help with valproate side effects.",
+      "timing_note": "Take supplements 2+ hours from medication. Monitor drug levels"
     }
   }
 }

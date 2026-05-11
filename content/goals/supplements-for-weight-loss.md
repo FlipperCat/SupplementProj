@@ -9,6 +9,9 @@ tags:
   - "metabolism"
   - "body composition"
   - "diet support"
+aliases:
+  - "/goals/supplements-for-weight-loss/"
+  - "/supplements-for-weight-loss/"
 ---
 
 ## Why Diets Fail (And How Supplements Actually Help)

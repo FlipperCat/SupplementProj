@@ -13,19 +13,21 @@
 
         <div class="hero-actions">
             <div class="hero-search">
-                <input type="search" placeholder="Search supplements, stacks, or conditions...">
-                <button class="btn btn-primary">Search</button>
+                <input type="search" placeholder="Search supplements, stacks, or conditions..." aria-label="Search supplements, stacks, or conditions">
+                <button class="btn btn-primary" aria-label="Search">Search</button>
             </div>
             <button class="btn btn-primary-outline" id="quiz-trigger-btn">Find Your Stack</button>
         </div>
 
         <div class="category-pills">
-            <a href="/supplement_types/vitamins/" class="category-pill">Vitamins</a>
-            <a href="/supplement_types/minerals/" class="category-pill">Minerals</a>
-            <a href="/supplement_types/nootropics/" class="category-pill">Nootropics</a>
-            <a href="/supplement_types/adaptogens/" class="category-pill">Adaptogens</a>
-            <a href="/supplement_types/amino-acids/" class="category-pill">Amino Acids</a>
-            <a href="/supplement_types/peptides/" class="category-pill">Peptides</a>
+            <a href="/browse/vitamins/" class="category-pill">Vitamins</a>
+            <a href="/browse/minerals/" class="category-pill">Minerals</a>
+            <a href="/browse/nootropics/" class="category-pill">Nootropics</a>
+            <a href="/browse/adaptogens/" class="category-pill">Adaptogens</a>
+            <a href="/browse/amino-acids/" class="category-pill">Amino Acids</a>
+            <a href="/browse/antioxidants/" class="category-pill">Antioxidants</a>
+            <a href="/peptides/" class="category-pill">Peptides</a>
+            <a href="/interaction-matrix/" class="category-pill">Interaction Matrix</a>
         </div>
     </div>
 </section>
@@ -144,6 +146,31 @@
                     <span class="card-category">Goal Guide</span>
                     <h3 class="card-title"><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
                     <p class="card-excerpt">{{ .Summary | truncate 150 }}</p>
+                </div>
+            </article>
+            {{ end }}
+        </div>
+    </section>
+
+    <!-- Peptides -->
+    <section class="home-section">
+        <div class="section-header">
+            <h2>Peptide Guides</h2>
+            <a href="/peptides/" class="view-all">
+                View All
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                </svg>
+            </a>
+        </div>
+
+        <div class="card-grid">
+            {{ range first 3 (where .Site.RegularPages "Section" "peptides") }}
+            <article class="card">
+                <div class="card-content">
+                    <span class="card-category">Peptide</span>
+                    <h3 class="card-title"><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
+                    <p class="card-excerpt">{{ .Params.tagline | default .Summary | truncate 150 }}</p>
                 </div>
             </article>
             {{ end }}

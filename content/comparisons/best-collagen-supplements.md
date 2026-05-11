@@ -9,6 +9,8 @@ tags:
   - "supplement comparison"
   - "beauty supplements"
   - "joint health"
+aliases:
+  - "/comparisons/best-collagen-supplements/"
 ---
 
 ## Best Collagen Supplements: Form Matters More Than Brand

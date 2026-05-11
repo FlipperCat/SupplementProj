@@ -10,6 +10,8 @@ key_points:
   - "Combined lifestyle + supplement protocol can increase intracellular GSH by 40-60% in 8-12 weeks"
 related_supplements: ["NAC", "Cysteine", "Glycine", "Selenium", "Milk Thistle", "Alpha-Lipoic Acid"]
 tags: ["optimization", "detoxification", "immunity", "antioxidant", "glutathione"]
+aliases:
+  - "/guides/boost-glutathione/"
 ---
 
 ## What Is Glutathione & Why It Matters

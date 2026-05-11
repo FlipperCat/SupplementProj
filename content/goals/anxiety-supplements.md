@@ -8,6 +8,9 @@ tags:
   - "stress"
   - "panic"
   - "nervous-system"
+aliases:
+  - "/goals/anxiety-supplements/"
+  - "/anxiety-supplements/"
 ---
 
 ## Why You're Anxious (And How Supplements Can Help)

@@ -9,6 +9,8 @@ tags:
   - "supplement timeline"
   - "sleep improvement"
   - "insomnia"
+aliases:
+  - "/timelines/sleep-supplement-timeline/"
 ---
 
 ## Introduction: Sleep Supplement Timelines Vary

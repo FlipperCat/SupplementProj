@@ -9,6 +9,9 @@ tags:
   - "libido"
   - "testosterone support"
   - "sexual performance"
+aliases:
+  - "/goals/supplements-for-male-sexual-health/"
+  - "/supplements-for-male-sexual-health/"
 ---
 
 ## The Honest Reality About Supplements and Sexual Function

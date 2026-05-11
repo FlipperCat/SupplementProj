@@ -10,6 +10,8 @@ key_points:
   - "Deficiency symptoms often appear subtly—fatigue, mood changes, poor recovery—making optimization valuable for biohackers"
 related_supplements: ["multivitamin", "B-complex", "vitamin-D3", "vitamin-C", "folate", "methylcobalamin"]
 tags: ["vitamins", "micronutrients", "education", "biohacking", "optimization"]
+aliases:
+  - "/guides/essential-vitamins/"
 ---
 
 ## Introduction: Why Vitamins Matter

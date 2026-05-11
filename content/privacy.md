@@ -5,7 +5,7 @@ description: "How we handle your information"
 
 ## Privacy Policy
 
-*Last updated: January 2024*
+*Last updated: March 2026*
 
 ### Information We Collect
 
@@ -14,25 +14,17 @@ description: "How we handle your information"
 - Technical information (browser type, device type)
 - IP addresses (anonymized)
 
-**Information You Provide**
-- Email address (if you subscribe to our newsletter)
-- Contact form submissions
-
 ### How We Use Information
 
 We use collected information to:
 - Improve our content and website
 - Understand what content is most helpful
 - Respond to your inquiries
-- Send newsletters (only if you opt in)
 
 ### Third-Party Services
 
 **Analytics**
 We use privacy-focused analytics to understand site usage. We do not sell or share personal data.
-
-**Affiliate Links**
-When you click affiliate links, those retailers may collect their own data according to their privacy policies.
 
 ### Cookies
 
@@ -47,7 +39,6 @@ You can disable cookies in your browser settings.
 You have the right to:
 - Access information we have about you
 - Request deletion of your information
-- Opt out of communications
 - Disable cookies
 
 ### Children's Privacy
@@ -60,4 +51,4 @@ We may update this policy periodically. The current version will always be avail
 
 ### Contact
 
-Questions about privacy? Contact us at [contact@supplementguide.co](mailto:contact@supplementguide.co)
+Questions about privacy? Contact us at [contact@vitawise.life](mailto:contact@vitawise.life)

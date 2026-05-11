@@ -19,7 +19,7 @@
         <div class="search-card">
           <h3>Search Your Medication</h3>
           <div class="medication-search">
-            <input type="text" id="medication-search" placeholder="e.g., Adderall, Metformin, SSRIs..." autocomplete="off">
+            <input type="text" id="medication-search" placeholder="e.g., Adderall, Metformin, SSRIs..." autocomplete="off" aria-label="Search medications">
             <div id="search-results" class="search-results"></div>
           </div>
 
@@ -574,7 +574,7 @@ document.addEventListener('DOMContentLoaded', async function() {
     container.innerHTML = selectedMeds.map(m => `
       <span class="med-pill">
         ${m.name}
-        <button onclick="window.removeMedication('${m.id}')">&times;</button>
+        <button onclick="window.removeMedication('${m.id}')" aria-label="Remove ${m.name}">&times;</button>
       </span>
     `).join('');
   }

@@ -43,6 +43,8 @@ tags:
 
 warnings: "PQQ is generally well-tolerated at recommended doses. Those on blood thinners should consult healthcare provider as PQQ may have mild anticoagulant properties. Pregnant and breastfeeding women should avoid due to limited safety data. May cause insomnia if taken late in the day due to energy-enhancing effects."
 interactions: "May enhance effects of anticoagulant medications. Synergistic with CoQ10 and other mitochondrial support compounds. No significant negative drug interactions documented at typical doses."
+aliases:
+  - "/supplements/pqq/"
 ---
 
 ## What Is PQQ?

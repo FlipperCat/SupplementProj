@@ -22,38 +22,72 @@ enableGitInfo = false
 [taxonomies]
   category = "categories"
   tag = "tags"
-  supplement_type = "supplement_types"
-  goal = "goals"
-  medication = "medications"
 
 [menu]
   [[menu.main]]
-    name = "Stack Analyzer"
-    url = "/analyzer/"
-    weight = 1
-  [[menu.main]]
+    identifier = "supplements"
     name = "Supplements"
     url = "/supplements/"
+    weight = 1
+  [[menu.main]]
+    identifier = "peptides"
+    name = "Peptides"
+    url = "/peptides/"
     weight = 2
   [[menu.main]]
+    identifier = "stacks"
     name = "Stacks"
     url = "/stacks/"
     weight = 3
   [[menu.main]]
-    name = "Medications"
-    url = "/medications/"
-    weight = 4
-  [[menu.main]]
+    identifier = "goals"
     name = "Goals"
     url = "/goals/"
+    weight = 4
+  [[menu.main]]
+    identifier = "guides"
+    name = "Guides"
+    url = "/guides/"
     weight = 5
   [[menu.main]]
-    name = "Nutrients 101"
-    url = "/guides/"
+    identifier = "tools"
+    name = "Tools"
+    url = "#"
     weight = 6
   [[menu.main]]
-    name = "Reference"
-    url = "/reference/"
+    identifier = "analyzer"
+    name = "Stack Analyzer"
+    url = "/analyzer/"
+    weight = 1
+    parent = "tools"
+  [[menu.main]]
+    identifier = "interaction-matrix"
+    name = "Interaction Matrix"
+    url = "/interaction-matrix/"
+    weight = 2
+    parent = "tools"
+  [[menu.main]]
+    identifier = "cost-calculator"
+    name = "Cost Calculator"
+    url = "/cost-calculator/"
+    weight = 3
+    parent = "tools"
+  [[menu.main]]
+    identifier = "med-checker"
+    name = "Medication Checker"
+    url = "/medication-checker/"
+    weight = 4
+    parent = "tools"
+  [[menu.main]]
+    identifier = "comparison"
+    name = "Supplement Comparison"
+    url = "/supplement-comparison/"
+    weight = 5
+    parent = "tools"
+  [[menu.main]]
+    identifier = "blog"
+    name = "Blog"
+    url = "/blog/"
     weight = 7
 
 [markup]
@@ -80,3 +114,7 @@ enableGitInfo = false
   comparisons = "/comparisons/:slug/"
   guides = "/guides/:slug/"
   timelines = "/timelines/:slug/"
+  interactions = "/interactions/:slug/"
+  blog = "/blog/:slug/"
+  browse = "/browse/:slug/"
+  peptides = "/peptides/:slug/"

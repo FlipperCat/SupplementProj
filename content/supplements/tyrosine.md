@@ -45,6 +45,9 @@ tags:
 warnings: "THYROID INTERACTIONS: L-Tyrosine may increase thyroid hormone synthesis and conversion. Those with hyperthyroidism or taking thyroid medications (levothyroxine, etc.) should monitor thyroid levels closely and consult their endocrinologist. L-Tyrosine can increase blood pressure and heart rate in sensitive individuals (catecholamine effects). Those with hypertension, arrhythmias, or taking blood pressure medications should use cautiously. NOT recommended for those with phenylketonuria (PKU) or tyrosinemia without medical supervision. May increase anxiety in very sensitive individuals (dopamine excess). Avoid late-day dosing (stimulant effect, may disrupt sleep). May interact with monoamine oxidase, increasing norepinephrine/dopamine. Long-term high-dose use may deplete other neurotransmitters — cycling recommended. Pregnant and breastfeeding women should consult healthcare provider. Do not combine with stimulant medications without doctor approval."
 
 interactions: "Potential interaction with thyroid medications (levothyroxine, etc.) — may enhance thyroid hormone effects; requires monitoring. Additive stimulant effects with caffeine, amphetamines, and other dopaminergic drugs — risk of excessive stimulation. Interaction with MAOIs or other monoamine-modulating drugs — increased norepinephrine/dopamine. May potentiate effects of blood pressure medications (paradoxically) or elevate blood pressure independently. Caution with stimulant ADHD medications (methylphenidate, amphetamines). Those on psychiatric medications should inform doctor. Generally safe with most supplements; avoid excessive stimulant stacking."
+aliases:
+  - "/supplements/tyrosine/"
+  - "/supplements/l-tyrosine/"
 ---
 
 ## What Is L-Tyrosine?

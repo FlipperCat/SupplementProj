@@ -1,0 +1,34 @@
+{{ define "main" }}
+
+<div class="container">
+    <header class="section-header" style="flex-direction: column; align-items: flex-start; gap: var(--spacing-md); margin-bottom: var(--spacing-2xl);">
+        <h1>{{ .Title }}</h1>
+        {{ with .Params.description }}
+        <p style="color: var(--color-text-light); max-width: 700px;">{{ . }}</p>
+        {{ end }}
+    </header>
+
+    <div class="card-grid">
+        {{ range .Pages.ByDate.Reverse }}
+        <article class="card blog-card">
+            <div class="card-content">
+                <div>
+                    <span class="card-category">{{ with .Params.blog_type }}{{ . }}{{ else }}Article{{ end }}</span>
+                    <span class="card-date">{{ .Date.Format "January 2, 2006" }}</span>
+                </div>
+                <h3 class="card-title"><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
+                <p class="card-excerpt">{{ .Params.tagline | default .Summary | truncate 180 }}</p>
+                {{ with .Params.tags }}
+                <div class="tag-list" style="margin-top: var(--spacing-sm);">
+                    {{ range first 3 . }}
+                    <a href="/tags/{{ . | urlize }}/" class="tag">{{ . }}</a>
+                    {{ end }}
+                </div>
+                {{ end }}
+            </div>
+        </article>
+        {{ end }}
+    </div>
+</div>
+
+{{ end }}

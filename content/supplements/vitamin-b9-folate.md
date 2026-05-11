@@ -38,6 +38,9 @@ tags:
 
 warnings: "High-dose folic acid may mask B12 deficiency (pernicious anemia symptoms masked while neurological damage continues). Folate can worsen anxiety in some individuals if not balanced with B12. Those with MTHFR mutations may respond better to methylfolate (5-MTHF) vs folic acid. Can increase seizure risk in epilepsy at high doses. Pregnant women require 600-800 mcg (folate critical for fetal development)."
 interactions: "Methotrexate: antagonizes folate (cancer drug). Anticonvulsants: increase folate metabolism. Sulfasalazine: reduces folate absorption. Some antibiotics: may reduce gut folate synthesis. Birth control pills: increase folate requirements. NSAIDs: may reduce folate absorption. Interactions usually manageable with higher supplementation."
+aliases:
+  - "/supplements/folate/"
+  - "/supplements/vitamin-b9/"
 ---
 
 ## What Is Vitamin B9?

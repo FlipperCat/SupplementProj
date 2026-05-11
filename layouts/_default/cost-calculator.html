@@ -1,0 +1,188 @@
+{{ define "main" }}
+<div class="container">
+    <header class="supplement-header" style="text-align: center; margin-bottom: var(--spacing-2xl);">
+        <h1 class="supplement-title">Supplement Cost Calculator</h1>
+        <p class="supplement-subtitle">Build your stack and see what it costs per month and year</p>
+    </header>
+
+    <div class="calculator-container">
+        <!-- Search & Add -->
+        <div class="calculator-search">
+            <input type="text" id="calc-search" placeholder="Search supplements to add (e.g., magnesium, vitamin D3, omega-3)..." autocomplete="off" aria-label="Search supplements to add to cost calculator">
+            <div class="calculator-suggestions" id="calc-suggestions"></div>
+        </div>
+
+        <!-- Current Stack -->
+        <div class="calculator-stack" id="calc-stack">
+            <div class="calculator-empty" id="calc-empty">
+                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" style="margin-bottom: var(--spacing-md); opacity: 0.4;">
+                    <circle cx="12" cy="12" r="10"/><path d="M12 8v8M8 12h8"/>
+                </svg>
+                <p>Search above to add supplements to your stack</p>
+            </div>
+        </div>
+
+        <!-- Totals -->
+        <div class="calculator-totals" id="calc-totals" style="display: none;">
+            <div class="calculator-total-row">
+                <span>Supplements in stack</span>
+                <span id="calc-count">0</span>
+            </div>
+            <div class="calculator-total-row">
+                <span>Monthly cost</span>
+                <span id="calc-monthly">$0</span>
+            </div>
+            <div class="calculator-total-row total">
+                <span>Yearly cost</span>
+                <span id="calc-yearly">$0</span>
+            </div>
+            <div style="margin-top: var(--spacing-lg); text-align: center;">
+                <a href="/stack-generator/" class="btn btn-primary">Get a Personalized Stack</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Related Tools -->
+    <section class="home-section" style="margin-top: var(--spacing-3xl);">
+        <div class="section-header">
+            <h2>Related Tools</h2>
+        </div>
+        <div class="card-grid">
+            <article class="card">
+                <div class="card-content">
+                    <span class="card-category">Tool</span>
+                    <h3 class="card-title"><a href="/stack-generator/">Stack Generator</a></h3>
+                    <p class="card-excerpt">Get a custom supplement stack based on your goals and experience level.</p>
+                </div>
+            </article>
+            <article class="card">
+                <div class="card-content">
+                    <span class="card-category">Tool</span>
+                    <h3 class="card-title"><a href="/analyzer/">Stack Analyzer</a></h3>
+                    <p class="card-excerpt">Analyze your current stack for interactions, timing conflicts, and synergies.</p>
+                </div>
+            </article>
+            <article class="card">
+                <div class="card-content">
+                    <span class="card-category">Guide</span>
+                    <h3 class="card-title"><a href="/guides/budget-supplements/">Budget Supplement Guide</a></h3>
+                    <p class="card-excerpt">How to build an effective supplement stack on a tight budget.</p>
+                </div>
+            </article>
+        </div>
+    </section>
+</div>
+
+<script>
+(function() {
+    var stackData = null;
+    var myStack = [];
+    var searchInput = document.getElementById('calc-search');
+    var suggestionsEl = document.getElementById('calc-suggestions');
+    var stackEl = document.getElementById('calc-stack');
+    var emptyEl = document.getElementById('calc-empty');
+    var totalsEl = document.getElementById('calc-totals');
+
+    fetch('/data/stack-generator-data.json')
+        .then(function(r) { return r.json(); })
+        .then(function(data) { stackData = data.supplements; });
+
+    searchInput.addEventListener('input', function() {
+        var q = this.value.toLowerCase().trim();
+        if (!stackData || q.length < 1) {
+            suggestionsEl.style.display = 'none';
+            return;
+        }
+        var keys = Object.keys(stackData);
+        var matches = keys.filter(function(k) {
+            return (stackData[k].name.toLowerCase().indexOf(q) !== -1 || k.indexOf(q) !== -1)
+                && myStack.indexOf(k) === -1;
+        }).slice(0, 8);
+
+        if (matches.length === 0) {
+            suggestionsEl.style.display = 'none';
+            return;
+        }
+
+        suggestionsEl.innerHTML = matches.map(function(k) {
+            var s = stackData[k];
+            return '<div class="calculator-suggestion" data-key="' + k + '">' +
+                s.name + ' <span style="color:#8B9A8C;font-size:0.8rem">— $' + s.cost_per_month + '/mo · ' + s.dosage + '</span></div>';
+        }).join('');
+        suggestionsEl.style.display = 'block';
+    });
+
+    suggestionsEl.addEventListener('click', function(e) {
+        var item = e.target.closest('.calculator-suggestion');
+        if (!item) return;
+        addToStack(item.dataset.key);
+        searchInput.value = '';
+        suggestionsEl.style.display = 'none';
+    });
+
+    document.addEventListener('click', function(e) {
+        if (!e.target.closest('.calculator-search')) {
+            suggestionsEl.style.display = 'none';
+        }
+    });
+
+    function addToStack(key) {
+        if (myStack.indexOf(key) !== -1 || !stackData[key]) return;
+        myStack.push(key);
+        render();
+    }
+
+    function removeFromStack(key) {
+        myStack = myStack.filter(function(k) { return k !== key; });
+        render();
+    }
+
+    function render() {
+        if (myStack.length === 0) {
+            emptyEl.style.display = 'block';
+            totalsEl.style.display = 'none';
+            // Remove item elements but keep empty placeholder
+            var items = stackEl.querySelectorAll('.calculator-item');
+            items.forEach(function(el) { el.remove(); });
+            return;
+        }
+
+        emptyEl.style.display = 'none';
+        totalsEl.style.display = 'block';
+
+        // Remove old items
+        var items = stackEl.querySelectorAll('.calculator-item');
+        items.forEach(function(el) { el.remove(); });
+
+        var totalMonthly = 0;
+
+        myStack.forEach(function(key) {
+            var s = stackData[key];
+            totalMonthly += s.cost_per_month;
+
+            var el = document.createElement('div');
+            el.className = 'calculator-item';
+            el.innerHTML =
+                '<div class="calculator-item-info">' +
+                    '<div class="calculator-item-name"><a href="/supplements/' + key + '/" style="color:inherit;text-decoration:none">' + s.name + '</a></div>' +
+                    '<div class="calculator-item-detail">' + s.dosage + ' · ' + s.form + ' · ' + s.timing + '</div>' +
+                '</div>' +
+                '<div class="calculator-item-cost">$' + s.cost_per_month + '/mo</div>' +
+                '<button class="calculator-item-remove" data-key="' + key + '" aria-label="Remove">&times;</button>';
+            stackEl.appendChild(el);
+        });
+
+        document.getElementById('calc-count').textContent = myStack.length;
+        document.getElementById('calc-monthly').textContent = '$' + totalMonthly;
+        document.getElementById('calc-yearly').textContent = '$' + (totalMonthly * 12);
+
+        // Bind remove buttons
+        stackEl.querySelectorAll('.calculator-item-remove').forEach(function(btn) {
+            btn.addEventListener('click', function() {
+                removeFromStack(this.dataset.key);
+            });
+        });
+    }
+})();
+</script>
+{{ end }}

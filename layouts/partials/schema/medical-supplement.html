@@ -1,0 +1,69 @@
+{{/*
+  MedicalSupplement schema.org JSON-LD.
+  Pulls from page front matter and the matching entry in data/supplements.json
+  (lookup by .File.BaseFileName, which is the slug, e.g. "vitamin-d3").
+
+  Emits a structured-data block compliant with schema.org/MedicalSupplement
+  (subtype of Substance). Safe-by-construction: every interpolated string is
+  passed through `jsonify` to escape quotes/newlines.
+*/}}
+{{- $slug := .File.BaseFileName -}}
+{{- $entry := index .Site.Data.supplements.supplements -}}
+{{- $match := dict -}}
+{{- range $.Site.Data.supplements.supplements -}}
+  {{- if eq .id $slug -}}{{- $match = . -}}{{- end -}}
+{{- end -}}
+
+{{- $name := .Title -}}
+{{- $desc := "" -}}
+{{- with .Params.tagline -}}{{- $desc = . -}}{{- else -}}{{- $desc = (.Summary | plainify | truncate 200) -}}{{- end -}}
+
+{{- /* recommendedIntake: prefer data file (structured dosage), fallback to front matter string */ -}}
+{{- $intake := "" -}}
+{{- with $match.dosage -}}
+  {{- $intake = printf "%v %s daily (typical); range %v-%v %s" .typical .unit .min .max .unit -}}
+{{- else -}}
+  {{- with $.Params.dosage -}}{{- $intake = . -}}{{- end -}}
+{{- end -}}
+
+{{- /* activeIngredient: front matter `form` (e.g. "D3 (Cholecalciferol)"), fallback to name */ -}}
+{{- $active := $name -}}
+{{- with .Params.form -}}{{- $active = . -}}{{- end -}}
+
+{{- /* mechanismOfAction is optional — only emit if author provided it */ -}}
+{{- $moa := .Params.mechanism_of_action -}}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "MedicalSupplement",
+  "name": {{ $name | jsonify | safeJS }},
+  "description": {{ $desc | jsonify | safeJS }},
+  "url": {{ .Permalink | jsonify | safeJS }},
+  "activeIngredient": {{ $active | jsonify | safeJS }},
+  {{- with $intake }}
+  "recommendedIntake": {{ . | jsonify | safeJS }},
+  {{- end }}
+  {{- with $moa }}
+  "mechanismOfAction": {{ . | jsonify | safeJS }},
+  {{- end }}
+  "medicineSystem": "WesternConventional",
+  {{- with $match.benefits }}
+  "indication": [
+    {{- range $i, $b := . }}{{ if $i }},{{ end }}
+    { "@type": "MedicalIndication", "name": {{ $b | jsonify | safeJS }} }
+    {{- end }}
+  ],
+  {{- end }}
+  {{- with $match.conflicts }}{{ if gt (len .) 0 }}
+  "interactingDrug": [
+    {{- range $i, $c := . }}{{ if $i }},{{ end }}
+    { "@type": "Drug", "name": {{ $c | jsonify | safeJS }} }
+    {{- end }}
+  ],
+  {{- end }}{{ end }}
+  "manufacturer": {
+    "@type": "Organization",
+    "name": {{ (.Site.Params.author | default .Site.Title) | jsonify | safeJS }}
+  }
+}
+</script>

@@ -12,8 +12,9 @@
       <li>What to combine vs separate</li>
       <li>Morning vs evening optimization</li>
     </ul>
-    <form class="exit-popup-form" action="#" method="POST" data-form="exit-intent">
-      <input type="email" name="email" placeholder="Your email address" required autocomplete="email">
+    <form class="exit-popup-form" name="exit-intent" method="POST" data-netlify="true" data-form="exit-intent">
+      <input type="hidden" name="form-name" value="exit-intent">
+      <input type="email" name="email" placeholder="Your email address" required autocomplete="email" aria-label="Email address">
       <button type="submit" class="btn btn-primary btn-block">Send Me the Guide</button>
     </form>
     <p class="exit-popup-disclaimer">Free download. No spam.</p>

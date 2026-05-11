@@ -9,6 +9,8 @@ tags:
   - "gut health"
   - "dysbiosis"
   - "infection recovery"
+aliases:
+  - "/medications/antibiotic-supplements/"
 ---
 
 ## Antibiotics & Nutritional Consequences

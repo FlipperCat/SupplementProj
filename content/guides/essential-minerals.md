@@ -10,6 +10,8 @@ key_points:
   - "Many minerals compete for absorption; mineral ratios matter as much as absolute intake"
 related_supplements: ["electrolyte-blend", "magnesium-glycinate", "zinc-picolinate", "iron-bisglycinate", "mineral-complex"]
 tags: ["minerals", "electrolytes", "micronutrients", "biohacking", "optimization"]
+aliases:
+  - "/guides/essential-minerals/"
 ---
 
 ## Introduction: Why Minerals Matter

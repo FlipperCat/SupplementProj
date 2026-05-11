@@ -12,6 +12,9 @@ tags:
   - "bone health"
   - "mood support"
   - "energy"
+aliases:
+  - "/goals/supplements-for-women-in-their-40s/"
+  - "/supplements-for-women-in-their-40s/"
 ---
 
 ## Supplements for Women in Their 40s

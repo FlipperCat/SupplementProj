@@ -19,6 +19,9 @@ tags:
   - "testosterone support"
   - "energy"
   - "longevity"
+aliases:
+  - "/goals/supplements-for-men-in-their-50s/"
+  - "/supplements-for-men-in-their-50s/"
 ---
 
 ## Supplements for Men in Their 50s

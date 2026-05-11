@@ -8,6 +8,8 @@ tags:
   - "fish oil"
   - "supplement comparison"
   - "brand comparison"
+aliases:
+  - "/comparisons/best-omega3-supplements/"
 ---
 
 ## Omega-3 Supplement Comparison: Which Brand Wins?

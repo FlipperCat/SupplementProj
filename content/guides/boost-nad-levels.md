@@ -10,6 +10,8 @@ key_points:
   - "Direct precursors (NMN, NR) are more bioavailable than indirect approaches (niacin, tryptophan)"
 related_supplements: ["NMN", "NR", "Niacin", "Tryptophan", "Resveratrol", "Metformin"]
 tags: ["optimization", "biohacking", "longevity", "energy", "NAD+"]
+aliases:
+  - "/guides/boost-nad-levels/"
 ---
 
 ## What Is NAD+ & Why It Matters

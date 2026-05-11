@@ -10,6 +10,9 @@ tags:
   - "longevity"
   - "cognitive health"
   - "prostate health"
+aliases:
+  - "/goals/supplements-for-men-60s/"
+  - "/supplements-for-men-60s/"
 ---
 
 ## Men in Their 60s+: Critical Health Transitions

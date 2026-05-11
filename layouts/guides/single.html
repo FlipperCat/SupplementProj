@@ -40,6 +40,7 @@
             </div>
             {{ end }}
 
+            {{/*
             <div class="affiliate-cta">
                 <h4>Shop Supplements</h4>
                 <p>Get quality Nutrilite supplements</p>
@@ -47,11 +48,18 @@
                     Shop Nutrilite
                 </a>
             </div>
+            */}}
 
             <div class="sidebar-box">
                 <h4>On This Page</h4>
                 <ul class="toc-list"></ul>
             </div>
+
+            <!-- Lead Magnet (disabled — no email capture) -->
+            {{/* partial "lead-magnet.html" . */}}
+
+            <!-- Newsletter (disabled — no email capture) -->
+            {{/* partial "newsletter.html" . */}}
 
             {{ with .Params.related_supplements }}
             <div class="sidebar-box">

@@ -37,6 +37,8 @@ tags:
 
 warnings: "May increase bleeding time. Stop 1-2 weeks before surgery. Those on blood thinners should consult a doctor. Choose quality brands to avoid oxidation and contaminants."
 interactions: "May enhance effects of blood thinners (warfarin, aspirin). Can lower blood pressure. May interact with immunosuppressants."
+aliases:
+  - "/supplements/omega-3/"
 ---
 
 **What it is:** Omega-3 fatty acids (EPA and DHA) are essential polyunsaturated fats crucial for brain structure, cardiovascular protection, and inflammation resolution. Universally recommended across health goals, they're among the most evidence-backed supplements for supporting cognitive longevity, mood stability, and whole-body resilience.

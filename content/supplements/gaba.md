@@ -44,6 +44,8 @@ tags:
 warnings: "CRITICAL: Oral GABA has poor blood-brain barrier penetration — bioavailability is extremely limited (5-10%). Many users report no effect. Sublingual, liposomal, and PharmaGABA forms have better absorption. Do NOT combine with alcohol or benzodiazepines without medical supervision. May cause drowsiness in sensitive individuals. Pregnant women should consult healthcare provider. Long-term supplementation may downregulate GABA receptors — cycling recommended. Never abruptly stop if taking for anxiety without medical guidance."
 
 interactions: "Severe interaction with alcohol and benzodiazepines — combined CNS depression. Potential additive effects with barbiturates, anticonvulsants, and other sedative medications. May potentiate antidepressants. May increase effects of blood pressure medications. Those on psychiatric medications should consult doctor. Does not interact significantly with supplements."
+aliases:
+  - "/supplements/gaba/"
 ---
 
 ## What Is GABA?

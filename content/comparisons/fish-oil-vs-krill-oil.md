@@ -9,6 +9,8 @@ tags:
   - "krill-oil"
   - "algae-oil"
   - "comparison"
+aliases:
+  - "/comparisons/fish-oil-vs-krill-oil/"
 ---
 
 ## Why Your Omega-3 Source Matters

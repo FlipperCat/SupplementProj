@@ -29,6 +29,8 @@ tags:
   - "Vyvanse"
   - "medication support"
 warnings: "Always consult your prescribing physician before adding supplements to your medication regimen. Never adjust medication doses on your own. These suggestions are educational, not medical advice."
+aliases:
+  - "/medications/adderall-supplements/"
 ---
 
 ## Understanding Stimulant Medications

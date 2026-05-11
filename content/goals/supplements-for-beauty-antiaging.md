@@ -10,6 +10,9 @@ tags:
   - "hair growth"
   - "beauty"
   - "biotin"
+aliases:
+  - "/goals/supplements-for-beauty-antiaging/"
+  - "/supplements-for-beauty-antiaging/"
 ---
 
 ## The Beauty Supplement Reality

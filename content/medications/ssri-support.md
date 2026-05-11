@@ -29,6 +29,8 @@ tags:
   - "medication support"
   - "mental health"
 warnings: "CRITICAL: Some supplements can cause dangerous serotonin syndrome when combined with SSRIs. Never add serotonin-affecting supplements without physician approval. This information is educational — always consult your prescribing doctor."
+aliases:
+  - "/medications/ssri-support/"
 ---
 
 ## Understanding SSRI Therapy

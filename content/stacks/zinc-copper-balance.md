@@ -18,6 +18,8 @@ tags:
   - "essential minerals"
   - "safety"
 warnings: "Excess copper is also harmful. Those with Wilson's disease should avoid copper supplements. Always maintain proper zinc-to-copper ratio when supplementing either mineral."
+aliases:
+  - "/stacks/zinc-copper-balance/"
 ---
 
 ## Why Balance Matters

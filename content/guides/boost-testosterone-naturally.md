@@ -10,6 +10,8 @@ key_points:
   - "Targeted supplementation amplifies lifestyle gains 1.5-2x; combined protocol can increase total T by 20-40% in 8-12 weeks"
 related_supplements: ["Tongkat Ali", "Fenugreek", "Tribulus", "Zinc", "Vitamin D", "Ashwagandha"]
 tags: ["optimization", "hormone", "performance", "strength", "libido"]
+aliases:
+  - "/guides/boost-testosterone-naturally/"
 ---
 
 ## What Is Testosterone & Why It Matters

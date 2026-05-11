@@ -1,0 +1,64 @@
+{{ define "main" }}
+
+<div class="container">
+    <article class="supplement-page">
+
+        <div class="supplement-content">
+
+            <header class="supplement-header">
+                <span class="supplement-category">{{ with .Params.blog_type }}{{ . }}{{ else }}Blog{{ end }} &middot; {{ .Date.Format "January 2, 2006" }}</span>
+                <h1 class="supplement-title">{{ .Title }}</h1>
+                {{ with .Params.tagline }}
+                <p class="supplement-subtitle">{{ . }}</p>
+                {{ end }}
+            </header>
+
+            <div class="article-content">
+                {{ .Content }}
+            </div>
+
+            {{ with .Params.tags }}
+            <div class="tag-list" style="margin-top: var(--spacing-2xl);">
+                {{ range . }}
+                <a href="/tags/{{ . | urlize }}/" class="tag">{{ . }}</a>
+                {{ end }}
+            </div>
+            {{ end }}
+
+        </div>
+
+        <aside class="supplement-sidebar">
+
+            {{/* partial "lead-magnet.html" . */}}
+
+            {{/* partial "newsletter.html" . */}}
+
+            <!-- Related Posts -->
+            {{ $related := first 5 (where (where .Site.RegularPages "Section" "blog") ".Title" "!=" .Title) }}
+            {{ with $related }}
+            <div class="sidebar-box">
+                <h4>More Articles</h4>
+                <ul>
+                    {{ range . }}
+                    <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+                    {{ end }}
+                </ul>
+            </div>
+            {{ end }}
+
+            <div class="sidebar-box">
+                <h4>Tools</h4>
+                <ul>
+                    <li><a href="/analyzer/">Stack Analyzer</a></li>
+                    <li><a href="/stack-generator/">Stack Generator</a></li>
+                    <li><a href="/cost-calculator/">Cost Calculator</a></li>
+                    <li><a href="/medication-checker/">Medication Checker</a></li>
+                </ul>
+            </div>
+
+        </aside>
+
+    </article>
+</div>
+
+{{ end }}

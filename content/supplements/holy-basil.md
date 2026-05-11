@@ -23,6 +23,8 @@ synergies: ["rhodiola-rosea", "ashwagandha", "magnesium-glycinate", "l-theanine"
 tags: ["adaptogen", "stress-management", "nootropic", "anxiety-relief", "cortisol-modulation", "hpa-axis", "biohacker-essential"]
 warnings: "May interact with immunosuppressants; avoid during pregnancy; not recommended for individuals with hormone-sensitive conditions; may have mild estrogenic activity"
 interactions: "Potential additive effects with sedatives and antidepressants; may enhance effects of corticosteroids"
+aliases:
+  - "/supplements/holy-basil/"
 ---
 
 ## What Is Holy Basil (Tulsi)?

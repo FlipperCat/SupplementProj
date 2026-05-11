@@ -10,6 +10,8 @@ key_points:
   - "The post-workout window (first 60-90 minutes) is when muscles are most nutrient-sensitive; strategic timing magnifies results"
 related_supplements: ["Whey/Plant Protein", "Leucine", "Creatine", "Beta-Alanine", "BCAAs", "Magnesium", "Zinc", "Carbohydrates", "Antioxidants"]
 tags: ["body systems", "muscle recovery", "athletic performance", "strength training", "adaptation"]
+aliases:
+  - "/guides/muscle-recovery-nutrients/"
 ---
 
 ## How Muscle Recovery Works

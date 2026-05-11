@@ -8,6 +8,8 @@ tags:
   - "forms"
   - "absorption"
   - "comparison"
+aliases:
+  - "/comparisons/magnesium-forms/"
 ---
 
 ## Why Magnesium Form Matters

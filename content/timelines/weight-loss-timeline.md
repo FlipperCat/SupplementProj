@@ -9,6 +9,8 @@ tags:
   - "supplement timeline"
   - "body composition"
   - "metabolism"
+aliases:
+  - "/timelines/weight-loss-timeline/"
 ---
 
 ## Introduction: Weight Loss Timelines Are Complex

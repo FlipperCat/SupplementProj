@@ -9,6 +9,8 @@ tags:
   - "sleep improvement"
   - "stress relief"
   - "recovery"
+aliases:
+  - "/timelines/magnesium-supplementation-timeline/"
 ---
 
 ## Introduction: Setting Realistic Expectations

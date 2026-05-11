@@ -9,6 +9,9 @@ tags:
   - "shoulder health"
   - "lung function"
   - "athletic performance"
+aliases:
+  - "/goals/supplements-for-swimmers/"
+  - "/supplements-for-swimmers/"
 ---
 
 ## Swimming Supplement Strategy

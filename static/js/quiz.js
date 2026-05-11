@@ -114,7 +114,6 @@ class SupplementQuiz {
       quizModal.addEventListener('click', (e) => {
         if (e.target === quizModal) this.closeQuiz();
       });
-      this.showStep(0);
     }
   }
 
@@ -233,32 +232,32 @@ class SupplementQuiz {
       sleep: {
         essential: ['magnesium', 'l-theanine', 'melatonin'],
         recommended: ['glycine', 'apigenin', 'reishi-mushroom'],
-        advanced: ['5-htp', 'gaba']
+        advanced: ['5-htp', 'gaba', 'dsip']
       },
       energy: {
         essential: ['b-complex', 'iron', 'coq10'],
         recommended: ['cordyceps-mushroom', 'rhodiola', 'vitamin-d3'],
-        advanced: ['nmn', 'creatine', 'pqq']
+        advanced: ['nmn', 'creatine', 'pqq', 'mots-c']
       },
       focus: {
         essential: ['omega-3', 'lions-mane', 'l-theanine'],
         recommended: ['bacopa-monnieri', 'alpha-gpc', 'caffeine'],
-        advanced: ['cdp-choline', 'phosphatidylserine']
+        advanced: ['cdp-choline', 'phosphatidylserine', 'semax']
       },
       muscle: {
         essential: ['creatine', 'protein', 'vitamin-d3'],
         recommended: ['magnesium', 'zinc', 'beta-alanine'],
-        advanced: ['hmb', 'citrulline']
+        advanced: ['hmb', 'citrulline', 'cjc-1295', 'ipamorelin']
       },
       longevity: {
         essential: ['vitamin-d3', 'omega-3'],
         recommended: ['coq10', 'nac', 'curcumin'],
-        advanced: ['nmn', 'resveratrol', 'urolithin-a']
+        advanced: ['nmn', 'resveratrol', 'urolithin-a', 'epithalon', 'ghk-cu']
       },
       stress: {
         essential: ['magnesium'],
         recommended: ['ashwagandha', 'l-theanine', 'vitamin-b-complex'],
-        advanced: ['rhodiola', 'holy-basil']
+        advanced: ['rhodiola', 'holy-basil', 'selank']
       },
       immune: {
         essential: ['vitamin-d3', 'zinc', 'vitamin-c'],
@@ -268,7 +267,7 @@ class SupplementQuiz {
       recovery: {
         essential: ['magnesium', 'omega-3', 'creatine'],
         recommended: ['cordyceps-mushroom', 'collagen', 'glutamine'],
-        advanced: ['hmb', 'citrulline']
+        advanced: ['hmb', 'citrulline', 'bpc-157', 'tb-500']
       }
     };
 
@@ -331,13 +330,19 @@ class SupplementQuiz {
     const modal = document.getElementById('quiz-modal');
     const container = document.getElementById('quiz-container');
 
+    // Mark quiz as completed so it doesn't show again
+    setCookie('quiz-completed', 'true', 365);
+
     // Build supplement cards
-    const supplementCards = recommendations.supplements.map(id => `
-      <div class="result-supplement-card">
+    const peptideSlugs = ['bpc-157','tb-500','cjc-1295','ipamorelin','semax','selank',
+                          'ghk-cu','epithalon','dsip','mots-c','aod-9604','pt-141'];
+    const supplementCards = recommendations.supplements.map(id => {
+      const section = peptideSlugs.includes(id) ? 'peptides' : 'supplements';
+      return `<div class="result-supplement-card">
         <h4>${id}</h4>
-        <a href="/supplements/${id}/" class="btn btn-small">Learn More</a>
-      </div>
-    `).join('');
+        <a href="/${section}/${id}/" class="btn btn-small">Learn More</a>
+      </div>`;
+    }).join('');
 
     container.innerHTML = `
       <div class="quiz-header">
@@ -361,7 +366,7 @@ class SupplementQuiz {
 
     document.getElementById('quiz-close-btn')?.addEventListener('click', () => this.closeQuiz());
     document.getElementById('view-full-stack')?.addEventListener('click', () => {
-      window.location.href = `/stacks/personalized/?goal=${recommendations.goal}&supplements=${recommendations.supplements.join(',')}`;
+      window.location.href = `/analyzer/?goal=${recommendations.goal}&supplements=${recommendations.supplements.join(',')}`;
     });
     document.getElementById('restart-quiz')?.addEventListener('click', () => {
       this.responses = {};
@@ -389,11 +394,12 @@ class SupplementQuiz {
 
 // Initialize on page load
 document.addEventListener('DOMContentLoaded', () => {
-  // Show quiz on landing unless dismissed via cookie
   const dismissed = getCookie('quiz-dismissed');
+  const completed = getCookie('quiz-completed');
   const quizBtn = document.getElementById('quiz-trigger-btn');
   const quizModal = document.getElementById('quiz-modal');
 
+  // "Find Your Stack" button always works (manual trigger)
   if (quizBtn) {
     quizBtn.addEventListener('click', () => {
       const quiz = new SupplementQuiz();
@@ -401,7 +407,8 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  if (quizModal && !dismissed && window.location.pathname === '/') {
+  // Auto-show quiz ONLY on homepage, ONLY if never completed or dismissed
+  if (quizModal && !dismissed && !completed && window.location.pathname === '/') {
     const quiz = new SupplementQuiz();
     quiz.openQuiz();
   }

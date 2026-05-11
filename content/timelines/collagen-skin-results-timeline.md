@@ -9,6 +9,8 @@ tags:
   - "anti-aging"
   - "beauty timeline"
   - "collagen benefits"
+aliases:
+  - "/timelines/collagen-skin-results-timeline/"
 ---
 
 ## Collagen Skin Timeline: What to Expect

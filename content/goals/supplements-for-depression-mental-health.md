@@ -9,6 +9,9 @@ tags:
   - "anxiety"
   - "mood support"
   - "neurotransmitter"
+aliases:
+  - "/goals/supplements-for-depression-mental-health/"
+  - "/supplements-for-depression-mental-health/"
 ---
 
 ## Depression & Mental Health: Supplement Strategy

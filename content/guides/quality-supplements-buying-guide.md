@@ -9,6 +9,8 @@ tags:
   - "certifications"
   - "standards"
   - "buying guide"
+aliases:
+  - "/guides/quality-supplements-buying-guide/"
 ---
 
 ## The Supplement Quality Crisis

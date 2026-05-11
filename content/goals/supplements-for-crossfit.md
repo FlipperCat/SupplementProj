@@ -9,6 +9,9 @@ tags:
   - "power training"
   - "conditioning"
   - "athletic performance"
+aliases:
+  - "/goals/supplements-for-crossfit/"
+  - "/supplements-for-crossfit/"
 ---
 
 ## CrossFit Supplement Strategy

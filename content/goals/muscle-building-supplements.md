@@ -8,6 +8,9 @@ tags:
   - "strength"
   - "recovery"
   - "performance"
+aliases:
+  - "/goals/muscle-building-supplements/"
+  - "/muscle-building-supplements/"
 ---
 
 ## Why Your Muscles Aren't Growing (And How Supplements Can Help)

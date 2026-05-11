@@ -33,6 +33,8 @@ tags:
   - "Diuretics"
   - "medication support"
 warnings: "Always consult your cardiologist or primary care physician before adding supplements, especially regarding potassium (critical safety concern with certain BP medications). Never adjust medication doses without professional guidance. Some supplements significantly interact with blood pressure medications. These suggestions are educational, not medical advice."
+aliases:
+  - "/medications/blood-pressure-supplements/"
 ---
 
 ## Medical Disclaimer

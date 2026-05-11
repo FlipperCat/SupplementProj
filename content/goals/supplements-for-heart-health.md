@@ -9,6 +9,9 @@ tags:
   - "blood pressure"
   - "cholesterol"
   - "longevity"
+aliases:
+  - "/goals/supplements-for-heart-health/"
+  - "/supplements-for-heart-health/"
 ---
 
 ## Understanding Cardiovascular Health

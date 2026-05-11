@@ -9,6 +9,8 @@ tags:
   - "affordable"
   - "fat loss"
   - "cost-effective"
+aliases:
+  - "/guides/budget-weight-loss-supplements/"
 ---
 
 ## Weight Loss on a Budget: It's Possible

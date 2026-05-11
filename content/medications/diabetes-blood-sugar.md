@@ -9,6 +9,8 @@ tags:
   - "insulin"
   - "glucose control"
   - "medication interactions"
+aliases:
+  - "/medications/diabetes-blood-sugar/"
 ---
 
 ## Diabetes: Supplement Strategy

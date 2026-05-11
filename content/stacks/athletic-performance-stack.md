@@ -77,6 +77,8 @@ warnings:
   - "Not recommended for those with kidney disease without medical supervision"
   - "Excessive protein may stress kidneys if dehydrated; drink adequate water"
   - "May cause GI distress if not taken with sufficient water; stay hydrated"
+aliases:
+  - "/stacks/athletic-performance-stack/"
 ---
 
 ## Overview and Goals

@@ -10,6 +10,9 @@ tags:
   - "menopause"
   - "bone health"
   - "hormonal balance"
+aliases:
+  - "/goals/supplements-for-women-50s/"
+  - "/supplements-for-women-50s/"
 ---
 
 ## Women in Their 50s: Critical Health Transitions

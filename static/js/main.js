@@ -1,6 +1,34 @@
 // Supplement Guide - Main JavaScript
 
+// Dark Mode - runs before DOMContentLoaded to prevent flash
+(function() {
+    const saved = localStorage.getItem('theme');
+    if (saved === 'dark' || (!saved && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+        document.documentElement.setAttribute('data-theme', 'dark');
+    }
+})();
+
 document.addEventListener('DOMContentLoaded', function() {
+
+    // Dark Mode Toggle
+    const themeToggle = document.getElementById('theme-toggle');
+    if (themeToggle) {
+        themeToggle.addEventListener('click', function() {
+            const current = document.documentElement.getAttribute('data-theme');
+            const next = current === 'dark' ? 'light' : 'dark';
+            document.documentElement.setAttribute('data-theme', next);
+            localStorage.setItem('theme', next);
+        });
+    }
+
+    // Mobile Dropdown Toggles
+    document.querySelectorAll('.mobile-dropdown-toggle').forEach(function(btn) {
+        btn.addEventListener('click', function() {
+            const items = this.nextElementSibling;
+            items.classList.toggle('active');
+            this.classList.toggle('active');
+        });
+    });
     // Mobile Menu Toggle
     const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
     const mobileNav = document.querySelector('.mobile-nav');
@@ -313,38 +341,54 @@ document.addEventListener('DOMContentLoaded', function() {
             const formType = this.dataset.form;
             const email = this.querySelector('input[type="email"]').value;
             const leadMagnet = this.dataset.magnet || '';
-
-            // Track form submission
-            if (typeof gtag !== 'undefined') {
-                gtag('event', 'form_submit', {
-                    'event_category': 'Lead Generation',
-                    'event_label': formType,
-                    'lead_magnet': leadMagnet
-                });
-            }
-
-            // Show success message
             const button = this.querySelector('button[type="submit"]');
             const originalText = button.textContent;
-            button.textContent = 'Thank you!';
+
+            button.textContent = 'Sending...';
             button.disabled = true;
 
-            // If exit popup, close it
-            if (formType === 'exit-intent') {
-                setTimeout(() => {
-                    exitPopup.style.display = 'none';
-                }, 1500);
-            }
+            // Submit to Netlify Forms
+            const formData = new FormData(this);
+            fetch('/', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+                body: new URLSearchParams(formData).toString()
+            })
+            .then(function(response) {
+                if (!response.ok) throw new Error('Form submission failed');
 
-            // TODO: Send to email service
-            console.log('Form submitted:', { formType, email, leadMagnet });
+                // Track form submission
+                if (typeof gtag !== 'undefined') {
+                    gtag('event', 'form_submit', {
+                        'event_category': 'Lead Generation',
+                        'event_label': formType,
+                        'lead_magnet': leadMagnet
+                    });
+                }
 
-            // Reset form
-            setTimeout(() => {
-                this.reset();
-                button.textContent = originalText;
+                button.textContent = 'Thank you!';
+
+                // If exit popup, close it
+                if (formType === 'exit-intent') {
+                    setTimeout(function() {
+                        exitPopup.style.display = 'none';
+                    }, 1500);
+                }
+
+                // Reset form
+                setTimeout(function() {
+                    form.reset();
+                    button.textContent = originalText;
+                    button.disabled = false;
+                }, 3000);
+            })
+            .catch(function() {
+                button.textContent = 'Error - Try Again';
                 button.disabled = false;
-            }, 3000);
+                setTimeout(function() {
+                    button.textContent = originalText;
+                }, 3000);
+            });
         });
     });
 

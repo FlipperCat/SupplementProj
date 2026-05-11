@@ -18,6 +18,8 @@ tags:
   - "bone health"
   - "immunity"
 warnings: "Those with kidney disease should consult a doctor before taking either supplement. Test vitamin D levels before high-dose supplementation."
+aliases:
+  - "/stacks/magnesium-vitamin-d/"
 ---
 
 ## Why Take These Together?

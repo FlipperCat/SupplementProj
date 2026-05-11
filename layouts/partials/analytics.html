@@ -1,4 +1,4 @@
-{{ with .Site.Params.analytics.ga4 }}
+{{ with .Site.Params.analytics.ga4 }}{{ if and (not (hasPrefix . "G-XXX")) (not (hasPrefix . "YOUR")) }}
 <!-- Google Analytics 4 -->
 <script async src="https://www.googletagmanager.com/gtag/js?id={{ . }}"></script>
 <script>
@@ -61,4 +61,4 @@
     }
   });
 </script>
-{{ end }}
+{{ end }}{{ end }}

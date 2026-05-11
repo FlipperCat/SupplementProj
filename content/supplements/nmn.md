@@ -23,6 +23,8 @@ synergies: ["resveratrol", "quercetin", "coq10", "alpha-lipoic-acid", "pqq", "fi
 tags: ["nad+", "longevity", "anti-aging", "mitochondrial", "sirtuin", "metabolic", "cellular-energy"]
 warnings: "Not recommended during active cancer treatment without oncologist approval; may affect blood sugar levels; avoid combining with high-dose niacin (NAD+ precursor competition)"
 interactions: "May enhance effects of diabetes medications; theoretical interaction with chemotherapy agents (NAD+ affects cancer cell metabolism); may reduce efficacy of immunosuppressants through enhanced immune function"
+aliases:
+  - "/supplements/nmn/"
 ---
 
 ## What Is NMN?

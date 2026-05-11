@@ -31,6 +31,8 @@ tags:
   - "CoQ10 depletion"
   - "medication support"
 warnings: "Always consult your cardiologist or prescribing physician before adding supplements. Never discontinue statin therapy without medical guidance. Some supplements may affect cholesterol levels. These suggestions are educational, not medical advice."
+aliases:
+  - "/medications/statin-supplements/"
 ---
 
 ## Medical Disclaimer

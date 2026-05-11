@@ -9,6 +9,8 @@ tags:
   - "Hashimoto's"
   - "thyroid medication"
   - "metabolic health"
+aliases:
+  - "/medications/thyroid-medication-supplements/"
 ---
 
 ## Thyroid Health & Supplementation

@@ -9,6 +9,9 @@ tags:
   - "mobility"
   - "inflammation"
   - "cartilage"
+aliases:
+  - "/goals/supplements-for-joint-health/"
+  - "/supplements-for-joint-health/"
 ---
 
 ## Joint Health: From Inside Out

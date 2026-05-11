@@ -40,6 +40,8 @@ tags:
 
 warnings: "May cause mild GI upset, headaches, or fatigue initially. Those with sulfur sensitivity or taking blood thinners should consult a doctor. Start with lower doses and increase gradually."
 interactions: "May enhance effects of blood thinners. Potential interactions with other sulfur-containing supplements or medications. Generally well-tolerated with minimal drug interactions."
+aliases:
+  - "/supplements/msm/"
 ---
 
 ## What Is MSM?

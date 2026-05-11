@@ -9,6 +9,9 @@ tags:
   - "beauty"
   - "energy"
   - "skin health"
+aliases:
+  - "/goals/supplements-for-women-20s/"
+  - "/supplements-for-women-20s/"
 ---
 
 ## Women in Their 20s: The Foundation Years

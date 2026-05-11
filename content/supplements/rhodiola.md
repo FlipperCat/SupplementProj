@@ -27,6 +27,8 @@ tags:
   - athletic performance
 warnings: Generally very safe. May cause mild insomnia if taken late. Not with stimulants before bed.
 interactions: Compatible with most supplements. Synergistic with other adaptogens.
+aliases:
+  - "/supplements/rhodiola/"
 ---
 
 **What it is:** Rhodiola rosea is a traditional adaptogenic herb containing rosavins and salidroside that support stress resilience, reduce fatigue, and enhance cognitive and physical performance. Used for decades in Russian and Scandinavian medicine, modern research validates its fatigue-reducing and stress-supporting properties.

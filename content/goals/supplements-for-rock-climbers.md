@@ -9,6 +9,9 @@ tags:
   - "tendon health"
   - "athletic performance"
   - "injury prevention"
+aliases:
+  - "/goals/supplements-for-rock-climbers/"
+  - "/supplements-for-rock-climbers/"
 ---
 
 ## Rock Climbing Supplement Strategy

@@ -31,6 +31,8 @@ tags:
   - "B12 deficiency"
   - "medication support"
 warnings: "Always consult your prescribing physician or endocrinologist before adding supplements. Never adjust medication doses on your own. Monitor blood sugar as some supplements may affect glucose levels. These suggestions are educational, not medical advice."
+aliases:
+  - "/medications/metformin-supplements/"
 ---
 
 ## Medical Disclaimer

@@ -9,6 +9,8 @@ tags:
   - "apixaban"
   - "anticoagulants"
   - "medication interactions"
+aliases:
+  - "/medications/blood-thinner-supplements/"
 ---
 
 ## Blood Thinners & Supplements: Safety Guide

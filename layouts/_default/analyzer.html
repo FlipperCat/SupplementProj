@@ -12,7 +12,7 @@
             <div class="input-card">
                 <h3>Your Stack</h3>
                 <div class="supplement-search">
-                    <input type="text" id="supplement-search" placeholder="Search supplements..." autocomplete="off">
+                    <input type="text" id="supplement-search" placeholder="Search supplements..." autocomplete="off" aria-label="Search supplements">
                     <div id="search-results" class="search-results"></div>
                 </div>
                 <div id="selected-supplements" class="selected-supplements">
@@ -514,7 +514,7 @@ document.addEventListener('DOMContentLoaded', async function() {
         container.innerHTML = selectedSupplements.map(s => `
             <span class="selected-pill">
                 ${s.name}
-                <button onclick="window.removeSupplement('${s.id}')">&times;</button>
+                <button onclick="window.removeSupplement('${s.id}')" aria-label="Remove ${s.name}">&times;</button>
             </span>
         `).join('');
     }

@@ -34,8 +34,9 @@
     <h4>{{ $title }}</h4>
     <p>{{ $description }}</p>
   </div>
-  <form class="lead-magnet-form" action="#" method="POST" data-form="lead-magnet" data-magnet="{{ $leadMagnet }}">
-    <input type="email" name="email" placeholder="Your email" required autocomplete="email">
+  <form class="lead-magnet-form" name="lead-magnet" method="POST" data-netlify="true" data-form="lead-magnet" data-magnet="{{ $leadMagnet }}">
+    <input type="hidden" name="form-name" value="lead-magnet">
+    <input type="email" name="email" placeholder="Your email" required autocomplete="email" aria-label="Email address for free guide">
     <input type="hidden" name="lead_magnet" value="{{ $leadMagnet }}">
     <button type="submit" class="btn btn-secondary">Get Free Guide</button>
   </form>

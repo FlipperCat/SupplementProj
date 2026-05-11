@@ -1,0 +1,49 @@
+{{ define "main" }}
+
+<div class="container">
+    <header class="section-header" style="flex-direction: column; align-items: flex-start; gap: var(--spacing-md); margin-bottom: var(--spacing-2xl);">
+        <h1>{{ .Title }}</h1>
+        {{ with .Description }}
+        <p style="color: var(--color-text-light); max-width: 700px;">{{ . }}</p>
+        {{ end }}
+    </header>
+
+    {{ with .Params.intro }}
+    <div class="article-content" style="max-width: 800px; margin-bottom: var(--spacing-2xl);">
+        {{ . | markdownify }}
+    </div>
+    {{ end }}
+
+    {{ $types := .Params.supplement_types }}
+    {{ $supplements := where .Site.RegularPages "Section" "supplements" }}
+    {{ $peptides := where .Site.RegularPages "Section" "peptides" }}
+    {{ $allItems := union $supplements $peptides }}
+
+    <div class="card-grid">
+        {{ range $allItems }}
+            {{ $stype := .Params.supplement_type }}
+            {{ $match := false }}
+            {{ range $types }}
+                {{ if eq (lower .) (lower $stype) }}
+                    {{ $match = true }}
+                {{ end }}
+            {{ end }}
+            {{ if $match }}
+            <article class="card supplement-card">
+                <div class="card-content">
+                    <span class="card-category">{{ .Params.supplement_type }}</span>
+                    <h3 class="card-title"><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
+                    <p class="card-excerpt">{{ .Params.tagline | default .Summary | truncate 120 }}</p>
+                    <div class="card-meta">
+                        {{ with .Params.dosage }}
+                        <span class="meta-item">{{ . }}</span>
+                        {{ end }}
+                    </div>
+                </div>
+            </article>
+            {{ end }}
+        {{ end }}
+    </div>
+</div>
+
+{{ end }}

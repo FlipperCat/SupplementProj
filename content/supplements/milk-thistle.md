@@ -40,6 +40,8 @@ tags:
 
 warnings: "Generally very safe with few side effects. Those with hormone-sensitive conditions should consult a doctor due to mild estrogenic effects. Rare allergic reactions in individuals sensitive to plants in the Asteraceae family (ragweed, daisies, marigolds)."
 interactions: "May interact with medications metabolized by CYP2C9 and CYP3A4. Can affect blood sugar medications and may enhance the effects of some diabetes drugs. May interact with hormone therapies and some chemotherapy agents."
+aliases:
+  - "/supplements/milk-thistle/"
 ---
 
 ## What Is Milk Thistle?

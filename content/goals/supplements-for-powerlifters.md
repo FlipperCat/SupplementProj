@@ -9,6 +9,9 @@ tags:
   - "muscle gain"
   - "athletic performance"
   - "recovery"
+aliases:
+  - "/goals/supplements-for-powerlifters/"
+  - "/supplements-for-powerlifters/"
 ---
 
 ## Powerlifting Supplement Strategy

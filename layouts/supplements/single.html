@@ -1,3 +1,7 @@
+{{ define "head" }}
+{{ partial "schema/medical-supplement.html" . }}
+{{ end }}
+
 {{ define "main" }}
 
 <div class="container">
@@ -149,7 +153,8 @@
         <!-- Sidebar -->
         <aside class="supplement-sidebar">
 
-            <!-- Where to Buy -->
+            <!-- Where to Buy (disabled — no affiliate link yet) -->
+            {{/*
             <div class="affiliate-cta">
                 <h4>Where to Buy</h4>
                 <p>Shop quality Nutrilite supplements</p>
@@ -157,9 +162,10 @@
                     Shop Nutrilite
                 </a>
             </div>
+            */}}
 
-            <!-- Lead Magnet -->
-            {{ partial "lead-magnet.html" . }}
+            <!-- Lead Magnet (disabled — no email capture) -->
+            {{/* partial "lead-magnet.html" . */}}
 
             <!-- Table of Contents -->
             <div class="sidebar-box">
@@ -183,8 +189,8 @@
             </div>
             {{ end }}
 
-            <!-- Newsletter Signup -->
-            {{ partial "newsletter.html" . }}
+            <!-- Newsletter Signup (disabled — no email capture) -->
+            {{/* partial "newsletter.html" . */}}
 
             <!-- Check Your Stack CTA -->
             <div class="sidebar-box analyzer-cta">

@@ -27,6 +27,8 @@ tags:
   - immune support
 warnings: Generally very safe. May cause mild insomnia if taken too late. Not for those on stimulants before bed.
 interactions: Compatible with most supplements. Synergistic with other adaptogens.
+aliases:
+  - "/supplements/ginseng/"
 ---
 
 **What it is:** Ginseng (Panax ginseng/Asian ginseng) is a traditional adaptogenic herb containing ginsenosides that support energy, cognitive function, immune resilience, and stress adaptation. Used in traditional Chinese medicine for millennia, extensive modern research validates its multiple health benefits.

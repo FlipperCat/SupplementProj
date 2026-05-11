@@ -9,6 +9,8 @@ tags:
   - "apixaban"
   - "dabigatran"
   - "anticoagulants"
+aliases:
+  - "/medications/anticoagulant-supplements/"
 ---
 
 ## Critical: Blood Thinners + Supplements

@@ -40,6 +40,8 @@ tags:
 
 warnings: "Generally very safe. May increase homocysteine temporarily if folate/B12 deficient. Those with kidney disease should consult doctor. May interact with medications affecting methylation."
 interactions: "Works synergistically with B vitamins. Compatible with most supplements and medications."
+aliases:
+  - "/supplements/tmg-betaine/"
 ---
 
 **What it is:** TMG (Trimethylglycine), also called betaine, is a methyl donor compound essential for methylation—a fundamental biochemical process underlying detoxification, energy production, and gene expression. TMG supplementation supports cardiovascular health via homocysteine reduction, cellular energy, and longevity pathways.

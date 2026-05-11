@@ -10,6 +10,9 @@ tags:
   - "prenatal"
   - "fertility"
   - "lactation"
+aliases:
+  - "/goals/supplements-for-pregnancy/"
+  - "/supplements-for-pregnancy/"
 ---
 
 ## The Pregnancy & Postpartum Supplementation Framework

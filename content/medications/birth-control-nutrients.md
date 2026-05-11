@@ -29,6 +29,8 @@ tags:
   - "nutrient depletion"
   - "contraceptives"
 warnings: "This information applies to combined oral contraceptives (estrogen + progestin). Effects may differ for progestin-only methods. Always consult your healthcare provider about supplement interactions with birth control."
+aliases:
+  - "/medications/birth-control-nutrients/"
 ---
 
 ## How Birth Control Affects Nutrients

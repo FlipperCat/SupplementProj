@@ -49,6 +49,8 @@ tags:
 warnings: "Generally well-tolerated. May cause mild GI upset, restlessness, or fishy body odor at high doses. Individuals with seizure disorders should consult a physician (theoretical concern about lowering seizure threshold). May increase thyroid hormone activity. Not recommended for individuals with hypothyroidism without medical supervision. Avoid late-evening dosing due to stimulating effects."
 
 interactions: "May enhance the effects of blood thinners (Warfarin). Potential interaction with thyroid medications (Levothyroxine). May interact with acenocoumarol and other anticoagulants. Synergistic with chemotherapy drugs (consult oncologist). May potentiate effects of acetylcholinesterase inhibitors."
+aliases:
+  - "/supplements/acetyl-l-carnitine/"
 ---
 
 ## What Is Acetyl-L-Carnitine (ALCAR)?

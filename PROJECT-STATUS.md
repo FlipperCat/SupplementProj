@@ -1,135 +1,82 @@
-# Supplement Guide Project Status
+# Supplement Guide (VitaWise) — Project Status
+
+**Site:** https://vitawise.life/ (Hugo + Netlify)
+**Repo:** https://github.com/FlipperCat/SupplementProj
+**Last refreshed:** 2026-05-11
 
 ## Overview
-Evidence-based supplement information website built with Hugo, deployed on Netlify.
+Evidence-based supplement information site. Hugo static site, Netlify auto-deploy on push to `main`. Affiliate model via Amway/Nutrilite.
 
-## Deployment Info
-- **GitHub Repo**: https://github.com/FlipperCat/SupplementProj
-- **Netlify URL**: Check Netlify dashboard for your `.netlify.app` subdomain
-- **Framework**: Hugo static site generator
+## Current content
 
-## Current Content (as of March 8, 2026)
+| Section | Count |
+|---|---|
+| Supplements (markdown) | 119 |
+| Supplements in Stack Analyzer JSON | **119 — full parity** ✅ |
+| Comparisons | 24 |
+| Goals | 7 |
+| Guides | 16 |
+| Medications | 17 (added NSAIDs + antihistamines 2026-05-11) |
+| Stacks | 11 |
+| Timelines | 4 |
 
-| Section | Count | Description |
-|---------|-------|-------------|
-| Supplements | 83 | Individual supplement articles |
-| Comparisons | 6 | Head-to-head comparisons |
-| Goals | 7 | Goal-based recommendations (sleep, energy, etc.) |
-| Guides | 16 | Educational content (vitamins 101, etc.) |
-| Medications | 8 | Medication interaction guides |
-| Stacks | 11 | Pre-built supplement stacks |
-| Timelines | 4 | Results timeline guides |
+The Stack Analyzer DB is in 1:1 sync with the markdown catalog — each entry has the full schema (`id`, `name`, `type`, `category`, `dosage{min/typical/max/unit}`, `timing`, `withFood`, `withFat`, `benefits`, `goals`, `synergies`, `conflicts`, `absorptionCompetitors`, `depletedBy`, `amwayProduct`, `resultsTimeline`).
 
-**Total Pages**: ~135 content files
+**JSON richness:**
+- 119/119 have `synergies` populated
+- 42/119 have `notes` field (added on the 6 new entries 2026-05-11)
+- 23/119 are linked to a specific Amway product (affiliate)
+- **15/119 have `conflicts` populated** (added 6 new with conflicts 2026-05-11) ← still thinnest area
 
-## Stack Analyzer Tool
-Located at `/analyzer/` - Interactive tool that:
-- Searches supplements from JSON database
-- Shows synergies between supplements
-- Identifies timing conflicts
-- Recommends supplements based on goals
-- Generates optimal timing schedule
+## Uncommitted git state ⚠️
 
-**Data file**: `data/supplements.json` (584 lines, 24 supplements)
+There's a substantial uncommitted backlog from the 2026-03-16 VitaWise cleanup that has never been pushed:
 
-## REMAINING TASKS
+- 37 untracked files
+- 26 modified files
+- 12 deleted files
 
-### High Priority
+Run `git status` to inspect. Likely safe to commit + push as one cleanup batch — but eyeball the deletions first.
 
-1. **Sync Stack Analyzer JSON** (CRITICAL)
-   - Current JSON has only 24 supplements
-   - Need to add all 83 supplements to `data/supplements.json`
-   - Each entry needs: id, name, type, dosage, timing, benefits, goals, synergies, conflicts
+## Outstanding work
 
-2. **Update Interactions Data**
-   - Add more synergies to `interactions.synergies` array
-   - Add more conflicts to `interactions.conflicts` array
-   - Update `timingSchedule` for all new supplements
+### High value
+1. **Push the VitaWise cleanup commit.** 75 files of pending changes have been sitting since 2026-03-16. Site is live but the local repo and GitHub have drifted.
+2. **Fill in `conflicts` arrays.** Only 9/113 entries flag drug or supplement conflicts. The Stack Analyzer's value is in catching these — gap is real.
+3. **Replace placeholder analytics IDs** in `hugo.toml` (`G-XXXXXXXXXX`, `YOUR_GSC_VERIFICATION_ID`).
 
-3. **Push Changes to GitHub**
-   - 22 new supplement articles were created but not committed
-   - Run: `git add . && git commit -m "Add 22 new supplement articles" && git push`
+### Medium
+4. Add structured data (`MedicalSupplement` schema.org) on supplement pages — no other supplement site does this well, and rich-results eligibility is real SEO leverage.
+5. Add more entries to the `medications/` interaction guides (currently 8).
+6. Quality pass on the 77 entries without a `notes` field — short clinical note where warranted.
 
-### Medium Priority
+### Optional / low priority
+- More comparison articles (only 6 right now).
+- Email capture / newsletter integration.
+- `interactions.synergies` / `interactions.conflicts` top-level arrays in JSON for cross-supplement metadata that doesn't fit on a single entry.
 
-4. **Add More Supplements** (optional)
-   - Magnesium L-Threonate (brain-specific)
-   - Tribulus
-   - Psyllium Husk
-   - More as needed
+## Architecture pointers
+- `data/supplements.json` — Stack Analyzer DB (~111 KB, 113 entries)
+- `layouts/_default/analyzer.html` (or `stack-generator.html`) — Stack Analyzer UI + logic
+- `content/supplements/<slug>.md` — individual supplement articles
+- `hugo.toml` — site config + analytics + affiliate URLs
+- `netlify.toml` — build settings
 
-5. **Verify Site Functions**
-   - Test Stack Analyzer on live site
-   - Check mobile responsiveness
-   - Verify all pages load correctly
-   - Test structured data with Google Rich Results Test
-
-### Low Priority
-
-6. **SEO Optimization**
-   - Add Google Analytics ID to `hugo.toml`
-   - Submit sitemap to Google Search Console
-   - Set up email capture integration
-
-## New Supplements Added This Session
-
-These 22 supplements were created but may need git commit:
-- caffeine, nmn, acetyl-l-carnitine, pqq, tongkat-ali, maca, boron, milk-thistle
-- elderberry, glucosamine, spirulina, inositol, dim, green-tea-extract, saw-palmetto
-- fenugreek, msm, apigenin, chlorella, hmb, shilajit, piperine, lutein-zeaxanthin
-
-## File Structure
-
-```
-supplement-guide/
-├── archetypes/          # Hugo content templates
-├── assets/              # CSS, JS source files
-├── content/
-│   ├── supplements/     # 83 supplement articles
-│   ├── stacks/          # Pre-built stacks
-│   ├── goals/           # Goal-based guides
-│   ├── guides/          # Educational content
-│   ├── comparisons/     # Product comparisons
-│   ├── medications/     # Drug interaction guides
-│   └── timelines/       # Results timelines
-├── data/
-│   └── supplements.json # Stack Analyzer database (NEEDS EXPANSION)
-├── layouts/             # Hugo templates
-├── static/              # Static assets
-├── themes/              # (empty - using custom layouts)
-├── hugo.toml            # Hugo configuration
-├── netlify.toml         # Netlify build settings
-└── public/              # Built site (generated)
-```
-
-## Quick Commands
-
+## Quick commands
 ```bash
-# Navigate to project
 cd C:/Users/altst/supplement-guide
 
-# Commit new changes
-git add .
-git commit -m "Add new supplement articles and updates"
-git push
+# Inspect uncommitted state
+git status
 
-# Build locally (if Hugo installed)
+# Build + serve locally (if Hugo installed)
 hugo server -D
 
-# Check article count
-ls content/supplements/*.md | wc -l
+# Validate JSON
+python -c "import json; print(len(json.load(open('data/supplements.json'))['supplements']))"
 ```
 
-## Key Files to Edit
-
-- `data/supplements.json` - Stack Analyzer supplement database
-- `hugo.toml` - Site configuration, analytics, base URL
-- `layouts/_default/analyzer.html` - Stack Analyzer UI and logic
-- `content/supplements/*.md` - Individual supplement articles
-
-## Notes
-
-- Site uses custom layouts (no external theme)
-- All articles follow consistent YAML frontmatter format
-- Stack Analyzer fetches from `/data/supplements.json`
-- Netlify auto-deploys on GitHub push
+## Notes for future agents
+- The catalog grew from 24 → 113 entries between March and May 2026 — old status docs that claim "Stack Analyzer broken / 24 supplements" are stale.
+- Amway is the only affiliate currently wired; 23 entries link to specific products.
+- `notes` is freeform and uses real em-dashes (—). Don't pass through any "fix mojibake" pass — the file is clean UTF-8.

@@ -10,6 +10,8 @@ key_points:
   - "Three pathways to boost NO: L-arginine/L-citrulline, dietary nitrates, and endothelial shear stress"
 related_supplements: ["L-Arginine", "L-Citrulline", "Beetroot Juice", "Watermelon", "Pomegranate", "Nitrate Sources"]
 tags: ["optimization", "cardiovascular", "blood-flow", "performance", "erectile-function"]
+aliases:
+  - "/guides/boost-nitric-oxide/"
 ---
 
 ## What Is Nitric Oxide & Why It Matters

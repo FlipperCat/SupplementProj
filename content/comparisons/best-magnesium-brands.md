@@ -8,6 +8,8 @@ tags:
   - "sleep supplement"
   - "supplement comparison"
   - "form comparison"
+aliases:
+  - "/comparisons/best-magnesium-brands/"
 ---
 
 ## Best Magnesium Supplements: Form vs Brand Analysis

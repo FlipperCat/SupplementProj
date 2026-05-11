@@ -11,6 +11,9 @@ tags:
   - "athletic performance"
   - "recovery"
   - "injury prevention"
+aliases:
+  - "/goals/supplements-for-marathon-runners/"
+  - "/supplements-for-marathon-runners/"
 ---
 
 ## Supplements for Marathon Runners

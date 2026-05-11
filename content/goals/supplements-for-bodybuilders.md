@@ -9,6 +9,9 @@ tags:
   - "hypertrophy"
   - "contest prep"
   - "strength training"
+aliases:
+  - "/goals/supplements-for-bodybuilders/"
+  - "/supplements-for-bodybuilders/"
 ---
 
 ## Bodybuilding Supplement Strategy

@@ -37,6 +37,9 @@ tags:
 
 warnings: "B6 at high doses (>100mg daily) long-term can cause nerve damage. Methylated forms may cause anxiety in some individuals with certain COMT mutations. B12 injections may be needed for pernicious anemia."
 interactions: "Metformin depletes B12. Some antibiotics and anticonvulsants affect B vitamin levels. High-dose B6 can interfere with levodopa."
+aliases:
+  - "/supplements/b-complex/"
+  - "/supplements/vitamin-b-complex/"
 ---
 
 **What it is:** B-complex vitamins are eight essential water-soluble nutrients that fuel energy metabolism, support nervous system function, and reduce fatigue. Unlike other supplements, B vitamins are essential nutrients your body cannot produce, making daily intake crucial for optimal mental clarity, energy levels, and stress resilience.

@@ -9,6 +9,8 @@ tags:
   - "protein"
   - "supplement timeline"
   - "hypertrophy"
+aliases:
+  - "/timelines/muscle-building-timeline/"
 ---
 
 ## Introduction: Muscle Growth Is Measurable But Gradual

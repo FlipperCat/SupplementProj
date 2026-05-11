@@ -10,6 +10,9 @@ tags:
   - "muscle maintenance"
   - "fertility"
   - "cardiovascular health"
+aliases:
+  - "/goals/supplements-for-men-30s/"
+  - "/supplements-for-men-30s/"
 ---
 
 ## Men in Their 30s: Health Priorities

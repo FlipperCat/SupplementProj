@@ -40,6 +40,8 @@ tags:
 
 warnings: "Generally very safe. May cause mild nausea at high doses. Those with cystinuria should avoid. May worsen asthma symptoms in small percentage of users (rare). Pregnant women should consult healthcare provider."
 interactions: "No major interactions. Works synergistically with vitamin C (enhances glutathione production). Compatible with most medications."
+aliases:
+  - "/supplements/nac/"
 ---
 
 **What it is:** NAC (N-Acetylcysteine) is a modified form of the amino acid cysteine that serves as the rate-limiting precursor to glutathione—the body's master antioxidant and primary detoxification molecule. NAC replenishes depleted glutathione stores, supporting respiratory health, immune function, liver detoxification, and cellular protection across multiple organs.

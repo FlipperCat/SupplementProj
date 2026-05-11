@@ -10,6 +10,9 @@ tags:
   - "athletic performance"
   - "muscle building"
   - "sexual health"
+aliases:
+  - "/goals/supplements-for-men-20s/"
+  - "/supplements-for-men-20s/"
 ---
 
 ## Men in Their 20s: The Peak Performance Years

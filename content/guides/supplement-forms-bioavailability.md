@@ -9,6 +9,8 @@ tags:
   - "absorption"
   - "chelation"
   - "buying guide"
+aliases:
+  - "/guides/supplement-forms-bioavailability/"
 ---
 
 ## Form Matters: More Than You Think

@@ -10,6 +10,8 @@ key_points:
   - "Hormonal dysregulation often reflects nutrient deficiency rather than primary endocrine disease; nutrient optimization can restore balance"
 related_supplements: ["Zinc", "Vitamin D", "B-Complex Vitamins", "Magnesium", "Selenium", "Omega-3", "Iron", "Iodine", "Chromium"]
 tags: ["body systems", "hormone balance", "endocrine health", "reproduction", "metabolism", "stress resilience"]
+aliases:
+  - "/guides/hormone-balance-nutrients/"
 ---
 
 ## How Hormonal Systems Work

@@ -72,6 +72,8 @@ warnings:
   - "This stack is expensive; budget $300-500 monthly"
   - "Not recommended during pregnancy; consult physician first"
   - "May interact with blood thinners; caution with warfarin"
+aliases:
+  - "/stacks/longevity-stack/"
 ---
 
 ## Overview and Goals

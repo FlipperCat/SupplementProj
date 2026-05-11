@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 40" fill="none">
+  <circle cx="20" cy="20" r="16" stroke="#2D5A3D" stroke-width="2.5"/>
+  <path d="M20 10v20M13 20h14" stroke="#2D5A3D" stroke-width="2.5" stroke-linecap="round"/>
+  <text x="44" y="26" font-family="system-ui, -apple-system, sans-serif" font-size="22" font-weight="700" fill="#2D5A3D">VitaWise</text>
+</svg>

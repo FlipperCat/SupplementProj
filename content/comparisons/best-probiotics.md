@@ -8,6 +8,8 @@ tags:
   - "gut health"
   - "probiotic strains"
   - "supplement comparison"
+aliases:
+  - "/comparisons/best-probiotics/"
 ---
 
 ## Best Probiotics: Strain Selection Matters More Than Brand

@@ -9,6 +9,8 @@ tags:
   - "folate"
   - "methylcobalamin"
   - "comparison"
+aliases:
+  - "/comparisons/methylated-vs-regular-b-vitamins/"
 ---
 
 ## Why B Vitamin Form Matters

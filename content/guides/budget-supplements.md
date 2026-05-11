@@ -9,6 +9,8 @@ tags:
   - "cost-per-dose"
   - "supplement savings"
   - "value supplements"
+aliases:
+  - "/guides/budget-supplements/"
 ---
 
 ## Budget Supplements: High Value Under $20/Month

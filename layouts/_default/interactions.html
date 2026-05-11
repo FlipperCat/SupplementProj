@@ -1,0 +1,103 @@
+{{ define "main" }}
+<div class="container">
+    <header class="supplement-header" style="text-align: center; margin-bottom: var(--spacing-2xl);">
+        <h1 class="supplement-title">Supplement &amp; Medication Interactions</h1>
+        <p class="supplement-subtitle">Find out which supplements are safe, beneficial, or risky with your medications</p>
+    </header>
+
+    <div style="max-width: 900px; margin: 0 auto;">
+        <div class="notice notice-info" style="margin-bottom: var(--spacing-2xl);">
+            <svg class="notice-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"/>
+                <line x1="12" y1="16" x2="12" y2="12"/>
+                <line x1="12" y1="8" x2="12.01" y2="8"/>
+            </svg>
+            <div class="notice-content">
+                <h4>Medical Disclaimer</h4>
+                <p>This information is for educational purposes only. Always consult your healthcare provider before combining supplements with medications.</p>
+            </div>
+        </div>
+
+        <!-- Individual Interaction Guide Pages -->
+        {{ if .Pages }}
+        <h2 style="margin-bottom: var(--spacing-lg);">Detailed Interaction Guides</h2>
+        <div class="card-grid" style="margin-bottom: var(--spacing-3xl);">
+            {{ range .Pages }}
+            <article class="card">
+                <div class="card-content">
+                    <span class="card-category">Interaction Guide</span>
+                    <h3 class="card-title"><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
+                    <p class="card-excerpt">{{ .Description | truncate 150 }}</p>
+                    {{ with .Params.tags }}
+                    <div class="tag-list" style="margin-top: var(--spacing-md);">
+                        {{ range first 3 . }}
+                        <span class="tag">{{ . }}</span>
+                        {{ end }}
+                    </div>
+                    {{ end }}
+                </div>
+            </article>
+            {{ end }}
+        </div>
+        {{ end }}
+
+        <!-- Quick Reference: All Medications from Data -->
+        <h2 style="margin-bottom: var(--spacing-lg);">Quick Reference: All Medication Interactions</h2>
+
+        {{ range $medKey, $med := .Site.Data.interactions.medications }}
+        <section style="margin-bottom: var(--spacing-3xl);">
+            <h3 id="{{ $medKey }}" style="margin-bottom: var(--spacing-sm);">{{ $med.name }}</h3>
+            <p style="color: var(--color-text-light); margin-bottom: var(--spacing-md);">Category: {{ $med.category }}</p>
+
+            <div style="display: flex; flex-wrap: wrap; gap: var(--spacing-sm); margin-bottom: var(--spacing-md);">
+                {{ range $med.safe }}
+                <span style="display: inline-flex; align-items: center; gap: 4px; padding: 4px 10px; background: rgba(16, 185, 129, 0.1); color: var(--color-success); border-radius: var(--radius-sm); font-size: 0.85rem; font-weight: 500;">
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+                    {{ .name }}
+                </span>
+                {{ end }}
+                {{ range $med.caution }}
+                <span style="display: inline-flex; align-items: center; gap: 4px; padding: 4px 10px; background: rgba(245, 158, 11, 0.1); color: var(--color-warning); border-radius: var(--radius-sm); font-size: 0.85rem; font-weight: 500;">
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><line x1="12" y1="2" x2="12" y2="14"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
+                    {{ .name }}
+                </span>
+                {{ end }}
+                {{ range $med.avoid }}
+                <span style="display: inline-flex; align-items: center; gap: 4px; padding: 4px 10px; background: rgba(239, 68, 68, 0.1); color: var(--color-danger); border-radius: var(--radius-sm); font-size: 0.85rem; font-weight: 500;">
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+                    {{ .name }}
+                </span>
+                {{ end }}
+            </div>
+
+            <p style="font-size: 0.9rem;"><strong>Timing:</strong> {{ $med.timing_note }}</p>
+
+            {{ with $med.guide_url }}
+            {{ if ne . "" }}
+            <p style="margin-top: var(--spacing-sm);"><a href="{{ . }}" class="btn btn-secondary" style="font-size: 0.85rem;">Read Full Medication Guide</a></p>
+            {{ end }}
+            {{ end }}
+        </section>
+        {{ end }}
+
+        <!-- Legend -->
+        <div style="padding: var(--spacing-lg); background: var(--color-bg-alt); border-radius: var(--radius-lg); margin-top: var(--spacing-2xl);">
+            <h4 style="margin-bottom: var(--spacing-md);">Interaction Legend</h4>
+            <div style="display: flex; flex-wrap: wrap; gap: var(--spacing-lg); font-size: 0.9rem;">
+                <div style="display: flex; align-items: center; gap: var(--spacing-sm);">
+                    <span style="width: 16px; height: 16px; background: var(--color-success); border-radius: 3px;"></span>
+                    <strong>Safe</strong> &mdash; Beneficial or no interaction
+                </div>
+                <div style="display: flex; align-items: center; gap: var(--spacing-sm);">
+                    <span style="width: 16px; height: 16px; background: var(--color-warning); border-radius: 3px;"></span>
+                    <strong>Caution</strong> &mdash; May interact, use under supervision
+                </div>
+                <div style="display: flex; align-items: center; gap: var(--spacing-sm);">
+                    <span style="width: 16px; height: 16px; background: var(--color-danger); border-radius: 3px;"></span>
+                    <strong>Avoid</strong> &mdash; Dangerous interaction risk
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{{ end }}

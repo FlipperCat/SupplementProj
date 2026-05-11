@@ -9,6 +9,8 @@ tags:
   - "quality supplements"
   - "brand comparison"
   - "nutrient absorption"
+aliases:
+  - "/comparisons/best-multivitamins/"
 ---
 
 ## Best Multivitamins: Form Matters More Than Brand

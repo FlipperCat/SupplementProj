@@ -9,6 +9,8 @@ tags:
   - "Amway"
   - "quality standards"
   - "brand comparison"
+aliases:
+  - "/guides/nutrilite-quality-standards/"
 ---
 
 ## The Supplement Quality Problem

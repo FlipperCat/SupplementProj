@@ -4,6 +4,8 @@ date: 2024-01-22
 draft: false
 tagline: "Understanding the biological timeline from first dose to measurable anxiety reduction and stress adaptation"
 tags: ["ashwagandha", "stress", "anxiety", "adaptogen", "timeline", "cortisol"]
+aliases:
+  - "/timelines/ashwagandha-timeline/"
 ---
 
 ## Introduction: Why Ashwagandha Takes Weeks to Work

@@ -10,6 +10,8 @@ key_points:
   - "Immune optimization isn't about making immunity 'stronger'—it's about balanced, proportionate responses that protect without overreacting"
 related_supplements: ["Vitamin D3", "Zinc", "Vitamin C", "Selenium", "Vitamin A", "Iron", "Probiotics", "Quercetin"]
 tags: ["body systems", "immune health", "infection prevention", "immune response", "micronutrients"]
+aliases:
+  - "/guides/immune-system-nutrients/"
 ---
 
 ## How the Immune System Works

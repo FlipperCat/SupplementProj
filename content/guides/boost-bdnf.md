@@ -10,6 +10,8 @@ key_points:
   - "Exercise is the single most potent BDNF stimulant (60-100% elevation); combine with strategic supplementation for 2-3x amplification"
 related_supplements: ["Curcumin", "L-Theanine", "Omega-3", "NAC", "Vitamin D", "Magnesium"]
 tags: ["optimization", "cognitive", "neuroprotection", "neuroplasticity", "learning"]
+aliases:
+  - "/guides/boost-bdnf/"
 ---
 
 ## What Is BDNF & Why It Matters

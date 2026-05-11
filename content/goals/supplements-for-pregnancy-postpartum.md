@@ -9,6 +9,9 @@ tags:
   - "breastfeeding"
   - "maternal health"
   - "prenatal nutrition"
+aliases:
+  - "/goals/supplements-for-pregnancy-postpartum/"
+  - "/supplements-for-pregnancy-postpartum/"
 ---
 
 ## Pregnancy, Postpartum & Nursing: Supplement Strategy

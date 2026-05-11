@@ -32,6 +32,8 @@ tags:
   - "nutrient depletion"
   - "medication support"
 warnings: "Always consult your gastroenterologist or prescribing physician before adding supplements. Do not discontinue PPI therapy without medical guidance (can cause rebound hyperacidity). PPIs affect absorption of many nutrients and medications—timing is critical. These suggestions are educational, not medical advice."
+aliases:
+  - "/medications/ppi-supplements/"
 ---
 
 ## Medical Disclaimer

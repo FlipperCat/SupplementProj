@@ -1,6 +1,6 @@
 [build]
   publish = "public"
-  command = "hugo --gc --minify"
+  command = "hugo --gc --minify && npx pagefind --site public"
 
 [build.environment]
   HUGO_VERSION = "0.121.1"
@@ -56,4 +56,44 @@
 [[redirects]]
   from = "/supplements/fish-oil/*"
   to = "/supplements/omega-3/"
+  status = 301
+
+[[redirects]]
+  from = "/goals/supplements-for-joint-mobility/"
+  to = "/goals/supplements-for-joint-health/"
+  status = 301
+
+[[redirects]]
+  from = "/goals/supplements-for-stress/"
+  to = "/goals/supplements-for-stress-cortisol/"
+  status = 301
+
+[[redirects]]
+  from = "/guides/quality-supplements/"
+  to = "/guides/quality-supplements-buying-guide/"
+  status = 301
+
+[[redirects]]
+  from = "/supplements/biotin/"
+  to = "/supplements/vitamin-b7-biotin/"
+  status = 301
+
+[[redirects]]
+  from = "/supplements/lutein/"
+  to = "/supplements/lutein-zeaxanthin/"
+  status = 301
+
+[[redirects]]
+  from = "/tools/"
+  to = "/analyzer/"
+  status = 301
+
+[[redirects]]
+  from = "/best-supplement-stacks/"
+  to = "/stacks/"
+  status = 301
+
+[[redirects]]
+  from = "/lead-magnet/"
+  to = "/"
   status = 301

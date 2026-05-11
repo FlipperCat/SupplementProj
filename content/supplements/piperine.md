@@ -39,6 +39,8 @@ tags:
 
 warnings: "Piperine inhibits certain drug-metabolizing enzymes (CYP3A4, CYP2D6), which can increase blood levels of many medications. Consult your doctor before use if taking prescription medications. May cause mild gastrointestinal irritation in sensitive individuals. Avoid high doses during pregnancy."
 interactions: "Significantly increases blood levels of many drugs including phenytoin, propranolol, theophylline, and rifampin. May enhance effects of blood pressure and diabetes medications. Can increase absorption of certain chemotherapy drugs. Always consult healthcare provider when combining with prescription medications."
+aliases:
+  - "/supplements/piperine/"
 ---
 
 ## What Is Piperine?

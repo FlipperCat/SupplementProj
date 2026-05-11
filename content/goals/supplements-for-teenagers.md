@@ -10,6 +10,9 @@ tags:
   - "athletic performance"
   - "growth"
   - "bone health"
+aliases:
+  - "/goals/supplements-for-teenagers/"
+  - "/supplements-for-teenagers/"
 ---
 
 ## Teenagers: The Critical Growth & Development Years

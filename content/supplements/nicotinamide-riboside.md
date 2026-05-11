@@ -27,6 +27,8 @@ tags:
   - aging optimization
 warnings: Generally very safe. Very limited human long-term data. Not for pregnant women. May interact with certain medications.
 interactions: Works synergistically with resveratrol and spermidine. Compatible with most supplements.
+aliases:
+  - "/supplements/nicotinamide-riboside/"
 ---
 
 **What it is:** NMN (Nicotinamide Mononucleotide) is a precursor to NAD+ (nicotinamide adenine dinucleotide)—a critical coenzyme for cellular energy, DNA repair, and longevity signaling. NMN supplementation restores NAD+ levels that decline with age, activating sirtuins and supporting cellular rejuvenation and aging optimization.

@@ -9,6 +9,9 @@ tags:
   - "mood"
   - "brain health"
   - "anxiety"
+aliases:
+  - "/goals/supplements-for-mental-health/"
+  - "/supplements-for-mental-health/"
 ---
 
 ## Important Disclaimer: Supplements Are Adjuncts, Not Replacements

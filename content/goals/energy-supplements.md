@@ -8,6 +8,9 @@ tags:
   - "fatigue"
   - "vitality"
   - "performance"
+aliases:
+  - "/goals/energy-supplements/"
+  - "/energy-supplements/"
 ---
 
 ## Why You're Tired (And How Supplements Can Help)

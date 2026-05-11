@@ -9,6 +9,8 @@ tags:
   - "nutrient depletion"
   - "medication side effects"
   - "nutrient replacement"
+aliases:
+  - "/medications/corticosteroid-depletion/"
 ---
 
 ## Corticosteroids & Nutritional Cost

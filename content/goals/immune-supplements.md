@@ -8,6 +8,9 @@ tags:
   - "immunity"
   - "infection"
   - "wellness"
+aliases:
+  - "/goals/immune-supplements/"
+  - "/immune-supplements/"
 ---
 
 ## Why Your Immune System Struggles (And How Supplements Can Help)

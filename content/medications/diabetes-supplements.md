@@ -9,6 +9,8 @@ tags:
   - "glucose control"
   - "metabolic health"
   - "insulin resistance"
+aliases:
+  - "/medications/diabetes-supplements/"
 ---
 
 ## Diabetes & Supplementation Strategy

@@ -4,6 +4,8 @@ date: 2024-01-22
 draft: false
 tagline: "The complete biological timeline from saturation to performance gains in creatine supplementation"
 tags: ["creatine", "timeline", "muscle-performance", "strength", "athletic-performance"]
+aliases:
+  - "/timelines/creatine-loading-timeline/"
 ---
 
 ## Introduction: Why Creatine Doesn't Work Overnight

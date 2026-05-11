@@ -77,6 +77,8 @@ warnings:
   - "Not recommended for individuals with ADHD medications without MD approval"
   - "May increase blood pressure in sensitive individuals; monitor"
   - "Cost is significant ($200-350/month); expect investment"
+aliases:
+  - "/stacks/cognitive-enhancement-stack/"
 ---
 
 ## Overview and Goals

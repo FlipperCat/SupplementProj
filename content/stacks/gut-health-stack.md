@@ -78,6 +78,8 @@ warnings:
   - "Probiotic quality varies dramatically; source from reputable, refrigerated vendors"
   - "If IgA deficiency present, certain probiotics may not colonize; work with functional MD"
   - "May interact with certain medications; consult physician if on antibiotics or immunosuppressants"
+aliases:
+  - "/stacks/gut-health-stack/"
 ---
 
 ## Overview and Goals

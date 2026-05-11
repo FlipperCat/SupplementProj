@@ -1,0 +1,1653 @@
+{{ define "main" }}
+<style>
+/* ============================================
+   Interaction Matrix - Page Styles
+   ============================================ */
+
+/* Page Header */
+.im-header {
+    text-align: center;
+    padding: var(--spacing-3xl) 0 var(--spacing-xl);
+}
+.im-header h1 {
+    font-family: var(--font-heading);
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--color-text);
+    margin-bottom: var(--spacing-sm);
+}
+.im-header .im-subtitle {
+    font-family: var(--font-body);
+    font-size: 1.125rem;
+    color: var(--color-text-light);
+    max-width: 640px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+.im-header .im-stats {
+    display: flex;
+    justify-content: center;
+    gap: var(--spacing-xl);
+    margin-top: var(--spacing-lg);
+    flex-wrap: wrap;
+}
+.im-stat {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.im-stat-number {
+    font-family: var(--font-heading);
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: var(--color-primary);
+}
+.im-stat-label {
+    font-size: 0.8125rem;
+    color: var(--color-text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+/* Controls */
+.im-controls {
+    background: var(--color-white);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-md);
+    padding: var(--spacing-lg);
+    margin-bottom: var(--spacing-xl);
+}
+.im-search-row {
+    display: flex;
+    gap: var(--spacing-md);
+    margin-bottom: var(--spacing-md);
+    flex-wrap: wrap;
+}
+.im-search-wrapper {
+    flex: 1;
+    min-width: 250px;
+    position: relative;
+}
+.im-search-wrapper svg {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 18px;
+    height: 18px;
+    color: var(--color-text-muted);
+    pointer-events: none;
+}
+.im-search {
+    width: 100%;
+    padding: 10px 14px 10px 40px;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    font-family: var(--font-body);
+    font-size: 0.9375rem;
+    color: var(--color-text);
+    background: var(--color-cream);
+    transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
+    box-sizing: border-box;
+}
+.im-search:focus {
+    outline: none;
+    border-color: var(--color-primary);
+    box-shadow: 0 0 0 3px rgba(45,90,39,0.12);
+}
+.im-view-toggle {
+    display: flex;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    flex-shrink: 0;
+}
+.im-view-btn {
+    padding: 10px 16px;
+    border: none;
+    background: var(--color-cream);
+    color: var(--color-text-light);
+    font-family: var(--font-body);
+    font-size: 0.875rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    transition: all var(--transition-fast);
+}
+.im-view-btn:hover {
+    background: var(--color-cream-dark);
+}
+.im-view-btn.active {
+    background: var(--color-primary);
+    color: white;
+}
+.im-view-btn svg {
+    width: 16px;
+    height: 16px;
+}
+
+/* Category Filters */
+.im-filters {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.im-filter-label {
+    font-size: 0.8125rem;
+    font-weight: 600;
+    color: var(--color-text-light);
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    margin-right: 4px;
+    flex-shrink: 0;
+}
+.im-filter-pill {
+    padding: 6px 14px;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-full);
+    background: var(--color-white);
+    color: var(--color-text-light);
+    font-family: var(--font-body);
+    font-size: 0.8125rem;
+    cursor: pointer;
+    transition: all var(--transition-fast);
+    white-space: nowrap;
+}
+.im-filter-pill:hover {
+    border-color: var(--color-sage);
+    color: var(--color-text);
+    background: var(--color-success-bg);
+}
+.im-filter-pill.active {
+    background: var(--color-primary);
+    color: white;
+    border-color: var(--color-primary);
+}
+.im-filter-pill .pill-count {
+    display: inline-block;
+    background: rgba(0,0,0,0.1);
+    border-radius: var(--radius-full);
+    padding: 1px 6px;
+    font-size: 0.6875rem;
+    margin-left: 4px;
+}
+.im-filter-pill.active .pill-count {
+    background: rgba(255,255,255,0.25);
+}
+
+/* Legend */
+.im-legend {
+    display: flex;
+    gap: var(--spacing-lg);
+    margin-top: var(--spacing-md);
+    padding-top: var(--spacing-md);
+    border-top: 1px solid var(--color-border);
+    flex-wrap: wrap;
+}
+.im-legend-item {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 0.8125rem;
+    color: var(--color-text-light);
+}
+.im-legend-dot {
+    width: 14px;
+    height: 14px;
+    border-radius: 3px;
+    flex-shrink: 0;
+}
+.im-legend-dot.synergy { background: #2D7A27; }
+.im-legend-dot.conflict { background: #D64545; }
+.im-legend-dot.caution { background: #E6A23C; }
+.im-legend-dot.neutral { background: #E5E0D5; }
+
+/* ============================================
+   LIST VIEW
+   ============================================ */
+.im-list-view {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+    gap: var(--spacing-lg);
+}
+.im-card {
+    background: var(--color-white);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-sm);
+    border: 1px solid var(--color-border);
+    overflow: hidden;
+    transition: box-shadow var(--transition-base), transform var(--transition-base);
+    cursor: pointer;
+}
+.im-card:hover {
+    box-shadow: var(--shadow-lg);
+    transform: translateY(-2px);
+}
+.im-card-header {
+    padding: var(--spacing-md) var(--spacing-lg);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--color-border);
+    background: var(--color-cream);
+}
+.im-card-name {
+    font-family: var(--font-heading);
+    font-weight: 600;
+    font-size: 1.0625rem;
+    color: var(--color-text);
+}
+.im-card-type {
+    font-size: 0.75rem;
+    color: var(--color-text-muted);
+    background: var(--color-white);
+    padding: 2px 10px;
+    border-radius: var(--radius-full);
+    border: 1px solid var(--color-border);
+    text-transform: capitalize;
+}
+.im-card-body {
+    padding: var(--spacing-md) var(--spacing-lg);
+}
+.im-card-section {
+    margin-bottom: var(--spacing-md);
+}
+.im-card-section:last-child {
+    margin-bottom: 0;
+}
+.im-card-section-title {
+    font-size: 0.6875rem;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+.im-card-section-title.synergy { color: var(--color-primary); }
+.im-card-section-title.conflict { color: var(--color-danger); }
+.im-card-section-title.caution { color: var(--color-warning); }
+
+.im-badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+.im-badge {
+    font-size: 0.8125rem;
+    padding: 4px 10px;
+    border-radius: var(--radius-full);
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    transition: all var(--transition-fast);
+    cursor: pointer;
+    font-family: var(--font-body);
+    border: 1px solid transparent;
+}
+.im-badge:hover {
+    transform: scale(1.05);
+}
+.im-badge.synergy {
+    background: var(--color-success-bg);
+    color: var(--color-primary);
+    border-color: rgba(45,90,39,0.15);
+}
+.im-badge.conflict {
+    background: var(--color-danger-bg);
+    color: var(--color-danger);
+    border-color: rgba(214,69,69,0.15);
+}
+.im-badge.caution {
+    background: var(--color-warning-bg);
+    color: #9A6C1E;
+    border-color: rgba(230,162,60,0.15);
+}
+.im-badge svg {
+    width: 12px;
+    height: 12px;
+    flex-shrink: 0;
+}
+.im-card-empty {
+    font-size: 0.8125rem;
+    color: var(--color-text-muted);
+    font-style: italic;
+}
+
+/* No results */
+.im-no-results {
+    text-align: center;
+    padding: var(--spacing-3xl) var(--spacing-lg);
+    color: var(--color-text-muted);
+    grid-column: 1 / -1;
+}
+.im-no-results svg {
+    width: 48px;
+    height: 48px;
+    margin-bottom: var(--spacing-md);
+    opacity: 0.4;
+}
+.im-no-results p {
+    font-size: 1rem;
+}
+
+/* Show more button */
+.im-show-more {
+    display: flex;
+    justify-content: center;
+    margin-top: var(--spacing-xl);
+}
+.im-show-more-btn {
+    padding: 12px 32px;
+    background: var(--color-white);
+    border: 2px solid var(--color-primary);
+    color: var(--color-primary);
+    font-family: var(--font-heading);
+    font-weight: 600;
+    font-size: 0.9375rem;
+    border-radius: var(--radius-md);
+    cursor: pointer;
+    transition: all var(--transition-fast);
+}
+.im-show-more-btn:hover {
+    background: var(--color-primary);
+    color: white;
+}
+
+/* ============================================
+   MATRIX VIEW
+   ============================================ */
+.im-matrix-view {
+    display: none;
+}
+.im-matrix-view.active {
+    display: block;
+}
+.im-list-view.active {
+    display: grid;
+}
+.im-list-view {
+    display: none;
+}
+
+.im-matrix-container {
+    overflow-x: auto;
+    overflow-y: auto;
+    max-height: 80vh;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-lg);
+    background: var(--color-white);
+    box-shadow: var(--shadow-md);
+    position: relative;
+    -webkit-overflow-scrolling: touch;
+}
+.im-matrix-note {
+    text-align: center;
+    font-size: 0.8125rem;
+    color: var(--color-text-muted);
+    margin-bottom: var(--spacing-sm);
+}
+.im-matrix-table {
+    border-collapse: separate;
+    border-spacing: 0;
+    width: max-content;
+    min-width: 100%;
+}
+.im-matrix-table th,
+.im-matrix-table td {
+    font-size: 0.6875rem;
+    text-align: center;
+    border-right: 1px solid var(--color-border);
+    border-bottom: 1px solid var(--color-border);
+}
+.im-matrix-table thead th {
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    background: var(--color-cream-dark);
+    padding: 0;
+}
+.im-matrix-table thead th .im-matrix-th-inner {
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    transform: rotate(180deg);
+    padding: 8px 4px;
+    max-height: 120px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: block;
+    font-weight: 500;
+    color: var(--color-text);
+    font-family: var(--font-body);
+    cursor: default;
+}
+.im-matrix-table thead th:first-child {
+    position: sticky;
+    left: 0;
+    z-index: 3;
+}
+.im-matrix-table tbody th {
+    position: sticky;
+    left: 0;
+    z-index: 1;
+    background: var(--color-cream-dark);
+    text-align: right;
+    padding: 6px 10px;
+    white-space: nowrap;
+    font-weight: 500;
+    color: var(--color-text);
+    font-family: var(--font-body);
+    max-width: 160px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    cursor: default;
+}
+.im-matrix-cell {
+    width: 28px;
+    height: 28px;
+    min-width: 28px;
+    padding: 0;
+    cursor: pointer;
+    transition: transform var(--transition-fast);
+    position: relative;
+}
+.im-matrix-cell:hover {
+    transform: scale(1.5);
+    z-index: 5;
+    box-shadow: var(--shadow-md);
+}
+.im-cell-inner {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.im-cell-inner.synergy {
+    background: #d4edda;
+}
+.im-cell-inner.synergy-strong {
+    background: #28a745;
+}
+.im-cell-inner.conflict {
+    background: #f8d7da;
+}
+.im-cell-inner.conflict-strong {
+    background: #D64545;
+}
+.im-cell-inner.caution {
+    background: #fff3cd;
+}
+.im-cell-inner.neutral {
+    background: transparent;
+}
+.im-cell-inner.self {
+    background: var(--color-cream-dark);
+}
+.im-cell-inner.synergy-strong,
+.im-cell-inner.conflict-strong {
+    color: white;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+/* ============================================
+   DETAIL PANEL (modal)
+   ============================================ */
+.im-modal-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.45);
+    z-index: 1000;
+    animation: imFadeIn 0.2s ease;
+}
+.im-modal-overlay.active {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@keyframes imFadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+@keyframes imSlideUp {
+    from { opacity: 0; transform: translateY(30px) scale(0.97); }
+    to { opacity: 1; transform: translateY(0) scale(1); }
+}
+.im-modal {
+    background: var(--color-white);
+    border-radius: var(--radius-xl);
+    box-shadow: 0 25px 60px rgba(0,0,0,0.2);
+    width: 90%;
+    max-width: 520px;
+    max-height: 80vh;
+    overflow-y: auto;
+    animation: imSlideUp 0.25s ease;
+    position: relative;
+}
+.im-modal-close {
+    position: absolute;
+    top: 14px;
+    right: 14px;
+    width: 32px;
+    height: 32px;
+    border: none;
+    background: var(--color-cream);
+    border-radius: var(--radius-full);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background var(--transition-fast);
+    z-index: 2;
+}
+.im-modal-close:hover {
+    background: var(--color-cream-dark);
+}
+.im-modal-close svg {
+    width: 16px;
+    height: 16px;
+    color: var(--color-text-light);
+}
+.im-modal-header {
+    padding: var(--spacing-xl) var(--spacing-xl) var(--spacing-md);
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-md);
+}
+.im-modal-icon {
+    width: 56px;
+    height: 56px;
+    border-radius: var(--radius-lg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+.im-modal-icon.synergy {
+    background: var(--color-success-bg);
+    color: var(--color-primary);
+}
+.im-modal-icon.conflict {
+    background: var(--color-danger-bg);
+    color: var(--color-danger);
+}
+.im-modal-icon.caution {
+    background: var(--color-warning-bg);
+    color: #9A6C1E;
+}
+.im-modal-icon svg {
+    width: 28px;
+    height: 28px;
+}
+.im-modal-names {
+    flex: 1;
+}
+.im-modal-pair {
+    font-family: var(--font-heading);
+    font-weight: 700;
+    font-size: 1.25rem;
+    color: var(--color-text);
+    line-height: 1.3;
+}
+.im-modal-type-badge {
+    display: inline-block;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    padding: 3px 10px;
+    border-radius: var(--radius-full);
+    margin-top: 4px;
+}
+.im-modal-type-badge.synergy {
+    background: var(--color-success-bg);
+    color: var(--color-primary);
+}
+.im-modal-type-badge.conflict {
+    background: var(--color-danger-bg);
+    color: var(--color-danger);
+}
+.im-modal-type-badge.caution {
+    background: var(--color-warning-bg);
+    color: #9A6C1E;
+}
+.im-modal-body {
+    padding: 0 var(--spacing-xl) var(--spacing-xl);
+}
+.im-modal-explanation {
+    font-size: 0.9375rem;
+    line-height: 1.7;
+    color: var(--color-text);
+    margin-bottom: var(--spacing-lg);
+    padding: var(--spacing-md);
+    background: var(--color-cream);
+    border-radius: var(--radius-md);
+    border-left: 3px solid var(--color-sage);
+}
+.im-modal-details {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-md);
+    margin-bottom: var(--spacing-lg);
+}
+.im-modal-detail {
+    background: var(--color-cream);
+    padding: var(--spacing-md);
+    border-radius: var(--radius-md);
+}
+.im-modal-detail-label {
+    font-size: 0.6875rem;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--color-text-muted);
+    margin-bottom: 4px;
+    font-weight: 600;
+}
+.im-modal-detail-value {
+    font-size: 0.9375rem;
+    font-weight: 500;
+    color: var(--color-text);
+}
+.im-modal-links {
+    display: flex;
+    gap: var(--spacing-sm);
+    flex-wrap: wrap;
+}
+.im-modal-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 0.875rem;
+    color: var(--color-primary);
+    text-decoration: none;
+    padding: 8px 16px;
+    border: 1px solid var(--color-primary);
+    border-radius: var(--radius-md);
+    transition: all var(--transition-fast);
+    font-weight: 500;
+}
+.im-modal-link:hover {
+    background: var(--color-primary);
+    color: white;
+}
+.im-modal-link svg {
+    width: 14px;
+    height: 14px;
+}
+
+/* ============================================
+   QUICK REFERENCE
+   ============================================ */
+.im-quick-ref {
+    margin-top: var(--spacing-3xl);
+}
+.im-quick-ref h2 {
+    font-family: var(--font-heading);
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: var(--color-text);
+    text-align: center;
+    margin-bottom: var(--spacing-xl);
+}
+.im-quick-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-xl);
+}
+.im-quick-section {
+    background: var(--color-white);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-sm);
+    border: 1px solid var(--color-border);
+    overflow: hidden;
+}
+.im-quick-section-header {
+    padding: var(--spacing-md) var(--spacing-lg);
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    font-family: var(--font-heading);
+    font-weight: 600;
+    font-size: 1.0625rem;
+}
+.im-quick-section-header.synergy {
+    background: var(--color-success-bg);
+    color: var(--color-primary);
+    border-bottom: 2px solid rgba(45,90,39,0.2);
+}
+.im-quick-section-header.conflict {
+    background: var(--color-danger-bg);
+    color: var(--color-danger);
+    border-bottom: 2px solid rgba(214,69,69,0.2);
+}
+.im-quick-section-header svg {
+    width: 20px;
+    height: 20px;
+}
+.im-quick-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.im-quick-item {
+    padding: var(--spacing-md) var(--spacing-lg);
+    border-bottom: 1px solid var(--color-border);
+    display: flex;
+    align-items: flex-start;
+    gap: var(--spacing-md);
+    cursor: pointer;
+    transition: background var(--transition-fast);
+}
+.im-quick-item:last-child {
+    border-bottom: none;
+}
+.im-quick-item:hover {
+    background: var(--color-cream);
+}
+.im-quick-rank {
+    width: 24px;
+    height: 24px;
+    border-radius: var(--radius-full);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.75rem;
+    font-weight: 700;
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+.im-quick-item .im-quick-rank.synergy {
+    background: var(--color-success-bg);
+    color: var(--color-primary);
+}
+.im-quick-item .im-quick-rank.conflict {
+    background: var(--color-danger-bg);
+    color: var(--color-danger);
+}
+.im-quick-text {
+    flex: 1;
+}
+.im-quick-pair {
+    font-weight: 600;
+    font-size: 0.9375rem;
+    color: var(--color-text);
+    margin-bottom: 2px;
+}
+.im-quick-desc {
+    font-size: 0.8125rem;
+    color: var(--color-text-light);
+    line-height: 1.5;
+}
+
+/* Disclaimer */
+.im-disclaimer {
+    text-align: center;
+    margin-top: var(--spacing-3xl);
+    padding: var(--spacing-lg);
+    background: var(--color-warning-bg);
+    border-radius: var(--radius-lg);
+    border: 1px solid rgba(230,162,60,0.2);
+}
+.im-disclaimer p {
+    font-size: 0.875rem;
+    color: #7A5A18;
+    line-height: 1.6;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Loading */
+.im-loading {
+    text-align: center;
+    padding: var(--spacing-3xl);
+    color: var(--color-text-muted);
+}
+.im-spinner {
+    width: 40px;
+    height: 40px;
+    border: 3px solid var(--color-border);
+    border-top-color: var(--color-primary);
+    border-radius: 50%;
+    margin: 0 auto var(--spacing-md);
+    animation: imSpin 0.8s linear infinite;
+}
+@keyframes imSpin {
+    to { transform: rotate(360deg); }
+}
+
+/* ============================================
+   RESPONSIVE
+   ============================================ */
+@media (max-width: 768px) {
+    .im-header h1 {
+        font-size: 1.75rem;
+    }
+    .im-header .im-subtitle {
+        font-size: 1rem;
+    }
+    .im-list-view {
+        grid-template-columns: 1fr;
+    }
+    .im-quick-grid {
+        grid-template-columns: 1fr;
+    }
+    .im-view-toggle .im-view-btn[data-view="matrix"] {
+        display: none;
+    }
+    .im-search-row {
+        flex-direction: column;
+    }
+    .im-modal {
+        width: 95%;
+        max-height: 90vh;
+    }
+    .im-modal-details {
+        grid-template-columns: 1fr;
+    }
+    .im-controls {
+        padding: var(--spacing-md);
+    }
+    .im-filters {
+        gap: 6px;
+    }
+    .im-legend {
+        gap: var(--spacing-sm);
+    }
+}
+@media (max-width: 480px) {
+    .im-header h1 {
+        font-size: 1.5rem;
+    }
+    .im-card-header {
+        padding: var(--spacing-sm) var(--spacing-md);
+    }
+    .im-card-body {
+        padding: var(--spacing-sm) var(--spacing-md);
+    }
+}
+</style>
+
+<div class="container">
+    <!-- Header -->
+    <header class="im-header">
+        <h1>{{ .Title }}</h1>
+        <p class="im-subtitle">{{ .Description }}</p>
+        <div class="im-stats">
+            <div class="im-stat">
+                <span class="im-stat-number" id="imStatSupplements">--</span>
+                <span class="im-stat-label">Supplements</span>
+            </div>
+            <div class="im-stat">
+                <span class="im-stat-number" id="imStatSynergies">--</span>
+                <span class="im-stat-label">Synergies</span>
+            </div>
+            <div class="im-stat">
+                <span class="im-stat-number" id="imStatConflicts">--</span>
+                <span class="im-stat-label">Conflicts</span>
+            </div>
+            <div class="im-stat">
+                <span class="im-stat-number" id="imStatCaution">--</span>
+                <span class="im-stat-label">Caution Pairs</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Controls -->
+    <div class="im-controls">
+        <div class="im-search-row">
+            <div class="im-search-wrapper">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+                <input type="text" class="im-search" id="imSearch" placeholder="Search supplements (e.g., Magnesium, Vitamin D3, Ashwagandha)..." autocomplete="off" aria-label="Search supplements in interaction matrix">
+            </div>
+            <div class="im-view-toggle">
+                <button class="im-view-btn active" data-view="list" title="List view">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/><line x1="8" y1="18" x2="21" y2="18"/><line x1="3" y1="6" x2="3.01" y2="6"/><line x1="3" y1="12" x2="3.01" y2="12"/><line x1="3" y1="18" x2="3.01" y2="18"/></svg>
+                    List
+                </button>
+                <button class="im-view-btn" data-view="matrix" title="Matrix view">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
+                    Matrix
+                </button>
+            </div>
+        </div>
+        <div class="im-filters" id="imFilters">
+            <span class="im-filter-label">Filter:</span>
+            <!-- Filled by JS -->
+        </div>
+        <div class="im-legend">
+            <div class="im-legend-item"><span class="im-legend-dot synergy"></span> Synergy - enhances effect</div>
+            <div class="im-legend-item"><span class="im-legend-dot conflict"></span> Conflict - avoid combining</div>
+            <div class="im-legend-item"><span class="im-legend-dot caution"></span> Caution - compete for absorption</div>
+            <div class="im-legend-item"><span class="im-legend-dot neutral"></span> Neutral - no known interaction</div>
+        </div>
+    </div>
+
+    <!-- Loading -->
+    <div class="im-loading" id="imLoading">
+        <div class="im-spinner"></div>
+        <p>Loading supplement data...</p>
+    </div>
+
+    <!-- List View -->
+    <div class="im-list-view active" id="imListView"></div>
+    <div class="im-show-more" id="imShowMore" style="display:none;">
+        <button class="im-show-more-btn" id="imShowMoreBtn">Show All Supplements</button>
+    </div>
+
+    <!-- Matrix View -->
+    <div class="im-matrix-view" id="imMatrixView">
+        <p class="im-matrix-note">Scroll horizontally and vertically to explore. Click a cell for details.</p>
+        <div class="im-matrix-container" id="imMatrixContainer"></div>
+    </div>
+
+    <!-- Detail Modal -->
+    <div class="im-modal-overlay" id="imModalOverlay">
+        <div class="im-modal" id="imModal">
+            <button class="im-modal-close" id="imModalClose">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+            </button>
+            <div class="im-modal-header" id="imModalHeader"></div>
+            <div class="im-modal-body" id="imModalBody"></div>
+        </div>
+    </div>
+
+    <!-- Quick Reference -->
+    <section class="im-quick-ref" id="imQuickRef" style="display:none;">
+        <h2>Quick Reference</h2>
+        <div class="im-quick-grid">
+            <div class="im-quick-section">
+                <div class="im-quick-section-header synergy">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                    Best Synergy Pairs
+                </div>
+                <ul class="im-quick-list" id="imTopSynergies"></ul>
+            </div>
+            <div class="im-quick-section">
+                <div class="im-quick-section-header conflict">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+                    Dangerous Combinations
+                </div>
+                <ul class="im-quick-list" id="imTopConflicts"></ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Disclaimer -->
+    <div class="im-disclaimer">
+        <p><strong>Disclaimer:</strong> This tool is for educational purposes only. Always consult a qualified healthcare provider before starting, stopping, or combining any supplements, especially if you take prescription medications.</p>
+    </div>
+</div>
+
+<script>
+(function() {
+    'use strict';
+
+    /* =============================================
+       STATE
+       ============================================= */
+    let allSupplements = [];
+    let supplementMap = {};
+    let interactionMap = {};
+    let currentView = 'list';
+    let currentFilter = 'all';
+    let searchQuery = '';
+    let showAll = false;
+    const DEFAULT_VISIBLE = 25;
+    const MATRIX_MAX = 30;
+
+    /* =============================================
+       TYPE-TO-CATEGORY MAPPING
+       ============================================= */
+    const typeCategories = {
+        'Vitamins': ['vitamin', 'vitamin-complex', 'vitamin-like'],
+        'Minerals': ['mineral', 'mineral-compound'],
+        'Amino Acids': ['amino-acid', 'amino-acid-derivative', 'amino-sugar'],
+        'Adaptogens': ['adaptogen'],
+        'Nootropics': ['nootropic'],
+        'Mushrooms': ['mushroom'],
+        'Herbs': ['herb', 'herbal'],
+        'Antioxidants': ['antioxidant', 'polyphenol', 'flavonoid', 'carotenoid'],
+        'Performance': ['stimulant', 'metabolite'],
+        'Fatty Acids': ['fatty-acid'],
+        'Gut Health': ['probiotic', 'enzyme'],
+        'Longevity': ['nad-precursor', 'quinone'],
+        'Other': ['coenzyme', 'hormone', 'neurotransmitter', 'alkaloid', 'indole',
+                   'berry-extract', 'fruit-extract', 'algae', 'superfood', 'organosulfur',
+                   'phospholipid', 'protein']
+    };
+
+    function getCategoryForType(type) {
+        for (const [cat, types] of Object.entries(typeCategories)) {
+            if (types.includes(type)) return cat;
+        }
+        return 'Other';
+    }
+
+    /* =============================================
+       INTERACTION EXPLANATION DATABASE
+       ============================================= */
+    const interactionExplanations = {
+        'vitamin-d3+vitamin-k2': 'Vitamin D3 increases calcium absorption while K2 directs calcium to bones and teeth rather than arteries. Essential pairing for bone health and cardiovascular protection.',
+        'vitamin-d3+magnesium': 'Magnesium is required for converting Vitamin D into its active form. Without adequate magnesium, D3 supplementation can be less effective.',
+        'vitamin-d3+omega-3': 'Both are fat-soluble and support immune function and mood. Taking together with a fat-containing meal optimizes absorption of both.',
+        'vitamin-d3+calcium': 'Vitamin D3 dramatically enhances calcium absorption in the gut, making this pairing essential for bone health.',
+        'magnesium+vitamin-b6-pyridoxine': 'B6 enhances cellular uptake of magnesium. This combination is especially beneficial for PMS symptoms and stress relief.',
+        'magnesium+zinc': 'Both minerals support immune function and hormone production. However, take at different times as they compete for absorption at high doses.',
+        'omega-3+curcumin': 'Both have potent anti-inflammatory properties through different pathways (COX and LOX), creating a synergistic anti-inflammatory effect.',
+        'omega-3+vitamin-e': 'Vitamin E protects omega-3 fatty acids from oxidation, preserving their potency and reducing the need for antioxidant defense.',
+        'zinc+copper': 'High-dose zinc depletes copper over time. When supplementing zinc above 25mg, always include 1-2mg copper to maintain balance.',
+        'zinc+vitamin-c': 'Vitamin C enhances zinc absorption and both support immune function through complementary mechanisms.',
+        'ashwagandha+magnesium': 'Both promote GABA activity and stress relief. Magnesium supports the calming effects of ashwagandha for enhanced relaxation.',
+        'ashwagandha+l-theanine': 'Dual anxiolytic support: ashwagandha lowers cortisol while L-theanine promotes alpha brain waves for calm focus.',
+        'ashwagandha+rhodiola': 'Two premier adaptogens: ashwagandha calms while rhodiola energizes, providing balanced stress resistance throughout the day.',
+        'creatine+protein': 'Creatine enhances strength training which drives muscle protein synthesis. Protein provides the building blocks creatine helps activate.',
+        'creatine+beta-alanine': 'Creatine supports power output while beta-alanine improves endurance through muscle pH buffering. Together they enhance overall performance.',
+        'l-theanine+caffeine': 'The classic nootropic stack: caffeine provides alertness while L-theanine smooths out jitters and anxiety, producing clean, focused energy.',
+        'l-theanine+magnesium': 'Both promote relaxation through different pathways. L-theanine via alpha waves, magnesium via GABA. Excellent evening combination.',
+        'coq10+pqq': 'CoQ10 optimizes existing mitochondria while PQQ stimulates creation of new mitochondria (biogenesis). The ultimate cellular energy stack.',
+        'coq10+alpha-lipoic-acid': 'Both support mitochondrial energy production and act as potent antioxidants, creating a synergistic anti-aging cellular defense.',
+        'probiotics+prebiotics': 'Prebiotics feed probiotic bacteria, dramatically improving their colonization and effectiveness in the gut.',
+        'curcumin+piperine': 'Piperine increases curcumin bioavailability by up to 2000% by inhibiting glucuronidation that normally eliminates curcumin rapidly.',
+        'iron+vitamin-c': 'Vitamin C converts non-heme iron to a more absorbable form, increasing iron absorption by 2-3x. Take together for best results.',
+        'lions-mane+omega-3': 'Both support brain health: Lion\'s Mane stimulates nerve growth factor while omega-3 provides structural support for brain cell membranes.',
+        'lions-mane+alpha-gpc': 'Lion\'s Mane supports NGF production while Alpha-GPC provides choline for acetylcholine synthesis. A powerful cognitive stack.',
+        'nmn+resveratrol': 'NMN boosts NAD+ levels while resveratrol activates sirtuins that use NAD+. Together they amplify longevity pathways.',
+        'nmn+coq10': 'NMN supports NAD+ for cellular energy while CoQ10 optimizes the electron transport chain. Comprehensive mitochondrial support.',
+        'nac+vitamin-c': 'NAC regenerates glutathione while vitamin C recycles glutathione and supports overall antioxidant defense.',
+        'nac+selenium': 'Both support glutathione peroxidase activity. NAC provides the cysteine precursor while selenium is a cofactor.',
+        'vitamin-c+vitamin-e': 'Vitamin C regenerates oxidized vitamin E, allowing it to continue protecting cell membranes from lipid peroxidation.',
+        'selenium+vitamin-e': 'Selenium is required for glutathione peroxidase, which works alongside vitamin E to protect cell membranes from oxidative damage.',
+        'berberine+alpha-lipoic-acid': 'Both improve insulin sensitivity through different mechanisms: berberine via AMPK activation, ALA via glucose transporter signaling.',
+        'calcium+iron': 'Calcium significantly inhibits iron absorption when taken together. Always separate these by at least 2 hours.',
+        'calcium+zinc': 'High-dose calcium can reduce zinc absorption. Space these supplements apart for optimal absorption of both.',
+        'vitamin-k2+warfarin': 'Vitamin K2 directly counteracts warfarin\'s blood-thinning mechanism. This combination can be dangerous and requires medical supervision.',
+        '5-htp+ssri': 'Both increase serotonin levels. Combining them can cause serotonin syndrome - a potentially life-threatening condition. Never combine without medical supervision.',
+        '5-htp+maoi': 'Extremely dangerous combination. MAOIs prevent serotonin breakdown while 5-HTP increases production, risking severe serotonin syndrome.',
+        'tryptophan+ssri': 'Similar risk as 5-HTP + SSRI: excess serotonin accumulation can cause serotonin syndrome. Avoid this combination.',
+        'tryptophan+maoi': 'Dangerous combination due to serotonin accumulation risk. MAOIs block serotonin metabolism while tryptophan increases production.',
+        'ashwagandha+thyroid-medication': 'Ashwagandha can stimulate thyroid function and alter thyroid hormone levels, potentially interfering with thyroid medication dosing.',
+        'tyrosine+maoi': 'Tyrosine is a precursor to dopamine and norepinephrine. With MAOIs blocking their breakdown, dangerous hypertension can occur.',
+        'tyrosine+thyroid-medication': 'Tyrosine is a building block for thyroid hormones. Supplementing can alter thyroid hormone levels and interfere with medication.',
+        'ginkgo-biloba+blood-thinners': 'Ginkgo has blood-thinning properties that can dangerously amplify anticoagulant medications, increasing bleeding risk.',
+        'ginkgo-biloba+warfarin': 'Ginkgo inhibits platelet activating factor and combined with warfarin significantly increases the risk of bleeding.',
+        'vitamin-e+blood-thinners': 'Vitamin E has mild anticoagulant properties that can increase bleeding risk when combined with blood thinning medications.',
+        'berberine+metformin': 'Both lower blood sugar through similar pathways. Combining them can cause dangerous hypoglycemia (low blood sugar).',
+        'collagen+vitamin-c': 'Vitamin C is essential for collagen synthesis in the body. Taking them together supports your body\'s ability to produce its own collagen.',
+        'melatonin+magnesium': 'Magnesium supports GABA receptors while melatonin regulates circadian rhythm. Together they provide comprehensive sleep support.',
+        'melatonin+l-theanine': 'L-theanine promotes relaxation while melatonin signals sleep onset. An effective combination for both falling and staying asleep.',
+        'magnesium+l-theanine': 'Both promote GABA activity and relaxation. Combined they create a calm state conducive to stress relief and sleep.',
+        'vitamin-a+vitamin-d3': 'Both are fat-soluble vitamins that share absorption pathways and can compete at very high doses. Balance intake of both.',
+        'bacopa-monnieri+lions-mane': 'Bacopa improves memory consolidation while Lion\'s Mane supports nerve growth. Together they provide comprehensive cognitive enhancement.',
+        'bacopa-monnieri+alpha-gpc': 'Bacopa enhances memory while Alpha-GPC boosts acetylcholine. Both support learning and memory through complementary mechanisms.',
+        'glucosamine+msm': 'Glucosamine rebuilds cartilage while MSM reduces joint inflammation. The classic joint support combination.',
+        'glucosamine+collagen': 'Glucosamine supports cartilage repair while collagen provides structural proteins for joint tissue. Complementary joint care.',
+    };
+
+    function getExplanation(idA, idB) {
+        let key1 = idA + '+' + idB;
+        let key2 = idB + '+' + idA;
+        if (interactionExplanations[key1]) return interactionExplanations[key1];
+        if (interactionExplanations[key2]) return interactionExplanations[key2];
+        return null;
+    }
+
+    /* =============================================
+       DATA LOADING & PROCESSING
+       ============================================= */
+    async function loadData() {
+        try {
+            const resp = await fetch('/data/supplements.json');
+            if (!resp.ok) throw new Error('Failed to load data');
+            const data = await resp.json();
+            allSupplements = data.supplements || [];
+            processData();
+            renderUI();
+        } catch(e) {
+            console.error('Error loading supplement data:', e);
+            document.getElementById('imLoading').innerHTML = '<p style="color:var(--color-danger);">Failed to load supplement data. Please refresh the page.</p>';
+        }
+    }
+
+    function processData() {
+        supplementMap = {};
+        interactionMap = {};
+
+        allSupplements.forEach(function(s) {
+            supplementMap[s.id] = s;
+        });
+
+        // Build interaction map: each key is "idA|idB" (alphabetical order)
+        allSupplements.forEach(function(s) {
+            // Synergies
+            (s.synergies || []).forEach(function(targetId) {
+                let key = [s.id, targetId].sort().join('|');
+                if (!interactionMap[key]) {
+                    interactionMap[key] = { type: 'synergy', ids: [s.id, targetId] };
+                }
+            });
+            // Conflicts
+            (s.conflicts || []).forEach(function(targetId) {
+                let key = [s.id, targetId].sort().join('|');
+                if (!interactionMap[key]) {
+                    interactionMap[key] = { type: 'conflict', ids: [s.id, targetId] };
+                } else if (interactionMap[key].type === 'synergy') {
+                    // Conflict overrides synergy (shouldn't happen but safety)
+                    interactionMap[key].type = 'conflict';
+                }
+            });
+            // Absorption Competitors -> caution
+            (s.absorptionCompetitors || []).forEach(function(targetId) {
+                let key = [s.id, targetId].sort().join('|');
+                if (!interactionMap[key]) {
+                    interactionMap[key] = { type: 'caution', ids: [s.id, targetId] };
+                }
+                // Don't override synergy or conflict with caution
+            });
+        });
+
+        // Sort supplements by interaction count (desc)
+        allSupplements.sort(function(a, b) {
+            let aCount = (a.synergies||[]).length + (a.conflicts||[]).length + (a.absorptionCompetitors||[]).length;
+            let bCount = (b.synergies||[]).length + (b.conflicts||[]).length + (b.absorptionCompetitors||[]).length;
+            return bCount - aCount;
+        });
+    }
+
+    /* =============================================
+       UI RENDERING
+       ============================================= */
+    function renderUI() {
+        document.getElementById('imLoading').style.display = 'none';
+        renderStats();
+        renderFilters();
+        renderListView();
+        renderQuickReference();
+    }
+
+    function renderStats() {
+        document.getElementById('imStatSupplements').textContent = allSupplements.length;
+        let synCount = 0, conCount = 0, cautionCount = 0;
+        Object.values(interactionMap).forEach(function(v) {
+            if (v.type === 'synergy') synCount++;
+            else if (v.type === 'conflict') conCount++;
+            else if (v.type === 'caution') cautionCount++;
+        });
+        document.getElementById('imStatSynergies').textContent = synCount;
+        document.getElementById('imStatConflicts').textContent = conCount;
+        document.getElementById('imStatCaution').textContent = cautionCount;
+    }
+
+    function renderFilters() {
+        var container = document.getElementById('imFilters');
+        var label = container.querySelector('.im-filter-label');
+        container.innerHTML = '';
+        container.appendChild(label);
+
+        // Count per category
+        var catCounts = { 'All': allSupplements.length };
+        allSupplements.forEach(function(s) {
+            var cat = getCategoryForType(s.type);
+            catCounts[cat] = (catCounts[cat] || 0) + 1;
+        });
+
+        // "All" pill
+        var allPill = document.createElement('button');
+        allPill.className = 'im-filter-pill active';
+        allPill.dataset.filter = 'all';
+        allPill.innerHTML = 'All <span class="pill-count">' + allSupplements.length + '</span>';
+        allPill.addEventListener('click', function() { setFilter('all'); });
+        container.appendChild(allPill);
+
+        // Category pills (sorted by count desc, skip categories with 0)
+        var sortedCats = Object.keys(typeCategories).filter(function(c) { return catCounts[c] > 0; });
+        sortedCats.sort(function(a, b) { return (catCounts[b]||0) - (catCounts[a]||0); });
+        sortedCats.forEach(function(cat) {
+            var pill = document.createElement('button');
+            pill.className = 'im-filter-pill';
+            pill.dataset.filter = cat;
+            pill.innerHTML = cat + ' <span class="pill-count">' + catCounts[cat] + '</span>';
+            pill.addEventListener('click', function() { setFilter(cat); });
+            container.appendChild(pill);
+        });
+    }
+
+    function setFilter(filter) {
+        currentFilter = filter;
+        showAll = false;
+        document.querySelectorAll('.im-filter-pill').forEach(function(p) {
+            p.classList.toggle('active', p.dataset.filter === filter);
+        });
+        renderListView();
+        if (currentView === 'matrix') renderMatrixView();
+    }
+
+    function getFilteredSupplements() {
+        var list = allSupplements;
+        if (currentFilter !== 'all') {
+            var types = typeCategories[currentFilter] || [];
+            list = list.filter(function(s) { return types.includes(s.type); });
+        }
+        if (searchQuery) {
+            var q = searchQuery.toLowerCase();
+            list = list.filter(function(s) {
+                return s.name.toLowerCase().includes(q) ||
+                       s.id.toLowerCase().includes(q) ||
+                       s.type.toLowerCase().includes(q) ||
+                       (s.benefits || []).some(function(b) { return b.toLowerCase().includes(q); });
+            });
+        }
+        return list;
+    }
+
+    /* =============================================
+       LIST VIEW
+       ============================================= */
+    function renderListView() {
+        var container = document.getElementById('imListView');
+        var showMoreContainer = document.getElementById('imShowMore');
+        var filtered = getFilteredSupplements();
+
+        if (filtered.length === 0) {
+            container.innerHTML = '<div class="im-no-results"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="8" y1="11" x2="14" y2="11"/></svg><p>No supplements match your search. Try a different term.</p></div>';
+            showMoreContainer.style.display = 'none';
+            return;
+        }
+
+        var visible = showAll || searchQuery ? filtered : filtered.slice(0, DEFAULT_VISIBLE);
+        var html = '';
+
+        visible.forEach(function(s) {
+            var synNames = (s.synergies || []).map(function(id) {
+                return supplementMap[id] ? supplementMap[id].name : id.replace(/-/g,' ');
+            });
+            var conNames = (s.conflicts || []).map(function(id) {
+                return supplementMap[id] ? supplementMap[id].name : id.replace(/-/g,' ');
+            });
+            var cautionNames = (s.absorptionCompetitors || []).map(function(id) {
+                return supplementMap[id] ? supplementMap[id].name : id.replace(/-/g,' ');
+            });
+
+            html += '<div class="im-card" data-id="' + s.id + '">';
+            html += '<div class="im-card-header">';
+            html += '<span class="im-card-name">' + escHtml(s.name) + '</span>';
+            html += '<span class="im-card-type">' + escHtml(getCategoryForType(s.type)) + '</span>';
+            html += '</div>';
+            html += '<div class="im-card-body">';
+
+            // Synergies
+            if (synNames.length > 0) {
+                html += '<div class="im-card-section">';
+                html += '<div class="im-card-section-title synergy">Synergies (' + synNames.length + ')</div>';
+                html += '<div class="im-badges">';
+                synNames.forEach(function(name, i) {
+                    html += '<span class="im-badge synergy" data-source="' + s.id + '" data-target="' + (s.synergies||[])[i] + '">';
+                    html += '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>';
+                    html += escHtml(name) + '</span>';
+                });
+                html += '</div></div>';
+            }
+
+            // Conflicts
+            if (conNames.length > 0) {
+                html += '<div class="im-card-section">';
+                html += '<div class="im-card-section-title conflict">Conflicts (' + conNames.length + ')</div>';
+                html += '<div class="im-badges">';
+                conNames.forEach(function(name, i) {
+                    html += '<span class="im-badge conflict" data-source="' + s.id + '" data-target="' + (s.conflicts||[])[i] + '">';
+                    html += '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>';
+                    html += escHtml(name) + '</span>';
+                });
+                html += '</div></div>';
+            }
+
+            // Caution
+            if (cautionNames.length > 0) {
+                html += '<div class="im-card-section">';
+                html += '<div class="im-card-section-title caution">Absorption Competitors (' + cautionNames.length + ')</div>';
+                html += '<div class="im-badges">';
+                cautionNames.forEach(function(name, i) {
+                    html += '<span class="im-badge caution" data-source="' + s.id + '" data-target="' + (s.absorptionCompetitors||[])[i] + '">';
+                    html += '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>';
+                    html += escHtml(name) + '</span>';
+                });
+                html += '</div></div>';
+            }
+
+            if (synNames.length === 0 && conNames.length === 0 && cautionNames.length === 0) {
+                html += '<div class="im-card-empty">No known interactions listed.</div>';
+            }
+
+            html += '</div></div>';
+        });
+
+        container.innerHTML = html;
+
+        // Badge click handler
+        container.querySelectorAll('.im-badge').forEach(function(badge) {
+            badge.addEventListener('click', function(e) {
+                e.stopPropagation();
+                var src = badge.dataset.source;
+                var tgt = badge.dataset.target;
+                showInteractionModal(src, tgt);
+            });
+        });
+
+        // Show more
+        if (!showAll && !searchQuery && filtered.length > DEFAULT_VISIBLE) {
+            showMoreContainer.style.display = 'flex';
+            document.getElementById('imShowMoreBtn').textContent = 'Show All ' + filtered.length + ' Supplements';
+        } else {
+            showMoreContainer.style.display = 'none';
+        }
+    }
+
+    /* =============================================
+       MATRIX VIEW
+       ============================================= */
+    function renderMatrixView() {
+        var container = document.getElementById('imMatrixContainer');
+        var filtered = getFilteredSupplements();
+        var supps = filtered.slice(0, MATRIX_MAX);
+
+        if (supps.length < 2) {
+            container.innerHTML = '<div style="padding:2rem;text-align:center;color:var(--color-text-muted);">Need at least 2 supplements to show matrix. Adjust your filter or search.</div>';
+            return;
+        }
+
+        var html = '<table class="im-matrix-table"><thead><tr><th></th>';
+        supps.forEach(function(s) {
+            html += '<th title="' + escHtml(s.name) + '"><span class="im-matrix-th-inner">' + escHtml(s.name) + '</span></th>';
+        });
+        html += '</tr></thead><tbody>';
+
+        supps.forEach(function(rowS) {
+            html += '<tr><th title="' + escHtml(rowS.name) + '">' + escHtml(truncate(rowS.name, 22)) + '</th>';
+            supps.forEach(function(colS) {
+                if (rowS.id === colS.id) {
+                    html += '<td class="im-matrix-cell"><div class="im-cell-inner self"></div></td>';
+                } else {
+                    var key = [rowS.id, colS.id].sort().join('|');
+                    var interaction = interactionMap[key];
+                    var cls = 'neutral';
+                    var inner = '';
+                    if (interaction) {
+                        if (interaction.type === 'synergy') { cls = 'synergy'; inner = ''; }
+                        else if (interaction.type === 'conflict') { cls = 'conflict-strong'; inner = '!'; }
+                        else if (interaction.type === 'caution') { cls = 'caution'; inner = ''; }
+                    }
+                    html += '<td class="im-matrix-cell" data-row="' + rowS.id + '" data-col="' + colS.id + '" title="' + escHtml(rowS.name) + ' + ' + escHtml(colS.name) + '">';
+                    html += '<div class="im-cell-inner ' + cls + '">' + inner + '</div></td>';
+                }
+            });
+            html += '</tr>';
+        });
+        html += '</tbody></table>';
+
+        if (filtered.length > MATRIX_MAX) {
+            html += '<div style="padding:0.75rem;text-align:center;font-size:0.8125rem;color:var(--color-text-muted);border-top:1px solid var(--color-border);">Showing top ' + MATRIX_MAX + ' of ' + filtered.length + ' supplements. Use filters or search to narrow down.</div>';
+        }
+
+        container.innerHTML = html;
+
+        // Cell click
+        container.querySelectorAll('.im-matrix-cell[data-row]').forEach(function(cell) {
+            cell.addEventListener('click', function() {
+                showInteractionModal(cell.dataset.row, cell.dataset.col);
+            });
+        });
+    }
+
+    /* =============================================
+       MODAL
+       ============================================= */
+    function showInteractionModal(idA, idB) {
+        var suppA = supplementMap[idA];
+        var suppB = supplementMap[idB];
+        var nameA = suppA ? suppA.name : formatId(idA);
+        var nameB = suppB ? suppB.name : formatId(idB);
+
+        var key = [idA, idB].sort().join('|');
+        var interaction = interactionMap[key];
+        var iType = interaction ? interaction.type : 'neutral';
+
+        var iconSvg = '';
+        if (iType === 'synergy') {
+            iconSvg = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>';
+        } else if (iType === 'conflict') {
+            iconSvg = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>';
+        } else if (iType === 'caution') {
+            iconSvg = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>';
+        } else {
+            iconSvg = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="8" y1="12" x2="16" y2="12"/></svg>';
+        }
+
+        var typeLabels = { synergy: 'Synergy', conflict: 'Conflict', caution: 'Caution', neutral: 'No Known Interaction' };
+
+        var headerHtml = '';
+        headerHtml += '<div class="im-modal-icon ' + iType + '">' + iconSvg + '</div>';
+        headerHtml += '<div class="im-modal-names">';
+        headerHtml += '<div class="im-modal-pair">' + escHtml(nameA) + ' + ' + escHtml(nameB) + '</div>';
+        headerHtml += '<span class="im-modal-type-badge ' + iType + '">' + typeLabels[iType] + '</span>';
+        headerHtml += '</div>';
+
+        var bodyHtml = '';
+
+        // Explanation
+        var explanation = getExplanation(idA, idB);
+        if (!explanation) {
+            if (iType === 'synergy') {
+                explanation = escHtml(nameA) + ' and ' + escHtml(nameB) + ' have a synergistic relationship. They work through complementary pathways and may enhance each other\'s effectiveness when taken together.';
+            } else if (iType === 'conflict') {
+                explanation = escHtml(nameA) + ' and ' + escHtml(nameB) + ' may have a negative interaction. Consult with a healthcare provider before combining these.';
+            } else if (iType === 'caution') {
+                explanation = escHtml(nameA) + ' and ' + escHtml(nameB) + ' compete for absorption. Consider taking them at different times for optimal uptake of both.';
+            } else {
+                explanation = 'No specific interaction has been identified between ' + escHtml(nameA) + ' and ' + escHtml(nameB) + '. They can generally be taken together without concern.';
+            }
+        }
+        bodyHtml += '<div class="im-modal-explanation">' + explanation + '</div>';
+
+        // Details
+        bodyHtml += '<div class="im-modal-details">';
+        if (suppA) {
+            bodyHtml += '<div class="im-modal-detail">';
+            bodyHtml += '<div class="im-modal-detail-label">' + escHtml(nameA) + '</div>';
+            bodyHtml += '<div class="im-modal-detail-value">' + escHtml(suppA.dosage.typical + ' ' + suppA.dosage.unit) + ' &middot; ' + escHtml(suppA.timing) + '</div>';
+            bodyHtml += '</div>';
+        }
+        if (suppB) {
+            bodyHtml += '<div class="im-modal-detail">';
+            bodyHtml += '<div class="im-modal-detail-label">' + escHtml(nameB) + '</div>';
+            bodyHtml += '<div class="im-modal-detail-value">' + escHtml(suppB.dosage.typical + ' ' + suppB.dosage.unit) + ' &middot; ' + escHtml(suppB.timing) + '</div>';
+            bodyHtml += '</div>';
+        }
+        bodyHtml += '</div>';
+
+        // Links to supplement pages
+        bodyHtml += '<div class="im-modal-links">';
+        if (suppA) {
+            bodyHtml += '<a class="im-modal-link" href="/supplements/' + idA + '/">';
+            bodyHtml += '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>';
+            bodyHtml += escHtml(nameA) + ' Guide</a>';
+        }
+        if (suppB) {
+            bodyHtml += '<a class="im-modal-link" href="/supplements/' + idB + '/">';
+            bodyHtml += '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>';
+            bodyHtml += escHtml(nameB) + ' Guide</a>';
+        }
+        bodyHtml += '</div>';
+
+        document.getElementById('imModalHeader').innerHTML = headerHtml;
+        document.getElementById('imModalBody').innerHTML = bodyHtml;
+        document.getElementById('imModalOverlay').classList.add('active');
+        document.body.style.overflow = 'hidden';
+    }
+
+    function closeModal() {
+        document.getElementById('imModalOverlay').classList.remove('active');
+        document.body.style.overflow = '';
+    }
+
+    /* =============================================
+       QUICK REFERENCE
+       ============================================= */
+    function renderQuickReference() {
+        var synPairs = [];
+        var conPairs = [];
+        var cautionPairs = [];
+
+        Object.values(interactionMap).forEach(function(interaction) {
+            var idA = interaction.ids[0];
+            var idB = interaction.ids[1];
+            var nameA = supplementMap[idA] ? supplementMap[idA].name : formatId(idA);
+            var nameB = supplementMap[idB] ? supplementMap[idB].name : formatId(idB);
+            var explanation = getExplanation(idA, idB);
+
+            var entry = {
+                idA: idA, idB: idB,
+                nameA: nameA, nameB: nameB,
+                explanation: explanation,
+                hasExplanation: !!explanation
+            };
+
+            if (interaction.type === 'synergy') synPairs.push(entry);
+            else if (interaction.type === 'conflict') conPairs.push(entry);
+        });
+
+        // Sort: pairs with explanations first, then alphabetically
+        synPairs.sort(function(a, b) {
+            if (a.hasExplanation !== b.hasExplanation) return b.hasExplanation - a.hasExplanation;
+            return (a.nameA + a.nameB).localeCompare(b.nameA + b.nameB);
+        });
+        conPairs.sort(function(a, b) {
+            if (a.hasExplanation !== b.hasExplanation) return b.hasExplanation - a.hasExplanation;
+            return (a.nameA + a.nameB).localeCompare(b.nameA + b.nameB);
+        });
+
+        var topSyn = synPairs.slice(0, 10);
+        var topCon = conPairs.slice(0, 10);
+
+        var synHtml = '';
+        topSyn.forEach(function(pair, i) {
+            var desc = pair.explanation || 'These supplements enhance each other\'s effectiveness.';
+            synHtml += '<li class="im-quick-item" data-ida="' + pair.idA + '" data-idb="' + pair.idB + '">';
+            synHtml += '<span class="im-quick-rank synergy">' + (i+1) + '</span>';
+            synHtml += '<div class="im-quick-text">';
+            synHtml += '<div class="im-quick-pair">' + escHtml(pair.nameA) + ' + ' + escHtml(pair.nameB) + '</div>';
+            synHtml += '<div class="im-quick-desc">' + escHtml(truncate(desc, 120)) + '</div>';
+            synHtml += '</div></li>';
+        });
+
+        var conHtml = '';
+        topCon.forEach(function(pair, i) {
+            var desc = pair.explanation || 'These supplements may have a negative interaction.';
+            conHtml += '<li class="im-quick-item" data-ida="' + pair.idA + '" data-idb="' + pair.idB + '">';
+            conHtml += '<span class="im-quick-rank conflict">' + (i+1) + '</span>';
+            conHtml += '<div class="im-quick-text">';
+            conHtml += '<div class="im-quick-pair">' + escHtml(pair.nameA) + ' + ' + escHtml(pair.nameB) + '</div>';
+            conHtml += '<div class="im-quick-desc">' + escHtml(truncate(desc, 120)) + '</div>';
+            conHtml += '</div></li>';
+        });
+
+        document.getElementById('imTopSynergies').innerHTML = synHtml || '<li class="im-quick-item"><div class="im-quick-text"><div class="im-quick-desc">No synergies found.</div></div></li>';
+        document.getElementById('imTopConflicts').innerHTML = conHtml || '<li class="im-quick-item"><div class="im-quick-text"><div class="im-quick-desc">No conflicts found.</div></div></li>';
+
+        // Quick item click
+        document.querySelectorAll('.im-quick-item[data-ida]').forEach(function(item) {
+            item.addEventListener('click', function() {
+                showInteractionModal(item.dataset.ida, item.dataset.idb);
+            });
+        });
+
+        document.getElementById('imQuickRef').style.display = 'block';
+    }
+
+    /* =============================================
+       EVENTS
+       ============================================= */
+    // Search
+    var searchTimeout;
+    document.getElementById('imSearch').addEventListener('input', function(e) {
+        clearTimeout(searchTimeout);
+        searchTimeout = setTimeout(function() {
+            searchQuery = e.target.value.trim();
+            showAll = false;
+            renderListView();
+            if (currentView === 'matrix') renderMatrixView();
+        }, 200);
+    });
+
+    // View toggle
+    document.querySelectorAll('.im-view-btn').forEach(function(btn) {
+        btn.addEventListener('click', function() {
+            var view = btn.dataset.view;
+            if (view === currentView) return;
+            currentView = view;
+            document.querySelectorAll('.im-view-btn').forEach(function(b) { b.classList.remove('active'); });
+            btn.classList.add('active');
+
+            var listEl = document.getElementById('imListView');
+            var matrixEl = document.getElementById('imMatrixView');
+            var showMoreEl = document.getElementById('imShowMore');
+
+            if (view === 'list') {
+                listEl.classList.add('active');
+                matrixEl.classList.remove('active');
+                showMoreEl.style.display = '';
+                renderListView();
+            } else {
+                listEl.classList.remove('active');
+                matrixEl.classList.add('active');
+                showMoreEl.style.display = 'none';
+                renderMatrixView();
+            }
+        });
+    });
+
+    // Show more
+    document.getElementById('imShowMoreBtn').addEventListener('click', function() {
+        showAll = true;
+        renderListView();
+    });
+
+    // Modal close
+    document.getElementById('imModalClose').addEventListener('click', closeModal);
+    document.getElementById('imModalOverlay').addEventListener('click', function(e) {
+        if (e.target === document.getElementById('imModalOverlay')) closeModal();
+    });
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') closeModal();
+    });
+
+    /* =============================================
+       UTILITIES
+       ============================================= */
+    function escHtml(str) {
+        if (!str) return '';
+        var div = document.createElement('div');
+        div.textContent = str;
+        return div.innerHTML;
+    }
+
+    function truncate(str, len) {
+        if (!str) return '';
+        return str.length > len ? str.substring(0, len) + '...' : str;
+    }
+
+    function formatId(id) {
+        return id.replace(/-/g, ' ').replace(/\b\w/g, function(c) { return c.toUpperCase(); });
+    }
+
+    /* =============================================
+       INIT
+       ============================================= */
+    loadData();
+})();
+</script>
+{{ end }}

@@ -23,6 +23,8 @@ synergies: ["resveratrol", "pterostilbene", "nmn", "nr", "metformin", "exercise"
 tags: ["nad-plus", "energy-metabolism", "longevity", "mitochondrial-health", "cholesterol", "aging", "cellular-energy"]
 warnings: "Niacin flush (immediate-release) can be intense and concerning if unprepared—use low-dose initiation (250 mg) with food or aspirin (325 mg, 30 min prior). Sustained-release forms reduce flushing but may impair therapeutic response. High-dose niacin (>1,500 mg daily) can raise uric acid and glucose; monitor in gout/diabetes. Rare hepatotoxicity at very high doses (>10g daily). Extended-release nicotinamide may increase uric acid more than immediate-release. Avoid in active peptic ulcer disease."
 interactions: "Lovastatin/simvastatin (increased myopathy risk at high niacin doses), aspirin reduces flushing via prostaglandin inhibition, antidiabetic drugs (niacin may impair glucose control—monitor glucose), anticoagulants (minimal interaction but monitor), NSAIDs (combined may increase uric acid)"
+aliases:
+  - "/supplements/vitamin-b3/"
 ---
 
 ## What Is Vitamin B3 (Niacin)?

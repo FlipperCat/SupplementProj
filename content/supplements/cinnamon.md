@@ -23,6 +23,8 @@ synergies: ["berberine", "chromium", "alpha-lipoic-acid", "inositol"]
 tags: ["metabolic-health", "glucose-control", "insulin-sensitivity", "blood-sugar"]
 warnings: "CRITICAL: Avoid Cassia cinnamon (common grocery store cinnamon) due to high coumarin content (blood thinner; liver toxicity at high doses). Ceylon cinnamon contains ~250× less coumarin. At 3g/day Ceylon = negligible coumarin exposure; Cassia 3g/day = 2100+ mcg coumarin (exceeds 20 mcg/kg WHO guideline)."
 interactions: "Mild blood thinner (cumulative with warfarin, aspirin); separate by several hours. Monitor if taking blood pressure medications (minor additive effect). No significant interactions with most drugs."
+aliases:
+  - "/supplements/cinnamon/"
 ---
 
 ## What Is Ceylon Cinnamon?

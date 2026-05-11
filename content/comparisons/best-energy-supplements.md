@@ -9,6 +9,8 @@ tags:
   - "supplement comparison"
   - "athletic performance"
   - "focus supplements"
+aliases:
+  - "/comparisons/best-energy-supplements/"
 ---
 
 ## Best Energy Supplements: Form Matters More Than Brand

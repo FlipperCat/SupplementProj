@@ -44,6 +44,8 @@ tags:
 warnings: "CRITICAL SEROTONIN SYNDROME RISK: NEVER combine with SSRIs, SNRIs, MAOIs, tramadol, or other serotonergic drugs without explicit doctor approval. Serotonin syndrome is potentially fatal. Symptoms include high fever, rigid muscles, rapid heart rate, mental status changes, and autonomic instability. PREGNANT and BREASTFEEDING women should avoid (insufficient safety data). May increase risk of cardiac valvulopathy if combined with certain drugs (similar to fenfluramine). Monitor for: excessive serotonin symptoms, vivid/disturbing dreams, emotional blunting, involuntary muscle movements. Do NOT suddenly discontinue if taking for mood support. Start with low doses (50-100mg) to assess tolerance. Those with melanoma or depression history should consult doctor before use. Carbidopa interaction requires specific medical guidance."
 
 interactions: "SEVERE INTERACTIONS with SSRIs (sertraline, fluoxetine, paroxetine), SNRIs (venlafaxine, duloxetine), MAOIs, tramadol — SEROTONIN SYNDROME RISK. Interaction with carbidopa (used in Parkinson's) — requires specific dosing protocols and medical supervision. Potential interaction with tricyclic antidepressants. May interact with certain blood pressure medications. Safe with most other supplements but avoid with other serotonergic herbs (St. John's Wort). Those on ANY psychiatric medication should inform their doctor before starting 5-HTP. Do NOT combine with recreational drugs (MDMA, LSD)."
+aliases:
+  - "/supplements/5-htp/"
 ---
 
 ## What Is 5-HTP?

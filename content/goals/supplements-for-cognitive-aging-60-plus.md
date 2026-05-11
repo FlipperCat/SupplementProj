@@ -12,6 +12,9 @@ tags:
   - "neuroprotection"
   - "dementia prevention"
   - "longevity"
+aliases:
+  - "/goals/supplements-for-cognitive-aging-60-plus/"
+  - "/supplements-for-cognitive-aging-60-plus/"
 ---
 
 ## Brain Health Supplements for 60+

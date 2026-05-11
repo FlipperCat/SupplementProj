@@ -9,6 +9,9 @@ tags:
   - "hormonal balance"
   - "insulin resistance"
   - "fertility"
+aliases:
+  - "/goals/supplements-for-pcos/"
+  - "/supplements-for-pcos/"
 ---
 
 ## Understanding PCOS (And Why Supplements Actually Help)

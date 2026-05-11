@@ -27,6 +27,8 @@ tags:
   - broccoli
 warnings: Generally very safe. May cause minor detoxification symptoms initially. Pregnant women should consult doctor. Those with hormone-sensitive cancers should consult doctor.
 interactions: Works synergistically with other estrogen metabolism supporters. No major interactions.
+aliases:
+  - "/supplements/dim/"
 ---
 
 **What it is:** DIM is a phytonutrient derived from cruciferous vegetables (especially broccoli) that supports healthy estrogen metabolism and hormonal balance. By promoting favorable estrogen metabolites, DIM supports hormonal optimization for both men and women.

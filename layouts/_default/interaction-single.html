@@ -1,0 +1,227 @@
+{{ define "main" }}
+
+{{ $medKey := .Params.medication }}
+{{ $medData := index .Site.Data.interactions.medications $medKey }}
+
+<div class="container">
+    <article class="supplement-page">
+
+        <!-- Main Content -->
+        <div class="supplement-content">
+
+            <!-- Breadcrumb -->
+            <nav class="breadcrumb" aria-label="Breadcrumb" style="margin-bottom: var(--spacing-lg);">
+                <a href="/">Home</a>
+                <span style="margin: 0 0.5em; color: var(--color-text-muted);">/</span>
+                <a href="/interactions/">Interactions</a>
+                <span style="margin: 0 0.5em; color: var(--color-text-muted);">/</span>
+                <span>{{ with $medData }}{{ .name }}{{ else }}{{ .Title }}{{ end }}</span>
+            </nav>
+
+            <!-- Header -->
+            <header class="supplement-header">
+                <span class="supplement-category">Supplement &amp; Drug Interaction Guide</span>
+                <h1 class="supplement-title">{{ .Title }}</h1>
+                {{ with .Description }}
+                <p class="supplement-subtitle">{{ . }}</p>
+                {{ end }}
+            </header>
+
+            <!-- Medical Disclaimer -->
+            <div class="notice notice-info" style="margin-bottom: var(--spacing-2xl);">
+                <svg class="notice-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="10"/>
+                    <line x1="12" y1="16" x2="12" y2="12"/>
+                    <line x1="12" y1="8" x2="12.01" y2="8"/>
+                </svg>
+                <div class="notice-content">
+                    <h4>Medical Disclaimer</h4>
+                    <p>This information is for educational purposes only and does not replace professional medical advice. Always consult your healthcare provider or pharmacist before combining supplements with prescription medications.</p>
+                </div>
+            </div>
+
+            <!-- Quick Reference Cards from Data -->
+            {{ with $medData }}
+
+            <!-- Safe Supplements -->
+            {{ with .safe }}
+            <div style="margin-bottom: var(--spacing-2xl); padding: var(--spacing-lg); background: linear-gradient(135deg, rgba(16, 185, 129, 0.05), rgba(16, 185, 129, 0.02)); border-radius: var(--radius-lg); border: 1px solid rgba(16, 185, 129, 0.15);">
+                <h3 style="color: var(--color-success); margin-bottom: var(--spacing-md); display: flex; align-items: center; gap: var(--spacing-sm);">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                    Safe &amp; Beneficial
+                </h3>
+                <div class="card-grid" style="gap: var(--spacing-sm);">
+                    {{ range . }}
+                    <div class="card" style="border-left: 3px solid var(--color-success); margin: 0;">
+                        <div class="card-content" style="padding: var(--spacing-md);">
+                            <h4 style="margin: 0;"><a href="/supplements/{{ .slug }}/" style="color: var(--color-text);">{{ .name }}</a></h4>
+                            <p style="font-size: 0.85rem; color: var(--color-text-light); margin: var(--spacing-xs) 0 0;">{{ .reason }}</p>
+                        </div>
+                    </div>
+                    {{ end }}
+                </div>
+            </div>
+            {{ end }}
+
+            <!-- Caution Supplements -->
+            {{ with .caution }}
+            <div style="margin-bottom: var(--spacing-2xl); padding: var(--spacing-lg); background: linear-gradient(135deg, rgba(245, 158, 11, 0.05), rgba(245, 158, 11, 0.02)); border-radius: var(--radius-lg); border: 1px solid rgba(245, 158, 11, 0.15);">
+                <h3 style="color: var(--color-warning); margin-bottom: var(--spacing-md); display: flex; align-items: center; gap: var(--spacing-sm);">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+                    Use With Caution
+                </h3>
+                <div class="card-grid" style="gap: var(--spacing-sm);">
+                    {{ range . }}
+                    <div class="card" style="border-left: 3px solid var(--color-warning); margin: 0;">
+                        <div class="card-content" style="padding: var(--spacing-md);">
+                            <h4 style="margin: 0;">{{ .name }}</h4>
+                            <p style="font-size: 0.85rem; color: var(--color-text-light); margin: var(--spacing-xs) 0 0;">{{ .reason }}</p>
+                        </div>
+                    </div>
+                    {{ end }}
+                </div>
+            </div>
+            {{ end }}
+
+            <!-- Avoid Supplements -->
+            {{ with .avoid }}
+            <div style="margin-bottom: var(--spacing-2xl); padding: var(--spacing-lg); background: linear-gradient(135deg, rgba(239, 68, 68, 0.05), rgba(239, 68, 68, 0.02)); border-radius: var(--radius-lg); border: 1px solid rgba(239, 68, 68, 0.15);">
+                <h3 style="color: var(--color-danger); margin-bottom: var(--spacing-md); display: flex; align-items: center; gap: var(--spacing-sm);">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="15" y1="9" x2="9" y2="15"/><line x1="9" y1="9" x2="15" y2="15"/></svg>
+                    Avoid / Dangerous
+                </h3>
+                <div class="card-grid" style="gap: var(--spacing-sm);">
+                    {{ range . }}
+                    <div class="card" style="border-left: 3px solid var(--color-danger); margin: 0;">
+                        <div class="card-content" style="padding: var(--spacing-md);">
+                            <h4 style="margin: 0; color: var(--color-danger);">{{ .name }}</h4>
+                            <p style="font-size: 0.85rem; color: var(--color-text-light); margin: var(--spacing-xs) 0 0;">{{ .reason }}</p>
+                        </div>
+                    </div>
+                    {{ end }}
+                </div>
+            </div>
+            {{ end }}
+
+            <!-- Timing Note -->
+            {{ with .timing_note }}
+            <div class="notice notice-warning" style="margin-bottom: var(--spacing-2xl);">
+                <svg class="notice-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="10"/>
+                    <polyline points="12 6 12 12 16 14"/>
+                </svg>
+                <div class="notice-content">
+                    <h4>Timing Note</h4>
+                    <p>{{ . }}</p>
+                </div>
+            </div>
+            {{ end }}
+
+            {{ end }}{{/* end with $medData */}}
+
+            <!-- Main Article Content (from Markdown) -->
+            <div class="article-content">
+                {{ .Content }}
+            </div>
+
+            <!-- Full Medication Guide Link -->
+            {{ with $medData }}
+            {{ with .guide_url }}
+            {{ if ne . "" }}
+            <div style="margin-top: var(--spacing-2xl); padding: var(--spacing-lg); background: var(--color-bg-alt); border-radius: var(--radius-lg); text-align: center;">
+                <p style="margin-bottom: var(--spacing-md); font-weight: 600;">Want the full guide with dosing protocols?</p>
+                <a href="{{ . }}" class="btn btn-primary">Read Full {{ $medData.name }} Supplement Guide</a>
+            </div>
+            {{ end }}
+            {{ end }}
+            {{ end }}
+
+            <!-- FAQ Section -->
+            {{ with .Params.faq }}
+            <section style="margin-top: var(--spacing-3xl);">
+                <h2>Frequently Asked Questions</h2>
+                {{ range . }}
+                <details style="margin-bottom: var(--spacing-md); padding: var(--spacing-md) var(--spacing-lg); background: var(--color-bg-alt); border-radius: var(--radius-md); border: 1px solid var(--color-border);">
+                    <summary style="font-weight: 600; cursor: pointer; color: var(--color-text);">{{ .question }}</summary>
+                    <p style="margin-top: var(--spacing-sm); color: var(--color-text-light); line-height: 1.7;">{{ .answer }}</p>
+                </details>
+                {{ end }}
+            </section>
+            {{ end }}
+
+            <!-- Tags -->
+            {{ with .Params.tags }}
+            <div class="tag-list" style="margin-top: var(--spacing-2xl);">
+                {{ range . }}
+                <a href="/tags/{{ . | urlize }}/" class="tag">{{ . }}</a>
+                {{ end }}
+            </div>
+            {{ end }}
+
+        </div>
+
+        <!-- Sidebar -->
+        <aside class="supplement-sidebar">
+
+            <!-- Medication Checker Tool -->
+            <div class="affiliate-cta">
+                <h4>Check Your Medications</h4>
+                <p>Use our interactive tool to check interactions for your specific medication and supplement combination.</p>
+                <a href="/analyzer/" class="btn btn-block">Open Stack Analyzer</a>
+            </div>
+
+            <!-- Table of Contents -->
+            <div class="sidebar-box">
+                <h4>On This Page</h4>
+                <ul class="toc-list">
+                    <!-- Generated by JS -->
+                </ul>
+            </div>
+
+            <!-- Related Interaction Guides -->
+            <div class="sidebar-box">
+                <h4>More Interaction Guides</h4>
+                <ul style="list-style: none; padding: 0; margin: 0;">
+                    {{ range where .Site.RegularPages "Section" "interactions" }}
+                    {{ if ne .Permalink $.Permalink }}
+                    <li style="margin-bottom: var(--spacing-xs);">
+                        <a href="{{ .Permalink }}" style="font-size: 0.9rem; display: block; padding: var(--spacing-xs) 0; border-bottom: 1px solid var(--color-border);">
+                            {{ .Title | truncate 45 }}
+                        </a>
+                    </li>
+                    {{ end }}
+                    {{ end }}
+                </ul>
+            </div>
+
+            <!-- Quick Legend -->
+            <div class="sidebar-box">
+                <h4>Interaction Legend</h4>
+                <div style="font-size: 0.85rem;">
+                    <div style="display: flex; align-items: center; gap: var(--spacing-sm); margin-bottom: var(--spacing-xs);">
+                        <span style="width: 12px; height: 12px; background: var(--color-success); border-radius: 2px; flex-shrink: 0;"></span>
+                        <span><strong>Safe</strong> &mdash; Beneficial or no interaction</span>
+                    </div>
+                    <div style="display: flex; align-items: center; gap: var(--spacing-sm); margin-bottom: var(--spacing-xs);">
+                        <span style="width: 12px; height: 12px; background: var(--color-warning); border-radius: 2px; flex-shrink: 0;"></span>
+                        <span><strong>Caution</strong> &mdash; May interact, monitor closely</span>
+                    </div>
+                    <div style="display: flex; align-items: center; gap: var(--spacing-sm);">
+                        <span style="width: 12px; height: 12px; background: var(--color-danger); border-radius: 2px; flex-shrink: 0;"></span>
+                        <span><strong>Avoid</strong> &mdash; Dangerous interaction risk</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Lead Magnet (disabled — no email capture) -->
+            {{/* partial "lead-magnet.html" . */}}
+
+            <!-- Newsletter (disabled — no email capture) -->
+            {{/* partial "newsletter.html" . */}}
+
+        </aside>
+
+    </article>
+</div>
+
+{{ end }}

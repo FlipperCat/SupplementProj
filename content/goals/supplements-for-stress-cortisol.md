@@ -9,6 +9,9 @@ tags:
   - "cortisol"
   - "sleep"
   - "mental health"
+aliases:
+  - "/goals/supplements-for-stress-cortisol/"
+  - "/supplements-for-stress-cortisol/"
 ---
 
 ## Chronic Stress: The Silent Epidemic

@@ -9,6 +9,8 @@ tags:
   - "vitamin-d3"
   - "bioavailability"
   - "comparison"
+aliases:
+  - "/comparisons/vitamin-d2-vs-d3/"
 ---
 
 ## Why Vitamin D Form Matters

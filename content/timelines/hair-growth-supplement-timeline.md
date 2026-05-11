@@ -9,6 +9,8 @@ tags:
   - "supplement timeline"
   - "collagen"
   - "hair health"
+aliases:
+  - "/timelines/hair-growth-supplement-timeline/"
 ---
 
 ## Introduction: Hair Growth Takes Time

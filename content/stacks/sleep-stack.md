@@ -24,6 +24,8 @@ tags:
   - "recovery"
   - "stress"
 warnings: "Start with one supplement at a time to assess effects. Those on sedatives, anti-anxiety medications, or sleep medications should consult a doctor before combining. Don't drive or operate machinery after taking."
+aliases:
+  - "/stacks/sleep-stack/"
 ---
 
 ## Why a Sleep Stack?
