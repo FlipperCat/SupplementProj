@@ -1,38 +1,28 @@
-# Checkpoint — 2026-05-11
+# Checkpoint — 2026-05-11 (PM)
 
-## Done (this session, headless dispatcher run)
+## Done (this session)
 
-- Added 6 new supplement markdown articles to `content/supplements/`:
-  - `dhea.md`
-  - `pregnenolone.md`
-  - `fadogia-agrestis.md`
-  - `pterostilbene.md`
-  - `dandelion-root.md`
-  - `artichoke-extract.md`
-- Added matching entries (all with `notes` and `conflicts` populated) to `data/supplements.json`. Total now 119 supplements.
-- Added 3 new comparison articles to `content/comparisons/`:
-  - `nmn-vs-nr.md`
-  - `pterostilbene-vs-resveratrol.md`
-  - `tongkat-ali-vs-fadogia.md`
-- Added 2 new medication interaction guides to `content/medications/`:
-  - `nsaid-supplements.md`
-  - `antihistamine-supplements.md`
-- Updated `PROJECT-STATUS.md` counts (119 supplements, 24 comparisons, 17 medications).
+- Backfilled `notes` field on all 77 supplements that lacked one in `data/supplements.json`. Stack Analyzer DB is now 119/119 with notes (full coverage).
+- Wrote concise, clinical, actionable one-liners per entry (dosing tips, form preferences, interaction caveats, deficiency cautions). Style matches existing entries.
+- Created `backfill_notes.py` as a reusable helper (in repo root).
+- Updated `PROJECT-STATUS.md` richness section + crossed off the notes task in Outstanding work.
+- Verified `hugo` build is clean (1530 pages, 2.3s, exit 0).
 
-## Next
+## Next obvious step
 
-- Substantial uncommitted backlog (75+ files) — review and commit when human is available. Don't auto-commit; user wants eyeball check first.
-- Fill in `conflicts` arrays on the remaining supplements without them (still ~104 entries lack conflict data).
-- Add schema.org `MedicalSupplement` structured data on supplement pages — solid SEO leverage; no competitor doing it well.
-- Replace placeholder analytics IDs in `hugo.toml` (`G-XXXXXXXXXX`, `YOUR_GSC_VERIFICATION_ID`) — needs real values.
-- Quality pass on the ~77 entries without a `notes` field.
+- **Fill in `conflicts` arrays** — still only 15/119. This is now the thinnest data quality area and the Stack Analyzer's killer feature is conflict detection. Best leverage is on the high-traffic entries (vitamin-d3, magnesium, omega-3 already have conflicts — focus on zinc, calcium, iron, k2, b-complex interactions with common meds).
+- After that: `MedicalSupplement` schema.org structured data on supplement pages (SEO leverage, low-competition).
+
+## Earlier outstanding (carried forward)
+
+- ~~75-file uncommitted backlog~~ — working tree is now clean (previous backlog appears to have been committed). Skip.
+- Replace placeholder analytics IDs in `hugo.toml` (`G-XXXXXXXXXX`, `YOUR_GSC_VERIFICATION_ID`) — needs real values from user.
 
 ## In flight
 
-None — all targeted work completed in this run.
+None — task shipped end-to-end.
 
 ## Gotchas discovered
 
-- `data/supplements.json` requires UTF-8 explicit on Windows Python (default cp1252 codec fails on em-dashes).
-- Hugo isn't installed locally (no quick `hugo --quiet` validation possible from this session) — relying on Netlify build to catch any frontmatter issues.
-- Added `notes` field to every new supplement to set a quality bar; the existing entries that lack notes are mostly the older bulk-import batch.
+- `data/supplements.json` em-dash bytes survive — Python writes UTF-8 cleanly when `encoding='utf-8'` is explicit AND `ensure_ascii=False` is passed to `json.dump`. Without the latter, you get `—` escapes which still load fine but bloat the file.
+- Windows terminal will mojibake em-dashes on stdout (cp1252 default) — the file itself is fine; only console display is affected.

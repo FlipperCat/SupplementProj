@@ -24,7 +24,7 @@ The Stack Analyzer DB is in 1:1 sync with the markdown catalog — each entry ha
 
 **JSON richness:**
 - 119/119 have `synergies` populated
-- 42/119 have `notes` field (added on the 6 new entries 2026-05-11)
+- **119/119 have `notes` field** ✅ (full backfill completed 2026-05-11)
 - 23/119 are linked to a specific Amway product (affiliate)
 - **15/119 have `conflicts` populated** (added 6 new with conflicts 2026-05-11) ← still thinnest area
 
@@ -47,8 +47,8 @@ Run `git status` to inspect. Likely safe to commit + push as one cleanup batch �
 
 ### Medium
 4. Add structured data (`MedicalSupplement` schema.org) on supplement pages — no other supplement site does this well, and rich-results eligibility is real SEO leverage.
-5. Add more entries to the `medications/` interaction guides (currently 8).
-6. Quality pass on the 77 entries without a `notes` field — short clinical note where warranted.
+5. Add more entries to the `medications/` interaction guides (currently 17).
+6. ~~Quality pass on the 77 entries without a `notes` field~~ ✅ Done 2026-05-11 — all 119 entries now have clinical notes.
 
 ### Optional / low priority
 - More comparison articles (only 6 right now).

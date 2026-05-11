@@ -41,7 +41,8 @@
       ],
       "depletedBy": [],
       "amwayProduct": "Nutrilite Vitamin D",
-      "resultsTimeline": "2-3 months"
+      "resultsTimeline": "2-3 months",
+      "notes": "Get 25-OH vitamin D tested first; target serum 40-60 ng/mL. Pair with K2 if dosing >2000 IU daily."
     },
     {
       "id": "magnesium",
@@ -92,7 +93,8 @@
         "caffeine"
       ],
       "amwayProduct": "Nutrilite Cal Mag D",
-      "resultsTimeline": "1-4 weeks"
+      "resultsTimeline": "1-4 weeks",
+      "notes": "Glycinate or threonate forms are best tolerated. Oxide is poorly absorbed and laxative-only."
     },
     {
       "id": "omega-3",
@@ -134,7 +136,8 @@
       "absorptionCompetitors": [],
       "depletedBy": [],
       "amwayProduct": "Nutrilite Omega-3 Complex",
-      "resultsTimeline": "2-3 months"
+      "resultsTimeline": "2-3 months",
+      "notes": "Look for TG (triglyceride) form and a combined EPA+DHA total — not just fish oil mg. Refrigerate to prevent rancidity."
     },
     {
       "id": "vitamin-k2",
@@ -172,7 +175,8 @@
         "antibiotics"
       ],
       "amwayProduct": null,
-      "resultsTimeline": "3-6 months"
+      "resultsTimeline": "3-6 months",
+      "notes": "MK-7 form has a longer half-life than MK-4; 100-200 mcg daily is plenty. Avoid if on warfarin."
     },
     {
       "id": "zinc",
@@ -222,7 +226,8 @@
         "stress"
       ],
       "amwayProduct": "Nutrilite Daily",
-      "resultsTimeline": "2-4 weeks"
+      "resultsTimeline": "2-4 weeks",
+      "notes": "Long-term dosing >25 mg/day depletes copper — add 1-2 mg copper if supplementing chronically."
     },
     {
       "id": "copper",
@@ -312,7 +317,8 @@
         "metformin"
       ],
       "amwayProduct": "Nutrilite B Complex Dual Action",
-      "resultsTimeline": "1-4 weeks"
+      "resultsTimeline": "1-4 weeks",
+      "notes": "Choose methylated forms (methylfolate, methylcobalamin) if you have MTHFR variants or sensitivity to standard B-complex."
     },
     {
       "id": "vitamin-c",
@@ -356,7 +362,8 @@
         "stress"
       ],
       "amwayProduct": "Nutrilite Bio C Plus",
-      "resultsTimeline": "1-2 weeks"
+      "resultsTimeline": "1-2 weeks",
+      "notes": "Liposomal or split dosing improves absorption above 500 mg. Megadoses (>2g) can cause GI upset."
     },
     {
       "id": "ashwagandha",
@@ -400,7 +407,8 @@
       "depletedBy": [],
       "amwayProduct": null,
       "resultsTimeline": "4-8 weeks",
-      "cycling": "8 weeks on, 2 weeks off"
+      "cycling": "8 weeks on, 2 weeks off",
+      "notes": "KSM-66 and Sensoril are the studied extracts — generic root powder is much weaker. Cycle off every 8-12 weeks."
     },
     {
       "id": "creatine",
@@ -440,7 +448,8 @@
       "absorptionCompetitors": [],
       "depletedBy": [],
       "amwayProduct": null,
-      "resultsTimeline": "3-4 weeks"
+      "resultsTimeline": "3-4 weeks",
+      "notes": "Skip the loading phase; 5 g/day reaches saturation in ~4 weeks with less bloating. Monohydrate is the only form with strong evidence."
     },
     {
       "id": "l-theanine",
@@ -480,7 +489,8 @@
       "absorptionCompetitors": [],
       "depletedBy": [],
       "amwayProduct": null,
-      "resultsTimeline": "15-45 minutes (acute)"
+      "resultsTimeline": "15-45 minutes (acute)",
+      "notes": "Stacks well with caffeine at a 2:1 ratio (200 mg theanine : 100 mg caffeine) for clean focus."
     },
     {
       "id": "coq10",
@@ -523,7 +533,8 @@
         "statins"
       ],
       "amwayProduct": null,
-      "resultsTimeline": "4-12 weeks"
+      "resultsTimeline": "4-12 weeks",
+      "notes": "Use ubiquinol (not ubiquinone) over age 40 — much better absorbed. Statin users especially benefit."
     },
     {
       "id": "probiotics",
@@ -564,7 +575,8 @@
         "antibiotics"
       ],
       "amwayProduct": "Nutrilite Balance Within Probiotic",
-      "resultsTimeline": "2-4 weeks"
+      "resultsTimeline": "2-4 weeks",
+      "notes": "Strain specificity matters more than CFU count. Refrigerated, multi-strain products outperform shelf-stable in most studies."
     },
     {
       "id": "curcumin",
@@ -735,7 +747,8 @@
       "depletedBy": [],
       "amwayProduct": null,
       "resultsTimeline": "4-12 weeks",
-      "conflicts_note": "No major known interactions at typical doses."
+      "conflicts_note": "No major known interactions at typical doses.",
+      "notes": "Take with vitamin C to support collagen synthesis. Hydrolyzed peptides (2-5 kDa) absorb best."
     },
     {
       "id": "alpha-lipoic-acid",
@@ -775,7 +788,8 @@
       "absorptionCompetitors": [],
       "depletedBy": [],
       "amwayProduct": null,
-      "resultsTimeline": "4-8 weeks"
+      "resultsTimeline": "4-8 weeks",
+      "notes": "R-ALA form is more bioactive than racemic. Take on an empty stomach away from minerals (chelates them)."
     },
     {
       "id": "rhodiola",
@@ -816,7 +830,8 @@
       "depletedBy": [],
       "amwayProduct": null,
       "resultsTimeline": "1-4 weeks",
-      "cycling": "Consider cycling every 2-3 months"
+      "cycling": "Consider cycling every 2-3 months",
+      "notes": "Look for SHR-5 extract standardized to 3% rosavins / 1% salidroside. Best taken in the morning — can be stimulating."
     },
     {
       "id": "nac",
@@ -858,7 +873,8 @@
       "absorptionCompetitors": [],
       "depletedBy": [],
       "amwayProduct": null,
-      "resultsTimeline": "2-4 weeks"
+      "resultsTimeline": "2-4 weeks",
+      "notes": "Take on an empty stomach for best absorption. May reduce zinc and copper over time — monitor if dosing long-term."
     },
     {
       "id": "selenium",
@@ -896,7 +912,8 @@
       "absorptionCompetitors": [],
       "depletedBy": [],
       "amwayProduct": null,
-      "resultsTimeline": "4-8 weeks"
+      "resultsTimeline": "4-8 weeks",
+      "notes": "Toxic above 400 mcg/day — stick to 100-200 mcg. Brazil nuts (1-2/day) are a food alternative."
     },
     {
       "id": "berberine",
@@ -936,7 +953,8 @@
       "depletedBy": [],
       "amwayProduct": null,
       "resultsTimeline": "4-8 weeks",
-      "cycling": "Cycle 8 weeks on, 4 weeks off"
+      "cycling": "Cycle 8 weeks on, 4 weeks off",
+      "notes": "Split into 500 mg doses 2-3x daily with meals — short half-life. Don't combine with metformin without a doctor."
     },
     {
       "id": "lions-mane",
@@ -975,7 +993,8 @@
       "absorptionCompetitors": [],
       "depletedBy": [],
       "amwayProduct": null,
-      "resultsTimeline": "4-8 weeks"
+      "resultsTimeline": "4-8 weeks",
+      "notes": "Effects on cognition build slowly — 8-12 weeks for noticeable changes. Dual-extract (water + alcohol) products are most complete."
     },
     {
       "id": "glycine",
@@ -1013,7 +1032,8 @@
       "absorptionCompetitors": [],
       "depletedBy": [],
       "amwayProduct": null,
-      "resultsTimeline": "1 night (acute)"
+      "resultsTimeline": "1 night (acute)",
+      "notes": "3 g before bed improves sleep onset and quality. Tastes sweet, dissolves well in water."
     },
     {
       "id": "5-htp",
@@ -1096,7 +1116,8 @@
       "absorptionCompetitors": [],
       "depletedBy": [],
       "amwayProduct": null,
-      "resultsTimeline": "4-8 weeks"
+      "resultsTimeline": "4-8 weeks",
+      "notes": "Take in the morning — can be stimulating. The acetyl form crosses the blood-brain barrier better than plain L-carnitine."
     },
     {
       "id": "alpha-gpc",
@@ -1136,7 +1157,8 @@
       "absorptionCompetitors": [],
       "depletedBy": [],
       "amwayProduct": null,
-      "resultsTimeline": "2-4 weeks"
+      "resultsTimeline": "2-4 weeks",
+      "notes": "More bioavailable than CDP-choline but has a slight depressive mood effect in some users at high doses (>600 mg)."
     },
     {
       "id": "apigenin",
@@ -1178,7 +1200,8 @@
       "absorptionCompetitors": [],
       "depletedBy": [],
       "amwayProduct": null,
-      "resultsTimeline": "1-2 weeks"
+      "resultsTimeline": "1-2 weeks",
+      "notes": "50 mg before bed improves sleep depth. Found naturally in chamomile and parsley but supplemental doses are much higher."
     },
     {
       "id": "astaxanthin",
@@ -1220,7 +1243,8 @@
       "absorptionCompetitors": [],
       "depletedBy": [],
       "amwayProduct": null,
-      "resultsTimeline": "4-8 weeks"
+      "resultsTimeline": "4-8 weeks",
+      "notes": "Fat-soluble — must take with a meal containing fat. 4-12 mg daily; the most potent natural antioxidant by some measures."
     },
     {
       "id": "bacopa-monnieri",
@@ -1339,7 +1363,8 @@
       "absorptionCompetitors": [],
       "depletedBy": [],
       "amwayProduct": null,
-      "resultsTimeline": "2-4 weeks"
+      "resultsTimeline": "2-4 weeks",
+      "notes": "3-10 mg daily supports hormone balance and bone health. Megadoses (>20 mg) can disrupt hormones in the other direction."
     },
     {
       "id": "caffeine",
@@ -1468,7 +1493,8 @@
       "absorptionCompetitors": [],
       "depletedBy": [],
       "amwayProduct": null,
-      "resultsTimeline": "2-4 weeks"
+      "resultsTimeline": "2-4 weeks",
+      "notes": "Citicoline form raises both choline and uridine. Better tolerated than alpha-GPC at high doses."
     },
     {
       "id": "chlorella",
@@ -1508,7 +1534,8 @@
       "absorptionCompetitors": [],
       "depletedBy": [],
       "amwayProduct": null,
-      "resultsTimeline": "4-8 weeks"
+      "resultsTimeline": "4-8 weeks",
+      "notes": "Choose broken-cell-wall chlorella for absorption. May bind to heavy metals — useful for detox protocols but check sourcing for contamination."
     },
     {
       "id": "chromium",
@@ -1551,7 +1578,8 @@
         "stress"
       ],
       "amwayProduct": null,
-      "resultsTimeline": "4-8 weeks"
+      "resultsTimeline": "4-8 weeks",
+      "notes": "Picolinate form is best studied for glucose support. Effects are modest — diet and exercise matter more."
     },
     {
       "id": "cinnamon",
@@ -1632,7 +1660,8 @@
       "absorptionCompetitors": [],
       "depletedBy": [],
       "amwayProduct": null,
-      "resultsTimeline": "1-2 weeks"
+      "resultsTimeline": "1-2 weeks",
+      "notes": "L-citrulline malate at 6-8 g pre-workout raises arginine more effectively than arginine itself. Take 30-60 min before training."
     },
     {
       "id": "digestive-enzymes",
@@ -1673,7 +1702,8 @@
         "stress"
       ],
       "amwayProduct": "Nutrilite Digestive Enzyme Complex",
-      "resultsTimeline": "1-2 weeks"
+      "resultsTimeline": "1-2 weeks",
+      "notes": "Take with the first bite of the meal. Useful for specific issues (pancreatic insufficiency, lactose intolerance) — not a daily multi-enzyme habit."
     },
     {
       "id": "dim",
@@ -1793,7 +1823,8 @@
       "absorptionCompetitors": [],
       "depletedBy": [],
       "amwayProduct": null,
-      "resultsTimeline": "4-8 weeks"
+      "resultsTimeline": "4-8 weeks",
+      "notes": "May lower blood sugar — caution with diabetes meds. Body odor side effect (maple syrup smell) is common."
     },
     {
       "id": "gaba",
@@ -1924,7 +1955,8 @@
       "depletedBy": [],
       "amwayProduct": null,
       "resultsTimeline": "4-8 weeks",
-      "cycling": "Use for 8 weeks then take a 2-week break"
+      "cycling": "Use for 8 weeks then take a 2-week break",
+      "notes": "Korean (Panax) is stimulating; American is calming. Cycle 8 weeks on, 2 weeks off to avoid tolerance."
     },
     {
       "id": "glucosamine",
@@ -1964,7 +1996,8 @@
       "absorptionCompetitors": [],
       "depletedBy": [],
       "amwayProduct": null,
-      "resultsTimeline": "4-8 weeks"
+      "resultsTimeline": "4-8 weeks",
+      "notes": "Sulfate form has stronger evidence than HCl. Allow 4-8 weeks for joint benefits; not all responders."
     },
     {
       "id": "glutamine",
@@ -2008,7 +2041,8 @@
         "illness"
       ],
       "amwayProduct": null,
-      "resultsTimeline": "2-4 weeks"
+      "resultsTimeline": "2-4 weeks",
+      "notes": "Most beneficial for gut healing and high-stress states; healthy people get enough from diet. 5-10 g daily for therapeutic use."
     },
     {
       "id": "green-tea-extract",
@@ -2092,7 +2126,8 @@
       "depletedBy": [],
       "amwayProduct": null,
       "resultsTimeline": "3-4 weeks",
-      "conflicts_note": "No major known interactions at typical doses."
+      "conflicts_note": "No major known interactions at typical doses.",
+      "notes": "Most effective in untrained, older, or catabolic states. Take 3 g daily, split into 3 doses around training/meals."
     },
     {
       "id": "holy-basil",
@@ -2132,7 +2167,8 @@
       "absorptionCompetitors": [],
       "depletedBy": [],
       "amwayProduct": null,
-      "resultsTimeline": "2-4 weeks"
+      "resultsTimeline": "2-4 weeks",
+      "notes": "Tulsi extract supports cortisol balance. Often combined with ashwagandha for adaptogen stacks."
     },
     {
       "id": "inositol",
@@ -2300,7 +2336,8 @@
       "depletedBy": [],
       "amwayProduct": "Nutrilite Lutein",
       "resultsTimeline": "4-8 weeks",
-      "conflicts_note": "No major known interactions at typical doses."
+      "conflicts_note": "No major known interactions at typical doses.",
+      "notes": "10 mg lutein + 2 mg zeaxanthin is the standard combo. Take with a fat-containing meal for absorption."
     },
     {
       "id": "maca",
@@ -2342,7 +2379,8 @@
       "absorptionCompetitors": [],
       "depletedBy": [],
       "amwayProduct": null,
-      "resultsTimeline": "4-8 weeks"
+      "resultsTimeline": "4-8 weeks",
+      "notes": "Gelatinized maca is easier to digest than raw. Effects on libido and energy take 4-8 weeks of consistent use."
     },
     {
       "id": "manganese",
@@ -2384,7 +2422,8 @@
       ],
       "depletedBy": [],
       "amwayProduct": null,
-      "resultsTimeline": "4-8 weeks"
+      "resultsTimeline": "4-8 weeks",
+      "notes": "Easy to over-supplement — most people get enough from diet. Excess is neurotoxic; keep total intake under 11 mg/day."
     },
     {
       "id": "milk-thistle",
@@ -2426,7 +2465,8 @@
       "absorptionCompetitors": [],
       "depletedBy": [],
       "amwayProduct": null,
-      "resultsTimeline": "4-8 weeks"
+      "resultsTimeline": "4-8 weeks",
+      "notes": "Standardize to 80% silymarin. Useful liver support but not a license to drink — protective, not curative."
     },
     {
       "id": "msm",
@@ -2466,7 +2506,8 @@
       "absorptionCompetitors": [],
       "depletedBy": [],
       "amwayProduct": null,
-      "resultsTimeline": "4-6 weeks"
+      "resultsTimeline": "4-6 weeks",
+      "notes": "Often stacked with glucosamine and chondroitin for joints. Sulfur smell/taste is normal; mix with juice if needed."
     },
     {
       "id": "nmn",
@@ -2509,7 +2550,8 @@
         "age"
       ],
       "amwayProduct": null,
-      "resultsTimeline": "4-8 weeks"
+      "resultsTimeline": "4-8 weeks",
+      "notes": "Sublingual or liposomal forms may bypass intestinal degradation. Evidence in humans is still early — NR has more clinical data."
     },
     {
       "id": "phosphatidylserine",
@@ -2550,7 +2592,8 @@
       "absorptionCompetitors": [],
       "depletedBy": [],
       "amwayProduct": null,
-      "resultsTimeline": "4-6 weeks"
+      "resultsTimeline": "4-6 weeks",
+      "notes": "Sunflower-derived is preferred over soy. 100-300 mg before bed lowers cortisol; morning dose supports focus."
     },
     {
       "id": "piperine",
@@ -2673,7 +2716,8 @@
       "absorptionCompetitors": [],
       "depletedBy": [],
       "amwayProduct": null,
-      "resultsTimeline": "4-8 weeks"
+      "resultsTimeline": "4-8 weeks",
+      "notes": "Synergizes strongly with CoQ10 for mitochondrial biogenesis. 10-20 mg/day is the typical dose."
     },
     {
       "id": "quercetin",
@@ -2799,7 +2843,8 @@
       "absorptionCompetitors": [],
       "depletedBy": [],
       "amwayProduct": null,
-      "resultsTimeline": "4-8 weeks"
+      "resultsTimeline": "4-8 weeks",
+      "notes": "Standardized extract (85-95% fatty acids) is the studied form. Allow 8-12 weeks for prostate benefits."
     },
     {
       "id": "shilajit",
@@ -2884,7 +2929,8 @@
       "absorptionCompetitors": [],
       "depletedBy": [],
       "amwayProduct": null,
-      "resultsTimeline": "2-4 weeks"
+      "resultsTimeline": "2-4 weeks",
+      "notes": "Source matters — choose tested brands (heavy metal contamination is common in cheap spirulina). 3-5 g daily."
     },
     {
       "id": "taurine",
@@ -2924,7 +2970,8 @@
       "absorptionCompetitors": [],
       "depletedBy": [],
       "amwayProduct": null,
-      "resultsTimeline": "1-4 weeks"
+      "resultsTimeline": "1-4 weeks",
+      "notes": "3-6 g daily — much higher than the small doses in energy drinks. Excellent for cardiovascular and recovery support."
     },
     {
       "id": "tongkat-ali",
@@ -2967,7 +3014,8 @@
       "depletedBy": [],
       "amwayProduct": null,
       "resultsTimeline": "4-8 weeks",
-      "cycling": "Consider cycling: 5 days on, 2 days off"
+      "cycling": "Consider cycling: 5 days on, 2 days off",
+      "notes": "Look for standardized extracts (Physta, LJ100) at 200-400 mg. Cycle 5 days on, 2 days off to maintain sensitivity."
     },
     {
       "id": "tryptophan",
@@ -3315,7 +3363,8 @@
       ],
       "amwayProduct": "Nutrilite B Complex Dual Action",
       "resultsTimeline": "2-4 weeks",
-      "conflicts_note": "No major known interactions at typical doses."
+      "conflicts_note": "No major known interactions at typical doses.",
+      "notes": "Generally well-tolerated. High doses (>1g) historically used for acne but evidence is weak."
     },
     {
       "id": "vitamin-b6-pyridoxine",
@@ -3539,7 +3588,8 @@
       ],
       "depletedBy": [],
       "amwayProduct": null,
-      "resultsTimeline": "4-8 weeks"
+      "resultsTimeline": "4-8 weeks",
+      "notes": "The only magnesium form that meaningfully raises brain magnesium. 2 g (144 mg elemental Mg) is the studied dose."
     },
     {
       "id": "reishi-mushroom",
@@ -3582,7 +3632,8 @@
       "absorptionCompetitors": [],
       "depletedBy": [],
       "amwayProduct": null,
-      "resultsTimeline": "2-4 weeks"
+      "resultsTimeline": "2-4 weeks",
+      "notes": "Dual-extracted (water + alcohol) tinctures or extracts beat plain powder. Bitter taste — capsules preferred."
     },
     {
       "id": "cordyceps-mushroom",
@@ -3623,7 +3674,8 @@
       "absorptionCompetitors": [],
       "depletedBy": [],
       "amwayProduct": null,
-      "resultsTimeline": "1-4 weeks"
+      "resultsTimeline": "1-4 weeks",
+      "notes": "CS-4 strain is most studied. Take in the morning — can be stimulating for some users."
     },
     {
       "id": "chaga-mushroom",
@@ -3664,7 +3716,8 @@
       "absorptionCompetitors": [],
       "depletedBy": [],
       "amwayProduct": null,
-      "resultsTimeline": "2-8 weeks"
+      "resultsTimeline": "2-8 weeks",
+      "notes": "Wild-harvested can contain high oxalates — limit to 1-2 g daily if prone to kidney stones."
     },
     {
       "id": "turkey-tail-mushroom",
@@ -3703,7 +3756,8 @@
       "absorptionCompetitors": [],
       "depletedBy": [],
       "amwayProduct": null,
-      "resultsTimeline": "2-8 weeks"
+      "resultsTimeline": "2-8 weeks",
+      "notes": "PSK and PSP fractions have the strongest immune evidence. Look for hot-water-extracted products."
     },
     {
       "id": "urolithin-a",
@@ -3741,7 +3795,8 @@
       "depletedBy": [],
       "amwayProduct": null,
       "resultsTimeline": "8-12 weeks",
-      "conflicts_note": "No major known interactions at typical doses."
+      "conflicts_note": "No major known interactions at typical doses.",
+      "notes": "Most people don't convert ellagitannins to urolithin A efficiently — direct supplementation bypasses this. Mitopure is the studied brand."
     },
     {
       "id": "ginger",
@@ -3779,7 +3834,8 @@
       "absorptionCompetitors": [],
       "depletedBy": [],
       "amwayProduct": null,
-      "resultsTimeline": "1-3 weeks"
+      "resultsTimeline": "1-3 weeks",
+      "notes": "Standardize to gingerols. Effective for nausea and inflammation — 1-2 g daily extract or 4 g fresh root."
     },
     {
       "id": "moringa",
@@ -3817,7 +3873,8 @@
       "absorptionCompetitors": [],
       "depletedBy": [],
       "amwayProduct": null,
-      "resultsTimeline": "2-4 weeks"
+      "resultsTimeline": "2-4 weeks",
+      "notes": "Nutrient-dense whole-food supplement. Don't use during pregnancy (root and bark especially)."
     },
     {
       "id": "prenatal-vitamins",
@@ -3855,7 +3912,8 @@
       ],
       "depletedBy": [],
       "amwayProduct": null,
-      "resultsTimeline": "ongoing"
+      "resultsTimeline": "ongoing",
+      "notes": "Methylfolate (not folic acid) is preferred for women with MTHFR variants. Start 3 months before conception."
     },
     {
       "id": "tart-cherry",
@@ -3891,7 +3949,8 @@
       "absorptionCompetitors": [],
       "depletedBy": [],
       "amwayProduct": null,
-      "resultsTimeline": "1-2 weeks"
+      "resultsTimeline": "1-2 weeks",
+      "notes": "Concentrate (1-2 oz) before bed for sleep and recovery. Higher dose pre-workout reduces muscle soreness."
     },
     {
       "id": "l-carnitine",
@@ -3926,7 +3985,8 @@
       "absorptionCompetitors": [],
       "depletedBy": [],
       "amwayProduct": null,
-      "resultsTimeline": "2-4 weeks"
+      "resultsTimeline": "2-4 weeks",
+      "notes": "L-tartrate form is best for exercise recovery; acetyl form for cognition. Take with carbs to enhance muscle uptake."
     },
     {
       "id": "fisetin",
@@ -3960,7 +4020,8 @@
       "absorptionCompetitors": [],
       "depletedBy": [],
       "amwayProduct": null,
-      "resultsTimeline": "8-12 weeks"
+      "resultsTimeline": "8-12 weeks",
+      "notes": "Senolytic dosing protocol is 20 mg/kg for 2 consecutive days monthly — much higher than daily-use doses."
     },
     {
       "id": "spermidine",
@@ -3993,7 +4054,8 @@
       "absorptionCompetitors": [],
       "depletedBy": [],
       "amwayProduct": null,
-      "resultsTimeline": "12+ weeks"
+      "resultsTimeline": "12+ weeks",
+      "notes": "Wheat germ extract is the typical source. Effects on autophagy are slow — measured in months, not weeks."
     },
     {
       "id": "choline",
@@ -4026,7 +4088,8 @@
       "absorptionCompetitors": [],
       "depletedBy": [],
       "amwayProduct": null,
-      "resultsTimeline": "2-4 weeks"
+      "resultsTimeline": "2-4 weeks",
+      "notes": "Most adults are deficient. Eggs are the best food source; supplemental choline bitartrate is cheap but less bioavailable than alpha-GPC or CDP-choline."
     },
     {
       "id": "carnosine",
@@ -4059,7 +4122,8 @@
       "depletedBy": [],
       "amwayProduct": null,
       "resultsTimeline": "4-12 weeks",
-      "conflicts_note": "No major known interactions at typical doses."
+      "conflicts_note": "No major known interactions at typical doses.",
+      "notes": "Beta-alanine is a more cost-effective precursor for raising muscle carnosine. Direct carnosine supplementation is better for cognitive/longevity goals."
     },
     {
       "id": "maitake-mushroom",
@@ -4094,7 +4158,8 @@
       "absorptionCompetitors": [],
       "depletedBy": [],
       "amwayProduct": null,
-      "resultsTimeline": "2-8 weeks"
+      "resultsTimeline": "2-8 weeks",
+      "notes": "D-fraction is the studied immune-modulating component. Hot-water extraction required for active polysaccharides."
     },
     {
       "id": "shiitake-mushroom",
@@ -4128,7 +4193,8 @@
       "absorptionCompetitors": [],
       "depletedBy": [],
       "amwayProduct": null,
-      "resultsTimeline": "2-8 weeks"
+      "resultsTimeline": "2-8 weeks",
+      "notes": "Lentinan is the active compound. Culinary doses are too low for therapeutic effect — use extracts."
     },
     {
       "id": "hawthorn",
@@ -4163,7 +4229,8 @@
       "absorptionCompetitors": [],
       "depletedBy": [],
       "amwayProduct": null,
-      "resultsTimeline": "4-8 weeks"
+      "resultsTimeline": "4-8 weeks",
+      "notes": "Can potentiate blood pressure medications — stack carefully. Effects on cardiac function build over 4-12 weeks."
     },
     {
       "id": "tmg-betaine",
@@ -4196,7 +4263,8 @@
       "depletedBy": [],
       "amwayProduct": null,
       "resultsTimeline": "2-4 weeks",
-      "conflicts_note": "No major known interactions at typical doses."
+      "conflicts_note": "No major known interactions at typical doses.",
+      "notes": "Lowers homocysteine alongside B12 and folate. 1-3 g daily; also a useful pre-workout for power output."
     },
     {
       "id": "red-yeast-rice",
@@ -4232,7 +4300,8 @@
       "absorptionCompetitors": [],
       "depletedBy": [],
       "amwayProduct": null,
-      "resultsTimeline": "4-12 weeks"
+      "resultsTimeline": "4-12 weeks",
+      "notes": "Contains naturally occurring monacolin K (lovastatin) — treat like a statin. Pair with CoQ10 and avoid combining with prescription statins."
     },
     {
       "id": "pomegranate-extract",
@@ -4268,7 +4337,8 @@
       "absorptionCompetitors": [],
       "depletedBy": [],
       "amwayProduct": null,
-      "resultsTimeline": "4-8 weeks"
+      "resultsTimeline": "4-8 weeks",
+      "notes": "Standardize to punicalagins (40%+). Supports cardiovascular and prostate health; juice is also effective but high in sugar."
     },
     {
       "id": "l-arginine",
@@ -4307,7 +4377,8 @@
       ],
       "depletedBy": [],
       "amwayProduct": null,
-      "resultsTimeline": "1-4 weeks"
+      "resultsTimeline": "1-4 weeks",
+      "notes": "Citrulline raises arginine more effectively than arginine itself due to first-pass metabolism. Skip arginine — use citrulline."
     },
     {
       "id": "schisandra",
@@ -4343,7 +4414,8 @@
       "absorptionCompetitors": [],
       "depletedBy": [],
       "amwayProduct": null,
-      "resultsTimeline": "2-4 weeks"
+      "resultsTimeline": "2-4 weeks",
+      "notes": "Adaptogen supporting liver and stress response. Bitter — capsules preferred over tincture."
     },
     {
       "id": "gotu-kola",
@@ -4378,7 +4450,8 @@
       "absorptionCompetitors": [],
       "depletedBy": [],
       "amwayProduct": null,
-      "resultsTimeline": "4-8 weeks"
+      "resultsTimeline": "4-8 weeks",
+      "notes": "Supports circulation, skin, and cognition. Triterpenes are the active fraction — look for standardized extracts."
     },
     {
       "id": "benfotiamine",
@@ -4411,7 +4484,8 @@
       "depletedBy": [],
       "amwayProduct": null,
       "resultsTimeline": "2-4 weeks",
-      "conflicts_note": "No major known interactions at typical doses."
+      "conflicts_note": "No major known interactions at typical doses.",
+      "notes": "Fat-soluble thiamine analog. Much better absorbed than standard B1; particularly useful for diabetic neuropathy support."
     },
     {
       "id": "tribulus-terrestris",
@@ -4446,7 +4520,8 @@
       "absorptionCompetitors": [],
       "depletedBy": [],
       "amwayProduct": null,
-      "resultsTimeline": "2-4 weeks"
+      "resultsTimeline": "2-4 weeks",
+      "notes": "Despite the marketing, evidence for testosterone elevation in healthy men is weak. May support libido through other mechanisms."
     },
     {
       "id": "horny-goat-weed",
@@ -4481,7 +4556,8 @@
       "absorptionCompetitors": [],
       "depletedBy": [],
       "amwayProduct": null,
-      "resultsTimeline": "2-6 weeks"
+      "resultsTimeline": "2-6 weeks",
+      "notes": "Icariin is the active compound — standardize to 20%+. Mild PDE5 inhibition."
     },
     {
       "id": "nicotinamide-riboside",
@@ -4517,7 +4593,8 @@
       "absorptionCompetitors": [],
       "depletedBy": [],
       "amwayProduct": null,
-      "resultsTimeline": "4-8 weeks"
+      "resultsTimeline": "4-8 weeks",
+      "notes": "Niagen is the patented, well-studied form. Raises NAD+ more reliably in humans than NMN currently does."
     },
     {
       "id": "multivitamin",
