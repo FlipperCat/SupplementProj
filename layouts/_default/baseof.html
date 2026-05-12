@@ -74,6 +74,8 @@
     {{ if .IsPage }}
         {{ if or (eq .Section "supplements") (eq .Section "peptides") }}
             {{ partial "schema/supplement.html" . }}
+        {{ else if eq .Section "for" }}
+            {{ partial "schema/medical-webpage.html" . }}
         {{ else }}
             {{ partial "schema/article.html" . }}
         {{ end }}

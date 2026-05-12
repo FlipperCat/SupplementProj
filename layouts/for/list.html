@@ -1,0 +1,22 @@
+{{ define "main" }}
+
+<div class="container">
+    <header class="section-header" style="flex-direction: column; align-items: flex-start; gap: var(--spacing-md);">
+        <h1>{{ .Title }}</h1>
+        <p style="color: var(--color-text-light); max-width: 720px;">
+            {{ with .Params.tagline }}{{ . }}{{ else }}Browse 50 symptom and condition guides. Each page explains what users commonly consider when researching that concern, with cautious, research-aware supplement notes — not medical advice.{{ end }}
+        </p>
+    </header>
+
+    <div class="article-content">
+        {{ .Content }}
+    </div>
+
+    {{ if eq (len .Pages) 0 }}
+    <div style="text-align: center; padding: var(--spacing-3xl); color: var(--color-text-muted);">
+        <p>No condition guides yet.</p>
+    </div>
+    {{ end }}
+</div>
+
+{{ end }}

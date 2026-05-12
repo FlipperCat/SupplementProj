@@ -1,0 +1,74 @@
+{{/*
+  MedicalWebPage schema.org JSON-LD for /for/<symptom>/ pages.
+  Pulls symptom record from data/symptoms.json (matched by slug) and
+  lists referenced supplements under `mentions` as MedicalSubstance.
+*/}}
+{{- $slug := .File.BaseFileName -}}
+{{- if eq $slug "index" -}}
+  {{- $slug = .Params.symptom_slug -}}
+  {{- if not $slug -}}{{- $slug = path.Base (path.Dir .File.Path) -}}{{- end -}}
+{{- end -}}
+
+{{- $symptom := dict -}}
+{{- range $.Site.Data.symptoms.symptoms -}}
+  {{- if eq .slug $slug -}}{{- $symptom = . -}}{{- end -}}
+{{- end -}}
+
+{{- $name := .Title -}}
+{{- $desc := "" -}}
+{{- with .Params.tagline -}}{{- $desc = . -}}{{- else -}}{{- with $symptom.description -}}{{- $desc = . -}}{{- else -}}{{- $desc = (.Summary | plainify | truncate 200) -}}{{- end -}}{{- end -}}
+
+{{- /* Build list of supplement records referenced by this symptom */ -}}
+{{- $supplements := slice -}}
+{{- range $symptom.supplements -}}
+  {{- $id := . -}}
+  {{- range $.Site.Data.supplements.supplements -}}
+    {{- if eq .id $id -}}{{- $supplements = $supplements | append . -}}{{- end -}}
+  {{- end -}}
+{{- end -}}
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "MedicalWebPage",
+  "name": {{ $name | jsonify | safeJS }},
+  "description": {{ $desc | jsonify | safeJS }},
+  "url": {{ .Permalink | jsonify | safeJS }},
+  "datePublished": {{ .Date.Format "2006-01-02T15:04:05Z07:00" | jsonify | safeJS }},
+  "dateModified": {{ .Lastmod.Format "2006-01-02T15:04:05Z07:00" | jsonify | safeJS }},
+  "inLanguage": "en-US",
+  {{- with $symptom.display_name }}
+  "about": {
+    "@type": "MedicalCondition",
+    "name": {{ . | jsonify | safeJS }}
+    {{- with $symptom.conventional_name }},
+    "alternateName": {{ . | jsonify | safeJS }}
+    {{- end }}
+    {{- with $symptom.description }},
+    "description": {{ . | jsonify | safeJS }}
+    {{- end }}
+  },
+  "medicalAudience": {
+    "@type": "MedicalAudience",
+    "audienceType": "Patient"
+  },
+  {{- end }}
+  {{- with $supplements }}
+  "mentions": [
+    {{- range $i, $s := . }}{{ if $i }},{{ end }}
+    {
+      "@type": "MedicalSubstance",
+      "name": {{ $s.name | jsonify | safeJS }},
+      "url": {{ (printf "/supplements/%s/" $s.id) | absURL | jsonify | safeJS }}
+    }
+    {{- end }}
+  ],
+  {{- end }}
+  "publisher": {
+    "@type": "Organization",
+    "name": {{ .Site.Title | jsonify | safeJS }},
+    "url": {{ .Site.BaseURL | jsonify | safeJS }}
+  },
+  "lastReviewed": {{ .Lastmod.Format "2006-01-02" | jsonify | safeJS }}
+}
+</script>

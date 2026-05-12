@@ -1,0 +1,404 @@
+{
+  "symptoms": [
+    {
+      "slug": "headaches",
+      "display_name": "Headaches",
+      "conventional_name": "Tension and primary headache",
+      "category": "Pain & Inflammation",
+      "description": "Recurrent head pain ranging from dull tension to sharp episodic discomfort, often linked to dehydration, magnesium status, sleep debt, or muscle tension.",
+      "supplements": ["magnesium", "magnesium-l-threonate", "coq10", "vitamin-b2-riboflavin", "ginger", "curcumin", "omega-3"]
+    },
+    {
+      "slug": "migraine",
+      "display_name": "Migraine",
+      "conventional_name": "Migraine headache",
+      "category": "Pain & Inflammation",
+      "description": "Neurological condition producing throbbing pain, often unilateral, frequently with aura, nausea, and light sensitivity.",
+      "supplements": ["magnesium", "magnesium-l-threonate", "vitamin-b2-riboflavin", "coq10", "ginger", "melatonin", "omega-3"]
+    },
+    {
+      "slug": "brain-fog",
+      "display_name": "Brain Fog",
+      "conventional_name": "Cognitive dysfunction",
+      "category": "Energy & Focus",
+      "description": "Subjective slowed thinking, poor recall, and reduced mental clarity that does not meet clinical criteria for dementia or ADHD.",
+      "supplements": ["lions-mane", "alpha-gpc", "cdp-choline", "acetyl-l-carnitine", "bacopa-monnieri", "omega-3", "vitamin-b12-cobalamin", "rhodiola"]
+    },
+    {
+      "slug": "low-energy",
+      "display_name": "Low Energy",
+      "conventional_name": "General fatigue",
+      "category": "Energy & Focus",
+      "description": "Persistent physical or mental tiredness without obvious medical cause; often tied to sleep quality, mitochondrial output, iron, or B-vitamin status.",
+      "supplements": ["coq10", "b-complex", "iron", "vitamin-b12-cobalamin", "rhodiola", "creatine", "ashwagandha", "vitamin-d3"]
+    },
+    {
+      "slug": "chronic-fatigue",
+      "display_name": "Chronic Fatigue",
+      "conventional_name": "Chronic fatigue syndrome (ME/CFS)",
+      "category": "Energy & Focus",
+      "description": "Profound, sustained fatigue lasting six months or longer that does not improve with rest and is often accompanied by post-exertional malaise.",
+      "supplements": ["coq10", "nicotinamide-riboside", "nmn", "acetyl-l-carnitine", "b-complex", "vitamin-b12-cobalamin", "rhodiola", "magnesium"]
+    },
+    {
+      "slug": "morning-grogginess",
+      "display_name": "Morning Grogginess",
+      "conventional_name": "Sleep inertia",
+      "category": "Energy & Focus",
+      "description": "Prolonged disorientation, slowness, and impaired alertness in the hour after waking, often tied to disrupted sleep architecture.",
+      "supplements": ["magnesium", "vitamin-d3", "b-complex", "tyrosine", "rhodiola", "caffeine"]
+    },
+    {
+      "slug": "adhd-focus",
+      "display_name": "ADHD-Type Focus Issues",
+      "conventional_name": "Attention regulation difficulty",
+      "category": "Energy & Focus",
+      "description": "Difficulty sustaining attention, organizing tasks, and resisting distraction. Supplements may support attention pathways alongside (not in place of) formal treatment.",
+      "supplements": ["omega-3", "tyrosine", "magnesium", "zinc", "iron", "bacopa-monnieri", "l-theanine", "rhodiola"]
+    },
+    {
+      "slug": "memory-decline",
+      "display_name": "Age-Related Memory Decline",
+      "conventional_name": "Mild cognitive decline",
+      "category": "Energy & Focus",
+      "description": "Gradual slowing of recall and word retrieval that exceeds normal aging but does not meet dementia criteria.",
+      "supplements": ["lions-mane", "bacopa-monnieri", "omega-3", "phosphatidylserine", "alpha-gpc", "ginkgo-biloba", "magnesium-l-threonate", "acetyl-l-carnitine"]
+    },
+    {
+      "slug": "eye-strain",
+      "display_name": "Digital Eye Strain",
+      "conventional_name": "Computer vision syndrome",
+      "category": "Energy & Focus",
+      "description": "Tired, dry, or blurred eyes after prolonged screen exposure, sometimes with headache or neck tension.",
+      "supplements": ["lutein-zeaxanthin", "astaxanthin", "omega-3", "vitamin-a", "vitamin-c", "vitamin-e"]
+    },
+    {
+      "slug": "insomnia",
+      "display_name": "Insomnia",
+      "conventional_name": "Sleep-onset and maintenance insomnia",
+      "category": "Sleep",
+      "description": "Difficulty falling asleep, staying asleep, or returning to sleep after waking, with daytime consequences.",
+      "supplements": ["magnesium", "melatonin", "glycine", "l-theanine", "ashwagandha", "apigenin", "tryptophan", "gaba"]
+    },
+    {
+      "slug": "night-sweats",
+      "display_name": "Night Sweats",
+      "conventional_name": "Nocturnal hyperhidrosis",
+      "category": "Sleep",
+      "description": "Heavy sweating during sleep severe enough to soak nightclothes or bedding, often linked to hormonal shifts or stress.",
+      "supplements": ["magnesium", "ashwagandha", "phosphatidylserine", "dim", "vitamin-d3", "b-complex"]
+    },
+    {
+      "slug": "restless-legs",
+      "display_name": "Restless Legs Sensation",
+      "conventional_name": "Restless legs syndrome",
+      "category": "Sleep",
+      "description": "Uncomfortable evening leg sensations and an irresistible urge to move them that interferes with falling asleep.",
+      "supplements": ["iron", "magnesium", "vitamin-d3", "vitamin-b9-folate", "potassium"]
+    },
+    {
+      "slug": "anxiety",
+      "display_name": "Anxiety",
+      "conventional_name": "Generalized anxiety",
+      "category": "Mood",
+      "description": "Excessive worry, restlessness, and physical tension that exceeds typical situational concern.",
+      "supplements": ["magnesium", "l-theanine", "ashwagandha", "glycine", "gaba", "vitamin-b6-pyridoxine", "5-htp", "inositol"]
+    },
+    {
+      "slug": "social-anxiety",
+      "display_name": "Social Anxiety",
+      "conventional_name": "Social anxiety symptoms",
+      "category": "Mood",
+      "description": "Disproportionate fear of judgment or scrutiny in social settings, often with anticipatory physical symptoms.",
+      "supplements": ["l-theanine", "ashwagandha", "magnesium", "inositol", "rhodiola", "gaba"]
+    },
+    {
+      "slug": "stress",
+      "display_name": "Stress",
+      "conventional_name": "Chronic psychological stress",
+      "category": "Mood",
+      "description": "Sustained activation of the body's stress response with physical and cognitive consequences.",
+      "supplements": ["ashwagandha", "rhodiola", "magnesium", "l-theanine", "phosphatidylserine", "holy-basil", "b-complex"]
+    },
+    {
+      "slug": "burnout",
+      "display_name": "Burnout",
+      "conventional_name": "Occupational exhaustion",
+      "category": "Mood",
+      "description": "Emotional, physical, and motivational exhaustion linked to prolonged stress, particularly from work or caregiving.",
+      "supplements": ["ashwagandha", "rhodiola", "b-complex", "magnesium", "vitamin-d3", "tyrosine", "coq10"]
+    },
+    {
+      "slug": "low-mood",
+      "display_name": "Low Mood",
+      "conventional_name": "Subclinical depressive symptoms",
+      "category": "Mood",
+      "description": "Persistent flat affect, anhedonia, or sadness that does not meet clinical depression thresholds.",
+      "supplements": ["vitamin-d3", "omega-3", "5-htp", "tryptophan", "rhodiola", "b-complex", "magnesium", "ashwagandha"]
+    },
+    {
+      "slug": "seasonal-depression",
+      "display_name": "Seasonal Mood Dip",
+      "conventional_name": "Seasonal affective symptoms",
+      "category": "Mood",
+      "description": "Recurrent low mood and low energy that appears in low-light months and improves in spring.",
+      "supplements": ["vitamin-d3", "5-htp", "omega-3", "rhodiola", "tryptophan", "b-complex"]
+    },
+    {
+      "slug": "bloating",
+      "display_name": "Bloating",
+      "conventional_name": "Functional bloating",
+      "category": "Digestion",
+      "description": "Sensation of abdominal fullness and distention, often after meals, sometimes linked to FODMAP intake or dysbiosis.",
+      "supplements": ["digestive-enzymes", "probiotics", "ginger", "magnesium", "artichoke-extract", "dandelion-root"]
+    },
+    {
+      "slug": "constipation",
+      "display_name": "Constipation",
+      "conventional_name": "Functional constipation",
+      "category": "Digestion",
+      "description": "Infrequent or difficult bowel movements, often with hard stools, frequently improved by fiber, hydration, and magnesium.",
+      "supplements": ["magnesium", "probiotics", "vitamin-c", "digestive-enzymes", "dandelion-root", "artichoke-extract"]
+    },
+    {
+      "slug": "heartburn",
+      "display_name": "Heartburn",
+      "conventional_name": "Reflux symptoms",
+      "category": "Digestion",
+      "description": "Burning sensation behind the breastbone caused by gastric contents irritating the esophagus.",
+      "supplements": ["digestive-enzymes", "probiotics", "ginger", "zinc", "glutamine"]
+    },
+    {
+      "slug": "acid-reflux",
+      "display_name": "Acid Reflux",
+      "conventional_name": "Gastroesophageal reflux symptoms",
+      "category": "Digestion",
+      "description": "Backflow of stomach contents into the esophagus producing reflux, regurgitation, or chest discomfort.",
+      "supplements": ["digestive-enzymes", "probiotics", "ginger", "zinc", "glutamine", "melatonin"]
+    },
+    {
+      "slug": "gut-issues",
+      "display_name": "General Gut Issues",
+      "conventional_name": "Functional gut symptoms",
+      "category": "Digestion",
+      "description": "Umbrella term for recurring digestive discomfort: bloating, irregular stools, gas, and food sensitivities not explained by structural disease.",
+      "supplements": ["probiotics", "digestive-enzymes", "glutamine", "ginger", "curcumin", "omega-3", "zinc"]
+    },
+    {
+      "slug": "hangover",
+      "display_name": "Hangover",
+      "conventional_name": "Alcohol-induced hangover",
+      "category": "Other",
+      "description": "Headache, nausea, fatigue, and brain fog the morning after heavy alcohol intake, driven by dehydration, acetaldehyde, and inflammation.",
+      "supplements": ["nac", "b-complex", "magnesium", "milk-thistle", "vitamin-c", "alpha-lipoic-acid", "ginger", "potassium"]
+    },
+    {
+      "slug": "motion-sickness",
+      "display_name": "Motion Sickness",
+      "conventional_name": "Kinetosis",
+      "category": "Other",
+      "description": "Nausea, dizziness, and cold sweat caused by sensory mismatch during travel.",
+      "supplements": ["ginger", "vitamin-b6-pyridoxine"]
+    },
+    {
+      "slug": "seasonal-allergies",
+      "display_name": "Seasonal Allergies",
+      "conventional_name": "Allergic rhinitis",
+      "category": "Other",
+      "description": "Sneezing, congestion, and itchy eyes triggered by pollen and other airborne allergens.",
+      "supplements": ["quercetin", "vitamin-c", "nac", "probiotics", "vitamin-d3", "vitamin-b5-pantothenic-acid"]
+    },
+    {
+      "slug": "cold-flu-prevention",
+      "display_name": "Cold and Flu Prevention",
+      "conventional_name": "Acute upper respiratory infection prophylaxis",
+      "category": "Other",
+      "description": "Reducing frequency and severity of seasonal viral upper respiratory infections through immune support.",
+      "supplements": ["vitamin-d3", "vitamin-c", "zinc", "elderberry", "nac", "probiotics", "selenium", "quercetin"]
+    },
+    {
+      "slug": "joint-pain",
+      "display_name": "Joint Pain",
+      "conventional_name": "Arthralgia",
+      "category": "Pain & Inflammation",
+      "description": "Aching, stiffness, or soreness in one or more joints, often worse after activity or in the morning.",
+      "supplements": ["curcumin", "omega-3", "glucosamine", "msm", "collagen", "boron", "ginger", "vitamin-d3"]
+    },
+    {
+      "slug": "back-pain",
+      "display_name": "Back Pain",
+      "conventional_name": "Mechanical low back pain",
+      "category": "Pain & Inflammation",
+      "description": "Aching or sharp pain in the lower or mid-back, often related to posture, muscle tension, or disc strain.",
+      "supplements": ["magnesium", "curcumin", "omega-3", "vitamin-d3", "msm", "boron", "collagen"]
+    },
+    {
+      "slug": "inflammation",
+      "display_name": "Chronic Inflammation",
+      "conventional_name": "Low-grade systemic inflammation",
+      "category": "Pain & Inflammation",
+      "description": "Persistently elevated inflammatory markers without an obvious acute cause, linked to many chronic conditions.",
+      "supplements": ["omega-3", "curcumin", "vitamin-d3", "resveratrol", "quercetin", "ginger", "astaxanthin", "nac"]
+    },
+    {
+      "slug": "low-testosterone",
+      "display_name": "Low Testosterone Symptoms",
+      "conventional_name": "Hypogonadism symptoms",
+      "category": "Hormonal",
+      "description": "Reduced libido, fatigue, low motivation, and decreased muscle mass that can accompany lower testosterone in men.",
+      "supplements": ["zinc", "vitamin-d3", "magnesium", "boron", "ashwagandha", "tongkat-ali", "fadogia-agrestis", "fenugreek"]
+    },
+    {
+      "slug": "low-libido",
+      "display_name": "Low Libido",
+      "conventional_name": "Reduced sexual desire",
+      "category": "Hormonal",
+      "description": "Reduced sexual interest in either sex; influenced by hormones, stress, sleep, medication side effects, and relationship factors.",
+      "supplements": ["maca", "tongkat-ali", "ashwagandha", "horny-goat-weed", "zinc", "l-arginine", "ginseng", "fenugreek"]
+    },
+    {
+      "slug": "pms",
+      "display_name": "PMS Symptoms",
+      "conventional_name": "Premenstrual syndrome",
+      "category": "Hormonal",
+      "description": "Cluster of mood, breast, and cramping symptoms in the luteal phase that resolve after menses.",
+      "supplements": ["magnesium", "vitamin-b6-pyridoxine", "calcium", "vitamin-d3", "omega-3", "inositol", "dim"]
+    },
+    {
+      "slug": "menopause-symptoms",
+      "display_name": "Menopause Symptoms",
+      "conventional_name": "Perimenopausal and menopausal symptoms",
+      "category": "Hormonal",
+      "description": "Hot flashes, night sweats, sleep disruption, and mood swings tied to declining ovarian hormone output.",
+      "supplements": ["vitamin-d3", "magnesium", "omega-3", "ashwagandha", "maca", "phosphatidylserine", "dim", "calcium"]
+    },
+    {
+      "slug": "prostate-health",
+      "display_name": "Prostate Health Concerns",
+      "conventional_name": "Benign prostatic symptoms",
+      "category": "Hormonal",
+      "description": "Urinary frequency, hesitancy, or weak stream often linked to age-related prostate enlargement.",
+      "supplements": ["saw-palmetto", "zinc", "selenium", "vitamin-d3", "boron", "dim"]
+    },
+    {
+      "slug": "acne",
+      "display_name": "Acne",
+      "conventional_name": "Acne vulgaris",
+      "category": "Skin & Hair",
+      "description": "Inflammatory skin condition producing comedones, papules, and cysts, influenced by hormones, diet, and the skin microbiome.",
+      "supplements": ["zinc", "vitamin-a", "omega-3", "probiotics", "nac", "vitamin-d3", "dim"]
+    },
+    {
+      "slug": "hair-loss",
+      "display_name": "Hair Loss",
+      "conventional_name": "Telogen effluvium and pattern hair loss",
+      "category": "Skin & Hair",
+      "description": "Excess shedding or thinning of scalp hair driven by hormones, nutrient deficiencies, illness, or stress.",
+      "supplements": ["vitamin-b7-biotin", "iron", "zinc", "vitamin-d3", "saw-palmetto", "collagen", "msm", "selenium"]
+    },
+    {
+      "slug": "dry-skin",
+      "display_name": "Dry Skin",
+      "conventional_name": "Xerosis",
+      "category": "Skin & Hair",
+      "description": "Tight, flaky, or rough skin caused by reduced barrier lipids and water loss.",
+      "supplements": ["omega-3", "collagen", "vitamin-e", "vitamin-a", "krill-oil", "vitamin-c"]
+    },
+    {
+      "slug": "dandruff",
+      "display_name": "Dandruff",
+      "conventional_name": "Seborrheic dermatitis of the scalp",
+      "category": "Skin & Hair",
+      "description": "Flaky, sometimes itchy scalp linked to sebum and the yeast Malassezia.",
+      "supplements": ["zinc", "omega-3", "vitamin-b7-biotin", "probiotics", "selenium", "vitamin-d3"]
+    },
+    {
+      "slug": "nail-strength",
+      "display_name": "Brittle Nails",
+      "conventional_name": "Onychoschizia",
+      "category": "Skin & Hair",
+      "description": "Splitting, peeling, or weak nails, sometimes linked to iron, biotin, or protein status.",
+      "supplements": ["vitamin-b7-biotin", "collagen", "iron", "zinc", "msm", "vitamin-c"]
+    },
+    {
+      "slug": "dark-circles",
+      "display_name": "Dark Under-Eye Circles",
+      "conventional_name": "Periorbital hyperpigmentation",
+      "category": "Skin & Hair",
+      "description": "Bluish or brown discoloration under the eyes, often worsened by sleep loss, dehydration, allergies, or iron deficiency.",
+      "supplements": ["iron", "vitamin-k2", "vitamin-c", "collagen", "vitamin-e"]
+    },
+    {
+      "slug": "weight-loss-resistance",
+      "display_name": "Weight-Loss Resistance",
+      "conventional_name": "Difficulty losing weight despite caloric deficit",
+      "category": "Metabolic",
+      "description": "Plateau or absence of weight loss despite a sustained caloric deficit, often involving insulin, thyroid, sleep, or stress factors.",
+      "supplements": ["berberine", "green-tea-extract", "l-carnitine", "chromium", "magnesium", "inositol", "vitamin-d3", "ashwagandha"]
+    },
+    {
+      "slug": "metabolic-syndrome",
+      "display_name": "Metabolic Syndrome",
+      "conventional_name": "Cardiometabolic syndrome",
+      "category": "Metabolic",
+      "description": "Cluster of central adiposity, elevated glucose, blood pressure, and triglycerides that raises cardiovascular risk.",
+      "supplements": ["berberine", "omega-3", "magnesium", "alpha-lipoic-acid", "vitamin-d3", "coq10", "chromium", "inositol"]
+    },
+    {
+      "slug": "high-blood-pressure",
+      "display_name": "High Blood Pressure",
+      "conventional_name": "Hypertension",
+      "category": "Metabolic",
+      "description": "Sustained elevation of arterial blood pressure that strains the heart and vascular system.",
+      "supplements": ["magnesium", "potassium", "coq10", "omega-3", "hawthorn", "l-arginine", "citrulline", "pomegranate-extract"]
+    },
+    {
+      "slug": "high-cholesterol",
+      "display_name": "High Cholesterol",
+      "conventional_name": "Dyslipidemia",
+      "category": "Metabolic",
+      "description": "Elevated LDL cholesterol, triglycerides, or low HDL that contributes to atherosclerotic risk.",
+      "supplements": ["red-yeast-rice", "omega-3", "berberine", "vitamin-b3", "coq10", "pomegranate-extract", "tmg-betaine"]
+    },
+    {
+      "slug": "insulin-resistance",
+      "display_name": "Insulin Resistance",
+      "conventional_name": "Impaired insulin sensitivity",
+      "category": "Metabolic",
+      "description": "Reduced cellular response to insulin that drives compensatory hyperinsulinemia and raises cardiometabolic risk.",
+      "supplements": ["berberine", "inositol", "chromium", "alpha-lipoic-acid", "magnesium", "omega-3", "vitamin-d3", "cinnamon"]
+    },
+    {
+      "slug": "dry-mouth",
+      "display_name": "Dry Mouth",
+      "conventional_name": "Xerostomia",
+      "category": "Other",
+      "description": "Persistent reduction in saliva production causing oral discomfort, taste changes, and dental risk.",
+      "supplements": ["b-complex", "coq10", "vitamin-a", "zinc", "vitamin-c"]
+    },
+    {
+      "slug": "tinnitus",
+      "display_name": "Tinnitus",
+      "conventional_name": "Subjective tinnitus",
+      "category": "Other",
+      "description": "Perceived ringing, buzzing, or hissing in the ears without an external sound source.",
+      "supplements": ["ginkgo-biloba", "magnesium", "zinc", "vitamin-b12-cobalamin", "coq10", "vitamin-d3"]
+    },
+    {
+      "slug": "vertigo",
+      "display_name": "Vertigo and Dizziness",
+      "conventional_name": "Vertigo symptoms",
+      "category": "Other",
+      "description": "Sensation of spinning or unsteadiness, often linked to inner-ear function, blood pressure, or migraine pathways.",
+      "supplements": ["ginkgo-biloba", "vitamin-d3", "vitamin-b12-cobalamin", "ginger", "magnesium", "coq10"]
+    },
+    {
+      "slug": "cold-hands-feet",
+      "display_name": "Cold Hands and Feet",
+      "conventional_name": "Peripheral vasoconstriction symptoms",
+      "category": "Other",
+      "description": "Recurrent cold extremities, often tied to circulation, thyroid status, iron, or Raynaud-type vasospasm.",
+      "supplements": ["iron", "ginkgo-biloba", "l-arginine", "magnesium", "vitamin-b3", "omega-3", "iodine"]
+    }
+  ]
+}

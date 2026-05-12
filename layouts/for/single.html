@@ -1,0 +1,139 @@
+{{ define "main" }}
+
+{{- $slug := .File.BaseFileName -}}
+{{- /* If file is index.md inside a folder, BaseFileName == "index". Fall back to .Params.slug or directory name. */ -}}
+{{- if eq $slug "index" -}}
+  {{- $slug = .Params.symptom_slug -}}
+  {{- if not $slug -}}{{- $slug = path.Base (path.Dir .File.Path) -}}{{- end -}}
+{{- end -}}
+
+{{- /* Look up the symptom record */ -}}
+{{- $symptom := dict -}}
+{{- range $.Site.Data.symptoms.symptoms -}}
+  {{- if eq .slug $slug -}}{{- $symptom = . -}}{{- end -}}
+{{- end -}}
+
+{{- /* Build a list of supplement records for this symptom, matched by id */ -}}
+{{- $supplements := slice -}}
+{{- range $symptom.supplements -}}
+  {{- $id := . -}}
+  {{- range $.Site.Data.supplements.supplements -}}
+    {{- if eq .id $id -}}{{- $supplements = $supplements | append . -}}{{- end -}}
+  {{- end -}}
+{{- end -}}
+
+<div class="container">
+    <article class="supplement-page">
+
+        <!-- Main Content -->
+        <div class="supplement-content">
+
+            <!-- Header -->
+            <header class="supplement-header">
+                <span class="supplement-category">Condition Guide</span>
+                <h1 class="supplement-title">{{ .Title }}</h1>
+                {{ with .Params.tagline }}
+                <p class="supplement-subtitle">{{ . }}</p>
+                {{ end }}
+            </header>
+
+            <!-- Main Article Content -->
+            <div class="article-content">
+                {{ .Content }}
+
+                {{ if $supplements }}
+                <h2 id="supplements-commonly-considered">Supplements Commonly Considered for {{ $symptom.display_name }}</h2>
+                <p>Below are supplements that come up most often in user research and traditional use for {{ $symptom.display_name | lower }}. This is not medical advice — it summarizes what people commonly consider when researching {{ $symptom.conventional_name | lower }} on their own.</p>
+
+                {{ range $supplements }}
+                <div class="supplement-summary" style="border-left: 4px solid var(--color-primary, #2D5A27); padding: var(--spacing-md) var(--spacing-lg); margin: var(--spacing-lg) 0; background: var(--color-surface, #FDFBF7);">
+                    <h3 style="margin-top: 0;"><a href="/supplements/{{ .id }}/">{{ .name }}</a></h3>
+
+                    {{ with .benefits }}
+                    <p><strong>Commonly explored for:</strong> {{ delimit . ", " }}.</p>
+                    {{ end }}
+
+                    {{ with .dosage }}
+                    <p><strong>Typical research-cited dose:</strong> {{ .typical }} {{ .unit }} (range {{ .min }}–{{ .max }} {{ .unit }}).</p>
+                    {{ end }}
+
+                    {{ with .timing }}
+                    <p><strong>Usual timing:</strong> {{ . }}.</p>
+                    {{ end }}
+
+                    {{ with .conflicts }}{{ if gt (len .) 0 }}
+                    <p><strong>Who should be cautious or avoid:</strong> People taking {{ delimit . ", " }}. Always check with a clinician before combining.</p>
+                    {{ end }}{{ end }}
+
+                    {{ with .notes }}
+                    <p><em>{{ . }}</em></p>
+                    {{ end }}
+
+                    <p><a href="/supplements/{{ .id }}/">Read the full {{ .name }} guide →</a></p>
+                </div>
+                {{ end }}
+                {{ end }}
+
+                <h2 id="related-goals">Related Goals</h2>
+                <p>If you're researching {{ $symptom.display_name | lower }}, these broader goal-based guides may also be useful:</p>
+                <ul>
+                  {{ $relatedGoals := first 4 (where .Site.RegularPages "Section" "goals") }}
+                  {{ range $relatedGoals }}
+                    <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+                  {{ end }}
+                </ul>
+
+                <h2 id="related-conditions">Related Conditions</h2>
+                <p>Other condition pages users explore alongside this one:</p>
+                <ul>
+                  {{ $related := where (where .Site.RegularPages "Section" "for") "Title" "!=" .Title }}
+                  {{ range first 5 $related }}
+                    <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+                  {{ end }}
+                </ul>
+
+                <h2 id="important-context">Important Context</h2>
+                <p>This page is educational. Supplements are not a substitute for medical evaluation, especially when symptoms are new, severe, persistent, or accompanied by red-flag signs. Talk to a clinician if {{ $symptom.display_name | lower }} interferes with daily life, comes on suddenly, or accompanies other concerning symptoms. Research on supplements for {{ $symptom.conventional_name | lower }} varies in quality — phrases like "may support" and "research suggests" reflect that.</p>
+            </div>
+
+            <!-- Tags -->
+            {{ with .Params.tags }}
+            <div class="tag-list" style="margin-top: var(--spacing-2xl);">
+                {{ range . }}
+                <a href="/tags/{{ . | urlize }}/" class="tag">{{ . }}</a>
+                {{ end }}
+            </div>
+            {{ end }}
+
+        </div>
+
+        <!-- Sidebar -->
+        <aside class="supplement-sidebar">
+
+            <!-- Table of Contents -->
+            <div class="sidebar-box">
+                <h4>On This Page</h4>
+                <ul class="toc-list">
+                    <!-- Generated by JS -->
+                </ul>
+            </div>
+
+            <!-- Related Conditions sidebar -->
+            {{ $sideRelated := first 6 (where (where .Site.RegularPages "Section" "for") "Title" "!=" .Title) }}
+            {{ with $sideRelated }}
+            <div class="sidebar-box">
+                <h4>More Condition Guides</h4>
+                <ul>
+                    {{ range . }}
+                    <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+                    {{ end }}
+                </ul>
+            </div>
+            {{ end }}
+
+        </aside>
+
+    </article>
+</div>
+
+{{ end }}
