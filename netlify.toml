@@ -3,7 +3,7 @@
   command = "hugo --gc --minify && npx pagefind --site public"
 
 [build.environment]
-  HUGO_VERSION = "0.121.1"
+  HUGO_VERSION = "0.155.3"
   HUGO_ENV = "production"
 
 [context.production.environment]
