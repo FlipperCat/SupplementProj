@@ -24,3 +24,6 @@ Thumbs.db
 
 # Hugo build lock file
 .hugo_build.lock
+
+# Maintenance script outputs (daily logs, crawl reports)
+.maintenance/

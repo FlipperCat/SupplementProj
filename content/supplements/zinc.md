@@ -37,6 +37,8 @@ tags:
 
 warnings: "Do not exceed 40mg daily long-term without medical supervision. High-dose zinc depletes copper. Can cause nausea on empty stomach."
 interactions: "Reduces absorption of some antibiotics and bisphosphonates. Competes with copper and iron. NSAIDs may deplete zinc."
+aliases:
+  - "/supplements/zinc-picolinate/"
 ---
 
 **What it is:** Zinc is an essential mineral required for immune function, testosterone production, and enzyme activity across 300+ metabolic pathways. With an estimated 2 billion people deficient, zinc supplementation supports rapid immune response, sexual health, wound healing, and skin integrity across all ages.

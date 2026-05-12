@@ -38,6 +38,7 @@ warnings: "High doses (>10,000 IU daily) can cause toxicity. Always test blood l
 interactions: "Can interact with steroids, weight loss drugs, and cholesterol medications. May affect calcium levels when taken with thiazide diuretics."
 aliases:
   - "/supplements/vitamin-d/"
+  - "/supplements/vitamin-d-3/"
 ---
 
 **What it is:** Vitamin D3 is a fat-soluble hormone that regulates calcium absorption, immune function, and mood. Often deficient due to limited sun exposure and indoor lifestyles, D3 supplementation is crucial for bone health, seasonal mood support, immune resilience, and longevity across all age groups.

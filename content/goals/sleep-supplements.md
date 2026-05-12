@@ -11,6 +11,8 @@ tags:
 aliases:
   - "/goals/sleep-supplements/"
   - "/sleep-supplements/"
+  - "/supplements-for-sleep/"
+  - "/goals/supplements-for-sleep/"
 ---
 
 ## Why You Can't Sleep (And How Supplements Can Help)

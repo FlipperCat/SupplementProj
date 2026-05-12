@@ -37,6 +37,8 @@ tags:
 
 warnings: "Those with kidney disease should consult a doctor before supplementing. High doses may cause loose stools (especially magnesium citrate and oxide)."
 interactions: "May reduce absorption of antibiotics (fluoroquinolones, tetracyclines) and bisphosphonates. Can enhance effects of muscle relaxants and blood pressure medications."
+aliases:
+  - "/supplements/magnesium-glycinate/"
 ---
 
 **What it is:** Magnesium is the master mineral involved in 300+ enzymatic reactions, essential for muscle relaxation, sleep quality, stress resilience, and energy production. With up to 50% of people deficient due to soil depletion and modern diets, supplementation immediately improves sleep, reduces muscle cramps, and stabilizes mood.

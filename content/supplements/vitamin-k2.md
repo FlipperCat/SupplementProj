@@ -38,6 +38,8 @@ tags:
 
 warnings: "Those taking warfarin or other vitamin K antagonists should avoid K2 supplementation without medical supervision. May interfere with anticoagulation therapy. Consult a healthcare provider if on blood-thinning medications."
 interactions: "Significant interaction with warfarin and other vitamin K antagonist anticoagulants. May interact with certain antibiotics that affect bacterial K2 production."
+aliases:
+  - "/supplements/vitamin-k/"
 ---
 
 ## What Is Vitamin K2?

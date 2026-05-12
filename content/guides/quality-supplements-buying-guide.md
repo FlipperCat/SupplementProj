@@ -11,6 +11,7 @@ tags:
   - "buying guide"
 aliases:
   - "/guides/quality-supplements-buying-guide/"
+  - "/quality-supplements-buying-guide/"
 ---
 
 ## The Supplement Quality Crisis

@@ -11,6 +11,7 @@ tags:
   - "insomnia"
 aliases:
   - "/timelines/sleep-supplement-timeline/"
+  - "/timelines/sleep-timeline/"
 ---
 
 ## Introduction: Sleep Supplement Timelines Vary
@@ -382,4 +383,4 @@ When using multiple sleep supplements (e.g., magnesium + melatonin + L-theanine)
 - [Best Magnesium for Sleep](/guides/supplement-forms-bioavailability/)
 - [Complete Sleep & Recovery Protocol](/supplements-for-stress-cortisol/)
 - [Magnesium Supplementation Timeline](/timelines/magnesium-supplementation-timeline/)
-- [Stress & Cortisol Supplement Timeline](/timelines/stress-cortisol-timeline/)
+- [Stress & Cortisol Supplements](/goals/supplements-for-stress-cortisol/)

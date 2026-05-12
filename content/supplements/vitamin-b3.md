@@ -25,6 +25,7 @@ warnings: "Niacin flush (immediate-release) can be intense and concerning if unp
 interactions: "Lovastatin/simvastatin (increased myopathy risk at high niacin doses), aspirin reduces flushing via prostaglandin inhibition, antidiabetic drugs (niacin may impair glucose control—monitor glucose), anticoagulants (minimal interaction but monitor), NSAIDs (combined may increase uric acid)"
 aliases:
   - "/supplements/vitamin-b3/"
+  - "/supplements/niacin/"
 ---
 
 ## What Is Vitamin B3 (Niacin)?

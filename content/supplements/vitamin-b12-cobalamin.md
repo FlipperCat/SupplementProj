@@ -40,6 +40,7 @@ warnings: "B12 supplementation in people with pernicious anemia may need injecti
 interactions: "Metformin: reduces B12 absorption (diabetics on metformin should monitor levels). Proton pump inhibitors (acid reflux meds): reduce B12 absorption. H2 blockers: may reduce absorption. Some antibiotics: interfere with absorption. Intrinsic factor (pernicious anemia): requires injections; oral supplementation often inadequate."
 aliases:
   - "/supplements/vitamin-b12/"
+  - "/supplements/methylcobalamin/"
 ---
 
 ## What Is Vitamin B12?

@@ -38,6 +38,8 @@ tags:
 
 warnings: "Iron supplementation is not appropriate for everyone. Only supplement if deficient (confirmed by blood tests). Iron overload is toxic and can damage organs. Men and post-menopausal women should avoid supplementation unless deficient. Keep away from children as iron toxicity is dangerous. Pregnant women require different dosing — consult healthcare provider."
 interactions: "Reduced absorption with tannins (tea, coffee), calcium, zinc, magnesium. Enhanced absorption with vitamin C. Some antibiotics and medications can be affected by iron supplementation. Always consult with doctor if on medications."
+aliases:
+  - "/supplements/iron-bisglycinate/"
 ---
 
 ## What Is Iron?

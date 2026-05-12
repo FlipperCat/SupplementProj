@@ -15,6 +15,8 @@ tags:
 aliases:
   - "/goals/supplements-for-women-in-their-40s/"
   - "/supplements-for-women-in-their-40s/"
+  - "/supplements-for-women-40s/"
+  - "/goals/supplements-for-women-40s/"
 ---
 
 ## Supplements for Women in Their 40s

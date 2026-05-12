@@ -27,6 +27,8 @@ tags:
   - aging brain
 warnings: Generally very safe. May have mild blood-thinning effects. Consult doctor if on blood thinners. Pregnant women consult doctor.
 interactions: May have additive effects with anticoagulants. Compatible with most supplements.
+aliases:
+  - "/supplements/ginkgo/"
 ---
 
 **What it is:** Ginkgo biloba is an ancient tree extract used in traditional medicine to support blood flow, memory, and cognitive aging. It contains ginkgo flavones and terpenoids that improve cerebral and peripheral circulation while providing antioxidant neuroprotection.

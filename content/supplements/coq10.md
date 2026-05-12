@@ -42,6 +42,8 @@ tags:
 
 warnings: "Those on warfarin may need dosage adjustments as CoQ10 has minor vitamin K-like activity. Those on statin medications (especially high doses) should supplement CoQ10 as statins deplete levels and may contribute to muscle pain. Pregnant women should consult healthcare provider before supplementing."
 interactions: "May have mild anticoagulant effects; monitor if on warfarin or anticoagulants. Reduces bioavailability of some medications; take separately. Enhances effects of other antioxidants."
+aliases:
+  - "/supplements/coenzyme-q10/"
 ---
 
 ## What Is CoQ10?
