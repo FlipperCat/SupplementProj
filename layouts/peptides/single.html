@@ -201,7 +201,7 @@
                 <ul class="synergy-list">
                     {{ range . }}
                     <li>
-                        <a href="/peptides/{{ . | urlize }}/">{{ . }}</a>
+                        {{ partial "related-supplement-link.html" . }}
                     </li>
                     {{ end }}
                 </ul>

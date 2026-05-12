@@ -1,0 +1,32 @@
+{{/* Resolve a free-text synergy/conflict label to an actual supplement page.
+     Renders <a> when a page exists, plain <span> when it doesn't — so broken
+     descriptive labels like "Curcumin (enhanced anti-inflammatory)" stop 404ing.
+
+     Tries (in order):
+       1. The whole label urlized
+       2. The substring before "(" urlized
+       3. The substring inside parentheses urlized
+*/}}
+{{ $name := . }}
+{{ $candidates := slice ($name | urlize) }}
+{{ if strings.Contains $name "(" }}
+  {{ $parts := split $name "(" }}
+  {{ $before := index $parts 0 | strings.TrimSpace }}
+  {{ if $before }}{{ $candidates = $candidates | append ($before | urlize) }}{{ end }}
+  {{ $inside := index $parts 1 | replaceRE "\\).*$" "" | strings.TrimSpace }}
+  {{ if $inside }}{{ $candidates = $candidates | append ($inside | urlize) }}{{ end }}
+{{ end }}
+
+{{ $found := "" }}
+{{ range $candidates }}
+  {{ if not $found }}
+    {{ with site.GetPage (printf "/supplements/%s" .) }}{{ $found = .RelPermalink }}{{ end }}
+    {{ if not $found }}{{ with site.GetPage (printf "/peptides/%s" .) }}{{ $found = .RelPermalink }}{{ end }}{{ end }}
+  {{ end }}
+{{ end }}
+
+{{ if $found -}}
+<a href="{{ $found }}">{{ $name }}</a>
+{{- else -}}
+<span class="synergy-name">{{ $name }}</span>
+{{- end -}}

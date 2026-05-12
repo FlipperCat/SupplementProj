@@ -103,7 +103,7 @@
                 <h4>Supplements in This Stack</h4>
                 <ul>
                     {{ range . }}
-                    <li><a href="/supplements/{{ . | urlize }}/">{{ . }}</a></li>
+                    <li>{{ partial "related-supplement-link.html" . }}</li>
                     {{ end }}
                 </ul>
             </div>
