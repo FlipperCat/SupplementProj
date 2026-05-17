@@ -32,9 +32,9 @@ from dataclasses import dataclass, field
 from pathlib import Path
 from typing import Iterable
 
-SHORTCODE_RE = re.compile(r"{{[%<]\s*(?:ref|relref)\s+\"([^\"]+)\"\s*[%>]}}")
+SHORTCODE_RE = re.compile(r"{{[%<]\s*(?:ref|relref)\s+(?:\"([^\"]+)\"|'([^']+)')\s*[%>]}}")
 MD_LINK_RE = re.compile(r"(?<!\!)\[([^\]\n]+)\]\(([^)\s]+)(?:\s+\"[^\"]*\")?\)")
-FENCE_RE = re.compile(r"^\s*```")
+FENCE_RE = re.compile(r"^\s*(?:```|~~~)")
 TITLE_RE = re.compile(r'^\s*title\s*:\s*"?([^"\n]+?)"?\s*$', re.MULTILINE)
 
 MEDICATION_SECTIONS = {"medications", "interactions", "medication-interactions"}
@@ -144,7 +144,9 @@ def extract_links(
     body: str, current_slug: str, current_section: str
 ) -> list[tuple[str, str]]:
     cleaned = strip_code_fences(body)
-    raw_targets: list[str] = list(SHORTCODE_RE.findall(cleaned))
+    raw_targets: list[str] = []
+    for m in SHORTCODE_RE.finditer(cleaned):
+        raw_targets.append(m.group(1) or m.group(2))
     for _text, url in MD_LINK_RE.findall(cleaned):
         if url.startswith(("http://", "https://", "mailto:", "tel:", "#")):
             continue
@@ -524,6 +526,10 @@ def apply_fix(rep: PageReport, sources: FixSources, warnings: list[str]) -> bool
 
 
 def main(argv: list[str] | None = None) -> int:
+    try:
+        sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+    except AttributeError:
+        pass
     parser = argparse.ArgumentParser(description=__doc__.splitlines()[0])
     parser.add_argument("--root", type=Path, default=None, help="repo root override")
     parser.add_argument("--fix", action="store_true", help="append Related sections to failing pages")

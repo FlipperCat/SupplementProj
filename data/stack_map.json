@@ -1,0 +1,373 @@
+{
+  "5-htp": [
+    "sleep-stack"
+  ],
+  "acetyl-l-carnitine": [
+    "cognitive-enhancement-stack",
+    "athletic-performance-stack"
+  ],
+  "alpha-gpc": [
+    "cognitive-enhancement-stack"
+  ],
+  "alpha-lipoic-acid": [
+    "longevity-stack"
+  ],
+  "apigenin": [
+    "sleep-stack"
+  ],
+  "artichoke-extract": [
+    "gut-health-stack"
+  ],
+  "ashwagandha": [
+    "hormone-optimization-stack",
+    "sleep-stack"
+  ],
+  "astaxanthin": [
+    "longevity-stack"
+  ],
+  "b-complex": [
+    "longevity-stack"
+  ],
+  "bacopa-monnieri": [
+    "cognitive-enhancement-stack"
+  ],
+  "benfotiamine": [
+    "longevity-stack"
+  ],
+  "berberine": [
+    "gut-health-stack",
+    "longevity-stack"
+  ],
+  "beta-alanine": [
+    "athletic-performance-stack"
+  ],
+  "boron": [
+    "hormone-optimization-stack"
+  ],
+  "caffeine": [
+    "caffeine-l-theanine",
+    "cognitive-enhancement-stack"
+  ],
+  "calcium": [
+    "magnesium-vitamin-d"
+  ],
+  "carnosine": [
+    "athletic-performance-stack"
+  ],
+  "cdp-choline": [
+    "cognitive-enhancement-stack"
+  ],
+  "chaga-mushroom": [
+    "longevity-stack"
+  ],
+  "chlorella": [
+    "gut-health-stack"
+  ],
+  "choline": [
+    "cognitive-enhancement-stack"
+  ],
+  "chromium": [
+    "longevity-stack"
+  ],
+  "cinnamon": [
+    "longevity-stack"
+  ],
+  "citrulline": [
+    "athletic-performance-stack"
+  ],
+  "collagen": [
+    "athletic-performance-stack"
+  ],
+  "copper": [
+    "zinc-copper-balance"
+  ],
+  "coq10": [
+    "longevity-stack"
+  ],
+  "cordyceps-mushroom": [
+    "athletic-performance-stack",
+    "longevity-stack"
+  ],
+  "creatine": [
+    "athletic-performance-stack"
+  ],
+  "curcumin": [
+    "longevity-stack"
+  ],
+  "dandelion-root": [
+    "gut-health-stack"
+  ],
+  "dhea": [
+    "hormone-optimization-stack"
+  ],
+  "digestive-enzymes": [
+    "gut-health-stack"
+  ],
+  "dim": [
+    "hormone-optimization-stack"
+  ],
+  "elderberry": [
+    "longevity-stack"
+  ],
+  "fadogia-agrestis": [
+    "hormone-optimization-stack"
+  ],
+  "fenugreek": [
+    "hormone-optimization-stack"
+  ],
+  "fisetin": [
+    "longevity-stack"
+  ],
+  "gaba": [
+    "sleep-stack"
+  ],
+  "ginger": [
+    "gut-health-stack"
+  ],
+  "ginkgo-biloba": [
+    "cognitive-enhancement-stack"
+  ],
+  "ginseng": [
+    "hormone-optimization-stack",
+    "cognitive-enhancement-stack"
+  ],
+  "glucosamine": [
+    "athletic-performance-stack"
+  ],
+  "glutamine": [
+    "gut-health-stack",
+    "athletic-performance-stack"
+  ],
+  "glycine": [
+    "sleep-stack"
+  ],
+  "gotu-kola": [
+    "cognitive-enhancement-stack"
+  ],
+  "green-tea-extract": [
+    "longevity-stack"
+  ],
+  "hawthorn": [
+    "longevity-stack"
+  ],
+  "hmb": [
+    "athletic-performance-stack"
+  ],
+  "holy-basil": [
+    "sleep-stack",
+    "hormone-optimization-stack"
+  ],
+  "horny-goat-weed": [
+    "hormone-optimization-stack"
+  ],
+  "inositol": [
+    "sleep-stack",
+    "cognitive-enhancement-stack"
+  ],
+  "iodine": [
+    "hormone-optimization-stack"
+  ],
+  "iron": [
+    "longevity-stack"
+  ],
+  "krill-oil": [
+    "longevity-stack"
+  ],
+  "l-arginine": [
+    "athletic-performance-stack"
+  ],
+  "l-carnitine": [
+    "athletic-performance-stack"
+  ],
+  "l-theanine": [
+    "caffeine-l-theanine",
+    "sleep-stack"
+  ],
+  "lions-mane": [
+    "cognitive-enhancement-stack"
+  ],
+  "lutein-zeaxanthin": [
+    "longevity-stack"
+  ],
+  "maca": [
+    "hormone-optimization-stack"
+  ],
+  "magnesium": [
+    "magnesium-vitamin-d",
+    "sleep-stack"
+  ],
+  "magnesium-l-threonate": [
+    "cognitive-enhancement-stack",
+    "sleep-stack"
+  ],
+  "maitake-mushroom": [
+    "longevity-stack"
+  ],
+  "manganese": [
+    "longevity-stack"
+  ],
+  "melatonin": [
+    "sleep-stack"
+  ],
+  "milk-thistle": [
+    "gut-health-stack"
+  ],
+  "moringa": [
+    "longevity-stack"
+  ],
+  "msm": [
+    "athletic-performance-stack"
+  ],
+  "multivitamin": [
+    "longevity-stack"
+  ],
+  "nac": [
+    "longevity-stack",
+    "gut-health-stack"
+  ],
+  "nicotinamide-riboside": [
+    "longevity-stack"
+  ],
+  "nmn": [
+    "longevity-stack"
+  ],
+  "omega-3": [
+    "longevity-stack"
+  ],
+  "phosphatidylserine": [
+    "cognitive-enhancement-stack"
+  ],
+  "pine-pollen": [
+    "hormone-optimization-stack"
+  ],
+  "piperine": [
+    "longevity-stack"
+  ],
+  "pomegranate-extract": [
+    "longevity-stack"
+  ],
+  "potassium": [
+    "longevity-stack"
+  ],
+  "pqq": [
+    "cognitive-enhancement-stack"
+  ],
+  "pregnenolone": [
+    "hormone-optimization-stack"
+  ],
+  "prenatal-vitamins": [
+    "longevity-stack"
+  ],
+  "probiotics": [
+    "gut-health-stack"
+  ],
+  "pterostilbene": [
+    "longevity-stack"
+  ],
+  "quercetin": [
+    "longevity-stack"
+  ],
+  "red-yeast-rice": [
+    "longevity-stack"
+  ],
+  "reishi-mushroom": [
+    "longevity-stack"
+  ],
+  "resveratrol": [
+    "longevity-stack"
+  ],
+  "rhodiola": [
+    "cognitive-enhancement-stack"
+  ],
+  "saw-palmetto": [
+    "hormone-optimization-stack"
+  ],
+  "schisandra": [
+    "longevity-stack"
+  ],
+  "selenium": [
+    "longevity-stack",
+    "hormone-optimization-stack"
+  ],
+  "shiitake-mushroom": [
+    "longevity-stack"
+  ],
+  "shilajit": [
+    "hormone-optimization-stack"
+  ],
+  "spermidine": [
+    "longevity-stack"
+  ],
+  "spirulina": [
+    "longevity-stack"
+  ],
+  "tart-cherry": [
+    "longevity-stack"
+  ],
+  "taurine": [
+    "athletic-performance-stack"
+  ],
+  "tmg-betaine": [
+    "longevity-stack"
+  ],
+  "tongkat-ali": [
+    "hormone-optimization-stack"
+  ],
+  "tribulus-terrestris": [
+    "hormone-optimization-stack"
+  ],
+  "tryptophan": [
+    "sleep-stack"
+  ],
+  "turkey-tail-mushroom": [
+    "longevity-stack"
+  ],
+  "tyrosine": [
+    "cognitive-enhancement-stack"
+  ],
+  "urolithin-a": [
+    "longevity-stack"
+  ],
+  "vitamin-a": [
+    "longevity-stack"
+  ],
+  "vitamin-b1-thiamine": [
+    "longevity-stack"
+  ],
+  "vitamin-b12-cobalamin": [
+    "longevity-stack"
+  ],
+  "vitamin-b2-riboflavin": [
+    "longevity-stack"
+  ],
+  "vitamin-b3": [
+    "longevity-stack"
+  ],
+  "vitamin-b5-pantothenic-acid": [
+    "longevity-stack"
+  ],
+  "vitamin-b6-pyridoxine": [
+    "longevity-stack"
+  ],
+  "vitamin-b7-biotin": [
+    "longevity-stack"
+  ],
+  "vitamin-b9-folate": [
+    "longevity-stack"
+  ],
+  "vitamin-c": [
+    "longevity-stack"
+  ],
+  "vitamin-d3": [
+    "magnesium-vitamin-d"
+  ],
+  "vitamin-e": [
+    "longevity-stack"
+  ],
+  "vitamin-k2": [
+    "magnesium-vitamin-d"
+  ],
+  "zinc": [
+    "zinc-copper-balance"
+  ]
+}
