@@ -47,36 +47,34 @@ $preBroken = ($preCrawl | Select-String -Pattern 'Broken:\s+(\d+)').Matches.Grou
 Log "pre-fix broken: $preBroken"
 
 if ([int]$preBroken -eq 0) {
-    Log "OK $today: 0 broken links, nothing to do."
-    exit 0
-}
+    Log "OK ${today}: 0 broken links, skipping claude /audit + post-fix crawl."
+} else {
+    # 3. Invoke Claude headless to triage + fix
+    Log "Invoking claude headless with /audit (preBroken=$preBroken)..."
+    $claudeOutput = & claude -p '/audit' --output-format text --dangerously-skip-permissions 2>&1 | Out-String
+    Add-Content -Path $log -Value '--- claude /audit output ---' -Encoding utf8
+    Add-Content -Path $log -Value $claudeOutput -Encoding utf8
+    Add-Content -Path $log -Value '--- end claude output ---' -Encoding utf8
 
-# 3. Invoke Claude headless to triage + fix
-Log "Invoking claude headless with /audit (preBroken=$preBroken)..."
-$claudeOutput = & claude -p '/audit' --output-format text --dangerously-skip-permissions 2>&1 | Out-String
-Add-Content -Path $log -Value '--- claude /audit output ---' -Encoding utf8
-Add-Content -Path $log -Value $claudeOutput -Encoding utf8
-Add-Content -Path $log -Value '--- end claude output ---' -Encoding utf8
+    # 4. Post-fix crawl
+    Log 'crawl: post-fix verify'
+    $postCrawl = python -X utf8 scripts/crawl.py 2>&1 | Out-String
+    Add-Content -Path $log -Value $postCrawl -Encoding utf8
+    $postBroken = ($postCrawl | Select-String -Pattern 'Broken:\s+(\d+)').Matches.Groups[1].Value
 
-# 4. Post-fix crawl
-Log 'crawl: post-fix verify'
-$postCrawl = python -X utf8 scripts/crawl.py 2>&1 | Out-String
-Add-Content -Path $log -Value $postCrawl -Encoding utf8
-$postBroken = ($postCrawl | Select-String -Pattern 'Broken:\s+(\d+)').Matches.Groups[1].Value
+    Log "result: pre=$preBroken  post=$postBroken"
 
-Log "result: pre=$preBroken  post=$postBroken"
-
-if ([int]$postBroken -lt [int]$preBroken) {
-    Log "Improved: -$([int]$preBroken - [int]$postBroken) broken links."
-} elseif ([int]$postBroken -gt 0) {
-    Log "STILL BROKEN: $postBroken links unresolved (claude couldn't autofix all). Check log + Obsidian Ideas/ folder."
+    if ([int]$postBroken -lt [int]$preBroken) {
+        Log "Improved: -$([int]$preBroken - [int]$postBroken) broken links."
+    } elseif ([int]$postBroken -gt 0) {
+        Log "STILL BROKEN: $postBroken links unresolved (claude couldn't autofix all). Check log + Obsidian Ideas/ folder."
+    }
 }
 
 Log '=== run complete ==='
 
-# 5. Link-graph audit (read-only; warn if any supplement page is under-linked)
-$logDir = Join-Path $PSScriptRoot "..\.maintenance"
-if (-not (Test-Path $logDir)) { New-Item -ItemType Directory -Path $logDir | Out-Null }
+# 5. Link-graph audit (read-only; warn if any supplement page is under-linked).
+# Always runs, regardless of preBroken — it's a continuous gate, not a fix step.
 $logFile = Join-Path $logDir ("link-graph-" + (Get-Date -Format "yyyy-MM-dd") + ".md")
 python (Join-Path $PSScriptRoot "check_link_graph.py") --report-md $logFile
 if ($LASTEXITCODE -ne 0) { Write-Warning "Link-graph audit found failing pages -- see $logFile" }
