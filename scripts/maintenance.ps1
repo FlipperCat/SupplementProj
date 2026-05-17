@@ -73,3 +73,10 @@ if ([int]$postBroken -lt [int]$preBroken) {
 }
 
 Log '=== run complete ==='
+
+# 5. Link-graph audit (read-only; warn if any supplement page is under-linked)
+$logDir = Join-Path $PSScriptRoot "..\.maintenance"
+if (-not (Test-Path $logDir)) { New-Item -ItemType Directory -Path $logDir | Out-Null }
+$logFile = Join-Path $logDir ("link-graph-" + (Get-Date -Format "yyyy-MM-dd") + ".md")
+python (Join-Path $PSScriptRoot "check_link_graph.py") --report-md $logFile
+if ($LASTEXITCODE -ne 0) { Write-Warning "Link-graph audit found failing pages -- see $logFile" }
