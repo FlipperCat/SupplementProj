@@ -47,7 +47,7 @@ $preBroken = ($preCrawl | Select-String -Pattern 'Broken:\s+(\d+)').Matches.Grou
 Log "pre-fix broken: $preBroken"
 
 if ([int]$preBroken -eq 0) {
-    Log "OK $today: 0 broken links, skipping claude /audit + post-fix crawl."
+    Log "OK ${today}: 0 broken links, skipping claude /audit + post-fix crawl."
 } else {
     # 3. Invoke Claude headless to triage + fix
     Log "Invoking claude headless with /audit (preBroken=$preBroken)..."
