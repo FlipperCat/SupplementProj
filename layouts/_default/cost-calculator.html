@@ -185,4 +185,13 @@
     }
 })();
 </script>
+
+{{ if .Content }}
+<section class="tool-content-wrapper">
+  <div class="container">
+    {{ .Content }}
+  </div>
+</section>
+{{ end }}
+
 {{ end }}

@@ -29,6 +29,41 @@ document.addEventListener('DOMContentLoaded', function() {
             this.classList.toggle('active');
         });
     });
+
+    // Desktop nav dropdown — click-to-open. Stays open until an item is picked
+    // or the user clicks outside / presses Escape. (Was hover-only; the gap
+    // between trigger and menu made the hover lose too easily.)
+    const navDropdowns = document.querySelectorAll('.nav-dropdown');
+    function closeAllNavDropdowns() {
+        navDropdowns.forEach(function(dd) {
+            dd.classList.remove('open');
+            const t = dd.querySelector('.nav-link');
+            if (t) t.setAttribute('aria-expanded', 'false');
+        });
+    }
+    navDropdowns.forEach(function(dd) {
+        const trigger = dd.querySelector('.nav-link');
+        if (!trigger) return;
+        trigger.setAttribute('aria-haspopup', 'true');
+        trigger.setAttribute('aria-expanded', 'false');
+        trigger.addEventListener('click', function(e) {
+            e.preventDefault();
+            e.stopPropagation();
+            const willOpen = !dd.classList.contains('open');
+            closeAllNavDropdowns();
+            if (willOpen) {
+                dd.classList.add('open');
+                trigger.setAttribute('aria-expanded', 'true');
+            }
+        });
+    });
+    document.addEventListener('click', function(e) {
+        if (!e.target.closest('.nav-dropdown')) closeAllNavDropdowns();
+    });
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') closeAllNavDropdowns();
+    });
+
     // Mobile Menu Toggle
     const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
     const mobileNav = document.querySelector('.mobile-nav');
@@ -72,8 +107,13 @@ document.addEventListener('DOMContentLoaded', function() {
     // Smooth scroll for anchor links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
+            const href = this.getAttribute('href');
+            // Bare "#" (dropdown trigger) — querySelector('#') would throw
+            if (!href || href === '#') return;
+            // Nav dropdown trigger has its own click handler
+            if (this.closest('.nav-dropdown')) return;
             e.preventDefault();
-            const target = document.querySelector(this.getAttribute('href'));
+            const target = document.querySelector(href);
             if (target) {
                 target.scrollIntoView({
                     behavior: 'smooth',
