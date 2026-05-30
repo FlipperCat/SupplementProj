@@ -11,6 +11,73 @@ tags:
 aliases:
   - "/goals/focus-supplements/"
   - "/focus-supplements/"
+picks:
+  - name: "L-Theanine + Caffeine"
+    slug: "l-theanine"
+    rank: 1
+    evidence: "strong"
+    dose: "200 mg L-Theanine + 100 mg Caffeine (2:1)"
+    timing: "Morning"
+    why: "The gold-standard focus stack. Most-studied combination. Smooth alertness without jitters or 3 PM crash."
+    monetizable: true
+    buy_query: "l-theanine 200mg"
+  - name: "Creatine Monohydrate"
+    slug: "creatine"
+    rank: 2
+    evidence: "strong"
+    dose: "5 g/day"
+    timing: "Any time, every day"
+    why: "Not just for muscle. RCTs show improved memory and cognitive performance, especially in sleep-deprived states. Cheap, well-tolerated."
+    monetizable: true
+    buy_query: "creatine monohydrate"
+  - name: "Rhodiola Rosea"
+    slug: "rhodiola"
+    rank: 3
+    evidence: "moderate"
+    dose: "200-600 mg (3% rosavins, 1% salidroside)"
+    timing: "Morning, empty stomach"
+    why: "Adaptogen that reduces mental fatigue. Best for sustained focus under stress — deadlines, exam prep, long sessions."
+    monetizable: true
+    buy_query: "rhodiola rosea standardized"
+  - name: "Bacopa Monnieri"
+    slug: "bacopa-monnieri"
+    rank: 4
+    evidence: "moderate"
+    dose: "300-450 mg (50% bacosides)"
+    timing: "With food"
+    why: "Long-timeline play (8-12 weeks). Clinically improves memory and processing speed. Not for acute focus."
+    monetizable: true
+    buy_query: "bacopa monnieri bacosides"
+  - name: "L-Tyrosine"
+    slug: "l-tyrosine"
+    rank: 5
+    evidence: "moderate"
+    dose: "500-2000 mg"
+    timing: "30-60 min before cognitive demand"
+    why: "Dopamine precursor. Best for acute cognitive demand under stress or sleep deprivation. Doesn't work if you're well-rested."
+    monetizable: true
+    buy_query: "l-tyrosine 500mg"
+  - name: "Sleep (7-9 hours, consistent)"
+    rank: 6
+    evidence: "behavioral"
+    why: "Highest-ROI focus intervention period. Working memory drops ~20% after one bad night. No supplement compensates for chronic deprivation."
+    monetizable: false
+    not_sold_reason: "behavioral"
+    not_sold_note: "Free. Cognition cannot be supplemented around poor sleep. Fix this before anything else — see our /goals/sleep-supplements/ guide."
+  - name: "Exercise (especially zone 2 cardio)"
+    rank: 7
+    evidence: "behavioral"
+    why: "Raises BDNF (brain-derived neurotrophic factor) — the molecule that builds new neural connections. Strongest long-term cognitive enhancer there is."
+    monetizable: false
+    not_sold_reason: "behavioral"
+    not_sold_note: "Free. 30-45 min of moderate cardio 3-4x/week durably improves focus, memory, and processing speed. Effect size beats every nootropic."
+  - name: "Adderall / Ritalin / Vyvanse (prescription)"
+    rank: 8
+    evidence: "rx"
+    why: "Strong evidence for diagnosed ADHD. Off-label use is illegal, risky, and rarely works as imagined."
+    monetizable: false
+    not_sold_reason: "rx"
+    not_sold_note: "Not a supplement. If you have genuine ADHD symptoms (not just 'I wish I could work harder'), get evaluated. If you don't, supplements + sleep + exercise are your lane."
 ---
 
 ## Why You Can't Focus (And How Supplements Can Help)

@@ -1,0 +1,20 @@
+{{- /*
+  Compact buy widget for use inline in lists (e.g., goal "top picks").
+  Usage: {{ partial "buy-box-mini.html" (dict "query" "magnesium glycinate" "label" "Magnesium Glycinate") }}
+  Renders Amazon + iHerb search links + honest disclosure microcopy.
+*/ -}}
+{{- $query := .query -}}
+{{- $label := .label | default $query -}}
+{{- if $query -}}
+{{- $amazon_tag := site.Params.affiliates.amazon_tag -}}
+{{- $iherb_rcode := site.Params.affiliates.iherb_rcode -}}
+{{- $amazon_url := printf "https://www.amazon.com/s?k=%s" ($query | urlquery) -}}
+{{- if $amazon_tag -}}{{- $amazon_url = printf "%s&tag=%s" $amazon_url $amazon_tag -}}{{- end -}}
+{{- $iherb_url := printf "https://www.iherb.com/search?kw=%s" ($query | urlquery) -}}
+{{- if $iherb_rcode -}}{{- $iherb_url = printf "%s&rcode=%s" $iherb_url $iherb_rcode -}}{{- end -}}
+<div class="buy-mini">
+  <a class="buy-mini-link buy-mini-amazon" rel="sponsored nofollow noopener" target="_blank" href="{{ $amazon_url }}" data-affiliate="amazon" data-product="{{ $label }}">Amazon &rarr;</a>
+  <a class="buy-mini-link buy-mini-iherb" rel="sponsored nofollow noopener" target="_blank" href="{{ $iherb_url }}" data-affiliate="iherb" data-product="{{ $label }}">iHerb &rarr;</a>
+  <span class="buy-mini-note">As affiliates we may earn from these links at no extra cost to you.</span>
+</div>
+{{- end -}}

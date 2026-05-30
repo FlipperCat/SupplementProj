@@ -1,0 +1,104 @@
+{{- /*
+  Render a "Top picks for this goal" ranked list.
+  Reads .Params.picks from the goal page's frontmatter.
+
+  Pick schema (in goal page frontmatter):
+    picks:
+      - name: "Magnesium Glycinate"
+        slug: "magnesium"              # links to /supplements/<slug>/ (optional)
+        rank: 1
+        evidence: "strong"             # strong | moderate | preliminary | rx | food | behavioral
+        dose: "200-400 mg"
+        timing: "30-60 min before bed"
+        form: "Glycinate"              # specific form recommendation (optional)
+        why: "Activates GABA pathways; relaxes muscles; lowers cortisol."
+        monetizable: true              # true => buy-box | false => honest no-buy panel
+        buy_query: "magnesium glycinate"  # search term for Amazon/iHerb (defaults to name)
+
+      # Non-monetized example — included for trust/completeness
+      - name: "Tart Cherry Juice"
+        rank: 5
+        evidence: "moderate"
+        dose: "1 cup"
+        timing: "1 hr before bed"
+        why: "Natural source of melatonin (~0.1 mg/cup)."
+        monetizable: false
+        not_sold_reason: "food"        # food | rx | behavioral | otc-non-supplement
+        not_sold_note: "Skip the brand markup — get tart cherry juice from any grocery store."
+
+      - name: "Trazodone"
+        rank: 99
+        evidence: "rx"
+        why: "Most-prescribed off-label sleep med. Strong evidence but requires a prescription."
+        monetizable: false
+        not_sold_reason: "rx"
+        not_sold_note: "Not a supplement — included because it's commonly used for sleep. Talk to your doctor."
+*/ -}}
+{{- with .Params.picks -}}
+<section class="goal-top-picks">
+  <div class="goal-top-picks-header">
+    <h2>Top picks at a glance</h2>
+    <p class="goal-top-picks-sub">Ranked by evidence strength and real-world results. <strong>We include items we can't earn on</strong> (food, prescriptions, behavioral fixes) when they're the right answer — buying through us is a thank-you, not the goal.</p>
+  </div>
+
+  <ol class="goal-pick-list">
+    {{- range . }}
+    <li class="goal-pick" data-rank="{{ .rank }}" data-evidence="{{ .evidence }}" data-monetizable="{{ .monetizable }}">
+      <div class="goal-pick-head">
+        <span class="goal-pick-rank">#{{ .rank }}</span>
+        <div class="goal-pick-title">
+          <h3>
+            {{- if .slug -}}
+            <a href="/supplements/{{ .slug }}/">{{ .name }}</a>
+            {{- else -}}
+            {{ .name }}
+            {{- end -}}
+          </h3>
+          {{- $evidence := .evidence -}}
+          {{- $label := "" -}}
+          {{- if eq $evidence "strong" -}}{{- $label = "Strong evidence" -}}
+          {{- else if eq $evidence "moderate" -}}{{- $label = "Moderate evidence" -}}
+          {{- else if eq $evidence "preliminary" -}}{{- $label = "Preliminary evidence" -}}
+          {{- else if eq $evidence "rx" -}}{{- $label = "Prescription only" -}}
+          {{- else if eq $evidence "food" -}}{{- $label = "Whole food" -}}
+          {{- else if eq $evidence "behavioral" -}}{{- $label = "Behavioral / lifestyle" -}}
+          {{- else -}}{{- $label = $evidence -}}{{- end }}
+          <span class="goal-pick-evidence evidence-{{ $evidence }}">{{ $label }}</span>
+        </div>
+      </div>
+
+      {{- with .why }}
+      <p class="goal-pick-why">{{ . }}</p>
+      {{- end }}
+
+      {{- if or .dose .timing .form }}
+      <ul class="goal-pick-facts">
+        {{- with .dose }}<li><strong>Dose:</strong> {{ . }}</li>{{ end }}
+        {{- with .timing }}<li><strong>When:</strong> {{ . }}</li>{{ end }}
+        {{- with .form }}<li><strong>Form:</strong> {{ . }}</li>{{ end }}
+      </ul>
+      {{- end }}
+
+      {{- if .monetizable }}
+      {{- $query := .buy_query | default .name -}}
+      {{ partial "buy-box-mini.html" (dict "query" $query "label" .name) }}
+      {{- else }}
+      <div class="goal-pick-no-buy" data-reason="{{ .not_sold_reason }}">
+        {{- $reasonIcon := "" -}}
+        {{- $reasonLabel := "" -}}
+        {{- if eq .not_sold_reason "food" -}}{{- $reasonIcon = "🥗" -}}{{- $reasonLabel = "Not sold here — it's a whole food" -}}
+        {{- else if eq .not_sold_reason "rx" -}}{{- $reasonIcon = "💊" -}}{{- $reasonLabel = "Not sold here — prescription only" -}}
+        {{- else if eq .not_sold_reason "behavioral" -}}{{- $reasonIcon = "🧠" -}}{{- $reasonLabel = "Not sold here — behavioral / lifestyle fix" -}}
+        {{- else -}}{{- $reasonIcon = "ℹ️" -}}{{- $reasonLabel = "Not sold through us" -}}{{- end }}
+        <strong>{{ $reasonIcon }} {{ $reasonLabel }}.</strong>
+        {{ with .not_sold_note }}<span>{{ . }}</span>{{ end }}
+        {{- with .slug }} <a href="/supplements/{{ . }}/">Learn more &rarr;</a>{{ end }}
+      </div>
+      {{- end }}
+    </li>
+    {{- end }}
+  </ol>
+
+  <p class="goal-top-picks-footnote">Evidence ratings reflect the strength of the clinical research, not a personal endorsement. <a href="/affiliate-disclosure/">How we're funded &rarr;</a></p>
+</section>
+{{- end -}}

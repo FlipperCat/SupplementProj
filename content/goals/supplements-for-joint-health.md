@@ -12,6 +12,74 @@ tags:
 aliases:
   - "/goals/supplements-for-joint-health/"
   - "/supplements-for-joint-health/"
+picks:
+  - name: "Curcumin + Piperine"
+    slug: "curcumin"
+    rank: 1
+    evidence: "strong"
+    dose: "500-1000 mg curcumin + 5-10 mg piperine"
+    timing: "With food (fat-soluble)"
+    why: "Reduces inflammatory markers in RCTs. Without piperine (or a phytosome form like Meriva), bioavailability is too low to matter."
+    monetizable: true
+    buy_query: "curcumin piperine"
+  - name: "Omega-3 (EPA/DHA)"
+    slug: "omega-3"
+    rank: 2
+    evidence: "strong"
+    dose: "2-3 g EPA+DHA (higher dose for joint effect)"
+    timing: "With meal containing fat"
+    form: "IFOS-tested fish oil or algal oil"
+    why: "Reduces joint pain in rheumatoid arthritis (RCT-confirmed). Anti-inflammatory at higher doses (>2 g/day)."
+    monetizable: true
+    buy_query: "omega-3 fish oil EPA DHA"
+  - name: "Boswellia Serrata"
+    slug: "boswellia"
+    rank: 3
+    evidence: "moderate"
+    dose: "300-400 mg standardized extract, 3x daily"
+    timing: "With food"
+    why: "5-LOX inhibitor. Comparable to celecoxib in some RCTs without the GI risk."
+    monetizable: true
+    buy_query: "boswellia extract"
+  - name: "Glucosamine + Chondroitin"
+    slug: "glucosamine"
+    rank: 4
+    evidence: "moderate"
+    dose: "1500 mg glucosamine + 1200 mg chondroitin"
+    timing: "Daily, split doses"
+    why: "Modest benefit for knee osteoarthritis. Bigger effect for moderate-severe than mild cases."
+    monetizable: true
+    buy_query: "glucosamine chondroitin"
+  - name: "Collagen Peptides"
+    slug: "collagen"
+    rank: 5
+    evidence: "moderate"
+    dose: "10-15 g daily"
+    timing: "Any time, often with morning coffee"
+    why: "Supports cartilage and tendon repair. Effect amplified when paired with resistance training."
+    monetizable: true
+    buy_query: "collagen peptides hydrolyzed"
+  - name: "Strength training + mobility work"
+    rank: 6
+    evidence: "behavioral"
+    why: "The single most-evidence-backed intervention for joint pain. Stronger muscles = less joint load. Outperforms any supplement protocol."
+    monetizable: false
+    not_sold_reason: "behavioral"
+    not_sold_note: "Free. Resistance training 2-3x/week + mobility/stretching daily. Start light, progress slowly. This is the lane that compounds."
+  - name: "Bone broth"
+    rank: 7
+    evidence: "food"
+    why: "Natural source of collagen, glycine, glucosamine. Less concentrated than supplements but a real whole-food option."
+    monetizable: false
+    not_sold_reason: "food"
+    not_sold_note: "Slow-simmered bone broth from any grocery store, or homemade. Lower per-dose collagen than peptide powder — but if you prefer food sources, this works."
+  - name: "Steroid or hyaluronic injection (prescription)"
+    rank: 8
+    evidence: "rx"
+    why: "Short-term pain relief for severe joint inflammation. Not a long-term fix and not a substitute for the work above."
+    monetizable: false
+    not_sold_reason: "rx"
+    not_sold_note: "Not a supplement. For acute flare-ups or severe osteoarthritis, see an orthopedist — steroid or hyaluronic acid injections are evidence-backed bridges."
 ---
 
 ## Joint Health: From Inside Out

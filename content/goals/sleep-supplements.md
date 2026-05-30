@@ -13,6 +13,79 @@ aliases:
   - "/sleep-supplements/"
   - "/supplements-for-sleep/"
   - "/goals/supplements-for-sleep/"
+picks:
+  - name: "Magnesium Glycinate"
+    slug: "magnesium"
+    rank: 1
+    evidence: "strong"
+    dose: "200-400 mg"
+    timing: "30-60 min before bed"
+    form: "Glycinate (not Oxide)"
+    why: "Activates GABA pathways, calms the nervous system, eases muscle tension. Most evidence-backed mineral for sleep."
+    monetizable: true
+    buy_query: "magnesium glycinate"
+  - name: "L-Theanine"
+    slug: "l-theanine"
+    rank: 2
+    evidence: "strong"
+    dose: "200-400 mg"
+    timing: "30-60 min before bed"
+    why: "Promotes alpha brain waves without sedation. Best for racing-thought insomnia; pairs well with magnesium."
+    monetizable: true
+    buy_query: "l-theanine 200mg"
+  - name: "Melatonin (low dose)"
+    slug: "melatonin"
+    rank: 3
+    evidence: "strong"
+    dose: "0.3-1 mg (low dose — not 5-10 mg)"
+    timing: "30-45 min before target sleep time"
+    form: "Sublingual or fast-release"
+    why: "Phase-shifts your circadian clock. Low doses work as well or better than the 5-10 mg most products ship."
+    monetizable: true
+    buy_query: "melatonin 1mg"
+  - name: "Apigenin"
+    slug: "apigenin"
+    rank: 4
+    evidence: "moderate"
+    dose: "50 mg"
+    timing: "30 min before bed"
+    why: "Flavonoid (also in chamomile). Gently binds benzodiazepine receptors. Popularized by Andrew Huberman."
+    monetizable: true
+    buy_query: "apigenin 50mg"
+  - name: "Glycine"
+    slug: "glycine"
+    rank: 5
+    evidence: "moderate"
+    dose: "3 g"
+    timing: "1 hr before bed"
+    why: "Drops core body temp (a sleep trigger). RCTs show improved sleep onset and quality."
+    monetizable: true
+    buy_query: "glycine powder"
+  - name: "Tart Cherry Juice"
+    rank: 6
+    evidence: "food"
+    dose: "1 cup (240 ml), Montmorency variety"
+    timing: "1-2 hr before bed"
+    why: "Natural melatonin (~0.1 mg/cup) + tryptophan. Clinically improves sleep duration."
+    monetizable: false
+    not_sold_reason: "food"
+    not_sold_note: "Skip the brand markup — Montmorency tart cherry juice from any grocery store. Cherry type matters more than brand."
+  - name: "Cool your bedroom (60-67°F / 16-19°C)"
+    rank: 7
+    evidence: "behavioral"
+    timing: "Set thermostat before bed"
+    why: "Body temp must drop ~2°F to initiate sleep. A hot room blocks the trigger entirely. Bigger effect on deep sleep than any supplement."
+    monetizable: false
+    not_sold_reason: "behavioral"
+    not_sold_note: "Free. Highest-ROI sleep intervention there is — adjust the thermostat tonight."
+  - name: "Trazodone (prescription)"
+    rank: 8
+    evidence: "rx"
+    dose: "25-100 mg (doctor-prescribed)"
+    why: "Most-prescribed off-label sleep med. Strong evidence, low abuse potential."
+    monetizable: false
+    not_sold_reason: "rx"
+    not_sold_note: "Not a supplement — included because it's commonly used when OTC options aren't enough. Talk to your doctor."
 ---
 
 ## Why You Can't Sleep (And How Supplements Can Help)

@@ -12,6 +12,76 @@ tags:
 aliases:
   - "/goals/supplements-for-heart-health/"
   - "/supplements-for-heart-health/"
+picks:
+  - name: "Omega-3 (EPA/DHA)"
+    slug: "omega-3"
+    rank: 1
+    evidence: "strong"
+    dose: "1-2 g EPA+DHA"
+    timing: "With meal containing fat"
+    form: "IFOS-tested or USP-verified (oxidation matters here)"
+    why: "Lowers triglycerides, modest BP reduction, anti-inflammatory. Most-evidence-backed heart supplement period."
+    monetizable: true
+    buy_query: "omega-3 fish oil EPA DHA"
+  - name: "CoQ10 (Ubiquinol if 40+ or on statins)"
+    slug: "coq10"
+    rank: 2
+    evidence: "strong"
+    dose: "100-200 mg"
+    timing: "With food (fat-soluble)"
+    form: "Ubiquinol if 40+ or on a statin; Ubiquinone otherwise"
+    why: "Critical if on a statin (statins deplete CoQ10 → muscle pain). Improves heart function in failure patients."
+    monetizable: true
+    buy_query: "coq10 ubiquinol"
+  - name: "Magnesium"
+    slug: "magnesium"
+    rank: 3
+    evidence: "strong"
+    dose: "200-400 mg"
+    timing: "Evening"
+    form: "Glycinate or Citrate"
+    why: "Lowers blood pressure modestly. Anti-arrhythmic. Most adults are deficient."
+    monetizable: true
+    buy_query: "magnesium glycinate"
+  - name: "Vitamin K2 (MK-7)"
+    slug: "vitamin-k2"
+    rank: 4
+    evidence: "moderate"
+    dose: "90-180 mcg"
+    timing: "With Vitamin D + dietary fat"
+    why: "Directs calcium to bone, away from arteries. Critical companion to Vitamin D3 supplementation."
+    monetizable: true
+    buy_query: "vitamin k2 mk-7"
+  - name: "Berberine"
+    slug: "berberine"
+    rank: 5
+    evidence: "moderate"
+    dose: "500 mg, 2-3x daily"
+    timing: "With meals"
+    why: "Lowers LDL, blood sugar, and triglycerides. Effect size rivals statins at smaller magnitude — useful as an adjunct."
+    monetizable: true
+    buy_query: "berberine HCl 500mg"
+  - name: "Zone 2 cardio (150-180 min/week)"
+    rank: 6
+    evidence: "behavioral"
+    why: "Lowers blood pressure, raises HDL, improves arterial flexibility. Stronger evidence than any supplement."
+    monetizable: false
+    not_sold_reason: "behavioral"
+    not_sold_note: "Free. 150-180 min/week of moderate-effort cardio is the single most-evidence-backed heart intervention. Brisk walking counts."
+  - name: "Mediterranean diet pattern"
+    rank: 7
+    evidence: "food"
+    why: "PREDIMED RCT showed 30% reduction in major cardiovascular events. Olive oil + fatty fish + nuts + vegetables."
+    monetizable: false
+    not_sold_reason: "food"
+    not_sold_note: "Not buyable as a product. Olive oil daily, fatty fish 2x/week, handful of nuts daily, vegetables every meal. Costs less than a supplement stack."
+  - name: "Statins / ACE inhibitors (prescription)"
+    rank: 8
+    evidence: "rx"
+    why: "Strong evidence for cardiovascular event reduction in high-risk patients. Most-studied class of drugs in medicine."
+    monetizable: false
+    not_sold_reason: "rx"
+    not_sold_note: "Not a supplement. If your LDL is high or BP is elevated, talk to your doctor — supplements alone may not be enough at high risk."
 ---
 
 ## Understanding Cardiovascular Health

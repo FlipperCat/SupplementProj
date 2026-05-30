@@ -11,6 +11,76 @@ tags:
 aliases:
   - "/goals/anxiety-supplements/"
   - "/anxiety-supplements/"
+picks:
+  - name: "L-Theanine"
+    slug: "l-theanine"
+    rank: 1
+    evidence: "strong"
+    dose: "200-400 mg"
+    timing: "As needed; 2-3x daily"
+    why: "Calm without sedation. Smooths caffeine's edge. Reduces stress without affecting alertness or causing dependency."
+    monetizable: true
+    buy_query: "l-theanine 200mg"
+  - name: "Ashwagandha (KSM-66 or Sensoril)"
+    slug: "ashwagandha"
+    rank: 2
+    evidence: "strong"
+    dose: "300-600 mg"
+    timing: "Morning, with food"
+    form: "KSM-66 (energizing) or Sensoril (calming)"
+    why: "Lowers cortisol 20-30% in RCTs. The most-studied adaptogen for chronic stress and anxiety."
+    monetizable: true
+    buy_query: "ashwagandha KSM-66"
+  - name: "Magnesium Glycinate"
+    slug: "magnesium"
+    rank: 3
+    evidence: "strong"
+    dose: "200-400 mg"
+    timing: "Evening"
+    form: "Glycinate"
+    why: "Modulates NMDA and GABA receptors. Magnesium deficiency correlates strongly with anxiety; supplementing closes the gap."
+    monetizable: true
+    buy_query: "magnesium glycinate"
+  - name: "Saffron Extract"
+    slug: "saffron"
+    rank: 4
+    evidence: "moderate"
+    dose: "28-30 mg"
+    timing: "Morning, with food"
+    why: "Multiple RCTs show effect size comparable to SSRIs for mild-to-moderate anxiety and depression."
+    monetizable: true
+    buy_query: "saffron extract 30mg"
+  - name: "Inositol (Myo-Inositol)"
+    slug: "inositol"
+    rank: 5
+    evidence: "moderate"
+    dose: "12-18 g/day (high dose)"
+    timing: "Split AM/PM in water"
+    why: "Clinically effective for panic disorder at high doses. Cheap, well-tolerated, dramatically underused."
+    monetizable: true
+    buy_query: "myo-inositol powder"
+  - name: "Box breathing (4-4-4-4) or 4-7-8 breath"
+    rank: 6
+    evidence: "behavioral"
+    timing: "When anxiety spikes"
+    why: "Activates parasympathetic nervous system in real time. Reduces acute anxiety in 60 seconds. Faster than any supplement."
+    monetizable: false
+    not_sold_reason: "behavioral"
+    not_sold_note: "Free. 4 sec in, 4 hold, 4 out, 4 hold — repeat 4x. No supplement matches this for speed in acute moments."
+  - name: "CBT or ACT therapy"
+    rank: 7
+    evidence: "behavioral"
+    why: "Stronger long-term evidence than SSRIs for anxiety disorders. Effects compound over years."
+    monetizable: false
+    not_sold_reason: "behavioral"
+    not_sold_note: "Many therapists take insurance. BetterHelp / Talkspace if you need fast access. Highest ROI long-term — supplements support, therapy resolves."
+  - name: "Buspirone or SSRI (prescription)"
+    rank: 8
+    evidence: "rx"
+    why: "When supplements aren't enough. Buspirone is non-addictive; SSRIs have decades of safety and efficacy data."
+    monetizable: false
+    not_sold_reason: "rx"
+    not_sold_note: "Not a supplement. If anxiety is genuinely limiting your life, talk to a doctor. There are good options that aren't benzos."
 ---
 
 ## Why You're Anxious (And How Supplements Can Help)

@@ -15,6 +15,9 @@
                 {{ end }}
             </header>
 
+            {{/* Top Picks ranking — renders only when frontmatter has picks: */}}
+            {{ partial "goal-top-picks.html" . }}
+
             <!-- Main Article Content -->
             <div class="article-content">
                 {{ .Content }}

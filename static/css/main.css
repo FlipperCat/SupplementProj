@@ -2250,6 +2250,149 @@ p {
     margin: var(--spacing-md) 0;
 }
 
+/* ============================================
+   Goal "Top Picks" — ranked supplements with buy-box OR honest no-buy panel
+   ============================================ */
+.goal-top-picks {
+    margin: var(--spacing-xl) 0 var(--spacing-2xl);
+}
+.goal-top-picks-header {
+    margin-bottom: var(--spacing-lg);
+}
+.goal-top-picks-header h2 { margin: 0 0 var(--spacing-xs) 0; }
+.goal-top-picks-sub {
+    color: var(--color-text-light);
+    font-size: 0.9375rem;
+    margin: 0;
+    line-height: 1.5;
+}
+.goal-pick-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    gap: var(--spacing-md);
+}
+.goal-pick {
+    background: var(--color-white);
+    border: 1px solid var(--color-cream-dark);
+    border-radius: var(--radius-lg);
+    padding: var(--spacing-lg);
+    box-shadow: var(--shadow-sm);
+    position: relative;
+}
+.goal-pick-head {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--spacing-md);
+    margin-bottom: var(--spacing-sm);
+}
+.goal-pick-rank {
+    font-family: var(--font-heading);
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: var(--color-primary);
+    line-height: 1;
+    min-width: 3rem;
+}
+.goal-pick-title { flex: 1; }
+.goal-pick-title h3 {
+    margin: 0 0 4px 0;
+    font-size: 1.25rem;
+}
+.goal-pick-title h3 a {
+    color: var(--color-text);
+    text-decoration: none;
+    border-bottom: 1px dashed var(--color-cream-dark);
+}
+.goal-pick-title h3 a:hover {
+    color: var(--color-primary);
+    border-bottom-color: var(--color-primary);
+}
+.goal-pick-evidence {
+    display: inline-block;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-weight: 600;
+}
+.evidence-strong       { background: #d4f4dd; color: #1a7f37; }
+.evidence-moderate     { background: #fef3c7; color: #92400e; }
+.evidence-preliminary  { background: #fee2e2; color: #991b1b; }
+.evidence-rx           { background: #ddd6fe; color: #5b21b6; }
+.evidence-food         { background: #fef9c3; color: #854d0e; }
+.evidence-behavioral   { background: #cffafe; color: #155e75; }
+
+.goal-pick-why {
+    margin: 0 0 var(--spacing-sm) 0;
+    line-height: 1.6;
+}
+.goal-pick-facts {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 var(--spacing-md) 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-sm) var(--spacing-lg);
+    font-size: 0.875rem;
+    color: var(--color-text-light);
+}
+.goal-pick-facts li { margin: 0; }
+.goal-pick-facts strong { color: var(--color-text); }
+
+/* Mini buy-box (compact, list-friendly) */
+.buy-mini {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: var(--spacing-sm);
+    padding-top: var(--spacing-sm);
+    border-top: 1px dashed var(--color-cream-dark);
+}
+.buy-mini-link {
+    display: inline-block;
+    padding: 6px 14px;
+    border-radius: var(--radius-md);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.875rem;
+    border: 2px solid transparent;
+    transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+}
+.buy-mini-link:hover { transform: translateY(-1px); box-shadow: var(--shadow-sm); }
+.buy-mini-amazon { background: #ff9900; color: #232f3e; }
+.buy-mini-iherb  { background: #2da44e; color: #fff; }
+.buy-mini-note {
+    font-size: 0.75rem;
+    color: var(--color-text-light);
+    margin-left: auto;
+}
+
+/* Honest "not sold here" panel — for non-monetized picks (food / rx / behavioral) */
+.goal-pick-no-buy {
+    background: var(--color-cream);
+    border-left: 3px solid var(--color-text-light);
+    padding: var(--spacing-sm) var(--spacing-md);
+    border-radius: 0 var(--radius-md) var(--radius-md) 0;
+    font-size: 0.9375rem;
+    line-height: 1.5;
+}
+.goal-pick-no-buy strong { display: block; margin-bottom: 2px; }
+.goal-pick-no-buy[data-reason="food"]       { border-left-color: #ca8a04; }
+.goal-pick-no-buy[data-reason="rx"]         { border-left-color: #7c3aed; }
+.goal-pick-no-buy[data-reason="behavioral"] { border-left-color: #0891b2; }
+
+.goal-top-picks-footnote {
+    margin-top: var(--spacing-lg);
+    font-size: 0.8125rem;
+    color: var(--color-text-light);
+}
+
+[data-theme="dark"] .goal-pick { background: var(--color-surface); }
+[data-theme="dark"] .goal-pick-no-buy { background: var(--color-bg); }
+
 /* Tool page newsletter CTA (below the tool-content-wrapper) */
 .tool-page-cta {
     padding: var(--spacing-2xl) 0;
