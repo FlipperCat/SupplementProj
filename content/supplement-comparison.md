@@ -47,6 +47,38 @@ Comparing three popular Omega-3s at 1 g EPA+DHA per day:
 
 The tool flags Brand C as a hard no — rancid fish oil is not just ineffective, it's *pro-inflammatory* (the opposite of why you're taking it). Brand B is the value pick. Brand A is the right call if you're taking high doses (3+ g/day) or want maximum testing.
 
+## Quick-pick: which form for which goal
+
+The fast lookup. If you only care about one thing, this table gets you to the right form in 10 seconds.
+
+| If your goal is… | Best form | Why |
+|---|---|---|
+| **Sleep / anxiety / relaxation** | Magnesium **Glycinate** | Calm without GI effects; high bioavailability |
+| **Constipation** | Magnesium **Citrate** | Draws water into the bowel; gentle laxative effect |
+| **Cognition / memory** | Magnesium **L-Threonate** | Only form that crosses the blood-brain barrier well |
+| **Cheap, basic deficiency fix** | Magnesium **Glycinate** *(not Oxide)* | Oxide is ~4% bioavailable; Glycinate is ~$3 more and 4–5× more usable |
+| **Iron deficiency (general)** | **Iron Bisglycinate** | High absorption, low GI upset vs. ferrous sulfate |
+| **Iron deficiency (severe / under medical guidance)** | **Ferrous sulfate** | Cheap and effective; tolerate the GI cost |
+| **Vitamin D supplementation** | **D3 (cholecalciferol)** + **K2 (MK-7)** | D2 is 2–3× less effective; K2 routes Calcium correctly |
+| **Omega-3 (general health)** | Fish oil — **EPA+DHA** combined, IFOS-tested | Form is less important than oxidation status |
+| **Omega-3 (vegan)** | **Algal oil DHA+EPA** | The only complete vegan source; flax/chia don't reliably convert |
+| **B12 (most people)** | **Methylcobalamin** sublingual | More active; sublingual bypasses absorption issues |
+| **B12 (MTHFR mutation)** | **Methylcobalamin** *(not Cyanocobalamin)* | Bypasses the broken methylation step |
+| **Creatine** | **Monohydrate** | Cheapest form is also the most-studied. Anything else is marketing. |
+| **Curcumin** | **Curcumin + Piperine** *(or Meriva / phytosome)* | Plain Curcumin is poorly absorbed; the additions raise bioavailability ~20× |
+| **CoQ10 (under 40, healthy)** | **Ubiquinone** | Body converts it; cheaper |
+| **CoQ10 (over 40, on statins, or for fertility)** | **Ubiquinol** | Pre-converted, better-absorbed at older ages |
+
+## Brand tier rules of thumb
+
+When the form is right, brand mostly comes down to testing tier. Quick guide:
+
+- **Costco / Kirkland** — surprising amount of third-party testing for the price. Best value tier for fish oil, multivitamins, basics.
+- **NOW Foods / Doctor's Best / Nature's Way** — value-leaning quality. Long track records. No specialty forms but the basics are solid.
+- **Thorne / Pure Encapsulations / Designs for Health** — practitioner-grade. NSF Certified for Sport options. Worth it for athletes, sensitive users, and 10+ supplement stacks.
+- **Klaire Labs / Seeking Health** — niche / specialist (methylation support, sensitive populations).
+- **Anything Amazon-only with no website** — skip.
+
 ## FAQ
 
 <details>

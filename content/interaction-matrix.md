@@ -39,6 +39,40 @@ Find Zinc → Copper. The cell is **🟡 Caution**. Reason: long-term high-dose 
 
 🟢 **Synergy**. Magnesium is a cofactor for converting Vitamin D into its active form. Taking high-dose D without enough Magnesium can actually deplete Magnesium stores.
 
+## The 12 highest-impact interactions to memorize
+
+If you don't have time for the whole matrix, these are the 12 pairs that explain ~80% of the absorption and safety issues we see. They're worth committing to memory.
+
+### 🟢 Synergies (take together or close)
+
+1. **Vitamin D3 + Vitamin K2** — D3 raises Calcium; K2 routes it to bone instead of arteries. Standard pair: 5,000 IU D3 + 90–180 mcg K2 (MK-7).
+2. **Iron + Vitamin C** — Vitamin C 3–5× the iron dose roughly triples non-heme iron absorption. Take together at breakfast.
+3. **Vitamin D3 + Magnesium** — Magnesium is the cofactor that activates D3. High-dose D without enough Magnesium silently depletes Magnesium stores.
+4. **Curcumin + Black Pepper (Piperine)** — Piperine increases Curcumin bioavailability ~20×. Most quality Curcumin products bundle ~5 mg Piperine.
+5. **L-Theanine + Caffeine** — L-Theanine smooths Caffeine's edge without cutting alertness. 2:1 ratio (200 mg L-Theanine + 100 mg Caffeine) is the most-studied dose.
+
+### 🟡 Caution — fine, but space them out
+
+6. **Zinc + Copper** — long-term Zinc >40 mg/day depletes Copper. Add ~1 mg Copper per 15 mg Zinc, or pick a combo formula.
+7. **Magnesium + Calcium** — competes for absorption above ~500 mg each. Split AM/PM if you take both at higher doses.
+8. **Zinc + Magnesium** — also share transporters. Take Zinc on empty stomach AM, Magnesium PM with food.
+
+### 🔴 Conflicts — don't combine in the same window
+
+9. **Calcium + Iron** — Calcium cuts non-heme iron absorption by 40–60%. Take 2+ hours apart.
+10. **Calcium + Zinc** — same transporter. A 30 mg Zinc with 1,000 mg Calcium delivers ~12–15 mg effective Zinc.
+11. **Iron + Coffee/Tea** — tannins block iron absorption by up to 60%. Take iron 1 hour before or 2 hours after caffeine.
+12. **Calcium/Iron/Magnesium + Levothyroxine** — minerals reduce thyroid med absorption sharply. Take Levo on empty stomach AM, minerals 4+ hours later.
+
+## Color-coding quick reference
+
+| | Meaning | What to do |
+|---|---|---|
+| 🟢 | **Synergy** — better together than alone | Take in the same window; same meal is fine |
+| 🟡 | **Caution** — fine but not at the same moment | Space by 2–4 hours; the cell detail panel gives the exact gap |
+| 🔴 | **Conflict** — one cancels or weakens the other | Move to different parts of the day; rarely "never combine" — usually just "separate" |
+| ⚪ | **Neutral** — no meaningful interaction | Take whenever fits your schedule |
+
 ## FAQ
 
 <details>

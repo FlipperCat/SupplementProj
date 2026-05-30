@@ -45,6 +45,34 @@ What the analyzer flags:
 - Gap: no GABA-pathway support beyond L-Theanine — Apigenin (50 mg) or Glycine (3 g) are common additions if onset latency is still long.
 - Timing: take Melatonin **30 minutes** before bed, not at lights-out.
 
+## Top 10 mistakes the analyzer catches
+
+These are the recurring patterns we see when people paste their real stacks into the analyzer. None of them are obvious — they're each costing somebody money or absorption right now.
+
+1. **Calcium + Iron together** — Calcium can cut non-heme iron absorption by 40–60%. Split: Iron at breakfast (with Vitamin C), Calcium at dinner.
+2. **Zinc + Calcium together** — same transporter. A 30 mg Zinc dose with 1,000 mg Calcium delivers ~12–15 mg effective Zinc. Take Zinc on an empty stomach or far from Calcium.
+3. **High-dose Zinc with no Copper** — long-term Zinc >40 mg/day depletes Copper. Add ~1 mg Copper per 15 mg Zinc, or pick a Zinc + Copper combo.
+4. **Vitamin D with no Vitamin K2 or Magnesium** — D3 alone over-routes Calcium and can deposit in arteries. K2 (MK-7, 90–180 mcg) directs Calcium to bone. Magnesium is required to *activate* Vitamin D.
+5. **Fat-soluble vitamins (A, D, E, K) on an empty stomach** — fat-soluble means fat-required. Take with the meal containing the most dietary fat (usually dinner).
+6. **Magnesium Oxide as your "Magnesium"** — ~4% bioavailable. Switch to Glycinate, Citrate, or Malate. Costs about $3 more per bottle.
+7. **Iron + coffee/tea within 1 hour** — tannins block iron absorption by up to 60%. Take iron 1 hour before or 2 hours after.
+8. **All supplements at once "with breakfast"** — convenient, but lumping them together creates compete-for-transporter conflicts that cut effective doses by 25–40%.
+9. **Melatonin at lights-out** — peak blood level lands ~45 min after intake. Taking it at lights-out means you fall asleep *before* it works, then wake up at 3 AM as it peaks. Take it 30 min before bed.
+10. **Stacking three nootropics that all hit the same receptor** — common with caffeine + L-theanine + a racetam + a choline + DMAE. Pick one mechanism per goal; redundancy doesn't compound, it just makes side effects more likely.
+
+## How the schedule works
+
+The analyzer groups your supplements into four time slots based on absorption profile:
+
+| Slot | Why | Typical contents |
+|---|---|---|
+| **AM, empty stomach** | Best absorption window for several aminos and Iron | Iron (with Vit C), L-Tyrosine, Carnitine |
+| **AM, with breakfast** | Water-soluble vitamins + caffeine pairings | B-complex, Vitamin C, Caffeine + L-Theanine |
+| **PM, with dinner** | Fat-soluble vitamins + most minerals | Vitamin D3+K2, Vitamin E, Calcium, Magnesium (if not at bedtime) |
+| **Bedtime** | Sleep-supporting actives | Magnesium Glycinate, Melatonin, Apigenin, Glycine |
+
+When two items belong in the same slot but conflict (e.g., Zinc + Calcium), the analyzer splits them across adjacent slots and explains the reason in the timing notes.
+
 ## FAQ
 
 <details>

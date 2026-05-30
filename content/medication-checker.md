@@ -10,6 +10,23 @@ layout: "medication-checker"
 
 ---
 
+## Read this first: 6 medications that almost always need a paired supplement
+
+These are the prescriptions where supplementing isn't optional — the medication actively depletes a nutrient and the depletion drives the side effects people complain about. If you're on any of these and *not* supplementing the paired nutrient, this is the highest-leverage change you can make.
+
+| Medication | Depletes | Paired supplement | Why it matters |
+|---|---|---|---|
+| **Statins** (Atorvastatin, Simvastatin, Rosuvastatin, etc.) | **CoQ10** | CoQ10 100–200 mg/day | The "statin muscle pain" most people experience is partly CoQ10 depletion. Supplementing typically reverses it within 4–8 weeks. |
+| **Metformin** | **B12** (and Folate) | Methylcobalamin B12 1,000 mcg/day | Long-term Metformin users have a 10–30% rate of B12 deficiency → fatigue, neuropathy, cognitive issues. |
+| **PPIs** (Omeprazole, Esomeprazole, Pantoprazole) | **B12, Magnesium, Calcium, Iron** | B12 + Magnesium Glycinate + check Calcium/Iron labs | PPIs raise stomach pH, blocking absorption of multiple minerals. The 2-year mark is when deficiencies start showing up. |
+| **Diuretics** (Furosemide / Lasix, HCTZ) | **Magnesium, Potassium, Thiamine (B1)** | Magnesium 300–400 mg/day, monitor Potassium with doctor | Cramping, irregular heartbeat, fatigue — often blamed on the condition; usually the diuretic. |
+| **Corticosteroids** (Prednisone, long-term) | **Calcium, Vitamin D, K, Zinc, B vitamins** | Calcium 1,200 mg + D3 2,000 IU + K2 + Zinc | Long-term steroids are the highest bone-loss risk in medicine. Supplementing is bone-protective, not optional. |
+| **Oral contraceptives** | **B6, B12, Folate, Magnesium, Zinc, Vitamin C** | B-complex + Magnesium + Folate (methylated) | Often-missed driver of mood, fatigue, and PMS symptoms in long-term users. |
+
+**One spacing rule for everything else:** if you take **Levothyroxine** (Synthroid) or an antibiotic from the tetracycline or fluoroquinolone families, separate them from Calcium, Iron, Magnesium, and multivitamins by **4 hours**. That single habit prevents the most common supplement-blocks-medication interaction.
+
+---
+
 ## Quick Start: Search Your Medication
 
 Use the searchable table below to find your medication and see:

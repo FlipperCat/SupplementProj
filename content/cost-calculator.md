@@ -40,6 +40,41 @@ When users run their existing stack through the calculator, the most common blee
 - **Proprietary blends** that hide actual doses on the label — you're often paying premium for sub-clinical amounts.
 - **Wrong form**: paying for Magnesium Oxide (~4% bioavailable) when Glycinate is ~$3 more per bottle and 4–5× more usable.
 
+## 7 swaps that cut your stack cost without losing effectiveness
+
+These swaps deliver the same active dose at a fraction of the price. None involve "cheaper but worse" — they're cheaper because the math of the supplement market is irrational, not because the product is.
+
+| Swap | Typical monthly saving |
+|---|---|
+| **Costco/Kirkland multivitamin** instead of a $50/mo "premium" multi | $40–45 |
+| **Bulk Creatine Monohydrate** (e.g., MyProtein 1 kg) instead of branded "creatine HCL" capsules | $20–30 |
+| **NOW or Doctor's Best D3** instead of branded "premium D3" | $10–15 |
+| **Kirkland Fish Oil** (IFOS-tested) instead of a branded Omega-3 | $15–25 |
+| **Magnesium Glycinate powder** (e.g., 250 g tubs) instead of capsules | $8–12 |
+| **Buying individual actives** instead of branded "sleep / focus / energy" blends | $20–60 per blend |
+| **Generic Curcumin + Piperine** instead of branded "Curcumin complex" | $15–20 |
+
+The combined savings from 3–4 of these typically pay for the more expensive forms where form *does* matter (e.g., NSF-tested Omega-3 if you're an athlete, Magnesium Threonate if you specifically need cognitive support).
+
+## When to spend more, not less
+
+Cheap is the right call for most supplements. These are the exceptions where paying up is worth it:
+
+- **Omega-3 fish oil** — oxidation matters. Rancid fish oil is actively pro-inflammatory. Pay for IFOS 5-star or Informed Sport certification. The $5–10/month premium is the cheapest insurance in your stack.
+- **Probiotics** — strain and CFU count vary wildly. Cheap probiotics are often dead on arrival or contain unverified strains. Pay for refrigerated or shelf-stable strains with published efficacy.
+- **Anything you take daily long-term** — at 365 doses/year, a $5/month difference compounds. The premium-tested version may be worth it for heavy metals testing alone.
+- **Anything for athletic performance with drug testing** — NSF Certified for Sport or Informed Sport only. Cheap supplements have a real contamination rate.
+
+## What "premium" usually buys you
+
+For most items, the premium price tag delivers some combination of:
+1. **Third-party testing** — NSF, USP, Informed Sport, ConsumerLab. Useful for athletes and high-volume stackers.
+2. **Better-tolerated form** — Glycinate vs. Citrate for people with GI sensitivity, for example.
+3. **Cleaner excipients** — no titanium dioxide, no artificial colors. Matters for some people; cosmetic for most.
+4. **Brand trust + customer service** — replacement, refund, sourcing transparency.
+
+If none of those apply to your situation, the budget pick is functionally identical.
+
 ## FAQ
 
 <details>
