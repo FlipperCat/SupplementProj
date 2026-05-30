@@ -15,9 +15,31 @@ enableGitInfo = false
     ga4 = "G-XXXXXXXXXX"  # TODO: Replace with your actual GA4 ID from https://analytics.google.com
     gsc_verification = "YOUR_GSC_VERIFICATION_ID"  # TODO: Replace with Google Search Console verification code
 
-  # Affiliate settings
+  # Affiliate settings — paste your IDs here once and every buy link site-wide is monetized.
+  # All blank = links still work but no commission tracked (useful for staging / pre-approval).
   [params.affiliates]
-    amway = "https://www.amway.com/en_US/nutrilite"
+    amazon_tag = ""           # Amazon Associates Tracking ID, e.g. "vitawise-20"  → https://affiliate-program.amazon.com/
+    iherb_rcode = ""          # iHerb Rewards Code, e.g. "ABC123"                  → https://www.iherb.com/info/rewards
+    vitacost_id = ""          # Vitacost via Rakuten/Impact (optional)              → https://www.rakutenadvertising.com/
+    amway = "https://www.amway.com/en_US/nutrilite"   # legacy
+    # Show "As an affiliate..." disclosure inline on pages with buy links (FTC requirement).
+    show_inline_disclosure = true
+    # Brand pick label tier shown next to each search link.
+    show_tier_label = true
+
+  # Ad networks — paste publisher IDs to activate display ads. Free tier-1: Ezoic (no traffic min).
+  [params.ads]
+    adsense_publisher = ""    # ca-pub-XXXXXXXXXXXXXXXX → https://adsense.google.com/
+    ezoic_site_id = ""        # numeric site ID → https://www.ezoic.com/
+    # Show ads on tool pages too (default: only on content pages). Set true once tools have steady traffic.
+    show_on_tools = false
+
+  # Newsletter / email — currently uses Netlify Forms (free, zero config).
+  # When you migrate to MailerLite/Buttondown/Beehiiv, drop the form action URL here and the
+  # newsletter partial will switch over without code changes.
+  [params.email]
+    provider = "netlify"      # "netlify" | "mailerlite" | "buttondown" | "beehiiv"
+    form_action = ""          # override form action URL when not using netlify
 
 [taxonomies]
   category = "categories"

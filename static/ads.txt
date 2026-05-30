@@ -1,0 +1,18 @@
+# ads.txt for VitaWise — paste your publisher IDs below to activate display advertising
+# Format: <domain>, <publisher ID>, <relationship>, <certification authority ID>
+#
+# Google AdSense (sign up free, no traffic minimum):
+#   https://adsense.google.com/
+#   Format:  google.com, pub-XXXXXXXXXXXXXXXX, DIRECT, f08c47fec0942fa0
+#
+# Ezoic (open access — no traffic minimum since 2023):
+#   https://www.ezoic.com/
+#   Ezoic auto-populates this file for you once you connect the site. Their lines look like:
+#   google.com, pub-1183370831677852, DIRECT, f08c47fec0942fa0
+#   pubmatic.com, 156084, DIRECT, 5d62403b186f2ace
+#   ... (many lines from each demand partner)
+#
+# Once you're approved, replace this file with the lines they give you OR uncomment your AdSense line below.
+#
+# Example AdSense entry (uncomment and replace XXXX with your publisher ID):
+# google.com, pub-XXXXXXXXXXXXXXXX, DIRECT, f08c47fec0942fa0

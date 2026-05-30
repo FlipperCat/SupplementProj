@@ -1,0 +1,13 @@
+{{- /*
+  Amazon affiliate search link.
+  Usage: {{< amazon "magnesium glycinate" >}}
+         {{< amazon query="magnesium glycinate" text="Shop on Amazon" >}}
+  Falls back to a plain search link if no Amazon tag is configured.
+*/ -}}
+{{- $query := .Get 0 | default (.Get "query") -}}
+{{- $text := (.Get "text") | default "Shop on Amazon" -}}
+{{- $tag := site.Params.affiliates.amazon_tag -}}
+{{- $base := printf "https://www.amazon.com/s?k=%s" (querify "k" $query | replaceRE "^k=" "") -}}
+{{- $url := printf "https://www.amazon.com/s?k=%s" ($query | urlquery) -}}
+{{- if $tag -}}{{- $url = printf "%s&tag=%s" $url $tag -}}{{- end -}}
+<a class="affiliate-link affiliate-amazon" rel="sponsored nofollow noopener" target="_blank" href="{{ $url }}">{{ $text }}</a>

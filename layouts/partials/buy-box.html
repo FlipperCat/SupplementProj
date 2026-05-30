@@ -1,0 +1,40 @@
+{{- /*
+  Auto-render the buy widget for a supplement / peptide / page.
+  Use:  {{ partial "buy-box.html" . }}
+  Skips render gracefully if no buy_query is resolvable.
+
+  Query resolution order:
+    1. .Params.buy_query     (explicit override in frontmatter)
+    2. .Params.tagline       (often a richer search than title)
+    3. .Title                (default)
+*/ -}}
+{{- $query := or .Params.buy_query .Title -}}
+{{- if $query -}}
+{{- $amazon_tag := site.Params.affiliates.amazon_tag -}}
+{{- $iherb_rcode := site.Params.affiliates.iherb_rcode -}}
+{{- $amazon_url := printf "https://www.amazon.com/s?k=%s" ($query | urlquery) -}}
+{{- if $amazon_tag -}}{{- $amazon_url = printf "%s&tag=%s" $amazon_url $amazon_tag -}}{{- end -}}
+{{- $iherb_url := printf "https://www.iherb.com/search?kw=%s" ($query | urlquery) -}}
+{{- if $iherb_rcode -}}{{- $iherb_url = printf "%s&rcode=%s" $iherb_url $iherb_rcode -}}{{- end -}}
+<aside class="buy-box">
+  <div class="buy-box-header">
+    <h3>Where to buy {{ $query }}</h3>
+    {{- if site.Params.affiliates.show_inline_disclosure }}
+    <p class="buy-box-disclosure">As affiliates, we may earn from qualifying purchases. No extra cost to you. <a href="/affiliate-disclosure/">Learn more</a>.</p>
+    {{- end }}
+  </div>
+  <div class="buy-box-grid">
+    <a class="buy-btn buy-amazon" rel="sponsored nofollow noopener" target="_blank" href="{{ $amazon_url }}" data-affiliate="amazon" data-product="{{ $query }}">
+      <span class="buy-btn-vendor">Amazon</span>
+      <span class="buy-btn-cta">Shop {{ $query }} &rarr;</span>
+    </a>
+    <a class="buy-btn buy-iherb" rel="sponsored nofollow noopener" target="_blank" href="{{ $iherb_url }}" data-affiliate="iherb" data-product="{{ $query }}">
+      <span class="buy-btn-vendor">iHerb</span>
+      <span class="buy-btn-cta">Shop {{ $query }} &rarr;</span>
+    </a>
+  </div>
+  <p class="buy-box-quality">
+    Tip: look for <strong>third-party tested</strong> (NSF / USP / Informed Sport) brands. The <a href="/supplement-comparison/?q={{ $query | urlquery }}">Comparison Tool</a> can help you pick a form.
+  </p>
+</aside>
+{{- end -}}

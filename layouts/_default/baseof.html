@@ -42,6 +42,16 @@
     <meta name="google-site-verification" content="{{ . }}" />
     {{ end }}{{ end }}
 
+    {{/* Ad networks — auto-load when publisher IDs are set in hugo.toml */}}
+    {{ with .Site.Params.ads.adsense_publisher }}{{ if hasPrefix . "ca-pub-" }}
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client={{ . }}" crossorigin="anonymous"></script>
+    <meta name="google-adsense-account" content="{{ . }}">
+    {{ end }}{{ end }}
+    {{ with .Site.Params.ads.ezoic_site_id }}{{ if . }}
+    <script async src="//www.ezojs.com/ezoic/sa.min.js"></script>
+    <script>window.ezstandalone = window.ezstandalone || {}; ezstandalone.cmd = ezstandalone.cmd || [];</script>
+    {{ end }}{{ end }}
+
     <!-- Open Graph - Complete -->
     <meta property="og:title" content="{{ .Title }}">
     <meta property="og:description" content="{{ with .Description }}{{ . }}{{ else }}{{ with .Params.tagline }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}{{ end }}">

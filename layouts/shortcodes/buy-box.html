@@ -1,0 +1,29 @@
+{{- /*
+  Drop a full "Where to buy" card into any page.
+  Usage: {{< buy-box "Magnesium Glycinate" >}}
+         {{< buy-box query="Vitamin D3 5000 IU" >}}
+  Auto-renders Amazon + iHerb search links with affiliate IDs from hugo.toml.
+*/ -}}
+{{- $query := .Get 0 | default (.Get "query") -}}
+{{- $amazon_tag := site.Params.affiliates.amazon_tag -}}
+{{- $iherb_rcode := site.Params.affiliates.iherb_rcode -}}
+{{- $amazon_url := printf "https://www.amazon.com/s?k=%s" ($query | urlquery) -}}
+{{- if $amazon_tag -}}{{- $amazon_url = printf "%s&tag=%s" $amazon_url $amazon_tag -}}{{- end -}}
+{{- $iherb_url := printf "https://www.iherb.com/search?kw=%s" ($query | urlquery) -}}
+{{- if $iherb_rcode -}}{{- $iherb_url = printf "%s&rcode=%s" $iherb_url $iherb_rcode -}}{{- end -}}
+<aside class="buy-box">
+  <div class="buy-box-header">
+    <h3>Where to buy {{ $query }}</h3>
+    <p class="buy-box-disclosure">As affiliates, we may earn from qualifying purchases. No extra cost to you. <a href="/affiliate-disclosure/">Learn more</a>.</p>
+  </div>
+  <div class="buy-box-grid">
+    <a class="buy-btn buy-amazon" rel="sponsored nofollow noopener" target="_blank" href="{{ $amazon_url }}">
+      <span class="buy-btn-vendor">Amazon</span>
+      <span class="buy-btn-cta">Shop {{ $query }} &rarr;</span>
+    </a>
+    <a class="buy-btn buy-iherb" rel="sponsored nofollow noopener" target="_blank" href="{{ $iherb_url }}">
+      <span class="buy-btn-vendor">iHerb</span>
+      <span class="buy-btn-cta">Shop {{ $query }} &rarr;</span>
+    </a>
+  </div>
+</aside>

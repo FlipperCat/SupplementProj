@@ -2145,6 +2145,127 @@ p {
 }
 
 /* ============================================
+   Buy Box (affiliate widget) — appears on supplement / peptide pages and via shortcode
+   ============================================ */
+.buy-box {
+    margin: var(--spacing-xl) 0;
+    padding: var(--spacing-lg);
+    background: linear-gradient(135deg, var(--color-cream) 0%, var(--color-white) 100%);
+    border: 1px solid var(--color-cream-dark);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-sm);
+}
+.buy-box-header h3 {
+    margin: 0 0 var(--spacing-xs) 0;
+    font-size: 1.25rem;
+}
+.buy-box-disclosure {
+    font-size: 0.8125rem;
+    color: var(--color-text-light);
+    margin: 0 0 var(--spacing-md) 0;
+}
+.buy-box-disclosure a {
+    color: var(--color-text-light);
+    text-decoration: underline;
+}
+.buy-box-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-sm);
+    margin-bottom: var(--spacing-md);
+}
+.buy-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+    padding: var(--spacing-md);
+    background: var(--color-white);
+    border: 2px solid var(--color-cream-dark);
+    border-radius: var(--radius-md);
+    text-decoration: none;
+    transition: border-color var(--transition-fast), transform var(--transition-fast), box-shadow var(--transition-fast);
+    font-family: var(--font-heading);
+}
+.buy-btn:hover {
+    border-color: var(--color-primary);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+}
+.buy-btn-vendor {
+    font-weight: 700;
+    font-size: 1rem;
+    color: var(--color-text);
+}
+.buy-btn-cta {
+    font-size: 0.8125rem;
+    color: var(--color-text-light);
+    margin-top: 2px;
+}
+.buy-btn.buy-amazon { border-color: #ff9900; }
+.buy-btn.buy-amazon:hover { border-color: #ff9900; box-shadow: 0 4px 12px rgba(255, 153, 0, 0.18); }
+.buy-btn.buy-amazon .buy-btn-vendor { color: #232f3e; }
+.buy-btn.buy-iherb  { border-color: #2da44e; }
+.buy-btn.buy-iherb:hover { border-color: #2da44e; box-shadow: 0 4px 12px rgba(45, 164, 78, 0.18); }
+.buy-btn.buy-iherb  .buy-btn-vendor { color: #1a7f37; }
+.buy-box-quality {
+    font-size: 0.875rem;
+    color: var(--color-text-light);
+    margin: 0;
+    line-height: 1.5;
+}
+.buy-box-quality strong { color: var(--color-text); }
+@media (max-width: 600px) {
+    .buy-box-grid { grid-template-columns: 1fr; }
+}
+[data-theme="dark"] .buy-box {
+    background: linear-gradient(135deg, var(--color-surface) 0%, var(--color-bg) 100%);
+    border-color: var(--color-cream-dark);
+}
+[data-theme="dark"] .buy-btn {
+    background: var(--color-surface);
+}
+
+/* Affiliate-link shortcode (inline use in markdown) */
+.affiliate-link {
+    display: inline-block;
+    padding: var(--spacing-xs) var(--spacing-md);
+    border-radius: var(--radius-md);
+    text-decoration: none;
+    font-weight: 600;
+    transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+}
+.affiliate-link:hover { transform: translateY(-1px); box-shadow: var(--shadow-md); }
+.affiliate-amazon { background: #ff9900; color: #232f3e; }
+.affiliate-iherb  { background: #2da44e; color: #fff; }
+
+/* Inline affiliate disclosure (above first link on any page that has affiliates) */
+.affiliate-disclosure-inline {
+    font-size: 0.8125rem;
+    color: var(--color-text-light);
+    background: var(--color-cream);
+    padding: var(--spacing-sm) var(--spacing-md);
+    border-left: 3px solid var(--color-primary);
+    border-radius: 0 var(--radius-md) var(--radius-md) 0;
+    margin: var(--spacing-md) 0;
+}
+
+/* Tool page newsletter CTA (below the tool-content-wrapper) */
+.tool-page-cta {
+    padding: var(--spacing-2xl) 0;
+    background: var(--color-cream);
+    border-top: 1px solid var(--color-cream-dark);
+}
+.tool-page-cta .newsletter-box {
+    max-width: 560px;
+    margin: 0 auto;
+    text-align: center;
+    background: var(--color-white);
+}
+[data-theme="dark"] .tool-page-cta { background: var(--color-bg); }
+[data-theme="dark"] .tool-page-cta .newsletter-box { background: var(--color-surface); }
+
+/* ============================================
    404 Page
    ============================================ */
 .error-page {

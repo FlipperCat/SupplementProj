@@ -1,0 +1,11 @@
+{{- /*
+  iHerb affiliate search link.
+  Usage: {{< iherb "magnesium glycinate" >}}
+         {{< iherb query="magnesium glycinate" text="Shop on iHerb" >}}
+*/ -}}
+{{- $query := .Get 0 | default (.Get "query") -}}
+{{- $text := (.Get "text") | default "Shop on iHerb" -}}
+{{- $rcode := site.Params.affiliates.iherb_rcode -}}
+{{- $url := printf "https://www.iherb.com/search?kw=%s" ($query | urlquery) -}}
+{{- if $rcode -}}{{- $url = printf "%s&rcode=%s" $url $rcode -}}{{- end -}}
+<a class="affiliate-link affiliate-iherb" rel="sponsored nofollow noopener" target="_blank" href="{{ $url }}">{{ $text }}</a>

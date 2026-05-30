@@ -57,23 +57,29 @@ This means we're making ~$50-100 per full commission. That's enough to cover hos
 
 ## Our Affiliate Partners
 
-### Amway/Nutrilite (Primary Partner)
-- **Why**: Strong supplement line with rigorous quality control
-- **Commission**: 5-10% affiliate rate
-- **Our honest take**: Good quality, not the cheapest option. Great for convenience
-- **Disclosure**: We link to Nutrilite. You can buy elsewhere if you prefer
+### Amazon Associates (Primary)
+- **Why**: Massive selection, fast shipping, familiar checkout, supports almost every brand we recommend
+- **Commission**: ~3–4% for supplements
+- **Our honest take**: Selection is enormous, but quality varies — *brand matters*. We point you to specific search terms (form + name) so you can pick the third-party-tested options
+- **Disclosure**: All Amazon links use `rel="sponsored nofollow"` and the `tag=` parameter. They're marked clearly as buy links and grouped in the "Where to buy" widget
 
-### Amazon (Secondary, Limited)
-- **Why**: Convenience and option for readers without Nutrilite access
-- **Commission**: 2-3% affiliate rate (low)
-- **Our honest take**: Massive selection but quality varies. Know the brand you're buying
-- **Disclosure**: Amazon links labeled as affiliate
+### iHerb (Primary)
+- **Why**: Better commission rates than Amazon for our niche, strong selection of specialty supplement brands, international shipping
+- **Commission**: ~5–10% on supplements
+- **Our honest take**: Often cheaper than Amazon for the same brand. Genuinely good prices on Thorne, Doctor's Best, NOW, and most premium brands
+- **Disclosure**: Links use `rel="sponsored nofollow"` and our `rcode=` rewards code
 
-### iHerb (Where Used)
-- **Why**: Selection and international shipping
-- **Commission**: 3-5% affiliate rate
-- **Our honest take**: Good selection and prices
-- **Disclosure**: Links labeled when used
+### Direct brand partnerships (case by case)
+- **Why**: Some brands (Thorne, Pure Encapsulations, NOW Foods, Designs for Health) run their own programs with better commission and direct support
+- **Commission**: 10–15% typically
+- **Our honest take**: We use these where the brand is genuinely best-in-class for a specific use. We never recommend a brand *because* of higher commission
+- **Disclosure**: Marked the same way — `sponsored nofollow`, clear "buy" labeling
+
+### What we don't do
+- ❌ No sponsored articles or "branded content"
+- ❌ No pay-to-play product placement
+- ❌ No "best supplement" rankings that are secretly rank-by-commission
+- ❌ No data sales, no advertiser tracking pixels beyond standard analytics
 
 ## How We Choose Recommendations
 

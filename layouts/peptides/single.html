@@ -104,6 +104,9 @@
             </div>
             {{ end }}
 
+            {{/* Affiliate buy widget — search-link based; auto-monetized when affiliate IDs are set in hugo.toml */}}
+            {{ partial "buy-box.html" . }}
+
             <!-- Results Timeline (Visual) -->
             {{ with .Params.timeline }}
             <div class="timeline-box">
