@@ -15,6 +15,92 @@ tags:
 aliases:
   - "/goals/supplements-for-cognitive-aging-60-plus/"
   - "/supplements-for-cognitive-aging-60-plus/"
+picks:
+  - name: "Omega-3 (DHA-dominant)"
+    slug: "omega-3"
+    rank: 1
+    evidence: "strong"
+    dose: "1-2 g DHA (not just total EPA+DHA — DHA specifically)"
+    timing: "With meal containing fat"
+    form: "DHA-dominant fish oil or algal oil"
+    why: "DHA makes up ~30% of brain phospholipids. Higher blood DHA correlates with slower cognitive decline. Most-evidence-backed nutrient for brain aging."
+    monetizable: true
+    buy_query: "DHA omega-3 1000mg"
+  - name: "Vitamin B12 (Methylcobalamin)"
+    slug: "vitamin-b12"
+    rank: 2
+    evidence: "strong"
+    dose: "1,000 mcg/day (sublingual preferred over 60)"
+    timing: "Morning"
+    form: "Methylcobalamin (active form) — sublingual or injection if absorption is impaired"
+    why: "B12 absorption drops sharply after 60 (intrinsic factor declines). Deficiency mimics dementia — and is reversible if caught."
+    monetizable: true
+    buy_query: "methylcobalamin b12 sublingual"
+  - name: "Magnesium L-Threonate"
+    slug: "magnesium"
+    rank: 3
+    evidence: "moderate"
+    dose: "1,440-2,000 mg L-Threonate (provides ~144-200 mg elemental Mg)"
+    timing: "Split AM/PM"
+    form: "L-Threonate specifically — only form that crosses the blood-brain barrier well"
+    why: "Only form that meaningfully raises brain magnesium. Studied for memory and synaptic density in aging brains."
+    monetizable: true
+    buy_query: "magnesium l-threonate"
+  - name: "Lion's Mane Mushroom"
+    slug: "lions-mane"
+    rank: 4
+    evidence: "moderate"
+    dose: "500-3,000 mg standardized extract"
+    timing: "Daily, with food"
+    why: "Stimulates NGF (nerve growth factor). Small clinical trials show improved mild cognitive impairment scores. Long-timeline supplement."
+    monetizable: true
+    buy_query: "lions mane mushroom extract"
+  - name: "Bacopa Monnieri"
+    slug: "bacopa-monnieri"
+    rank: 5
+    evidence: "moderate"
+    dose: "300-450 mg (50% bacosides)"
+    timing: "With food"
+    why: "Slow-acting but well-evidenced. RCTs show memory + processing speed improvements after 8-12 weeks of consistent use."
+    monetizable: true
+    buy_query: "bacopa monnieri bacosides"
+  - name: "Phosphatidylserine"
+    slug: "phosphatidylserine"
+    rank: 6
+    evidence: "moderate"
+    dose: "100-300 mg"
+    timing: "Split doses with food"
+    why: "Component of neural membranes. Studied for age-related memory issues with modest positive results, especially in early decline."
+    monetizable: true
+    buy_query: "phosphatidylserine 100mg"
+  - name: "Exercise (especially zone 2 cardio + resistance training)"
+    rank: 7
+    evidence: "behavioral"
+    why: "Strongest single intervention for cognitive aging. Raises BDNF, improves cerebral blood flow, reduces dementia risk by 30-40%. No supplement comes close."
+    monetizable: false
+    not_sold_reason: "behavioral"
+    not_sold_note: "Free. 150 min/week zone 2 + 2-3 strength sessions. The single most-evidence-backed dementia-prevention intervention there is."
+  - name: "Mediterranean / MIND diet pattern"
+    rank: 8
+    evidence: "food"
+    why: "MIND diet (Mediterranean + DASH hybrid) is associated with 53% reduction in Alzheimer's risk in observational studies."
+    monetizable: false
+    not_sold_reason: "food"
+    not_sold_note: "Not buyable as one product. Olive oil, fatty fish 2x/week, berries, leafy greens, nuts. Costs less than a supplement stack."
+  - name: "Cognitive engagement + social activity"
+    rank: 9
+    evidence: "behavioral"
+    why: "Lifelong learning, novel skills, social engagement build cognitive reserve. Strong observational evidence for protection against decline."
+    monetizable: false
+    not_sold_reason: "behavioral"
+    not_sold_note: "Free. Learn an instrument, take a class, join a club. Use-it-or-lose-it applies to the brain. Combined with exercise + diet, this is the protocol."
+  - name: "Cognitive evaluation (clinical workup)"
+    rank: 10
+    evidence: "rx"
+    why: "If symptoms are noticeable (forgetting recent conversations, getting lost), see a neurologist. Reversible causes (B12, thyroid, depression, sleep apnea) are common and treatable."
+    monetizable: false
+    not_sold_reason: "rx"
+    not_sold_note: "Not a supplement. Early evaluation matters — many cases of memory loss are reversible if caught. Don't dismiss notable changes as 'just aging'."
 ---
 
 ## Brain Health Supplements for 60+

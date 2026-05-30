@@ -11,6 +11,85 @@ tags:
 aliases:
   - "/goals/energy-supplements/"
   - "/energy-supplements/"
+picks:
+  - name: "Caffeine + L-Theanine"
+    slug: "l-theanine"
+    rank: 1
+    evidence: "strong"
+    dose: "100 mg Caffeine + 200 mg L-Theanine (1:2)"
+    timing: "Morning"
+    why: "Sustained alertness without the crash. Most-studied energy stack. L-Theanine smooths caffeine's edge — no jitters, no 3 PM dip."
+    monetizable: true
+    buy_query: "l-theanine 200mg"
+  - name: "Creatine Monohydrate"
+    slug: "creatine"
+    rank: 2
+    evidence: "strong"
+    dose: "5 g/day"
+    timing: "Anytime, daily"
+    why: "Replenishes cellular ATP. Reduces fatigue in sleep-deprived states. Cheapest high-quality supplement you can buy."
+    monetizable: true
+    buy_query: "creatine monohydrate"
+  - name: "CoQ10 (Ubiquinol if 40+)"
+    slug: "coq10"
+    rank: 3
+    evidence: "strong"
+    dose: "100-200 mg"
+    timing: "With food (fat-soluble)"
+    form: "Ubiquinol if over 40 or on a statin"
+    why: "Cellular energy production. Mitochondrial cofactor. Critical if statin-induced fatigue is the issue."
+    monetizable: true
+    buy_query: "coq10 ubiquinol"
+  - name: "B-Complex (methylated)"
+    slug: "b-complex"
+    rank: 4
+    evidence: "strong"
+    dose: "Standard B-complex daily"
+    timing: "Morning with food"
+    form: "Methylcobalamin (B12) + methylfolate (especially if MTHFR variant)"
+    why: "B vitamins are required cofactors for cellular energy. Deficiencies are common and a frequent cause of unexplained fatigue."
+    monetizable: true
+    buy_query: "methylated b-complex"
+  - name: "Iron (only if deficient — get tested)"
+    slug: "iron"
+    rank: 5
+    evidence: "strong"
+    dose: "18-65 mg elemental iron (based on labs)"
+    timing: "With Vitamin C, away from coffee/tea/calcium"
+    form: "Iron Bisglycinate (low GI side effects)"
+    why: "If your ferritin is low (<30), iron is the single highest-ROI intervention for fatigue. Get tested first — supplementing without need is risky."
+    monetizable: true
+    buy_query: "iron bisglycinate"
+  - name: "Rhodiola Rosea"
+    slug: "rhodiola"
+    rank: 6
+    evidence: "moderate"
+    dose: "200-600 mg (3% rosavins, 1% salidroside)"
+    timing: "Morning, empty stomach"
+    why: "Adaptogen for stress-induced fatigue. Best for the 'wired but tired' pattern after sustained stress."
+    monetizable: true
+    buy_query: "rhodiola rosea standardized"
+  - name: "Sleep (7-9 hours, consistent timing)"
+    rank: 7
+    evidence: "behavioral"
+    why: "The most fixable cause of fatigue. No supplement compensates for chronic sleep debt. Energy starts here."
+    monetizable: false
+    not_sold_reason: "behavioral"
+    not_sold_note: "Free. If you're tired and not sleeping 7+ hours consistently, fix this before anything else. See our sleep guide."
+  - name: "Iron-rich foods + Vitamin C pairing"
+    rank: 8
+    evidence: "food"
+    why: "Red meat, lentils, spinach with citrus or bell pepper. Vitamin C triples non-heme iron absorption."
+    monetizable: false
+    not_sold_reason: "food"
+    not_sold_note: "Not buyable. If you eat meat regularly, food iron may be enough. If vegetarian and tired, both food sources and (after labs) supplementation matter."
+  - name: "Thyroid workup (lab work + prescription if needed)"
+    rank: 9
+    evidence: "rx"
+    why: "Hypothyroidism is the most-missed medical cause of chronic fatigue. Ask for TSH, free T4, AND free T3 — not just TSH alone."
+    monetizable: false
+    not_sold_reason: "rx"
+    not_sold_note: "Not a supplement. If you've been tired for months and supplements aren't moving the needle, ask your doctor for a full thyroid panel."
 ---
 
 ## Why You're Tired (And How Supplements Can Help)

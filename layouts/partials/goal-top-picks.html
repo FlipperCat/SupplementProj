@@ -99,6 +99,36 @@
     {{- end }}
   </ol>
 
+  <div class="goal-top-picks-cta">
+    <h3>Want to see how these work with your current stack?</h3>
+    <p>The <strong>Stack Analyzer</strong> checks for synergies, conflicts, timing issues, and gaps — drop these picks in and see what's missing or competing.</p>
+    <a href="/analyzer/" class="btn btn-primary">Run my stack &rarr;</a>
+  </div>
+
   <p class="goal-top-picks-footnote">Evidence ratings reflect the strength of the clinical research, not a personal endorsement. <a href="/affiliate-disclosure/">How we're funded &rarr;</a></p>
 </section>
+
+{{/* JSON-LD ItemList — makes Google show the ranking as a rich result */}}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "{{ $.Title }}",
+  "description": "{{ with $.Params.tagline }}{{ . }}{{ else }}{{ $.Title }}{{ end }}",
+  "numberOfItems": {{ len $.Params.picks }},
+  "itemListOrder": "https://schema.org/ItemListOrderAscending",
+  "itemListElement": [
+    {{- range $i, $p := $.Params.picks }}
+    {{- if $i }},{{ end }}
+    {
+      "@type": "ListItem",
+      "position": {{ $p.rank }},
+      "name": "{{ $p.name }}"{{ with $p.slug }},
+      "url": "{{ printf "%ssupplements/%s/" $.Site.BaseURL . }}"{{ end }}{{ with $p.why }},
+      "description": "{{ . }}"{{ end }}
+    }
+    {{- end }}
+  ]
+}
+</script>
 {{- end -}}

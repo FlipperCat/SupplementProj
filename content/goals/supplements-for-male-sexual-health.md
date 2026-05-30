@@ -12,6 +12,90 @@ tags:
 aliases:
   - "/goals/supplements-for-male-sexual-health/"
   - "/supplements-for-male-sexual-health/"
+picks:
+  - name: "L-Citrulline"
+    slug: "l-citrulline"
+    rank: 1
+    evidence: "strong"
+    dose: "3-6 g/day (or 6-8 g pre-activity)"
+    timing: "30-60 min before, or daily"
+    why: "Nitric oxide precursor — increases blood flow. Direct mechanism for erectile function. Doses below 3 g don't work."
+    monetizable: true
+    buy_query: "l-citrulline malate"
+  - name: "Tongkat Ali (Eurycoma longifolia)"
+    slug: "tongkat-ali"
+    rank: 2
+    evidence: "moderate"
+    dose: "200-400 mg standardized extract"
+    timing: "Morning, with food"
+    form: "Standardized to eurycomanone (e.g., 2% or 'LJ100')"
+    why: "Modestly raises testosterone and free testosterone in men with sub-optimal levels. Improves libido in clinical trials."
+    monetizable: true
+    buy_query: "tongkat ali LJ100 200mg"
+  - name: "Ashwagandha (KSM-66)"
+    slug: "ashwagandha"
+    rank: 3
+    evidence: "moderate"
+    dose: "600 mg KSM-66"
+    timing: "Morning, with food"
+    why: "Lowers cortisol, modestly raises testosterone in stressed men. Improved libido + sperm parameters in RCTs."
+    monetizable: true
+    buy_query: "ashwagandha KSM-66 600mg"
+  - name: "Vitamin D3 + Zinc"
+    slug: "vitamin-d3"
+    rank: 4
+    evidence: "strong"
+    dose: "5,000 IU D3 + 15-30 mg Zinc"
+    timing: "With food (fat-soluble)"
+    why: "Deficiencies of either suppress testosterone. Correcting deficiency restores baseline — not a 'booster' in normal men, but high-yield if low."
+    monetizable: true
+    buy_query: "vitamin d3 zinc"
+  - name: "Maca Root"
+    slug: "maca"
+    rank: 5
+    evidence: "moderate"
+    dose: "1,500-3,000 mg/day"
+    timing: "Daily, with food"
+    why: "Improves libido independent of testosterone (mechanism unclear). Studied for SSRI-induced sexual dysfunction with good results."
+    monetizable: true
+    buy_query: "maca root powder"
+  - name: "Fenugreek"
+    slug: "fenugreek"
+    rank: 6
+    evidence: "moderate"
+    dose: "500-600 mg standardized extract (e.g., Testofen)"
+    timing: "Daily, with food"
+    why: "Modest libido improvement in middle-aged men in multiple RCTs. Free testosterone gains are real but small."
+    monetizable: true
+    buy_query: "fenugreek testofen"
+  - name: "Cardiovascular exercise (3-5x/week)"
+    rank: 7
+    evidence: "behavioral"
+    why: "ED is often the first symptom of vascular disease. Exercise improves endothelial function, blood flow, and testosterone. Outranks any supplement."
+    monetizable: false
+    not_sold_reason: "behavioral"
+    not_sold_note: "Free. Erections are a vascular event — improving cardiovascular fitness is the single best intervention. Walking briskly counts."
+  - name: "Sleep (7-9 hours)"
+    rank: 8
+    evidence: "behavioral"
+    why: "Testosterone is produced largely during sleep. One week of 5-hour sleep drops testosterone 10-15%. Sleep > supplements every time."
+    monetizable: false
+    not_sold_reason: "behavioral"
+    not_sold_note: "Free. If you're tired all the time and your libido is low, fix sleep first — it's likely the cause."
+  - name: "PDE5 inhibitors (Viagra/Cialis — prescription)"
+    rank: 9
+    evidence: "rx"
+    why: "First-line treatment for ED. Strong evidence, well-tolerated. Now available generically and via telehealth."
+    monetizable: false
+    not_sold_reason: "rx"
+    not_sold_note: "Not a supplement. Generic sildenafil + tadalafil are inexpensive via telehealth (Hims, Roman, Hers, etc.). If supplements aren't enough, this is a normal next step."
+  - name: "Get testosterone tested (lab work)"
+    rank: 10
+    evidence: "rx"
+    why: "If symptoms persist, low T is medically treatable. Don't guess — get a morning total + free T blood draw before assuming."
+    monetizable: false
+    not_sold_reason: "rx"
+    not_sold_note: "Not a supplement. Total T < 300 ng/dL + symptoms = clinical hypogonadism. Talk to a doctor; TRT under supervision can be transformative."
 ---
 
 ## The Honest Reality About Supplements and Sexual Function

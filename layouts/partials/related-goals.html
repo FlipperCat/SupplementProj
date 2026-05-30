@@ -1,0 +1,49 @@
+{{- /*
+  Related goals widget.
+  Selects up to 4 other /goals/ pages that share at least one tag with the
+  current page. Falls back to most-recent goals if none match.
+  Renders nothing if the current page isn't in /goals/ (safe to call from
+  shared layouts).
+*/ -}}
+{{- if eq .Section "goals" -}}
+{{- $current := . -}}
+{{- $allGoals := where site.RegularPages "Section" "goals" -}}
+{{- $candidates := slice -}}
+{{- range $allGoals -}}
+  {{- if ne .Permalink $current.Permalink -}}
+    {{- $shared := intersect ($current.Params.tags | default slice) (.Params.tags | default slice) -}}
+    {{- if gt (len $shared) 0 -}}
+      {{- $candidates = $candidates | append . -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+{{- /* Fallback: most-recent goals if no tag overlap */ -}}
+{{- if eq (len $candidates) 0 -}}
+  {{- range first 6 $allGoals -}}
+    {{- if ne .Permalink $current.Permalink -}}
+      {{- $candidates = $candidates | append . -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+{{- $related := first 4 $candidates -}}
+{{- if $related -}}
+<section class="related-goals">
+  <h3>You might also like</h3>
+  <div class="related-goals-grid">
+    {{- range $related }}
+    <a href="{{ .Permalink }}" class="related-goal-card">
+      <h4>{{ .Title }}</h4>
+      {{- with .Params.tagline }}
+      <p>{{ . | truncate 110 }}</p>
+      {{- end }}
+      {{- if .Params.picks }}
+      <span class="related-goal-meta">{{ len .Params.picks }} ranked picks &rarr;</span>
+      {{- else }}
+      <span class="related-goal-meta">Read guide &rarr;</span>
+      {{- end }}
+    </a>
+    {{- end }}
+  </div>
+</section>
+{{- end -}}
+{{- end -}}

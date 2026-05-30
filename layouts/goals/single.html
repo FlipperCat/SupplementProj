@@ -23,6 +23,9 @@
                 {{ .Content }}
             </div>
 
+            {{/* Related goals (auto: shared tags, fallback most-recent) */}}
+            {{ partial "related-goals.html" . }}
+
             <!-- Tags -->
             {{ with .Params.tags }}
             <div class="tag-list" style="margin-top: var(--spacing-2xl);">

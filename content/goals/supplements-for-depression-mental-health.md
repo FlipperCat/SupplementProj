@@ -12,6 +12,82 @@ tags:
 aliases:
   - "/goals/supplements-for-depression-mental-health/"
   - "/supplements-for-depression-mental-health/"
+picks:
+  - name: "Omega-3 (EPA-dominant)"
+    slug: "omega-3"
+    rank: 1
+    evidence: "strong"
+    dose: "1-2 g EPA (specifically EPA, not just total EPA+DHA)"
+    timing: "With meal containing fat"
+    form: "EPA-dominant fish oil — at least 60% EPA in the formulation"
+    why: "EPA specifically (not DHA) shows antidepressant effect in RCTs. Effect size comparable to mild SSRIs. Most-evidence-backed nutrient for depression."
+    monetizable: true
+    buy_query: "omega-3 EPA high concentration"
+  - name: "Saffron Extract"
+    slug: "saffron"
+    rank: 2
+    evidence: "strong"
+    dose: "28-30 mg/day standardized extract"
+    timing: "Morning, with food"
+    why: "Multiple RCTs show effect comparable to fluoxetine for mild-to-moderate depression. Cleanest side-effect profile of any antidepressant intervention."
+    monetizable: true
+    buy_query: "saffron extract 30mg"
+  - name: "Vitamin D3 (if deficient)"
+    slug: "vitamin-d3"
+    rank: 3
+    evidence: "moderate"
+    dose: "2,000-5,000 IU"
+    timing: "With meal containing fat"
+    why: "If your 25(OH)D is below 30 ng/mL, supplementing improves depression scores. If your levels are normal, expect less effect. Test first."
+    monetizable: true
+    buy_query: "vitamin d3 5000"
+  - name: "SAM-e (S-Adenosyl-L-Methionine)"
+    slug: "sam-e"
+    rank: 4
+    evidence: "moderate"
+    dose: "400-1600 mg/day, slowly titrated"
+    timing: "Morning, empty stomach"
+    why: "Methyl donor for neurotransmitter synthesis. Effect size comparable to tricyclics in some studies. Caution: can trigger mania in bipolar."
+    monetizable: true
+    buy_query: "sam-e 400mg"
+  - name: "Magnesium (Glycinate or Threonate)"
+    slug: "magnesium"
+    rank: 5
+    evidence: "moderate"
+    dose: "200-400 mg"
+    timing: "Evening"
+    form: "Glycinate for general; Threonate if cognitive depression / brain fog"
+    why: "RCT showed magnesium rivaled an antidepressant in mild-to-moderate depression. Most adults are deficient — low-risk to try."
+    monetizable: true
+    buy_query: "magnesium glycinate"
+  - name: "Exercise (especially aerobic, 150 min/week)"
+    rank: 6
+    evidence: "behavioral"
+    why: "Multiple meta-analyses show exercise rivals SSRIs for mild-to-moderate depression. Effect size 0.5-0.7 in head-to-head trials."
+    monetizable: false
+    not_sold_reason: "behavioral"
+    not_sold_note: "Free. Hardest to start, biggest payoff. 30 min brisk walking 5x/week is the dose. No supplement matches the effect."
+  - name: "Therapy (CBT, ACT, or behavioral activation)"
+    rank: 7
+    evidence: "behavioral"
+    why: "Strongest long-term evidence of any depression intervention. CBT effects persist years after treatment ends — drugs and supplements don't."
+    monetizable: false
+    not_sold_reason: "behavioral"
+    not_sold_note: "Most therapists take insurance. BetterHelp/Talkspace for fast access. The intervention with the most durable evidence. Take it seriously."
+  - name: "Morning sunlight + light therapy (10,000 lux)"
+    rank: 8
+    evidence: "behavioral"
+    why: "Regulates circadian rhythm + serotonin synthesis. Especially effective for seasonal patterns. Lamp is one-time ~$40 purchase."
+    monetizable: false
+    not_sold_reason: "behavioral"
+    not_sold_note: "Free if you go outside. 10-20 min morning sun, ideally within 30 min of waking. Light boxes are sold but we don't carry them — buy any 10,000 lux unit."
+  - name: "SSRIs / SNRIs (prescription)"
+    rank: 9
+    evidence: "rx"
+    why: "Decades of safety + efficacy data. First-line for moderate-to-severe depression. Take 4-6 weeks to work."
+    monetizable: false
+    not_sold_reason: "rx"
+    not_sold_note: "Not a supplement. If depression is moderate-to-severe, supplements alone are usually not enough. Talk to a doctor — modern SSRIs are well-tolerated by most people."
 ---
 
 ## Depression & Mental Health: Supplement Strategy

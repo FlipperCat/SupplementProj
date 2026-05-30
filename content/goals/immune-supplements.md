@@ -11,6 +11,83 @@ tags:
 aliases:
   - "/goals/immune-supplements/"
   - "/immune-supplements/"
+picks:
+  - name: "Vitamin D3 + K2"
+    slug: "vitamin-d3"
+    rank: 1
+    evidence: "strong"
+    dose: "2,000-5,000 IU D3 + 90-180 mcg K2 (MK-7)"
+    timing: "With meal containing fat"
+    why: "Modulates dozens of immune pathways. Deficiency strongly linked to infection risk. K2 directs calcium correctly when D3 is taken at higher doses."
+    monetizable: true
+    buy_query: "vitamin d3 k2 5000"
+  - name: "Zinc"
+    slug: "zinc"
+    rank: 2
+    evidence: "strong"
+    dose: "15-30 mg (long-term) or 75 mg lozenges (first 24 hr of cold)"
+    timing: "With food (lozenges = symptom onset)"
+    form: "Picolinate or Glycinate for daily; acetate/gluconate lozenges for colds"
+    why: "Reduces cold duration by ~33% when taken within 24 hr of symptoms. Pair with copper at ~15:1 ratio for long-term use."
+    monetizable: true
+    buy_query: "zinc picolinate"
+  - name: "Vitamin C"
+    slug: "vitamin-c"
+    rank: 3
+    evidence: "moderate"
+    dose: "500-1000 mg/day (preventive) or 1-2 g/day during infection"
+    timing: "Split doses (water-soluble)"
+    why: "Modest preventive effect; meaningful reduction in cold duration. Higher doses cause GI distress with diminishing return."
+    monetizable: true
+    buy_query: "vitamin c 1000mg"
+  - name: "Quercetin"
+    slug: "quercetin"
+    rank: 4
+    evidence: "moderate"
+    dose: "500 mg, 2x daily"
+    timing: "With food"
+    why: "Zinc ionophore (helps zinc enter cells). Anti-inflammatory. Best paired with Zinc + Vitamin C as an infection-onset stack."
+    monetizable: true
+    buy_query: "quercetin 500mg"
+  - name: "Elderberry"
+    slug: "elderberry"
+    rank: 5
+    evidence: "moderate"
+    dose: "300-600 mg standardized extract or syrup at symptom onset"
+    timing: "First 48 hours of cold/flu symptoms"
+    why: "Reduces cold/flu duration in RCTs. Especially studied for influenza A and B."
+    monetizable: true
+    buy_query: "elderberry extract"
+  - name: "NAC (N-Acetyl Cysteine)"
+    slug: "nac"
+    rank: 6
+    evidence: "moderate"
+    dose: "600-1200 mg/day"
+    timing: "Split doses, empty stomach"
+    why: "Glutathione precursor. Thins mucus. Studied during respiratory infections; also broadly antioxidant."
+    monetizable: true
+    buy_query: "nac n-acetyl cysteine 600mg"
+  - name: "Sleep (7-9 hours)"
+    rank: 7
+    evidence: "behavioral"
+    why: "People who sleep <6 hours are ~4× more likely to catch a cold after equal exposure. No supplement compensates for sleep debt."
+    monetizable: false
+    not_sold_reason: "behavioral"
+    not_sold_note: "Free. The strongest single immune intervention there is. Worth more than any supplement on this list."
+  - name: "Diet diversity (especially fermented foods + fiber)"
+    rank: 8
+    evidence: "food"
+    why: "70-80% of immune cells live in your gut. Microbiome diversity drives immune resilience. Variety > any single supplement."
+    monetizable: false
+    not_sold_reason: "food"
+    not_sold_note: "Not buyable as one product. Yogurt, kefir, sauerkraut, kimchi + 25-30 different plant foods/week. Cheaper and more effective than most immune blends."
+  - name: "Annual flu vaccine (clinical)"
+    rank: 9
+    evidence: "rx"
+    why: "Most-evidence-backed acute respiratory infection prevention there is. Free for most adults in the US."
+    monetizable: false
+    not_sold_reason: "rx"
+    not_sold_note: "Not a supplement, not even a prescription in most pharmacies. Free or low-cost at any pharmacy. The single best annual immune intervention."
 ---
 
 ## Why Your Immune System Struggles (And How Supplements Can Help)

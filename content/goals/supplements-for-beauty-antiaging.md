@@ -13,6 +13,83 @@ tags:
 aliases:
   - "/goals/supplements-for-beauty-antiaging/"
   - "/supplements-for-beauty-antiaging/"
+picks:
+  - name: "Collagen Peptides (hydrolyzed)"
+    slug: "collagen"
+    rank: 1
+    evidence: "strong"
+    dose: "10-15 g/day"
+    timing: "Anytime — often morning coffee"
+    form: "Hydrolyzed Type I & III (bovine or marine)"
+    why: "RCTs show measurable improvements in skin elasticity, hydration, and wrinkle depth after 8-12 weeks. Also supports hair + nails."
+    monetizable: true
+    buy_query: "collagen peptides hydrolyzed"
+  - name: "Vitamin C"
+    slug: "vitamin-c"
+    rank: 2
+    evidence: "strong"
+    dose: "500-1000 mg"
+    timing: "Split doses"
+    why: "Required cofactor for collagen synthesis. Antioxidant in skin. Stacks with collagen — taking collagen without C is suboptimal."
+    monetizable: true
+    buy_query: "vitamin c 1000mg"
+  - name: "Astaxanthin"
+    slug: "astaxanthin"
+    rank: 3
+    evidence: "moderate"
+    dose: "4-12 mg"
+    timing: "With meal containing fat"
+    why: "Most potent natural antioxidant for skin. Studied for UV protection, wrinkle reduction, elasticity. Works from inside out."
+    monetizable: true
+    buy_query: "astaxanthin 12mg"
+  - name: "Hyaluronic Acid (oral)"
+    slug: "hyaluronic-acid"
+    rank: 4
+    evidence: "moderate"
+    dose: "120-240 mg/day"
+    timing: "Daily, with food"
+    why: "Oral HA reaches skin (studied with isotope tracking). Improves hydration and dermal water content in clinical trials."
+    monetizable: true
+    buy_query: "hyaluronic acid oral 120mg"
+  - name: "Resveratrol"
+    slug: "resveratrol"
+    rank: 5
+    evidence: "moderate"
+    dose: "150-500 mg trans-resveratrol"
+    timing: "With meal containing fat"
+    why: "Activates SIRT1 (longevity pathway). Skin-specific antioxidant effects in studies. Best paired with NMN or NAD+ precursors."
+    monetizable: true
+    buy_query: "trans-resveratrol"
+  - name: "Biotin (only if hair-deficient)"
+    slug: "biotin"
+    rank: 6
+    evidence: "preliminary"
+    dose: "2,500-10,000 mcg"
+    timing: "Daily"
+    why: "Famous but oversold. Works only if you're deficient — and most people aren't. Mostly placebo for hair if levels are normal."
+    monetizable: true
+    buy_query: "biotin 5000 mcg"
+  - name: "Daily sunscreen (SPF 30+) and shade"
+    rank: 7
+    evidence: "behavioral"
+    why: "UV damage is the #1 driver of skin aging — period. No supplement reverses what 5 min of unprotected sun does. Cheapest and most effective intervention."
+    monetizable: false
+    not_sold_reason: "behavioral"
+    not_sold_note: "Free if you stay indoors / in shade; sunscreen is sold everywhere — buy any broad-spectrum SPF 30+. This single habit beats every supplement on this list."
+  - name: "Vitamin C from whole foods (citrus, peppers, berries)"
+    rank: 8
+    evidence: "food"
+    why: "Better bioavailability and synergistic phytonutrients than isolated ascorbic acid. Bell pepper has more Vit C than orange."
+    monetizable: false
+    not_sold_reason: "food"
+    not_sold_note: "Eat citrus, bell peppers, strawberries, kiwi daily. Cheaper than supplements and you also get fiber + polyphenols."
+  - name: "Tretinoin (Retin-A — prescription)"
+    rank: 9
+    evidence: "rx"
+    why: "The most-evidence-backed anti-aging topical there is. Decades of data for wrinkle reduction, collagen restoration, photoaging reversal."
+    monetizable: false
+    not_sold_reason: "rx"
+    not_sold_note: "Not a supplement. Tretinoin (or its OTC cousin Retinol/Retinal) is the gold standard for topical anti-aging. Telehealth options make it cheap and easy to get."
 ---
 
 ## The Beauty Supplement Reality
